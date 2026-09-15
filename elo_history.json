@@ -14560,5 +14560,29 @@
       }
     ],
     "saved_at": "2026-09-16T01:39:13+02:00"
+  },
+  {
+    "match_id": "cce1e51d0f87f03e",
+    "game_type": "1v1",
+    "winner": "Home",
+    "home_score": 9,
+    "away_score": 3,
+    "players": [
+      {
+        "player": "piu-sleepy",
+        "team": "Home",
+        "old_elo": 1556,
+        "change": 14.1,
+        "new_elo": 1570
+      },
+      {
+        "player": "myrmidon^",
+        "team": "Away",
+        "old_elo": 1513,
+        "change": -14.1,
+        "new_elo": 1499
+      }
+    ],
+    "saved_at": "2026-09-16T01:55:44+02:00"
   }
 ]
