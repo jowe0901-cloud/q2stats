@@ -184,18 +184,6 @@
           "qualified": true
         },
         {
-          "player": ">purri",
-          "matches": 1,
-          "kills": 13,
-          "deaths": 0,
-          "dealt": 1600,
-          "received": 400,
-          "pick": 3,
-          "miss": 4,
-          "accuracy": 40.0,
-          "qualified": false
-        },
-        {
           "player": "Maniek",
           "matches": 25,
           "kills": 120,
@@ -280,18 +268,6 @@
           "qualified": true
         },
         {
-          "player": "a",
-          "matches": 2,
-          "kills": 0,
-          "deaths": 39,
-          "dealt": 700,
-          "received": 4900,
-          "pick": 12,
-          "miss": 8,
-          "accuracy": 37.0,
-          "qualified": false
-        },
-        {
           "player": "bobo",
           "matches": 3,
           "kills": 18,
@@ -301,6 +277,18 @@
           "pick": 3,
           "miss": 39,
           "accuracy": 36.7,
+          "qualified": false
+        },
+        {
+          "player": ">purri",
+          "matches": 2,
+          "kills": 21,
+          "deaths": 2,
+          "dealt": 2600,
+          "received": 1000,
+          "pick": 11,
+          "miss": 14,
+          "accuracy": 36.5,
           "qualified": false
         },
         {
@@ -350,6 +338,18 @@
           "miss": 65,
           "accuracy": 35.3,
           "qualified": true
+        },
+        {
+          "player": "a",
+          "matches": 3,
+          "kills": 2,
+          "deaths": 47,
+          "dealt": 1300,
+          "received": 5900,
+          "pick": 22,
+          "miss": 16,
+          "accuracy": 35.0,
+          "qualified": false
         },
         {
           "player": "Larik",
@@ -1198,18 +1198,6 @@
           "qualified": false
         },
         {
-          "player": ">purri",
-          "matches": 1,
-          "kills": 5,
-          "deaths": 1,
-          "dealt": 1414,
-          "received": 768,
-          "pick": 3,
-          "miss": 11,
-          "accuracy": 25.0,
-          "qualified": false
-        },
-        {
           "player": "insomnia",
           "matches": 7,
           "kills": 33,
@@ -1280,6 +1268,18 @@
           "miss": 135,
           "accuracy": 22.5,
           "qualified": true
+        },
+        {
+          "player": ">purri",
+          "matches": 2,
+          "kills": 6,
+          "deaths": 5,
+          "dealt": 2278,
+          "received": 1763,
+          "pick": 11,
+          "miss": 19,
+          "accuracy": 22.5,
+          "qualified": false
         },
         {
           "player": "ping80",
@@ -1414,6 +1414,18 @@
           "qualified": false
         },
         {
+          "player": "a",
+          "matches": 3,
+          "kills": 6,
+          "deaths": 11,
+          "dealt": 2127,
+          "received": 3325,
+          "pick": 23,
+          "miss": 27,
+          "accuracy": 20.7,
+          "qualified": false
+        },
+        {
           "player": "Grrga",
           "matches": 5,
           "kills": 15,
@@ -1508,18 +1520,6 @@
           "miss": 56,
           "accuracy": 19.8,
           "qualified": true
-        },
-        {
-          "player": "a",
-          "matches": 2,
-          "kills": 2,
-          "deaths": 10,
-          "dealt": 1132,
-          "received": 2388,
-          "pick": 15,
-          "miss": 19,
-          "accuracy": 19.5,
-          "qualified": false
         },
         {
           "player": "SUPER-LAG",
@@ -2164,18 +2164,6 @@
           "qualified": true
         },
         {
-          "player": "a",
-          "matches": 2,
-          "kills": 2,
-          "deaths": 15,
-          "dealt": 1026,
-          "received": 2046,
-          "pick": 11,
-          "miss": 8,
-          "accuracy": 15.5,
-          "qualified": false
-        },
-        {
           "player": "gart",
           "matches": 12,
           "kills": 32,
@@ -2197,6 +2185,18 @@
           "pick": 1,
           "miss": 14,
           "accuracy": 15.0,
+          "qualified": false
+        },
+        {
+          "player": "a",
+          "matches": 3,
+          "kills": 3,
+          "deaths": 21,
+          "dealt": 1584,
+          "received": 3108,
+          "pick": 17,
+          "miss": 18,
+          "accuracy": 14.7,
           "qualified": false
         },
         {
@@ -2308,6 +2308,18 @@
           "qualified": true
         },
         {
+          "player": ">purri",
+          "matches": 2,
+          "kills": 13,
+          "deaths": 3,
+          "dealt": 1998,
+          "received": 1242,
+          "pick": 12,
+          "miss": 13,
+          "accuracy": 13.5,
+          "qualified": false
+        },
+        {
           "player": "jabb@",
           "matches": 27,
           "kills": 104,
@@ -2400,18 +2412,6 @@
           "received": 1056,
           "pick": 9,
           "miss": 44,
-          "accuracy": 13.0,
-          "qualified": false
-        },
-        {
-          "player": ">purri",
-          "matches": 1,
-          "kills": 7,
-          "deaths": 2,
-          "dealt": 936,
-          "received": 684,
-          "pick": 2,
-          "miss": 7,
           "accuracy": 13.0,
           "qualified": false
         },
