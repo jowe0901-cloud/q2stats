@@ -88,6 +88,14 @@
     "winrate": 100.0
   },
   {
+    "player": "ptr",
+    "elo": 1541,
+    "matches": 3,
+    "wins": 3,
+    "losses": 0,
+    "winrate": 100.0
+  },
+  {
     "player": ">daPurrI",
     "elo": 1533,
     "matches": 3,
@@ -130,14 +138,6 @@
   {
     "player": "ping80",
     "elo": 1529,
-    "matches": 2,
-    "wins": 2,
-    "losses": 0,
-    "winrate": 100.0
-  },
-  {
-    "player": "ptr",
-    "elo": 1526,
     "matches": 2,
     "wins": 2,
     "losses": 0,
@@ -254,6 +254,14 @@
     "wins": 1,
     "losses": 2,
     "winrate": 33.3
+  },
+  {
+    "player": "warrior",
+    "elo": 1485,
+    "matches": 1,
+    "wins": 0,
+    "losses": 1,
+    "winrate": 0.0
   },
   {
     "player": "fon",
