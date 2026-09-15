@@ -232,18 +232,6 @@
           "qualified": true
         },
         {
-          "player": "myrmidon^",
-          "matches": 22,
-          "kills": 207,
-          "deaths": 133,
-          "dealt": 33800,
-          "received": 21800,
-          "pick": 60,
-          "miss": 205,
-          "accuracy": 37.7,
-          "qualified": true
-        },
-        {
           "player": "roon",
           "matches": 12,
           "kills": 129,
@@ -265,6 +253,18 @@
           "pick": 26,
           "miss": 73,
           "accuracy": 37.0,
+          "qualified": true
+        },
+        {
+          "player": "myrmidon^",
+          "matches": 23,
+          "kills": 208,
+          "deaths": 133,
+          "dealt": 34000,
+          "received": 21800,
+          "pick": 61,
+          "miss": 205,
+          "accuracy": 36.7,
           "qualified": true
         },
         {
@@ -461,13 +461,13 @@
         },
         {
           "player": "r",
-          "matches": 18,
+          "matches": 19,
           "kills": 57,
-          "deaths": 119,
+          "deaths": 120,
           "dealt": 9400,
-          "received": 17800,
+          "received": 18000,
           "pick": 38,
-          "miss": 180,
+          "miss": 181,
           "accuracy": 31.6,
           "qualified": true
         },
@@ -1198,18 +1198,6 @@
           "qualified": true
         },
         {
-          "player": "myrmidon^",
-          "matches": 22,
-          "kills": 59,
-          "deaths": 76,
-          "dealt": 12176,
-          "received": 14416,
-          "pick": 62,
-          "miss": 421,
-          "accuracy": 25.1,
-          "qualified": true
-        },
-        {
           "player": "odi",
           "matches": 3,
           "kills": 7,
@@ -1220,6 +1208,18 @@
           "miss": 58,
           "accuracy": 25.0,
           "qualified": false
+        },
+        {
+          "player": "myrmidon^",
+          "matches": 23,
+          "kills": 64,
+          "deaths": 77,
+          "dealt": 13381,
+          "received": 15348,
+          "pick": 65,
+          "miss": 427,
+          "accuracy": 24.7,
+          "qualified": true
         },
         {
           "player": ">purri",
@@ -1450,18 +1450,6 @@
           "qualified": true
         },
         {
-          "player": "r",
-          "matches": 18,
-          "kills": 71,
-          "deaths": 96,
-          "dealt": 13718,
-          "received": 20077,
-          "pick": 86,
-          "miss": 288,
-          "accuracy": 20.9,
-          "qualified": true
-        },
-        {
           "player": "bobo",
           "matches": 3,
           "kills": 12,
@@ -1484,6 +1472,18 @@
           "miss": 47,
           "accuracy": 20.6,
           "qualified": false
+        },
+        {
+          "player": "r",
+          "matches": 19,
+          "kills": 72,
+          "deaths": 101,
+          "dealt": 14566,
+          "received": 21517,
+          "pick": 92,
+          "miss": 291,
+          "accuracy": 20.4,
+          "qualified": true
         },
         {
           "player": "CoLD",
@@ -2261,14 +2261,14 @@
         },
         {
           "player": "myrmidon^",
-          "matches": 22,
-          "kills": 52,
+          "matches": 23,
+          "kills": 57,
           "deaths": 43,
-          "dealt": 8094,
-          "received": 8154,
-          "pick": 38,
-          "miss": 253,
-          "accuracy": 14.6,
+          "dealt": 8880,
+          "received": 8724,
+          "pick": 41,
+          "miss": 260,
+          "accuracy": 14.5,
           "qualified": true
         },
         {
@@ -2752,18 +2752,6 @@
           "qualified": true
         },
         {
-          "player": "r",
-          "matches": 18,
-          "kills": 39,
-          "deaths": 78,
-          "dealt": 8214,
-          "received": 10326,
-          "pick": 75,
-          "miss": 170,
-          "accuracy": 11.2,
-          "qualified": true
-        },
-        {
           "player": "aid",
           "matches": 4,
           "kills": 6,
@@ -2774,6 +2762,18 @@
           "miss": 45,
           "accuracy": 11.2,
           "qualified": false
+        },
+        {
+          "player": "r",
+          "matches": 19,
+          "kills": 39,
+          "deaths": 83,
+          "dealt": 8784,
+          "received": 11112,
+          "pick": 82,
+          "miss": 173,
+          "accuracy": 11.1,
+          "qualified": true
         },
         {
           "player": "Pacifist_(AVB)",
