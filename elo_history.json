@@ -13995,5 +13995,71 @@
       }
     ],
     "saved_at": "2026-09-15T23:10:04+02:00"
+  },
+  {
+    "match_id": "a6c7f050aa66218c",
+    "game_type": "team",
+    "winner": "Home",
+    "home_score": 83,
+    "away_score": 53,
+    "players": [
+      {
+        "player": "Br00m^^",
+        "team": "Home",
+        "old_elo": 1515,
+        "change": 12.6,
+        "new_elo": 1527
+      },
+      {
+        "player": "qw",
+        "team": "Home",
+        "old_elo": 1729,
+        "change": 16,
+        "new_elo": 1745
+      },
+      {
+        "player": "[sYnth]Scooby",
+        "team": "Home",
+        "old_elo": 1545,
+        "change": 16,
+        "new_elo": 1561
+      },
+      {
+        "player": "senz",
+        "team": "Home",
+        "old_elo": 1468,
+        "change": 5.9,
+        "new_elo": 1474
+      },
+      {
+        "player": "badman",
+        "team": "Away",
+        "old_elo": 1618,
+        "change": -16,
+        "new_elo": 1602
+      },
+      {
+        "player": "m",
+        "team": "Away",
+        "old_elo": 1488,
+        "change": -12.7,
+        "new_elo": 1475
+      },
+      {
+        "player": "Maniek",
+        "team": "Away",
+        "old_elo": 1431,
+        "change": -16,
+        "new_elo": 1415
+      },
+      {
+        "player": "fon",
+        "team": "Away",
+        "old_elo": 1531,
+        "change": -3.6,
+        "new_elo": 1527
+      }
+    ],
+    "saved_at": "2026-09-15T23:22:12+02:00"
   }
 ]
