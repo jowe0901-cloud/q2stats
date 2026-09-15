@@ -88,6 +88,14 @@
     "winrate": 100.0
   },
   {
+    "player": "tron",
+    "elo": 1543,
+    "matches": 5,
+    "wins": 4,
+    "losses": 1,
+    "winrate": 80.0
+  },
+  {
     "player": "ptr",
     "elo": 1541,
     "matches": 3,
@@ -102,14 +110,6 @@
     "wins": 3,
     "losses": 0,
     "winrate": 100.0
-  },
-  {
-    "player": "tron",
-    "elo": 1531,
-    "matches": 4,
-    "wins": 3,
-    "losses": 1,
-    "winrate": 75.0
   },
   {
     "player": "lameroxonix",
@@ -384,20 +384,20 @@
     "winrate": 0.0
   },
   {
-    "player": "Maniek",
-    "elo": 1437,
-    "matches": 13,
-    "wins": 4,
-    "losses": 9,
-    "winrate": 30.8
-  },
-  {
     "player": "Puma!",
     "elo": 1427,
     "matches": 8,
     "wins": 1,
     "losses": 7,
     "winrate": 12.5
+  },
+  {
+    "player": "Maniek",
+    "elo": 1425,
+    "matches": 14,
+    "wins": 4,
+    "losses": 10,
+    "winrate": 28.6
   },
   {
     "player": "jabb@",
