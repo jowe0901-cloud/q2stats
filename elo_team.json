@@ -1,11 +1,11 @@
 [
   {
     "player": "qw",
-    "elo": 1782,
-    "matches": 76,
+    "elo": 1771,
+    "matches": 77,
     "wins": 41,
-    "losses": 35,
-    "winrate": 53.9
+    "losses": 36,
+    "winrate": 53.2
   },
   {
     "player": "maq",
@@ -33,11 +33,11 @@
   },
   {
     "player": "myrmidon^",
-    "elo": 1657,
-    "matches": 27,
-    "wins": 16,
+    "elo": 1673,
+    "matches": 28,
+    "wins": 17,
     "losses": 11,
-    "winrate": 59.3
+    "winrate": 60.7
   },
   {
     "player": "Keizer",
@@ -144,6 +144,14 @@
     "winrate": 100.0
   },
   {
+    "player": "fon",
+    "elo": 1562,
+    "matches": 28,
+    "wins": 16,
+    "losses": 12,
+    "winrate": 57.1
+  },
+  {
     "player": "ping80",
     "elo": 1560,
     "matches": 10,
@@ -152,36 +160,12 @@
     "winrate": 70.0
   },
   {
-    "player": "fon",
-    "elo": 1546,
-    "matches": 27,
-    "wins": 15,
-    "losses": 12,
-    "winrate": 55.6
-  },
-  {
-    "player": "r",
-    "elo": 1542,
-    "matches": 28,
-    "wins": 19,
-    "losses": 9,
-    "winrate": 67.9
-  },
-  {
     "player": "Player-345",
     "elo": 1541,
     "matches": 17,
     "wins": 9,
     "losses": 8,
     "winrate": 52.9
-  },
-  {
-    "player": "[sYnth]Scooby",
-    "elo": 1541,
-    "matches": 20,
-    "wins": 9,
-    "losses": 11,
-    "winrate": 45.0
   },
   {
     "player": "OPTIMIZER",
@@ -230,6 +214,22 @@
     "wins": 2,
     "losses": 0,
     "winrate": 100.0
+  },
+  {
+    "player": "r",
+    "elo": 1526,
+    "matches": 29,
+    "wins": 19,
+    "losses": 10,
+    "winrate": 65.5
+  },
+  {
+    "player": "[sYnth]Scooby",
+    "elo": 1525,
+    "matches": 21,
+    "wins": 9,
+    "losses": 12,
+    "winrate": 42.9
   },
   {
     "player": "rul",
@@ -472,6 +472,14 @@
     "winrate": 42.9
   },
   {
+    "player": "m",
+    "elo": 1486,
+    "matches": 21,
+    "wins": 9,
+    "losses": 12,
+    "winrate": 42.9
+  },
+  {
     "player": "tron",
     "elo": 1485,
     "matches": 17,
@@ -589,14 +597,6 @@
     "matches": 10,
     "wins": 4,
     "losses": 6,
-    "winrate": 40.0
-  },
-  {
-    "player": "m",
-    "elo": 1472,
-    "matches": 20,
-    "wins": 8,
-    "losses": 12,
     "winrate": 40.0
   },
   {
