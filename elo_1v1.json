@@ -16,6 +16,14 @@
     "winrate": 100.0
   },
   {
+    "player": "Keizer",
+    "elo": 1584,
+    "matches": 6,
+    "wins": 6,
+    "losses": 0,
+    "winrate": 100.0
+  },
+  {
     "player": "insomnia",
     "elo": 1581,
     "matches": 7,
@@ -40,6 +48,22 @@
     "winrate": 100.0
   },
   {
+    "player": "shad",
+    "elo": 1562,
+    "matches": 5,
+    "wins": 5,
+    "losses": 0,
+    "winrate": 100.0
+  },
+  {
+    "player": "B100D",
+    "elo": 1559,
+    "matches": 11,
+    "wins": 8,
+    "losses": 3,
+    "winrate": 72.7
+  },
+  {
     "player": "piu-sleepy",
     "elo": 1556,
     "matches": 7,
@@ -56,32 +80,8 @@
     "winrate": 100.0
   },
   {
-    "player": "B100D",
-    "elo": 1546,
-    "matches": 10,
-    "wins": 7,
-    "losses": 3,
-    "winrate": 70.0
-  },
-  {
     "player": "Logic",
     "elo": 1544,
-    "matches": 3,
-    "wins": 3,
-    "losses": 0,
-    "winrate": 100.0
-  },
-  {
-    "player": "GipSy",
-    "elo": 1543,
-    "matches": 10,
-    "wins": 7,
-    "losses": 3,
-    "winrate": 70.0
-  },
-  {
-    "player": "Keizer",
-    "elo": 1542,
     "matches": 3,
     "wins": 3,
     "losses": 0,
@@ -128,6 +128,22 @@
     "winrate": 100.0
   },
   {
+    "player": "ping80",
+    "elo": 1529,
+    "matches": 2,
+    "wins": 2,
+    "losses": 0,
+    "winrate": 100.0
+  },
+  {
+    "player": "ptr",
+    "elo": 1526,
+    "matches": 2,
+    "wins": 2,
+    "losses": 0,
+    "winrate": 100.0
+  },
+  {
     "player": "David",
     "elo": 1525,
     "matches": 2,
@@ -152,14 +168,6 @@
     "winrate": 44.4
   },
   {
-    "player": "ptr",
-    "elo": 1516,
-    "matches": 1,
-    "wins": 1,
-    "losses": 0,
-    "winrate": 100.0
-  },
-  {
     "player": "fonbeers",
     "elo": 1516,
     "matches": 1,
@@ -168,12 +176,20 @@
     "winrate": 100.0
   },
   {
-    "player": "ping80",
-    "elo": 1514,
+    "player": "n0sferatu",
+    "elo": 1516,
     "matches": 1,
     "wins": 1,
     "losses": 0,
     "winrate": 100.0
+  },
+  {
+    "player": "GipSy",
+    "elo": 1513,
+    "matches": 12,
+    "wins": 7,
+    "losses": 5,
+    "winrate": 58.3
   },
   {
     "player": "GUSIUS",
@@ -186,6 +202,14 @@
   {
     "player": "cne",
     "elo": 1500,
+    "matches": 2,
+    "wins": 1,
+    "losses": 1,
+    "winrate": 50.0
+  },
+  {
+    "player": "need1",
+    "elo": 1498,
     "matches": 2,
     "wins": 1,
     "losses": 1,
@@ -240,7 +264,7 @@
     "winrate": 0.0
   },
   {
-    "player": "need1",
+    "player": "[ds]ads",
     "elo": 1484,
     "matches": 1,
     "wins": 0,
@@ -248,8 +272,16 @@
     "winrate": 0.0
   },
   {
-    "player": "[ds]ads",
+    "player": "Lavrov",
     "elo": 1484,
+    "matches": 1,
+    "wins": 0,
+    "losses": 1,
+    "winrate": 0.0
+  },
+  {
+    "player": "zaLTys",
+    "elo": 1482,
     "matches": 1,
     "wins": 0,
     "losses": 1,
@@ -272,20 +304,20 @@
     "winrate": 0.0
   },
   {
-    "player": "a",
-    "elo": 1474,
+    "player": "Pacifist_(AVB)",
+    "elo": 1476,
     "matches": 4,
     "wins": 1,
     "losses": 3,
     "winrate": 25.0
   },
   {
-    "player": "Pacifist_(AVB)",
-    "elo": 1471,
-    "matches": 2,
-    "wins": 0,
-    "losses": 2,
-    "winrate": 0.0
+    "player": "a",
+    "elo": 1474,
+    "matches": 4,
+    "wins": 1,
+    "losses": 3,
+    "winrate": 25.0
   },
   {
     "player": "pipi",
@@ -296,24 +328,16 @@
     "winrate": 0.0
   },
   {
+    "player": "qw",
+    "elo": 1468,
+    "matches": 2,
+    "wins": 0,
+    "losses": 2,
+    "winrate": 0.0
+  },
+  {
     "player": "FRZ",
     "elo": 1456,
-    "matches": 3,
-    "wins": 0,
-    "losses": 3,
-    "winrate": 0.0
-  },
-  {
-    "player": "Grrga",
-    "elo": 1455,
-    "matches": 3,
-    "wins": 0,
-    "losses": 3,
-    "winrate": 0.0
-  },
-  {
-    "player": "v4cio",
-    "elo": 1455,
     "matches": 3,
     "wins": 0,
     "losses": 3,
@@ -336,20 +360,20 @@
     "winrate": 0.0
   },
   {
+    "player": "Grrga",
+    "elo": 1443,
+    "matches": 4,
+    "wins": 0,
+    "losses": 4,
+    "winrate": 0.0
+  },
+  {
     "player": "Maniek",
     "elo": 1437,
     "matches": 13,
     "wins": 4,
     "losses": 9,
     "winrate": 30.8
-  },
-  {
-    "player": "jabb@",
-    "elo": 1433,
-    "matches": 7,
-    "wins": 1,
-    "losses": 6,
-    "winrate": 14.3
   },
   {
     "player": "gart",
@@ -368,6 +392,22 @@
     "winrate": 12.5
   },
   {
+    "player": "jabb@",
+    "elo": 1419,
+    "matches": 8,
+    "wins": 1,
+    "losses": 7,
+    "winrate": 12.5
+  },
+  {
+    "player": "v4cio",
+    "elo": 1411,
+    "matches": 9,
+    "wins": 1,
+    "losses": 8,
+    "winrate": 11.1
+  },
+  {
     "player": "error",
     "elo": 1395,
     "matches": 9,
@@ -377,10 +417,10 @@
   },
   {
     "player": "Player-345",
-    "elo": 1376,
-    "matches": 10,
+    "elo": 1366,
+    "matches": 11,
     "wins": 0,
-    "losses": 10,
+    "losses": 11,
     "winrate": 0.0
   }
 ]
