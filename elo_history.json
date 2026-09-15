@@ -14408,5 +14408,57 @@
       }
     ],
     "saved_at": "2026-09-16T00:37:47+02:00"
+  },
+  {
+    "match_id": "e9a73f1bf700201e",
+    "game_type": "team",
+    "winner": "Home",
+    "home_score": 53,
+    "away_score": 47,
+    "players": [
+      {
+        "player": "r",
+        "team": "Home",
+        "old_elo": 1526,
+        "change": 11.0,
+        "new_elo": 1537
+      },
+      {
+        "player": "qw",
+        "team": "Home",
+        "old_elo": 1771,
+        "change": 13.8,
+        "new_elo": 1785
+      },
+      {
+        "player": "[sYnth]Scooby",
+        "team": "Home",
+        "old_elo": 1525,
+        "change": 4.4,
+        "new_elo": 1530
+      },
+      {
+        "player": "Player-345",
+        "team": "Away",
+        "old_elo": 1541,
+        "change": -16,
+        "new_elo": 1525
+      },
+      {
+        "player": "m",
+        "team": "Away",
+        "old_elo": 1486,
+        "change": 7,
+        "new_elo": 1493
+      },
+      {
+        "player": "myrmidon^",
+        "team": "Away",
+        "old_elo": 1673,
+        "change": -13.7,
+        "new_elo": 1659
+      }
+    ],
+    "saved_at": "2026-09-16T00:50:21+02:00"
   }
 ]
