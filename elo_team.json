@@ -1,19 +1,19 @@
 [
   {
-    "player": "qw",
-    "elo": 1751,
-    "matches": 68,
-    "wins": 37,
-    "losses": 31,
-    "winrate": 54.4
-  },
-  {
     "player": "maq",
     "elo": 1749,
     "matches": 22,
     "wins": 19,
     "losses": 3,
     "winrate": 86.4
+  },
+  {
+    "player": "qw",
+    "elo": 1739,
+    "matches": 69,
+    "wins": 37,
+    "losses": 32,
+    "winrate": 53.6
   },
   {
     "player": "[sf]fasadin",
@@ -24,20 +24,20 @@
     "winrate": 70.0
   },
   {
+    "player": "cne",
+    "elo": 1674,
+    "matches": 39,
+    "wins": 23,
+    "losses": 16,
+    "winrate": 59.0
+  },
+  {
     "player": "myrmidon^",
     "elo": 1666,
     "matches": 26,
     "wins": 16,
     "losses": 10,
     "winrate": 61.5
-  },
-  {
-    "player": "cne",
-    "elo": 1658,
-    "matches": 38,
-    "wins": 22,
-    "losses": 16,
-    "winrate": 57.9
   },
   {
     "player": "Keizer",
@@ -73,11 +73,11 @@
   },
   {
     "player": "badman",
-    "elo": 1596,
-    "matches": 33,
-    "wins": 17,
+    "elo": 1602,
+    "matches": 34,
+    "wins": 18,
     "losses": 16,
-    "winrate": 51.5
+    "winrate": 52.9
   },
   {
     "player": "n0sferatu",
@@ -184,14 +184,6 @@
     "winrate": 100.0
   },
   {
-    "player": "Br00m^^",
-    "elo": 1536,
-    "matches": 30,
-    "wins": 14,
-    "losses": 16,
-    "winrate": 46.7
-  },
-  {
     "player": "=PFH=ZYGA",
     "elo": 1536,
     "matches": 3,
@@ -216,12 +208,28 @@
     "winrate": 75.0
   },
   {
+    "player": "Br00m^^",
+    "elo": 1531,
+    "matches": 31,
+    "wins": 14,
+    "losses": 17,
+    "winrate": 45.2
+  },
+  {
     "player": "lameroxonix",
     "elo": 1530,
     "matches": 2,
     "wins": 2,
     "losses": 0,
     "winrate": 100.0
+  },
+  {
+    "player": "fon",
+    "elo": 1525,
+    "matches": 20,
+    "wins": 12,
+    "losses": 8,
+    "winrate": 60.0
   },
   {
     "player": "rul",
@@ -294,14 +302,6 @@
     "wins": 2,
     "losses": 1,
     "winrate": 66.7
-  },
-  {
-    "player": "fon",
-    "elo": 1509,
-    "matches": 19,
-    "wins": 11,
-    "losses": 8,
-    "winrate": 57.9
   },
   {
     "player": "fonbeers",
@@ -512,6 +512,14 @@
     "winrate": 50.0
   },
   {
+    "player": "m",
+    "elo": 1477,
+    "matches": 16,
+    "wins": 6,
+    "losses": 10,
+    "winrate": 37.5
+  },
+  {
     "player": "Dark Abyys",
     "elo": 1476,
     "matches": 5,
@@ -616,14 +624,6 @@
     "winrate": 0.0
   },
   {
-    "player": "m",
-    "elo": 1463,
-    "matches": 15,
-    "wins": 5,
-    "losses": 10,
-    "winrate": 33.3
-  },
-  {
     "player": "TIM",
     "elo": 1460,
     "matches": 8,
@@ -672,14 +672,6 @@
     "winrate": 20.0
   },
   {
-    "player": "Qiub",
-    "elo": 1446,
-    "matches": 4,
-    "wins": 0,
-    "losses": 4,
-    "winrate": 0.0
-  },
-  {
     "player": "xRSNx",
     "elo": 1445,
     "matches": 6,
@@ -720,12 +712,12 @@
     "winrate": 45.7
   },
   {
-    "player": "[HC]Reni^",
-    "elo": 1385,
-    "matches": 32,
-    "wins": 16,
-    "losses": 16,
-    "winrate": 50.0
+    "player": "Qiub",
+    "elo": 1430,
+    "matches": 5,
+    "wins": 0,
+    "losses": 5,
+    "winrate": 0.0
   },
   {
     "player": "sevvq",
@@ -750,6 +742,14 @@
     "wins": 11,
     "losses": 18,
     "winrate": 37.9
+  },
+  {
+    "player": "[HC]Reni^",
+    "elo": 1369,
+    "matches": 33,
+    "wins": 16,
+    "losses": 17,
+    "winrate": 48.5
   },
   {
     "player": "LiOn]tRk[",
