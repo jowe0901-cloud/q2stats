@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Q2Stats Beta</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand"><span>Q2</span>STATS <small>BETA</small></div>
+  <nav>
+    <a class="active" href="index.html">Overview</a>
+    <a href="#team-elo">Team Elo</a>
+    <a href="#one-elo">1v1 Elo</a>
+    <a href="#weapons">Weapons</a>
+    <a href="#matches">Matches</a>
+  </nav>
+</header>
+
+<main class="wrap">
+  <section class="hero">
+    <div>
+      <div class="eyebrow">QUAKE II · OPENTDM</div>
+      <h1>Competitive player statistics</h1>
+      <p>Live beta built from your collected match data.</p>
+    </div>
+    <div class="status"><span class="dot"></span><span id="dataStatus">Loading data…</span></div>
+  </section>
+
+  <section class="summary-grid">
+    <article class="metric"><span>Matches</span><strong id="totalMatches">—</strong></article>
+    <article class="metric"><span>Players</span><strong id="totalPlayers">—</strong></article>
+    <article class="metric"><span>Latest match</span><strong id="latestMatch">—</strong></article>
+    <article class="metric"><span>Top Team Elo</span><strong id="topTeam">—</strong></article>
+  </section>
+
+  <section class="two-col">
+    <article class="panel" id="team-elo">
+      <div class="panel-head">
+        <div><span class="eyebrow">RANKING</span><h2>Team Elo</h2></div>
+        <a class="pill pill-link" href="rankings.html?type=team">View all →</a>
+      </div>
+      <div class="table-wrap"><table>
+        <thead><tr><th>#</th><th>Player</th><th>Elo</th><th>Matches</th><th>W%</th></tr></thead>
+        <tbody id="teamEloBody"></tbody>
+      </table></div>
+    </article>
+
+    <article class="panel" id="one-elo">
+      <div class="panel-head">
+        <div><span class="eyebrow">DUEL</span><h2>1v1 Elo</h2></div>
+        <a class="pill pill-link" href="rankings.html?type=1v1">View all →</a>
+      </div>
+      <div class="table-wrap"><table>
+        <thead><tr><th>#</th><th>Player</th><th>Elo</th><th>Matches</th><th>W%</th></tr></thead>
+        <tbody id="oneEloBody"></tbody>
+      </table></div>
+    </article>
+  </section>
+
+  <section class="panel" id="weapons">
+    <div class="panel-head">
+      <div><span class="eyebrow">LEADERBOARDS</span><h2>Weapon Stats</h2></div>
+      <span class="pill">Min 3 matches · 20 kills</span>
+    </div>
+    <div class="weapon-grid">
+      <div class="weapon-card"><h3>Railgun</h3><div id="Railgun"></div></div>
+      <div class="weapon-card"><h3>Rocket Launcher</h3><div id="Rocket Launcher"></div></div>
+      <div class="weapon-card"><h3>Chaingun</h3><div id="Chaingun"></div></div>
+    </div>
+  </section>
+
+  <section class="panel" id="matches">
+    <div class="panel-head">
+      <div><span class="eyebrow">RECENT</span><h2>Match History</h2></div>
+      <a class="pill pill-link" href="matches.html">View all matches →</a>
+    </div>
+    <div id="matchList" class="match-list"></div>
+  </section>
+</main>
+
+<footer>Q2Stats Beta · Matches and player rankings are browsable</footer>
+<script src="app.js?v=7"></script>
+</body>
+</html>

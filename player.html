@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Player · Q2Stats Beta</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand no-underline" href="index.html"><span>Q2</span>STATS <small>BETA</small></a>
+  <nav><a href="index.html">Overview</a><a class="active" href="#">Player</a></nav>
+</header>
+
+<main class="wrap">
+  <section class="player-hero">
+    <div>
+      <a class="back" href="index.html">← Back to rankings</a>
+      <div class="eyebrow">PLAYER PROFILE</div>
+      <h1 id="playerName">Player</h1>
+      <p id="playerSub">Loading statistics…</p>
+    </div>
+    <div class="elo-badge"><span>TEAM ELO</span><strong id="heroElo">—</strong></div>
+  </section>
+
+  <section class="summary-grid player-metrics">
+    <article class="metric"><span>Team Elo</span><strong id="pTeamElo">—</strong></article>
+    <article class="metric"><span>1v1 Elo</span><strong id="p1v1Elo">—</strong></article>
+    <article class="metric"><span>Matches</span><strong id="pMatches">—</strong></article>
+    <article class="metric"><span>Winrate</span><strong id="pWinrate">—</strong></article>
+    <article class="metric"><span>K/D</span><strong id="pKD">—</strong></article>
+    <article class="metric accent"><span>Avg Damage</span><strong id="pAvgDamage">—</strong></article>
+  </section>
+
+  <section class="two-col">
+    <article class="panel">
+      <div class="panel-head"><div><span class="eyebrow">TREND</span><h2>Elo history</h2><p class="chart-note">Starts at 1500 Elo · oldest → latest</p></div><div class="elo-history-tabs"><button class="active" data-elo-history="team">Team Elo</button><button data-elo-history="1v1">1v1 Elo</button></div></div>
+      <canvas id="eloChart" width="760" height="320"></canvas>
+    </article>
+    <article class="panel">
+      <div class="panel-head"><div><span class="eyebrow">TREND</span><h2>Weapon accuracy</h2><p class="chart-note">RG · RL · CG shown by default — select more weapons below</p></div></div>
+      <div class="legend" id="weaponLegend"></div>
+      <canvas id="accuracyChart" width="760" height="320"></canvas>
+    </article>
+  </section>
+
+  <section class="two-col">
+    <article class="panel">
+      <div class="panel-head"><div><span class="eyebrow">CAREER</span><h2>Combat stats</h2></div></div>
+      <div class="stat-list" id="combatStats"></div>
+    </article>
+    <article class="panel">
+      <div class="panel-head"><div><span class="eyebrow">ARSENAL</span><h2>Weapon summary</h2></div></div>
+      <div class="table-wrap"><table>
+        <thead><tr><th>Weapon</th><th>Avg Acc</th><th>Kills</th><th>Matches</th></tr></thead>
+        <tbody id="weaponBody"></tbody>
+      </table></div>
+    </article>
+  </section>
+
+  <section class="panel">
+    <div class="panel-head"><div><span class="eyebrow">RECENT</span><h2>Recent matches</h2></div></div>
+    <div id="playerMatches" class="match-list"></div>
+  </section>
+</main>
+
+<footer>Q2Stats Beta</footer>
+<script src="app.js?v=7"></script>
+</body>
+</html>
