@@ -209,26 +209,14 @@
         },
         {
           "player": "[sYnth]Scooby",
-          "matches": 10,
-          "kills": 48,
-          "deaths": 77,
-          "dealt": 6900,
-          "received": 11700,
-          "pick": 15,
-          "miss": 140,
-          "accuracy": 38.1,
-          "qualified": true
-        },
-        {
-          "player": "myrmidon^",
-          "matches": 21,
-          "kills": 205,
-          "deaths": 125,
-          "dealt": 33000,
-          "received": 20600,
-          "pick": 55,
-          "miss": 196,
-          "accuracy": 37.9,
+          "matches": 11,
+          "kills": 58,
+          "deaths": 78,
+          "dealt": 8600,
+          "received": 12200,
+          "pick": 17,
+          "miss": 152,
+          "accuracy": 38.2,
           "qualified": true
         },
         {
@@ -241,6 +229,18 @@
           "pick": 124,
           "miss": 280,
           "accuracy": 37.8,
+          "qualified": true
+        },
+        {
+          "player": "myrmidon^",
+          "matches": 22,
+          "kills": 207,
+          "deaths": 133,
+          "dealt": 33800,
+          "received": 21800,
+          "pick": 60,
+          "miss": 205,
+          "accuracy": 37.7,
           "qualified": true
         },
         {
@@ -340,18 +340,6 @@
           "qualified": false
         },
         {
-          "player": "qw",
-          "matches": 49,
-          "kills": 335,
-          "deaths": 244,
-          "dealt": 55800,
-          "received": 41200,
-          "pick": 87,
-          "miss": 551,
-          "accuracy": 34.2,
-          "qualified": true
-        },
-        {
           "player": "Dark Abyys",
           "matches": 5,
           "kills": 28,
@@ -361,6 +349,18 @@
           "pick": 8,
           "miss": 51,
           "accuracy": 34.2,
+          "qualified": true
+        },
+        {
+          "player": "qw",
+          "matches": 50,
+          "kills": 345,
+          "deaths": 246,
+          "dealt": 57200,
+          "received": 41800,
+          "pick": 88,
+          "miss": 564,
+          "accuracy": 34.1,
           "qualified": true
         },
         {
@@ -436,18 +436,6 @@
           "qualified": true
         },
         {
-          "player": "r",
-          "matches": 17,
-          "kills": 55,
-          "deaths": 106,
-          "dealt": 9100,
-          "received": 15900,
-          "pick": 34,
-          "miss": 170,
-          "accuracy": 32.5,
-          "qualified": true
-        },
-        {
           "player": "fon",
           "matches": 21,
           "kills": 171,
@@ -469,6 +457,18 @@
           "pick": 15,
           "miss": 70,
           "accuracy": 31.8,
+          "qualified": true
+        },
+        {
+          "player": "r",
+          "matches": 18,
+          "kills": 57,
+          "deaths": 119,
+          "dealt": 9400,
+          "received": 17800,
+          "pick": 38,
+          "miss": 180,
+          "accuracy": 31.6,
           "qualified": true
         },
         {
@@ -1040,15 +1040,15 @@
           "qualified": true
         },
         {
-          "player": "myrmidon^",
-          "matches": 21,
-          "kills": 59,
-          "deaths": 70,
-          "dealt": 11731,
-          "received": 13583,
-          "pick": 55,
-          "miss": 410,
-          "accuracy": 25.8,
+          "player": "[sYnth]Scooby",
+          "matches": 11,
+          "kills": 47,
+          "deaths": 48,
+          "dealt": 8217,
+          "received": 8969,
+          "pick": 32,
+          "miss": 209,
+          "accuracy": 26.4,
           "qualified": true
         }
       ],
@@ -1150,6 +1150,18 @@
           "qualified": true
         },
         {
+          "player": "[sYnth]Scooby",
+          "matches": 11,
+          "kills": 47,
+          "deaths": 48,
+          "dealt": 8217,
+          "received": 8969,
+          "pick": 32,
+          "miss": 209,
+          "accuracy": 26.4,
+          "qualified": true
+        },
+        {
           "player": "shNoodle",
           "matches": 4,
           "kills": 13,
@@ -1160,30 +1172,6 @@
           "miss": 80,
           "accuracy": 26.2,
           "qualified": false
-        },
-        {
-          "player": "myrmidon^",
-          "matches": 21,
-          "kills": 59,
-          "deaths": 70,
-          "dealt": 11731,
-          "received": 13583,
-          "pick": 55,
-          "miss": 410,
-          "accuracy": 25.8,
-          "qualified": true
-        },
-        {
-          "player": "[sYnth]Scooby",
-          "matches": 10,
-          "kills": 39,
-          "deaths": 48,
-          "dealt": 7185,
-          "received": 8595,
-          "pick": 31,
-          "miss": 192,
-          "accuracy": 25.6,
-          "qualified": true
         },
         {
           "player": "sparkq2",
@@ -1207,6 +1195,18 @@
           "pick": 34,
           "miss": 92,
           "accuracy": 25.4,
+          "qualified": true
+        },
+        {
+          "player": "myrmidon^",
+          "matches": 22,
+          "kills": 59,
+          "deaths": 76,
+          "dealt": 12176,
+          "received": 14416,
+          "pick": 62,
+          "miss": 421,
+          "accuracy": 25.1,
           "qualified": true
         },
         {
@@ -1259,13 +1259,13 @@
         },
         {
           "player": "qw",
-          "matches": 49,
-          "kills": 103,
-          "deaths": 142,
-          "dealt": 20919,
-          "received": 29201,
-          "pick": 100,
-          "miss": 948,
+          "matches": 50,
+          "kills": 107,
+          "deaths": 145,
+          "dealt": 21756,
+          "received": 29872,
+          "pick": 102,
+          "miss": 964,
           "accuracy": 23.4,
           "qualified": true
         },
@@ -1414,18 +1414,6 @@
           "qualified": false
         },
         {
-          "player": "r",
-          "matches": 17,
-          "kills": 67,
-          "deaths": 89,
-          "dealt": 13221,
-          "received": 18969,
-          "pick": 80,
-          "miss": 276,
-          "accuracy": 21.3,
-          "qualified": true
-        },
-        {
           "player": "piu-sleepy",
           "matches": 5,
           "kills": 27,
@@ -1459,6 +1447,18 @@
           "pick": 77,
           "miss": 47,
           "accuracy": 21.0,
+          "qualified": true
+        },
+        {
+          "player": "r",
+          "matches": 18,
+          "kills": 71,
+          "deaths": 96,
+          "dealt": 13718,
+          "received": 20077,
+          "pick": 86,
+          "miss": 288,
+          "accuracy": 20.9,
           "qualified": true
         },
         {
@@ -1983,14 +1983,14 @@
         },
         {
           "player": "[sYnth]Scooby",
-          "matches": 10,
-          "kills": 33,
-          "deaths": 20,
-          "dealt": 5058,
-          "received": 3426,
-          "pick": 28,
-          "miss": 116,
-          "accuracy": 16.5,
+          "matches": 11,
+          "kills": 42,
+          "deaths": 21,
+          "dealt": 5922,
+          "received": 3792,
+          "pick": 30,
+          "miss": 129,
+          "accuracy": 16.4,
           "qualified": true
         },
         {
@@ -2129,14 +2129,14 @@
         },
         {
           "player": "[sYnth]Scooby",
-          "matches": 10,
-          "kills": 33,
-          "deaths": 20,
-          "dealt": 5058,
-          "received": 3426,
-          "pick": 28,
-          "miss": 116,
-          "accuracy": 16.5,
+          "matches": 11,
+          "kills": 42,
+          "deaths": 21,
+          "dealt": 5922,
+          "received": 3792,
+          "pick": 30,
+          "miss": 129,
+          "accuracy": 16.4,
           "qualified": true
         },
         {
@@ -2248,18 +2248,6 @@
           "qualified": false
         },
         {
-          "player": "myrmidon^",
-          "matches": 21,
-          "kills": 52,
-          "deaths": 39,
-          "dealt": 7872,
-          "received": 7746,
-          "pick": 36,
-          "miss": 240,
-          "accuracy": 14.9,
-          "qualified": true
-        },
-        {
           "player": "badman",
           "matches": 22,
           "kills": 62,
@@ -2269,6 +2257,18 @@
           "pick": 47,
           "miss": 274,
           "accuracy": 14.7,
+          "qualified": true
+        },
+        {
+          "player": "myrmidon^",
+          "matches": 22,
+          "kills": 52,
+          "deaths": 43,
+          "dealt": 8094,
+          "received": 8154,
+          "pick": 38,
+          "miss": 253,
+          "accuracy": 14.6,
           "qualified": true
         },
         {
@@ -2608,18 +2608,6 @@
           "qualified": true
         },
         {
-          "player": "qw",
-          "matches": 49,
-          "kills": 100,
-          "deaths": 119,
-          "dealt": 15024,
-          "received": 19956,
-          "pick": 73,
-          "miss": 585,
-          "accuracy": 12.1,
-          "qualified": true
-        },
-        {
           "player": "shad",
           "matches": 7,
           "kills": 24,
@@ -2629,6 +2617,18 @@
           "pick": 37,
           "miss": 65,
           "accuracy": 12.1,
+          "qualified": true
+        },
+        {
+          "player": "qw",
+          "matches": 50,
+          "kills": 102,
+          "deaths": 120,
+          "dealt": 15258,
+          "received": 20268,
+          "pick": 75,
+          "miss": 598,
+          "accuracy": 12.0,
           "qualified": true
         },
         {
@@ -2753,13 +2753,13 @@
         },
         {
           "player": "r",
-          "matches": 17,
-          "kills": 38,
-          "deaths": 72,
-          "dealt": 7758,
-          "received": 9636,
-          "pick": 69,
-          "miss": 161,
+          "matches": 18,
+          "kills": 39,
+          "deaths": 78,
+          "dealt": 8214,
+          "received": 10326,
+          "pick": 75,
+          "miss": 170,
           "accuracy": 11.2,
           "qualified": true
         },
