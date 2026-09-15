@@ -50,18 +50,6 @@
           "qualified": true
         },
         {
-          "player": "rul",
-          "matches": 10,
-          "kills": 94,
-          "deaths": 63,
-          "dealt": 15100,
-          "received": 9900,
-          "pick": 18,
-          "miss": 141,
-          "accuracy": 41.4,
-          "qualified": true
-        },
-        {
           "player": "Maniek",
           "matches": 23,
           "kills": 108,
@@ -70,6 +58,18 @@
           "received": 22800,
           "pick": 105,
           "miss": 200,
+          "accuracy": 40.3,
+          "qualified": true
+        },
+        {
+          "player": "need1",
+          "matches": 7,
+          "kills": 24,
+          "deaths": 25,
+          "dealt": 3400,
+          "received": 4100,
+          "pick": 6,
+          "miss": 97,
           "accuracy": 40.3,
           "qualified": true
         }
@@ -160,18 +160,6 @@
           "qualified": false
         },
         {
-          "player": "rul",
-          "matches": 10,
-          "kills": 94,
-          "deaths": 63,
-          "dealt": 15100,
-          "received": 9900,
-          "pick": 18,
-          "miss": 141,
-          "accuracy": 41.4,
-          "qualified": true
-        },
-        {
           "player": "Iron Maiden",
           "matches": 2,
           "kills": 20,
@@ -205,6 +193,18 @@
           "pick": 6,
           "miss": 97,
           "accuracy": 40.3,
+          "qualified": true
+        },
+        {
+          "player": "rul",
+          "matches": 11,
+          "kills": 94,
+          "deaths": 65,
+          "dealt": 15200,
+          "received": 10200,
+          "pick": 19,
+          "miss": 144,
+          "accuracy": 39.9,
           "qualified": true
         },
         {
@@ -328,18 +328,6 @@
           "qualified": true
         },
         {
-          "player": "qw",
-          "matches": 30,
-          "kills": 214,
-          "deaths": 138,
-          "dealt": 37600,
-          "received": 24100,
-          "pick": 57,
-          "miss": 319,
-          "accuracy": 34.3,
-          "qualified": true
-        },
-        {
           "player": "Larik",
           "matches": 3,
           "kills": 6,
@@ -361,6 +349,18 @@
           "pick": 8,
           "miss": 51,
           "accuracy": 34.2,
+          "qualified": true
+        },
+        {
+          "player": "qw",
+          "matches": 31,
+          "kills": 214,
+          "deaths": 138,
+          "dealt": 37900,
+          "received": 24200,
+          "pick": 57,
+          "miss": 323,
+          "accuracy": 34.1,
           "qualified": true
         },
         {
@@ -809,14 +809,14 @@
         },
         {
           "player": "jabb@",
-          "matches": 24,
-          "kills": 52,
-          "deaths": 185,
-          "dealt": 8200,
-          "received": 27400,
-          "pick": 31,
-          "miss": 232,
-          "accuracy": 22.8,
+          "matches": 25,
+          "kills": 54,
+          "deaths": 186,
+          "dealt": 8400,
+          "received": 27600,
+          "pick": 32,
+          "miss": 235,
+          "accuracy": 22.6,
           "qualified": true
         },
         {
@@ -892,6 +892,18 @@
           "qualified": false
         },
         {
+          "player": "sparkq2",
+          "matches": 1,
+          "kills": 1,
+          "deaths": 0,
+          "dealt": 200,
+          "received": 200,
+          "pick": 2,
+          "miss": 2,
+          "accuracy": 12.0,
+          "qualified": false
+        },
+        {
           "player": "rawhide",
           "matches": 1,
           "kills": 0,
@@ -933,14 +945,14 @@
       "top5": [
         {
           "player": "rul",
-          "matches": 10,
-          "kills": 31,
-          "deaths": 29,
-          "dealt": 5181,
-          "received": 5580,
-          "pick": 17,
-          "miss": 223,
-          "accuracy": 34.0,
+          "matches": 11,
+          "kills": 32,
+          "deaths": 30,
+          "dealt": 5959,
+          "received": 6013,
+          "pick": 20,
+          "miss": 230,
+          "accuracy": 34.1,
           "qualified": true
         },
         {
@@ -1007,14 +1019,14 @@
         },
         {
           "player": "rul",
-          "matches": 10,
-          "kills": 31,
-          "deaths": 29,
-          "dealt": 5181,
-          "received": 5580,
-          "pick": 17,
-          "miss": 223,
-          "accuracy": 34.0,
+          "matches": 11,
+          "kills": 32,
+          "deaths": 30,
+          "dealt": 5959,
+          "received": 6013,
+          "pick": 20,
+          "miss": 230,
+          "accuracy": 34.1,
           "qualified": true
         },
         {
@@ -1050,6 +1062,18 @@
           "received": 473,
           "pick": 6,
           "miss": 17,
+          "accuracy": 29.0,
+          "qualified": false
+        },
+        {
+          "player": "sparkq2",
+          "matches": 1,
+          "kills": 1,
+          "deaths": 4,
+          "dealt": 433,
+          "received": 713,
+          "pick": 2,
+          "miss": 8,
           "accuracy": 29.0,
           "qualified": false
         },
@@ -1247,14 +1271,14 @@
         },
         {
           "player": "qw",
-          "matches": 30,
-          "kills": 59,
-          "deaths": 87,
-          "dealt": 11962,
-          "received": 18279,
-          "pick": 67,
-          "miss": 580,
-          "accuracy": 21.8,
+          "matches": 31,
+          "kills": 62,
+          "deaths": 88,
+          "dealt": 12413,
+          "received": 18939,
+          "pick": 70,
+          "miss": 587,
+          "accuracy": 21.7,
           "qualified": true
         },
         {
@@ -1463,14 +1487,14 @@
         },
         {
           "player": "jabb@",
-          "matches": 24,
-          "kills": 91,
-          "deaths": 128,
-          "dealt": 19066,
-          "received": 25916,
-          "pick": 142,
-          "miss": 382,
-          "accuracy": 18.3,
+          "matches": 25,
+          "kills": 93,
+          "deaths": 129,
+          "dealt": 19729,
+          "received": 26646,
+          "pick": 144,
+          "miss": 390,
+          "accuracy": 18.2,
           "qualified": true
         },
         {
@@ -1863,14 +1887,14 @@
         },
         {
           "player": "rul",
-          "matches": 10,
-          "kills": 27,
-          "deaths": 22,
-          "dealt": 4488,
-          "received": 3288,
-          "pick": 19,
-          "miss": 127,
-          "accuracy": 17.4,
+          "matches": 11,
+          "kills": 28,
+          "deaths": 26,
+          "dealt": 4518,
+          "received": 3714,
+          "pick": 20,
+          "miss": 132,
+          "accuracy": 17.1,
           "qualified": true
         },
         {
@@ -1997,14 +2021,14 @@
         },
         {
           "player": "rul",
-          "matches": 10,
-          "kills": 27,
-          "deaths": 22,
-          "dealt": 4488,
-          "received": 3288,
-          "pick": 19,
-          "miss": 127,
-          "accuracy": 17.4,
+          "matches": 11,
+          "kills": 28,
+          "deaths": 26,
+          "dealt": 4518,
+          "received": 3714,
+          "pick": 20,
+          "miss": 132,
+          "accuracy": 17.1,
           "qualified": true
         },
         {
@@ -2164,18 +2188,6 @@
           "qualified": true
         },
         {
-          "player": "jabb@",
-          "matches": 24,
-          "kills": 98,
-          "deaths": 81,
-          "dealt": 12006,
-          "received": 10638,
-          "pick": 61,
-          "miss": 244,
-          "accuracy": 13.8,
-          "qualified": true
-        },
-        {
           "player": "insomnia",
           "matches": 7,
           "kills": 37,
@@ -2185,6 +2197,18 @@
           "pick": 41,
           "miss": 41,
           "accuracy": 13.7,
+          "qualified": true
+        },
+        {
+          "player": "jabb@",
+          "matches": 25,
+          "kills": 98,
+          "deaths": 82,
+          "dealt": 12162,
+          "received": 10668,
+          "pick": 62,
+          "miss": 249,
+          "accuracy": 13.6,
           "qualified": true
         },
         {
@@ -2489,13 +2513,13 @@
         },
         {
           "player": "qw",
-          "matches": 30,
-          "kills": 66,
+          "matches": 31,
+          "kills": 71,
           "deaths": 85,
-          "dealt": 10398,
-          "received": 13872,
-          "pick": 49,
-          "miss": 365,
+          "dealt": 10974,
+          "received": 14010,
+          "pick": 53,
+          "miss": 367,
           "accuracy": 11.6,
           "qualified": true
         },
@@ -2725,6 +2749,18 @@
           "pick": 53,
           "miss": 36,
           "accuracy": 8.7,
+          "qualified": false
+        },
+        {
+          "player": "sparkq2",
+          "matches": 1,
+          "kills": 0,
+          "deaths": 1,
+          "dealt": 138,
+          "received": 306,
+          "pick": 0,
+          "miss": 6,
+          "accuracy": 8.0,
           "qualified": false
         },
         {
