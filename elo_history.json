@@ -13680,5 +13680,71 @@
       }
     ],
     "saved_at": "2026-09-15T22:26:03+02:00"
+  },
+  {
+    "match_id": "234add40902b650f",
+    "game_type": "team",
+    "winner": "Away",
+    "home_score": 44,
+    "away_score": 67,
+    "players": [
+      {
+        "player": "Br00m^^",
+        "team": "Home",
+        "old_elo": 1531,
+        "change": -10.9,
+        "new_elo": 1520
+      },
+      {
+        "player": "badman",
+        "team": "Home",
+        "old_elo": 1605,
+        "change": 4.9,
+        "new_elo": 1610
+      },
+      {
+        "player": "Qiub",
+        "team": "Home",
+        "old_elo": 1462,
+        "change": -16,
+        "new_elo": 1446
+      },
+      {
+        "player": "[HC]Reni^",
+        "team": "Home",
+        "old_elo": 1407,
+        "change": -16,
+        "new_elo": 1391
+      },
+      {
+        "player": "qw",
+        "team": "Away",
+        "old_elo": 1737,
+        "change": 4.0,
+        "new_elo": 1741
+      },
+      {
+        "player": "cne",
+        "team": "Away",
+        "old_elo": 1633,
+        "change": 10.7,
+        "new_elo": 1643
+      },
+      {
+        "player": "warrior",
+        "team": "Away",
+        "old_elo": 1619,
+        "change": 8.4,
+        "new_elo": 1628
+      },
+      {
+        "player": "fon",
+        "team": "Away",
+        "old_elo": 1509,
+        "change": 16,
+        "new_elo": 1525
+      }
+    ],
+    "saved_at": "2026-09-15T22:33:27+02:00"
   }
 ]
