@@ -50,18 +50,6 @@
           "qualified": true
         },
         {
-          "player": "Maniek",
-          "matches": 23,
-          "kills": 108,
-          "deaths": 126,
-          "dealt": 22900,
-          "received": 22800,
-          "pick": 105,
-          "miss": 200,
-          "accuracy": 40.3,
-          "qualified": true
-        },
-        {
           "player": "need1",
           "matches": 7,
           "kills": 24,
@@ -71,6 +59,18 @@
           "pick": 6,
           "miss": 97,
           "accuracy": 40.3,
+          "qualified": true
+        },
+        {
+          "player": "Maniek",
+          "matches": 24,
+          "kills": 108,
+          "deaths": 135,
+          "dealt": 23000,
+          "received": 24600,
+          "pick": 106,
+          "miss": 213,
+          "accuracy": 40.0,
           "qualified": true
         }
       ],
@@ -172,18 +172,6 @@
           "qualified": false
         },
         {
-          "player": "Maniek",
-          "matches": 23,
-          "kills": 108,
-          "deaths": 126,
-          "dealt": 22900,
-          "received": 22800,
-          "pick": 105,
-          "miss": 200,
-          "accuracy": 40.3,
-          "qualified": true
-        },
-        {
           "player": "need1",
           "matches": 7,
           "kills": 24,
@@ -196,15 +184,15 @@
           "qualified": true
         },
         {
-          "player": "rul",
-          "matches": 13,
-          "kills": 111,
-          "deaths": 88,
-          "dealt": 19000,
-          "received": 13400,
-          "pick": 27,
-          "miss": 159,
-          "accuracy": 39.2,
+          "player": "Maniek",
+          "matches": 24,
+          "kills": 108,
+          "deaths": 135,
+          "dealt": 23000,
+          "received": 24600,
+          "pick": 106,
+          "miss": 213,
+          "accuracy": 40.0,
           "qualified": true
         },
         {
@@ -241,6 +229,18 @@
           "pick": 45,
           "miss": 154,
           "accuracy": 38.8,
+          "qualified": true
+        },
+        {
+          "player": "rul",
+          "matches": 14,
+          "kills": 119,
+          "deaths": 89,
+          "dealt": 20200,
+          "received": 13900,
+          "pick": 28,
+          "miss": 172,
+          "accuracy": 38.4,
           "qualified": true
         },
         {
@@ -340,6 +340,18 @@
           "qualified": true
         },
         {
+          "player": "r",
+          "matches": 13,
+          "kills": 37,
+          "deaths": 75,
+          "dealt": 7000,
+          "received": 11700,
+          "pick": 26,
+          "miss": 117,
+          "accuracy": 34.0,
+          "qualified": true
+        },
+        {
           "player": "fff",
           "matches": 3,
           "kills": 4,
@@ -352,27 +364,15 @@
           "qualified": false
         },
         {
-          "player": "r",
-          "matches": 12,
-          "kills": 29,
-          "deaths": 71,
-          "dealt": 5600,
-          "received": 11300,
-          "pick": 21,
-          "miss": 108,
-          "accuracy": 33.9,
-          "qualified": true
-        },
-        {
           "player": "qw",
-          "matches": 33,
-          "kills": 236,
-          "deaths": 151,
-          "dealt": 41700,
-          "received": 26800,
-          "pick": 64,
-          "miss": 339,
-          "accuracy": 33.8,
+          "matches": 34,
+          "kills": 239,
+          "deaths": 159,
+          "dealt": 42200,
+          "received": 28200,
+          "pick": 65,
+          "miss": 352,
+          "accuracy": 33.9,
           "qualified": true
         },
         {
@@ -688,6 +688,18 @@
           "qualified": false
         },
         {
+          "player": "Qiub",
+          "matches": 1,
+          "kills": 3,
+          "deaths": 9,
+          "dealt": 700,
+          "received": 1200,
+          "pick": 4,
+          "miss": 10,
+          "accuracy": 25.0,
+          "qualified": false
+        },
+        {
           "player": "senz",
           "matches": 12,
           "kills": 41,
@@ -957,14 +969,14 @@
         },
         {
           "player": "rul",
-          "matches": 13,
-          "kills": 38,
-          "deaths": 37,
-          "dealt": 7342,
-          "received": 7547,
+          "matches": 14,
+          "kills": 41,
+          "deaths": 39,
+          "dealt": 7874,
+          "received": 8099,
           "pick": 26,
-          "miss": 254,
-          "accuracy": 31.8,
+          "miss": 279,
+          "accuracy": 30.4,
           "qualified": true
         },
         {
@@ -1031,14 +1043,14 @@
         },
         {
           "player": "rul",
-          "matches": 13,
-          "kills": 38,
-          "deaths": 37,
-          "dealt": 7342,
-          "received": 7547,
+          "matches": 14,
+          "kills": 41,
+          "deaths": 39,
+          "dealt": 7874,
+          "received": 8099,
           "pick": 26,
-          "miss": 254,
-          "accuracy": 31.8,
+          "miss": 279,
+          "accuracy": 30.4,
           "qualified": true
         },
         {
@@ -1063,6 +1075,18 @@
           "pick": 8,
           "miss": 60,
           "accuracy": 29.3,
+          "qualified": false
+        },
+        {
+          "player": "Qiub",
+          "matches": 1,
+          "kills": 5,
+          "deaths": 3,
+          "dealt": 1378,
+          "received": 761,
+          "pick": 9,
+          "miss": 16,
+          "accuracy": 29.0,
           "qualified": false
         },
         {
@@ -1222,18 +1246,6 @@
           "qualified": true
         },
         {
-          "player": "qw",
-          "matches": 33,
-          "kills": 68,
-          "deaths": 92,
-          "dealt": 14098,
-          "received": 20030,
-          "pick": 74,
-          "miss": 613,
-          "accuracy": 22.3,
-          "qualified": true
-        },
-        {
           "player": "Br00m^^",
           "matches": 13,
           "kills": 37,
@@ -1243,6 +1255,18 @@
           "pick": 29,
           "miss": 268,
           "accuracy": 22.1,
+          "qualified": true
+        },
+        {
+          "player": "qw",
+          "matches": 34,
+          "kills": 69,
+          "deaths": 94,
+          "dealt": 14201,
+          "received": 20595,
+          "pick": 76,
+          "miss": 636,
+          "accuracy": 22.0,
           "qualified": true
         },
         {
@@ -1390,6 +1414,18 @@
           "qualified": true
         },
         {
+          "player": "r",
+          "matches": 13,
+          "kills": 51,
+          "deaths": 73,
+          "dealt": 10584,
+          "received": 15614,
+          "pick": 67,
+          "miss": 201,
+          "accuracy": 20.0,
+          "qualified": true
+        },
+        {
           "player": "#ABBYS",
           "matches": 1,
           "kills": 5,
@@ -1447,18 +1483,6 @@
           "pick": 147,
           "miss": 495,
           "accuracy": 19.2,
-          "qualified": true
-        },
-        {
-          "player": "r",
-          "matches": 12,
-          "kills": 43,
-          "deaths": 65,
-          "dealt": 9289,
-          "received": 14101,
-          "pick": 63,
-          "miss": 180,
-          "accuracy": 19.0,
           "qualified": true
         },
         {
@@ -1558,6 +1582,18 @@
           "qualified": true
         },
         {
+          "player": "Maniek",
+          "matches": 24,
+          "kills": 68,
+          "deaths": 99,
+          "dealt": 16560,
+          "received": 25769,
+          "pick": 132,
+          "miss": 362,
+          "accuracy": 17.0,
+          "qualified": true
+        },
+        {
           "player": "Larik",
           "matches": 3,
           "kills": 22,
@@ -1567,18 +1603,6 @@
           "pick": 25,
           "miss": 45,
           "accuracy": 17.0,
-          "qualified": true
-        },
-        {
-          "player": "Maniek",
-          "matches": 23,
-          "kills": 63,
-          "deaths": 93,
-          "dealt": 15421,
-          "received": 24812,
-          "pick": 123,
-          "miss": 346,
-          "accuracy": 16.8,
           "qualified": true
         },
         {
@@ -1887,14 +1911,14 @@
         },
         {
           "player": "rul",
-          "matches": 13,
-          "kills": 37,
+          "matches": 14,
+          "kills": 38,
           "deaths": 34,
-          "dealt": 5778,
-          "received": 4998,
+          "dealt": 5820,
+          "received": 5136,
           "pick": 25,
-          "miss": 150,
-          "accuracy": 16.9,
+          "miss": 161,
+          "accuracy": 16.2,
           "qualified": true
         },
         {
@@ -1957,6 +1981,18 @@
           "pick": 56,
           "miss": 122,
           "accuracy": 23.0,
+          "qualified": false
+        },
+        {
+          "player": "Qiub",
+          "matches": 1,
+          "kills": 1,
+          "deaths": 1,
+          "dealt": 102,
+          "received": 204,
+          "pick": 0,
+          "miss": 11,
+          "accuracy": 22.0,
           "qualified": false
         },
         {
@@ -2032,18 +2068,6 @@
           "qualified": false
         },
         {
-          "player": "rul",
-          "matches": 13,
-          "kills": 37,
-          "deaths": 34,
-          "dealt": 5778,
-          "received": 4998,
-          "pick": 25,
-          "miss": 150,
-          "accuracy": 16.9,
-          "qualified": true
-        },
-        {
           "player": "frankie",
           "matches": 4,
           "kills": 19,
@@ -2054,6 +2078,18 @@
           "miss": 25,
           "accuracy": 16.8,
           "qualified": false
+        },
+        {
+          "player": "rul",
+          "matches": 14,
+          "kills": 38,
+          "deaths": 34,
+          "dealt": 5820,
+          "received": 5136,
+          "pick": 25,
+          "miss": 161,
+          "accuracy": 16.2,
+          "qualified": true
         },
         {
           "player": "[ds]ads",
@@ -2524,6 +2560,18 @@
           "qualified": true
         },
         {
+          "player": "qw",
+          "matches": 34,
+          "kills": 81,
+          "deaths": 88,
+          "dealt": 12084,
+          "received": 14952,
+          "pick": 58,
+          "miss": 396,
+          "accuracy": 11.6,
+          "qualified": true
+        },
+        {
           "player": "Puma!",
           "matches": 9,
           "kills": 11,
@@ -2534,18 +2582,6 @@
           "miss": 103,
           "accuracy": 11.6,
           "qualified": false
-        },
-        {
-          "player": "qw",
-          "matches": 33,
-          "kills": 80,
-          "deaths": 87,
-          "dealt": 11850,
-          "received": 14724,
-          "pick": 56,
-          "miss": 387,
-          "accuracy": 11.5,
-          "qualified": true
         },
         {
           "player": "senz",
@@ -2573,14 +2609,14 @@
         },
         {
           "player": "Maniek",
-          "matches": 23,
-          "kills": 37,
-          "deaths": 101,
-          "dealt": 9780,
-          "received": 15222,
-          "pick": 94,
-          "miss": 224,
-          "accuracy": 11.3,
+          "matches": 24,
+          "kills": 39,
+          "deaths": 105,
+          "dealt": 10200,
+          "received": 15726,
+          "pick": 99,
+          "miss": 230,
+          "accuracy": 11.4,
           "qualified": true
         },
         {
@@ -2681,14 +2717,14 @@
         },
         {
           "player": "r",
-          "matches": 12,
-          "kills": 27,
-          "deaths": 45,
-          "dealt": 5652,
-          "received": 6648,
-          "pick": 48,
-          "miss": 115,
-          "accuracy": 10.4,
+          "matches": 13,
+          "kills": 28,
+          "deaths": 48,
+          "dealt": 5916,
+          "received": 7020,
+          "pick": 49,
+          "miss": 125,
+          "accuracy": 10.5,
           "qualified": true
         },
         {
