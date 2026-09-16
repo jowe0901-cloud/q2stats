@@ -616,6 +616,18 @@
           "qualified": false
         },
         {
+          "player": "B100D",
+          "matches": 27,
+          "kills": 94,
+          "deaths": 86,
+          "dealt": 19900,
+          "received": 13100,
+          "pick": 76,
+          "miss": 137,
+          "accuracy": 28.9,
+          "qualified": true
+        },
+        {
           "player": "GUSIUS",
           "matches": 7,
           "kills": 39,
@@ -637,18 +649,6 @@
           "pick": 10,
           "miss": 34,
           "accuracy": 28.7,
-          "qualified": true
-        },
-        {
-          "player": "B100D",
-          "matches": 26,
-          "kills": 89,
-          "deaths": 85,
-          "dealt": 18800,
-          "received": 12900,
-          "pick": 74,
-          "miss": 134,
-          "accuracy": 28.5,
           "qualified": true
         },
         {
@@ -821,14 +821,14 @@
         },
         {
           "player": "jabb@",
-          "matches": 29,
-          "kills": 66,
-          "deaths": 207,
-          "dealt": 10300,
-          "received": 32300,
-          "pick": 40,
-          "miss": 258,
-          "accuracy": 23.6,
+          "matches": 30,
+          "kills": 67,
+          "deaths": 212,
+          "dealt": 10500,
+          "received": 33400,
+          "pick": 43,
+          "miss": 260,
+          "accuracy": 23.9,
           "qualified": true
         },
         {
@@ -1558,18 +1558,6 @@
           "qualified": true
         },
         {
-          "player": "B100D",
-          "matches": 26,
-          "kills": 49,
-          "deaths": 43,
-          "dealt": 13854,
-          "received": 15605,
-          "pick": 98,
-          "miss": 280,
-          "accuracy": 18.7,
-          "qualified": true
-        },
-        {
           "player": "m",
           "matches": 21,
           "kills": 107,
@@ -1579,6 +1567,18 @@
           "pick": 117,
           "miss": 307,
           "accuracy": 18.5,
+          "qualified": true
+        },
+        {
+          "player": "B100D",
+          "matches": 27,
+          "kills": 50,
+          "deaths": 43,
+          "dealt": 14083,
+          "received": 16302,
+          "pick": 99,
+          "miss": 285,
+          "accuracy": 18.4,
           "qualified": true
         },
         {
@@ -1619,13 +1619,13 @@
         },
         {
           "player": "jabb@",
-          "matches": 29,
+          "matches": 30,
           "kills": 103,
-          "deaths": 142,
-          "dealt": 22459,
-          "received": 29719,
-          "pick": 166,
-          "miss": 414,
+          "deaths": 143,
+          "dealt": 23156,
+          "received": 30076,
+          "pick": 171,
+          "miss": 415,
           "accuracy": 18.0,
           "qualified": true
         },
@@ -2356,18 +2356,6 @@
           "qualified": true
         },
         {
-          "player": "jabb@",
-          "matches": 29,
-          "kills": 104,
-          "deaths": 104,
-          "dealt": 13656,
-          "received": 12594,
-          "pick": 74,
-          "miss": 275,
-          "accuracy": 13.6,
-          "qualified": true
-        },
-        {
           "player": "need1",
           "matches": 8,
           "kills": 5,
@@ -2378,6 +2366,18 @@
           "miss": 89,
           "accuracy": 13.6,
           "qualified": false
+        },
+        {
+          "player": "jabb@",
+          "matches": 30,
+          "kills": 104,
+          "deaths": 108,
+          "dealt": 13668,
+          "received": 12876,
+          "pick": 75,
+          "miss": 280,
+          "accuracy": 13.2,
+          "qualified": true
         },
         {
           "player": "fon",
@@ -2681,14 +2681,14 @@
         },
         {
           "player": "B100D",
-          "matches": 26,
-          "kills": 115,
+          "matches": 27,
+          "kills": 119,
           "deaths": 61,
-          "dealt": 15078,
-          "received": 11334,
-          "pick": 88,
-          "miss": 203,
-          "accuracy": 11.8,
+          "dealt": 15360,
+          "received": 11346,
+          "pick": 93,
+          "miss": 204,
+          "accuracy": 11.7,
           "qualified": true
         },
         {
