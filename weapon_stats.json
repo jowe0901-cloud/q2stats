@@ -544,18 +544,6 @@
           "qualified": true
         },
         {
-          "player": "cne",
-          "matches": 22,
-          "kills": 239,
-          "deaths": 103,
-          "dealt": 37900,
-          "received": 19000,
-          "pick": 74,
-          "miss": 211,
-          "accuracy": 30.3,
-          "qualified": true
-        },
-        {
           "player": "Keizer",
           "matches": 28,
           "kills": 181,
@@ -578,6 +566,18 @@
           "miss": 45,
           "accuracy": 29.8,
           "qualified": false
+        },
+        {
+          "player": "cne",
+          "matches": 23,
+          "kills": 243,
+          "deaths": 103,
+          "dealt": 38700,
+          "received": 19000,
+          "pick": 76,
+          "miss": 211,
+          "accuracy": 29.7,
+          "qualified": true
         },
         {
           "player": "n0sferatu",
@@ -893,13 +893,13 @@
         },
         {
           "player": "TIM",
-          "matches": 1,
+          "matches": 2,
           "kills": 0,
-          "deaths": 7,
+          "deaths": 11,
           "dealt": 200,
-          "received": 1000,
+          "received": 1800,
           "pick": 2,
-          "miss": 5,
+          "miss": 7,
           "accuracy": 20.0,
           "qualified": false
         },
@@ -1655,13 +1655,13 @@
         },
         {
           "player": "cne",
-          "matches": 22,
-          "kills": 79,
+          "matches": 23,
+          "kills": 81,
           "deaths": 56,
-          "dealt": 13590,
-          "received": 13136,
+          "dealt": 13980,
+          "received": 13583,
           "pick": 82,
-          "miss": 418,
+          "miss": 429,
           "accuracy": 18.0,
           "qualified": true
         },
@@ -1794,18 +1794,6 @@
           "received": 2070,
           "pick": 6,
           "miss": 68,
-          "accuracy": 16.0,
-          "qualified": false
-        },
-        {
-          "player": "TIM",
-          "matches": 1,
-          "kills": 7,
-          "deaths": 2,
-          "dealt": 1047,
-          "received": 855,
-          "pick": 8,
-          "miss": 11,
           "accuracy": 16.0,
           "qualified": false
         },
@@ -1951,6 +1939,18 @@
           "pick": 8,
           "miss": 68,
           "accuracy": 11.3,
+          "qualified": false
+        },
+        {
+          "player": "TIM",
+          "matches": 2,
+          "kills": 7,
+          "deaths": 4,
+          "dealt": 1332,
+          "received": 1388,
+          "pick": 19,
+          "miss": 11,
+          "accuracy": 11.0,
           "qualified": false
         },
         {
@@ -2657,13 +2657,13 @@
         },
         {
           "player": "cne",
-          "matches": 21,
-          "kills": 55,
+          "matches": 22,
+          "kills": 56,
           "deaths": 59,
-          "dealt": 6498,
-          "received": 8472,
-          "pick": 35,
-          "miss": 233,
+          "dealt": 7296,
+          "received": 8946,
+          "pick": 39,
+          "miss": 235,
           "accuracy": 12.2,
           "qualified": true
         },
@@ -2956,6 +2956,18 @@
           "qualified": false
         },
         {
+          "player": "TIM",
+          "matches": 2,
+          "kills": 3,
+          "deaths": 6,
+          "dealt": 744,
+          "received": 1650,
+          "pick": 4,
+          "miss": 16,
+          "accuracy": 9.5,
+          "qualified": false
+        },
+        {
           "player": "VITALIS",
           "matches": 5,
           "kills": 7,
@@ -2965,18 +2977,6 @@
           "pick": 11,
           "miss": 63,
           "accuracy": 8.8,
-          "qualified": false
-        },
-        {
-          "player": "TIM",
-          "matches": 1,
-          "kills": 3,
-          "deaths": 5,
-          "dealt": 270,
-          "received": 852,
-          "pick": 2,
-          "miss": 12,
-          "accuracy": 7.0,
           "qualified": false
         },
         {
