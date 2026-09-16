@@ -545,13 +545,13 @@
         },
         {
           "player": "Keizer",
-          "matches": 28,
-          "kills": 181,
-          "deaths": 119,
-          "dealt": 31100,
-          "received": 24500,
+          "matches": 29,
+          "kills": 188,
+          "deaths": 120,
+          "dealt": 32500,
+          "received": 25000,
           "pick": 74,
-          "miss": 207,
+          "miss": 216,
           "accuracy": 30.0,
           "qualified": true
         },
@@ -569,14 +569,14 @@
         },
         {
           "player": "cne",
-          "matches": 23,
-          "kills": 243,
-          "deaths": 103,
-          "dealt": 38700,
-          "received": 19000,
-          "pick": 76,
-          "miss": 211,
-          "accuracy": 29.7,
+          "matches": 24,
+          "kills": 246,
+          "deaths": 109,
+          "dealt": 39500,
+          "received": 20000,
+          "pick": 83,
+          "miss": 213,
+          "accuracy": 29.5,
           "qualified": true
         },
         {
@@ -724,6 +724,18 @@
           "qualified": false
         },
         {
+          "player": "jabb@",
+          "matches": 37,
+          "kills": 80,
+          "deaths": 256,
+          "dealt": 13600,
+          "received": 41900,
+          "pick": 60,
+          "miss": 319,
+          "accuracy": 26.5,
+          "qualified": true
+        },
+        {
           "player": "TIM",
           "matches": 3,
           "kills": 5,
@@ -820,18 +832,6 @@
           "qualified": false
         },
         {
-          "player": "jabb@",
-          "matches": 36,
-          "kills": 79,
-          "deaths": 255,
-          "dealt": 13500,
-          "received": 41600,
-          "pick": 60,
-          "miss": 310,
-          "accuracy": 24.3,
-          "qualified": true
-        },
-        {
           "player": "aid",
           "matches": 4,
           "kills": 21,
@@ -853,18 +853,6 @@
           "pick": 1,
           "miss": 3,
           "accuracy": 24.0,
-          "qualified": false
-        },
-        {
-          "player": "Grrga",
-          "matches": 6,
-          "kills": 3,
-          "deaths": 55,
-          "dealt": 1000,
-          "received": 8700,
-          "pick": 15,
-          "miss": 47,
-          "accuracy": 23.7,
           "qualified": false
         },
         {
@@ -902,6 +890,18 @@
           "miss": 28,
           "accuracy": 22.0,
           "qualified": true
+        },
+        {
+          "player": "Grrga",
+          "matches": 7,
+          "kills": 3,
+          "deaths": 58,
+          "dealt": 1000,
+          "received": 9200,
+          "pick": 17,
+          "miss": 54,
+          "accuracy": 20.3,
+          "qualified": false
         },
         {
           "player": "piu-sleepy",
@@ -1486,18 +1486,6 @@
           "qualified": true
         },
         {
-          "player": "Grrga",
-          "matches": 6,
-          "kills": 15,
-          "deaths": 22,
-          "dealt": 4968,
-          "received": 4689,
-          "pick": 53,
-          "miss": 63,
-          "accuracy": 20.3,
-          "qualified": false
-        },
-        {
           "player": "CoLD",
           "matches": 10,
           "kills": 26,
@@ -1570,18 +1558,6 @@
           "qualified": false
         },
         {
-          "player": "Keizer",
-          "matches": 28,
-          "kills": 81,
-          "deaths": 66,
-          "dealt": 18459,
-          "received": 18361,
-          "pick": 89,
-          "miss": 386,
-          "accuracy": 19.9,
-          "qualified": true
-        },
-        {
           "player": "Lavrov",
           "matches": 5,
           "kills": 24,
@@ -1591,6 +1567,18 @@
           "pick": 45,
           "miss": 56,
           "accuracy": 19.8,
+          "qualified": true
+        },
+        {
+          "player": "Keizer",
+          "matches": 29,
+          "kills": 82,
+          "deaths": 68,
+          "dealt": 18648,
+          "received": 18667,
+          "pick": 90,
+          "miss": 404,
+          "accuracy": 19.7,
           "qualified": true
         },
         {
@@ -1618,6 +1606,30 @@
           "qualified": true
         },
         {
+          "player": "jabb@",
+          "matches": 37,
+          "kills": 121,
+          "deaths": 165,
+          "dealt": 27269,
+          "received": 36465,
+          "pick": 203,
+          "miss": 501,
+          "accuracy": 19.3,
+          "qualified": true
+        },
+        {
+          "player": "Grrga",
+          "matches": 7,
+          "kills": 20,
+          "deaths": 23,
+          "dealt": 5782,
+          "received": 4995,
+          "pick": 66,
+          "miss": 69,
+          "accuracy": 19.3,
+          "qualified": true
+        },
+        {
           "player": "m",
           "matches": 21,
           "kills": 107,
@@ -1627,18 +1639,6 @@
           "pick": 117,
           "miss": 307,
           "accuracy": 18.5,
-          "qualified": true
-        },
-        {
-          "player": "jabb@",
-          "matches": 36,
-          "kills": 120,
-          "deaths": 162,
-          "dealt": 27117,
-          "received": 35185,
-          "pick": 203,
-          "miss": 482,
-          "accuracy": 18.4,
           "qualified": true
         },
         {
@@ -1667,14 +1667,14 @@
         },
         {
           "player": "cne",
-          "matches": 23,
-          "kills": 81,
-          "deaths": 56,
-          "dealt": 13980,
-          "received": 13583,
-          "pick": 82,
-          "miss": 429,
-          "accuracy": 18.0,
+          "matches": 24,
+          "kills": 84,
+          "deaths": 60,
+          "dealt": 14719,
+          "received": 13969,
+          "pick": 87,
+          "miss": 443,
+          "accuracy": 18.2,
           "qualified": true
         },
         {
@@ -2369,13 +2369,13 @@
         },
         {
           "player": "Keizer",
-          "matches": 28,
-          "kills": 110,
+          "matches": 29,
+          "kills": 119,
           "deaths": 70,
-          "dealt": 18978,
-          "received": 14292,
-          "pick": 103,
-          "miss": 253,
+          "dealt": 20166,
+          "received": 14928,
+          "pick": 105,
+          "miss": 261,
           "accuracy": 13.9,
           "qualified": true
         },
@@ -2417,13 +2417,13 @@
         },
         {
           "player": "jabb@",
-          "matches": 36,
-          "kills": 119,
-          "deaths": 135,
-          "dealt": 16392,
-          "received": 16530,
-          "pick": 91,
-          "miss": 331,
+          "matches": 37,
+          "kills": 122,
+          "deaths": 136,
+          "dealt": 16998,
+          "received": 16764,
+          "pick": 95,
+          "miss": 337,
           "accuracy": 13.3,
           "qualified": true
         },
@@ -2572,6 +2572,18 @@
           "qualified": false
         },
         {
+          "player": "cne",
+          "matches": 23,
+          "kills": 58,
+          "deaths": 67,
+          "dealt": 8064,
+          "received": 10266,
+          "pick": 42,
+          "miss": 242,
+          "accuracy": 12.5,
+          "qualified": true
+        },
+        {
           "player": "ping80",
           "matches": 8,
           "kills": 50,
@@ -2654,18 +2666,6 @@
           "miss": 69,
           "accuracy": 12.3,
           "qualified": false
-        },
-        {
-          "player": "cne",
-          "matches": 22,
-          "kills": 56,
-          "deaths": 59,
-          "dealt": 7296,
-          "received": 8946,
-          "pick": 39,
-          "miss": 235,
-          "accuracy": 12.2,
-          "qualified": true
         },
         {
           "player": "slonik",
@@ -2812,6 +2812,18 @@
           "qualified": false
         },
         {
+          "player": "Grrga",
+          "matches": 7,
+          "kills": 4,
+          "deaths": 42,
+          "dealt": 1686,
+          "received": 4200,
+          "pick": 22,
+          "miss": 57,
+          "accuracy": 11.2,
+          "qualified": false
+        },
+        {
           "player": "r",
           "matches": 19,
           "kills": 39,
@@ -2929,18 +2941,6 @@
           "pick": 13,
           "miss": 5,
           "accuracy": 10.3,
-          "qualified": false
-        },
-        {
-          "player": "Grrga",
-          "matches": 6,
-          "kills": 4,
-          "deaths": 37,
-          "dealt": 1584,
-          "received": 3726,
-          "pick": 21,
-          "miss": 48,
-          "accuracy": 10.2,
           "qualified": false
         },
         {
