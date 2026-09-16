@@ -112,14 +112,6 @@
     "winrate": 100.0
   },
   {
-    "player": "B100D",
-    "elo": 1571,
-    "matches": 47,
-    "wins": 27,
-    "losses": 20,
-    "winrate": 57.4
-  },
-  {
     "player": "GipSy",
     "elo": 1568,
     "matches": 47,
@@ -166,6 +158,14 @@
     "wins": 7,
     "losses": 3,
     "winrate": 70.0
+  },
+  {
+    "player": "B100D",
+    "elo": 1555,
+    "matches": 48,
+    "wins": 27,
+    "losses": 21,
+    "winrate": 56.2
   },
   {
     "player": "OPTIMIZER",
@@ -368,6 +368,14 @@
     "winrate": 50.0
   },
   {
+    "player": "gart",
+    "elo": 1501,
+    "matches": 15,
+    "wins": 7,
+    "losses": 8,
+    "winrate": 46.7
+  },
+  {
     "player": "David",
     "elo": 1501,
     "matches": 1,
@@ -446,14 +454,6 @@
     "wins": 1,
     "losses": 1,
     "winrate": 50.0
-  },
-  {
-    "player": "gart",
-    "elo": 1493,
-    "matches": 14,
-    "wins": 6,
-    "losses": 8,
-    "winrate": 42.9
   },
   {
     "player": "m",
@@ -721,11 +721,11 @@
   },
   {
     "player": "Maniek",
-    "elo": 1409,
-    "matches": 40,
-    "wins": 18,
+    "elo": 1425,
+    "matches": 41,
+    "wins": 19,
     "losses": 22,
-    "winrate": 45.0
+    "winrate": 46.3
   },
   {
     "player": "sevvq",
@@ -769,10 +769,10 @@
   },
   {
     "player": "jabb@",
-    "elo": 1157,
-    "matches": 81,
-    "wins": 32,
+    "elo": 1173,
+    "matches": 82,
+    "wins": 33,
     "losses": 49,
-    "winrate": 39.5
+    "winrate": 40.2
   }
 ]
