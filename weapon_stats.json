@@ -424,18 +424,6 @@
           "qualified": false
         },
         {
-          "player": "dolar",
-          "matches": 1,
-          "kills": 2,
-          "deaths": 14,
-          "dealt": 600,
-          "received": 1800,
-          "pick": 5,
-          "miss": 14,
-          "accuracy": 34.0,
-          "qualified": false
-        },
-        {
           "player": "badman",
           "matches": 23,
           "kills": 198,
@@ -446,6 +434,18 @@
           "miss": 321,
           "accuracy": 33.5,
           "qualified": true
+        },
+        {
+          "player": "dolar",
+          "matches": 2,
+          "kills": 6,
+          "deaths": 26,
+          "dealt": 2000,
+          "received": 3300,
+          "pick": 7,
+          "miss": 18,
+          "accuracy": 33.5,
+          "qualified": false
         },
         {
           "player": "fon",
@@ -485,14 +485,14 @@
         },
         {
           "player": "tron",
-          "matches": 20,
-          "kills": 81,
-          "deaths": 102,
-          "dealt": 15800,
-          "received": 18800,
-          "pick": 67,
-          "miss": 180,
-          "accuracy": 33.1,
+          "matches": 21,
+          "kills": 93,
+          "deaths": 106,
+          "dealt": 17300,
+          "received": 20200,
+          "pick": 71,
+          "miss": 182,
+          "accuracy": 32.9,
           "qualified": true
         },
         {
@@ -1763,14 +1763,14 @@
         },
         {
           "player": "tron",
-          "matches": 20,
-          "kills": 72,
-          "deaths": 47,
-          "dealt": 14673,
-          "received": 12584,
-          "pick": 105,
-          "miss": 296,
-          "accuracy": 18.9,
+          "matches": 21,
+          "kills": 74,
+          "deaths": 48,
+          "dealt": 15259,
+          "received": 13267,
+          "pick": 108,
+          "miss": 301,
+          "accuracy": 19.0,
           "qualified": true
         },
         {
@@ -2062,6 +2062,18 @@
           "qualified": false
         },
         {
+          "player": "dolar",
+          "matches": 2,
+          "kills": 1,
+          "deaths": 12,
+          "dealt": 545,
+          "received": 1699,
+          "pick": 9,
+          "miss": 31,
+          "accuracy": 12.5,
+          "qualified": false
+        },
+        {
           "player": "GUSIUS",
           "matches": 7,
           "kills": 4,
@@ -2167,18 +2179,6 @@
           "pick": 8,
           "miss": 52,
           "accuracy": 2.5,
-          "qualified": false
-        },
-        {
-          "player": "dolar",
-          "matches": 1,
-          "kills": 0,
-          "deaths": 10,
-          "dealt": 0,
-          "received": 1080,
-          "pick": 4,
-          "miss": 28,
-          "accuracy": 0.0,
           "qualified": false
         }
       ]
@@ -2585,14 +2585,14 @@
         },
         {
           "player": "tron",
-          "matches": 20,
-          "kills": 41,
+          "matches": 21,
+          "kills": 44,
           "deaths": 67,
-          "dealt": 7074,
-          "received": 11514,
-          "pick": 36,
-          "miss": 220,
-          "accuracy": 13.9,
+          "dealt": 7836,
+          "received": 11664,
+          "pick": 39,
+          "miss": 225,
+          "accuracy": 13.7,
           "qualified": true
         },
         {
@@ -3184,18 +3184,6 @@
           "qualified": true
         },
         {
-          "player": "dolar",
-          "matches": 1,
-          "kills": 1,
-          "deaths": 0,
-          "dealt": 276,
-          "received": 324,
-          "pick": 1,
-          "miss": 18,
-          "accuracy": 10.0,
-          "qualified": false
-        },
-        {
           "player": "VITALIS",
           "matches": 13,
           "kills": 22,
@@ -3241,6 +3229,18 @@
           "pick": 7,
           "miss": 44,
           "accuracy": 8.3,
+          "qualified": false
+        },
+        {
+          "player": "dolar",
+          "matches": 2,
+          "kills": 1,
+          "deaths": 3,
+          "dealt": 426,
+          "received": 1086,
+          "pick": 6,
+          "miss": 21,
+          "accuracy": 7.5,
           "qualified": false
         },
         {
