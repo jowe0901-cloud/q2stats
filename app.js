@@ -17,7 +17,17 @@ const playerUrl=n=>`player.html?name=${encodeURIComponent(n)}`,num=v=>Number(v)|
 function getPlayers(m){if(Array.isArray(m?.players))return m.players;if(m?.stats&&typeof m.stats==="object")return Object.entries(m.stats).map(([name,v])=>({player:name,...v}));return[]}
 function pname(p){return p.player||p.name||p.nickname||"Unknown"} function ptotal(p){return p.total||p.totals||p.stats||p} function pweapons(p){return p.weapons||{}}
 function rankRows(items,limit=10,startRank=0){let rows=(Array.isArray(items)?items:[]).slice().sort((a,b)=>num(b.elo)-num(a.elo));if(limit)rows=rows.slice(0,limit);return rows.map((p,i)=>`<tr><td class="rank">${startRank+i+1}</td><td><a class="player-link" href="${playerUrl(p.player||p.name)}">${esc(p.player||p.name)}</a></td><td class="elo">${fmt(p.elo)}</td><td>${fmt(p.matches)}</td><td>${fmt(p.wins)}-${fmt(p.losses)}</td><td>${pct(p.winrate??(num(p.matches)?num(p.wins)/num(p.matches)*100:0))}</td></tr>`).join("")}
-function matchLabel(m){return{map:m.map||m.mapname||"Unknown map",date:(m.saved_at||m.timestamp||m.date||"").replace("T"," ").slice(0,16)}}
+function matchLabel(m){
+ const raw=m.saved_at||m.timestamp||m.date||"";
+ let date="";
+ if(raw){
+  const d=new Date(raw);
+  if(!Number.isNaN(d.getTime())){
+   date=new Intl.DateTimeFormat(undefined,{year:"numeric",month:"short",day:"2-digit",hour:"2-digit",minute:"2-digit",hour12:false}).format(d);
+  }else date=String(raw).replace("T"," ").slice(0,16);
+ }
+ return{map:m.map||m.mapname||"Unknown map",date};
+}
 function scoreText(m){if(m.result)return String(m.result);if(m.score){if(typeof m.score==="string")return m.score;if("home"in m.score||"away"in m.score)return`${m.score.home??0} – ${m.score.away??0}`}if(m.home_score!=null||m.away_score!=null)return`${m.home_score??0} – ${m.away_score??0}`;return"—"}
 function teamNames(m){const ps=getPlayers(m),home=[],away=[],other=[];for(const p of ps){const t=String(p.team||"").toLowerCase(),n=pname(p);if(t==="home"||t==="red"||t==="team1")home.push(n);else if(t==="away"||t==="blue"||t==="team2")away.push(n);else if(!t.startsWith("spect"))other.push(n)}if(home.length||away.length)return`${home.join(", ")||"Home"} vs ${away.join(", ")||"Away"}`;if(other.length>1)return other.join(" vs ");return other[0]||m.winner||"Match"}
 function renderMatches(matches,target,limit=12,offset=0){const el=document.getElementById(target);if(!el)return;const all=(Array.isArray(matches)?matches:[]).map((item,i)=>item&&item.__match?{m:item.__match,id:item.__id}:{m:item,id:i}).reverse(),rows=all.slice(offset,offset+limit);if(!rows.length){el.innerHTML='<div class="empty">No match data found yet.</div>';return}el.innerHTML=rows.map(({m,id})=>{const{map,date}=matchLabel(m);return`<a class="match match-link" href="match.html?id=${id}"><div class="match-meta">${esc(date||"Undated")}<br>${esc(map)}</div><div class="match-main">${esc(teamNames(m)).replace(/\s+vs\s+/gi,' <span class="vs-badge">VS</span> ')}</div><div class="match-score">${esc(scoreText(m))}</div></a>`}).join("")}
