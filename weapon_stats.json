@@ -545,14 +545,14 @@
         },
         {
           "player": "cne",
-          "matches": 21,
-          "kills": 228,
+          "matches": 22,
+          "kills": 239,
           "deaths": 103,
-          "dealt": 36000,
-          "received": 18800,
-          "pick": 72,
-          "miss": 210,
-          "accuracy": 30.1,
+          "dealt": 37900,
+          "received": 19000,
+          "pick": 74,
+          "miss": 211,
+          "accuracy": 30.3,
           "qualified": true
         },
         {
@@ -809,14 +809,14 @@
         },
         {
           "player": "jabb@",
-          "matches": 34,
+          "matches": 35,
           "kills": 77,
-          "deaths": 233,
-          "dealt": 12700,
-          "received": 37800,
-          "pick": 53,
-          "miss": 302,
-          "accuracy": 24.5,
+          "deaths": 244,
+          "dealt": 12900,
+          "received": 39700,
+          "pick": 54,
+          "miss": 304,
+          "accuracy": 24.4,
           "qualified": true
         },
         {
@@ -1630,18 +1630,6 @@
           "qualified": true
         },
         {
-          "player": "jabb@",
-          "matches": 34,
-          "kills": 112,
-          "deaths": 153,
-          "dealt": 25209,
-          "received": 32520,
-          "pick": 185,
-          "miss": 467,
-          "accuracy": 18.3,
-          "qualified": true
-        },
-        {
           "player": "Maniek",
           "matches": 32,
           "kills": 99,
@@ -1651,6 +1639,30 @@
           "pick": 173,
           "miss": 498,
           "accuracy": 18.3,
+          "qualified": true
+        },
+        {
+          "player": "jabb@",
+          "matches": 35,
+          "kills": 114,
+          "deaths": 158,
+          "dealt": 25680,
+          "received": 34141,
+          "pick": 192,
+          "miss": 472,
+          "accuracy": 18.1,
+          "qualified": true
+        },
+        {
+          "player": "cne",
+          "matches": 22,
+          "kills": 79,
+          "deaths": 56,
+          "dealt": 13590,
+          "received": 13136,
+          "pick": 82,
+          "miss": 418,
+          "accuracy": 18.0,
           "qualified": true
         },
         {
@@ -1687,18 +1699,6 @@
           "pick": 91,
           "miss": 143,
           "accuracy": 17.8,
-          "qualified": true
-        },
-        {
-          "player": "cne",
-          "matches": 21,
-          "kills": 74,
-          "deaths": 54,
-          "dealt": 12360,
-          "received": 12437,
-          "pick": 77,
-          "miss": 411,
-          "accuracy": 17.7,
           "qualified": true
         },
         {
@@ -2417,13 +2417,13 @@
         },
         {
           "player": "jabb@",
-          "matches": 34,
+          "matches": 35,
           "kills": 119,
-          "deaths": 122,
+          "deaths": 124,
           "dealt": 16392,
-          "received": 14916,
+          "received": 15114,
           "pick": 91,
-          "miss": 319,
+          "miss": 320,
           "accuracy": 13.3,
           "qualified": true
         },
@@ -2656,6 +2656,18 @@
           "qualified": false
         },
         {
+          "player": "cne",
+          "matches": 21,
+          "kills": 55,
+          "deaths": 59,
+          "dealt": 6498,
+          "received": 8472,
+          "pick": 35,
+          "miss": 233,
+          "accuracy": 12.2,
+          "qualified": true
+        },
+        {
           "player": "slonik",
           "matches": 4,
           "kills": 27,
@@ -2724,18 +2736,6 @@
           "received": 13110,
           "pick": 106,
           "miss": 246,
-          "accuracy": 11.7,
-          "qualified": true
-        },
-        {
-          "player": "cne",
-          "matches": 20,
-          "kills": 53,
-          "deaths": 59,
-          "dealt": 6300,
-          "received": 8472,
-          "pick": 34,
-          "miss": 233,
           "accuracy": 11.7,
           "qualified": true
         },

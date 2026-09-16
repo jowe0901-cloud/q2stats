@@ -144,6 +144,14 @@
     "winrate": 100.0
   },
   {
+    "player": "cne",
+    "elo": 1526,
+    "matches": 4,
+    "wins": 3,
+    "losses": 1,
+    "winrate": 75.0
+  },
+  {
     "player": "David",
     "elo": 1525,
     "matches": 2,
@@ -166,14 +174,6 @@
     "wins": 4,
     "losses": 5,
     "winrate": 44.4
-  },
-  {
-    "player": "cne",
-    "elo": 1516,
-    "matches": 3,
-    "wins": 2,
-    "losses": 1,
-    "winrate": 66.7
   },
   {
     "player": "fonbeers",
@@ -432,20 +432,20 @@
     "winrate": 0.0
   },
   {
-    "player": "jabb@",
-    "elo": 1384,
-    "matches": 12,
-    "wins": 1,
-    "losses": 11,
-    "winrate": 8.3
-  },
-  {
     "player": "v4cio",
     "elo": 1376,
     "matches": 16,
     "wins": 2,
     "losses": 14,
     "winrate": 12.5
+  },
+  {
+    "player": "jabb@",
+    "elo": 1374,
+    "matches": 13,
+    "wins": 1,
+    "losses": 12,
+    "winrate": 7.7
   },
   {
     "player": "Player-345",
