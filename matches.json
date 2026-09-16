@@ -103284,5 +103284,151 @@
       }
     ],
     "saved_at": "2026-09-16T23:28:38+02:00"
+  },
+  {
+    "match_id": "57c478f4ec2e67cb",
+    "game_type": "1v1",
+    "hostname": "PacketFlinger.com ~ OpenTDM ~ Germany",
+    "mapname": "koldduel1",
+    "match_type": "Duel",
+    "port": 27910,
+    "winner": "Home",
+    "home_score": 9,
+    "away_score": 5,
+    "players": [
+      {
+        "name": "piu-sleepy",
+        "kills": 9,
+        "deaths": 5,
+        "suicides": 0,
+        "teamkills": 0,
+        "teleports": 0,
+        "damage": 3055,
+        "damage_received": 2811,
+        "team_damage": 0,
+        "team_damage_received": 0,
+        "weapons": {
+          "Super Shotgun": {
+            "accuracy": 100,
+            "kills": 0,
+            "deaths": null,
+            "dealt": 18,
+            "received": null,
+            "pick": 11,
+            "miss": 10
+          },
+          "Chaingun": {
+            "accuracy": 13,
+            "kills": 3,
+            "deaths": 3,
+            "dealt": 1068,
+            "received": 852,
+            "pick": 8,
+            "miss": 6
+          },
+          "Grenade Launcher": {
+            "accuracy": null,
+            "kills": null,
+            "deaths": null,
+            "dealt": null,
+            "received": null,
+            "pick": 5,
+            "miss": 0
+          },
+          "Rocket Launcher": {
+            "accuracy": 13,
+            "kills": 3,
+            "deaths": 1,
+            "dealt": 1569,
+            "received": 1044,
+            "pick": 11,
+            "miss": 4
+          },
+          "Railgun": {
+            "accuracy": 37,
+            "kills": 3,
+            "deaths": 1,
+            "dealt": 400,
+            "received": 900,
+            "pick": 3,
+            "miss": 5
+          }
+        },
+        "team": "Home",
+        "ping": 45,
+        "player_id": "3",
+        "elo_type": "1v1",
+        "elo_before": 1632,
+        "elo_change": 8.9,
+        "elo_after": 1641
+      },
+      {
+        "name": "Pacifist_(AVB)",
+        "kills": 5,
+        "deaths": 9,
+        "suicides": 0,
+        "teamkills": 0,
+        "teleports": 0,
+        "damage": 2693,
+        "damage_received": 3171,
+        "team_damage": 0,
+        "team_damage_received": 0,
+        "weapons": {
+          "Super Shotgun": {
+            "accuracy": null,
+            "kills": null,
+            "deaths": 0,
+            "dealt": null,
+            "received": 18,
+            "pick": 10,
+            "miss": 11
+          },
+          "Chaingun": {
+            "accuracy": 19,
+            "kills": 3,
+            "deaths": 3,
+            "dealt": 852,
+            "received": 1068,
+            "pick": 6,
+            "miss": 8
+          },
+          "Grenades": {
+            "accuracy": 0,
+            "kills": 0,
+            "deaths": null,
+            "dealt": 0,
+            "received": null,
+            "pick": 0,
+            "miss": 0
+          },
+          "Rocket Launcher": {
+            "accuracy": 31,
+            "kills": 1,
+            "deaths": 3,
+            "dealt": 926,
+            "received": 1685,
+            "pick": 4,
+            "miss": 11
+          },
+          "Railgun": {
+            "accuracy": 21,
+            "kills": 1,
+            "deaths": 3,
+            "dealt": 900,
+            "received": 400,
+            "pick": 5,
+            "miss": 3
+          }
+        },
+        "team": "Away",
+        "ping": 41,
+        "player_id": "4",
+        "elo_type": "1v1",
+        "elo_before": 1467,
+        "elo_change": -8.9,
+        "elo_after": 1458
+      }
+    ],
+    "saved_at": "2026-09-16T23:38:56+02:00"
   }
 ]
