@@ -48,20 +48,20 @@
     "winrate": 56.2
   },
   {
+    "player": "Keizer",
+    "elo": 1629,
+    "matches": 28,
+    "wins": 17,
+    "losses": 11,
+    "winrate": 60.7
+  },
+  {
     "player": "CoLD",
     "elo": 1613,
     "matches": 25,
     "wins": 15,
     "losses": 10,
     "winrate": 60.0
-  },
-  {
-    "player": "Keizer",
-    "elo": 1613,
-    "matches": 27,
-    "wins": 16,
-    "losses": 11,
-    "winrate": 59.3
   },
   {
     "player": "badman",
@@ -368,6 +368,14 @@
     "winrate": 50.0
   },
   {
+    "player": "m",
+    "elo": 1502,
+    "matches": 23,
+    "wins": 10,
+    "losses": 13,
+    "winrate": 43.5
+  },
+  {
     "player": "gart",
     "elo": 1501,
     "matches": 15,
@@ -454,14 +462,6 @@
     "wins": 1,
     "losses": 1,
     "winrate": 50.0
-  },
-  {
-    "player": "m",
-    "elo": 1493,
-    "matches": 22,
-    "wins": 9,
-    "losses": 13,
-    "winrate": 40.9
   },
   {
     "player": "kurwa_ping80",
@@ -712,20 +712,20 @@
     "winrate": 16.7
   },
   {
-    "player": "Qiub",
-    "elo": 1430,
-    "matches": 5,
-    "wins": 0,
-    "losses": 5,
-    "winrate": 0.0
-  },
-  {
     "player": "Maniek",
     "elo": 1425,
     "matches": 41,
     "wins": 19,
     "losses": 22,
     "winrate": 46.3
+  },
+  {
+    "player": "Qiub",
+    "elo": 1414,
+    "matches": 6,
+    "wins": 0,
+    "losses": 6,
+    "winrate": 0.0
   },
   {
     "player": "sevvq",
@@ -737,11 +737,11 @@
   },
   {
     "player": "VITALIS",
-    "elo": 1380,
-    "matches": 29,
+    "elo": 1371,
+    "matches": 30,
     "wins": 11,
-    "losses": 18,
-    "winrate": 37.9
+    "losses": 19,
+    "winrate": 36.7
   },
   {
     "player": "[HC]Reni^",
