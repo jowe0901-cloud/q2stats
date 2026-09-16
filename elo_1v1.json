@@ -1,5 +1,13 @@
 [
   {
+    "player": "piu-sleepy",
+    "elo": 1607,
+    "matches": 12,
+    "wins": 11,
+    "losses": 1,
+    "winrate": 91.7
+  },
+  {
     "player": "piu-chill",
     "elo": 1602,
     "matches": 8,
@@ -14,14 +22,6 @@
     "wins": 17,
     "losses": 5,
     "winrate": 77.3
-  },
-  {
-    "player": "piu-sleepy",
-    "elo": 1599,
-    "matches": 11,
-    "wins": 10,
-    "losses": 1,
-    "winrate": 90.9
   },
   {
     "player": "B100D",
@@ -425,11 +425,11 @@
   },
   {
     "player": "Maniek",
-    "elo": 1416,
-    "matches": 18,
+    "elo": 1408,
+    "matches": 19,
     "wins": 5,
-    "losses": 13,
-    "winrate": 27.8
+    "losses": 14,
+    "winrate": 26.3
   },
   {
     "player": "gart",
