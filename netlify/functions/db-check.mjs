@@ -14,26 +14,18 @@ export default async () => {
     const playerRows = await db.sql`SELECT COUNT(*)::int AS count FROM match_players`;
     const serverRows = await db.sql`SELECT COUNT(*)::int AS count FROM servers`;
 
-    const match407 = await db.sql`
-      SELECT id, match_id, map, home_score, away_score, saved_at
-      FROM matches
-      WHERE id = 407
-      LIMIT 1
+    const schema = await db.sql`
+      SELECT column_name, data_type, udt_name
+      FROM information_schema.columns
+      WHERE table_schema = 'public'
+        AND table_name = 'match_players'
+      ORDER BY ordinal_position
     `;
 
-    const playersByNumericId = await db.sql`
-      SELECT id, match_id, name, team, frags, deaths, ping
+    const samplePlayers = await db.sql`
+      SELECT *
       FROM match_players
-      WHERE match_id = 407
-      ORDER BY id
-      LIMIT 20
-    `;
-
-    const recentPlayerLinks = await db.sql`
-      SELECT id, match_id, name, team
-      FROM match_players
-      ORDER BY id DESC
-      LIMIT 12
+      LIMIT 5
     `;
 
     return json(200, {
@@ -41,11 +33,8 @@ export default async () => {
       matches: matchRows[0]?.count ?? null,
       match_players: playerRows[0]?.count ?? null,
       servers: serverRows[0]?.count ?? null,
-      diagnostic: {
-        match_407: match407[0] ?? null,
-        players_where_match_id_407: playersByNumericId,
-        recent_match_player_links: recentPlayerLinks,
-      },
+      match_players_schema: schema,
+      sample_match_players: samplePlayers,
     });
   } catch (error) {
     console.error(error);
