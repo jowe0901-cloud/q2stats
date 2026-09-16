@@ -64,11 +64,38 @@ export default async(request)=>{
   const server=serverRows[0],body=await request.json();
   if(!body.match_id||!Array.isArray(body.players)||!body.players.length)return json(400,{status:"error",error:"match_id and players are required"});
   const existing=await db.sql`SELECT id FROM matches WHERE match_id=${body.match_id} LIMIT 1`;
-  if(existing.length)return json(200,{status:"duplicate",match_id:body.match_id,server_id:server.id});
-  const inserted=await db.sql`
+  if(existing.length){
+   const counts=await db.sql`SELECT COUNT(*)::int AS count FROM match_players WHERE match_id=${body.match_id}`;
+   const playerCount=counts[0]?.count||0;
+
+   if(playerCount>0)return json(200,{status:"duplicate",match_id:body.match_id,server_id:server.id});
+
+   await db.sql`
+    UPDATE matches
+    SET server=${server.name},
+        map=${body.map||"unknown"},
+        game_type=${body.game_type||"team"},
+        home_score=${Number(body.home_score||0)},
+        away_score=${Number(body.away_score||0)},
+        winner=${body.winner||null},
+        match_type=${body.match_type||null},
+        port=${body.port??null},
+        saved_at=${body.saved_at||null}
+    WHERE match_id=${body.match_id}
+   `;
+
+   for(const p of body.players)await db.sql`
+    INSERT INTO match_players(match_id,name,team,frags,deaths,damage,ping,suicides,teamkills,teleports,damage_received,team_damage,team_damage_received)
+    VALUES(${body.match_id},${p.name||""},${p.team||""},${Number(p.frags||0)},${Number(p.deaths||0)},${Number(p.damage||0)},${Number(p.ping||0)},${Number(p.suicides||0)},${Number(p.teamkills||0)},${Number(p.teleports||0)},${Number(p.damage_received||0)},${Number(p.team_damage||0)},${Number(p.team_damage_received||0)})
+   `;
+
+   await db.sql`UPDATE servers SET last_upload_at=NOW() WHERE id=${server.id}`;
+   return json(200,{status:"repaired",match_id:body.match_id,players_saved:body.players.length,server_id:server.id});
+  }
+
+  await db.sql`
    INSERT INTO matches(match_id,server,map,game_type,home_score,away_score,winner,match_type,port,saved_at)
    VALUES(${body.match_id},${server.name},${body.map||"unknown"},${body.game_type||"team"},${Number(body.home_score||0)},${Number(body.away_score||0)},${body.winner||null},${body.match_type||null},${body.port??null},${body.saved_at||null})
-   RETURNING id
   `;
   for(const p of body.players)await db.sql`
    INSERT INTO match_players(match_id,name,team,frags,deaths,damage,ping,suicides,teamkills,teleports,damage_received,team_damage,team_damage_received)
