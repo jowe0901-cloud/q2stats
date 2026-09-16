@@ -16257,5 +16257,29 @@
       }
     ],
     "saved_at": "2026-09-16T23:43:42+02:00"
+  },
+  {
+    "match_id": "56bf3e08df542dd4",
+    "game_type": "1v1",
+    "winner": "Home",
+    "home_score": 10,
+    "away_score": 7,
+    "players": [
+      {
+        "player": "Pacifist_(AVB)",
+        "team": "Home",
+        "old_elo": 1458,
+        "change": 23.7,
+        "new_elo": 1481
+      },
+      {
+        "player": "piu-sleepy",
+        "team": "Away",
+        "old_elo": 1641,
+        "change": -23.7,
+        "new_elo": 1617
+      }
+    ],
+    "saved_at": "2026-09-16T23:49:37+02:00"
   }
 ]

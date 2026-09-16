@@ -796,6 +796,18 @@
           "qualified": true
         },
         {
+          "player": "Pacifist_(AVB)",
+          "matches": 7,
+          "kills": 8,
+          "deaths": 7,
+          "dealt": 2800,
+          "received": 2000,
+          "pick": 24,
+          "miss": 21,
+          "accuracy": 26.2,
+          "qualified": false
+        },
+        {
           "player": "Qiub",
           "matches": 7,
           "kills": 21,
@@ -830,18 +842,6 @@
           "miss": 152,
           "accuracy": 24.6,
           "qualified": true
-        },
-        {
-          "player": "Pacifist_(AVB)",
-          "matches": 6,
-          "kills": 4,
-          "deaths": 6,
-          "dealt": 1800,
-          "received": 1800,
-          "pick": 11,
-          "miss": 16,
-          "accuracy": 24.3,
-          "qualified": false
         },
         {
           "player": "Br00m^^",
@@ -929,14 +929,14 @@
         },
         {
           "player": "piu-sleepy",
-          "matches": 14,
-          "kills": 81,
-          "deaths": 34,
-          "dealt": 16400,
-          "received": 13100,
-          "pick": 84,
-          "miss": 87,
-          "accuracy": 21.9,
+          "matches": 15,
+          "kills": 82,
+          "deaths": 38,
+          "dealt": 16600,
+          "received": 14100,
+          "pick": 89,
+          "miss": 100,
+          "accuracy": 21.4,
           "qualified": true
         },
         {
@@ -1582,6 +1582,18 @@
           "qualified": false
         },
         {
+          "player": "Pacifist_(AVB)",
+          "matches": 7,
+          "kills": 12,
+          "deaths": 9,
+          "dealt": 5345,
+          "received": 6534,
+          "pick": 34,
+          "miss": 44,
+          "accuracy": 20.4,
+          "qualified": false
+        },
+        {
           "player": "CoLD",
           "matches": 10,
           "kills": 26,
@@ -1642,18 +1654,6 @@
           "qualified": true
         },
         {
-          "player": "piu-sleepy",
-          "matches": 14,
-          "kills": 58,
-          "deaths": 23,
-          "dealt": 18310,
-          "received": 14488,
-          "pick": 110,
-          "miss": 108,
-          "accuracy": 19.5,
-          "qualified": true
-        },
-        {
           "player": "jabb@",
           "matches": 39,
           "kills": 129,
@@ -1686,6 +1686,18 @@
           "received": 26024,
           "pick": 168,
           "miss": 551,
+          "accuracy": 19.3,
+          "qualified": true
+        },
+        {
+          "player": "piu-sleepy",
+          "matches": 15,
+          "kills": 60,
+          "deaths": 27,
+          "dealt": 19055,
+          "received": 15869,
+          "pick": 116,
+          "miss": 119,
           "accuracy": 19.3,
           "qualified": true
         },
@@ -1831,18 +1843,6 @@
           "pick": 26,
           "miss": 82,
           "accuracy": 17.8,
-          "qualified": false
-        },
-        {
-          "player": "Pacifist_(AVB)",
-          "matches": 6,
-          "kills": 8,
-          "deaths": 7,
-          "dealt": 4000,
-          "received": 5755,
-          "pick": 23,
-          "miss": 38,
-          "accuracy": 17.7,
           "qualified": false
         },
         {
@@ -2452,18 +2452,6 @@
           "qualified": false
         },
         {
-          "player": "Pacifist_(AVB)",
-          "matches": 6,
-          "kills": 11,
-          "deaths": 10,
-          "dealt": 3756,
-          "received": 3054,
-          "pick": 25,
-          "miss": 35,
-          "accuracy": 14.2,
-          "qualified": false
-        },
-        {
           "player": "myrmidon^",
           "matches": 27,
           "kills": 69,
@@ -2485,6 +2473,18 @@
           "pick": 30,
           "miss": 60,
           "accuracy": 14.1,
+          "qualified": false
+        },
+        {
+          "player": "Pacifist_(AVB)",
+          "matches": 7,
+          "kills": 13,
+          "deaths": 14,
+          "dealt": 4344,
+          "received": 4290,
+          "pick": 30,
+          "miss": 45,
+          "accuracy": 14.0,
           "qualified": false
         },
         {
@@ -2693,13 +2693,13 @@
         },
         {
           "player": "piu-sleepy",
-          "matches": 14,
-          "kills": 76,
-          "deaths": 23,
-          "dealt": 14136,
-          "received": 7356,
-          "pick": 123,
-          "miss": 101,
+          "matches": 15,
+          "kills": 80,
+          "deaths": 25,
+          "dealt": 15372,
+          "received": 7944,
+          "pick": 133,
+          "miss": 106,
           "accuracy": 12.9,
           "qualified": true
         },
