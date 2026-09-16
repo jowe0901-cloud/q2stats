@@ -9,7 +9,96 @@ const number = (value, fallback = 0) => {
 };
 
 export default async (req) => {
+  const url = new URL(req.url);
+  const basePath = "/api/v1/matches";
+  const suffix = url.pathname.startsWith(basePath)
+    ? url.pathname.slice(basePath.length).replace(/^\/+|\/+$/g, "")
+    : "";
+
+  const db = getDatabase();
+
+  // GET /api/v1/matches/{match_id}
+  if (req.method === "GET") {
+    if (!suffix) {
+      return json(
+        { status: "error", error: "match_id is required" },
+        400
+      );
+    }
+
+    try {
+      const matchResult = await db.sql`
+        SELECT
+          id,
+          match_id,
+          server,
+          map,
+          game_type,
+          home_score,
+          away_score,
+          winner,
+          match_type,
+          port,
+          saved_at,
+          created_at
+        FROM matches
+        WHERE match_id = ${suffix}
+        LIMIT 1
+      `;
+
+      if (matchResult.length === 0) {
+        return json(
+          { status: "not_found", match_id: suffix },
+          404
+        );
+      }
+
+      const playersResult = await db.sql`
+        SELECT
+          name,
+          team,
+          frags,
+          deaths,
+          damage,
+          ping,
+          suicides,
+          teamkills,
+          teleports,
+          damage_received,
+          team_damage,
+          team_damage_received
+        FROM match_players
+        WHERE match_id = ${suffix}
+        ORDER BY id
+      `;
+
+      return json({
+        ...matchResult[0],
+        players: playersResult
+      });
+    } catch (error) {
+      console.error("Q2Stats match lookup failed:", error);
+
+      return json(
+        {
+          status: "error",
+          error: "Could not load match"
+        },
+        500
+      );
+    }
+  }
+
+  // POST /api/v1/matches
   if (req.method !== "POST") {
+    return json(
+      { status: "error", error: "Method not allowed" },
+      405
+    );
+  }
+
+  // POST is only valid on the collection endpoint.
+  if (suffix) {
     return json(
       { status: "error", error: "Method not allowed" },
       405
@@ -41,7 +130,6 @@ export default async (req) => {
     );
   }
 
-  const db = getDatabase();
   const client = await db.pool.connect();
 
   try {
@@ -99,7 +187,6 @@ export default async (req) => {
       const team = String(player.team).toLowerCase();
       const key = `${name}\u0000${team}`;
 
-      // Some older Q2Stats matches contain duplicate player rows.
       if (seenPlayers.has(key)) continue;
       seenPlayers.add(key);
 
@@ -173,5 +260,5 @@ export default async (req) => {
 };
 
 export const config = {
-  path: "/api/v1/matches"
+  path: ["/api/v1/matches", "/api/v1/matches/*"]
 };
