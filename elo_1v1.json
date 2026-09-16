@@ -104,6 +104,14 @@
     "winrate": 100.0
   },
   {
+    "player": "ping80",
+    "elo": 1539,
+    "matches": 3,
+    "wins": 3,
+    "losses": 0,
+    "winrate": 100.0
+  },
+  {
     "player": ">daPurrI",
     "elo": 1533,
     "matches": 3,
@@ -129,14 +137,6 @@
   },
   {
     "player": "SUPER-LAG",
-    "elo": 1529,
-    "matches": 2,
-    "wins": 2,
-    "losses": 0,
-    "winrate": 100.0
-  },
-  {
-    "player": "ping80",
     "elo": 1529,
     "matches": 2,
     "wins": 2,
@@ -425,11 +425,11 @@
   },
   {
     "player": "v4cio",
-    "elo": 1411,
-    "matches": 9,
+    "elo": 1400,
+    "matches": 10,
     "wins": 1,
-    "losses": 8,
-    "winrate": 11.1
+    "losses": 9,
+    "winrate": 10.0
   },
   {
     "player": "error",
