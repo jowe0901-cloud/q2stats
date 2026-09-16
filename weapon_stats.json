@@ -172,6 +172,18 @@
           "qualified": true
         },
         {
+          "player": "FFF",
+          "matches": 1,
+          "kills": 1,
+          "deaths": 14,
+          "dealt": 400,
+          "received": 2700,
+          "pick": 2,
+          "miss": 4,
+          "accuracy": 40.0,
+          "qualified": false
+        },
+        {
           "player": "lamerator",
           "matches": 2,
           "kills": 13,
@@ -533,13 +545,13 @@
         },
         {
           "player": "cne",
-          "matches": 20,
-          "kills": 214,
-          "deaths": 102,
-          "dealt": 33300,
-          "received": 18400,
-          "pick": 68,
-          "miss": 208,
+          "matches": 21,
+          "kills": 228,
+          "deaths": 103,
+          "dealt": 36000,
+          "received": 18800,
+          "pick": 72,
+          "miss": 210,
           "accuracy": 30.1,
           "qualified": true
         },
@@ -1666,18 +1678,6 @@
           "qualified": false
         },
         {
-          "player": "cne",
-          "matches": 20,
-          "kills": 71,
-          "deaths": 54,
-          "dealt": 11739,
-          "received": 12067,
-          "pick": 74,
-          "miss": 406,
-          "accuracy": 17.9,
-          "qualified": true
-        },
-        {
           "player": "shad",
           "matches": 16,
           "kills": 36,
@@ -1687,6 +1687,18 @@
           "pick": 91,
           "miss": 143,
           "accuracy": 17.8,
+          "qualified": true
+        },
+        {
+          "player": "cne",
+          "matches": 21,
+          "kills": 74,
+          "deaths": 54,
+          "dealt": 12360,
+          "received": 12437,
+          "pick": 77,
+          "miss": 411,
+          "accuracy": 17.7,
           "qualified": true
         },
         {
@@ -1975,6 +1987,18 @@
           "pick": 7,
           "miss": 11,
           "accuracy": 6.0,
+          "qualified": false
+        },
+        {
+          "player": "FFF",
+          "matches": 1,
+          "kills": 0,
+          "deaths": 3,
+          "dealt": 208,
+          "received": 763,
+          "pick": 5,
+          "miss": 3,
+          "accuracy": 4.0,
           "qualified": false
         },
         {
@@ -2656,18 +2680,6 @@
           "qualified": true
         },
         {
-          "player": "cne",
-          "matches": 19,
-          "kills": 53,
-          "deaths": 57,
-          "dealt": 6252,
-          "received": 7572,
-          "pick": 33,
-          "miss": 225,
-          "accuracy": 12.0,
-          "qualified": true
-        },
-        {
           "player": "T3RM!N4ToR",
           "matches": 1,
           "kills": 3,
@@ -2712,6 +2724,18 @@
           "received": 13110,
           "pick": 106,
           "miss": 246,
+          "accuracy": 11.7,
+          "qualified": true
+        },
+        {
+          "player": "cne",
+          "matches": 20,
+          "kills": 53,
+          "deaths": 59,
+          "dealt": 6300,
+          "received": 8472,
+          "pick": 34,
+          "miss": 233,
           "accuracy": 11.7,
           "qualified": true
         },
@@ -2844,6 +2868,18 @@
           "received": 780,
           "pick": 7,
           "miss": 7,
+          "accuracy": 11.0,
+          "qualified": false
+        },
+        {
+          "player": "FFF",
+          "matches": 1,
+          "kills": 2,
+          "deaths": 0,
+          "dealt": 900,
+          "received": 48,
+          "pick": 8,
+          "miss": 1,
           "accuracy": 11.0,
           "qualified": false
         },
