@@ -1,4 +1,5 @@
 import { getDatabase } from "@netlify/database";
+import crypto from "node:crypto";
 
 const json = (data, status = 200) =>
   Response.json(data, { status });
@@ -7,6 +8,9 @@ const number = (value, fallback = 0) => {
   const n = Number(value);
   return Number.isFinite(n) ? Math.trunc(n) : fallback;
 };
+
+const sha256 = (value) =>
+  crypto.createHash("sha256").update(value).digest("hex");
 
 export default async (req) => {
   const url = new URL(req.url);
@@ -18,6 +22,7 @@ export default async (req) => {
   const db = getDatabase();
 
   // GET /api/v1/matches/{match_id}
+  // Public read access.
   if (req.method === "GET") {
     if (!suffix) {
       return json(
@@ -80,10 +85,7 @@ export default async (req) => {
       console.error("Q2Stats match lookup failed:", error);
 
       return json(
-        {
-          status: "error",
-          error: "Could not load match"
-        },
+        { status: "error", error: "Could not load match" },
         500
       );
     }
@@ -97,11 +99,50 @@ export default async (req) => {
     );
   }
 
-  // POST is only valid on the collection endpoint.
   if (suffix) {
     return json(
       { status: "error", error: "Method not allowed" },
       405
+    );
+  }
+
+  // Authenticate the OpenTDM server.
+  // The uploader sends the secret q2s_... key in this header.
+  const serverKey = req.headers.get("x-q2stats-server-key");
+
+  if (!serverKey || !serverKey.startsWith("q2s_")) {
+    return json(
+      { status: "error", error: "Unauthorized" },
+      401
+    );
+  }
+
+  const serverKeyHash = sha256(serverKey);
+
+  let registeredServer;
+
+  try {
+    const serverResult = await db.sql`
+      SELECT id, name, enabled
+      FROM servers
+      WHERE server_key_hash = ${serverKeyHash}
+      LIMIT 1
+    `;
+
+    if (serverResult.length === 0 || !serverResult[0].enabled) {
+      return json(
+        { status: "error", error: "Unauthorized" },
+        401
+      );
+    }
+
+    registeredServer = serverResult[0];
+  } catch (error) {
+    console.error("Q2Stats server authentication failed:", error);
+
+    return json(
+      { status: "error", error: "Could not authenticate server" },
+      500
     );
   }
 
@@ -165,7 +206,7 @@ export default async (req) => {
       VALUES ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10)`,
       [
         String(match.match_id),
-        String(match.server || "Unknown OpenTDM server"),
+        String(registeredServer.name),
         String(match.map || "unknown"),
         String(match.game_type || "unknown"),
         number(match.home_score),
@@ -231,12 +272,18 @@ export default async (req) => {
       throw new Error("No valid players supplied");
     }
 
+    await client.query(
+      "UPDATE servers SET last_upload_at = NOW() WHERE id = $1",
+      [registeredServer.id]
+    );
+
     await client.query("COMMIT");
 
     return json({
       status: "saved",
       match_id: String(match.match_id),
-      players_saved: playersSaved
+      players_saved: playersSaved,
+      server_id: registeredServer.id
     });
 
   } catch (error) {
@@ -247,10 +294,7 @@ export default async (req) => {
     console.error("Q2Stats match upload failed:", error);
 
     return json(
-      {
-        status: "error",
-        error: "Could not save match"
-      },
+      { status: "error", error: "Could not save match" },
       500
     );
 
