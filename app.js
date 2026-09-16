@@ -6,6 +6,9 @@ const DATA_FILES={
     weaponStats: DATA_BASE + "weapon_stats.json",
     eloHistory: DATA_BASE + "elo_history.json"
 };
+const MATCH_API = location.hostname === "localhost"
+    ? "https://q2stats.netlify.app/api/v1/matches"
+    : "/api/v1/matches";
 
 (function(){const st=document.createElement("style");st.textContent='.vs-badge{display:inline-block;margin:0 9px;padding:2px 7px;border:1px solid #3a4656;border-radius:5px;background:#161d27;color:#fff;font-size:.78em;font-weight:800;letter-spacing:.08em;vertical-align:1px;white-space:nowrap}';document.head.appendChild(st)})();
 async function loadJson(file,fallback=[]){try{const r=await fetch(file,{cache:"no-store"});if(!r.ok)throw 0;return await r.json()}catch(e){return fallback}}
@@ -69,19 +72,25 @@ async function initPlayer(){const name=new URLSearchParams(location.search).get(
 let teamEv=eloValues(hist,name,"team"),oneEv=eloValues(hist,name,"1v1");if(!teamEv.length&&tr)teamEv=[num(tr.elo)];if(!oneEv.length&&or)oneEv=[num(or.elo)];const fromStart=vals=>[1500,...vals.filter((v,i,a)=>i||v!==1500)];teamEv=fromStart(teamEv);oneEv=fromStart(oneEv);const eloCanvas=document.getElementById("eloChart"),eloButtons=document.querySelectorAll("[data-elo-history]");const drawElo=type=>{const isOne=type==="1v1",values=isOne?oneEv:teamEv;drawLineChart(eloCanvas,[{name:isOne?"1v1 Elo":"Team Elo",short:isOne?"1V1":"TEAM",values}],{include:1500,reference:1500,referenceLabel:"START 1500",xStart:"Start 1500",xEnd:"Latest"});eloButtons.forEach(b=>b.classList.toggle("active",b.dataset.eloHistory===type))};eloButtons.forEach(b=>b.onclick=()=>drawElo(b.dataset.eloHistory));drawElo("team");
 const preferred=["Railgun","Rocket Launcher","Chaingun"],allWeapons=[...new Set(a.perMatch.flatMap(x=>Object.keys(x.weapons)))],ordered=[...preferred.filter(w=>allWeapons.includes(w)),...allWeapons.filter(w=>!preferred.includes(w))],series=ordered.map(w=>({name:w,short:WEAPON_ABBR[w]||w.slice(0,3).toUpperCase(),values:a.perMatch.map(x=>x.weapons[w]??NaN),hidden:!preferred.includes(w)})),legend=document.getElementById("weaponLegend");legend.innerHTML=series.map((s,i)=>`<button class="${s.hidden?"":"on"}" data-i="${i}" title="${esc(s.name)}">${esc(s.short)}</button>`).join("");const redraw=()=>drawLineChart(document.getElementById("accuracyChart"),series,{min:0,max:100,ticks:11,suffix:"%",pad:false,labelLines:true,xStart:"Oldest match",xEnd:"Latest match"});legend.querySelectorAll("button").forEach(b=>b.onclick=()=>{const i=+b.dataset.i;series[i].hidden=!series[i].hidden;b.classList.toggle("on",!series[i].hidden);redraw()});redraw()}
 async function initRankings(){const[team,one]=await Promise.all([loadJson(DATA_FILES.teamElo,[]),loadJson(DATA_FILES.oneElo,[])]),q=new URLSearchParams(location.search),type=q.get("type")==="1v1"?"1v1":"team",per=100,items=(type==="1v1"?one:team).slice().sort((a,b)=>num(b.elo)-num(a.elo)),pages=Math.max(1,Math.ceil(items.length/per)),page=Math.min(Math.max(1,parseInt(q.get("page")||"1")),pages),start=(page-1)*per;document.querySelectorAll("[data-ranking]").forEach(b=>b.classList.toggle("active",b.dataset.ranking===type));document.getElementById("rankingTitle").textContent=type==="1v1"?"1v1 Elo Rankings":"Team Elo Rankings";document.getElementById("rankingBody").innerHTML=rankRows(items.slice(start,start+per),0,start);const nav=document.getElementById("rankingPagination");if(nav){let h=page>1?`<a href="rankings.html?type=${type}&page=${page-1}">← Previous</a>`:"<span></span>";h+=`<span>Page ${page} of ${pages} · ${items.length} players</span>`;h+=page<pages?`<a href="rankings.html?type=${type}&page=${page+1}">Next →</a>`:"<span></span>";nav.innerHTML=h}}
-async function initMatchesPage(){const matches=await loadJson(DATA_FILES.matches,[]),per=20,q=new URLSearchParams(location.search),page=Math.max(1,parseInt(q.get("page")||"1")),pages=Math.max(1,Math.ceil(matches.length/per)),p=Math.min(page,pages);renderMatches(matches,"allMatchList",per,(p-1)*per);const nav=document.getElementById("pagination");let h=p>1?`<a href="matches.html?page=${p-1}">← Previous</a>`:"<span></span>";h+=`<span>Page ${p} of ${pages}</span>`;h+=p<pages?`<a href="matches.html?page=${p+1}">Next →</a>`:"<span></span>";nav.innerHTML=h}
+async function initMatchesPage(){
+ const per=20,q=new URLSearchParams(location.search),page=Math.max(1,parseInt(q.get("page")||"1")),offset=(page-1)*per;
+ const data=await loadJson(`${MATCH_API}?limit=${per}&offset=${offset}`,{matches:[],total:0});
+ const matches=Array.isArray(data?.matches)?data.matches:[],total=num(data?.total),pages=Math.max(1,Math.ceil(total/per)),p=Math.min(page,pages);
+ const el=document.getElementById("allMatchList");
+ if(el){el.innerHTML=matches.length?matches.map(m=>{const{map,date}=matchLabel(m);return`<a class="match match-link" href="match.html?match_id=${encodeURIComponent(m.match_id)}"><div class="match-meta">${esc(date||"Undated")}<br>${esc(map)}</div><div class="match-main">${esc(teamNames(m)).replace(/\s+vs\s+/gi,' <span class="vs-badge">VS</span> ')}</div><div class="match-score">${esc(scoreText(m))}</div></a>`}).join(""):'<div class="empty">No match data found yet.</div>'}
+ const nav=document.getElementById("pagination");if(nav){let h=p>1?`<a href="matches.html?page=${p-1}">← Previous</a>`:"<span></span>";h+=`<span>Page ${p} of ${pages}</span>`;h+=p<pages?`<a href="matches.html?page=${p+1}">Next →</a>`:"<span></span>";nav.innerHTML=h}
+}
 async function initMatch(){
- const matches=await loadJson(DATA_FILES.matches,[]),hist=await loadJson(DATA_FILES.eloHistory,[]),id=parseInt(new URLSearchParams(location.search).get("id")||"-1"),m=matches[id],box=document.getElementById("matchDetail");
- if(!m){box.innerHTML='<div class="empty">Match not found.</div>';return}
+ const q=new URLSearchParams(location.search),matchId=q.get("match_id"),hist=await loadJson(DATA_FILES.eloHistory,[]),box=document.getElementById("matchDetail");
+ let m=null,id=-1;
+ if(matchId)m=await loadJson(`${MATCH_API}/${encodeURIComponent(matchId)}`,null);
+ else{const matches=await loadJson(DATA_FILES.matches,[]);id=parseInt(q.get("id")||"-1");m=matches[id]}
+ if(!m||m.status==="error"){box.innerHTML='<div class="empty">Match not found.</div>';return}
  const ml=matchLabel(m),players=getPlayers(m).filter(p=>!String(p.team||"").toLowerCase().startsWith("spect"));
  document.getElementById("matchTitle").textContent=teamNames(m);document.getElementById("matchMap").textContent=ml.map;document.getElementById("matchServer").textContent=m.hostname||m.server||"Server not recorded";document.getElementById("matchWinner").textContent=m.winner||"—";document.getElementById("matchScore").textContent=scoreText(m);
- const matchId=m.match_id;
- const events=Array.isArray(hist)?hist:(hist.events||hist.history||[]);
- let ev=events.find(e=>matchId&&e.match_id===matchId);
- if(!ev&&events[id]&&Array.isArray(events[id].players))ev=events[id];
- const is1v1=(ev?.game_type==="1v1")||players.length===2;
- const eloMap=new Map((ev?.players||[]).map(x=>[String(x.player||x.name||""),x]));
- const groups=[];
+ const realMatchId=m.match_id,events=Array.isArray(hist)?hist:(hist.events||hist.history||[]);
+ let ev=events.find(e=>realMatchId&&e.match_id===realMatchId);if(!ev&&id>=0&&events[id]&&Array.isArray(events[id].players))ev=events[id];
+ const is1v1=(ev?.game_type==="1v1")||players.length===2,eloMap=new Map((ev?.players||[]).map(x=>[String(x.player||x.name||""),x])),groups=[];
  for(const p of players){const raw=String(p.team||"Other"),key=raw.toLowerCase(),label=(key==="home"||key==="red"||key==="team1")?"Home":(key==="away"||key==="blue"||key==="team2")?"Away":raw||"Other";let g=groups.find(x=>x.key===key);if(!g){g={key,label,players:[]};groups.push(g)}g.players.push(p)}
  const row=p=>{const t=ptotal(p),k=num(t.frags??t.kills??p.score),d=num(t.dths??t.deaths),net=k-d,ping=p.ping??t.ping??"—",ee=eloMap.get(pname(p));let elo='—';if(ee){const ch=num(ee.change),cls=ch>0?'positive':ch<0?'negative':'',sign=ch>0?'+':'';elo=`<span>${fmt(ee.new_elo)}</span> <span class="${cls}">(${sign}${ch.toFixed(1)})</span>`}return`<tr><td><a class="player-link" href="${playerUrl(pname(p))}">${esc(pname(p))}</a></td><td>${k}</td><td>${d}</td><td class="${net>=0?'positive':'negative'}">${net>0?'+':''}${net}</td><td>${esc(ping)}</td><td>${elo}</td></tr>`};
  box.innerHTML=`<div class="match-elo-note">${is1v1?'1v1 Elo':'Team Elo'} · rating after match (change)</div>`+groups.map(g=>{g.players.sort((a,b)=>{const ta=ptotal(a),tb=ptotal(b);return num(tb.frags??tb.kills??b.score)-num(ta.frags??ta.kills??a.score)});return`<section class="team-scoreboard"><div class="team-scoreboard-head"><span>${esc(g.label)}</span><strong>${g.players.length} player${g.players.length===1?'':'s'}</strong></div><div class="table-wrap"><table><thead><tr><th>Player</th><th>Frags</th><th>Dths</th><th>Net</th><th>Ping</th><th>Elo</th></tr></thead><tbody>${g.players.map(row).join("")}</tbody></table></div></section>`}).join("")||'<div class="empty">No player data</div>'
