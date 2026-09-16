@@ -14,6 +14,18 @@
     "Railgun": {
       "top5": [
         {
+          "player": "David",
+          "matches": 3,
+          "kills": 65,
+          "deaths": 5,
+          "dealt": 7600,
+          "received": 600,
+          "pick": 15,
+          "miss": 28,
+          "accuracy": 49.7,
+          "qualified": true
+        },
+        {
           "player": "[sf]fasadin",
           "matches": 3,
           "kills": 62,
@@ -60,32 +72,20 @@
           "miss": 97,
           "accuracy": 40.3,
           "qualified": true
-        },
-        {
-          "player": "xRSNx",
-          "matches": 6,
-          "kills": 33,
-          "deaths": 44,
-          "dealt": 5100,
-          "received": 6200,
-          "pick": 21,
-          "miss": 73,
-          "accuracy": 39.2,
-          "qualified": true
         }
       ],
       "all_players": [
         {
           "player": "David",
-          "matches": 2,
-          "kills": 36,
-          "deaths": 2,
-          "dealt": 4200,
-          "received": 200,
-          "pick": 7,
-          "miss": 18,
-          "accuracy": 52.5,
-          "qualified": false
+          "matches": 3,
+          "kills": 65,
+          "deaths": 5,
+          "dealt": 7600,
+          "received": 600,
+          "pick": 15,
+          "miss": 28,
+          "accuracy": 49.7,
+          "qualified": true
         },
         {
           "player": "frankie",
@@ -292,18 +292,6 @@
           "qualified": true
         },
         {
-          "player": "Maniek",
-          "matches": 43,
-          "kills": 191,
-          "deaths": 267,
-          "dealt": 39600,
-          "received": 49400,
-          "pick": 172,
-          "miss": 421,
-          "accuracy": 36.8,
-          "qualified": true
-        },
-        {
           "player": "bobo",
           "matches": 3,
           "kills": 18,
@@ -314,6 +302,18 @@
           "miss": 39,
           "accuracy": 36.7,
           "qualified": false
+        },
+        {
+          "player": "Maniek",
+          "matches": 44,
+          "kills": 199,
+          "deaths": 271,
+          "dealt": 40600,
+          "received": 50200,
+          "pick": 175,
+          "miss": 436,
+          "accuracy": 36.6,
+          "qualified": true
         },
         {
           "player": "myrmidon^",
@@ -448,18 +448,6 @@
           "qualified": true
         },
         {
-          "player": "shNoodle",
-          "matches": 6,
-          "kills": 44,
-          "deaths": 55,
-          "dealt": 7300,
-          "received": 7900,
-          "pick": 15,
-          "miss": 89,
-          "accuracy": 33.2,
-          "qualified": true
-        },
-        {
           "player": "fon",
           "matches": 25,
           "kills": 213,
@@ -493,6 +481,18 @@
           "pick": 54,
           "miss": 140,
           "accuracy": 32.5,
+          "qualified": true
+        },
+        {
+          "player": "shNoodle",
+          "matches": 7,
+          "kills": 49,
+          "deaths": 75,
+          "dealt": 8200,
+          "received": 10600,
+          "pick": 18,
+          "miss": 104,
+          "accuracy": 32.1,
           "qualified": true
         },
         {
@@ -1012,6 +1012,18 @@
           "qualified": false
         },
         {
+          "player": "zaLTys",
+          "matches": 3,
+          "kills": 6,
+          "deaths": 35,
+          "dealt": 1200,
+          "received": 3700,
+          "pick": 12,
+          "miss": 27,
+          "accuracy": 16.7,
+          "qualified": false
+        },
+        {
           "player": "sparkq2",
           "matches": 2,
           "kills": 2,
@@ -1021,18 +1033,6 @@
           "pick": 6,
           "miss": 12,
           "accuracy": 15.5,
-          "qualified": false
-        },
-        {
-          "player": "zaLTys",
-          "matches": 2,
-          "kills": 3,
-          "deaths": 17,
-          "dealt": 900,
-          "received": 2000,
-          "pick": 8,
-          "miss": 13,
-          "accuracy": 12.5,
           "qualified": false
         },
         {
@@ -1075,6 +1075,18 @@
     },
     "Rocket Launcher": {
       "top5": [
+        {
+          "player": "David",
+          "matches": 3,
+          "kills": 21,
+          "deaths": 3,
+          "dealt": 3857,
+          "received": 1365,
+          "pick": 14,
+          "miss": 39,
+          "accuracy": 36.3,
+          "qualified": true
+        },
         {
           "player": "fon",
           "matches": 25,
@@ -1122,21 +1134,21 @@
           "miss": 126,
           "accuracy": 26.9,
           "qualified": true
-        },
-        {
-          "player": "Player-345",
-          "matches": 10,
-          "kills": 30,
-          "deaths": 34,
-          "dealt": 6838,
-          "received": 6986,
-          "pick": 39,
-          "miss": 163,
-          "accuracy": 26.6,
-          "qualified": true
         }
       ],
       "all_players": [
+        {
+          "player": "David",
+          "matches": 3,
+          "kills": 21,
+          "deaths": 3,
+          "dealt": 3857,
+          "received": 1365,
+          "pick": 14,
+          "miss": 39,
+          "accuracy": 36.3,
+          "qualified": true
+        },
         {
           "player": "rul fan",
           "matches": 1,
@@ -1184,18 +1196,6 @@
           "miss": 279,
           "accuracy": 30.4,
           "qualified": true
-        },
-        {
-          "player": "David",
-          "matches": 2,
-          "kills": 13,
-          "deaths": 2,
-          "dealt": 2731,
-          "received": 862,
-          "pick": 9,
-          "miss": 26,
-          "accuracy": 30.0,
-          "qualified": false
         },
         {
           "player": "[sf]fasadin",
@@ -1270,18 +1270,6 @@
           "qualified": true
         },
         {
-          "player": "shNoodle",
-          "matches": 6,
-          "kills": 22,
-          "deaths": 21,
-          "dealt": 4077,
-          "received": 3199,
-          "pick": 20,
-          "miss": 126,
-          "accuracy": 25.8,
-          "qualified": true
-        },
-        {
           "player": "sparkq2",
           "matches": 2,
           "kills": 5,
@@ -1303,6 +1291,18 @@
           "pick": 61,
           "miss": 286,
           "accuracy": 25.1,
+          "qualified": true
+        },
+        {
+          "player": "shNoodle",
+          "matches": 7,
+          "kills": 22,
+          "deaths": 28,
+          "dealt": 4372,
+          "received": 4086,
+          "pick": 23,
+          "miss": 141,
+          "accuracy": 25.0,
           "qualified": true
         },
         {
@@ -1739,14 +1739,14 @@
         },
         {
           "player": "Maniek",
-          "matches": 43,
-          "kills": 131,
-          "deaths": 164,
-          "dealt": 32561,
-          "received": 42024,
-          "pick": 254,
-          "miss": 639,
-          "accuracy": 18.5,
+          "matches": 44,
+          "kills": 139,
+          "deaths": 166,
+          "dealt": 33594,
+          "received": 42572,
+          "pick": 259,
+          "miss": 652,
+          "accuracy": 18.6,
           "qualified": true
         },
         {
@@ -2038,6 +2038,18 @@
           "qualified": false
         },
         {
+          "player": "zaLTys",
+          "matches": 3,
+          "kills": 4,
+          "deaths": 20,
+          "dealt": 1346,
+          "received": 4179,
+          "pick": 14,
+          "miss": 25,
+          "accuracy": 11.7,
+          "qualified": false
+        },
+        {
           "player": "OPTIMIZER",
           "matches": 3,
           "kills": 3,
@@ -2083,18 +2095,6 @@
           "pick": 4,
           "miss": 29,
           "accuracy": 7.5,
-          "qualified": false
-        },
-        {
-          "player": "zaLTys",
-          "matches": 2,
-          "kills": 1,
-          "deaths": 11,
-          "dealt": 931,
-          "received": 2771,
-          "pick": 9,
-          "miss": 12,
-          "accuracy": 6.0,
           "qualified": false
         },
         {
@@ -2296,18 +2296,6 @@
           "qualified": false
         },
         {
-          "player": "David",
-          "matches": 2,
-          "kills": 15,
-          "deaths": 1,
-          "dealt": 1632,
-          "received": 228,
-          "pick": 3,
-          "miss": 19,
-          "accuracy": 16.5,
-          "qualified": false
-        },
-        {
           "player": "[sYnth]Scooby",
           "matches": 11,
           "kills": 42,
@@ -2380,6 +2368,18 @@
           "qualified": true
         },
         {
+          "player": "David",
+          "matches": 3,
+          "kills": 20,
+          "deaths": 2,
+          "dealt": 2328,
+          "received": 558,
+          "pick": 7,
+          "miss": 33,
+          "accuracy": 15.3,
+          "qualified": true
+        },
+        {
           "player": "rul fan",
           "matches": 1,
           "kills": 1,
@@ -2428,6 +2428,18 @@
           "qualified": true
         },
         {
+          "player": "shNoodle",
+          "matches": 7,
+          "kills": 18,
+          "deaths": 23,
+          "dealt": 2760,
+          "received": 3084,
+          "pick": 17,
+          "miss": 97,
+          "accuracy": 14.6,
+          "qualified": false
+        },
+        {
           "player": "Dark Abyys",
           "matches": 5,
           "kills": 15,
@@ -2461,18 +2473,6 @@
           "pick": 30,
           "miss": 60,
           "accuracy": 14.1,
-          "qualified": false
-        },
-        {
-          "player": "shNoodle",
-          "matches": 6,
-          "kills": 16,
-          "deaths": 20,
-          "dealt": 2316,
-          "received": 2526,
-          "pick": 11,
-          "miss": 85,
-          "accuracy": 14.0,
           "qualified": false
         },
         {
@@ -2729,13 +2729,13 @@
         },
         {
           "player": "Maniek",
-          "matches": 43,
-          "kills": 76,
-          "deaths": 173,
-          "dealt": 18726,
-          "received": 26676,
-          "pick": 184,
-          "miss": 446,
+          "matches": 44,
+          "kills": 78,
+          "deaths": 175,
+          "dealt": 19032,
+          "received": 27024,
+          "pick": 188,
+          "miss": 460,
           "accuracy": 12.6,
           "qualified": true
         },
@@ -3100,6 +3100,18 @@
           "qualified": false
         },
         {
+          "player": "zaLTys",
+          "matches": 3,
+          "kills": 4,
+          "deaths": 14,
+          "dealt": 762,
+          "received": 1920,
+          "pick": 16,
+          "miss": 22,
+          "accuracy": 10.3,
+          "qualified": false
+        },
+        {
           "player": "v4cio",
           "matches": 13,
           "kills": 22,
@@ -3157,18 +3169,6 @@
           "pick": 7,
           "miss": 44,
           "accuracy": 8.3,
-          "qualified": false
-        },
-        {
-          "player": "zaLTys",
-          "matches": 2,
-          "kills": 3,
-          "deaths": 10,
-          "dealt": 528,
-          "received": 1476,
-          "pick": 12,
-          "miss": 8,
-          "accuracy": 7.5,
           "qualified": false
         },
         {
