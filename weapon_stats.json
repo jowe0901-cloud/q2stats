@@ -100,6 +100,18 @@
           "qualified": false
         },
         {
+          "player": "mAc",
+          "matches": 2,
+          "kills": 2,
+          "deaths": 21,
+          "dealt": 900,
+          "received": 2600,
+          "pick": 4,
+          "miss": 21,
+          "accuracy": 48.0,
+          "qualified": false
+        },
+        {
           "player": "[sf]fasadin",
           "matches": 3,
           "kills": 62,
@@ -121,18 +133,6 @@
           "pick": 2,
           "miss": 37,
           "accuracy": 47.0,
-          "qualified": false
-        },
-        {
-          "player": "mAc",
-          "matches": 1,
-          "kills": 2,
-          "deaths": 17,
-          "dealt": 500,
-          "received": 2000,
-          "pick": 0,
-          "miss": 19,
-          "accuracy": 46.0,
           "qualified": false
         },
         {
@@ -436,18 +436,6 @@
           "qualified": false
         },
         {
-          "player": "tron",
-          "matches": 19,
-          "kills": 77,
-          "deaths": 102,
-          "dealt": 15200,
-          "received": 18400,
-          "pick": 65,
-          "miss": 176,
-          "accuracy": 33.9,
-          "qualified": true
-        },
-        {
           "player": "badman",
           "matches": 23,
           "kills": 198,
@@ -493,6 +481,18 @@
           "pick": 19,
           "miss": 21,
           "accuracy": 33.3,
+          "qualified": true
+        },
+        {
+          "player": "tron",
+          "matches": 20,
+          "kills": 81,
+          "deaths": 102,
+          "dealt": 15800,
+          "received": 18800,
+          "pick": 67,
+          "miss": 180,
+          "accuracy": 33.1,
           "qualified": true
         },
         {
@@ -1762,6 +1762,18 @@
           "qualified": true
         },
         {
+          "player": "tron",
+          "matches": 20,
+          "kills": 72,
+          "deaths": 47,
+          "dealt": 14673,
+          "received": 12584,
+          "pick": 105,
+          "miss": 296,
+          "accuracy": 18.9,
+          "qualified": true
+        },
+        {
           "player": "TIM",
           "matches": 4,
           "kills": 13,
@@ -1772,18 +1784,6 @@
           "miss": 48,
           "accuracy": 18.8,
           "qualified": false
-        },
-        {
-          "player": "tron",
-          "matches": 19,
-          "kills": 70,
-          "deaths": 47,
-          "dealt": 13934,
-          "received": 12519,
-          "pick": 101,
-          "miss": 293,
-          "accuracy": 18.6,
-          "qualified": true
         },
         {
           "player": "m",
@@ -1818,6 +1818,18 @@
           "received": 2322,
           "pick": 10,
           "miss": 82,
+          "accuracy": 18.0,
+          "qualified": false
+        },
+        {
+          "player": "mAc",
+          "matches": 2,
+          "kills": 2,
+          "deaths": 7,
+          "dealt": 647,
+          "received": 1823,
+          "pick": 10,
+          "miss": 29,
           "accuracy": 18.0,
           "qualified": false
         },
@@ -1938,18 +1950,6 @@
           "received": 2070,
           "pick": 6,
           "miss": 68,
-          "accuracy": 16.0,
-          "qualified": false
-        },
-        {
-          "player": "mAc",
-          "matches": 1,
-          "kills": 2,
-          "deaths": 5,
-          "dealt": 582,
-          "received": 1084,
-          "pick": 7,
-          "miss": 25,
           "accuracy": 16.0,
           "qualified": false
         },
@@ -2296,18 +2296,6 @@
           "qualified": false
         },
         {
-          "player": "mAc",
-          "matches": 1,
-          "kills": 0,
-          "deaths": 3,
-          "dealt": 168,
-          "received": 438,
-          "pick": 2,
-          "miss": 17,
-          "accuracy": 19.0,
-          "qualified": false
-        },
-        {
           "player": "OPTIMIZER",
           "matches": 3,
           "kills": 26,
@@ -2597,14 +2585,14 @@
         },
         {
           "player": "tron",
-          "matches": 19,
-          "kills": 36,
-          "deaths": 66,
-          "dealt": 6276,
-          "received": 10938,
-          "pick": 34,
-          "miss": 214,
-          "accuracy": 13.8,
+          "matches": 20,
+          "kills": 41,
+          "deaths": 67,
+          "dealt": 7074,
+          "received": 11514,
+          "pick": 36,
+          "miss": 220,
+          "accuracy": 13.9,
           "qualified": true
         },
         {
@@ -2832,6 +2820,18 @@
           "received": 1086,
           "pick": 1,
           "miss": 41,
+          "accuracy": 12.5,
+          "qualified": false
+        },
+        {
+          "player": "mAc",
+          "matches": 2,
+          "kills": 1,
+          "deaths": 8,
+          "dealt": 744,
+          "received": 1236,
+          "pick": 8,
+          "miss": 19,
           "accuracy": 12.5,
           "qualified": false
         },
