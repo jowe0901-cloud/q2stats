@@ -216,14 +216,6 @@
     "winrate": 50.0
   },
   {
-    "player": "mAc",
-    "elo": 1502,
-    "matches": 2,
-    "wins": 1,
-    "losses": 1,
-    "winrate": 50.0
-  },
-  {
     "player": "myrmidon^",
     "elo": 1499,
     "matches": 2,
@@ -246,6 +238,14 @@
     "wins": 3,
     "losses": 3,
     "winrate": 50.0
+  },
+  {
+    "player": "dolar",
+    "elo": 1488,
+    "matches": 3,
+    "wins": 1,
+    "losses": 2,
+    "winrate": 33.3
   },
   {
     "player": "senz",
@@ -294,6 +294,14 @@
     "wins": 0,
     "losses": 1,
     "winrate": 0.0
+  },
+  {
+    "player": "mAc",
+    "elo": 1485,
+    "matches": 3,
+    "wins": 1,
+    "losses": 2,
+    "winrate": 33.3
   },
   {
     "player": "fon",
@@ -362,14 +370,6 @@
   {
     "player": "lynx",
     "elo": 1476,
-    "matches": 2,
-    "wins": 0,
-    "losses": 2,
-    "winrate": 0.0
-  },
-  {
-    "player": "dolar",
-    "elo": 1471,
     "matches": 2,
     "wins": 0,
     "losses": 2,

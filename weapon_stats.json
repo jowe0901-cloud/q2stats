@@ -160,18 +160,6 @@
           "qualified": false
         },
         {
-          "player": "mAc",
-          "matches": 3,
-          "kills": 6,
-          "deaths": 21,
-          "dealt": 1900,
-          "received": 2800,
-          "pick": 6,
-          "miss": 24,
-          "accuracy": 40.7,
-          "qualified": false
-        },
-        {
           "player": "Iron Maiden",
           "matches": 2,
           "kills": 20,
@@ -349,6 +337,18 @@
           "pick": 4,
           "miss": 28,
           "accuracy": 36.5,
+          "qualified": false
+        },
+        {
+          "player": "mAc",
+          "matches": 4,
+          "kills": 8,
+          "deaths": 23,
+          "dealt": 2500,
+          "received": 3100,
+          "pick": 10,
+          "miss": 24,
+          "accuracy": 35.5,
           "qualified": false
         },
         {
@@ -832,18 +832,6 @@
           "qualified": true
         },
         {
-          "player": "dolar",
-          "matches": 3,
-          "kills": 6,
-          "deaths": 30,
-          "dealt": 2200,
-          "received": 4300,
-          "pick": 10,
-          "miss": 20,
-          "accuracy": 25.7,
-          "qualified": false
-        },
-        {
           "player": "piu-chill",
           "matches": 8,
           "kills": 45,
@@ -938,6 +926,18 @@
           "miss": 73,
           "accuracy": 23.2,
           "qualified": true
+        },
+        {
+          "player": "dolar",
+          "matches": 4,
+          "kills": 8,
+          "deaths": 32,
+          "dealt": 2500,
+          "received": 4900,
+          "pick": 10,
+          "miss": 24,
+          "accuracy": 23.2,
+          "qualified": false
         },
         {
           "player": "insomnia",
@@ -1486,18 +1486,6 @@
           "qualified": true
         },
         {
-          "player": "mAc",
-          "matches": 3,
-          "kills": 3,
-          "deaths": 9,
-          "dealt": 1051,
-          "received": 2686,
-          "pick": 13,
-          "miss": 36,
-          "accuracy": 22.7,
-          "qualified": false
-        },
-        {
           "player": "ping80",
           "matches": 8,
           "kills": 53,
@@ -1518,6 +1506,18 @@
           "received": 2882,
           "pick": 16,
           "miss": 75,
+          "accuracy": 22.0,
+          "qualified": false
+        },
+        {
+          "player": "mAc",
+          "matches": 4,
+          "kills": 4,
+          "deaths": 10,
+          "dealt": 1592,
+          "received": 3520,
+          "pick": 19,
+          "miss": 41,
           "accuracy": 22.0,
           "qualified": false
         },
@@ -1883,14 +1883,14 @@
         },
         {
           "player": "dolar",
-          "matches": 3,
-          "kills": 3,
-          "deaths": 13,
-          "dealt": 1373,
-          "received": 2197,
-          "pick": 16,
-          "miss": 34,
-          "accuracy": 17.7,
+          "matches": 4,
+          "kills": 4,
+          "deaths": 14,
+          "dealt": 2176,
+          "received": 2814,
+          "pick": 21,
+          "miss": 40,
+          "accuracy": 17.8,
           "qualified": false
         },
         {
@@ -2884,18 +2884,6 @@
           "qualified": false
         },
         {
-          "player": "mAc",
-          "matches": 3,
-          "kills": 8,
-          "deaths": 13,
-          "dealt": 1692,
-          "received": 2196,
-          "pick": 12,
-          "miss": 26,
-          "accuracy": 12.3,
-          "qualified": false
-        },
-        {
           "player": "slonik",
           "matches": 4,
           "kills": 27,
@@ -2964,6 +2952,18 @@
           "received": 1962,
           "pick": 8,
           "miss": 55,
+          "accuracy": 11.8,
+          "qualified": false
+        },
+        {
+          "player": "mAc",
+          "matches": 4,
+          "kills": 8,
+          "deaths": 19,
+          "dealt": 2280,
+          "received": 3306,
+          "pick": 14,
+          "miss": 33,
           "accuracy": 11.8,
           "qualified": false
         },
@@ -3124,6 +3124,18 @@
           "qualified": true
         },
         {
+          "player": "dolar",
+          "matches": 4,
+          "kills": 12,
+          "deaths": 10,
+          "dealt": 2496,
+          "received": 2622,
+          "pick": 20,
+          "miss": 27,
+          "accuracy": 10.8,
+          "qualified": false
+        },
+        {
           "player": "Puma!",
           "matches": 13,
           "kills": 17,
@@ -3206,18 +3218,6 @@
           "miss": 216,
           "accuracy": 9.8,
           "qualified": true
-        },
-        {
-          "player": "dolar",
-          "matches": 3,
-          "kills": 6,
-          "deaths": 10,
-          "dealt": 1386,
-          "received": 2034,
-          "pick": 13,
-          "miss": 25,
-          "accuracy": 9.3,
-          "qualified": false
         },
         {
           "player": "Z1rco",
