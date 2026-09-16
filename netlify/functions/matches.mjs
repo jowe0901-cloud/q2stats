@@ -24,8 +24,8 @@ async function getOneMatch(db, matchId) {
     LIMIT 1
   `;
 
-  if (!rows.rows?.length) return null;
-  const match = rows.rows[0];
+  if (!rows.length) return null;
+  const match = rows[0];
 
   const players = await db.sql`
     SELECT name, team, frags, deaths, damage, ping, suicides, teamkills,
@@ -35,16 +35,13 @@ async function getOneMatch(db, matchId) {
     ORDER BY frags DESC, name ASC
   `;
 
-  return { ...match, players: players.rows || [] };
+  return { ...match, players };
 }
 
 async function listMatches(db, request) {
   const url = new URL(request.url);
   const requested = Number(url.searchParams.get("limit") || 20);
-  const limit = Math.max(
-    1,
-    Math.min(Number.isFinite(requested) ? Math.trunc(requested) : 20, 100)
-  );
+  const limit = Math.max(1, Math.min(Number.isFinite(requested) ? Math.trunc(requested) : 20, 100));
 
   const rows = await db.sql`
     SELECT id, match_id, server, map, game_type, home_score, away_score,
@@ -56,8 +53,8 @@ async function listMatches(db, request) {
 
   return {
     status: "ok",
-    count: rows.rows?.length || 0,
-    matches: rows.rows || [],
+    count: rows.length,
+    matches: rows,
   };
 }
 
@@ -87,10 +84,7 @@ export default async (request) => {
       return json(401, { status: "error", error: "Unauthorized" });
     }
 
-    const serverKeyHash = crypto
-      .createHash("sha256")
-      .update(serverKey)
-      .digest("hex");
+    const serverKeyHash = crypto.createHash("sha256").update(serverKey).digest("hex");
 
     const serverRows = await db.sql`
       SELECT id, name, enabled
@@ -99,25 +93,21 @@ export default async (request) => {
       LIMIT 1
     `;
 
-    if (!serverRows.rows?.length || !serverRows.rows[0].enabled) {
+    if (!serverRows.length || !serverRows[0].enabled) {
       return json(401, { status: "error", error: "Unauthorized" });
     }
 
-    const server = serverRows.rows[0];
+    const server = serverRows[0];
     const body = await request.json();
 
     if (!body.match_id || !Array.isArray(body.players) || body.players.length === 0) {
-      return json(400, {
-        status: "error",
-        error: "match_id and players are required",
-      });
+      return json(400, { status: "error", error: "match_id and players are required" });
     }
 
     const existing = await db.sql`
       SELECT id FROM matches WHERE match_id = ${body.match_id} LIMIT 1
     `;
-
-    if (existing.rows?.length) {
+    if (existing.length) {
       return json(200, {
         status: "duplicate",
         match_id: body.match_id,
@@ -145,7 +135,7 @@ export default async (request) => {
       RETURNING id
     `;
 
-    const dbMatchId = inserted.rows[0].id;
+    const dbMatchId = inserted[0].id;
 
     for (const p of body.players) {
       await db.sql`
@@ -172,9 +162,7 @@ export default async (request) => {
       `;
     }
 
-    await db.sql`
-      UPDATE servers SET last_upload_at = NOW() WHERE id = ${server.id}
-    `;
+    await db.sql`UPDATE servers SET last_upload_at = NOW() WHERE id = ${server.id}`;
 
     return json(200, {
       status: "saved",

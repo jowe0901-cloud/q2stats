@@ -10,15 +10,15 @@ export default async () => {
   const db = getDatabase();
 
   try {
-    const matchResult = await db.sql`SELECT COUNT(*)::int AS count FROM matches`;
-    const playerResult = await db.sql`SELECT COUNT(*)::int AS count FROM match_players`;
-    const serverResult = await db.sql`SELECT COUNT(*)::int AS count FROM servers`;
+    const matchRows = await db.sql`SELECT COUNT(*)::int AS count FROM matches`;
+    const playerRows = await db.sql`SELECT COUNT(*)::int AS count FROM match_players`;
+    const serverRows = await db.sql`SELECT COUNT(*)::int AS count FROM servers`;
 
     return json(200, {
       status: "ok",
-      matches: matchResult.rows?.[0]?.count ?? null,
-      match_players: playerResult.rows?.[0]?.count ?? null,
-      servers: serverResult.rows?.[0]?.count ?? null,
+      matches: matchRows[0]?.count ?? null,
+      match_players: playerRows[0]?.count ?? null,
+      servers: serverRows[0]?.count ?? null,
     });
   } catch (error) {
     console.error(error);
