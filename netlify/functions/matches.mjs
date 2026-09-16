@@ -10,11 +10,11 @@ function getMatchId(request){
  return value?decodeURIComponent(value):null;
 }
 
-async function playersForMatch(db,id){
+async function playersForMatch(db,matchId){
  return await db.sql`
   SELECT name, team, frags, deaths, damage, ping, suicides, teamkills,
          teleports, damage_received, team_damage, team_damage_received
-  FROM match_players WHERE match_id=${id}
+  FROM match_players WHERE match_id=${matchId}
   ORDER BY frags DESC, name ASC
  `;
 }
@@ -26,7 +26,7 @@ async function getOneMatch(db,matchId){
   FROM matches WHERE match_id=${matchId} LIMIT 1
  `;
  if(!rows.length)return null;
- return {...rows[0],players:await playersForMatch(db,rows[0].id)};
+ return {...rows[0],players:await playersForMatch(db,rows[0].match_id)};
 }
 
 async function listMatches(db,request){
@@ -43,7 +43,7 @@ async function listMatches(db,request){
   LIMIT ${limit} OFFSET ${offset}
  `;
  const matches=[];
- for(const match of rows)matches.push({...match,players:await playersForMatch(db,match.id)});
+ for(const match of rows)matches.push({...match,players:await playersForMatch(db,match.match_id)});
  return {status:"ok",count:matches.length,total,limit,offset,matches};
 }
 
@@ -70,10 +70,9 @@ export default async(request)=>{
    VALUES(${body.match_id},${server.name},${body.map||"unknown"},${body.game_type||"team"},${Number(body.home_score||0)},${Number(body.away_score||0)},${body.winner||null},${body.match_type||null},${body.port??null},${body.saved_at||null})
    RETURNING id
   `;
-  const dbMatchId=inserted[0].id;
   for(const p of body.players)await db.sql`
    INSERT INTO match_players(match_id,name,team,frags,deaths,damage,ping,suicides,teamkills,teleports,damage_received,team_damage,team_damage_received)
-   VALUES(${dbMatchId},${p.name||""},${p.team||""},${Number(p.frags||0)},${Number(p.deaths||0)},${Number(p.damage||0)},${Number(p.ping||0)},${Number(p.suicides||0)},${Number(p.teamkills||0)},${Number(p.teleports||0)},${Number(p.damage_received||0)},${Number(p.team_damage||0)},${Number(p.team_damage_received||0)})
+   VALUES(${body.match_id},${p.name||""},${p.team||""},${Number(p.frags||0)},${Number(p.deaths||0)},${Number(p.damage||0)},${Number(p.ping||0)},${Number(p.suicides||0)},${Number(p.teamkills||0)},${Number(p.teleports||0)},${Number(p.damage_received||0)},${Number(p.team_damage||0)},${Number(p.team_damage_received||0)})
   `;
   await db.sql`UPDATE servers SET last_upload_at=NOW() WHERE id=${server.id}`;
   return json(200,{status:"saved",match_id:body.match_id,players_saved:body.players.length,server_id:server.id});
