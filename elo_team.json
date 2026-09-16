@@ -1,11 +1,11 @@
 [
   {
     "player": "qw",
-    "elo": 1822,
-    "matches": 81,
-    "wins": 45,
+    "elo": 1828,
+    "matches": 82,
+    "wins": 46,
     "losses": 36,
-    "winrate": 55.6
+    "winrate": 56.1
   },
   {
     "player": "maq",
@@ -24,20 +24,20 @@
     "winrate": 70.0
   },
   {
+    "player": "cne",
+    "elo": 1674,
+    "matches": 41,
+    "wins": 24,
+    "losses": 17,
+    "winrate": 58.5
+  },
+  {
     "player": "warrior",
     "elo": 1674,
     "matches": 23,
     "wins": 16,
     "losses": 7,
     "winrate": 69.6
-  },
-  {
-    "player": "cne",
-    "elo": 1658,
-    "matches": 40,
-    "wins": 23,
-    "losses": 17,
-    "winrate": 57.5
   },
   {
     "player": "myrmidon^",
@@ -96,6 +96,14 @@
     "winrate": 70.0
   },
   {
+    "player": "fon",
+    "elo": 1579,
+    "matches": 30,
+    "wins": 17,
+    "losses": 13,
+    "winrate": 56.7
+  },
+  {
     "player": ">daweed",
     "elo": 1579,
     "matches": 8,
@@ -110,14 +118,6 @@
     "wins": 5,
     "losses": 0,
     "winrate": 100.0
-  },
-  {
-    "player": "fon",
-    "elo": 1572,
-    "matches": 29,
-    "wins": 17,
-    "losses": 12,
-    "winrate": 58.6
   },
   {
     "player": "GipSy",
@@ -170,10 +170,10 @@
   {
     "player": "Br00m^^",
     "elo": 1550,
-    "matches": 39,
-    "wins": 19,
+    "matches": 40,
+    "wins": 20,
     "losses": 20,
-    "winrate": 48.7
+    "winrate": 50.0
   },
   {
     "player": "OPTIMIZER",
@@ -528,14 +528,6 @@
     "winrate": 0.0
   },
   {
-    "player": "Z1rco",
-    "elo": 1484,
-    "matches": 1,
-    "wins": 0,
-    "losses": 1,
-    "winrate": 0.0
-  },
-  {
     "player": "Spojler",
     "elo": 1483,
     "matches": 8,
@@ -648,6 +640,14 @@
     "winrate": 0.0
   },
   {
+    "player": "Z1rco",
+    "elo": 1468,
+    "matches": 2,
+    "wins": 0,
+    "losses": 2,
+    "winrate": 0.0
+  },
+  {
     "player": "TIM",
     "elo": 1467,
     "matches": 9,
@@ -704,6 +704,14 @@
     "winrate": 16.7
   },
   {
+    "player": "a",
+    "elo": 1443,
+    "matches": 15,
+    "wins": 5,
+    "losses": 10,
+    "winrate": 33.3
+  },
+  {
     "player": "[sf]T3RM!N4ToR",
     "elo": 1440,
     "matches": 10,
@@ -712,28 +720,20 @@
     "winrate": 40.0
   },
   {
-    "player": "a",
-    "elo": 1439,
-    "matches": 14,
-    "wins": 4,
-    "losses": 10,
-    "winrate": 28.6
-  },
-  {
-    "player": "Puma!",
-    "elo": 1432,
-    "matches": 11,
-    "wins": 3,
-    "losses": 8,
-    "winrate": 27.3
-  },
-  {
     "player": "error",
     "elo": 1432,
     "matches": 6,
     "wins": 1,
     "losses": 5,
     "winrate": 16.7
+  },
+  {
+    "player": "Puma!",
+    "elo": 1430,
+    "matches": 12,
+    "wins": 3,
+    "losses": 9,
+    "winrate": 25.0
   },
   {
     "player": "Qiub",
