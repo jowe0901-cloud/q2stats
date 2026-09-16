@@ -401,13 +401,13 @@
         },
         {
           "player": "shad",
-          "matches": 12,
-          "kills": 46,
-          "deaths": 29,
-          "dealt": 13700,
-          "received": 6200,
-          "pick": 61,
-          "miss": 94,
+          "matches": 13,
+          "kills": 51,
+          "deaths": 33,
+          "dealt": 15200,
+          "received": 7900,
+          "pick": 69,
+          "miss": 100,
           "accuracy": 33.2,
           "qualified": true
         },
@@ -496,18 +496,6 @@
           "qualified": true
         },
         {
-          "player": "gart",
-          "matches": 13,
-          "kills": 107,
-          "deaths": 123,
-          "dealt": 21800,
-          "received": 21600,
-          "pick": 81,
-          "miss": 129,
-          "accuracy": 30.8,
-          "qualified": true
-        },
-        {
           "player": "CoLD",
           "matches": 10,
           "kills": 84,
@@ -529,6 +517,18 @@
           "pick": 8,
           "miss": 204,
           "accuracy": 30.5,
+          "qualified": true
+        },
+        {
+          "player": "gart",
+          "matches": 14,
+          "kills": 111,
+          "deaths": 128,
+          "dealt": 23500,
+          "received": 23100,
+          "pick": 87,
+          "miss": 137,
+          "accuracy": 30.2,
           "qualified": true
         },
         {
@@ -1558,18 +1558,6 @@
           "qualified": true
         },
         {
-          "player": "shad",
-          "matches": 12,
-          "kills": 29,
-          "deaths": 29,
-          "dealt": 10561,
-          "received": 10233,
-          "pick": 74,
-          "miss": 102,
-          "accuracy": 18.8,
-          "qualified": true
-        },
-        {
           "player": "jabb@",
           "matches": 27,
           "kills": 103,
@@ -1578,6 +1566,18 @@
           "received": 28509,
           "pick": 155,
           "miss": 409,
+          "accuracy": 18.6,
+          "qualified": true
+        },
+        {
+          "player": "shad",
+          "matches": 13,
+          "kills": 29,
+          "deaths": 29,
+          "dealt": 10816,
+          "received": 10332,
+          "pick": 77,
+          "miss": 105,
           "accuracy": 18.6,
           "qualified": true
         },
@@ -1822,18 +1822,6 @@
           "qualified": false
         },
         {
-          "player": "gart",
-          "matches": 13,
-          "kills": 15,
-          "deaths": 47,
-          "dealt": 4389,
-          "received": 13009,
-          "pick": 44,
-          "miss": 136,
-          "accuracy": 13.9,
-          "qualified": false
-        },
-        {
           "player": "v4cio",
           "matches": 13,
           "kills": 35,
@@ -1867,6 +1855,18 @@
           "pick": 21,
           "miss": 120,
           "accuracy": 13.7,
+          "qualified": false
+        },
+        {
+          "player": "gart",
+          "matches": 14,
+          "kills": 15,
+          "deaths": 47,
+          "dealt": 4488,
+          "received": 13264,
+          "pick": 47,
+          "miss": 139,
+          "accuracy": 13.6,
           "qualified": false
         },
         {
@@ -2213,14 +2213,14 @@
         },
         {
           "player": "gart",
-          "matches": 12,
-          "kills": 32,
-          "deaths": 46,
-          "dealt": 8832,
-          "received": 8196,
-          "pick": 82,
-          "miss": 102,
-          "accuracy": 15.4,
+          "matches": 13,
+          "kills": 34,
+          "deaths": 49,
+          "dealt": 9354,
+          "received": 9744,
+          "pick": 88,
+          "miss": 111,
+          "accuracy": 15.2,
           "qualified": true
         },
         {
@@ -2284,18 +2284,6 @@
           "qualified": true
         },
         {
-          "player": "shad",
-          "matches": 12,
-          "kills": 42,
-          "deaths": 28,
-          "dealt": 8664,
-          "received": 7884,
-          "pick": 54,
-          "miss": 118,
-          "accuracy": 14.2,
-          "qualified": true
-        },
-        {
           "player": "Dark Abyys",
           "matches": 5,
           "kills": 15,
@@ -2318,6 +2306,18 @@
           "miss": 60,
           "accuracy": 14.1,
           "qualified": false
+        },
+        {
+          "player": "shad",
+          "matches": 13,
+          "kills": 45,
+          "deaths": 30,
+          "dealt": 10212,
+          "received": 8406,
+          "pick": 63,
+          "miss": 124,
+          "accuracy": 14.0,
+          "qualified": true
         },
         {
           "player": "shNoodle",
