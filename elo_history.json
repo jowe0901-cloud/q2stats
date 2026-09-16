@@ -16281,5 +16281,43 @@
       }
     ],
     "saved_at": "2026-09-16T23:49:37+02:00"
+  },
+  {
+    "match_id": "50e81e2a3c25e7f9",
+    "game_type": "team",
+    "winner": "Away",
+    "home_score": 19,
+    "away_score": 40,
+    "players": [
+      {
+        "player": "r",
+        "team": "Home",
+        "old_elo": 1503,
+        "change": -11.4,
+        "new_elo": 1492
+      },
+      {
+        "player": "tron",
+        "team": "Home",
+        "old_elo": 1469,
+        "change": -16,
+        "new_elo": 1453
+      },
+      {
+        "player": "Maniek",
+        "team": "Away",
+        "old_elo": 1421,
+        "change": 14.2,
+        "new_elo": 1435
+      },
+      {
+        "player": "fon",
+        "team": "Away",
+        "old_elo": 1596,
+        "change": 16,
+        "new_elo": 1612
+      }
+    ],
+    "saved_at": "2026-09-16T23:54:46+02:00"
   }
 ]
