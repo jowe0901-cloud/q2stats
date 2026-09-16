@@ -1,11 +1,11 @@
 [
   {
     "player": "qw",
-    "elo": 1824,
-    "matches": 83,
+    "elo": 1809,
+    "matches": 84,
     "wins": 46,
-    "losses": 37,
-    "winrate": 55.4
+    "losses": 38,
+    "winrate": 54.8
   },
   {
     "player": "maq",
@@ -80,6 +80,14 @@
     "winrate": 88.9
   },
   {
+    "player": "fon",
+    "elo": 1595,
+    "matches": 31,
+    "wins": 18,
+    "losses": 13,
+    "winrate": 58.1
+  },
+  {
     "player": "n0sferatu",
     "elo": 1589,
     "matches": 25,
@@ -94,14 +102,6 @@
     "wins": 7,
     "losses": 3,
     "winrate": 70.0
-  },
-  {
-    "player": "fon",
-    "elo": 1579,
-    "matches": 30,
-    "wins": 17,
-    "losses": 13,
-    "winrate": 56.7
   },
   {
     "player": ">daweed",
@@ -192,14 +192,6 @@
     "winrate": 66.7
   },
   {
-    "player": "Br00m^^",
-    "elo": 1534,
-    "matches": 41,
-    "wins": 20,
-    "losses": 21,
-    "winrate": 48.8
-  },
-  {
     "player": "frankie",
     "elo": 1533,
     "matches": 4,
@@ -216,20 +208,28 @@
     "winrate": 100.0
   },
   {
+    "player": "Br00m^^",
+    "elo": 1526,
+    "matches": 42,
+    "wins": 20,
+    "losses": 22,
+    "winrate": 47.6
+  },
+  {
+    "player": "Player-345",
+    "elo": 1523,
+    "matches": 20,
+    "wins": 10,
+    "losses": 10,
+    "winrate": 50.0
+  },
+  {
     "player": "rul",
     "elo": 1522,
     "matches": 33,
     "wins": 14,
     "losses": 19,
     "winrate": 42.4
-  },
-  {
-    "player": "r",
-    "elo": 1519,
-    "matches": 36,
-    "wins": 23,
-    "losses": 13,
-    "winrate": 63.9
   },
   {
     "player": "m",
@@ -312,28 +312,12 @@
     "winrate": 66.7
   },
   {
-    "player": "Player-345",
-    "elo": 1509,
-    "matches": 19,
-    "wins": 9,
-    "losses": 10,
-    "winrate": 47.4
-  },
-  {
     "player": "fonbeers",
     "elo": 1509,
     "matches": 5,
     "wins": 2,
     "losses": 3,
     "winrate": 40.0
-  },
-  {
-    "player": "shNoodle",
-    "elo": 1509,
-    "matches": 5,
-    "wins": 3,
-    "losses": 2,
-    "winrate": 60.0
   },
   {
     "player": "slonik",
@@ -368,12 +352,28 @@
     "winrate": 100.0
   },
   {
+    "player": "shNoodle",
+    "elo": 1504,
+    "matches": 6,
+    "wins": 3,
+    "losses": 3,
+    "winrate": 50.0
+  },
+  {
     "player": "GayAd$",
     "elo": 1504,
     "matches": 1,
     "wins": 0,
     "losses": 1,
     "winrate": 0.0
+  },
+  {
+    "player": "r",
+    "elo": 1503,
+    "matches": 37,
+    "wins": 23,
+    "losses": 14,
+    "winrate": 62.2
   },
   {
     "player": "aid",
@@ -696,6 +696,14 @@
     "winrate": 20.0
   },
   {
+    "player": "Puma!",
+    "elo": 1445,
+    "matches": 14,
+    "wins": 5,
+    "losses": 9,
+    "winrate": 35.7
+  },
+  {
     "player": "xRSNx",
     "elo": 1445,
     "matches": 6,
@@ -718,14 +726,6 @@
     "wins": 4,
     "losses": 6,
     "winrate": 40.0
-  },
-  {
-    "player": "Puma!",
-    "elo": 1439,
-    "matches": 13,
-    "wins": 4,
-    "losses": 9,
-    "winrate": 30.8
   },
   {
     "player": "error",
