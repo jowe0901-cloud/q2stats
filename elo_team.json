@@ -88,14 +88,6 @@
     "winrate": 56.0
   },
   {
-    "player": "B100D",
-    "elo": 1585,
-    "matches": 46,
-    "wins": 27,
-    "losses": 19,
-    "winrate": 58.7
-  },
-  {
     "player": "roon",
     "elo": 1579,
     "matches": 8,
@@ -118,6 +110,14 @@
     "wins": 5,
     "losses": 0,
     "winrate": 100.0
+  },
+  {
+    "player": "B100D",
+    "elo": 1571,
+    "matches": 47,
+    "wins": 27,
+    "losses": 20,
+    "winrate": 57.4
   },
   {
     "player": "GipSy",
@@ -280,14 +280,6 @@
     "winrate": 66.7
   },
   {
-    "player": "lamerator",
-    "elo": 1513,
-    "matches": 1,
-    "wins": 1,
-    "losses": 0,
-    "winrate": 100.0
-  },
-  {
     "player": "szef|shotman",
     "elo": 1512,
     "matches": 6,
@@ -440,6 +432,14 @@
     "winrate": 66.7
   },
   {
+    "player": "lamerator",
+    "elo": 1497,
+    "matches": 2,
+    "wins": 1,
+    "losses": 1,
+    "winrate": 50.0
+  },
+  {
     "player": "Bullz",
     "elo": 1496,
     "matches": 2,
@@ -528,20 +528,20 @@
     "winrate": 50.0
   },
   {
+    "player": "shad",
+    "elo": 1482,
+    "matches": 4,
+    "wins": 1,
+    "losses": 3,
+    "winrate": 25.0
+  },
+  {
     "player": "Dark Abyys",
     "elo": 1476,
     "matches": 5,
     "wins": 2,
     "losses": 3,
     "winrate": 40.0
-  },
-  {
-    "player": "SUPER-LAG",
-    "elo": 1475,
-    "matches": 40,
-    "wins": 22,
-    "losses": 18,
-    "winrate": 55.0
   },
   {
     "player": "odi",
@@ -624,14 +624,6 @@
     "winrate": 0.0
   },
   {
-    "player": "shad",
-    "elo": 1466,
-    "matches": 3,
-    "wins": 0,
-    "losses": 3,
-    "winrate": 0.0
-  },
-  {
     "player": "TIM",
     "elo": 1460,
     "matches": 8,
@@ -646,6 +638,14 @@
     "wins": 13,
     "losses": 18,
     "winrate": 41.9
+  },
+  {
+    "player": "SUPER-LAG",
+    "elo": 1459,
+    "matches": 41,
+    "wins": 22,
+    "losses": 19,
+    "winrate": 53.7
   },
   {
     "player": "need1",
@@ -721,11 +721,11 @@
   },
   {
     "player": "Maniek",
-    "elo": 1393,
-    "matches": 39,
-    "wins": 17,
+    "elo": 1409,
+    "matches": 40,
+    "wins": 18,
     "losses": 22,
-    "winrate": 43.6
+    "winrate": 45.0
   },
   {
     "player": "sevvq",
@@ -769,10 +769,10 @@
   },
   {
     "player": "jabb@",
-    "elo": 1141,
-    "matches": 80,
-    "wins": 31,
+    "elo": 1157,
+    "matches": 81,
+    "wins": 32,
     "losses": 49,
-    "winrate": 38.8
+    "winrate": 39.5
   }
 ]
