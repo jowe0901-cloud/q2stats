@@ -1,17 +1,17 @@
 import { getDatabase } from "@netlify/database";
 import crypto from "node:crypto";
 
-const json = (statusCode, body) =>
+const json = (status, body) =>
   new Response(JSON.stringify(body), {
-    status: statusCode,
+    status,
     headers: { "content-type": "application/json; charset=utf-8" },
   });
 
-function getMatchId(event) {
-  const path = event.path || "";
-  const marker = "/api/v1/matches/";
-  if (!path.includes(marker)) return null;
-  const value = path.split(marker)[1]?.split("/")[0];
+function getMatchId(request) {
+  const url = new URL(request.url);
+  const prefix = "/api/v1/matches/";
+  if (!url.pathname.startsWith(prefix)) return null;
+  const value = url.pathname.slice(prefix.length).split("/")[0];
   return value ? decodeURIComponent(value) : null;
 }
 
@@ -38,9 +38,13 @@ async function getOneMatch(db, matchId) {
   return { ...match, players: players.rows || [] };
 }
 
-async function listMatches(db, event) {
-  const rawLimit = Number(event.queryStringParameters?.limit || 20);
-  const limit = Math.max(1, Math.min(Number.isFinite(rawLimit) ? Math.trunc(rawLimit) : 20, 100));
+async function listMatches(db, request) {
+  const url = new URL(request.url);
+  const requested = Number(url.searchParams.get("limit") || 20);
+  const limit = Math.max(
+    1,
+    Math.min(Number.isFinite(requested) ? Math.trunc(requested) : 20, 100)
+  );
 
   const rows = await db.sql`
     SELECT id, match_id, server, map, game_type, home_score, away_score,
@@ -57,12 +61,12 @@ async function listMatches(db, event) {
   };
 }
 
-export default async (event) => {
+export default async (request) => {
   const db = getDatabase();
 
   try {
-    if (event.httpMethod === "GET") {
-      const matchId = getMatchId(event);
+    if (request.method === "GET") {
+      const matchId = getMatchId(request);
 
       if (matchId) {
         const match = await getOneMatch(db, matchId);
@@ -71,19 +75,22 @@ export default async (event) => {
           : json(404, { status: "error", error: "Match not found" });
       }
 
-      return json(200, await listMatches(db, event));
+      return json(200, await listMatches(db, request));
     }
 
-    if (event.httpMethod !== "POST") {
+    if (request.method !== "POST") {
       return json(405, { status: "error", error: "Method not allowed" });
     }
 
-    const serverKey = event.headers?.["x-q2stats-server-key"] || event.headers?.["X-Q2Stats-Server-Key"];
+    const serverKey = request.headers.get("x-q2stats-server-key");
     if (!serverKey || !serverKey.startsWith("q2s_")) {
       return json(401, { status: "error", error: "Unauthorized" });
     }
 
-    const serverKeyHash = crypto.createHash("sha256").update(serverKey).digest("hex");
+    const serverKeyHash = crypto
+      .createHash("sha256")
+      .update(serverKey)
+      .digest("hex");
 
     const serverRows = await db.sql`
       SELECT id, name, enabled
@@ -97,17 +104,25 @@ export default async (event) => {
     }
 
     const server = serverRows.rows[0];
-    const body = JSON.parse(event.body || "{}");
+    const body = await request.json();
 
     if (!body.match_id || !Array.isArray(body.players) || body.players.length === 0) {
-      return json(400, { status: "error", error: "match_id and players are required" });
+      return json(400, {
+        status: "error",
+        error: "match_id and players are required",
+      });
     }
 
     const existing = await db.sql`
       SELECT id FROM matches WHERE match_id = ${body.match_id} LIMIT 1
     `;
+
     if (existing.rows?.length) {
-      return json(200, { status: "duplicate", match_id: body.match_id, server_id: server.id });
+      return json(200, {
+        status: "duplicate",
+        match_id: body.match_id,
+        server_id: server.id,
+      });
     }
 
     const inserted = await db.sql`
@@ -169,7 +184,10 @@ export default async (event) => {
     });
   } catch (error) {
     console.error(error);
-    return json(500, { status: "error", error: error.message || "Internal server error" });
+    return json(500, {
+      status: "error",
+      error: error.message || "Internal server error",
+    });
   }
 };
 
