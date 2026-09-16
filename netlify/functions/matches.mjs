@@ -1,11 +1,11 @@
 import { getDatabase } from "@netlify/database";
 import crypto from "node:crypto";
 
-const json = (statusCode, body) => ({
-  statusCode,
-  headers: { "content-type": "application/json; charset=utf-8" },
-  body: JSON.stringify(body),
-});
+const json = (statusCode, body) =>
+  new Response(JSON.stringify(body), {
+    status: statusCode,
+    headers: { "content-type": "application/json; charset=utf-8" },
+  });
 
 function getMatchId(event) {
   const path = event.path || "";
