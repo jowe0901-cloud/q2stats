@@ -80,6 +80,14 @@
     "winrate": 100.0
   },
   {
+    "player": "ping80",
+    "elo": 1549,
+    "matches": 4,
+    "wins": 4,
+    "losses": 0,
+    "winrate": 100.0
+  },
+  {
     "player": "Logic",
     "elo": 1544,
     "matches": 3,
@@ -98,14 +106,6 @@
   {
     "player": "ptr",
     "elo": 1541,
-    "matches": 3,
-    "wins": 3,
-    "losses": 0,
-    "winrate": 100.0
-  },
-  {
-    "player": "ping80",
-    "elo": 1539,
     "matches": 3,
     "wins": 3,
     "losses": 0,
@@ -424,20 +424,20 @@
     "winrate": 27.8
   },
   {
-    "player": "v4cio",
-    "elo": 1400,
-    "matches": 10,
-    "wins": 1,
-    "losses": 9,
-    "winrate": 10.0
-  },
-  {
     "player": "error",
     "elo": 1395,
     "matches": 9,
     "wins": 0,
     "losses": 9,
     "winrate": 0.0
+  },
+  {
+    "player": "v4cio",
+    "elo": 1390,
+    "matches": 11,
+    "wins": 1,
+    "losses": 10,
+    "winrate": 9.1
   },
   {
     "player": "Player-345",
