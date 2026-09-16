@@ -88,6 +88,14 @@
     "winrate": 56.0
   },
   {
+    "player": "B100D",
+    "elo": 1585,
+    "matches": 46,
+    "wins": 27,
+    "losses": 19,
+    "winrate": 58.7
+  },
+  {
     "player": "roon",
     "elo": 1579,
     "matches": 8,
@@ -102,14 +110,6 @@
     "wins": 7,
     "losses": 1,
     "winrate": 87.5
-  },
-  {
-    "player": "B100D",
-    "elo": 1575,
-    "matches": 45,
-    "wins": 26,
-    "losses": 19,
-    "winrate": 57.8
   },
   {
     "player": ">OPTIMIZER",
@@ -278,6 +278,14 @@
     "wins": 2,
     "losses": 1,
     "winrate": 66.7
+  },
+  {
+    "player": "lamerator",
+    "elo": 1513,
+    "matches": 1,
+    "wins": 1,
+    "losses": 0,
+    "winrate": 100.0
   },
   {
     "player": "szef|shotman",
@@ -576,14 +584,6 @@
     "winrate": 33.3
   },
   {
-    "player": "shad",
-    "elo": 1473,
-    "matches": 2,
-    "wins": 0,
-    "losses": 2,
-    "winrate": 0.0
-  },
-  {
     "player": "asd_krzys",
     "elo": 1472,
     "matches": 5,
@@ -621,6 +621,14 @@
     "matches": 2,
     "wins": 0,
     "losses": 2,
+    "winrate": 0.0
+  },
+  {
+    "player": "shad",
+    "elo": 1466,
+    "matches": 3,
+    "wins": 0,
+    "losses": 3,
     "winrate": 0.0
   },
   {
@@ -761,10 +769,10 @@
   },
   {
     "player": "jabb@",
-    "elo": 1157,
-    "matches": 79,
+    "elo": 1141,
+    "matches": 80,
     "wins": 31,
-    "losses": 48,
-    "winrate": 39.2
+    "losses": 49,
+    "winrate": 38.8
   }
 ]
