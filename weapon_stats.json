@@ -412,18 +412,6 @@
           "qualified": false
         },
         {
-          "player": "shad",
-          "matches": 18,
-          "kills": 84,
-          "deaths": 53,
-          "dealt": 22300,
-          "received": 12600,
-          "pick": 89,
-          "miss": 154,
-          "accuracy": 33.8,
-          "qualified": true
-        },
-        {
           "player": "badman",
           "matches": 23,
           "kills": 198,
@@ -493,6 +481,18 @@
           "pick": 31,
           "miss": 88,
           "accuracy": 32.9,
+          "qualified": true
+        },
+        {
+          "player": "shad",
+          "matches": 19,
+          "kills": 85,
+          "deaths": 54,
+          "dealt": 22900,
+          "received": 13300,
+          "pick": 93,
+          "miss": 160,
+          "accuracy": 32.7,
           "qualified": true
         },
         {
@@ -880,6 +880,18 @@
           "qualified": true
         },
         {
+          "player": "nem",
+          "matches": 3,
+          "kills": 1,
+          "deaths": 17,
+          "dealt": 1400,
+          "received": 4000,
+          "pick": 27,
+          "miss": 13,
+          "accuracy": 24.0,
+          "qualified": false
+        },
+        {
           "player": "ptr",
           "matches": 2,
           "kills": 0,
@@ -1021,18 +1033,6 @@
           "pick": 9,
           "miss": 49,
           "accuracy": 18.0,
-          "qualified": false
-        },
-        {
-          "player": "nem",
-          "matches": 2,
-          "kills": 0,
-          "deaths": 16,
-          "dealt": 700,
-          "received": 3400,
-          "pick": 21,
-          "miss": 9,
-          "accuracy": 17.5,
           "qualified": false
         },
         {
@@ -1871,14 +1871,14 @@
         },
         {
           "player": "shad",
-          "matches": 18,
-          "kills": 40,
-          "deaths": 37,
-          "dealt": 13845,
-          "received": 13472,
-          "pick": 101,
-          "miss": 164,
-          "accuracy": 17.8,
+          "matches": 19,
+          "kills": 44,
+          "deaths": 40,
+          "dealt": 15345,
+          "received": 14199,
+          "pick": 106,
+          "miss": 172,
+          "accuracy": 17.9,
           "qualified": true
         },
         {
@@ -2123,13 +2123,13 @@
         },
         {
           "player": "nem",
-          "matches": 2,
-          "kills": 3,
-          "deaths": 4,
-          "dealt": 1606,
-          "received": 1510,
-          "pick": 21,
-          "miss": 10,
+          "matches": 3,
+          "kills": 6,
+          "deaths": 8,
+          "dealt": 2217,
+          "received": 3242,
+          "pick": 29,
+          "miss": 15,
           "accuracy": 9.0,
           "qualified": false
         },
@@ -2440,18 +2440,6 @@
           "qualified": true
         },
         {
-          "player": "nem",
-          "matches": 2,
-          "kills": 1,
-          "deaths": 12,
-          "dealt": 1134,
-          "received": 2022,
-          "pick": 15,
-          "miss": 18,
-          "accuracy": 15.5,
-          "qualified": false
-        },
-        {
           "player": "David",
           "matches": 4,
           "kills": 26,
@@ -2584,6 +2572,18 @@
           "qualified": false
         },
         {
+          "player": "nem",
+          "matches": 3,
+          "kills": 1,
+          "deaths": 15,
+          "dealt": 1686,
+          "received": 2982,
+          "pick": 23,
+          "miss": 23,
+          "accuracy": 14.0,
+          "qualified": false
+        },
+        {
           "player": "Keizer",
           "matches": 32,
           "kills": 132,
@@ -2608,18 +2608,6 @@
           "qualified": true
         },
         {
-          "player": "shad",
-          "matches": 18,
-          "kills": 68,
-          "deaths": 38,
-          "dealt": 14232,
-          "received": 11136,
-          "pick": 91,
-          "miss": 174,
-          "accuracy": 13.7,
-          "qualified": true
-        },
-        {
           "player": "tron",
           "matches": 21,
           "kills": 44,
@@ -2641,6 +2629,18 @@
           "pick": 41,
           "miss": 41,
           "accuracy": 13.7,
+          "qualified": true
+        },
+        {
+          "player": "shad",
+          "matches": 19,
+          "kills": 71,
+          "deaths": 38,
+          "dealt": 15192,
+          "received": 11688,
+          "pick": 96,
+          "miss": 182,
+          "accuracy": 13.6,
           "qualified": true
         },
         {
