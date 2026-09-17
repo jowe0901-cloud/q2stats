@@ -1,8 +1,6 @@
 -- Q2Stats migration 003
--- Central Elo tables only.
--- Does NOT modify matches or match_players.
-
-
+-- Central Elo derived tables.
+-- Does not modify matches or match_players.
 
 CREATE TABLE IF NOT EXISTS elo_ratings (
     id BIGSERIAL PRIMARY KEY,
@@ -13,9 +11,7 @@ CREATE TABLE IF NOT EXISTS elo_ratings (
     wins INTEGER NOT NULL DEFAULT 0,
     losses INTEGER NOT NULL DEFAULT 0,
     updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
-
-    CONSTRAINT elo_ratings_player_type_unique
-        UNIQUE (player_name, elo_type)
+    CONSTRAINT elo_ratings_player_type_unique UNIQUE (player_name, elo_type)
 );
 
 CREATE INDEX IF NOT EXISTS idx_elo_ratings_type_rating
@@ -23,8 +19,6 @@ CREATE INDEX IF NOT EXISTS idx_elo_ratings_type_rating
 
 CREATE INDEX IF NOT EXISTS idx_elo_ratings_player
     ON elo_ratings (player_name);
-
-BEGIN;
 
 CREATE TABLE IF NOT EXISTS elo_history (
     id BIGSERIAL PRIMARY KEY,
@@ -36,7 +30,6 @@ CREATE TABLE IF NOT EXISTS elo_history (
     elo_change DOUBLE PRECISION NOT NULL,
     new_elo DOUBLE PRECISION NOT NULL,
     created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
-
     CONSTRAINT elo_history_match_player_type_unique
         UNIQUE (match_id, player_name, elo_type)
 );
@@ -46,6 +39,3 @@ CREATE INDEX IF NOT EXISTS idx_elo_history_player_type
 
 CREATE INDEX IF NOT EXISTS idx_elo_history_match
     ON elo_history (match_id);
-
-COMMIT;
-
