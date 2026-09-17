@@ -24,6 +24,7 @@ CREATE INDEX IF NOT EXISTS idx_elo_ratings_type_rating
 CREATE INDEX IF NOT EXISTS idx_elo_ratings_player
     ON elo_ratings (player_name);
 
+BEGIN;
 
 CREATE TABLE IF NOT EXISTS elo_history (
     id BIGSERIAL PRIMARY KEY,
@@ -46,4 +47,5 @@ CREATE INDEX IF NOT EXISTS idx_elo_history_player_type
 CREATE INDEX IF NOT EXISTS idx_elo_history_match
     ON elo_history (match_id);
 
+COMMIT;
 
