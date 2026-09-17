@@ -2,7 +2,7 @@
 -- Central Elo tables only.
 -- Does NOT modify matches or match_players.
 
-BEGIN;
+
 
 CREATE TABLE IF NOT EXISTS elo_ratings (
     id BIGSERIAL PRIMARY KEY,
@@ -46,4 +46,4 @@ CREATE INDEX IF NOT EXISTS idx_elo_history_player_type
 CREATE INDEX IF NOT EXISTS idx_elo_history_match
     ON elo_history (match_id);
 
-COMMIT;
+
