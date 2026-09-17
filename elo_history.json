@@ -16635,5 +16635,29 @@
       }
     ],
     "saved_at": "2026-09-17T15:50:34+02:00"
+  },
+  {
+    "match_id": "dc666670b6065304",
+    "game_type": "1v1",
+    "winner": "Home",
+    "home_score": 3,
+    "away_score": 1,
+    "players": [
+      {
+        "player": "ping80",
+        "team": "Home",
+        "old_elo": 1549,
+        "change": 15.2,
+        "new_elo": 1565
+      },
+      {
+        "player": "zip",
+        "team": "Away",
+        "old_elo": 1531,
+        "change": -15.2,
+        "new_elo": 1516
+      }
+    ],
+    "saved_at": "2026-09-17T16:18:14+02:00"
   }
 ]

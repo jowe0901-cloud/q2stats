@@ -80,16 +80,16 @@
     "winrate": 100.0
   },
   {
-    "player": "m",
-    "elo": 1555,
-    "matches": 4,
-    "wins": 4,
+    "player": "ping80",
+    "elo": 1565,
+    "matches": 5,
+    "wins": 5,
     "losses": 0,
     "winrate": 100.0
   },
   {
-    "player": "ping80",
-    "elo": 1549,
+    "player": "m",
+    "elo": 1555,
     "matches": 4,
     "wins": 4,
     "losses": 0,
@@ -144,14 +144,6 @@
     "winrate": 100.0
   },
   {
-    "player": "zip",
-    "elo": 1531,
-    "matches": 2,
-    "wins": 2,
-    "losses": 0,
-    "winrate": 100.0
-  },
-  {
     "player": "SUPER-LAG",
     "elo": 1529,
     "matches": 2,
@@ -174,6 +166,14 @@
     "wins": 4,
     "losses": 5,
     "winrate": 44.4
+  },
+  {
+    "player": "zip",
+    "elo": 1516,
+    "matches": 3,
+    "wins": 2,
+    "losses": 1,
+    "winrate": 66.7
   },
   {
     "player": "fonbeers",
