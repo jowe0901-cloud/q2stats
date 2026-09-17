@@ -16611,5 +16611,29 @@
       }
     ],
     "saved_at": "2026-09-17T15:38:15+02:00"
+  },
+  {
+    "match_id": "db363b47eb9a6183",
+    "game_type": "1v1",
+    "winner": "Home",
+    "home_score": 11,
+    "away_score": 7,
+    "players": [
+      {
+        "player": "nem",
+        "team": "Home",
+        "old_elo": 1442,
+        "change": 24.6,
+        "new_elo": 1467
+      },
+      {
+        "player": "shad",
+        "team": "Away",
+        "old_elo": 1652,
+        "change": -24.6,
+        "new_elo": 1627
+      }
+    ],
+    "saved_at": "2026-09-17T15:50:34+02:00"
   }
 ]
