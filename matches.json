@@ -136677,5 +136677,169 @@
       }
     ],
     "saved_at": "2026-09-18T23:11:28+02:00"
+  },
+  {
+    "match_id": "5e987dc4cbcad3aa",
+    "game_type": "1v1",
+    "hostname": "PacketFlinger.com ~ OpenTDM ~ Germany",
+    "mapname": "ztn2dm3",
+    "match_type": "Duel",
+    "port": 27910,
+    "winner": "Home",
+    "home_score": 16,
+    "away_score": 7,
+    "players": [
+      {
+        "name": "Maniek",
+        "kills": 16,
+        "deaths": 7,
+        "suicides": 0,
+        "teamkills": 0,
+        "teleports": 0,
+        "damage": 5018,
+        "damage_received": 3916,
+        "team_damage": 0,
+        "team_damage_received": 0,
+        "weapons": {
+          "Super Shotgun": {
+            "accuracy": 61,
+            "kills": 0,
+            "deaths": 1,
+            "dealt": 60,
+            "received": 426,
+            "pick": 7,
+            "miss": 14
+          },
+          "Chaingun": {
+            "accuracy": 18,
+            "kills": 5,
+            "deaths": 0,
+            "dealt": 1032,
+            "received": 420,
+            "pick": 9,
+            "miss": 6
+          },
+          "Grenades": {
+            "accuracy": 0,
+            "kills": 0,
+            "deaths": null,
+            "dealt": 0,
+            "received": null,
+            "pick": 0,
+            "miss": 0
+          },
+          "Grenade Launcher": {
+            "accuracy": null,
+            "kills": null,
+            "deaths": null,
+            "dealt": null,
+            "received": null,
+            "pick": 2,
+            "miss": 10
+          },
+          "Rocket Launcher": {
+            "accuracy": 27,
+            "kills": 3,
+            "deaths": 0,
+            "dealt": 1626,
+            "received": 210,
+            "pick": 10,
+            "miss": 7
+          },
+          "Railgun": {
+            "accuracy": 34,
+            "kills": 8,
+            "deaths": 6,
+            "dealt": 2300,
+            "received": 2800,
+            "pick": 4,
+            "miss": 9
+          }
+        },
+        "team": "Home",
+        "ping": 25,
+        "player_id": "1",
+        "elo_type": "1v1",
+        "elo_before": 1393,
+        "elo_change": 20.7,
+        "elo_after": 1413
+      },
+      {
+        "name": "tomato-gose",
+        "kills": 7,
+        "deaths": 16,
+        "suicides": 0,
+        "teamkills": 0,
+        "teleports": 0,
+        "damage": 3771,
+        "damage_received": 5018,
+        "team_damage": 0,
+        "team_damage_received": 0,
+        "weapons": {
+          "Super Shotgun": {
+            "accuracy": 69,
+            "kills": 1,
+            "deaths": 0,
+            "dealt": 426,
+            "received": 60,
+            "pick": 14,
+            "miss": 7
+          },
+          "Chaingun": {
+            "accuracy": 15,
+            "kills": 0,
+            "deaths": 5,
+            "dealt": 420,
+            "received": 1032,
+            "pick": 6,
+            "miss": 9
+          },
+          "Grenades": {
+            "accuracy": 0,
+            "kills": 0,
+            "deaths": null,
+            "dealt": 0,
+            "received": null,
+            "pick": 0,
+            "miss": 0
+          },
+          "Grenade Launcher": {
+            "accuracy": 0,
+            "kills": 0,
+            "deaths": null,
+            "dealt": 0,
+            "received": null,
+            "pick": 10,
+            "miss": 2
+          },
+          "Rocket Launcher": {
+            "accuracy": 5,
+            "kills": 0,
+            "deaths": 3,
+            "dealt": 65,
+            "received": 1626,
+            "pick": 7,
+            "miss": 10
+          },
+          "Railgun": {
+            "accuracy": 29,
+            "kills": 6,
+            "deaths": 8,
+            "dealt": 2800,
+            "received": 2300,
+            "pick": 9,
+            "miss": 4
+          }
+        },
+        "team": "Away",
+        "ping": 37,
+        "player_id": "7",
+        "elo_type": "1v1",
+        "elo_before": 1499,
+        "elo_change": -20.7,
+        "elo_after": 1478
+      }
+    ],
+    "saved_at": "2026-09-18T23:32:46+02:00"
   }
 ]
