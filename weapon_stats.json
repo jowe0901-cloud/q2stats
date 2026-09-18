@@ -533,13 +533,13 @@
         },
         {
           "player": "badman",
-          "matches": 30,
-          "kills": 268,
-          "deaths": 221,
-          "dealt": 37800,
-          "received": 33800,
-          "pick": 59,
-          "miss": 432,
+          "matches": 31,
+          "kills": 269,
+          "deaths": 227,
+          "dealt": 39100,
+          "received": 35700,
+          "pick": 64,
+          "miss": 436,
           "accuracy": 33.4,
           "qualified": true
         },
@@ -1012,6 +1012,18 @@
           "qualified": true
         },
         {
+          "player": "piu-chill",
+          "matches": 9,
+          "kills": 51,
+          "deaths": 29,
+          "dealt": 9600,
+          "received": 9300,
+          "pick": 61,
+          "miss": 57,
+          "accuracy": 25.3,
+          "qualified": true
+        },
+        {
           "player": "jabb@",
           "matches": 51,
           "kills": 118,
@@ -1020,18 +1032,6 @@
           "received": 54900,
           "pick": 84,
           "miss": 488,
-          "accuracy": 25.2,
-          "qualified": true
-        },
-        {
-          "player": "piu-chill",
-          "matches": 8,
-          "kills": 45,
-          "deaths": 28,
-          "dealt": 7700,
-          "received": 8000,
-          "pick": 57,
-          "miss": 52,
           "accuracy": 25.2,
           "qualified": true
         },
@@ -1966,18 +1966,6 @@
           "qualified": true
         },
         {
-          "player": "piu-chill",
-          "matches": 8,
-          "kills": 35,
-          "deaths": 20,
-          "dealt": 9841,
-          "received": 5896,
-          "pick": 77,
-          "miss": 47,
-          "accuracy": 21.0,
-          "qualified": true
-        },
-        {
           "player": "KaPo",
           "matches": 1,
           "kills": 12,
@@ -2024,6 +2012,18 @@
           "miss": 70,
           "accuracy": 20.7,
           "qualified": false
+        },
+        {
+          "player": "piu-chill",
+          "matches": 9,
+          "kills": 38,
+          "deaths": 20,
+          "dealt": 10885,
+          "received": 6429,
+          "pick": 85,
+          "miss": 53,
+          "accuracy": 20.6,
+          "qualified": true
         },
         {
           "player": "//VERSACE",
@@ -2302,18 +2302,6 @@
           "qualified": false
         },
         {
-          "player": "badman",
-          "matches": 30,
-          "kills": 54,
-          "deaths": 95,
-          "dealt": 9235,
-          "received": 18139,
-          "pick": 87,
-          "miss": 666,
-          "accuracy": 17.8,
-          "qualified": true
-        },
-        {
           "player": "piu-need1",
           "matches": 6,
           "kills": 23,
@@ -2347,6 +2335,18 @@
           "pick": 122,
           "miss": 193,
           "accuracy": 17.6,
+          "qualified": true
+        },
+        {
+          "player": "badman",
+          "matches": 31,
+          "kills": 54,
+          "deaths": 98,
+          "dealt": 9592,
+          "received": 19230,
+          "pick": 93,
+          "miss": 674,
+          "accuracy": 17.5,
           "qualified": true
         },
         {
@@ -3137,14 +3137,14 @@
         },
         {
           "player": "badman",
-          "matches": 29,
-          "kills": 91,
-          "deaths": 67,
-          "dealt": 12228,
-          "received": 9036,
-          "pick": 68,
-          "miss": 391,
-          "accuracy": 14.6,
+          "matches": 30,
+          "kills": 92,
+          "deaths": 69,
+          "dealt": 12690,
+          "received": 9636,
+          "pick": 75,
+          "miss": 397,
+          "accuracy": 14.5,
           "qualified": true
         },
         {
@@ -3616,18 +3616,6 @@
           "qualified": true
         },
         {
-          "player": "piu-chill",
-          "matches": 8,
-          "kills": 58,
-          "deaths": 6,
-          "dealt": 9300,
-          "received": 3564,
-          "pick": 64,
-          "miss": 49,
-          "accuracy": 12.4,
-          "qualified": true
-        },
-        {
           "player": "piu-laging",
           "matches": 7,
           "kills": 22,
@@ -3648,6 +3636,18 @@
           "received": 13020,
           "pick": 61,
           "miss": 348,
+          "accuracy": 12.3,
+          "qualified": true
+        },
+        {
+          "player": "piu-chill",
+          "matches": 9,
+          "kills": 60,
+          "deaths": 7,
+          "dealt": 9900,
+          "received": 4026,
+          "pick": 70,
+          "miss": 56,
           "accuracy": 12.3,
           "qualified": true
         },
