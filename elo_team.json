@@ -9,11 +9,11 @@
   },
   {
     "player": "qw",
-    "elo": 1767,
-    "matches": 89,
-    "wins": 47,
+    "elo": 1779,
+    "matches": 90,
+    "wins": 48,
     "losses": 42,
-    "winrate": 52.8
+    "winrate": 53.3
   },
   {
     "player": "warrior",
@@ -73,11 +73,11 @@
   },
   {
     "player": "badman",
-    "elo": 1636,
-    "matches": 45,
+    "elo": 1625,
+    "matches": 46,
     "wins": 25,
-    "losses": 20,
-    "winrate": 55.6
+    "losses": 21,
+    "winrate": 54.3
   },
   {
     "player": ">daPurrI",
@@ -256,6 +256,14 @@
     "winrate": 42.4
   },
   {
+    "player": "need1",
+    "elo": 1521,
+    "matches": 33,
+    "wins": 18,
+    "losses": 15,
+    "winrate": 54.5
+  },
+  {
     "player": "Dark",
     "elo": 1517,
     "matches": 2,
@@ -374,14 +382,6 @@
     "wins": 1,
     "losses": 0,
     "winrate": 100.0
-  },
-  {
-    "player": "need1",
-    "elo": 1505,
-    "matches": 32,
-    "wins": 17,
-    "losses": 15,
-    "winrate": 53.1
   },
   {
     "player": "r",
@@ -560,14 +560,6 @@
     "winrate": 42.9
   },
   {
-    "player": "szef|shotman",
-    "elo": 1486,
-    "matches": 8,
-    "wins": 4,
-    "losses": 4,
-    "winrate": 50.0
-  },
-  {
     "player": "Player-345",
     "elo": 1485,
     "matches": 31,
@@ -638,6 +630,14 @@
     "wins": 2,
     "losses": 3,
     "winrate": 40.0
+  },
+  {
+    "player": "szef|shotman",
+    "elo": 1482,
+    "matches": 9,
+    "wins": 4,
+    "losses": 5,
+    "winrate": 44.4
   },
   {
     "player": "shad",
@@ -824,20 +824,20 @@
     "winrate": 35.0
   },
   {
-    "player": "[sf]T3RM!N4ToR",
-    "elo": 1440,
-    "matches": 10,
-    "wins": 4,
-    "losses": 6,
-    "winrate": 40.0
-  },
-  {
     "player": "zip",
     "elo": 1438,
     "matches": 32,
     "wins": 13,
     "losses": 19,
     "winrate": 40.6
+  },
+  {
+    "player": "[sf]T3RM!N4ToR",
+    "elo": 1424,
+    "matches": 11,
+    "wins": 4,
+    "losses": 7,
+    "winrate": 36.4
   },
   {
     "player": "Qiub",
