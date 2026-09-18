@@ -33,19 +33,11 @@
   },
   {
     "player": "B100D",
-    "elo": 1594,
-    "matches": 15,
-    "wins": 12,
-    "losses": 3,
-    "winrate": 80.0
-  },
-  {
-    "player": "Keizer",
-    "elo": 1584,
-    "matches": 6,
-    "wins": 6,
-    "losses": 0,
-    "winrate": 100.0
+    "elo": 1591,
+    "matches": 20,
+    "wins": 15,
+    "losses": 5,
+    "winrate": 75.0
   },
   {
     "player": "insomnia",
@@ -56,12 +48,28 @@
     "winrate": 100.0
   },
   {
+    "player": "piu-need1",
+    "elo": 1578,
+    "matches": 6,
+    "wins": 6,
+    "losses": 0,
+    "winrate": 100.0
+  },
+  {
     "player": "daweed",
     "elo": 1572,
     "matches": 5,
     "wins": 5,
     "losses": 0,
     "winrate": 100.0
+  },
+  {
+    "player": "piu-laging",
+    "elo": 1572,
+    "matches": 7,
+    "wins": 6,
+    "losses": 1,
+    "winrate": 85.7
   },
   {
     "player": "tron",
@@ -80,12 +88,36 @@
     "winrate": 100.0
   },
   {
+    "player": "David",
+    "elo": 1565,
+    "matches": 5,
+    "wins": 5,
+    "losses": 0,
+    "winrate": 100.0
+  },
+  {
     "player": "ping80",
     "elo": 1565,
     "matches": 5,
     "wins": 5,
     "losses": 0,
     "winrate": 100.0
+  },
+  {
+    "player": "Keizer",
+    "elo": 1565,
+    "matches": 7,
+    "wins": 6,
+    "losses": 1,
+    "winrate": 85.7
+  },
+  {
+    "player": "cne",
+    "elo": 1555,
+    "matches": 6,
+    "wins": 5,
+    "losses": 1,
+    "winrate": 83.3
   },
   {
     "player": "m",
@@ -106,22 +138,6 @@
   {
     "player": "ptr",
     "elo": 1541,
-    "matches": 3,
-    "wins": 3,
-    "losses": 0,
-    "winrate": 100.0
-  },
-  {
-    "player": "cne",
-    "elo": 1541,
-    "matches": 5,
-    "wins": 4,
-    "losses": 1,
-    "winrate": 80.0
-  },
-  {
-    "player": "David",
-    "elo": 1539,
     "matches": 3,
     "wins": 3,
     "losses": 0,
@@ -153,11 +169,11 @@
   },
   {
     "player": "fff",
-    "elo": 1522,
-    "matches": 3,
-    "wins": 2,
-    "losses": 1,
-    "winrate": 66.7
+    "elo": 1529,
+    "matches": 5,
+    "wins": 3,
+    "losses": 2,
+    "winrate": 60.0
   },
   {
     "player": "inisomnia",
@@ -166,14 +182,6 @@
     "wins": 4,
     "losses": 5,
     "winrate": 44.4
-  },
-  {
-    "player": "zip",
-    "elo": 1516,
-    "matches": 3,
-    "wins": 2,
-    "losses": 1,
-    "winrate": 66.7
   },
   {
     "player": "fonbeers",
@@ -192,28 +200,12 @@
     "winrate": 100.0
   },
   {
-    "player": "GipSy",
-    "elo": 1513,
-    "matches": 12,
-    "wins": 7,
-    "losses": 5,
-    "winrate": 58.3
-  },
-  {
     "player": "shNoodle",
     "elo": 1513,
     "matches": 1,
     "wins": 1,
     "losses": 0,
     "winrate": 100.0
-  },
-  {
-    "player": "GUSIUS",
-    "elo": 1509,
-    "matches": 4,
-    "wins": 2,
-    "losses": 2,
-    "winrate": 50.0
   },
   {
     "player": "myrmidon^",
@@ -232,6 +224,22 @@
     "winrate": 50.0
   },
   {
+    "player": "mAc",
+    "elo": 1497,
+    "matches": 4,
+    "wins": 2,
+    "losses": 2,
+    "winrate": 50.0
+  },
+  {
+    "player": "GipSy",
+    "elo": 1495,
+    "matches": 18,
+    "wins": 9,
+    "losses": 9,
+    "winrate": 50.0
+  },
+  {
     "player": "roon",
     "elo": 1495,
     "matches": 6,
@@ -242,6 +250,14 @@
   {
     "player": "dolar",
     "elo": 1488,
+    "matches": 3,
+    "wins": 1,
+    "losses": 2,
+    "winrate": 33.3
+  },
+  {
+    "player": "warrior",
+    "elo": 1487,
     "matches": 3,
     "wins": 1,
     "losses": 2,
@@ -280,28 +296,12 @@
     "winrate": 33.3
   },
   {
-    "player": "warrior",
-    "elo": 1485,
-    "matches": 1,
-    "wins": 0,
-    "losses": 1,
-    "winrate": 0.0
-  },
-  {
     "player": "TIM",
     "elo": 1485,
     "matches": 1,
     "wins": 0,
     "losses": 1,
     "winrate": 0.0
-  },
-  {
-    "player": "mAc",
-    "elo": 1485,
-    "matches": 3,
-    "wins": 1,
-    "losses": 2,
-    "winrate": 33.3
   },
   {
     "player": "fon",
@@ -336,6 +336,22 @@
     "winrate": 0.0
   },
   {
+    "player": "michaq",
+    "elo": 1484,
+    "matches": 3,
+    "wins": 1,
+    "losses": 2,
+    "winrate": 33.3
+  },
+  {
+    "player": "zip",
+    "elo": 1482,
+    "matches": 5,
+    "wins": 2,
+    "losses": 3,
+    "winrate": 40.0
+  },
+  {
     "player": "rawhide",
     "elo": 1481,
     "matches": 1,
@@ -344,28 +360,12 @@
     "winrate": 0.0
   },
   {
-    "player": "Pacifist_(AVB)",
-    "elo": 1481,
-    "matches": 7,
-    "wins": 2,
-    "losses": 5,
-    "winrate": 28.6
-  },
-  {
     "player": "TAITI",
     "elo": 1481,
     "matches": 1,
     "wins": 0,
     "losses": 1,
     "winrate": 0.0
-  },
-  {
-    "player": "a",
-    "elo": 1477,
-    "matches": 7,
-    "wins": 2,
-    "losses": 5,
-    "winrate": 28.6
   },
   {
     "player": "lynx",
@@ -416,6 +416,22 @@
     "winrate": 0.0
   },
   {
+    "player": "Pacifist_(AVB)",
+    "elo": 1456,
+    "matches": 9,
+    "wins": 2,
+    "losses": 7,
+    "winrate": 22.2
+  },
+  {
+    "player": "a",
+    "elo": 1452,
+    "matches": 9,
+    "wins": 2,
+    "losses": 7,
+    "winrate": 22.2
+  },
+  {
     "player": "Bullz",
     "elo": 1446,
     "matches": 4,
@@ -432,6 +448,14 @@
     "winrate": 0.0
   },
   {
+    "player": "GUSIUS",
+    "elo": 1440,
+    "matches": 9,
+    "wins": 2,
+    "losses": 7,
+    "winrate": 22.2
+  },
+  {
     "player": "r",
     "elo": 1431,
     "matches": 5,
@@ -441,11 +465,11 @@
   },
   {
     "player": "Puma!",
-    "elo": 1427,
-    "matches": 8,
+    "elo": 1417,
+    "matches": 9,
     "wins": 1,
-    "losses": 7,
-    "winrate": 12.5
+    "losses": 8,
+    "winrate": 11.1
   },
   {
     "player": "gart",
@@ -472,20 +496,20 @@
     "winrate": 23.8
   },
   {
+    "player": "jabb@",
+    "elo": 1384,
+    "matches": 15,
+    "wins": 2,
+    "losses": 13,
+    "winrate": 13.3
+  },
+  {
     "player": "v4cio",
     "elo": 1376,
     "matches": 16,
     "wins": 2,
     "losses": 14,
     "winrate": 12.5
-  },
-  {
-    "player": "jabb@",
-    "elo": 1374,
-    "matches": 13,
-    "wins": 1,
-    "losses": 12,
-    "winrate": 7.7
   },
   {
     "player": "Player-345",

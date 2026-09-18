@@ -16659,5 +16659,2486 @@
       }
     ],
     "saved_at": "2026-09-17T16:18:14+02:00"
+  },
+  {
+    "match_id": "cb742190b1224287",
+    "game_type": "1v1",
+    "winner": "Home",
+    "home_score": 14,
+    "away_score": 11,
+    "players": [
+      {
+        "player": "jabb@",
+        "team": "Home",
+        "old_elo": 1374,
+        "change": 22.2,
+        "new_elo": 1396
+      },
+      {
+        "player": "zip",
+        "team": "Away",
+        "old_elo": 1516,
+        "change": -22.2,
+        "new_elo": 1494
+      }
+    ],
+    "saved_at": "2026-09-17T16:48:34+02:00"
+  },
+  {
+    "match_id": "03d4d23d9ccaab39",
+    "game_type": "team",
+    "winner": "Home",
+    "home_score": 50,
+    "away_score": 33,
+    "players": [
+      {
+        "player": "jabb@",
+        "team": "Home",
+        "old_elo": 1209,
+        "change": 14.5,
+        "new_elo": 1223
+      },
+      {
+        "player": "GipSy",
+        "team": "Home",
+        "old_elo": 1568,
+        "change": 16,
+        "new_elo": 1584
+      },
+      {
+        "player": "ping80",
+        "team": "Away",
+        "old_elo": 1560,
+        "change": -16,
+        "new_elo": 1544
+      },
+      {
+        "player": "zip",
+        "team": "Away",
+        "old_elo": 1506,
+        "change": -16,
+        "new_elo": 1490
+      }
+    ],
+    "saved_at": "2026-09-17T16:59:58+02:00"
+  },
+  {
+    "match_id": "79e92df9c27ebfba",
+    "game_type": "team",
+    "winner": "Home",
+    "home_score": 64,
+    "away_score": 38,
+    "players": [
+      {
+        "player": "jabb@",
+        "team": "Home",
+        "old_elo": 1223,
+        "change": 14.8,
+        "new_elo": 1238
+      },
+      {
+        "player": "GipSy",
+        "team": "Home",
+        "old_elo": 1584,
+        "change": 16,
+        "new_elo": 1600
+      },
+      {
+        "player": "ping80",
+        "team": "Away",
+        "old_elo": 1544,
+        "change": -16,
+        "new_elo": 1528
+      },
+      {
+        "player": "zip",
+        "team": "Away",
+        "old_elo": 1490,
+        "change": -15.0,
+        "new_elo": 1475
+      }
+    ],
+    "saved_at": "2026-09-17T17:10:46+02:00"
+  },
+  {
+    "match_id": "948eeee346e0bcf7",
+    "game_type": "team",
+    "winner": "Home",
+    "home_score": 25,
+    "away_score": 24,
+    "players": [
+      {
+        "player": "jabb@",
+        "team": "Home",
+        "old_elo": 1238,
+        "change": 0,
+        "new_elo": 1238
+      },
+      {
+        "player": "GipSy",
+        "team": "Home",
+        "old_elo": 1600,
+        "change": 16,
+        "new_elo": 1616
+      },
+      {
+        "player": "ping80",
+        "team": "Away",
+        "old_elo": 1528,
+        "change": -13.3,
+        "new_elo": 1515
+      },
+      {
+        "player": "zip",
+        "team": "Away",
+        "old_elo": 1475,
+        "change": -4.5,
+        "new_elo": 1470
+      }
+    ],
+    "saved_at": "2026-09-17T17:22:06+02:00"
+  },
+  {
+    "match_id": "2411b53e64e22361",
+    "game_type": "team",
+    "winner": "Home",
+    "home_score": 30,
+    "away_score": 12,
+    "players": [
+      {
+        "player": "jabb@",
+        "team": "Home",
+        "old_elo": 1238,
+        "change": 16,
+        "new_elo": 1254
+      },
+      {
+        "player": "zip",
+        "team": "Away",
+        "old_elo": 1470,
+        "change": -16,
+        "new_elo": 1454
+      },
+      {
+        "player": "m",
+        "team": "Away",
+        "old_elo": 1518,
+        "change": -16,
+        "new_elo": 1502
+      }
+    ],
+    "saved_at": "2026-09-17T17:34:26+02:00"
+  },
+  {
+    "match_id": "63b149d1dee26240",
+    "game_type": "team",
+    "winner": "Home",
+    "home_score": 46,
+    "away_score": 42,
+    "players": [
+      {
+        "player": "jabb@",
+        "team": "Home",
+        "old_elo": 1254,
+        "change": 11.9,
+        "new_elo": 1266
+      },
+      {
+        "player": "faint",
+        "team": "Home",
+        "old_elo": 1500,
+        "change": 16,
+        "new_elo": 1516
+      },
+      {
+        "player": "m",
+        "team": "Home",
+        "old_elo": 1502,
+        "change": 10.3,
+        "new_elo": 1512
+      },
+      {
+        "player": "B100D",
+        "team": "Away",
+        "old_elo": 1555,
+        "change": -14.4,
+        "new_elo": 1540
+      },
+      {
+        "player": "Keizer",
+        "team": "Away",
+        "old_elo": 1629,
+        "change": -1.6,
+        "new_elo": 1627
+      },
+      {
+        "player": "zip",
+        "team": "Away",
+        "old_elo": 1454,
+        "change": -16,
+        "new_elo": 1438
+      }
+    ],
+    "saved_at": "2026-09-17T17:46:56+02:00"
+  },
+  {
+    "match_id": "89713e2b0796ce7c",
+    "game_type": "team",
+    "winner": "Away",
+    "home_score": 46,
+    "away_score": 47,
+    "players": [
+      {
+        "player": "jabb@",
+        "team": "Home",
+        "old_elo": 1266,
+        "change": -16,
+        "new_elo": 1250
+      },
+      {
+        "player": "faint",
+        "team": "Home",
+        "old_elo": 1516,
+        "change": 7,
+        "new_elo": 1523
+      },
+      {
+        "player": "B100D",
+        "team": "Away",
+        "old_elo": 1540,
+        "change": 11.4,
+        "new_elo": 1552
+      },
+      {
+        "player": "Keizer",
+        "team": "Away",
+        "old_elo": 1627,
+        "change": 5.4,
+        "new_elo": 1633
+      },
+      {
+        "player": "zip",
+        "team": "Away",
+        "old_elo": 1438,
+        "change": 0,
+        "new_elo": 1438
+      }
+    ],
+    "saved_at": "2026-09-17T17:58:09+02:00"
+  },
+  {
+    "match_id": "77e66c54846d7a24",
+    "game_type": "team",
+    "winner": "Home",
+    "home_score": 63,
+    "away_score": 44,
+    "players": [
+      {
+        "player": "warrior",
+        "team": "Home",
+        "old_elo": 1674,
+        "change": 16,
+        "new_elo": 1690
+      },
+      {
+        "player": "Keizer",
+        "team": "Home",
+        "old_elo": 1633,
+        "change": 5.1,
+        "new_elo": 1638
+      },
+      {
+        "player": "zip",
+        "team": "Home",
+        "old_elo": 1438,
+        "change": 14.1,
+        "new_elo": 1452
+      },
+      {
+        "player": "Player-345",
+        "team": "Away",
+        "old_elo": 1510,
+        "change": -12.9,
+        "new_elo": 1497
+      },
+      {
+        "player": "Maniek",
+        "team": "Away",
+        "old_elo": 1446,
+        "change": -16,
+        "new_elo": 1430
+      }
+    ],
+    "saved_at": "2026-09-17T18:09:57+02:00"
+  },
+  {
+    "match_id": "b43274cfec166f11",
+    "game_type": "team",
+    "winner": "Home",
+    "home_score": 49,
+    "away_score": 14,
+    "players": [
+      {
+        "player": "warrior",
+        "team": "Home",
+        "old_elo": 1690,
+        "change": 16,
+        "new_elo": 1706
+      },
+      {
+        "player": "m",
+        "team": "Home",
+        "old_elo": 1512,
+        "change": 11.1,
+        "new_elo": 1523
+      },
+      {
+        "player": "Keizer",
+        "team": "Away",
+        "old_elo": 1638,
+        "change": -10.4,
+        "new_elo": 1627
+      },
+      {
+        "player": "Maniek",
+        "team": "Away",
+        "old_elo": 1430,
+        "change": -16,
+        "new_elo": 1414
+      }
+    ],
+    "saved_at": "2026-09-17T18:23:23+02:00"
+  },
+  {
+    "match_id": "525116fab7421955",
+    "game_type": "team",
+    "winner": "Away",
+    "home_score": 32,
+    "away_score": 65,
+    "players": [
+      {
+        "player": "jabb@",
+        "team": "Home",
+        "old_elo": 1250,
+        "change": -15.2,
+        "new_elo": 1235
+      },
+      {
+        "player": "SUPER-LAG",
+        "team": "Home",
+        "old_elo": 1462,
+        "change": -12.7,
+        "new_elo": 1450
+      },
+      {
+        "player": "m",
+        "team": "Home",
+        "old_elo": 1523,
+        "change": -2.8,
+        "new_elo": 1520
+      },
+      {
+        "player": "GipSy",
+        "team": "Away",
+        "old_elo": 1616,
+        "change": 9.9,
+        "new_elo": 1626
+      },
+      {
+        "player": "Keizer",
+        "team": "Away",
+        "old_elo": 1627,
+        "change": 14.6,
+        "new_elo": 1642
+      }
+    ],
+    "saved_at": "2026-09-17T18:35:28+02:00"
+  },
+  {
+    "match_id": "2d25bd4d0ee3a7d1",
+    "game_type": "1v1",
+    "winner": "Home",
+    "home_score": 13,
+    "away_score": 8,
+    "players": [
+      {
+        "player": "GipSy",
+        "team": "Home",
+        "old_elo": 1513,
+        "change": 19.2,
+        "new_elo": 1532
+      },
+      {
+        "player": "Keizer",
+        "team": "Away",
+        "old_elo": 1584,
+        "change": -19.2,
+        "new_elo": 1565
+      }
+    ],
+    "saved_at": "2026-09-17T18:54:35+02:00"
+  },
+  {
+    "match_id": "f6aa2cb6c20f2a84",
+    "game_type": "team",
+    "winner": "Away",
+    "home_score": 25,
+    "away_score": 44,
+    "players": [
+      {
+        "player": "Keizer",
+        "team": "Home",
+        "old_elo": 1642,
+        "change": -16,
+        "new_elo": 1626
+      },
+      {
+        "player": "gart",
+        "team": "Home",
+        "old_elo": 1501,
+        "change": -6.1,
+        "new_elo": 1495
+      },
+      {
+        "player": "mAc",
+        "team": "Home",
+        "old_elo": 1458,
+        "change": -14.6,
+        "new_elo": 1444
+      },
+      {
+        "player": "cne",
+        "team": "Away",
+        "old_elo": 1690,
+        "change": 16,
+        "new_elo": 1706
+      },
+      {
+        "player": "Puma!",
+        "team": "Away",
+        "old_elo": 1429,
+        "change": 14.3,
+        "new_elo": 1444
+      }
+    ],
+    "saved_at": "2026-09-17T19:18:07+02:00"
+  },
+  {
+    "match_id": "96b4c2fe4fbee204",
+    "game_type": "team",
+    "winner": "Away",
+    "home_score": 14,
+    "away_score": 46,
+    "players": [
+      {
+        "player": "GUSIUS",
+        "team": "Home",
+        "old_elo": 1460,
+        "change": -5.3,
+        "new_elo": 1455
+      },
+      {
+        "player": "mAc",
+        "team": "Home",
+        "old_elo": 1444,
+        "change": -16,
+        "new_elo": 1428
+      },
+      {
+        "player": "Player-345",
+        "team": "Away",
+        "old_elo": 1497,
+        "change": 16,
+        "new_elo": 1513
+      }
+    ],
+    "saved_at": "2026-09-17T19:35:01+02:00"
+  },
+  {
+    "match_id": "210204292bfe716d",
+    "game_type": "team",
+    "winner": "Home",
+    "home_score": 50,
+    "away_score": 45,
+    "players": [
+      {
+        "player": "GUSIUS",
+        "team": "Home",
+        "old_elo": 1455,
+        "change": 11.9,
+        "new_elo": 1467
+      },
+      {
+        "player": "warrior",
+        "team": "Home",
+        "old_elo": 1706,
+        "change": 16,
+        "new_elo": 1722
+      },
+      {
+        "player": "mAc",
+        "team": "Home",
+        "old_elo": 1428,
+        "change": 2.5,
+        "new_elo": 1430
+      },
+      {
+        "player": "lamerinon",
+        "team": "Away",
+        "old_elo": 1500,
+        "change": 1.6,
+        "new_elo": 1502
+      },
+      {
+        "player": "Player-345",
+        "team": "Away",
+        "old_elo": 1513,
+        "change": -13.4,
+        "new_elo": 1500
+      },
+      {
+        "player": "m",
+        "team": "Away",
+        "old_elo": 1520,
+        "change": -16,
+        "new_elo": 1504
+      }
+    ],
+    "saved_at": "2026-09-17T19:45:48+02:00"
+  },
+  {
+    "match_id": "e0dcf20a16ea57f5",
+    "game_type": "team",
+    "winner": "Home",
+    "home_score": 86,
+    "away_score": 60,
+    "players": [
+      {
+        "player": "GUSIUS",
+        "team": "Home",
+        "old_elo": 1467,
+        "change": 16,
+        "new_elo": 1483
+      },
+      {
+        "player": "warrior",
+        "team": "Home",
+        "old_elo": 1722,
+        "change": 14.8,
+        "new_elo": 1736
+      },
+      {
+        "player": "mAc",
+        "team": "Home",
+        "old_elo": 1430,
+        "change": 5.6,
+        "new_elo": 1436
+      },
+      {
+        "player": "Keizer",
+        "team": "Home",
+        "old_elo": 1626,
+        "change": 15.1,
+        "new_elo": 1641
+      },
+      {
+        "player": "lamerinon",
+        "team": "Away",
+        "old_elo": 1502,
+        "change": -7.1,
+        "new_elo": 1495
+      },
+      {
+        "player": "Player-345",
+        "team": "Away",
+        "old_elo": 1500,
+        "change": -15.0,
+        "new_elo": 1485
+      },
+      {
+        "player": "m",
+        "team": "Away",
+        "old_elo": 1504,
+        "change": -14.4,
+        "new_elo": 1490
+      },
+      {
+        "player": "CoLD",
+        "team": "Away",
+        "old_elo": 1613,
+        "change": -16,
+        "new_elo": 1597
+      }
+    ],
+    "saved_at": "2026-09-17T19:57:12+02:00"
+  },
+  {
+    "match_id": "b0ba5bf31b42cb56",
+    "game_type": "team",
+    "winner": "Away",
+    "home_score": 55,
+    "away_score": 69,
+    "players": [
+      {
+        "player": "GUSIUS",
+        "team": "Home",
+        "old_elo": 1483,
+        "change": -16,
+        "new_elo": 1467
+      },
+      {
+        "player": "Keizer",
+        "team": "Home",
+        "old_elo": 1641,
+        "change": 1.5,
+        "new_elo": 1643
+      },
+      {
+        "player": "VITALIS",
+        "team": "Home",
+        "old_elo": 1348,
+        "change": -14.5,
+        "new_elo": 1334
+      },
+      {
+        "player": "cne",
+        "team": "Home",
+        "old_elo": 1706,
+        "change": -8.1,
+        "new_elo": 1698
+      },
+      {
+        "player": "m",
+        "team": "Away",
+        "old_elo": 1490,
+        "change": 10.4,
+        "new_elo": 1500
+      },
+      {
+        "player": "warrior",
+        "team": "Away",
+        "old_elo": 1736,
+        "change": 16,
+        "new_elo": 1752
+      },
+      {
+        "player": "CoLD",
+        "team": "Away",
+        "old_elo": 1597,
+        "change": 16,
+        "new_elo": 1613
+      },
+      {
+        "player": "mAc",
+        "team": "Away",
+        "old_elo": 1436,
+        "change": 0,
+        "new_elo": 1436
+      }
+    ],
+    "saved_at": "2026-09-17T20:10:02+02:00"
+  },
+  {
+    "match_id": "0c29c63d45467b95",
+    "game_type": "team",
+    "winner": "Home",
+    "home_score": 78,
+    "away_score": 19,
+    "players": [
+      {
+        "player": "GUSIUS",
+        "team": "Home",
+        "old_elo": 1467,
+        "change": 16,
+        "new_elo": 1483
+      },
+      {
+        "player": "Keizer",
+        "team": "Home",
+        "old_elo": 1643,
+        "change": 14.8,
+        "new_elo": 1657
+      },
+      {
+        "player": "VITALIS",
+        "team": "Home",
+        "old_elo": 1334,
+        "change": 10.3,
+        "new_elo": 1344
+      },
+      {
+        "player": "jabb@",
+        "team": "Away",
+        "old_elo": 1235,
+        "change": -16,
+        "new_elo": 1219
+      },
+      {
+        "player": "CoLD",
+        "team": "Away",
+        "old_elo": 1613,
+        "change": -14.4,
+        "new_elo": 1598
+      },
+      {
+        "player": "mAc",
+        "team": "Away",
+        "old_elo": 1436,
+        "change": -13.1,
+        "new_elo": 1423
+      }
+    ],
+    "saved_at": "2026-09-17T20:35:02+02:00"
+  },
+  {
+    "match_id": "3842ad3884d2246b",
+    "game_type": "team",
+    "winner": "Home",
+    "home_score": 65,
+    "away_score": 21,
+    "players": [
+      {
+        "player": "need1",
+        "team": "Home",
+        "old_elo": 1456,
+        "change": 13.3,
+        "new_elo": 1469
+      },
+      {
+        "player": "GUSIUS",
+        "team": "Home",
+        "old_elo": 1483,
+        "change": 16,
+        "new_elo": 1499
+      },
+      {
+        "player": "VITALIS",
+        "team": "Home",
+        "old_elo": 1344,
+        "change": 10.9,
+        "new_elo": 1355
+      },
+      {
+        "player": "jabb@",
+        "team": "Away",
+        "old_elo": 1219,
+        "change": -15.0,
+        "new_elo": 1204
+      },
+      {
+        "player": "zip",
+        "team": "Away",
+        "old_elo": 1452,
+        "change": -8.5,
+        "new_elo": 1444
+      },
+      {
+        "player": "mAc",
+        "team": "Away",
+        "old_elo": 1423,
+        "change": -16,
+        "new_elo": 1407
+      }
+    ],
+    "saved_at": "2026-09-17T20:47:16+02:00"
+  },
+  {
+    "match_id": "587f6c8d67c589c9",
+    "game_type": "1v1",
+    "winner": "Home",
+    "home_score": 15,
+    "away_score": 12,
+    "players": [
+      {
+        "player": "mAc",
+        "team": "Home",
+        "old_elo": 1485,
+        "change": 12.0,
+        "new_elo": 1497
+      },
+      {
+        "player": "jabb@",
+        "team": "Away",
+        "old_elo": 1396,
+        "change": -12.0,
+        "new_elo": 1384
+      }
+    ],
+    "saved_at": "2026-09-17T21:03:07+02:00"
+  },
+  {
+    "match_id": "10df771a6b08905c",
+    "game_type": "team",
+    "winner": "Home",
+    "home_score": 45,
+    "away_score": 7,
+    "players": [
+      {
+        "player": "[sf]fasadin",
+        "team": "Home",
+        "old_elo": 1725,
+        "change": 16,
+        "new_elo": 1741
+      },
+      {
+        "player": "VITALIS",
+        "team": "Home",
+        "old_elo": 1355,
+        "change": 10.7,
+        "new_elo": 1366
+      },
+      {
+        "player": "Q",
+        "team": "Away",
+        "old_elo": 1500,
+        "change": -14.3,
+        "new_elo": 1486
+      },
+      {
+        "player": "mAc",
+        "team": "Away",
+        "old_elo": 1407,
+        "change": -16,
+        "new_elo": 1391
+      }
+    ],
+    "saved_at": "2026-09-17T21:14:50+02:00"
+  },
+  {
+    "match_id": "680f3cf8bc297177",
+    "game_type": "1v1",
+    "winner": "Home",
+    "home_score": 14,
+    "away_score": 7,
+    "players": [
+      {
+        "player": "piu-need1",
+        "team": "Home",
+        "old_elo": 1500,
+        "change": 16.4,
+        "new_elo": 1516
+      },
+      {
+        "player": "GUSIUS",
+        "team": "Away",
+        "old_elo": 1509,
+        "change": -16.4,
+        "new_elo": 1492
+      }
+    ],
+    "saved_at": "2026-09-17T21:34:28+02:00"
+  },
+  {
+    "match_id": "c3937c07b9f4553c",
+    "game_type": "team",
+    "winner": "Home",
+    "home_score": 82,
+    "away_score": 48,
+    "players": [
+      {
+        "player": "Br00m^^",
+        "team": "Home",
+        "old_elo": 1534,
+        "change": 10.2,
+        "new_elo": 1544
+      },
+      {
+        "player": "ZYGA",
+        "team": "Home",
+        "old_elo": 1500,
+        "change": 16,
+        "new_elo": 1516
+      },
+      {
+        "player": "Q",
+        "team": "Home",
+        "old_elo": 1486,
+        "change": 14.3,
+        "new_elo": 1500
+      },
+      {
+        "player": "Player-345",
+        "team": "Home",
+        "old_elo": 1485,
+        "change": 16,
+        "new_elo": 1501
+      },
+      {
+        "player": "myrmidon^",
+        "team": "Away",
+        "old_elo": 1656,
+        "change": -8.8,
+        "new_elo": 1648
+      },
+      {
+        "player": "player-454",
+        "team": "Away",
+        "old_elo": 1500,
+        "change": -16,
+        "new_elo": 1484
+      },
+      {
+        "player": "[sYnth]Scooby",
+        "team": "Away",
+        "old_elo": 1562,
+        "change": -13.9,
+        "new_elo": 1548
+      },
+      {
+        "player": "mAc",
+        "team": "Away",
+        "old_elo": 1391,
+        "change": -16,
+        "new_elo": 1375
+      }
+    ],
+    "saved_at": "2026-09-17T21:42:50+02:00"
+  },
+  {
+    "match_id": "8953d68af595d292",
+    "game_type": "1v1",
+    "winner": "Home",
+    "home_score": 14,
+    "away_score": 5,
+    "players": [
+      {
+        "player": "piu-need1",
+        "team": "Home",
+        "old_elo": 1516,
+        "change": 14.9,
+        "new_elo": 1531
+      },
+      {
+        "player": "GUSIUS",
+        "team": "Away",
+        "old_elo": 1492,
+        "change": -14.9,
+        "new_elo": 1477
+      }
+    ],
+    "saved_at": "2026-09-17T21:44:51+02:00"
+  },
+  {
+    "match_id": "31cffc1d9f09b009",
+    "game_type": "team",
+    "winner": "Home",
+    "home_score": 93,
+    "away_score": 40,
+    "players": [
+      {
+        "player": "Br00m^^",
+        "team": "Home",
+        "old_elo": 1544,
+        "change": 9.6,
+        "new_elo": 1554
+      },
+      {
+        "player": "ZYGA",
+        "team": "Home",
+        "old_elo": 1516,
+        "change": 16,
+        "new_elo": 1532
+      },
+      {
+        "player": "Player-345",
+        "team": "Home",
+        "old_elo": 1501,
+        "change": 14.0,
+        "new_elo": 1515
+      },
+      {
+        "player": "lamerinon",
+        "team": "Home",
+        "old_elo": 1495,
+        "change": 16,
+        "new_elo": 1511
+      },
+      {
+        "player": "myrmidon^",
+        "team": "Away",
+        "old_elo": 1648,
+        "change": -16,
+        "new_elo": 1632
+      },
+      {
+        "player": "player-454",
+        "team": "Away",
+        "old_elo": 1484,
+        "change": -16,
+        "new_elo": 1468
+      },
+      {
+        "player": "[sYnth]Scooby",
+        "team": "Away",
+        "old_elo": 1548,
+        "change": -9.2,
+        "new_elo": 1539
+      },
+      {
+        "player": "mAc",
+        "team": "Away",
+        "old_elo": 1375,
+        "change": -13.3,
+        "new_elo": 1361
+      }
+    ],
+    "saved_at": "2026-09-17T21:54:27+02:00"
+  },
+  {
+    "match_id": "6b1687d471bda930",
+    "game_type": "1v1",
+    "winner": "Home",
+    "home_score": 11,
+    "away_score": 6,
+    "players": [
+      {
+        "player": "piu-need1",
+        "team": "Home",
+        "old_elo": 1531,
+        "change": 13.5,
+        "new_elo": 1545
+      },
+      {
+        "player": "GUSIUS",
+        "team": "Away",
+        "old_elo": 1477,
+        "change": -13.5,
+        "new_elo": 1464
+      }
+    ],
+    "saved_at": "2026-09-17T21:55:16+02:00"
+  },
+  {
+    "match_id": "4818cacf831e4533",
+    "game_type": "1v1",
+    "winner": "Home",
+    "home_score": 13,
+    "away_score": 1,
+    "players": [
+      {
+        "player": "piu-need1",
+        "team": "Home",
+        "old_elo": 1545,
+        "change": 12.3,
+        "new_elo": 1557
+      },
+      {
+        "player": "GUSIUS",
+        "team": "Away",
+        "old_elo": 1464,
+        "change": -12.3,
+        "new_elo": 1451
+      }
+    ],
+    "saved_at": "2026-09-17T22:12:20+02:00"
+  },
+  {
+    "match_id": "61728ca48b01b665",
+    "game_type": "team",
+    "winner": "Home",
+    "home_score": 84,
+    "away_score": 61,
+    "players": [
+      {
+        "player": "Br00m^^",
+        "team": "Home",
+        "old_elo": 1554,
+        "change": 14.7,
+        "new_elo": 1569
+      },
+      {
+        "player": "ZYGA",
+        "team": "Home",
+        "old_elo": 1532,
+        "change": 16,
+        "new_elo": 1548
+      },
+      {
+        "player": "badman",
+        "team": "Home",
+        "old_elo": 1608,
+        "change": 9.1,
+        "new_elo": 1617
+      },
+      {
+        "player": "[sYnth]Scooby",
+        "team": "Home",
+        "old_elo": 1539,
+        "change": 12.9,
+        "new_elo": 1552
+      },
+      {
+        "player": "myrmidon^",
+        "team": "Away",
+        "old_elo": 1632,
+        "change": -11.5,
+        "new_elo": 1620
+      },
+      {
+        "player": "shNoodle",
+        "team": "Away",
+        "old_elo": 1495,
+        "change": -16,
+        "new_elo": 1479
+      },
+      {
+        "player": "mAc",
+        "team": "Away",
+        "old_elo": 1361,
+        "change": -7.7,
+        "new_elo": 1354
+      },
+      {
+        "player": "lamerinon",
+        "team": "Away",
+        "old_elo": 1511,
+        "change": -16,
+        "new_elo": 1495
+      }
+    ],
+    "saved_at": "2026-09-17T22:13:46+02:00"
+  },
+  {
+    "match_id": "ae2f7254c9a5d42f",
+    "game_type": "team",
+    "winner": "Home",
+    "home_score": 85,
+    "away_score": 65,
+    "players": [
+      {
+        "player": "myrmidon^",
+        "team": "Home",
+        "old_elo": 1620,
+        "change": 16,
+        "new_elo": 1636
+      },
+      {
+        "player": "shNoodle",
+        "team": "Home",
+        "old_elo": 1479,
+        "change": 16,
+        "new_elo": 1495
+      },
+      {
+        "player": "mAc",
+        "team": "Home",
+        "old_elo": 1354,
+        "change": 9.2,
+        "new_elo": 1363
+      },
+      {
+        "player": "lamerinon",
+        "team": "Home",
+        "old_elo": 1495,
+        "change": 13.3,
+        "new_elo": 1508
+      },
+      {
+        "player": "Br00m^^",
+        "team": "Away",
+        "old_elo": 1569,
+        "change": -5.8,
+        "new_elo": 1563
+      },
+      {
+        "player": "ZYGA",
+        "team": "Away",
+        "old_elo": 1548,
+        "change": -16,
+        "new_elo": 1532
+      },
+      {
+        "player": "badman",
+        "team": "Away",
+        "old_elo": 1617,
+        "change": -16,
+        "new_elo": 1601
+      },
+      {
+        "player": "[sYnth]Scooby",
+        "team": "Away",
+        "old_elo": 1552,
+        "change": -16,
+        "new_elo": 1536
+      }
+    ],
+    "saved_at": "2026-09-17T22:24:59+02:00"
+  },
+  {
+    "match_id": "1080140cb4e2edcf",
+    "game_type": "1v1",
+    "winner": "Home",
+    "home_score": 14,
+    "away_score": 11,
+    "players": [
+      {
+        "player": "piu-need1",
+        "team": "Home",
+        "old_elo": 1557,
+        "change": 11.3,
+        "new_elo": 1568
+      },
+      {
+        "player": "GUSIUS",
+        "team": "Away",
+        "old_elo": 1451,
+        "change": -11.3,
+        "new_elo": 1440
+      }
+    ],
+    "saved_at": "2026-09-17T22:27:38+02:00"
+  },
+  {
+    "match_id": "272e39dde2222b7d",
+    "game_type": "team",
+    "winner": "Home",
+    "home_score": 82,
+    "away_score": 58,
+    "players": [
+      {
+        "player": "myrmidon^",
+        "team": "Home",
+        "old_elo": 1636,
+        "change": 16,
+        "new_elo": 1652
+      },
+      {
+        "player": "shNoodle",
+        "team": "Home",
+        "old_elo": 1495,
+        "change": 14.4,
+        "new_elo": 1509
+      },
+      {
+        "player": "mAc",
+        "team": "Home",
+        "old_elo": 1363,
+        "change": 0.3,
+        "new_elo": 1363
+      },
+      {
+        "player": "lamerinon",
+        "team": "Home",
+        "old_elo": 1508,
+        "change": 16,
+        "new_elo": 1524
+      },
+      {
+        "player": "Br00m^^",
+        "team": "Away",
+        "old_elo": 1563,
+        "change": -16,
+        "new_elo": 1547
+      },
+      {
+        "player": "ZYGA",
+        "team": "Away",
+        "old_elo": 1532,
+        "change": -10.5,
+        "new_elo": 1522
+      },
+      {
+        "player": "badman",
+        "team": "Away",
+        "old_elo": 1601,
+        "change": -6.7,
+        "new_elo": 1594
+      },
+      {
+        "player": "[sYnth]Scooby",
+        "team": "Away",
+        "old_elo": 1536,
+        "change": -16,
+        "new_elo": 1520
+      }
+    ],
+    "saved_at": "2026-09-17T22:36:11+02:00"
+  },
+  {
+    "match_id": "14b14d14201d6f29",
+    "game_type": "team",
+    "winner": "Home",
+    "home_score": 90,
+    "away_score": 53,
+    "players": [
+      {
+        "player": "Br00m^^",
+        "team": "Home",
+        "old_elo": 1547,
+        "change": 2.4,
+        "new_elo": 1549
+      },
+      {
+        "player": "ZYGA",
+        "team": "Home",
+        "old_elo": 1522,
+        "change": 16,
+        "new_elo": 1538
+      },
+      {
+        "player": "badman",
+        "team": "Home",
+        "old_elo": 1594,
+        "change": 16.0,
+        "new_elo": 1610
+      },
+      {
+        "player": "[sYnth]Scooby",
+        "team": "Home",
+        "old_elo": 1520,
+        "change": 16,
+        "new_elo": 1536
+      },
+      {
+        "player": "myrmidon^",
+        "team": "Away",
+        "old_elo": 1652,
+        "change": -16,
+        "new_elo": 1636
+      },
+      {
+        "player": "qw",
+        "team": "Away",
+        "old_elo": 1825,
+        "change": -11.2,
+        "new_elo": 1813
+      },
+      {
+        "player": "[sf]fasadin",
+        "team": "Away",
+        "old_elo": 1741,
+        "change": -6.8,
+        "new_elo": 1734
+      },
+      {
+        "player": "mAc",
+        "team": "Away",
+        "old_elo": 1363,
+        "change": -15.3,
+        "new_elo": 1348
+      }
+    ],
+    "saved_at": "2026-09-17T22:48:15+02:00"
+  },
+  {
+    "match_id": "f99b11e33acb4e7d",
+    "game_type": "team",
+    "winner": "Home",
+    "home_score": 119,
+    "away_score": 79,
+    "players": [
+      {
+        "player": "Br00m^^",
+        "team": "Home",
+        "old_elo": 1549,
+        "change": 10.6,
+        "new_elo": 1560
+      },
+      {
+        "player": "ZYGA",
+        "team": "Home",
+        "old_elo": 1538,
+        "change": 16,
+        "new_elo": 1554
+      },
+      {
+        "player": "badman",
+        "team": "Home",
+        "old_elo": 1610,
+        "change": 11.3,
+        "new_elo": 1622
+      },
+      {
+        "player": "[sYnth]Scooby",
+        "team": "Home",
+        "old_elo": 1536,
+        "change": 16,
+        "new_elo": 1552
+      },
+      {
+        "player": "myrmidon^",
+        "team": "Away",
+        "old_elo": 1636,
+        "change": -16,
+        "new_elo": 1620
+      },
+      {
+        "player": "qw",
+        "team": "Away",
+        "old_elo": 1813,
+        "change": -14.6,
+        "new_elo": 1799
+      },
+      {
+        "player": "[sf]fasadin",
+        "team": "Away",
+        "old_elo": 1734,
+        "change": -3.1,
+        "new_elo": 1731
+      },
+      {
+        "player": "mAc",
+        "team": "Away",
+        "old_elo": 1348,
+        "change": -16,
+        "new_elo": 1332
+      }
+    ],
+    "saved_at": "2026-09-17T23:04:23+02:00"
+  },
+  {
+    "match_id": "e0db5043be391cfe",
+    "game_type": "1v1",
+    "winner": "Home",
+    "home_score": 11,
+    "away_score": 7,
+    "players": [
+      {
+        "player": "piu-need1",
+        "team": "Home",
+        "old_elo": 1568,
+        "change": 9.8,
+        "new_elo": 1578
+      },
+      {
+        "player": "Puma!",
+        "team": "Away",
+        "old_elo": 1427,
+        "change": -9.8,
+        "new_elo": 1417
+      }
+    ],
+    "saved_at": "2026-09-17T23:11:51+02:00"
+  },
+  {
+    "match_id": "6804781a5b7f5804",
+    "game_type": "team",
+    "winner": "Away",
+    "home_score": 19,
+    "away_score": 38,
+    "players": [
+      {
+        "player": "z0diac",
+        "team": "Home",
+        "old_elo": 1500,
+        "change": -16,
+        "new_elo": 1484
+      },
+      {
+        "player": "Maniek",
+        "team": "Home",
+        "old_elo": 1414,
+        "change": -11.0,
+        "new_elo": 1403
+      },
+      {
+        "player": "Puma!",
+        "team": "Away",
+        "old_elo": 1444,
+        "change": 16,
+        "new_elo": 1460
+      },
+      {
+        "player": "TAITI",
+        "team": "Away",
+        "old_elo": 1511,
+        "change": 12.5,
+        "new_elo": 1524
+      }
+    ],
+    "saved_at": "2026-09-17T23:25:20+02:00"
+  },
+  {
+    "match_id": "88c3b95115a6c191",
+    "game_type": "team",
+    "winner": "Away",
+    "home_score": 14,
+    "away_score": 26,
+    "players": [
+      {
+        "player": "z0diac",
+        "team": "Home",
+        "old_elo": 1484,
+        "change": -14.1,
+        "new_elo": 1470
+      },
+      {
+        "player": "Maniek",
+        "team": "Home",
+        "old_elo": 1403,
+        "change": -16,
+        "new_elo": 1387
+      },
+      {
+        "player": "Puma!",
+        "team": "Away",
+        "old_elo": 1460,
+        "change": 13.9,
+        "new_elo": 1474
+      },
+      {
+        "player": "TAITI",
+        "team": "Away",
+        "old_elo": 1524,
+        "change": 16,
+        "new_elo": 1540
+      }
+    ],
+    "saved_at": "2026-09-17T23:36:20+02:00"
+  },
+  {
+    "match_id": "8ba2c4a7e61af8a7",
+    "game_type": "team",
+    "winner": "Home",
+    "home_score": 130,
+    "away_score": 54,
+    "players": [
+      {
+        "player": "badman",
+        "team": "Home",
+        "old_elo": 1622,
+        "change": 14.9,
+        "new_elo": 1636
+      },
+      {
+        "player": "[sYnth]Scooby",
+        "team": "Home",
+        "old_elo": 1552,
+        "change": 16,
+        "new_elo": 1568
+      },
+      {
+        "player": "cne",
+        "team": "Home",
+        "old_elo": 1698,
+        "change": 11.1,
+        "new_elo": 1709
+      },
+      {
+        "player": "KaPo",
+        "team": "Home",
+        "old_elo": 1500,
+        "change": 16,
+        "new_elo": 1516
+      },
+      {
+        "player": "Br00m^^",
+        "team": "Away",
+        "old_elo": 1560,
+        "change": -12.4,
+        "new_elo": 1547
+      },
+      {
+        "player": "qw",
+        "team": "Away",
+        "old_elo": 1799,
+        "change": -16,
+        "new_elo": 1783
+      },
+      {
+        "player": "mAc",
+        "team": "Away",
+        "old_elo": 1332,
+        "change": -16,
+        "new_elo": 1316
+      },
+      {
+        "player": "maq",
+        "team": "Away",
+        "old_elo": 1785,
+        "change": -15.5,
+        "new_elo": 1769
+      }
+    ],
+    "saved_at": "2026-09-17T23:43:41+02:00"
+  },
+  {
+    "match_id": "57ef8002fef1702c",
+    "game_type": "team",
+    "winner": "Away",
+    "home_score": 26,
+    "away_score": 60,
+    "players": [
+      {
+        "player": "z0diac",
+        "team": "Home",
+        "old_elo": 1470,
+        "change": -13.9,
+        "new_elo": 1456
+      },
+      {
+        "player": "Maniek",
+        "team": "Home",
+        "old_elo": 1387,
+        "change": -16,
+        "new_elo": 1371
+      },
+      {
+        "player": "lynx",
+        "team": "Home",
+        "old_elo": 1447,
+        "change": -4.1,
+        "new_elo": 1442
+      },
+      {
+        "player": "Puma!",
+        "team": "Away",
+        "old_elo": 1474,
+        "change": 16,
+        "new_elo": 1490
+      },
+      {
+        "player": "fon",
+        "team": "Away",
+        "old_elo": 1628,
+        "change": 11.9,
+        "new_elo": 1640
+      }
+    ],
+    "saved_at": "2026-09-17T23:49:59+02:00"
+  },
+  {
+    "match_id": "ee5316cd15a3a301",
+    "game_type": "team",
+    "winner": "Home",
+    "home_score": 51,
+    "away_score": 21,
+    "players": [
+      {
+        "player": "z0diac",
+        "team": "Home",
+        "old_elo": 1456,
+        "change": 16,
+        "new_elo": 1472
+      },
+      {
+        "player": "lynx",
+        "team": "Home",
+        "old_elo": 1442,
+        "change": 16,
+        "new_elo": 1458
+      },
+      {
+        "player": "fon",
+        "team": "Home",
+        "old_elo": 1640,
+        "change": 8.8,
+        "new_elo": 1649
+      },
+      {
+        "player": "Puma!",
+        "team": "Away",
+        "old_elo": 1490,
+        "change": -6.3,
+        "new_elo": 1483
+      },
+      {
+        "player": "Maniek",
+        "team": "Away",
+        "old_elo": 1371,
+        "change": -16,
+        "new_elo": 1355
+      },
+      {
+        "player": "Tai",
+        "team": "Away",
+        "old_elo": 1500,
+        "change": -14.1,
+        "new_elo": 1486
+      }
+    ],
+    "saved_at": "2026-09-18T00:01:40+02:00"
+  },
+  {
+    "match_id": "06747d40ffaac4ca",
+    "game_type": "team",
+    "winner": "Home",
+    "home_score": 44,
+    "away_score": 9,
+    "players": [
+      {
+        "player": "z0diac",
+        "team": "Home",
+        "old_elo": 1472,
+        "change": 11.3,
+        "new_elo": 1483
+      },
+      {
+        "player": "fon",
+        "team": "Home",
+        "old_elo": 1649,
+        "change": 16,
+        "new_elo": 1665
+      },
+      {
+        "player": "Puma!",
+        "team": "Away",
+        "old_elo": 1483,
+        "change": -16,
+        "new_elo": 1467
+      },
+      {
+        "player": "Tai",
+        "team": "Away",
+        "old_elo": 1486,
+        "change": -12.6,
+        "new_elo": 1473
+      }
+    ],
+    "saved_at": "2026-09-18T00:14:41+02:00"
+  },
+  {
+    "match_id": "7965ba79cb307731",
+    "game_type": "1v1",
+    "winner": "Home",
+    "home_score": 27,
+    "away_score": 14,
+    "players": [
+      {
+        "player": "David",
+        "team": "Home",
+        "old_elo": 1539,
+        "change": 13.2,
+        "new_elo": 1553
+      },
+      {
+        "player": "a",
+        "team": "Away",
+        "old_elo": 1477,
+        "change": -13.2,
+        "new_elo": 1464
+      }
+    ],
+    "saved_at": "2026-09-18T01:24:30+02:00"
+  },
+  {
+    "match_id": "f49652a5475c41c4",
+    "game_type": "1v1",
+    "winner": "Home",
+    "home_score": 37,
+    "away_score": 6,
+    "players": [
+      {
+        "player": "David",
+        "team": "Home",
+        "old_elo": 1553,
+        "change": 12.0,
+        "new_elo": 1565
+      },
+      {
+        "player": "a",
+        "team": "Away",
+        "old_elo": 1464,
+        "change": -12.0,
+        "new_elo": 1452
+      }
+    ],
+    "saved_at": "2026-09-18T01:37:13+02:00"
+  },
+  {
+    "match_id": "5a1e96f8dcdeb0d1",
+    "game_type": "team",
+    "winner": "Home",
+    "home_score": 47,
+    "away_score": 23,
+    "players": [
+      {
+        "player": "a",
+        "team": "Home",
+        "old_elo": 1443,
+        "change": 16,
+        "new_elo": 1459
+      },
+      {
+        "player": "OESD",
+        "team": "Home",
+        "old_elo": 1500,
+        "change": 11.6,
+        "new_elo": 1512
+      },
+      {
+        "player": "SUPER-LAG-DRUNK",
+        "team": "Away",
+        "old_elo": 1500,
+        "change": -16,
+        "new_elo": 1484
+      },
+      {
+        "player": "LiOn]tRk[",
+        "team": "Away",
+        "old_elo": 1323,
+        "change": -10.1,
+        "new_elo": 1313
+      }
+    ],
+    "saved_at": "2026-09-18T01:55:33+02:00"
+  },
+  {
+    "match_id": "3e34ce5ed451f9c8",
+    "game_type": "team",
+    "winner": "Home",
+    "home_score": 43,
+    "away_score": 15,
+    "players": [
+      {
+        "player": "a",
+        "team": "Home",
+        "old_elo": 1459,
+        "change": 11.6,
+        "new_elo": 1471
+      },
+      {
+        "player": "SUPER-LAG-DRUNK",
+        "team": "Home",
+        "old_elo": 1484,
+        "change": 16,
+        "new_elo": 1500
+      },
+      {
+        "player": "OESD",
+        "team": "Away",
+        "old_elo": 1512,
+        "change": -15.5,
+        "new_elo": 1496
+      },
+      {
+        "player": "LiOn]tRk[",
+        "team": "Away",
+        "old_elo": 1313,
+        "change": -15.7,
+        "new_elo": 1298
+      }
+    ],
+    "saved_at": "2026-09-18T02:09:26+02:00"
+  },
+  {
+    "match_id": "3f8dae274b2d7df6",
+    "game_type": "1v1",
+    "winner": "Home",
+    "home_score": 4,
+    "away_score": 1,
+    "players": [
+      {
+        "player": "piu-laging",
+        "team": "Home",
+        "old_elo": 1500,
+        "change": 20.2,
+        "new_elo": 1520
+      },
+      {
+        "player": "B100D",
+        "team": "Away",
+        "old_elo": 1594,
+        "change": -20.2,
+        "new_elo": 1574
+      }
+    ],
+    "saved_at": "2026-09-18T14:18:32+02:00"
+  },
+  {
+    "match_id": "1b5bcd1beaa6b37c",
+    "game_type": "1v1",
+    "winner": "Home",
+    "home_score": 4,
+    "away_score": 0,
+    "players": [
+      {
+        "player": "piu-laging",
+        "team": "Home",
+        "old_elo": 1520,
+        "change": 14.2,
+        "new_elo": 1534
+      },
+      {
+        "player": "Pacifist_(AVB)",
+        "team": "Away",
+        "old_elo": 1481,
+        "change": -14.2,
+        "new_elo": 1467
+      }
+    ],
+    "saved_at": "2026-09-18T14:36:52+02:00"
+  },
+  {
+    "match_id": "f2e6636e69dadf5a",
+    "game_type": "1v1",
+    "winner": "Home",
+    "home_score": 6,
+    "away_score": 0,
+    "players": [
+      {
+        "player": "B100D",
+        "team": "Home",
+        "old_elo": 1574,
+        "change": 11.2,
+        "new_elo": 1585
+      },
+      {
+        "player": "Pacifist_(AVB)",
+        "team": "Away",
+        "old_elo": 1467,
+        "change": -11.2,
+        "new_elo": 1456
+      }
+    ],
+    "saved_at": "2026-09-18T14:44:02+02:00"
+  },
+  {
+    "match_id": "e33a718490020b9b",
+    "game_type": "1v1",
+    "winner": "Home",
+    "home_score": 4,
+    "away_score": 3,
+    "players": [
+      {
+        "player": "piu-laging",
+        "team": "Home",
+        "old_elo": 1534,
+        "change": 15.9,
+        "new_elo": 1550
+      },
+      {
+        "player": "GipSy",
+        "team": "Away",
+        "old_elo": 1532,
+        "change": -15.9,
+        "new_elo": 1517
+      }
+    ],
+    "saved_at": "2026-09-18T15:03:00+02:00"
+  },
+  {
+    "match_id": "e553940a44590f8b",
+    "game_type": "1v1",
+    "winner": "Home",
+    "home_score": 6,
+    "away_score": 4,
+    "players": [
+      {
+        "player": "piu-laging",
+        "team": "Home",
+        "old_elo": 1550,
+        "change": 14.4,
+        "new_elo": 1565
+      },
+      {
+        "player": "GipSy",
+        "team": "Away",
+        "old_elo": 1517,
+        "change": -14.4,
+        "new_elo": 1502
+      }
+    ],
+    "saved_at": "2026-09-18T15:13:26+02:00"
+  },
+  {
+    "match_id": "24f1fa89bff12e37",
+    "game_type": "1v1",
+    "winner": "Home",
+    "home_score": 14,
+    "away_score": 9,
+    "players": [
+      {
+        "player": "piu-laging",
+        "team": "Home",
+        "old_elo": 1565,
+        "change": 13.1,
+        "new_elo": 1578
+      },
+      {
+        "player": "GipSy",
+        "team": "Away",
+        "old_elo": 1502,
+        "change": -13.1,
+        "new_elo": 1489
+      }
+    ],
+    "saved_at": "2026-09-18T15:25:43+02:00"
+  },
+  {
+    "match_id": "e9dadc01d5e7c3cf",
+    "game_type": "1v1",
+    "winner": "Home",
+    "home_score": 20,
+    "away_score": 15,
+    "players": [
+      {
+        "player": "GipSy",
+        "team": "Home",
+        "old_elo": 1489,
+        "change": 20.0,
+        "new_elo": 1509
+      },
+      {
+        "player": "piu-laging",
+        "team": "Away",
+        "old_elo": 1578,
+        "change": -20.0,
+        "new_elo": 1558
+      }
+    ],
+    "saved_at": "2026-09-18T15:37:28+02:00"
+  },
+  {
+    "match_id": "9d170eabe2894da9",
+    "game_type": "1v1",
+    "winner": "Home",
+    "home_score": 7,
+    "away_score": 1,
+    "players": [
+      {
+        "player": "B100D",
+        "team": "Home",
+        "old_elo": 1585,
+        "change": 13.1,
+        "new_elo": 1598
+      },
+      {
+        "player": "fff",
+        "team": "Away",
+        "old_elo": 1522,
+        "change": -13.1,
+        "new_elo": 1509
+      }
+    ],
+    "saved_at": "2026-09-18T15:44:23+02:00"
+  },
+  {
+    "match_id": "88668829197352bd",
+    "game_type": "1v1",
+    "winner": "Home",
+    "home_score": 25,
+    "away_score": 9,
+    "players": [
+      {
+        "player": "piu-laging",
+        "team": "Home",
+        "old_elo": 1558,
+        "change": 13.8,
+        "new_elo": 1572
+      },
+      {
+        "player": "GipSy",
+        "team": "Away",
+        "old_elo": 1509,
+        "change": -13.8,
+        "new_elo": 1495
+      }
+    ],
+    "saved_at": "2026-09-18T15:48:39+02:00"
+  },
+  {
+    "match_id": "61dace89cef01c88",
+    "game_type": "1v1",
+    "winner": "Home",
+    "home_score": 4,
+    "away_score": 1,
+    "players": [
+      {
+        "player": "fff",
+        "team": "Home",
+        "old_elo": 1509,
+        "change": 20.0,
+        "new_elo": 1529
+      },
+      {
+        "player": "B100D",
+        "team": "Away",
+        "old_elo": 1598,
+        "change": -20.0,
+        "new_elo": 1578
+      }
+    ],
+    "saved_at": "2026-09-18T15:49:46+02:00"
+  },
+  {
+    "match_id": "b0910aa4b2a711e3",
+    "game_type": "team",
+    "winner": "Home",
+    "home_score": 37,
+    "away_score": 18,
+    "players": [
+      {
+        "player": "B100D",
+        "team": "Home",
+        "old_elo": 1552,
+        "change": 11.6,
+        "new_elo": 1563
+      },
+      {
+        "player": "michaq",
+        "team": "Home",
+        "old_elo": 1486,
+        "change": 16,
+        "new_elo": 1502
+      },
+      {
+        "player": "GipSy",
+        "team": "Away",
+        "old_elo": 1626,
+        "change": -16,
+        "new_elo": 1610
+      }
+    ],
+    "saved_at": "2026-09-18T16:51:43+02:00"
+  },
+  {
+    "match_id": "9c71a6dd7ab8dcc6",
+    "game_type": "team",
+    "winner": "Away",
+    "home_score": 28,
+    "away_score": 30,
+    "players": [
+      {
+        "player": "B100D",
+        "team": "Home",
+        "old_elo": 1563,
+        "change": 7,
+        "new_elo": 1570
+      },
+      {
+        "player": "michaq",
+        "team": "Home",
+        "old_elo": 1502,
+        "change": -7.1,
+        "new_elo": 1495
+      },
+      {
+        "player": "SUPER-LAG-DRUNK",
+        "team": "Away",
+        "old_elo": 1500,
+        "change": 0,
+        "new_elo": 1500
+      }
+    ],
+    "saved_at": "2026-09-18T17:16:57+02:00"
+  },
+  {
+    "match_id": "2ca949b0e8a0628f",
+    "game_type": "1v1",
+    "winner": "Home",
+    "home_score": 32,
+    "away_score": 27,
+    "players": [
+      {
+        "player": "B100D",
+        "team": "Home",
+        "old_elo": 1578,
+        "change": 12.2,
+        "new_elo": 1591
+      },
+      {
+        "player": "zip",
+        "team": "Away",
+        "old_elo": 1494,
+        "change": -12.2,
+        "new_elo": 1482
+      }
+    ],
+    "saved_at": "2026-09-18T17:29:28+02:00"
+  },
+  {
+    "match_id": "b48326a1693f33af",
+    "game_type": "1v1",
+    "winner": "Home",
+    "home_score": 19,
+    "away_score": 7,
+    "players": [
+      {
+        "player": "cne",
+        "team": "Home",
+        "old_elo": 1541,
+        "change": 14.1,
+        "new_elo": 1555
+      },
+      {
+        "player": "michaq",
+        "team": "Away",
+        "old_elo": 1500,
+        "change": -14.1,
+        "new_elo": 1486
+      }
+    ],
+    "saved_at": "2026-09-18T18:49:46+02:00"
+  },
+  {
+    "match_id": "33c05dc2987ed66d",
+    "game_type": "1v1",
+    "winner": "Home",
+    "home_score": 13,
+    "away_score": 7,
+    "players": [
+      {
+        "player": "michaq",
+        "team": "Home",
+        "old_elo": 1486,
+        "change": 16.0,
+        "new_elo": 1502
+      },
+      {
+        "player": "warrior",
+        "team": "Away",
+        "old_elo": 1485,
+        "change": -16.0,
+        "new_elo": 1469
+      }
+    ],
+    "saved_at": "2026-09-18T19:16:10+02:00"
+  },
+  {
+    "match_id": "0ac7c5c7e8c2dd24",
+    "game_type": "1v1",
+    "winner": "Home",
+    "home_score": 13,
+    "away_score": 12,
+    "players": [
+      {
+        "player": "warrior",
+        "team": "Home",
+        "old_elo": 1469,
+        "change": 17.5,
+        "new_elo": 1487
+      },
+      {
+        "player": "michaq",
+        "team": "Away",
+        "old_elo": 1502,
+        "change": -17.5,
+        "new_elo": 1484
+      }
+    ],
+    "saved_at": "2026-09-18T19:26:31+02:00"
+  },
+  {
+    "match_id": "b39cffa9aad5f1ec",
+    "game_type": "team",
+    "winner": "Away",
+    "home_score": 21,
+    "away_score": 33,
+    "players": [
+      {
+        "player": "michaq",
+        "team": "Home",
+        "old_elo": 1495,
+        "change": -10.4,
+        "new_elo": 1484
+      },
+      {
+        "player": "zip",
+        "team": "Home",
+        "old_elo": 1444,
+        "change": -16,
+        "new_elo": 1428
+      },
+      {
+        "player": "warrior",
+        "team": "Away",
+        "old_elo": 1752,
+        "change": 16,
+        "new_elo": 1768
+      },
+      {
+        "player": "VITALIS",
+        "team": "Away",
+        "old_elo": 1366,
+        "change": 10.2,
+        "new_elo": 1376
+      }
+    ],
+    "saved_at": "2026-09-18T20:00:29+02:00"
+  },
+  {
+    "match_id": "39ea7b68968ccebc",
+    "game_type": "team",
+    "winner": "Home",
+    "home_score": 103,
+    "away_score": 32,
+    "players": [
+      {
+        "player": "ath|michaq",
+        "team": "Home",
+        "old_elo": 1500,
+        "change": 12.0,
+        "new_elo": 1512
+      },
+      {
+        "player": "zip",
+        "team": "Home",
+        "old_elo": 1428,
+        "change": 10.5,
+        "new_elo": 1438
+      },
+      {
+        "player": "maq",
+        "team": "Home",
+        "old_elo": 1769,
+        "change": 15.8,
+        "new_elo": 1785
+      },
+      {
+        "player": "cne",
+        "team": "Home",
+        "old_elo": 1709,
+        "change": 16,
+        "new_elo": 1725
+      },
+      {
+        "player": "warrior",
+        "team": "Away",
+        "old_elo": 1768,
+        "change": -16,
+        "new_elo": 1752
+      },
+      {
+        "player": "VITALIS",
+        "team": "Away",
+        "old_elo": 1376,
+        "change": -12.2,
+        "new_elo": 1364
+      },
+      {
+        "player": "error",
+        "team": "Away",
+        "old_elo": 1432,
+        "change": -16,
+        "new_elo": 1416
+      },
+      {
+        "player": "myrmidon^",
+        "team": "Away",
+        "old_elo": 1620,
+        "change": -9.3,
+        "new_elo": 1611
+      }
+    ],
+    "saved_at": "2026-09-18T20:09:47+02:00"
+  },
+  {
+    "match_id": "0c7a5823af112252",
+    "game_type": "team",
+    "winner": "Away",
+    "home_score": 35,
+    "away_score": 51,
+    "players": [
+      {
+        "player": "szef|shotman",
+        "team": "Home",
+        "old_elo": 1512,
+        "change": -16,
+        "new_elo": 1496
+      },
+      {
+        "player": "error",
+        "team": "Home",
+        "old_elo": 1416,
+        "change": -16,
+        "new_elo": 1400
+      },
+      {
+        "player": "myrmidon^",
+        "team": "Home",
+        "old_elo": 1611,
+        "change": -1.1,
+        "new_elo": 1610
+      },
+      {
+        "player": "VITALIS",
+        "team": "Away",
+        "old_elo": 1364,
+        "change": 16,
+        "new_elo": 1380
+      },
+      {
+        "player": "jabb@",
+        "team": "Away",
+        "old_elo": 1204,
+        "change": 13.8,
+        "new_elo": 1218
+      }
+    ],
+    "saved_at": "2026-09-18T20:39:17+02:00"
+  },
+  {
+    "match_id": "b98cf10c7d17eec4",
+    "game_type": "team",
+    "winner": "Home",
+    "home_score": 48,
+    "away_score": 15,
+    "players": [
+      {
+        "player": "error",
+        "team": "Home",
+        "old_elo": 1400,
+        "change": 11.5,
+        "new_elo": 1411
+      },
+      {
+        "player": "myrmidon^",
+        "team": "Home",
+        "old_elo": 1610,
+        "change": 16,
+        "new_elo": 1626
+      },
+      {
+        "player": "VITALIS",
+        "team": "Away",
+        "old_elo": 1380,
+        "change": -16,
+        "new_elo": 1364
+      },
+      {
+        "player": "szef|shotman",
+        "team": "Away",
+        "old_elo": 1496,
+        "change": -9.9,
+        "new_elo": 1486
+      }
+    ],
+    "saved_at": "2026-09-18T20:50:50+02:00"
+  },
+  {
+    "match_id": "df24ac5b367d7f54",
+    "game_type": "team",
+    "winner": "Home",
+    "home_score": 36,
+    "away_score": 34,
+    "players": [
+      {
+        "player": "Player-345",
+        "team": "Home",
+        "old_elo": 1515,
+        "change": 16,
+        "new_elo": 1531
+      },
+      {
+        "player": "s",
+        "team": "Home",
+        "old_elo": 1500,
+        "change": 2.3,
+        "new_elo": 1502
+      },
+      {
+        "player": "error",
+        "team": "Home",
+        "old_elo": 1411,
+        "change": 0,
+        "new_elo": 1411
+      },
+      {
+        "player": "VITALIS",
+        "team": "Away",
+        "old_elo": 1364,
+        "change": -5.0,
+        "new_elo": 1359
+      },
+      {
+        "player": "GipSy",
+        "team": "Away",
+        "old_elo": 1610,
+        "change": -1.1,
+        "new_elo": 1609
+      }
+    ],
+    "saved_at": "2026-09-18T21:10:06+02:00"
   }
 ]
