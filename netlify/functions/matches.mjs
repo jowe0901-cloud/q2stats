@@ -1,5 +1,6 @@
 import { getDatabase } from "@netlify/database";
 import crypto from "node:crypto";
+import { updateEloForMatch } from "./elo-update.mjs";
 
 const json=(status,body)=>new Response(JSON.stringify(body),{status,headers:{"content-type":"application/json; charset=utf-8","Access-Control-Allow-Origin":"*","Access-Control-Allow-Methods":"GET, POST, OPTIONS","Access-Control-Allow-Headers":"Content-Type, X-Q2Stats-Server-Key"}});
 
@@ -118,7 +119,6 @@ async function listMatches(db,request){
 
 export default async(request)=>{
  const db=getDatabase();
- if(request.method==="OPTIONS")return new Response(null,{status:204,headers:{"Access-Control-Allow-Origin":"*","Access-Control-Allow-Methods":"GET, POST, OPTIONS","Access-Control-Allow-Headers":"Content-Type, X-Q2Stats-Server-Key"}});
  try{
   if(request.method==="GET"){
    const matchId=getMatchId(request);
@@ -165,7 +165,8 @@ export default async(request)=>{
    const weaponsSaved=await saveWeapons(db,body.match_id,body.players);
 
    await db.sql`UPDATE servers SET last_upload_at=NOW() WHERE id=${server.id}`;
-   return json(200,{status:"repaired",match_id:body.match_id,players_saved:body.players.length,weapons_saved:weaponsSaved,server_id:server.id});
+   const elo=await updateEloForMatch(db,body.match_id);
+   return json(200,{status:"repaired",match_id:body.match_id,players_saved:body.players.length,weapons_saved:weaponsSaved,server_id:server.id,elo});
   }
 
   await db.sql`
