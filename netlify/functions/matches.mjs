@@ -10,6 +10,48 @@ function getMatchId(request){
  return value?decodeURIComponent(value):null;
 }
 
+function nullableNumber(value){
+ if(value===null||value===undefined||value==="")return null;
+ const n=Number(value);
+ return Number.isFinite(n)?n:null;
+}
+
+async function saveWeapons(db,matchId,players){
+ let saved=0;
+ for(const p of players||[]){
+  if(!p||!p.name||!p.weapons||typeof p.weapons!=="object")continue;
+  for(const [weapon,s] of Object.entries(p.weapons)){
+   if(!weapon||!s||typeof s!=="object")continue;
+   await db.sql`
+    INSERT INTO match_player_weapons(
+      match_id,player_name,weapon,accuracy,kills,deaths,dealt,received,pick,miss
+    )
+    VALUES(
+      ${matchId},${p.name},${weapon},
+      ${nullableNumber(s.accuracy??s.acc)},
+      ${nullableNumber(s.kills)},
+      ${nullableNumber(s.deaths)},
+      ${nullableNumber(s.dealt)},
+      ${nullableNumber(s.received)},
+      ${nullableNumber(s.pick)},
+      ${nullableNumber(s.miss)}
+    )
+    ON CONFLICT (match_id,player_name,weapon)
+    DO UPDATE SET
+      accuracy=EXCLUDED.accuracy,
+      kills=EXCLUDED.kills,
+      deaths=EXCLUDED.deaths,
+      dealt=EXCLUDED.dealt,
+      received=EXCLUDED.received,
+      pick=EXCLUDED.pick,
+      miss=EXCLUDED.miss
+   `;
+   saved++;
+  }
+ }
+ return saved;
+}
+
 async function playersForMatch(db,matchId){
  return await db.sql`
   SELECT name, team, frags, deaths, damage, ping, suicides, teamkills,
@@ -95,7 +137,11 @@ export default async(request)=>{
    const counts=await db.sql`SELECT COUNT(*)::int AS count FROM match_players WHERE match_id=${body.match_id}`;
    const playerCount=counts[0]?.count||0;
 
-   if(playerCount>0)return json(200,{status:"duplicate",match_id:body.match_id,server_id:server.id});
+   if(playerCount>0){
+    const weaponsSaved=await saveWeapons(db,body.match_id,body.players);
+    await db.sql`UPDATE servers SET last_upload_at=NOW() WHERE id=${server.id}`;
+    return json(200,{status:"duplicate",match_id:body.match_id,weapons_saved:weaponsSaved,server_id:server.id});
+   }
 
    await db.sql`
     UPDATE matches
@@ -113,11 +159,12 @@ export default async(request)=>{
 
    for(const p of body.players)await db.sql`
     INSERT INTO match_players(match_id,name,team,frags,deaths,damage,ping,suicides,teamkills,teleports,damage_received,team_damage,team_damage_received)
-    VALUES(${body.match_id},${p.name||""},${p.team||""},${Number(p.frags||0)},${Number(p.deaths||0)},${Number(p.damage||0)},${Number(p.ping||0)},${Number(p.suicides||0)},${Number(p.teamkills||0)},${Number(p.teleports||0)},${Number(p.damage_received||0)},${Number(p.team_damage||0)},${Number(p.team_damage_received||0)})
+    VALUES(${body.match_id},${p.name||""},${p.team||""},${Number(p.frags??p.kills??0)},${Number(p.deaths||0)},${Number(p.damage||0)},${Number(p.ping||0)},${Number(p.suicides||0)},${Number(p.teamkills||0)},${Number(p.teleports||0)},${Number(p.damage_received||0)},${Number(p.team_damage||0)},${Number(p.team_damage_received||0)})
    `;
+   const weaponsSaved=await saveWeapons(db,body.match_id,body.players);
 
    await db.sql`UPDATE servers SET last_upload_at=NOW() WHERE id=${server.id}`;
-   return json(200,{status:"repaired",match_id:body.match_id,players_saved:body.players.length,server_id:server.id});
+   return json(200,{status:"repaired",match_id:body.match_id,players_saved:body.players.length,weapons_saved:weaponsSaved,server_id:server.id});
   }
 
   await db.sql`
@@ -126,10 +173,11 @@ export default async(request)=>{
   `;
   for(const p of body.players)await db.sql`
    INSERT INTO match_players(match_id,name,team,frags,deaths,damage,ping,suicides,teamkills,teleports,damage_received,team_damage,team_damage_received)
-   VALUES(${body.match_id},${p.name||""},${p.team||""},${Number(p.frags||0)},${Number(p.deaths||0)},${Number(p.damage||0)},${Number(p.ping||0)},${Number(p.suicides||0)},${Number(p.teamkills||0)},${Number(p.teleports||0)},${Number(p.damage_received||0)},${Number(p.team_damage||0)},${Number(p.team_damage_received||0)})
+   VALUES(${body.match_id},${p.name||""},${p.team||""},${Number(p.frags??p.kills??0)},${Number(p.deaths||0)},${Number(p.damage||0)},${Number(p.ping||0)},${Number(p.suicides||0)},${Number(p.teamkills||0)},${Number(p.teleports||0)},${Number(p.damage_received||0)},${Number(p.team_damage||0)},${Number(p.team_damage_received||0)})
   `;
+  const weaponsSaved=await saveWeapons(db,body.match_id,body.players);
   await db.sql`UPDATE servers SET last_upload_at=NOW() WHERE id=${server.id}`;
-  return json(200,{status:"saved",match_id:body.match_id,players_saved:body.players.length,server_id:server.id});
+  return json(200,{status:"saved",match_id:body.match_id,players_saved:body.players.length,weapons_saved:weaponsSaved,server_id:server.id});
  }catch(error){console.error(error);return json(500,{status:"error",error:error.message||"Internal server error"})}
 };
 
