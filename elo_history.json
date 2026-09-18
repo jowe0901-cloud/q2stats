@@ -19789,5 +19789,29 @@
       }
     ],
     "saved_at": "2026-09-19T00:31:51+02:00"
+  },
+  {
+    "match_id": "6655f2be6d1549d7",
+    "game_type": "1v1",
+    "winner": "Home",
+    "home_score": 20,
+    "away_score": 8,
+    "players": [
+      {
+        "player": "piu-chill",
+        "team": "Home",
+        "old_elo": 1613,
+        "change": 10.5,
+        "new_elo": 1624
+      },
+      {
+        "player": "dolar",
+        "team": "Away",
+        "old_elo": 1488,
+        "change": -10.5,
+        "new_elo": 1478
+      }
+    ],
+    "saved_at": "2026-09-19T00:36:36+02:00"
   }
 ]
