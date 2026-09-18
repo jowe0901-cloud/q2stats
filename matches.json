@@ -139525,5 +139525,178 @@
       }
     ],
     "saved_at": "2026-09-19T01:00:03+02:00"
+  },
+  {
+    "match_id": "5f52e01a5e606206",
+    "game_type": "1v1",
+    "hostname": "PacketFlinger.com ~ OpenTDM ~ Germany #3",
+    "mapname": "q2duel5",
+    "match_type": "Duel",
+    "port": 27910,
+    "winner": "Home",
+    "home_score": 45,
+    "away_score": 3,
+    "players": [
+      {
+        "name": "sevvq",
+        "kills": 3,
+        "deaths": 45,
+        "suicides": 0,
+        "teamkills": 0,
+        "teleports": 0,
+        "damage": 2049,
+        "damage_received": 6247,
+        "team_damage": 0,
+        "team_damage_received": 0,
+        "weapons": {
+          "Super Shotgun": {
+            "accuracy": 54,
+            "kills": 0,
+            "deaths": null,
+            "dealt": 228,
+            "received": null,
+            "pick": 10,
+            "miss": 0
+          },
+          "Chaingun": {
+            "accuracy": 12,
+            "kills": 0,
+            "deaths": 9,
+            "dealt": 534,
+            "received": 1140,
+            "pick": 9,
+            "miss": 7
+          },
+          "Grenades": {
+            "accuracy": 0,
+            "kills": 0,
+            "deaths": null,
+            "dealt": 0,
+            "received": null,
+            "pick": 0,
+            "miss": 0
+          },
+          "Grenade Launcher": {
+            "accuracy": 9,
+            "kills": 0,
+            "deaths": 0,
+            "dealt": 105,
+            "received": 30,
+            "pick": 8,
+            "miss": 1
+          },
+          "Rocket Launcher": {
+            "accuracy": 16,
+            "kills": 1,
+            "deaths": 10,
+            "dealt": 522,
+            "received": 1972,
+            "pick": 5,
+            "miss": 10
+          },
+          "HyperBlaster": {
+            "accuracy": 7,
+            "kills": 1,
+            "deaths": 1,
+            "dealt": 315,
+            "received": 105,
+            "pick": 8,
+            "miss": 1
+          },
+          "Railgun": {
+            "accuracy": 15,
+            "kills": 1,
+            "deaths": 25,
+            "dealt": 300,
+            "received": 3000,
+            "pick": 9,
+            "miss": 6
+          }
+        },
+        "team": "Away",
+        "ping": 31,
+        "player_id": "0",
+        "elo_type": "1v1",
+        "elo_before": 1500,
+        "elo_change": -9.8,
+        "elo_after": 1490
+      },
+      {
+        "name": "piu-chill",
+        "kills": 45,
+        "deaths": 3,
+        "suicides": 0,
+        "teamkills": 0,
+        "teleports": 0,
+        "damage": 6217,
+        "damage_received": 2179,
+        "team_damage": 0,
+        "team_damage_received": 0,
+        "weapons": {
+          "Super Shotgun": {
+            "accuracy": null,
+            "kills": null,
+            "deaths": 0,
+            "dealt": null,
+            "received": 228,
+            "pick": 0,
+            "miss": 10
+          },
+          "Chaingun": {
+            "accuracy": 15,
+            "kills": 9,
+            "deaths": 0,
+            "dealt": 1140,
+            "received": 534,
+            "pick": 7,
+            "miss": 9
+          },
+          "Grenade Launcher": {
+            "accuracy": 0,
+            "kills": 0,
+            "deaths": 0,
+            "dealt": 0,
+            "received": 105,
+            "pick": 1,
+            "miss": 8
+          },
+          "Rocket Launcher": {
+            "accuracy": 27,
+            "kills": 10,
+            "deaths": 1,
+            "dealt": 1972,
+            "received": 652,
+            "pick": 10,
+            "miss": 5
+          },
+          "HyperBlaster": {
+            "accuracy": 24,
+            "kills": 1,
+            "deaths": 1,
+            "dealt": 105,
+            "received": 315,
+            "pick": 1,
+            "miss": 8
+          },
+          "Railgun": {
+            "accuracy": 28,
+            "kills": 25,
+            "deaths": 1,
+            "dealt": 3000,
+            "received": 300,
+            "pick": 6,
+            "miss": 9
+          }
+        },
+        "team": "Home",
+        "ping": 37,
+        "player_id": "2",
+        "elo_type": "1v1",
+        "elo_before": 1642,
+        "elo_change": 9.8,
+        "elo_after": 1652
+      }
+    ],
+    "saved_at": "2026-09-19T01:11:39+02:00"
   }
 ]
