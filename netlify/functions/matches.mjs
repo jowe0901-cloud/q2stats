@@ -1,7 +1,7 @@
 import { getDatabase } from "@netlify/database";
 import crypto from "node:crypto";
 
-const json=(status,body)=>new Response(JSON.stringify(body),{status,headers:{"content-type":"application/json; charset=utf-8"}});
+const json=(status,body)=>new Response(JSON.stringify(body),{status,headers:{"content-type":"application/json; charset=utf-8","Access-Control-Allow-Origin":"*","Access-Control-Allow-Methods":"GET, POST, OPTIONS","Access-Control-Allow-Headers":"Content-Type, X-Q2Stats-Server-Key"}});
 
 function getMatchId(request){
  const url=new URL(request.url),prefix="/api/v1/matches/";
@@ -118,6 +118,7 @@ async function listMatches(db,request){
 
 export default async(request)=>{
  const db=getDatabase();
+ if(request.method==="OPTIONS")return new Response(null,{status:204,headers:{"Access-Control-Allow-Origin":"*","Access-Control-Allow-Methods":"GET, POST, OPTIONS","Access-Control-Allow-Headers":"Content-Type, X-Q2Stats-Server-Key"}});
  try{
   if(request.method==="GET"){
    const matchId=getMatchId(request);
