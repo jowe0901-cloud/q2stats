@@ -179,7 +179,8 @@ export default async(request)=>{
   `;
   const weaponsSaved=await saveWeapons(db,body.match_id,body.players);
   await db.sql`UPDATE servers SET last_upload_at=NOW() WHERE id=${server.id}`;
-  return json(200,{status:"saved",match_id:body.match_id,players_saved:body.players.length,weapons_saved:weaponsSaved,server_id:server.id});
+  const elo=await updateEloForMatch(db,body.match_id);
+   return json(200,{status:"saved",match_id:body.match_id,players_saved:body.players.length,weapons_saved:weaponsSaved,server_id:server.id,elo});
  }catch(error){console.error(error);return json(500,{status:"error",error:error.message||"Internal server error"})}
 };
 
