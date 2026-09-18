@@ -19582,5 +19582,29 @@
       }
     ],
     "saved_at": "2026-09-18T23:44:55+02:00"
+  },
+  {
+    "match_id": "7dfd8a722ad2ed70",
+    "game_type": "1v1",
+    "winner": "Home",
+    "home_score": 22,
+    "away_score": 9,
+    "players": [
+      {
+        "player": "Maniek",
+        "team": "Home",
+        "old_elo": 1400,
+        "change": 20.1,
+        "new_elo": 1420
+      },
+      {
+        "player": "tomato-gose",
+        "team": "Away",
+        "old_elo": 1491,
+        "change": -20.1,
+        "new_elo": 1471
+      }
+    ],
+    "saved_at": "2026-09-18T23:55:48+02:00"
   }
 ]
