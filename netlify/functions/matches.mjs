@@ -31,17 +31,44 @@ async function getOneMatch(db,matchId){
 
 async function listMatches(db,request){
  const url=new URL(request.url),rl=Number(url.searchParams.get("limit")||20),ro=Number(url.searchParams.get("offset")||0);
+ const player=(url.searchParams.get("player")||"").trim();
  const limit=Math.max(1,Math.min(Number.isFinite(rl)?Math.trunc(rl):20,100));
  const offset=Math.max(0,Number.isFinite(ro)?Math.trunc(ro):0);
- const countRows=await db.sql`SELECT COUNT(*)::int AS count FROM matches`;
+
+ let countRows,rows;
+
+ if(player){
+  countRows=await db.sql`
+   SELECT COUNT(*)::int AS count
+   FROM matches m
+   WHERE EXISTS (
+    SELECT 1 FROM match_players mp
+    WHERE mp.match_id=m.match_id AND mp.name=${player}
+   )
+  `;
+  rows=await db.sql`
+   SELECT m.id, m.match_id, m.server, m.map, m.game_type, m.home_score, m.away_score,
+          m.winner, m.match_type, m.port, m.saved_at, m.created_at
+   FROM matches m
+   WHERE EXISTS (
+    SELECT 1 FROM match_players mp
+    WHERE mp.match_id=m.match_id AND mp.name=${player}
+   )
+   ORDER BY COALESCE(m.saved_at,m.created_at) DESC,m.id DESC
+   LIMIT ${limit} OFFSET ${offset}
+  `;
+ }else{
+  countRows=await db.sql`SELECT COUNT(*)::int AS count FROM matches`;
+  rows=await db.sql`
+   SELECT id, match_id, server, map, game_type, home_score, away_score,
+          winner, match_type, port, saved_at, created_at
+   FROM matches
+   ORDER BY COALESCE(saved_at,created_at) DESC,id DESC
+   LIMIT ${limit} OFFSET ${offset}
+  `;
+ }
+
  const total=countRows[0]?.count||0;
- const rows=await db.sql`
-  SELECT id, match_id, server, map, game_type, home_score, away_score,
-         winner, match_type, port, saved_at, created_at
-  FROM matches
-  ORDER BY COALESCE(saved_at,created_at) DESC,id DESC
-  LIMIT ${limit} OFFSET ${offset}
- `;
  const matches=[];
  for(const match of rows)matches.push({...match,players:await playersForMatch(db,match.match_id)});
  return {status:"ok",count:matches.length,total,limit,offset,matches};
