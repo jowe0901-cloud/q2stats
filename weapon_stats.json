@@ -508,18 +508,6 @@
           "qualified": true
         },
         {
-          "player": "fon",
-          "matches": 31,
-          "kills": 298,
-          "deaths": 190,
-          "dealt": 45400,
-          "received": 27700,
-          "pick": 113,
-          "miss": 382,
-          "accuracy": 33.5,
-          "qualified": true
-        },
-        {
           "player": "shad",
           "matches": 23,
           "kills": 121,
@@ -529,6 +517,18 @@
           "pick": 113,
           "miss": 176,
           "accuracy": 33.5,
+          "qualified": true
+        },
+        {
+          "player": "fon",
+          "matches": 32,
+          "kills": 300,
+          "deaths": 197,
+          "dealt": 46000,
+          "received": 28800,
+          "pick": 120,
+          "miss": 391,
+          "accuracy": 33.4,
           "qualified": true
         },
         {
@@ -988,18 +988,6 @@
           "qualified": true
         },
         {
-          "player": "sase",
-          "matches": 1,
-          "kills": 5,
-          "deaths": 4,
-          "dealt": 800,
-          "received": 900,
-          "pick": 4,
-          "miss": 9,
-          "accuracy": 26.0,
-          "qualified": false
-        },
-        {
           "player": "senz",
           "matches": 16,
           "kills": 50,
@@ -1049,13 +1037,13 @@
         },
         {
           "player": "centurio",
-          "matches": 1,
+          "matches": 2,
           "kills": 0,
-          "deaths": 6,
+          "deaths": 7,
           "dealt": 100,
-          "received": 800,
+          "received": 1200,
           "pick": 1,
-          "miss": 12,
+          "miss": 28,
           "accuracy": 25.0,
           "qualified": false
         },
@@ -1120,6 +1108,18 @@
           "qualified": true
         },
         {
+          "player": "]On3sgh3p[",
+          "matches": 2,
+          "kills": 14,
+          "deaths": 6,
+          "dealt": 2300,
+          "received": 1300,
+          "pick": 4,
+          "miss": 25,
+          "accuracy": 23.5,
+          "qualified": false
+        },
+        {
           "player": "player-454",
           "matches": 2,
           "kills": 3,
@@ -1166,6 +1166,18 @@
           "miss": 53,
           "accuracy": 22.8,
           "qualified": true
+        },
+        {
+          "player": "sase",
+          "matches": 2,
+          "kills": 6,
+          "deaths": 7,
+          "dealt": 1100,
+          "received": 1600,
+          "pick": 6,
+          "miss": 23,
+          "accuracy": 22.5,
+          "qualified": false
         },
         {
           "player": "VITALIS",
@@ -1262,18 +1274,6 @@
           "miss": 211,
           "accuracy": 20.2,
           "qualified": true
-        },
-        {
-          "player": "]On3sgh3p[",
-          "matches": 1,
-          "kills": 4,
-          "deaths": 4,
-          "dealt": 500,
-          "received": 800,
-          "pick": 4,
-          "miss": 9,
-          "accuracy": 20.0,
-          "qualified": false
         },
         {
           "player": "nem",
@@ -1437,14 +1437,14 @@
         },
         {
           "player": "fon",
-          "matches": 31,
-          "kills": 105,
-          "deaths": 96,
-          "dealt": 17497,
-          "received": 19372,
-          "pick": 106,
-          "miss": 646,
-          "accuracy": 30.0,
+          "matches": 32,
+          "kills": 106,
+          "deaths": 105,
+          "dealt": 18020,
+          "received": 21350,
+          "pick": 113,
+          "miss": 670,
+          "accuracy": 29.5,
           "qualified": true
         },
         {
@@ -1546,18 +1546,6 @@
           "qualified": true
         },
         {
-          "player": "fon",
-          "matches": 31,
-          "kills": 105,
-          "deaths": 96,
-          "dealt": 17497,
-          "received": 19372,
-          "pick": 106,
-          "miss": 646,
-          "accuracy": 30.0,
-          "qualified": true
-        },
-        {
           "player": "s",
           "matches": 3,
           "kills": 11,
@@ -1568,6 +1556,18 @@
           "miss": 73,
           "accuracy": 29.7,
           "qualified": false
+        },
+        {
+          "player": "fon",
+          "matches": 32,
+          "kills": 106,
+          "deaths": 105,
+          "dealt": 18020,
+          "received": 21350,
+          "pick": 113,
+          "miss": 670,
+          "accuracy": 29.5,
+          "qualified": true
         },
         {
           "player": "ath|michaq",
@@ -1616,18 +1616,6 @@
           "miss": 143,
           "accuracy": 27.9,
           "qualified": true
-        },
-        {
-          "player": "sase",
-          "matches": 1,
-          "kills": 8,
-          "deaths": 1,
-          "dealt": 1770,
-          "received": 430,
-          "pick": 7,
-          "miss": 14,
-          "accuracy": 27.0,
-          "qualified": false
         },
         {
           "player": "[ds]ads",
@@ -1870,6 +1858,18 @@
           "qualified": true
         },
         {
+          "player": "centurio",
+          "matches": 2,
+          "kills": 16,
+          "deaths": 5,
+          "dealt": 3209,
+          "received": 2112,
+          "pick": 13,
+          "miss": 39,
+          "accuracy": 23.0,
+          "qualified": false
+        },
+        {
           "player": "[sf]fasadin",
           "matches": 6,
           "kills": 21,
@@ -1964,6 +1964,18 @@
           "miss": 873,
           "accuracy": 21.2,
           "qualified": true
+        },
+        {
+          "player": "sase",
+          "matches": 2,
+          "kills": 12,
+          "deaths": 3,
+          "dealt": 2559,
+          "received": 1346,
+          "pick": 12,
+          "miss": 40,
+          "accuracy": 21.0,
+          "qualified": false
         },
         {
           "player": "KaPo",
@@ -2083,18 +2095,6 @@
           "pick": 41,
           "miss": 50,
           "accuracy": 20.1,
-          "qualified": false
-        },
-        {
-          "player": "centurio",
-          "matches": 1,
-          "kills": 7,
-          "deaths": 2,
-          "dealt": 1166,
-          "received": 1052,
-          "pick": 10,
-          "miss": 11,
-          "accuracy": 20.0,
           "qualified": false
         },
         {
@@ -2675,14 +2675,14 @@
         },
         {
           "player": "]On3sgh3p[",
-          "matches": 1,
-          "kills": 2,
-          "deaths": 7,
-          "dealt": 440,
-          "received": 897,
-          "pick": 2,
-          "miss": 19,
-          "accuracy": 10.0,
+          "matches": 2,
+          "kills": 4,
+          "deaths": 9,
+          "dealt": 911,
+          "received": 1555,
+          "pick": 6,
+          "miss": 46,
+          "accuracy": 10.5,
           "qualified": false
         },
         {
@@ -2908,18 +2908,6 @@
           "qualified": true
         },
         {
-          "player": "centurio",
-          "matches": 1,
-          "kills": 4,
-          "deaths": 1,
-          "dealt": 768,
-          "received": 636,
-          "pick": 0,
-          "miss": 12,
-          "accuracy": 18.0,
-          "qualified": false
-        },
-        {
           "player": "=PFH=ZYGA",
           "matches": 3,
           "kills": 10,
@@ -3088,18 +3076,6 @@
           "qualified": false
         },
         {
-          "player": "sase",
-          "matches": 1,
-          "kills": 2,
-          "deaths": 0,
-          "dealt": 456,
-          "received": 222,
-          "pick": 2,
-          "miss": 10,
-          "accuracy": 15.0,
-          "qualified": false
-        },
-        {
           "player": "rul fan",
           "matches": 1,
           "kills": 1,
@@ -3146,6 +3122,18 @@
           "miss": 397,
           "accuracy": 14.5,
           "qualified": true
+        },
+        {
+          "player": "centurio",
+          "matches": 2,
+          "kills": 10,
+          "deaths": 3,
+          "dealt": 1410,
+          "received": 870,
+          "pick": 5,
+          "miss": 23,
+          "accuracy": 14.5,
+          "qualified": false
         },
         {
           "player": "maq",
@@ -3196,18 +3184,6 @@
           "qualified": false
         },
         {
-          "player": "fon",
-          "matches": 31,
-          "kills": 69,
-          "deaths": 65,
-          "dealt": 9114,
-          "received": 11376,
-          "pick": 45,
-          "miss": 408,
-          "accuracy": 14.2,
-          "qualified": true
-        },
-        {
           "player": "Dark Abyys",
           "matches": 5,
           "kills": 15,
@@ -3218,6 +3194,18 @@
           "miss": 51,
           "accuracy": 14.2,
           "qualified": false
+        },
+        {
+          "player": "fon",
+          "matches": 32,
+          "kills": 70,
+          "deaths": 70,
+          "dealt": 9432,
+          "received": 11880,
+          "pick": 48,
+          "miss": 421,
+          "accuracy": 14.1,
+          "qualified": true
         },
         {
           "player": "Keizer",
@@ -3252,6 +3240,18 @@
           "received": 324,
           "pick": 5,
           "miss": 10,
+          "accuracy": 14.0,
+          "qualified": false
+        },
+        {
+          "player": "sase",
+          "matches": 2,
+          "kills": 3,
+          "deaths": 5,
+          "dealt": 534,
+          "received": 642,
+          "pick": 3,
+          "miss": 25,
           "accuracy": 14.0,
           "qualified": false
         },
@@ -3468,6 +3468,18 @@
           "received": 2046,
           "pick": 9,
           "miss": 48,
+          "accuracy": 13.0,
+          "qualified": false
+        },
+        {
+          "player": "]On3sgh3p[",
+          "matches": 2,
+          "kills": 4,
+          "deaths": 6,
+          "dealt": 918,
+          "received": 1038,
+          "pick": 9,
+          "miss": 19,
           "accuracy": 13.0,
           "qualified": false
         },
@@ -3936,18 +3948,6 @@
           "received": 48,
           "pick": 8,
           "miss": 1,
-          "accuracy": 11.0,
-          "qualified": false
-        },
-        {
-          "player": "]On3sgh3p[",
-          "matches": 1,
-          "kills": 0,
-          "deaths": 6,
-          "dealt": 636,
-          "received": 876,
-          "pick": 8,
-          "miss": 4,
           "accuracy": 11.0,
           "qualified": false
         },

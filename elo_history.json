@@ -19713,5 +19713,43 @@
       }
     ],
     "saved_at": "2026-09-19T00:19:43+02:00"
+  },
+  {
+    "match_id": "2b14f87b4f767538",
+    "game_type": "team",
+    "winner": "Home",
+    "home_score": 32,
+    "away_score": 11,
+    "players": [
+      {
+        "player": "centurio",
+        "team": "Home",
+        "old_elo": 1503,
+        "change": 14.8,
+        "new_elo": 1518
+      },
+      {
+        "player": "]On3sgh3p[",
+        "team": "Home",
+        "old_elo": 1484,
+        "change": 16,
+        "new_elo": 1500
+      },
+      {
+        "player": "fon",
+        "team": "Away",
+        "old_elo": 1676,
+        "change": -16,
+        "new_elo": 1660
+      },
+      {
+        "player": "sase",
+        "team": "Away",
+        "old_elo": 1504,
+        "change": -13.6,
+        "new_elo": 1491
+      }
+    ],
+    "saved_at": "2026-09-19T00:21:21+02:00"
   }
 ]
