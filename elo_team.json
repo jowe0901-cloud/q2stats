@@ -1,11 +1,11 @@
 [
   {
     "player": "maq",
-    "elo": 1785,
-    "matches": 30,
-    "wins": 24,
+    "elo": 1800,
+    "matches": 31,
+    "wins": 25,
     "losses": 6,
-    "winrate": 80.0
+    "winrate": 80.6
   },
   {
     "player": "qw",
@@ -57,11 +57,11 @@
   },
   {
     "player": "myrmidon^",
-    "elo": 1645,
-    "matches": 46,
-    "wins": 24,
+    "elo": 1648,
+    "matches": 47,
+    "wins": 25,
     "losses": 22,
-    "winrate": 52.2
+    "winrate": 53.2
   },
   {
     "player": "GipSy",
@@ -97,11 +97,11 @@
   },
   {
     "player": "roon",
-    "elo": 1590,
-    "matches": 11,
+    "elo": 1597,
+    "matches": 12,
     "wins": 7,
-    "losses": 4,
-    "winrate": 63.6
+    "losses": 5,
+    "winrate": 58.3
   },
   {
     "player": "n0sferatu",
@@ -328,6 +328,14 @@
     "winrate": 100.0
   },
   {
+    "player": "kreg",
+    "elo": 1511,
+    "matches": 1,
+    "wins": 1,
+    "losses": 0,
+    "winrate": 100.0
+  },
+  {
     "player": "fonbeers",
     "elo": 1509,
     "matches": 5,
@@ -440,14 +448,6 @@
     "winrate": 60.0
   },
   {
-    "player": "Player-345",
-    "elo": 1499,
-    "matches": 30,
-    "wins": 14,
-    "losses": 16,
-    "winrate": 46.7
-  },
-  {
     "player": "GUSIUS",
     "elo": 1499,
     "matches": 37,
@@ -538,10 +538,10 @@
   {
     "player": "need1",
     "elo": 1490,
-    "matches": 30,
-    "wins": 15,
+    "matches": 31,
+    "wins": 16,
     "losses": 15,
-    "winrate": 50.0
+    "winrate": 51.6
   },
   {
     "player": "kurwa_ping80",
@@ -566,6 +566,14 @@
     "wins": 4,
     "losses": 4,
     "winrate": 50.0
+  },
+  {
+    "player": "Player-345",
+    "elo": 1485,
+    "matches": 31,
+    "wins": 14,
+    "losses": 17,
+    "winrate": 45.2
   },
   {
     "player": "Ice wallow",
@@ -793,11 +801,11 @@
   },
   {
     "player": "senz",
-    "elo": 1447,
-    "matches": 20,
+    "elo": 1445,
+    "matches": 21,
     "wins": 9,
-    "losses": 11,
-    "winrate": 45.0
+    "losses": 12,
+    "winrate": 42.9
   },
   {
     "player": "xRSNx",
@@ -848,20 +856,20 @@
     "winrate": 25.0
   },
   {
-    "player": "error",
-    "elo": 1383,
-    "matches": 12,
-    "wins": 3,
-    "losses": 9,
-    "winrate": 25.0
-  },
-  {
     "player": "VITALIS",
     "elo": 1374,
     "matches": 47,
     "wins": 20,
     "losses": 27,
     "winrate": 42.6
+  },
+  {
+    "player": "error",
+    "elo": 1367,
+    "matches": 13,
+    "wins": 3,
+    "losses": 10,
+    "winrate": 23.1
   },
   {
     "player": "Maniek",
