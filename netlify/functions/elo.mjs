@@ -32,6 +32,47 @@ export default async (request) => {
 
     const db = getDatabase();
 
+    // Player Elo history mode:
+    // /api/v1/elo?type=team&player=qw
+    // /api/v1/elo?type=1v1&player=qw
+    const player = (url.searchParams.get("player") || "").trim();
+    if (player) {
+      const historyRows = await db.sql`
+        SELECT
+          match_id,
+          player_name,
+          elo_type,
+          elo_before,
+          elo_change,
+          elo_after,
+          created_at
+        FROM elo_history
+        WHERE player_name=${player}
+          AND elo_type=${type}
+          AND algorithm_version=${VERSION}
+        ORDER BY created_at ASC, id ASC
+      `;
+
+      const history = historyRows.map((r) => ({
+        match_id: r.match_id,
+        player: r.player_name,
+        type: r.elo_type,
+        elo_before: Number(r.elo_before),
+        elo_change: Number(r.elo_change),
+        elo_after: Number(r.elo_after),
+        created_at: r.created_at
+      }));
+
+      return json(200, {
+        status: "ok",
+        algorithm_version: VERSION,
+        type,
+        player,
+        count: history.length,
+        history
+      });
+    }
+
     const countRows = await db.sql`
       SELECT COUNT(*)::int AS count
       FROM elo_ratings
