@@ -1000,6 +1000,18 @@
           "qualified": false
         },
         {
+          "player": "jabb@",
+          "matches": 55,
+          "kills": 122,
+          "deaths": 345,
+          "dealt": 19700,
+          "received": 56700,
+          "pick": 94,
+          "miss": 508,
+          "accuracy": 26.6,
+          "qualified": true
+        },
+        {
           "player": "piu-chill",
           "matches": 14,
           "kills": 128,
@@ -1009,18 +1021,6 @@
           "pick": 85,
           "miss": 86,
           "accuracy": 26.5,
-          "qualified": true
-        },
-        {
-          "player": "jabb@",
-          "matches": 54,
-          "kills": 121,
-          "deaths": 345,
-          "dealt": 19500,
-          "received": 56600,
-          "pick": 92,
-          "miss": 507,
-          "accuracy": 26.4,
           "qualified": true
         },
         {
@@ -1045,18 +1045,6 @@
           "pick": 60,
           "miss": 270,
           "accuracy": 26.0,
-          "qualified": true
-        },
-        {
-          "player": "senz",
-          "matches": 16,
-          "kills": 50,
-          "deaths": 82,
-          "dealt": 9500,
-          "received": 13500,
-          "pick": 25,
-          "miss": 197,
-          "accuracy": 25.4,
           "qualified": true
         },
         {
@@ -1092,6 +1080,18 @@
           "received": 33500,
           "pick": 83,
           "miss": 533,
+          "accuracy": 24.9,
+          "qualified": true
+        },
+        {
+          "player": "senz",
+          "matches": 17,
+          "kills": 50,
+          "deaths": 83,
+          "dealt": 9600,
+          "received": 13700,
+          "pick": 26,
+          "miss": 199,
           "accuracy": 24.9,
           "qualified": true
         },
@@ -1978,26 +1978,14 @@
           "qualified": true
         },
         {
-          "player": "senz",
-          "matches": 16,
-          "kills": 54,
-          "deaths": 55,
-          "dealt": 10436,
-          "received": 10722,
-          "pick": 74,
-          "miss": 273,
-          "accuracy": 21.6,
-          "qualified": true
-        },
-        {
           "player": "jabb@",
-          "matches": 55,
-          "kills": 211,
+          "matches": 56,
+          "kills": 213,
           "deaths": 244,
-          "dealt": 44334,
-          "received": 55333,
-          "pick": 293,
-          "miss": 751,
+          "dealt": 45206,
+          "received": 55926,
+          "pick": 298,
+          "miss": 753,
           "accuracy": 21.5,
           "qualified": true
         },
@@ -2022,6 +2010,18 @@
           "received": 28344,
           "pick": 76,
           "miss": 873,
+          "accuracy": 21.2,
+          "qualified": true
+        },
+        {
+          "player": "senz",
+          "matches": 17,
+          "kills": 54,
+          "deaths": 57,
+          "dealt": 10755,
+          "received": 11594,
+          "pick": 76,
+          "miss": 278,
           "accuracy": 21.2,
           "qualified": true
         },
@@ -3425,13 +3425,13 @@
         },
         {
           "player": "jabb@",
-          "matches": 55,
-          "kills": 182,
-          "deaths": 186,
-          "dealt": 26430,
-          "received": 24042,
-          "pick": 165,
-          "miss": 509,
+          "matches": 56,
+          "kills": 185,
+          "deaths": 192,
+          "dealt": 27636,
+          "received": 24582,
+          "pick": 170,
+          "miss": 514,
           "accuracy": 13.1,
           "qualified": true
         },
@@ -3881,13 +3881,13 @@
         },
         {
           "player": "senz",
-          "matches": 15,
-          "kills": 30,
-          "deaths": 34,
-          "dealt": 4818,
-          "received": 5178,
-          "pick": 36,
-          "miss": 174,
+          "matches": 16,
+          "kills": 36,
+          "deaths": 37,
+          "dealt": 5358,
+          "received": 6384,
+          "pick": 41,
+          "miss": 179,
           "accuracy": 11.5,
           "qualified": true
         },

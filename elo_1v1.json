@@ -256,6 +256,14 @@
     "winrate": 50.0
   },
   {
+    "player": "senz",
+    "elo": 1495,
+    "matches": 2,
+    "wins": 1,
+    "losses": 1,
+    "winrate": 50.0
+  },
+  {
     "player": "roon",
     "elo": 1495,
     "matches": 6,
@@ -278,14 +286,6 @@
     "wins": 1,
     "losses": 2,
     "winrate": 33.3
-  },
-  {
-    "player": "senz",
-    "elo": 1485,
-    "matches": 1,
-    "wins": 0,
-    "losses": 1,
-    "winrate": 0.0
   },
   {
     "player": "VITALIS",
@@ -569,10 +569,10 @@
   },
   {
     "player": "jabb@",
-    "elo": 1363,
-    "matches": 17,
+    "elo": 1353,
+    "matches": 18,
     "wins": 2,
-    "losses": 15,
-    "winrate": 11.8
+    "losses": 16,
+    "winrate": 11.1
   }
 ]
