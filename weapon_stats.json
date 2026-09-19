@@ -1084,18 +1084,6 @@
           "qualified": true
         },
         {
-          "player": "senz",
-          "matches": 17,
-          "kills": 50,
-          "deaths": 83,
-          "dealt": 9600,
-          "received": 13700,
-          "pick": 26,
-          "miss": 199,
-          "accuracy": 24.9,
-          "qualified": true
-        },
-        {
           "player": "aid",
           "matches": 4,
           "kills": 21,
@@ -1142,6 +1130,18 @@
           "miss": 26,
           "accuracy": 23.5,
           "qualified": false
+        },
+        {
+          "player": "senz",
+          "matches": 18,
+          "kills": 50,
+          "deaths": 83,
+          "dealt": 9600,
+          "received": 13700,
+          "pick": 28,
+          "miss": 199,
+          "accuracy": 23.4,
+          "qualified": true
         },
         {
           "player": "faint",
@@ -1979,13 +1979,13 @@
         },
         {
           "player": "jabb@",
-          "matches": 56,
-          "kills": 213,
+          "matches": 57,
+          "kills": 214,
           "deaths": 244,
-          "dealt": 45206,
-          "received": 55926,
-          "pick": 298,
-          "miss": 753,
+          "dealt": 45597,
+          "received": 56270,
+          "pick": 300,
+          "miss": 759,
           "accuracy": 21.5,
           "qualified": true
         },
@@ -2010,18 +2010,6 @@
           "received": 28344,
           "pick": 76,
           "miss": 873,
-          "accuracy": 21.2,
-          "qualified": true
-        },
-        {
-          "player": "senz",
-          "matches": 17,
-          "kills": 54,
-          "deaths": 57,
-          "dealt": 10755,
-          "received": 11594,
-          "pick": 76,
-          "miss": 278,
           "accuracy": 21.2,
           "qualified": true
         },
@@ -2060,6 +2048,18 @@
           "miss": 70,
           "accuracy": 20.7,
           "qualified": false
+        },
+        {
+          "player": "senz",
+          "matches": 18,
+          "kills": 54,
+          "deaths": 58,
+          "dealt": 11006,
+          "received": 11985,
+          "pick": 82,
+          "miss": 280,
+          "accuracy": 20.5,
+          "qualified": true
         },
         {
           "player": "//VERSACE",
@@ -3425,13 +3425,13 @@
         },
         {
           "player": "jabb@",
-          "matches": 56,
-          "kills": 185,
+          "matches": 57,
+          "kills": 188,
           "deaths": 192,
-          "dealt": 27636,
-          "received": 24582,
-          "pick": 170,
-          "miss": 514,
+          "dealt": 28944,
+          "received": 25140,
+          "pick": 175,
+          "miss": 518,
           "accuracy": 13.1,
           "qualified": true
         },
@@ -3881,13 +3881,13 @@
         },
         {
           "player": "senz",
-          "matches": 16,
+          "matches": 17,
           "kills": 36,
-          "deaths": 37,
-          "dealt": 5358,
-          "received": 6384,
-          "pick": 41,
-          "miss": 179,
+          "deaths": 40,
+          "dealt": 5916,
+          "received": 7692,
+          "pick": 45,
+          "miss": 184,
           "accuracy": 11.5,
           "qualified": true
         },

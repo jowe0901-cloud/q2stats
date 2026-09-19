@@ -20288,5 +20288,29 @@
       }
     ],
     "saved_at": "2026-09-19T17:58:42+02:00"
+  },
+  {
+    "match_id": "5105df1343cd6716",
+    "game_type": "1v1",
+    "winner": "Home",
+    "home_score": 10,
+    "away_score": 2,
+    "players": [
+      {
+        "player": "jabb@",
+        "team": "Home",
+        "old_elo": 1353,
+        "change": 22.2,
+        "new_elo": 1375
+      },
+      {
+        "player": "senz",
+        "team": "Away",
+        "old_elo": 1495,
+        "change": -22.2,
+        "new_elo": 1473
+      }
+    ],
+    "saved_at": "2026-09-19T18:08:18+02:00"
   }
 ]

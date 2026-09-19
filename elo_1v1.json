@@ -256,14 +256,6 @@
     "winrate": 50.0
   },
   {
-    "player": "senz",
-    "elo": 1495,
-    "matches": 2,
-    "wins": 1,
-    "losses": 1,
-    "winrate": 50.0
-  },
-  {
     "player": "roon",
     "elo": 1495,
     "matches": 6,
@@ -416,6 +408,14 @@
     "winrate": 0.0
   },
   {
+    "player": "senz",
+    "elo": 1473,
+    "matches": 3,
+    "wins": 1,
+    "losses": 2,
+    "winrate": 33.3
+  },
+  {
     "player": "tomato-gose",
     "elo": 1471,
     "matches": 5,
@@ -560,19 +560,19 @@
     "winrate": 12.5
   },
   {
+    "player": "jabb@",
+    "elo": 1375,
+    "matches": 19,
+    "wins": 3,
+    "losses": 16,
+    "winrate": 15.8
+  },
+  {
     "player": "Player-345",
     "elo": 1366,
     "matches": 11,
     "wins": 0,
     "losses": 11,
     "winrate": 0.0
-  },
-  {
-    "player": "jabb@",
-    "elo": 1353,
-    "matches": 18,
-    "wins": 2,
-    "losses": 16,
-    "winrate": 11.1
   }
 ]
