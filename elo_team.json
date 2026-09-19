@@ -48,20 +48,20 @@
     "winrate": 62.5
   },
   {
-    "player": "GipSy",
-    "elo": 1669,
-    "matches": 62,
-    "wins": 34,
-    "losses": 28,
-    "winrate": 54.8
-  },
-  {
     "player": "myrmidon^",
     "elo": 1658,
     "matches": 48,
     "wins": 26,
     "losses": 22,
     "winrate": 54.2
+  },
+  {
+    "player": "GipSy",
+    "elo": 1653,
+    "matches": 63,
+    "wins": 34,
+    "losses": 29,
+    "winrate": 54.0
   },
   {
     "player": "Keizer",
@@ -72,20 +72,20 @@
     "winrate": 57.9
   },
   {
+    "player": "CoLD",
+    "elo": 1630,
+    "matches": 31,
+    "wins": 19,
+    "losses": 12,
+    "winrate": 61.3
+  },
+  {
     "player": "badman",
     "elo": 1625,
     "matches": 46,
     "wins": 25,
     "losses": 21,
     "winrate": 54.3
-  },
-  {
-    "player": "CoLD",
-    "elo": 1614,
-    "matches": 30,
-    "wins": 18,
-    "losses": 12,
-    "winrate": 60.0
   },
   {
     "player": ">daPurrI",
@@ -256,14 +256,6 @@
     "winrate": 54.5
   },
   {
-    "player": "rul",
-    "elo": 1517,
-    "matches": 39,
-    "wins": 16,
-    "losses": 23,
-    "winrate": 41.0
-  },
-  {
     "player": "Dark",
     "elo": 1517,
     "matches": 2,
@@ -382,6 +374,14 @@
     "wins": 1,
     "losses": 0,
     "winrate": 100.0
+  },
+  {
+    "player": "rul",
+    "elo": 1505,
+    "matches": 40,
+    "wins": 16,
+    "losses": 24,
+    "winrate": 40.0
   },
   {
     "player": "r",
@@ -680,6 +680,14 @@
     "winrate": 33.3
   },
   {
+    "player": "zip",
+    "elo": 1478,
+    "matches": 40,
+    "wins": 19,
+    "losses": 21,
+    "winrate": 47.5
+  },
+  {
     "player": "Dark Abyys",
     "elo": 1476,
     "matches": 5,
@@ -720,14 +728,6 @@
     "winrate": 0.0
   },
   {
-    "player": "asd_krzys",
-    "elo": 1472,
-    "matches": 5,
-    "wins": 2,
-    "losses": 3,
-    "winrate": 40.0
-  },
-  {
     "player": "[ds]ads",
     "elo": 1472,
     "matches": 10,
@@ -750,6 +750,14 @@
     "wins": 7,
     "losses": 10,
     "winrate": 41.2
+  },
+  {
+    "player": "asd_krzys",
+    "elo": 1468,
+    "matches": 6,
+    "wins": 2,
+    "losses": 4,
+    "winrate": 33.3
   },
   {
     "player": "[PK]Intruder",
@@ -790,14 +798,6 @@
     "wins": 9,
     "losses": 12,
     "winrate": 42.9
-  },
-  {
-    "player": "zip",
-    "elo": 1462,
-    "matches": 39,
-    "wins": 18,
-    "losses": 21,
-    "winrate": 46.2
   },
   {
     "player": "lynx",
@@ -913,11 +913,11 @@
   },
   {
     "player": "VITALIS",
-    "elo": 1349,
-    "matches": 49,
+    "elo": 1333,
+    "matches": 50,
     "wins": 20,
-    "losses": 29,
-    "winrate": 40.8
+    "losses": 30,
+    "winrate": 40.0
   },
   {
     "player": "mAc",
@@ -937,10 +937,10 @@
   },
   {
     "player": "jabb@",
-    "elo": 1242,
-    "matches": 99,
-    "wins": 44,
+    "elo": 1253,
+    "matches": 100,
+    "wins": 45,
     "losses": 55,
-    "winrate": 44.4
+    "winrate": 45.0
   }
 ]
