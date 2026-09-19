@@ -629,14 +629,14 @@
         },
         {
           "player": "Keizer",
-          "matches": 44,
-          "kills": 278,
+          "matches": 45,
+          "kills": 280,
           "deaths": 185,
-          "dealt": 49700,
+          "dealt": 50500,
           "received": 38200,
-          "pick": 106,
-          "miss": 348,
-          "accuracy": 31.1,
+          "pick": 110,
+          "miss": 350,
+          "accuracy": 30.9,
           "qualified": true
         },
         {
@@ -1373,14 +1373,14 @@
         },
         {
           "player": "lolercoaster",
-          "matches": 1,
+          "matches": 2,
           "kills": 0,
-          "deaths": 15,
+          "deaths": 17,
           "dealt": 100,
-          "received": 2000,
-          "pick": 3,
-          "miss": 2,
-          "accuracy": 8.0,
+          "received": 2800,
+          "pick": 5,
+          "miss": 6,
+          "accuracy": 4.0,
           "qualified": false
         },
         {
@@ -2098,6 +2098,18 @@
           "qualified": false
         },
         {
+          "player": "Keizer",
+          "matches": 45,
+          "kills": 118,
+          "deaths": 102,
+          "dealt": 26100,
+          "received": 29164,
+          "pick": 143,
+          "miss": 657,
+          "accuracy": 19.8,
+          "qualified": true
+        },
+        {
           "player": "Lavrov",
           "matches": 5,
           "kills": 24,
@@ -2107,18 +2119,6 @@
           "pick": 45,
           "miss": 56,
           "accuracy": 19.8,
-          "qualified": true
-        },
-        {
-          "player": "Keizer",
-          "matches": 44,
-          "kills": 117,
-          "deaths": 102,
-          "dealt": 25404,
-          "received": 28620,
-          "pick": 141,
-          "miss": 651,
-          "accuracy": 19.7,
           "qualified": true
         },
         {
@@ -2747,13 +2747,13 @@
         },
         {
           "player": "lolercoaster",
-          "matches": 1,
+          "matches": 2,
           "kills": 0,
-          "deaths": 0,
-          "dealt": 194,
-          "received": 257,
-          "pick": 4,
-          "miss": 3,
+          "deaths": 1,
+          "dealt": 590,
+          "received": 1089,
+          "pick": 10,
+          "miss": 5,
           "accuracy": 8.0,
           "qualified": false
         },
@@ -3245,14 +3245,14 @@
         },
         {
           "player": "Keizer",
-          "matches": 44,
-          "kills": 176,
+          "matches": 45,
+          "kills": 179,
           "deaths": 112,
-          "dealt": 28110,
-          "received": 21306,
-          "pick": 163,
-          "miss": 405,
-          "accuracy": 13.8,
+          "dealt": 28458,
+          "received": 21432,
+          "pick": 168,
+          "miss": 408,
+          "accuracy": 13.7,
           "qualified": true
         },
         {
@@ -4193,14 +4193,14 @@
         },
         {
           "player": "lolercoaster",
-          "matches": 1,
+          "matches": 2,
           "kills": 0,
-          "deaths": 2,
-          "dealt": 102,
-          "received": 240,
-          "pick": 4,
-          "miss": 3,
-          "accuracy": 6.0,
+          "deaths": 5,
+          "dealt": 228,
+          "received": 588,
+          "pick": 7,
+          "miss": 8,
+          "accuracy": 5.5,
           "qualified": false
         }
       ]

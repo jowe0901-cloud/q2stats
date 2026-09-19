@@ -140199,5 +140199,160 @@
       }
     ],
     "saved_at": "2026-09-19T12:13:11+02:00"
+  },
+  {
+    "match_id": "ac25bef58694e686",
+    "game_type": "1v1",
+    "hostname": "dropslugs.com | OpenTDM | Germany #1",
+    "mapname": "q2duel8",
+    "match_type": "Duel",
+    "port": 27910,
+    "winner": "Home",
+    "home_score": 6,
+    "away_score": 1,
+    "players": [
+      {
+        "name": "Keizer",
+        "kills": 6,
+        "deaths": 1,
+        "suicides": 0,
+        "teamkills": 0,
+        "teleports": 0,
+        "damage": 1844,
+        "damage_received": 1108,
+        "team_damage": 0,
+        "team_damage_received": 0,
+        "weapons": {
+          "Super Shotgun": {
+            "accuracy": null,
+            "kills": null,
+            "deaths": 1,
+            "dealt": null,
+            "received": 438,
+            "pick": 5,
+            "miss": 5
+          },
+          "Chaingun": {
+            "accuracy": 12,
+            "kills": 3,
+            "deaths": 0,
+            "dealt": 348,
+            "received": 126,
+            "pick": 5,
+            "miss": 3
+          },
+          "Grenades": {
+            "accuracy": 0,
+            "kills": 0,
+            "deaths": null,
+            "dealt": 0,
+            "received": null,
+            "pick": 0,
+            "miss": 0
+          },
+          "Grenade Launcher": {
+            "accuracy": null,
+            "kills": null,
+            "deaths": null,
+            "dealt": null,
+            "received": null,
+            "pick": 5,
+            "miss": 1
+          },
+          "Rocket Launcher": {
+            "accuracy": 22,
+            "kills": 1,
+            "deaths": 0,
+            "dealt": 696,
+            "received": 544,
+            "pick": 2,
+            "miss": 6
+          },
+          "Railgun": {
+            "accuracy": 23,
+            "kills": 2,
+            "deaths": null,
+            "dealt": 800,
+            "received": null,
+            "pick": 4,
+            "miss": 2
+          }
+        },
+        "team": "Home",
+        "ping": 20,
+        "player_id": "0",
+        "elo_type": "1v1",
+        "elo_before": 1590,
+        "elo_change": 11.4,
+        "elo_after": 1601
+      },
+      {
+        "name": "lolercoaster",
+        "kills": 1,
+        "deaths": 6,
+        "suicides": 0,
+        "teamkills": 0,
+        "teleports": 0,
+        "damage": 960,
+        "damage_received": 1980,
+        "team_damage": 0,
+        "team_damage_received": 0,
+        "weapons": {
+          "Super Shotgun": {
+            "accuracy": 84,
+            "kills": 1,
+            "deaths": null,
+            "dealt": 438,
+            "received": null,
+            "pick": 5,
+            "miss": 5
+          },
+          "Chaingun": {
+            "accuracy": 5,
+            "kills": 0,
+            "deaths": 3,
+            "dealt": 126,
+            "received": 348,
+            "pick": 3,
+            "miss": 5
+          },
+          "Grenade Launcher": {
+            "accuracy": null,
+            "kills": null,
+            "deaths": null,
+            "dealt": null,
+            "received": null,
+            "pick": 1,
+            "miss": 5
+          },
+          "Rocket Launcher": {
+            "accuracy": 8,
+            "kills": 0,
+            "deaths": 1,
+            "dealt": 396,
+            "received": 832,
+            "pick": 6,
+            "miss": 2
+          },
+          "Railgun": {
+            "accuracy": 0,
+            "kills": 0,
+            "deaths": 2,
+            "dealt": 0,
+            "received": 800,
+            "pick": 2,
+            "miss": 4
+          }
+        },
+        "team": "Away",
+        "ping": 25,
+        "player_id": "3",
+        "elo_type": "1v1",
+        "elo_before": 1488,
+        "elo_change": -11.4,
+        "elo_after": 1476
+      }
+    ],
+    "saved_at": "2026-09-19T12:20:23+02:00"
   }
 ]
