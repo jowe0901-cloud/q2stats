@@ -40,6 +40,14 @@
     "winrate": 75.0
   },
   {
+    "player": "Keizer",
+    "elo": 1590,
+    "matches": 9,
+    "wins": 8,
+    "losses": 1,
+    "winrate": 88.9
+  },
+  {
     "player": "insomnia",
     "elo": 1581,
     "matches": 7,
@@ -54,14 +62,6 @@
     "wins": 6,
     "losses": 0,
     "winrate": 100.0
-  },
-  {
-    "player": "Keizer",
-    "elo": 1577,
-    "matches": 8,
-    "wins": 7,
-    "losses": 1,
-    "winrate": 87.5
   },
   {
     "player": "daweed",
@@ -258,6 +258,14 @@
   {
     "player": "badman",
     "elo": 1489,
+    "matches": 1,
+    "wins": 0,
+    "losses": 1,
+    "winrate": 0.0
+  },
+  {
+    "player": "lolercoaster",
+    "elo": 1488,
     "matches": 1,
     "wins": 0,
     "losses": 1,
