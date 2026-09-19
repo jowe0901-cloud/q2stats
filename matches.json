@@ -143617,5 +143617,187 @@
       }
     ],
     "saved_at": "2026-09-19T18:41:24+02:00"
+  },
+  {
+    "match_id": "eeaee2a99a310f7d",
+    "game_type": "1v1",
+    "hostname": "PacketFlinger.com ~ OpenTDM ~ Germany #3",
+    "mapname": "q2duel5",
+    "match_type": "Duel",
+    "port": 27910,
+    "winner": "Home",
+    "home_score": 18,
+    "away_score": 4,
+    "players": [
+      {
+        "name": "damz.",
+        "kills": 4,
+        "deaths": 18,
+        "suicides": 0,
+        "teamkills": 0,
+        "teleports": 0,
+        "damage": 1161,
+        "damage_received": 2488,
+        "team_damage": 0,
+        "team_damage_received": 0,
+        "weapons": {
+          "Super Shotgun": {
+            "accuracy": 67,
+            "kills": 2,
+            "deaths": null,
+            "dealt": 348,
+            "received": null,
+            "pick": 4,
+            "miss": 0
+          },
+          "Chaingun": {
+            "accuracy": 9,
+            "kills": 1,
+            "deaths": null,
+            "dealt": 156,
+            "received": null,
+            "pick": 6,
+            "miss": 1
+          },
+          "Grenades": {
+            "accuracy": 40,
+            "kills": 0,
+            "deaths": null,
+            "dealt": 185,
+            "received": null,
+            "pick": 0,
+            "miss": 0
+          },
+          "Grenade Launcher": {
+            "accuracy": 0,
+            "kills": 0,
+            "deaths": 3,
+            "dealt": 0,
+            "received": 478,
+            "pick": 2,
+            "miss": 2
+          },
+          "Rocket Launcher": {
+            "accuracy": 13,
+            "kills": 0,
+            "deaths": null,
+            "dealt": 252,
+            "received": null,
+            "pick": 7,
+            "miss": 0
+          },
+          "HyperBlaster": {
+            "accuracy": 4,
+            "kills": 0,
+            "deaths": 1,
+            "dealt": 30,
+            "received": 180,
+            "pick": 3,
+            "miss": 1
+          },
+          "Railgun": {
+            "accuracy": 13,
+            "kills": 1,
+            "deaths": 14,
+            "dealt": 100,
+            "received": 1800,
+            "pick": 2,
+            "miss": 7
+          }
+        },
+        "team": "Away",
+        "ping": 32,
+        "player_id": "2",
+        "elo_type": "1v1",
+        "elo_before": 1467,
+        "elo_change": -14.6,
+        "elo_after": 1452
+      },
+      {
+        "name": "GipSy",
+        "kills": 18,
+        "deaths": 4,
+        "suicides": 0,
+        "teamkills": 0,
+        "teleports": 0,
+        "damage": 2488,
+        "damage_received": 1213,
+        "team_damage": 0,
+        "team_damage_received": 0,
+        "weapons": {
+          "Super Shotgun": {
+            "accuracy": null,
+            "kills": null,
+            "deaths": 2,
+            "dealt": null,
+            "received": 348,
+            "pick": 0,
+            "miss": 4
+          },
+          "Chaingun": {
+            "accuracy": null,
+            "kills": null,
+            "deaths": 1,
+            "dealt": null,
+            "received": 156,
+            "pick": 1,
+            "miss": 6
+          },
+          "Grenades": {
+            "accuracy": null,
+            "kills": null,
+            "deaths": 0,
+            "dealt": null,
+            "received": 185,
+            "pick": 0,
+            "miss": 0
+          },
+          "Grenade Launcher": {
+            "accuracy": 36,
+            "kills": 3,
+            "deaths": 0,
+            "dealt": 478,
+            "received": 52,
+            "pick": 2,
+            "miss": 2
+          },
+          "Rocket Launcher": {
+            "accuracy": null,
+            "kills": null,
+            "deaths": 0,
+            "dealt": null,
+            "received": 252,
+            "pick": 0,
+            "miss": 7
+          },
+          "HyperBlaster": {
+            "accuracy": 27,
+            "kills": 1,
+            "deaths": 0,
+            "dealt": 180,
+            "received": 30,
+            "pick": 1,
+            "miss": 3
+          },
+          "Railgun": {
+            "accuracy": 27,
+            "kills": 14,
+            "deaths": 1,
+            "dealt": 1800,
+            "received": 100,
+            "pick": 7,
+            "miss": 2
+          }
+        },
+        "team": "Home",
+        "ping": 44,
+        "player_id": "6",
+        "elo_type": "1v1",
+        "elo_before": 1498,
+        "elo_change": 14.6,
+        "elo_after": 1513
+      }
+    ],
+    "saved_at": "2026-09-19T18:47:08+02:00"
   }
 ]
