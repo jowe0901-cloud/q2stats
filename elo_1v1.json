@@ -184,6 +184,14 @@
     "winrate": 75.0
   },
   {
+    "player": "needd1",
+    "elo": 1521,
+    "matches": 2,
+    "wins": 2,
+    "losses": 0,
+    "winrate": 100.0
+  },
+  {
     "player": "inisomnia",
     "elo": 1520,
     "matches": 9,
@@ -210,14 +218,6 @@
   {
     "player": "shNoodle",
     "elo": 1513,
-    "matches": 1,
-    "wins": 1,
-    "losses": 0,
-    "winrate": 100.0
-  },
-  {
-    "player": "needd1",
-    "elo": 1511,
     "matches": 1,
     "wins": 1,
     "losses": 0,
@@ -560,19 +560,19 @@
     "winrate": 12.5
   },
   {
-    "player": "jabb@",
-    "elo": 1373,
-    "matches": 16,
-    "wins": 2,
-    "losses": 14,
-    "winrate": 12.5
-  },
-  {
     "player": "Player-345",
     "elo": 1366,
     "matches": 11,
     "wins": 0,
     "losses": 11,
     "winrate": 0.0
+  },
+  {
+    "player": "jabb@",
+    "elo": 1363,
+    "matches": 17,
+    "wins": 2,
+    "losses": 15,
+    "winrate": 11.8
   }
 ]

@@ -148,6 +148,18 @@
           "qualified": true
         },
         {
+          "player": "needd1",
+          "matches": 2,
+          "kills": 5,
+          "deaths": 1,
+          "dealt": 1000,
+          "received": 100,
+          "pick": 11,
+          "miss": 7,
+          "accuracy": 42.5,
+          "qualified": false
+        },
+        {
           "player": "maq",
           "matches": 21,
           "kills": 239,
@@ -242,18 +254,6 @@
           "miss": 48,
           "accuracy": 39.0,
           "qualified": true
-        },
-        {
-          "player": "needd1",
-          "matches": 1,
-          "kills": 3,
-          "deaths": 1,
-          "dealt": 500,
-          "received": 100,
-          "pick": 7,
-          "miss": 2,
-          "accuracy": 39.0,
-          "qualified": false
         },
         {
           "player": "[sYnth]Scooby",
@@ -1000,18 +1000,6 @@
           "qualified": false
         },
         {
-          "player": "jabb@",
-          "matches": 52,
-          "kills": 119,
-          "deaths": 340,
-          "dealt": 19100,
-          "received": 55400,
-          "pick": 86,
-          "miss": 495,
-          "accuracy": 26.8,
-          "qualified": true
-        },
-        {
           "player": "piu-chill",
           "matches": 14,
           "kills": 128,
@@ -1021,6 +1009,18 @@
           "pick": 85,
           "miss": 86,
           "accuracy": 26.5,
+          "qualified": true
+        },
+        {
+          "player": "jabb@",
+          "matches": 53,
+          "kills": 119,
+          "deaths": 342,
+          "dealt": 19100,
+          "received": 55900,
+          "pick": 91,
+          "miss": 499,
+          "accuracy": 26.2,
           "qualified": true
         },
         {
@@ -1498,18 +1498,6 @@
           "qualified": false
         },
         {
-          "player": "needd1",
-          "matches": 1,
-          "kills": 6,
-          "deaths": 0,
-          "dealt": 1389,
-          "received": 230,
-          "pick": 6,
-          "miss": 3,
-          "accuracy": 35.0,
-          "qualified": false
-        },
-        {
           "player": "need1",
           "matches": 14,
           "kills": 78,
@@ -1676,6 +1664,18 @@
           "miss": 403,
           "accuracy": 26.6,
           "qualified": true
+        },
+        {
+          "player": "needd1",
+          "matches": 2,
+          "kills": 9,
+          "deaths": 4,
+          "dealt": 2085,
+          "received": 1236,
+          "pick": 11,
+          "miss": 7,
+          "accuracy": 26.0,
+          "qualified": false
         },
         {
           "player": "myrmidon^",
@@ -1990,6 +1990,18 @@
           "qualified": true
         },
         {
+          "player": "jabb@",
+          "matches": 53,
+          "kills": 202,
+          "deaths": 237,
+          "dealt": 42536,
+          "received": 53435,
+          "pick": 286,
+          "miss": 738,
+          "accuracy": 21.4,
+          "qualified": true
+        },
+        {
           "player": "Br00m^^",
           "matches": 39,
           "kills": 134,
@@ -1999,18 +2011,6 @@
           "pick": 76,
           "miss": 873,
           "accuracy": 21.2,
-          "qualified": true
-        },
-        {
-          "player": "jabb@",
-          "matches": 52,
-          "kills": 198,
-          "deaths": 234,
-          "dealt": 41563,
-          "received": 52591,
-          "pick": 282,
-          "miss": 733,
-          "accuracy": 21.1,
           "qualified": true
         },
         {
@@ -3389,13 +3389,13 @@
         },
         {
           "player": "jabb@",
-          "matches": 52,
-          "kills": 176,
-          "deaths": 179,
-          "dealt": 24948,
-          "received": 22668,
-          "pick": 154,
-          "miss": 494,
+          "matches": 53,
+          "kills": 178,
+          "deaths": 183,
+          "dealt": 25428,
+          "received": 23250,
+          "pick": 159,
+          "miss": 498,
           "accuracy": 13.2,
           "qualified": true
         },
@@ -3732,6 +3732,18 @@
           "received": 1710,
           "pick": 4,
           "miss": 37,
+          "accuracy": 12.0,
+          "qualified": false
+        },
+        {
+          "player": "needd1",
+          "matches": 2,
+          "kills": 5,
+          "deaths": 2,
+          "dealt": 852,
+          "received": 936,
+          "pick": 5,
+          "miss": 12,
           "accuracy": 12.0,
           "qualified": false
         },
@@ -4092,18 +4104,6 @@
           "received": 714,
           "pick": 9,
           "miss": 15,
-          "accuracy": 10.0,
-          "qualified": false
-        },
-        {
-          "player": "needd1",
-          "matches": 1,
-          "kills": 1,
-          "deaths": 0,
-          "dealt": 270,
-          "received": 456,
-          "pick": 1,
-          "miss": 7,
           "accuracy": 10.0,
           "qualified": false
         },
