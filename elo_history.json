@@ -20336,5 +20336,29 @@
       }
     ],
     "saved_at": "2026-09-19T18:21:02+02:00"
+  },
+  {
+    "match_id": "eb969cb6249f23c6",
+    "game_type": "1v1",
+    "winner": "Home",
+    "home_score": 16,
+    "away_score": 4,
+    "players": [
+      {
+        "player": "GipSy",
+        "team": "Home",
+        "old_elo": 1482,
+        "change": 16.0,
+        "new_elo": 1498
+      },
+      {
+        "player": "damz.",
+        "team": "Away",
+        "old_elo": 1483,
+        "change": -16.0,
+        "new_elo": 1467
+      }
+    ],
+    "saved_at": "2026-09-19T18:41:24+02:00"
   }
 ]

@@ -484,18 +484,6 @@
           "qualified": false
         },
         {
-          "player": "damz.",
-          "matches": 1,
-          "kills": 2,
-          "deaths": 5,
-          "dealt": 500,
-          "received": 1200,
-          "pick": 7,
-          "miss": 10,
-          "accuracy": 34.0,
-          "qualified": false
-        },
-        {
           "player": "a",
           "matches": 9,
           "kills": 45,
@@ -578,6 +566,18 @@
           "miss": 21,
           "accuracy": 33.3,
           "qualified": true
+        },
+        {
+          "player": "damz.",
+          "matches": 2,
+          "kills": 5,
+          "deaths": 21,
+          "dealt": 1000,
+          "received": 3400,
+          "pick": 10,
+          "miss": 16,
+          "accuracy": 33.0,
+          "qualified": false
         },
         {
           "player": "tron",
@@ -857,14 +857,14 @@
         },
         {
           "player": "GipSy",
-          "matches": 41,
-          "kills": 266,
-          "deaths": 215,
-          "dealt": 47000,
-          "received": 44900,
-          "pick": 141,
-          "miss": 371,
-          "accuracy": 28.6,
+          "matches": 42,
+          "kills": 282,
+          "deaths": 218,
+          "dealt": 49200,
+          "received": 45400,
+          "pick": 147,
+          "miss": 374,
+          "accuracy": 28.5,
           "qualified": true
         },
         {
@@ -2290,6 +2290,18 @@
           "qualified": false
         },
         {
+          "player": "damz.",
+          "matches": 2,
+          "kills": 2,
+          "deaths": 3,
+          "dealt": 817,
+          "received": 876,
+          "pick": 13,
+          "miss": 11,
+          "accuracy": 18.5,
+          "qualified": false
+        },
+        {
           "player": "fff",
           "matches": 5,
           "kills": 6,
@@ -2483,13 +2495,13 @@
         },
         {
           "player": "GipSy",
-          "matches": 42,
+          "matches": 43,
           "kills": 123,
-          "deaths": 119,
+          "deaths": 120,
           "dealt": 30087,
-          "received": 33320,
-          "pick": 197,
-          "miss": 549,
+          "received": 33733,
+          "pick": 199,
+          "miss": 555,
           "accuracy": 16.1,
           "qualified": true
         },
@@ -2622,18 +2634,6 @@
           "received": 1055,
           "pick": 4,
           "miss": 41,
-          "accuracy": 15.0,
-          "qualified": false
-        },
-        {
-          "player": "damz.",
-          "matches": 1,
-          "kills": 1,
-          "deaths": 3,
-          "dealt": 404,
-          "received": 876,
-          "pick": 7,
-          "miss": 9,
           "accuracy": 15.0,
           "qualified": false
         },
@@ -3965,13 +3965,13 @@
         },
         {
           "player": "GipSy",
-          "matches": 41,
+          "matches": 42,
           "kills": 115,
           "deaths": 125,
           "dealt": 22902,
-          "received": 21420,
-          "pick": 194,
-          "miss": 404,
+          "received": 21822,
+          "pick": 195,
+          "miss": 410,
           "accuracy": 11.0,
           "qualified": true
         },
@@ -4032,6 +4032,18 @@
           "received": 1032,
           "pick": 1,
           "miss": 19,
+          "accuracy": 11.0,
+          "qualified": false
+        },
+        {
+          "player": "damz.",
+          "matches": 2,
+          "kills": 2,
+          "deaths": 4,
+          "dealt": 1002,
+          "received": 444,
+          "pick": 16,
+          "miss": 7,
           "accuracy": 11.0,
           "qualified": false
         },
@@ -4128,18 +4140,6 @@
           "received": 714,
           "pick": 9,
           "miss": 15,
-          "accuracy": 10.0,
-          "qualified": false
-        },
-        {
-          "player": "damz.",
-          "matches": 1,
-          "kills": 2,
-          "deaths": 4,
-          "dealt": 600,
-          "received": 444,
-          "pick": 10,
-          "miss": 6,
           "accuracy": 10.0,
           "qualified": false
         },
