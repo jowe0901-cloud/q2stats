@@ -21887,5 +21887,71 @@
       }
     ],
     "saved_at": "2026-09-20T20:47:09+02:00"
+  },
+  {
+    "match_id": "6c12dc9fbac0c4e8",
+    "game_type": "team",
+    "winner": "Home",
+    "home_score": 56,
+    "away_score": 48,
+    "players": [
+      {
+        "player": "VITALIS",
+        "team": "Home",
+        "old_elo": 1325,
+        "change": 12.3,
+        "new_elo": 1337
+      },
+      {
+        "player": "cne",
+        "team": "Home",
+        "old_elo": 1703,
+        "change": 16,
+        "new_elo": 1719
+      },
+      {
+        "player": "warrior",
+        "team": "Home",
+        "old_elo": 1772,
+        "change": 0,
+        "new_elo": 1772
+      },
+      {
+        "player": "asd_krzys",
+        "team": "Home",
+        "old_elo": 1457,
+        "change": 12.7,
+        "new_elo": 1470
+      },
+      {
+        "player": "Br00m^^",
+        "team": "Away",
+        "old_elo": 1541,
+        "change": -16,
+        "new_elo": 1525
+      },
+      {
+        "player": "damz.",
+        "team": "Away",
+        "old_elo": 1451,
+        "change": -14.9,
+        "new_elo": 1436
+      },
+      {
+        "player": "badman",
+        "team": "Away",
+        "old_elo": 1656,
+        "change": 3.3,
+        "new_elo": 1660
+      },
+      {
+        "player": "qw",
+        "team": "Away",
+        "old_elo": 1832,
+        "change": -12.8,
+        "new_elo": 1819
+      }
+    ],
+    "saved_at": "2026-09-20T21:03:05+02:00"
   }
 ]
