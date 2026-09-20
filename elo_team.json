@@ -1,11 +1,11 @@
 [
   {
     "player": "qw",
-    "elo": 1877,
-    "matches": 102,
+    "elo": 1872,
+    "matches": 103,
     "wins": 58,
-    "losses": 44,
-    "winrate": 56.9
+    "losses": 45,
+    "winrate": 56.3
   },
   {
     "player": "maq",
@@ -104,20 +104,20 @@
     "winrate": 58.3
   },
   {
+    "player": "[sYnth]Scooby",
+    "elo": 1591,
+    "matches": 35,
+    "wins": 17,
+    "losses": 18,
+    "winrate": 48.6
+  },
+  {
     "player": "n0sferatu",
     "elo": 1589,
     "matches": 25,
     "wins": 14,
     "losses": 11,
     "winrate": 56.0
-  },
-  {
-    "player": "rul",
-    "elo": 1580,
-    "matches": 48,
-    "wins": 22,
-    "losses": 26,
-    "winrate": 45.8
   },
   {
     "player": ">daweed",
@@ -128,12 +128,12 @@
     "winrate": 87.5
   },
   {
-    "player": "[sYnth]Scooby",
+    "player": "rul",
     "elo": 1575,
-    "matches": 34,
-    "wins": 16,
-    "losses": 18,
-    "winrate": 47.1
+    "matches": 49,
+    "wins": 22,
+    "losses": 27,
+    "winrate": 44.9
   },
   {
     "player": ">OPTIMIZER",
@@ -592,14 +592,6 @@
     "winrate": 33.3
   },
   {
-    "player": "need1",
-    "elo": 1490,
-    "matches": 39,
-    "wins": 20,
-    "losses": 19,
-    "winrate": 51.3
-  },
-  {
     "player": "kurwa_ping80",
     "elo": 1490,
     "matches": 1,
@@ -614,6 +606,14 @@
     "wins": 3,
     "losses": 4,
     "winrate": 42.9
+  },
+  {
+    "player": "tron",
+    "elo": 1486,
+    "matches": 26,
+    "wins": 12,
+    "losses": 14,
+    "winrate": 46.2
   },
   {
     "player": "[G2H]DEMON",
@@ -678,6 +678,14 @@
     "wins": 1,
     "losses": 3,
     "winrate": 25.0
+  },
+  {
+    "player": "need1",
+    "elo": 1481,
+    "matches": 40,
+    "wins": 20,
+    "losses": 20,
+    "winrate": 50.0
   },
   {
     "player": "Bullz",
@@ -754,10 +762,10 @@
   {
     "player": "Tai",
     "elo": 1473,
-    "matches": 2,
-    "wins": 0,
+    "matches": 3,
+    "wins": 1,
     "losses": 2,
-    "winrate": 0.0
+    "winrate": 33.3
   },
   {
     "player": "LiOn",
@@ -776,12 +784,12 @@
     "winrate": 41.2
   },
   {
-    "player": "tron",
-    "elo": 1470,
-    "matches": 25,
-    "wins": 11,
-    "losses": 14,
-    "winrate": 44.0
+    "player": "shotman",
+    "elo": 1471,
+    "matches": 4,
+    "wins": 1,
+    "losses": 3,
+    "winrate": 25.0
   },
   {
     "player": "[PK]Intruder",
@@ -813,14 +821,6 @@
     "matches": 2,
     "wins": 0,
     "losses": 2,
-    "winrate": 0.0
-  },
-  {
-    "player": "shotman",
-    "elo": 1463,
-    "matches": 3,
-    "wins": 0,
-    "losses": 3,
     "winrate": 0.0
   },
   {
@@ -928,14 +928,6 @@
     "winrate": 41.2
   },
   {
-    "player": "Maniek",
-    "elo": 1354,
-    "matches": 59,
-    "wins": 25,
-    "losses": 34,
-    "winrate": 42.4
-  },
-  {
     "player": "[HC]Reni^",
     "elo": 1353,
     "matches": 34,
@@ -958,6 +950,14 @@
     "wins": 3,
     "losses": 11,
     "winrate": 21.4
+  },
+  {
+    "player": "Maniek",
+    "elo": 1338,
+    "matches": 60,
+    "wins": 25,
+    "losses": 35,
+    "winrate": 41.7
   },
   {
     "player": "VITALIS",
