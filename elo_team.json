@@ -17,11 +17,11 @@
   },
   {
     "player": "warrior",
-    "elo": 1757,
-    "matches": 36,
-    "wins": 25,
+    "elo": 1770,
+    "matches": 37,
+    "wins": 26,
     "losses": 11,
-    "winrate": 69.4
+    "winrate": 70.3
   },
   {
     "player": "[sf]fasadin",
@@ -33,11 +33,11 @@
   },
   {
     "player": "cne",
-    "elo": 1719,
-    "matches": 53,
-    "wins": 30,
+    "elo": 1728,
+    "matches": 54,
+    "wins": 31,
     "losses": 23,
-    "winrate": 56.6
+    "winrate": 57.4
   },
   {
     "player": "myrmidon^",
@@ -57,11 +57,11 @@
   },
   {
     "player": "badman",
-    "elo": 1676,
-    "matches": 59,
+    "elo": 1665,
+    "matches": 60,
     "wins": 32,
-    "losses": 27,
-    "winrate": 54.2
+    "losses": 28,
+    "winrate": 53.3
   },
   {
     "player": "fon",
@@ -320,14 +320,6 @@
     "winrate": 100.0
   },
   {
-    "player": "KaPo",
-    "elo": 1516,
-    "matches": 1,
-    "wins": 1,
-    "losses": 0,
-    "winrate": 100.0
-  },
-  {
     "player": "ping80",
     "elo": 1515,
     "matches": 13,
@@ -430,6 +422,14 @@
     "wins": 2,
     "losses": 1,
     "winrate": 66.7
+  },
+  {
+    "player": "KaPo",
+    "elo": 1501,
+    "matches": 2,
+    "wins": 1,
+    "losses": 1,
+    "winrate": 50.0
   },
   {
     "player": "m",
@@ -576,6 +576,14 @@
     "winrate": 33.3
   },
   {
+    "player": "odi",
+    "elo": 1491,
+    "matches": 6,
+    "wins": 2,
+    "losses": 4,
+    "winrate": 33.3
+  },
+  {
     "player": "need1",
     "elo": 1490,
     "matches": 39,
@@ -656,14 +664,6 @@
     "winrate": 25.0
   },
   {
-    "player": "szef|shotman",
-    "elo": 1481,
-    "matches": 14,
-    "wins": 6,
-    "losses": 8,
-    "winrate": 42.9
-  },
-  {
     "player": "Bullz",
     "elo": 1480,
     "matches": 3,
@@ -712,12 +712,12 @@
     "winrate": 40.0
   },
   {
-    "player": "odi",
+    "player": "szef|shotman",
     "elo": 1475,
-    "matches": 5,
-    "wins": 1,
-    "losses": 4,
-    "winrate": 20.0
+    "matches": 15,
+    "wins": 6,
+    "losses": 9,
+    "winrate": 40.0
   },
   {
     "player": "T3RM!N4ToR",
@@ -800,20 +800,20 @@
     "winrate": 0.0
   },
   {
+    "player": "asd_krzys",
+    "elo": 1467,
+    "matches": 20,
+    "wins": 9,
+    "losses": 11,
+    "winrate": 45.0
+  },
+  {
     "player": "Ice wallow",
     "elo": 1459,
     "matches": 3,
     "wins": 0,
     "losses": 3,
     "winrate": 0.0
-  },
-  {
-    "player": "asd_krzys",
-    "elo": 1458,
-    "matches": 19,
-    "wins": 8,
-    "losses": 11,
-    "winrate": 42.1
   },
   {
     "player": "lynx",
@@ -961,10 +961,10 @@
   },
   {
     "player": "jabb@",
-    "elo": 1244,
-    "matches": 102,
+    "elo": 1228,
+    "matches": 103,
     "wins": 46,
-    "losses": 56,
-    "winrate": 45.1
+    "losses": 57,
+    "winrate": 44.7
   }
 ]
