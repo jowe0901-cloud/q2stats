@@ -48,6 +48,14 @@
     "winrate": 77.3
   },
   {
+    "player": "tron",
+    "elo": 1583,
+    "matches": 8,
+    "wins": 7,
+    "losses": 1,
+    "winrate": 87.5
+  },
+  {
     "player": "insomnia",
     "elo": 1581,
     "matches": 7,
@@ -74,14 +82,6 @@
   {
     "player": "piu-laging",
     "elo": 1572,
-    "matches": 7,
-    "wins": 6,
-    "losses": 1,
-    "winrate": 85.7
-  },
-  {
-    "player": "tron",
-    "elo": 1571,
     "matches": 7,
     "wins": 6,
     "losses": 1,
@@ -310,6 +310,14 @@
     "wins": 1,
     "losses": 2,
     "winrate": 33.3
+  },
+  {
+    "player": "yin",
+    "elo": 1487,
+    "matches": 1,
+    "wins": 0,
+    "losses": 1,
+    "winrate": 0.0
   },
   {
     "player": "VITALIS",

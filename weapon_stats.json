@@ -640,18 +640,6 @@
           "qualified": true
         },
         {
-          "player": "tron",
-          "matches": 26,
-          "kills": 118,
-          "deaths": 117,
-          "dealt": 20900,
-          "received": 23100,
-          "pick": 83,
-          "miss": 229,
-          "accuracy": 32.7,
-          "qualified": true
-        },
-        {
           "player": "Tai",
           "matches": 3,
           "kills": 9,
@@ -662,6 +650,18 @@
           "miss": 36,
           "accuracy": 32.7,
           "qualified": false
+        },
+        {
+          "player": "tron",
+          "matches": 27,
+          "kills": 125,
+          "deaths": 119,
+          "dealt": 22100,
+          "received": 23600,
+          "pick": 86,
+          "miss": 232,
+          "accuracy": 32.4,
+          "qualified": true
         },
         {
           "player": "Q",
@@ -928,18 +928,6 @@
           "qualified": true
         },
         {
-          "player": "yin",
-          "matches": 3,
-          "kills": 15,
-          "deaths": 25,
-          "dealt": 1700,
-          "received": 3400,
-          "pick": 4,
-          "miss": 39,
-          "accuracy": 28.0,
-          "qualified": false
-        },
-        {
           "player": "GipSy",
           "matches": 53,
           "kills": 367,
@@ -1106,6 +1094,18 @@
           "miss": 153,
           "accuracy": 26.2,
           "qualified": true
+        },
+        {
+          "player": "yin",
+          "matches": 4,
+          "kills": 17,
+          "deaths": 32,
+          "dealt": 2200,
+          "received": 4600,
+          "pick": 7,
+          "miss": 42,
+          "accuracy": 26.2,
+          "qualified": false
         },
         {
           "player": "KaPo",
@@ -1654,18 +1654,6 @@
           "qualified": false
         },
         {
-          "player": "yin",
-          "matches": 3,
-          "kills": 12,
-          "deaths": 15,
-          "dealt": 2947,
-          "received": 2620,
-          "pick": 15,
-          "miss": 62,
-          "accuracy": 32.0,
-          "qualified": false
-        },
-        {
           "player": "rul",
           "matches": 29,
           "kills": 89,
@@ -1855,6 +1843,18 @@
           "pick": 24,
           "miss": 18,
           "accuracy": 25.3,
+          "qualified": false
+        },
+        {
+          "player": "yin",
+          "matches": 4,
+          "kills": 13,
+          "deaths": 17,
+          "dealt": 3150,
+          "received": 3564,
+          "pick": 20,
+          "miss": 63,
+          "accuracy": 25.0,
           "qualified": false
         },
         {
@@ -2182,18 +2182,6 @@
           "qualified": true
         },
         {
-          "player": "tron",
-          "matches": 26,
-          "kills": 94,
-          "deaths": 57,
-          "dealt": 19230,
-          "received": 15878,
-          "pick": 127,
-          "miss": 396,
-          "accuracy": 21.1,
-          "qualified": true
-        },
-        {
           "player": "warrior",
           "matches": 34,
           "kills": 83,
@@ -2216,6 +2204,18 @@
           "miss": 41,
           "accuracy": 21.0,
           "qualified": false
+        },
+        {
+          "player": "tron",
+          "matches": 27,
+          "kills": 96,
+          "deaths": 58,
+          "dealt": 19922,
+          "received": 16123,
+          "pick": 128,
+          "miss": 401,
+          "accuracy": 20.8,
+          "qualified": true
         },
         {
           "player": "bobo",
@@ -3605,13 +3605,13 @@
         },
         {
           "player": "tron",
-          "matches": 26,
-          "kills": 58,
-          "deaths": 81,
-          "dealt": 10020,
-          "received": 13638,
-          "pick": 48,
-          "miss": 285,
+          "matches": 27,
+          "kills": 62,
+          "deaths": 82,
+          "dealt": 11010,
+          "received": 14226,
+          "pick": 51,
+          "miss": 288,
           "accuracy": 13.5,
           "qualified": true
         },
@@ -4048,6 +4048,18 @@
           "qualified": false
         },
         {
+          "player": "yin",
+          "matches": 4,
+          "kills": 1,
+          "deaths": 12,
+          "dealt": 906,
+          "received": 2130,
+          "pick": 7,
+          "miss": 41,
+          "accuracy": 12.0,
+          "qualified": false
+        },
+        {
           "player": "ping80",
           "matches": 12,
           "kills": 59,
@@ -4106,18 +4118,6 @@
           "miss": 534,
           "accuracy": 11.7,
           "qualified": true
-        },
-        {
-          "player": "yin",
-          "matches": 3,
-          "kills": 0,
-          "deaths": 8,
-          "dealt": 318,
-          "received": 1140,
-          "pick": 4,
-          "miss": 38,
-          "accuracy": 11.7,
-          "qualified": false
         },
         {
           "player": "[HC]Reni^",
