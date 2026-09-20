@@ -560,12 +560,28 @@
     "winrate": 50.0
   },
   {
+    "player": "need1",
+    "elo": 1495,
+    "matches": 41,
+    "wins": 21,
+    "losses": 20,
+    "winrate": 51.2
+  },
+  {
     "player": "gart",
     "elo": 1495,
     "matches": 16,
     "wins": 7,
     "losses": 9,
     "winrate": 43.8
+  },
+  {
+    "player": "Player-345",
+    "elo": 1494,
+    "matches": 35,
+    "wins": 16,
+    "losses": 19,
+    "winrate": 45.7
   },
   {
     "player": "shNoodle",
@@ -606,14 +622,6 @@
     "wins": 3,
     "losses": 4,
     "winrate": 42.9
-  },
-  {
-    "player": "tron",
-    "elo": 1486,
-    "matches": 26,
-    "wins": 12,
-    "losses": 14,
-    "winrate": 46.2
   },
   {
     "player": "[G2H]DEMON",
@@ -680,14 +688,6 @@
     "winrate": 25.0
   },
   {
-    "player": "need1",
-    "elo": 1481,
-    "matches": 40,
-    "wins": 20,
-    "losses": 20,
-    "winrate": 50.0
-  },
-  {
     "player": "Bullz",
     "elo": 1480,
     "matches": 3,
@@ -702,14 +702,6 @@
     "wins": 1,
     "losses": 2,
     "winrate": 33.3
-  },
-  {
-    "player": "Player-345",
-    "elo": 1478,
-    "matches": 34,
-    "wins": 15,
-    "losses": 19,
-    "winrate": 44.1
   },
   {
     "player": "zip",
@@ -742,6 +734,14 @@
     "wins": 6,
     "losses": 9,
     "winrate": 40.0
+  },
+  {
+    "player": "tron",
+    "elo": 1474,
+    "matches": 27,
+    "wins": 12,
+    "losses": 15,
+    "winrate": 44.4
   },
   {
     "player": "T3RM!N4ToR",
@@ -888,20 +888,20 @@
     "winrate": 37.5
   },
   {
-    "player": "senz",
-    "elo": 1445,
-    "matches": 21,
-    "wins": 9,
-    "losses": 12,
-    "winrate": 42.9
-  },
-  {
     "player": "xRSNx",
     "elo": 1445,
     "matches": 6,
     "wins": 1,
     "losses": 5,
     "winrate": 16.7
+  },
+  {
+    "player": "senz",
+    "elo": 1429,
+    "matches": 22,
+    "wins": 9,
+    "losses": 13,
+    "winrate": 40.9
   },
   {
     "player": "Qiub",
