@@ -328,6 +328,18 @@
           "qualified": true
         },
         {
+          "player": "prostitute",
+          "matches": 2,
+          "kills": 9,
+          "deaths": 16,
+          "dealt": 1400,
+          "received": 2100,
+          "pick": 2,
+          "miss": 36,
+          "accuracy": 37.5,
+          "qualified": false
+        },
+        {
           "player": "myrmidon^",
           "matches": 41,
           "kills": 392,
@@ -412,18 +424,6 @@
           "qualified": true
         },
         {
-          "player": "prostitute",
-          "matches": 1,
-          "kills": 5,
-          "deaths": 10,
-          "dealt": 900,
-          "received": 1200,
-          "pick": 1,
-          "miss": 19,
-          "accuracy": 36.0,
-          "qualified": false
-        },
-        {
           "player": "OESD",
           "matches": 2,
           "kills": 6,
@@ -506,6 +506,18 @@
           "miss": 802,
           "accuracy": 34.0,
           "qualified": true
+        },
+        {
+          "player": "Ice wallow",
+          "matches": 1,
+          "kills": 8,
+          "deaths": 5,
+          "dealt": 1500,
+          "received": 1000,
+          "pick": 11,
+          "miss": 7,
+          "accuracy": 34.0,
+          "qualified": false
         },
         {
           "player": "fff",
@@ -821,14 +833,14 @@
         },
         {
           "player": "michaq",
-          "matches": 14,
-          "kills": 106,
-          "deaths": 83,
-          "dealt": 19800,
-          "received": 18000,
-          "pick": 46,
-          "miss": 134,
-          "accuracy": 29.1,
+          "matches": 15,
+          "kills": 112,
+          "deaths": 86,
+          "dealt": 21000,
+          "received": 18900,
+          "pick": 49,
+          "miss": 149,
+          "accuracy": 29.0,
           "qualified": true
         },
         {
@@ -1144,6 +1156,18 @@
           "qualified": false
         },
         {
+          "player": "damz.",
+          "matches": 7,
+          "kills": 12,
+          "deaths": 82,
+          "dealt": 2200,
+          "received": 11200,
+          "pick": 21,
+          "miss": 79,
+          "accuracy": 23.9,
+          "qualified": false
+        },
+        {
           "player": "Bullz",
           "matches": 5,
           "kills": 9,
@@ -1202,18 +1226,6 @@
           "miss": 53,
           "accuracy": 22.8,
           "qualified": true
-        },
-        {
-          "player": "damz.",
-          "matches": 6,
-          "kills": 10,
-          "deaths": 76,
-          "dealt": 1900,
-          "received": 10500,
-          "pick": 18,
-          "miss": 64,
-          "accuracy": 22.2,
-          "qualified": false
         },
         {
           "player": "insomnia",
@@ -1534,14 +1546,26 @@
       ],
       "all_players": [
         {
-          "player": "prostitute",
+          "player": "Ice wallow",
           "matches": 1,
-          "kills": 8,
-          "deaths": 4,
-          "dealt": 1147,
-          "received": 831,
-          "pick": 8,
-          "miss": 32,
+          "kills": 12,
+          "deaths": 5,
+          "dealt": 2084,
+          "received": 1026,
+          "pick": 7,
+          "miss": 11,
+          "accuracy": 41.0,
+          "qualified": false
+        },
+        {
+          "player": "prostitute",
+          "matches": 2,
+          "kills": 17,
+          "deaths": 13,
+          "dealt": 2702,
+          "received": 2332,
+          "pick": 14,
+          "miss": 44,
           "accuracy": 37.0,
           "qualified": false
         },
@@ -1988,6 +2012,18 @@
           "miss": 137,
           "accuracy": 22.3,
           "qualified": true
+        },
+        {
+          "player": "damz.",
+          "matches": 7,
+          "kills": 12,
+          "deaths": 22,
+          "dealt": 3592,
+          "received": 4365,
+          "pick": 46,
+          "miss": 82,
+          "accuracy": 22.1,
+          "qualified": false
         },
         {
           "player": "piu-chill",
@@ -2446,18 +2482,6 @@
           "qualified": true
         },
         {
-          "player": "damz.",
-          "matches": 6,
-          "kills": 10,
-          "deaths": 17,
-          "dealt": 3329,
-          "received": 3479,
-          "pick": 43,
-          "miss": 67,
-          "accuracy": 17.5,
-          "qualified": false
-        },
-        {
           "player": "cne",
           "matches": 32,
           "kills": 102,
@@ -2627,14 +2651,14 @@
         },
         {
           "player": "michaq",
-          "matches": 14,
-          "kills": 48,
-          "deaths": 44,
-          "dealt": 10232,
-          "received": 10494,
-          "pick": 72,
-          "miss": 235,
-          "accuracy": 15.6,
+          "matches": 15,
+          "kills": 50,
+          "deaths": 50,
+          "dealt": 10504,
+          "received": 11602,
+          "pick": 74,
+          "miss": 251,
+          "accuracy": 15.7,
           "qualified": true
         },
         {
@@ -3004,6 +3028,18 @@
           "qualified": false
         },
         {
+          "player": "Ice wallow",
+          "matches": 1,
+          "kills": 2,
+          "deaths": 5,
+          "dealt": 222,
+          "received": 582,
+          "pick": 2,
+          "miss": 16,
+          "accuracy": 37.0,
+          "qualified": false
+        },
+        {
           "player": "Iron Maiden",
           "matches": 2,
           "kills": 6,
@@ -3244,18 +3280,6 @@
           "qualified": false
         },
         {
-          "player": "prostitute",
-          "matches": 1,
-          "kills": 4,
-          "deaths": 2,
-          "dealt": 432,
-          "received": 330,
-          "pick": 0,
-          "miss": 19,
-          "accuracy": 15.0,
-          "qualified": false
-        },
-        {
           "player": "rul fan",
           "matches": 1,
           "kills": 1,
@@ -3290,6 +3314,18 @@
           "miss": 479,
           "accuracy": 14.6,
           "qualified": true
+        },
+        {
+          "player": "prostitute",
+          "matches": 2,
+          "kills": 9,
+          "deaths": 4,
+          "dealt": 864,
+          "received": 624,
+          "pick": 4,
+          "miss": 33,
+          "accuracy": 14.5,
+          "qualified": false
         },
         {
           "player": "maq",
@@ -3436,6 +3472,18 @@
           "qualified": true
         },
         {
+          "player": "michaq",
+          "matches": 15,
+          "kills": 44,
+          "deaths": 46,
+          "dealt": 6996,
+          "received": 7524,
+          "pick": 57,
+          "miss": 159,
+          "accuracy": 13.7,
+          "qualified": true
+        },
+        {
           "player": "insomnia",
           "matches": 7,
           "kills": 37,
@@ -3504,18 +3552,6 @@
           "received": 12390,
           "pick": 86,
           "miss": 187,
-          "accuracy": 13.4,
-          "qualified": true
-        },
-        {
-          "player": "michaq",
-          "matches": 14,
-          "kills": 38,
-          "deaths": 43,
-          "dealt": 6336,
-          "received": 7254,
-          "pick": 53,
-          "miss": 145,
           "accuracy": 13.4,
           "qualified": true
         },
@@ -3844,18 +3880,6 @@
           "qualified": true
         },
         {
-          "player": "damz.",
-          "matches": 6,
-          "kills": 8,
-          "deaths": 7,
-          "dealt": 2292,
-          "received": 1056,
-          "pick": 40,
-          "miss": 37,
-          "accuracy": 12.2,
-          "qualified": false
-        },
-        {
           "player": "sase",
           "matches": 3,
           "kills": 5,
@@ -3938,6 +3962,18 @@
           "miss": 117,
           "accuracy": 11.9,
           "qualified": true
+        },
+        {
+          "player": "damz.",
+          "matches": 7,
+          "kills": 11,
+          "deaths": 13,
+          "dealt": 2634,
+          "received": 1566,
+          "pick": 48,
+          "miss": 47,
+          "accuracy": 11.9,
+          "qualified": false
         },
         {
           "player": "TIM",
