@@ -1096,6 +1096,18 @@
           "qualified": true
         },
         {
+          "player": "piu-relax",
+          "matches": 2,
+          "kills": 33,
+          "deaths": 4,
+          "dealt": 4900,
+          "received": 1500,
+          "pick": 17,
+          "miss": 12,
+          "accuracy": 26.0,
+          "qualified": false
+        },
+        {
           "player": "KaPo",
           "matches": 3,
           "kills": 21,
@@ -1264,18 +1276,6 @@
           "qualified": true
         },
         {
-          "player": "piu-relax",
-          "matches": 1,
-          "kills": 16,
-          "deaths": 3,
-          "dealt": 2300,
-          "received": 500,
-          "pick": 12,
-          "miss": 4,
-          "accuracy": 22.0,
-          "qualified": false
-        },
-        {
           "player": "kw4snY",
           "matches": 4,
           "kills": 6,
@@ -1433,14 +1433,14 @@
         },
         {
           "player": "sevvq",
-          "matches": 9,
-          "kills": 14,
-          "deaths": 93,
-          "dealt": 2100,
-          "received": 12000,
-          "pick": 24,
-          "miss": 101,
-          "accuracy": 16.9,
+          "matches": 10,
+          "kills": 15,
+          "deaths": 110,
+          "dealt": 3100,
+          "received": 14600,
+          "pick": 32,
+          "miss": 106,
+          "accuracy": 17.1,
           "qualified": false
         },
         {
@@ -1594,18 +1594,6 @@
       ],
       "all_players": [
         {
-          "player": "piu-relax",
-          "matches": 1,
-          "kills": 12,
-          "deaths": 1,
-          "dealt": 2065,
-          "received": 1046,
-          "pick": 7,
-          "miss": 8,
-          "accuracy": 42.0,
-          "qualified": false
-        },
-        {
           "player": "SZEF",
           "matches": 1,
           "kills": 2,
@@ -1687,6 +1675,18 @@
           "pick": 15,
           "miss": 62,
           "accuracy": 32.0,
+          "qualified": false
+        },
+        {
+          "player": "piu-relax",
+          "matches": 2,
+          "kills": 15,
+          "deaths": 2,
+          "dealt": 2535,
+          "received": 1769,
+          "pick": 14,
+          "miss": 14,
+          "accuracy": 31.0,
           "qualified": false
         },
         {
@@ -2663,13 +2663,13 @@
         },
         {
           "player": "sevvq",
-          "matches": 9,
-          "kills": 21,
-          "deaths": 49,
-          "dealt": 5296,
-          "received": 9532,
-          "pick": 50,
-          "miss": 156,
+          "matches": 10,
+          "kills": 22,
+          "deaths": 52,
+          "dealt": 5832,
+          "received": 10090,
+          "pick": 56,
+          "miss": 163,
           "accuracy": 16.2,
           "qualified": true
         },
@@ -3664,6 +3664,18 @@
           "qualified": false
         },
         {
+          "player": "sevvq",
+          "matches": 10,
+          "kills": 9,
+          "deaths": 34,
+          "dealt": 3366,
+          "received": 6324,
+          "pick": 41,
+          "miss": 113,
+          "accuracy": 13.3,
+          "qualified": false
+        },
+        {
           "player": "need1",
           "matches": 19,
           "kills": 23,
@@ -3760,18 +3772,6 @@
           "qualified": false
         },
         {
-          "player": "sevvq",
-          "matches": 9,
-          "kills": 8,
-          "deaths": 31,
-          "dealt": 2892,
-          "received": 5208,
-          "pick": 29,
-          "miss": 105,
-          "accuracy": 13.0,
-          "qualified": false
-        },
-        {
           "player": "#ABBYS",
           "matches": 1,
           "kills": 2,
@@ -3792,18 +3792,6 @@
           "received": 108,
           "pick": 1,
           "miss": 13,
-          "accuracy": 13.0,
-          "qualified": false
-        },
-        {
-          "player": "piu-relax",
-          "matches": 1,
-          "kills": 2,
-          "deaths": 1,
-          "dealt": 576,
-          "received": 654,
-          "pick": 5,
-          "miss": 9,
           "accuracy": 13.0,
           "qualified": false
         },
@@ -3924,6 +3912,18 @@
           "received": 1008,
           "pick": 11,
           "miss": 6,
+          "accuracy": 12.5,
+          "qualified": false
+        },
+        {
+          "player": "piu-relax",
+          "matches": 2,
+          "kills": 5,
+          "deaths": 2,
+          "dealt": 1692,
+          "received": 1128,
+          "pick": 13,
+          "miss": 21,
           "accuracy": 12.5,
           "qualified": false
         },
