@@ -24,6 +24,14 @@
     "winrate": 88.2
   },
   {
+    "player": "B100D",
+    "elo": 1604,
+    "matches": 22,
+    "wins": 17,
+    "losses": 5,
+    "winrate": 77.3
+  },
+  {
     "player": "Keizer",
     "elo": 1601,
     "matches": 10,
@@ -38,14 +46,6 @@
     "wins": 17,
     "losses": 5,
     "winrate": 77.3
-  },
-  {
-    "player": "B100D",
-    "elo": 1598,
-    "matches": 21,
-    "wins": 16,
-    "losses": 5,
-    "winrate": 76.2
   },
   {
     "player": "insomnia",
@@ -576,19 +576,19 @@
     "winrate": 12.5
   },
   {
-    "player": "jabb@",
-    "elo": 1368,
-    "matches": 20,
-    "wins": 3,
-    "losses": 17,
-    "winrate": 15.0
-  },
-  {
     "player": "Player-345",
     "elo": 1366,
     "matches": 11,
     "wins": 0,
     "losses": 11,
     "winrate": 0.0
+  },
+  {
+    "player": "jabb@",
+    "elo": 1361,
+    "matches": 21,
+    "wins": 3,
+    "losses": 18,
+    "winrate": 14.3
   }
 ]
