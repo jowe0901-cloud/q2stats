@@ -256,6 +256,14 @@
     "winrate": 50.0
   },
   {
+    "player": "lolercoaster",
+    "elo": 1520,
+    "matches": 2,
+    "wins": 2,
+    "losses": 0,
+    "winrate": 100.0
+  },
+  {
     "player": "Dark",
     "elo": 1517,
     "matches": 2,
@@ -330,14 +338,6 @@
   {
     "player": "kreg",
     "elo": 1511,
-    "matches": 1,
-    "wins": 1,
-    "losses": 0,
-    "winrate": 100.0
-  },
-  {
-    "player": "lolercoaster",
-    "elo": 1510,
     "matches": 1,
     "wins": 1,
     "losses": 0,
@@ -568,14 +568,6 @@
     "winrate": 0.0
   },
   {
-    "player": "r",
-    "elo": 1488,
-    "matches": 42,
-    "wins": 25,
-    "losses": 17,
-    "winrate": 59.5
-  },
-  {
     "player": "Puma",
     "elo": 1487,
     "matches": 7,
@@ -646,6 +638,14 @@
     "wins": 2,
     "losses": 3,
     "winrate": 40.0
+  },
+  {
+    "player": "SUPER-LAG",
+    "elo": 1482,
+    "matches": 47,
+    "wins": 26,
+    "losses": 21,
+    "winrate": 55.3
   },
   {
     "player": "shad",
@@ -744,6 +744,14 @@
     "winrate": 0.0
   },
   {
+    "player": "r",
+    "elo": 1472,
+    "matches": 43,
+    "wins": 25,
+    "losses": 18,
+    "winrate": 58.1
+  },
+  {
     "player": "LiOn",
     "elo": 1471,
     "matches": 3,
@@ -806,14 +814,6 @@
     "wins": 9,
     "losses": 12,
     "winrate": 42.9
-  },
-  {
-    "player": "SUPER-LAG",
-    "elo": 1466,
-    "matches": 46,
-    "wins": 25,
-    "losses": 21,
-    "winrate": 54.3
   },
   {
     "player": "lynx",
@@ -912,20 +912,20 @@
     "winrate": 21.4
   },
   {
-    "player": "Maniek",
-    "elo": 1348,
-    "matches": 56,
-    "wins": 24,
-    "losses": 32,
-    "winrate": 42.9
-  },
-  {
     "player": "VITALIS",
     "elo": 1338,
     "matches": 53,
     "wins": 22,
     "losses": 31,
     "winrate": 41.5
+  },
+  {
+    "player": "Maniek",
+    "elo": 1338,
+    "matches": 57,
+    "wins": 24,
+    "losses": 33,
+    "winrate": 42.1
   },
   {
     "player": "mAc",
