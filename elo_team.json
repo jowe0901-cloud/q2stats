@@ -232,6 +232,14 @@
     "winrate": 75.0
   },
   {
+    "player": "norm",
+    "elo": 1531,
+    "matches": 2,
+    "wins": 2,
+    "losses": 0,
+    "winrate": 100.0
+  },
+  {
     "player": "lameroxonix",
     "elo": 1530,
     "matches": 2,
@@ -313,14 +321,6 @@
   },
   {
     "player": "[sYnth]CREATIVE",
-    "elo": 1516,
-    "matches": 1,
-    "wins": 1,
-    "losses": 0,
-    "winrate": 100.0
-  },
-  {
-    "player": "norm",
     "elo": 1516,
     "matches": 1,
     "wins": 1,
@@ -442,10 +442,10 @@
   {
     "player": "need1",
     "elo": 1501,
-    "matches": 44,
-    "wins": 23,
+    "matches": 45,
+    "wins": 24,
     "losses": 21,
-    "winrate": 52.3
+    "winrate": 53.3
   },
   {
     "player": "m",
@@ -584,14 +584,6 @@
     "winrate": 43.8
   },
   {
-    "player": "Player-345",
-    "elo": 1494,
-    "matches": 35,
-    "wins": 16,
-    "losses": 19,
-    "winrate": 45.7
-  },
-  {
     "player": "shNoodle",
     "elo": 1493,
     "matches": 12,
@@ -622,6 +614,14 @@
     "wins": 0,
     "losses": 1,
     "winrate": 0.0
+  },
+  {
+    "player": "Player-345",
+    "elo": 1488,
+    "matches": 36,
+    "wins": 16,
+    "losses": 20,
+    "winrate": 44.4
   },
   {
     "player": "Puma",
@@ -906,10 +906,10 @@
   {
     "player": "lynx",
     "elo": 1429,
-    "matches": 10,
+    "matches": 11,
     "wins": 3,
-    "losses": 7,
-    "winrate": 30.0
+    "losses": 8,
+    "winrate": 27.3
   },
   {
     "player": "Qiub",
