@@ -320,6 +320,14 @@
     "winrate": 100.0
   },
   {
+    "player": "norm",
+    "elo": 1516,
+    "matches": 1,
+    "wins": 1,
+    "losses": 0,
+    "winrate": 100.0
+  },
+  {
     "player": "ping80",
     "elo": 1515,
     "matches": 13,
@@ -432,6 +440,14 @@
     "winrate": 66.7
   },
   {
+    "player": "need1",
+    "elo": 1501,
+    "matches": 44,
+    "wins": 23,
+    "losses": 21,
+    "winrate": 52.3
+  },
+  {
     "player": "m",
     "elo": 1500,
     "matches": 31,
@@ -542,14 +558,6 @@
     "wins": 1,
     "losses": 1,
     "winrate": 50.0
-  },
-  {
-    "player": "need1",
-    "elo": 1496,
-    "matches": 43,
-    "wins": 22,
-    "losses": 21,
-    "winrate": 51.2
   },
   {
     "player": "Puma!",
@@ -880,14 +888,6 @@
     "winrate": 37.5
   },
   {
-    "player": "lynx",
-    "elo": 1445,
-    "matches": 9,
-    "wins": 3,
-    "losses": 6,
-    "winrate": 33.3
-  },
-  {
     "player": "xRSNx",
     "elo": 1445,
     "matches": 6,
@@ -902,6 +902,14 @@
     "wins": 9,
     "losses": 13,
     "winrate": 40.9
+  },
+  {
+    "player": "lynx",
+    "elo": 1429,
+    "matches": 10,
+    "wins": 3,
+    "losses": 7,
+    "winrate": 30.0
   },
   {
     "player": "Qiub",

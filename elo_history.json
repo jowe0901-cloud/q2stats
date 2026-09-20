@@ -22576,5 +22576,36 @@
       }
     ],
     "saved_at": "2026-09-21T01:14:58+02:00"
+  },
+  {
+    "match_id": "a4c48c5979ee3a7d",
+    "game_type": "team",
+    "winner": "Away",
+    "home_score": 16,
+    "away_score": 35,
+    "players": [
+      {
+        "player": "lynx",
+        "team": "Home",
+        "old_elo": 1445,
+        "change": -16,
+        "new_elo": 1429
+      },
+      {
+        "player": "need1",
+        "team": "Away",
+        "old_elo": 1496,
+        "change": 4.9,
+        "new_elo": 1501
+      },
+      {
+        "player": "norm",
+        "team": "Away",
+        "old_elo": 1500,
+        "change": 16,
+        "new_elo": 1516
+      }
+    ],
+    "saved_at": "2026-09-21T01:29:46+02:00"
   }
 ]
