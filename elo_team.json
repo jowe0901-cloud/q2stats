@@ -33,11 +33,11 @@
   },
   {
     "player": "cne",
-    "elo": 1728,
-    "matches": 57,
+    "elo": 1712,
+    "matches": 58,
     "wins": 33,
-    "losses": 24,
-    "winrate": 57.9
+    "losses": 25,
+    "winrate": 56.9
   },
   {
     "player": "myrmidon^",
@@ -65,11 +65,11 @@
   },
   {
     "player": "Keizer",
-    "elo": 1667,
-    "matches": 41,
+    "elo": 1651,
+    "matches": 42,
     "wins": 24,
-    "losses": 17,
-    "winrate": 58.5
+    "losses": 18,
+    "winrate": 57.1
   },
   {
     "player": "badman",
@@ -321,6 +321,14 @@
   },
   {
     "player": "[sYnth]CREATIVE",
+    "elo": 1516,
+    "matches": 1,
+    "wins": 1,
+    "losses": 0,
+    "winrate": 100.0
+  },
+  {
+    "player": "Dark Abbys",
     "elo": 1516,
     "matches": 1,
     "wins": 1,
@@ -888,6 +896,14 @@
     "winrate": 16.7
   },
   {
+    "player": "Qiub",
+    "elo": 1442,
+    "matches": 10,
+    "wins": 3,
+    "losses": 7,
+    "winrate": 30.0
+  },
+  {
     "player": "senz",
     "elo": 1429,
     "matches": 22,
@@ -904,28 +920,20 @@
     "winrate": 27.3
   },
   {
-    "player": "Qiub",
-    "elo": 1426,
-    "matches": 9,
-    "wins": 2,
-    "losses": 7,
-    "winrate": 22.2
-  },
-  {
-    "player": "damz.",
-    "elo": 1425,
-    "matches": 12,
-    "wins": 5,
-    "losses": 7,
-    "winrate": 41.7
-  },
-  {
     "player": "[sf]T3RM!N4ToR",
     "elo": 1424,
     "matches": 11,
     "wins": 4,
     "losses": 7,
     "winrate": 36.4
+  },
+  {
+    "player": "damz.",
+    "elo": 1409,
+    "matches": 13,
+    "wins": 5,
+    "losses": 8,
+    "winrate": 38.5
   },
   {
     "player": "sevvq",
@@ -993,10 +1001,10 @@
   },
   {
     "player": "jabb@",
-    "elo": 1213,
-    "matches": 106,
-    "wins": 47,
+    "elo": 1229,
+    "matches": 107,
+    "wins": 48,
     "losses": 59,
-    "winrate": 44.3
+    "winrate": 44.9
   }
 ]
