@@ -65,11 +65,11 @@
   },
   {
     "player": "Keizer",
-    "elo": 1641,
-    "matches": 38,
-    "wins": 22,
+    "elo": 1657,
+    "matches": 39,
+    "wins": 23,
     "losses": 16,
-    "winrate": 57.9
+    "winrate": 59.0
   },
   {
     "player": "badman",
@@ -216,14 +216,6 @@
     "winrate": 100.0
   },
   {
-    "player": "lolercoaster",
-    "elo": 1536,
-    "matches": 3,
-    "wins": 3,
-    "losses": 0,
-    "winrate": 100.0
-  },
-  {
     "player": "ptr",
     "elo": 1535,
     "matches": 9,
@@ -286,6 +278,14 @@
     "wins": 2,
     "losses": 0,
     "winrate": 100.0
+  },
+  {
+    "player": "lolercoaster",
+    "elo": 1520,
+    "matches": 4,
+    "wins": 3,
+    "losses": 1,
+    "winrate": 75.0
   },
   {
     "player": "Dark",
@@ -633,11 +633,11 @@
   },
   {
     "player": "SUPER-LAG",
-    "elo": 1487,
-    "matches": 53,
+    "elo": 1484,
+    "matches": 54,
     "wins": 30,
-    "losses": 23,
-    "winrate": 56.6
+    "losses": 24,
+    "winrate": 55.6
   },
   {
     "player": "[G2H]DEMON",
@@ -889,11 +889,11 @@
   },
   {
     "player": "damz.",
-    "elo": 1430,
-    "matches": 9,
-    "wins": 3,
+    "elo": 1437,
+    "matches": 10,
+    "wins": 4,
     "losses": 6,
-    "winrate": 33.3
+    "winrate": 40.0
   },
   {
     "player": "senz",
@@ -961,11 +961,11 @@
   },
   {
     "player": "Maniek",
-    "elo": 1328,
-    "matches": 61,
-    "wins": 25,
+    "elo": 1340,
+    "matches": 62,
+    "wins": 26,
     "losses": 36,
-    "winrate": 41.0
+    "winrate": 41.9
   },
   {
     "player": "VITALIS",
@@ -993,10 +993,10 @@
   },
   {
     "player": "jabb@",
-    "elo": 1228,
-    "matches": 103,
+    "elo": 1213,
+    "matches": 104,
     "wins": 46,
-    "losses": 57,
-    "winrate": 44.7
+    "losses": 58,
+    "winrate": 44.2
   }
 ]
