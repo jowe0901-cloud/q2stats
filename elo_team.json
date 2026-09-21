@@ -33,19 +33,11 @@
   },
   {
     "player": "cne",
-    "elo": 1696,
-    "matches": 59,
+    "elo": 1683,
+    "matches": 60,
     "wins": 33,
-    "losses": 26,
-    "winrate": 55.9
-  },
-  {
-    "player": "myrmidon^",
-    "elo": 1690,
-    "matches": 54,
-    "wins": 30,
-    "losses": 24,
-    "winrate": 55.6
+    "losses": 27,
+    "winrate": 55.0
   },
   {
     "player": "GipSy",
@@ -54,6 +46,14 @@
     "wins": 37,
     "losses": 30,
     "winrate": 55.2
+  },
+  {
+    "player": "myrmidon^",
+    "elo": 1674,
+    "matches": 55,
+    "wins": 30,
+    "losses": 25,
+    "winrate": 54.5
   },
   {
     "player": "fon",
@@ -80,12 +80,12 @@
     "winrate": 50.8
   },
   {
-    "player": "CoLD",
-    "elo": 1613,
-    "matches": 34,
-    "wins": 20,
-    "losses": 14,
-    "winrate": 58.8
+    "player": "rul",
+    "elo": 1614,
+    "matches": 52,
+    "wins": 24,
+    "losses": 28,
+    "winrate": 46.2
   },
   {
     "player": ">daPurrI",
@@ -96,12 +96,12 @@
     "winrate": 88.9
   },
   {
-    "player": "rul",
-    "elo": 1598,
-    "matches": 51,
-    "wins": 23,
-    "losses": 28,
-    "winrate": 45.1
+    "player": "CoLD",
+    "elo": 1597,
+    "matches": 35,
+    "wins": 20,
+    "losses": 15,
+    "winrate": 57.1
   },
   {
     "player": "roon",
@@ -256,6 +256,14 @@
     "winrate": 42.9
   },
   {
+    "player": "gart",
+    "elo": 1527,
+    "matches": 18,
+    "wins": 9,
+    "losses": 9,
+    "winrate": 50.0
+  },
+  {
     "player": "lamerinon",
     "elo": 1524,
     "matches": 6,
@@ -358,14 +366,6 @@
     "wins": 1,
     "losses": 0,
     "winrate": 100.0
-  },
-  {
-    "player": "gart",
-    "elo": 1511,
-    "matches": 17,
-    "wins": 8,
-    "losses": 9,
-    "winrate": 47.1
   },
   {
     "player": "kreg",
@@ -1001,10 +1001,10 @@
   },
   {
     "player": "jabb@",
-    "elo": 1238,
-    "matches": 108,
-    "wins": 49,
+    "elo": 1253,
+    "matches": 109,
+    "wins": 50,
     "losses": 59,
-    "winrate": 45.4
+    "winrate": 45.9
   }
 ]
