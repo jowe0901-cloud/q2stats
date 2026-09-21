@@ -175284,5 +175284,81 @@
       }
     ],
     "saved_at": "2026-09-21T21:23:22+02:00"
+  },
+  {
+    "match_id": "7c71d424b4fffd2f",
+    "game_type": "team",
+    "hostname": "PacketFlinger.com ~ OpenTDM ~ Germany",
+    "mapname": "q2rdm2",
+    "match_type": "Duel",
+    "port": 27910,
+    "winner": "Home",
+    "home_score": 7,
+    "away_score": 0,
+    "players": [
+      {
+        "name": "need1",
+        "kills": 7,
+        "deaths": 0,
+        "suicides": 0,
+        "teamkills": 0,
+        "teleports": 0,
+        "damage": 1495,
+        "damage_received": 1175,
+        "team_damage": 0,
+        "team_damage_received": 0,
+        "weapons": {
+          "Super Shotgun": {
+            "accuracy": null,
+            "kills": null,
+            "deaths": 0,
+            "dealt": null,
+            "received": 30,
+            "pick": 1,
+            "miss": 3
+          },
+          "Machinegun": {
+            "accuracy": null,
+            "kills": null,
+            "deaths": null,
+            "dealt": null,
+            "received": null,
+            "pick": 5,
+            "miss": 0
+          },
+          "Chaingun": {
+            "accuracy": 13,
+            "kills": 0,
+            "deaths": 0,
+            "dealt": 180,
+            "received": 336,
+            "pick": 2,
+            "miss": 5
+          },
+          "Rocket Launcher": {
+            "accuracy": 5,
+            "kills": 0,
+            "deaths": 0,
+            "dealt": 200,
+            "received": 709,
+            "pick": 2,
+            "miss": 4
+          },
+          "Railgun": {
+            "accuracy": 40,
+            "kills": 6,
+            "deaths": 0,
+            "dealt": 1100,
+            "received": 100,
+            "pick": 1,
+            "miss": 2
+          }
+        },
+        "team": "Home",
+        "ping": 25,
+        "player_id": "4"
+      }
+    ],
+    "saved_at": "2026-09-21T21:29:10+02:00"
   }
 ]

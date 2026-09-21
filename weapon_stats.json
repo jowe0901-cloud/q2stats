@@ -604,6 +604,18 @@
           "qualified": true
         },
         {
+          "player": "need1",
+          "matches": 27,
+          "kills": 141,
+          "deaths": 95,
+          "dealt": 21000,
+          "received": 17800,
+          "pick": 58,
+          "miss": 288,
+          "accuracy": 33.5,
+          "qualified": true
+        },
+        {
           "player": "shad",
           "matches": 23,
           "kills": 121,
@@ -637,18 +649,6 @@
           "pick": 143,
           "miss": 469,
           "accuracy": 33.4,
-          "qualified": true
-        },
-        {
-          "player": "need1",
-          "matches": 26,
-          "kills": 135,
-          "deaths": 95,
-          "dealt": 19900,
-          "received": 17700,
-          "pick": 57,
-          "miss": 286,
-          "accuracy": 33.2,
           "qualified": true
         },
         {
@@ -1810,18 +1810,6 @@
           "qualified": true
         },
         {
-          "player": "need1",
-          "matches": 27,
-          "kills": 133,
-          "deaths": 81,
-          "dealt": 25676,
-          "received": 20481,
-          "pick": 125,
-          "miss": 470,
-          "accuracy": 26.9,
-          "qualified": true
-        },
-        {
           "player": "[ds]ads",
           "matches": 8,
           "kills": 43,
@@ -1831,6 +1819,18 @@
           "pick": 47,
           "miss": 137,
           "accuracy": 26.9,
+          "qualified": true
+        },
+        {
+          "player": "need1",
+          "matches": 28,
+          "kills": 133,
+          "deaths": 81,
+          "dealt": 25876,
+          "received": 21190,
+          "pick": 127,
+          "miss": 474,
+          "accuracy": 26.1,
           "qualified": true
         },
         {
@@ -3761,13 +3761,13 @@
         },
         {
           "player": "need1",
-          "matches": 26,
+          "matches": 27,
           "kills": 29,
           "deaths": 31,
-          "dealt": 5172,
-          "received": 6540,
-          "pick": 40,
-          "miss": 305,
+          "dealt": 5352,
+          "received": 6876,
+          "pick": 42,
+          "miss": 310,
           "accuracy": 13.2,
           "qualified": true
         },
