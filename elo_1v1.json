@@ -240,6 +240,14 @@
     "winrate": 100.0
   },
   {
+    "player": "need1",
+    "elo": 1513,
+    "matches": 3,
+    "wins": 2,
+    "losses": 1,
+    "winrate": 66.7
+  },
+  {
     "player": "shNoodle",
     "elo": 1513,
     "matches": 1,
@@ -266,14 +274,6 @@
   {
     "player": "myrmidon^",
     "elo": 1499,
-    "matches": 2,
-    "wins": 1,
-    "losses": 1,
-    "winrate": 50.0
-  },
-  {
-    "player": "need1",
-    "elo": 1498,
     "matches": 2,
     "wins": 1,
     "losses": 1,
@@ -322,14 +322,6 @@
   {
     "player": "yin",
     "elo": 1487,
-    "matches": 1,
-    "wins": 0,
-    "losses": 1,
-    "winrate": 0.0
-  },
-  {
-    "player": "VITALIS",
-    "elo": 1485,
     "matches": 1,
     "wins": 0,
     "losses": 1,
@@ -454,6 +446,14 @@
     "wins": 2,
     "losses": 3,
     "winrate": 40.0
+  },
+  {
+    "player": "VITALIS",
+    "elo": 1470,
+    "matches": 2,
+    "wins": 0,
+    "losses": 2,
+    "winrate": 0.0
   },
   {
     "player": "pipi",
