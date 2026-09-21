@@ -305,14 +305,14 @@
         },
         {
           "player": "Player-345",
-          "matches": 28,
+          "matches": 29,
           "kills": 209,
-          "deaths": 165,
-          "dealt": 38700,
-          "received": 25600,
-          "pick": 83,
-          "miss": 294,
-          "accuracy": 38.2,
+          "deaths": 171,
+          "dealt": 39100,
+          "received": 26900,
+          "pick": 88,
+          "miss": 295,
+          "accuracy": 38.4,
           "qualified": true
         },
         {
@@ -640,18 +640,6 @@
           "qualified": true
         },
         {
-          "player": ">purri",
-          "matches": 3,
-          "kills": 25,
-          "deaths": 5,
-          "dealt": 3400,
-          "received": 2300,
-          "pick": 19,
-          "miss": 21,
-          "accuracy": 33.3,
-          "qualified": true
-        },
-        {
           "player": "need1",
           "matches": 25,
           "kills": 133,
@@ -673,6 +661,18 @@
           "pick": 95,
           "miss": 266,
           "accuracy": 32.5,
+          "qualified": true
+        },
+        {
+          "player": ">purri",
+          "matches": 4,
+          "kills": 31,
+          "deaths": 5,
+          "dealt": 4700,
+          "received": 2700,
+          "pick": 20,
+          "miss": 26,
+          "accuracy": 32.2,
           "qualified": true
         },
         {
@@ -1882,18 +1882,6 @@
           "qualified": false
         },
         {
-          "player": "Player-345",
-          "matches": 28,
-          "kills": 63,
-          "deaths": 112,
-          "dealt": 14979,
-          "received": 22267,
-          "pick": 101,
-          "miss": 533,
-          "accuracy": 25.2,
-          "qualified": true
-        },
-        {
           "player": "yin",
           "matches": 4,
           "kills": 13,
@@ -1930,16 +1918,16 @@
           "qualified": true
         },
         {
-          "player": ">purri",
-          "matches": 3,
-          "kills": 10,
-          "deaths": 8,
-          "dealt": 3370,
-          "received": 3151,
-          "pick": 16,
-          "miss": 30,
+          "player": "Player-345",
+          "matches": 29,
+          "kills": 63,
+          "deaths": 112,
+          "dealt": 15388,
+          "received": 22762,
+          "pick": 107,
+          "miss": 534,
           "accuracy": 24.7,
-          "qualified": false
+          "qualified": true
         },
         {
           "player": "r",
@@ -2263,6 +2251,18 @@
           "pick": 4,
           "miss": 41,
           "accuracy": 21.0,
+          "qualified": false
+        },
+        {
+          "player": ">purri",
+          "matches": 4,
+          "kills": 10,
+          "deaths": 8,
+          "dealt": 3760,
+          "received": 3590,
+          "pick": 17,
+          "miss": 36,
+          "accuracy": 20.8,
           "qualified": false
         },
         {
@@ -3328,18 +3328,6 @@
           "qualified": true
         },
         {
-          "player": ">purri",
-          "matches": 3,
-          "kills": 15,
-          "deaths": 9,
-          "dealt": 2856,
-          "received": 2640,
-          "pick": 19,
-          "miss": 23,
-          "accuracy": 16.3,
-          "qualified": false
-        },
-        {
           "player": "lamerinon",
           "matches": 6,
           "kills": 21,
@@ -3448,6 +3436,18 @@
           "qualified": true
         },
         {
+          "player": ">purri",
+          "matches": 4,
+          "kills": 20,
+          "deaths": 9,
+          "dealt": 3510,
+          "received": 3318,
+          "pick": 21,
+          "miss": 27,
+          "accuracy": 15.2,
+          "qualified": true
+        },
+        {
           "player": "tomato-gose",
           "matches": 5,
           "kills": 14,
@@ -3544,18 +3544,6 @@
           "qualified": true
         },
         {
-          "player": "Player-345",
-          "matches": 28,
-          "kills": 110,
-          "deaths": 72,
-          "dealt": 14310,
-          "received": 10830,
-          "pick": 95,
-          "miss": 315,
-          "accuracy": 14.2,
-          "qualified": true
-        },
-        {
           "player": "Dark Abyys",
           "matches": 5,
           "kills": 15,
@@ -3566,6 +3554,18 @@
           "miss": 51,
           "accuracy": 14.2,
           "qualified": false
+        },
+        {
+          "player": "Player-345",
+          "matches": 29,
+          "kills": 110,
+          "deaths": 77,
+          "dealt": 14988,
+          "received": 11484,
+          "pick": 99,
+          "miss": 317,
+          "accuracy": 14.1,
+          "qualified": true
         },
         {
           "player": "michaq",
