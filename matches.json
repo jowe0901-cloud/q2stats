@@ -177477,5 +177477,763 @@
       }
     ],
     "saved_at": "2026-09-21T22:25:45+02:00"
+  },
+  {
+    "match_id": "999bde622d724ded",
+    "game_type": "team",
+    "hostname": "dropslugs.com | OpenTDM | Germany #1",
+    "mapname": "q2dm1",
+    "match_type": "TDM",
+    "port": 27910,
+    "winner": "Home",
+    "home_score": 72,
+    "away_score": 58,
+    "players": [
+      {
+        "name": "Br00m^^",
+        "kills": 11,
+        "deaths": 12,
+        "suicides": 0,
+        "teamkills": 0,
+        "teleports": 0,
+        "damage": 2174,
+        "damage_received": 2337,
+        "team_damage": 145,
+        "team_damage_received": 145,
+        "weapons": {
+          "Shotgun": {
+            "accuracy": null,
+            "kills": null,
+            "deaths": 0,
+            "dealt": null,
+            "received": 68,
+            "pick": 0,
+            "miss": 12
+          },
+          "Super Shotgun": {
+            "accuracy": null,
+            "kills": null,
+            "deaths": 1,
+            "dealt": null,
+            "received": 234,
+            "pick": 0,
+            "miss": 16
+          },
+          "Machinegun": {
+            "accuracy": 24,
+            "kills": 2,
+            "deaths": 0,
+            "dealt": 272,
+            "received": 192,
+            "pick": 5,
+            "miss": 18
+          },
+          "Chaingun": {
+            "accuracy": 16,
+            "kills": 3,
+            "deaths": 0,
+            "dealt": 678,
+            "received": 60,
+            "pick": 5,
+            "miss": 11
+          },
+          "Grenades": {
+            "accuracy": 0,
+            "kills": 0,
+            "deaths": 1,
+            "dealt": 0,
+            "received": 110,
+            "pick": 0,
+            "miss": 0
+          },
+          "Grenade Launcher": {
+            "accuracy": 0,
+            "kills": 0,
+            "deaths": 1,
+            "dealt": 0,
+            "received": 196,
+            "pick": 5,
+            "miss": 5
+          },
+          "Rocket Launcher": {
+            "accuracy": 20,
+            "kills": 1,
+            "deaths": 3,
+            "dealt": 339,
+            "received": 607,
+            "pick": 0,
+            "miss": 25
+          },
+          "HyperBlaster": {
+            "accuracy": 7,
+            "kills": 0,
+            "deaths": 1,
+            "dealt": 90,
+            "received": 150,
+            "pick": 2,
+            "miss": 9
+          },
+          "Railgun": {
+            "accuracy": 20,
+            "kills": 4,
+            "deaths": 5,
+            "dealt": 600,
+            "received": 600,
+            "pick": 2,
+            "miss": 13
+          }
+        },
+        "team": "Home",
+        "ping": 33,
+        "player_id": "7",
+        "elo_type": "team",
+        "elo_before": 1550,
+        "elo_change": 3.8,
+        "elo_after": 1554
+      },
+      {
+        "name": "fon",
+        "kills": 25,
+        "deaths": 19,
+        "suicides": 0,
+        "teamkills": 0,
+        "teleports": 0,
+        "damage": 3966,
+        "damage_received": 3069,
+        "team_damage": 15,
+        "team_damage_received": 24,
+        "weapons": {
+          "Shotgun": {
+            "accuracy": 43,
+            "kills": 0,
+            "deaths": 1,
+            "dealt": 60,
+            "received": 72,
+            "pick": 3,
+            "miss": 9
+          },
+          "Super Shotgun": {
+            "accuracy": 84,
+            "kills": 2,
+            "deaths": 1,
+            "dealt": 258,
+            "received": 90,
+            "pick": 4,
+            "miss": 12
+          },
+          "Machinegun": {
+            "accuracy": 19,
+            "kills": 0,
+            "deaths": 2,
+            "dealt": 64,
+            "received": 280,
+            "pick": 1,
+            "miss": 22
+          },
+          "Chaingun": {
+            "accuracy": 12,
+            "kills": 4,
+            "deaths": 1,
+            "dealt": 498,
+            "received": 228,
+            "pick": 1,
+            "miss": 15
+          },
+          "Grenades": {
+            "accuracy": 46,
+            "kills": 2,
+            "deaths": 1,
+            "dealt": 469,
+            "received": 193,
+            "pick": 0,
+            "miss": 0
+          },
+          "Rocket Launcher": {
+            "accuracy": 22,
+            "kills": 4,
+            "deaths": 3,
+            "dealt": 852,
+            "received": 731,
+            "pick": 3,
+            "miss": 22
+          },
+          "HyperBlaster": {
+            "accuracy": 0,
+            "kills": 0,
+            "deaths": 1,
+            "dealt": 0,
+            "received": 240,
+            "pick": 2,
+            "miss": 9
+          },
+          "Railgun": {
+            "accuracy": 44,
+            "kills": 13,
+            "deaths": 9,
+            "dealt": 1600,
+            "received": 1100,
+            "pick": 1,
+            "miss": 14
+          }
+        },
+        "team": "Home",
+        "ping": 37,
+        "player_id": "1",
+        "elo_type": "team",
+        "elo_before": 1682,
+        "elo_change": 16,
+        "elo_after": 1698
+      },
+      {
+        "name": "qw",
+        "kills": 13,
+        "deaths": 19,
+        "suicides": 1,
+        "teamkills": 0,
+        "teleports": 0,
+        "damage": 2143,
+        "damage_received": 2947,
+        "team_damage": 83,
+        "team_damage_received": 133,
+        "weapons": {
+          "Shotgun": {
+            "accuracy": 55,
+            "kills": 0,
+            "deaths": 0,
+            "dealt": 104,
+            "received": 60,
+            "pick": 3,
+            "miss": 9
+          },
+          "Super Shotgun": {
+            "accuracy": 63,
+            "kills": 2,
+            "deaths": 0,
+            "dealt": 306,
+            "received": 78,
+            "pick": 4,
+            "miss": 12
+          },
+          "Machinegun": {
+            "accuracy": 24,
+            "kills": 1,
+            "deaths": 1,
+            "dealt": 264,
+            "received": 208,
+            "pick": 3,
+            "miss": 20
+          },
+          "Chaingun": {
+            "accuracy": 8,
+            "kills": 1,
+            "deaths": 2,
+            "dealt": 90,
+            "received": 492,
+            "pick": 0,
+            "miss": 16
+          },
+          "Grenades": {
+            "accuracy": 12,
+            "kills": 2,
+            "deaths": 1,
+            "dealt": 169,
+            "received": 170,
+            "pick": 0,
+            "miss": 0
+          },
+          "Rocket Launcher": {
+            "accuracy": 15,
+            "kills": 4,
+            "deaths": 2,
+            "dealt": 700,
+            "received": 389,
+            "pick": 5,
+            "miss": 20
+          },
+          "HyperBlaster": {
+            "accuracy": 10,
+            "kills": 1,
+            "deaths": null,
+            "dealt": 120,
+            "received": null,
+            "pick": 2,
+            "miss": 9
+          },
+          "Railgun": {
+            "accuracy": 43,
+            "kills": 2,
+            "deaths": 12,
+            "dealt": 300,
+            "received": 1400,
+            "pick": 1,
+            "miss": 14
+          }
+        },
+        "team": "Away",
+        "ping": 23,
+        "player_id": "2",
+        "elo_type": "team",
+        "elo_before": 1867,
+        "elo_change": -16,
+        "elo_after": 1851
+      },
+      {
+        "name": "badman",
+        "kills": 19,
+        "deaths": 20,
+        "suicides": 1,
+        "teamkills": 1,
+        "teleports": 0,
+        "damage": 2772,
+        "damage_received": 2893,
+        "team_damage": 175,
+        "team_damage_received": 114,
+        "weapons": {
+          "Super Shotgun": {
+            "accuracy": 100,
+            "kills": 0,
+            "deaths": 1,
+            "dealt": 18,
+            "received": 144,
+            "pick": 3,
+            "miss": 13
+          },
+          "Machinegun": {
+            "accuracy": 14,
+            "kills": 0,
+            "deaths": 0,
+            "dealt": 136,
+            "received": 88,
+            "pick": 1,
+            "miss": 22
+          },
+          "Chaingun": {
+            "accuracy": 22,
+            "kills": 0,
+            "deaths": 4,
+            "dealt": 132,
+            "received": 414,
+            "pick": 1,
+            "miss": 15
+          },
+          "Grenades": {
+            "accuracy": 37,
+            "kills": 2,
+            "deaths": 1,
+            "dealt": 299,
+            "received": 116,
+            "pick": 0,
+            "miss": 0
+          },
+          "Rocket Launcher": {
+            "accuracy": 22,
+            "kills": 3,
+            "deaths": 2,
+            "dealt": 352,
+            "received": 556,
+            "pick": 5,
+            "miss": 20
+          },
+          "HyperBlaster": {
+            "accuracy": 6,
+            "kills": 2,
+            "deaths": 0,
+            "dealt": 75,
+            "received": 60,
+            "pick": 2,
+            "miss": 9
+          },
+          "Railgun": {
+            "accuracy": 39,
+            "kills": 13,
+            "deaths": 11,
+            "dealt": 1700,
+            "received": 1500,
+            "pick": 2,
+            "miss": 13
+          }
+        },
+        "team": "Away",
+        "ping": 21,
+        "player_id": "3",
+        "elo_type": "team",
+        "elo_before": 1636,
+        "elo_change": -8.7,
+        "elo_after": 1627
+      },
+      {
+        "name": "asd_krzys",
+        "kills": 19,
+        "deaths": 12,
+        "suicides": 0,
+        "teamkills": 0,
+        "teleports": 0,
+        "damage": 3336,
+        "damage_received": 2451,
+        "team_damage": 0,
+        "team_damage_received": 60,
+        "weapons": {
+          "Shotgun": {
+            "accuracy": 34,
+            "kills": 0,
+            "deaths": null,
+            "dealt": 16,
+            "received": null,
+            "pick": 1,
+            "miss": 11
+          },
+          "Super Shotgun": {
+            "accuracy": null,
+            "kills": null,
+            "deaths": 0,
+            "dealt": null,
+            "received": 132,
+            "pick": 0,
+            "miss": 16
+          },
+          "Machinegun": {
+            "accuracy": 29,
+            "kills": 3,
+            "deaths": 0,
+            "dealt": 416,
+            "received": 72,
+            "pick": 3,
+            "miss": 20
+          },
+          "Chaingun": {
+            "accuracy": 17,
+            "kills": 2,
+            "deaths": 4,
+            "dealt": 390,
+            "received": 612,
+            "pick": 1,
+            "miss": 15
+          },
+          "Grenade Launcher": {
+            "accuracy": 23,
+            "kills": 1,
+            "deaths": 0,
+            "dealt": 354,
+            "received": 52,
+            "pick": 4,
+            "miss": 6
+          },
+          "Rocket Launcher": {
+            "accuracy": 15,
+            "kills": 4,
+            "deaths": 0,
+            "dealt": 945,
+            "received": 463,
+            "pick": 4,
+            "miss": 21
+          },
+          "HyperBlaster": {
+            "accuracy": null,
+            "kills": null,
+            "deaths": 1,
+            "dealt": null,
+            "received": 30,
+            "pick": 0,
+            "miss": 11
+          },
+          "Railgun": {
+            "accuracy": 27,
+            "kills": 9,
+            "deaths": 6,
+            "dealt": 1200,
+            "received": 1000,
+            "pick": 1,
+            "miss": 14
+          }
+        },
+        "team": "Away",
+        "ping": 27,
+        "player_id": "4",
+        "elo_type": "team",
+        "elo_before": 1443,
+        "elo_change": 7,
+        "elo_after": 1450
+      },
+      {
+        "name": "maq",
+        "kills": 22,
+        "deaths": 18,
+        "suicides": 0,
+        "teamkills": 0,
+        "teleports": 0,
+        "damage": 3399,
+        "damage_received": 2976,
+        "team_damage": 12,
+        "team_damage_received": 15,
+        "weapons": {
+          "Shotgun": {
+            "accuracy": 70,
+            "kills": 0,
+            "deaths": 0,
+            "dealt": 80,
+            "received": 4,
+            "pick": 2,
+            "miss": 10
+          },
+          "Super Shotgun": {
+            "accuracy": 67,
+            "kills": 0,
+            "deaths": 0,
+            "dealt": 12,
+            "received": 108,
+            "pick": 0,
+            "miss": 16
+          },
+          "Machinegun": {
+            "accuracy": 19,
+            "kills": 0,
+            "deaths": 3,
+            "dealt": 104,
+            "received": 648,
+            "pick": 3,
+            "miss": 20
+          },
+          "Chaingun": {
+            "accuracy": 16,
+            "kills": 5,
+            "deaths": 3,
+            "dealt": 438,
+            "received": 456,
+            "pick": 2,
+            "miss": 14
+          },
+          "Grenades": {
+            "accuracy": 0,
+            "kills": 0,
+            "deaths": 2,
+            "dealt": 0,
+            "received": 166,
+            "pick": 0,
+            "miss": 0
+          },
+          "Rocket Launcher": {
+            "accuracy": 19,
+            "kills": 1,
+            "deaths": 3,
+            "dealt": 370,
+            "received": 604,
+            "pick": 2,
+            "miss": 23
+          },
+          "HyperBlaster": {
+            "accuracy": null,
+            "kills": null,
+            "deaths": 0,
+            "dealt": null,
+            "received": 30,
+            "pick": 0,
+            "miss": 11
+          },
+          "Railgun": {
+            "accuracy": 58,
+            "kills": 14,
+            "deaths": 7,
+            "dealt": 2200,
+            "received": 900,
+            "pick": 4,
+            "miss": 11
+          }
+        },
+        "team": "Home",
+        "ping": 29,
+        "player_id": "5",
+        "elo_type": "team",
+        "elo_before": 1858,
+        "elo_change": 12.6,
+        "elo_after": 1871
+      },
+      {
+        "name": "Maniek",
+        "kills": 10,
+        "deaths": 26,
+        "suicides": 0,
+        "teamkills": 0,
+        "teleports": 0,
+        "damage": 2193,
+        "damage_received": 3954,
+        "team_damage": 49,
+        "team_damage_received": 0,
+        "weapons": {
+          "Shotgun": {
+            "accuracy": 67,
+            "kills": 1,
+            "deaths": 0,
+            "dealt": 60,
+            "received": 80,
+            "pick": 2,
+            "miss": 10
+          },
+          "Super Shotgun": {
+            "accuracy": 67,
+            "kills": 1,
+            "deaths": 2,
+            "dealt": 168,
+            "received": 126,
+            "pick": 2,
+            "miss": 14
+          },
+          "Machinegun": {
+            "accuracy": 15,
+            "kills": 1,
+            "deaths": 2,
+            "dealt": 408,
+            "received": 272,
+            "pick": 4,
+            "miss": 19
+          },
+          "Chaingun": {
+            "accuracy": 11,
+            "kills": 3,
+            "deaths": 7,
+            "dealt": 324,
+            "received": 792,
+            "pick": 3,
+            "miss": 13
+          },
+          "Grenades": {
+            "accuracy": 8,
+            "kills": 1,
+            "deaths": 0,
+            "dealt": 110,
+            "received": 321,
+            "pick": 0,
+            "miss": 0
+          },
+          "Rocket Launcher": {
+            "accuracy": 23,
+            "kills": 0,
+            "deaths": 3,
+            "dealt": 173,
+            "received": 733,
+            "pick": 2,
+            "miss": 23
+          },
+          "HyperBlaster": {
+            "accuracy": 11,
+            "kills": 0,
+            "deaths": null,
+            "dealt": 225,
+            "received": null,
+            "pick": 3,
+            "miss": 8
+          },
+          "Railgun": {
+            "accuracy": 56,
+            "kills": 3,
+            "deaths": 10,
+            "dealt": 500,
+            "received": 1300,
+            "pick": 2,
+            "miss": 13
+          }
+        },
+        "team": "Away",
+        "ping": 31,
+        "player_id": "8",
+        "elo_type": "team",
+        "elo_before": 1339,
+        "elo_change": -16,
+        "elo_after": 1323
+      },
+      {
+        "name": "Abyys",
+        "kills": 16,
+        "deaths": 14,
+        "suicides": 1,
+        "teamkills": 1,
+        "teleports": 0,
+        "damage": 2140,
+        "damage_received": 2422,
+        "team_damage": 130,
+        "team_damage_received": 118,
+        "weapons": {
+          "Shotgun": {
+            "accuracy": null,
+            "kills": null,
+            "deaths": 0,
+            "dealt": null,
+            "received": 36,
+            "pick": 1,
+            "miss": 11
+          },
+          "Super Shotgun": {
+            "accuracy": 72,
+            "kills": 1,
+            "deaths": 1,
+            "dealt": 210,
+            "received": 60,
+            "pick": 3,
+            "miss": 13
+          },
+          "Machinegun": {
+            "accuracy": 17,
+            "kills": 1,
+            "deaths": 0,
+            "dealt": 200,
+            "received": 104,
+            "pick": 3,
+            "miss": 20
+          },
+          "Chaingun": {
+            "accuracy": 12,
+            "kills": 5,
+            "deaths": 2,
+            "dealt": 696,
+            "received": 192,
+            "pick": 3,
+            "miss": 13
+          },
+          "Grenades": {
+            "accuracy": 0,
+            "kills": 0,
+            "deaths": 1,
+            "dealt": 0,
+            "received": 202,
+            "pick": 0,
+            "miss": 0
+          },
+          "Grenade Launcher": {
+            "accuracy": null,
+            "kills": null,
+            "deaths": 0,
+            "dealt": null,
+            "received": 201,
+            "pick": 1,
+            "miss": 9
+          },
+          "Rocket Launcher": {
+            "accuracy": 9,
+            "kills": 1,
+            "deaths": 2,
+            "dealt": 204,
+            "received": 452,
+            "pick": 4,
+            "miss": 21
+          },
+          "Railgun": {
+            "accuracy": 25,
+            "kills": 9,
+            "deaths": 7,
+            "dealt": 800,
+            "received": 1100,
+            "pick": 2,
+            "miss": 13
+          }
+        },
+        "team": "Home",
+        "ping": 24,
+        "player_id": "9",
+        "elo_type": "team",
+        "elo_before": 1452,
+        "elo_change": 6.9,
+        "elo_after": 1459
+      }
+    ],
+    "saved_at": "2026-09-21T23:16:52+02:00"
   }
 ]
