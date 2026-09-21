@@ -352,18 +352,6 @@
           "qualified": false
         },
         {
-          "player": "Player-345",
-          "matches": 36,
-          "kills": 233,
-          "deaths": 241,
-          "dealt": 44100,
-          "received": 38000,
-          "pick": 123,
-          "miss": 346,
-          "accuracy": 37.0,
-          "qualified": true
-        },
-        {
           "player": "tOk.P!o",
           "matches": 6,
           "kills": 45,
@@ -398,6 +386,18 @@
           "miss": 10,
           "accuracy": 37.0,
           "qualified": false
+        },
+        {
+          "player": "Player-345",
+          "matches": 37,
+          "kills": 238,
+          "deaths": 242,
+          "dealt": 45100,
+          "received": 38500,
+          "pick": 125,
+          "miss": 354,
+          "accuracy": 36.9,
+          "qualified": true
         },
         {
           "player": "Pacifist_(AVB)",
@@ -580,18 +580,6 @@
           "qualified": true
         },
         {
-          "player": "badman",
-          "matches": 54,
-          "kills": 501,
-          "deaths": 401,
-          "dealt": 71300,
-          "received": 62200,
-          "pick": 106,
-          "miss": 751,
-          "accuracy": 33.7,
-          "qualified": true
-        },
-        {
           "player": "fon",
           "matches": 43,
           "kills": 395,
@@ -625,6 +613,18 @@
           "pick": 38,
           "miss": 245,
           "accuracy": 33.6,
+          "qualified": true
+        },
+        {
+          "player": "badman",
+          "matches": 55,
+          "kills": 501,
+          "deaths": 404,
+          "dealt": 71600,
+          "received": 62800,
+          "pick": 110,
+          "miss": 757,
+          "accuracy": 33.5,
           "qualified": true
         },
         {
@@ -712,6 +712,18 @@
           "qualified": false
         },
         {
+          "player": "Keizer",
+          "matches": 54,
+          "kills": 340,
+          "deaths": 225,
+          "dealt": 59400,
+          "received": 46000,
+          "pick": 115,
+          "miss": 450,
+          "accuracy": 31.7,
+          "qualified": true
+        },
+        {
           "player": "Puma!",
           "matches": 24,
           "kills": 187,
@@ -721,18 +733,6 @@
           "pick": 97,
           "miss": 284,
           "accuracy": 31.5,
-          "qualified": true
-        },
-        {
-          "player": "Keizer",
-          "matches": 53,
-          "kills": 333,
-          "deaths": 225,
-          "dealt": 58200,
-          "received": 45700,
-          "pick": 115,
-          "miss": 440,
-          "accuracy": 31.4,
           "qualified": true
         },
         {
@@ -2074,18 +2074,6 @@
           "qualified": true
         },
         {
-          "player": "Player-345",
-          "matches": 36,
-          "kills": 71,
-          "deaths": 134,
-          "dealt": 18841,
-          "received": 28423,
-          "pick": 153,
-          "miss": 590,
-          "accuracy": 22.7,
-          "qualified": true
-        },
-        {
           "player": "norm",
           "matches": 3,
           "kills": 12,
@@ -2096,6 +2084,18 @@
           "miss": 43,
           "accuracy": 22.7,
           "qualified": false
+        },
+        {
+          "player": "Player-345",
+          "matches": 37,
+          "kills": 72,
+          "deaths": 137,
+          "dealt": 19150,
+          "received": 28951,
+          "pick": 156,
+          "miss": 603,
+          "accuracy": 22.5,
+          "qualified": true
         },
         {
           "player": "odi",
@@ -2386,18 +2386,6 @@
           "qualified": true
         },
         {
-          "player": "Keizer",
-          "matches": 53,
-          "kills": 133,
-          "deaths": 130,
-          "dealt": 28684,
-          "received": 34304,
-          "pick": 159,
-          "miss": 812,
-          "accuracy": 19.7,
-          "qualified": true
-        },
-        {
           "player": "lolercoaster",
           "matches": 8,
           "kills": 24,
@@ -2407,6 +2395,18 @@
           "pick": 31,
           "miss": 103,
           "accuracy": 19.6,
+          "qualified": true
+        },
+        {
+          "player": "Keizer",
+          "matches": 54,
+          "kills": 136,
+          "deaths": 131,
+          "dealt": 29282,
+          "received": 34659,
+          "pick": 162,
+          "miss": 825,
+          "accuracy": 19.5,
           "qualified": true
         },
         {
@@ -2639,13 +2639,13 @@
         },
         {
           "player": "badman",
-          "matches": 54,
-          "kills": 96,
-          "deaths": 166,
-          "dealt": 16824,
-          "received": 31562,
-          "pick": 171,
-          "miss": 1150,
+          "matches": 55,
+          "kills": 98,
+          "deaths": 167,
+          "dealt": 17235,
+          "received": 32013,
+          "pick": 176,
+          "miss": 1161,
           "accuracy": 17.3,
           "qualified": true
         },
@@ -3496,18 +3496,6 @@
           "qualified": false
         },
         {
-          "player": "badman",
-          "matches": 52,
-          "kills": 139,
-          "deaths": 125,
-          "dealt": 19992,
-          "received": 17574,
-          "pick": 122,
-          "miss": 666,
-          "accuracy": 14.8,
-          "qualified": true
-        },
-        {
           "player": "szef|shotman",
           "matches": 9,
           "kills": 7,
@@ -3518,6 +3506,18 @@
           "miss": 105,
           "accuracy": 14.8,
           "qualified": false
+        },
+        {
+          "player": "badman",
+          "matches": 53,
+          "kills": 142,
+          "deaths": 132,
+          "dealt": 20502,
+          "received": 18492,
+          "pick": 125,
+          "miss": 678,
+          "accuracy": 14.7,
+          "qualified": true
         },
         {
           "player": "prostitute",
@@ -3533,25 +3533,25 @@
         },
         {
           "player": "Keizer",
-          "matches": 53,
-          "kills": 212,
-          "deaths": 135,
-          "dealt": 33882,
-          "received": 24714,
-          "pick": 188,
-          "miss": 502,
+          "matches": 54,
+          "kills": 219,
+          "deaths": 136,
+          "dealt": 34416,
+          "received": 25020,
+          "pick": 190,
+          "miss": 515,
           "accuracy": 14.3,
           "qualified": true
         },
         {
           "player": "Player-345",
-          "matches": 36,
-          "kills": 130,
-          "deaths": 114,
-          "dealt": 20598,
-          "received": 16848,
-          "pick": 146,
-          "miss": 368,
+          "matches": 37,
+          "kills": 136,
+          "deaths": 116,
+          "dealt": 21654,
+          "received": 17262,
+          "pick": 154,
+          "miss": 375,
           "accuracy": 14.2,
           "qualified": true
         },
