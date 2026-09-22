@@ -40,14 +40,6 @@
     "winrate": 90.0
   },
   {
-    "player": "B100D",
-    "elo": 1598,
-    "matches": 27,
-    "wins": 20,
-    "losses": 7,
-    "winrate": 74.1
-  },
-  {
     "player": "tron",
     "elo": 1583,
     "matches": 8,
@@ -62,6 +54,14 @@
     "wins": 7,
     "losses": 0,
     "winrate": 100.0
+  },
+  {
+    "player": "B100D",
+    "elo": 1578,
+    "matches": 28,
+    "wins": 20,
+    "losses": 8,
+    "winrate": 71.4
   },
   {
     "player": "piu-need1",
@@ -192,6 +192,14 @@
     "winrate": 100.0
   },
   {
+    "player": "freeze",
+    "elo": 1526,
+    "matches": 6,
+    "wins": 3,
+    "losses": 3,
+    "winrate": 50.0
+  },
+  {
     "player": "roon",
     "elo": 1525,
     "matches": 8,
@@ -262,14 +270,6 @@
     "wins": 1,
     "losses": 0,
     "winrate": 100.0
-  },
-  {
-    "player": "freeze",
-    "elo": 1506,
-    "matches": 5,
-    "wins": 2,
-    "losses": 3,
-    "winrate": 40.0
   },
   {
     "player": "//VERSACE",
