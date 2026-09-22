@@ -904,6 +904,18 @@
           "qualified": false
         },
         {
+          "player": "B100D",
+          "matches": 54,
+          "kills": 200,
+          "deaths": 177,
+          "dealt": 41700,
+          "received": 31400,
+          "pick": 177,
+          "miss": 298,
+          "accuracy": 28.9,
+          "qualified": true
+        },
+        {
           "player": "=PFH=ZYGA",
           "matches": 3,
           "kills": 36,
@@ -913,18 +925,6 @@
           "pick": 10,
           "miss": 34,
           "accuracy": 28.7,
-          "qualified": true
-        },
-        {
-          "player": "B100D",
-          "matches": 53,
-          "kills": 199,
-          "deaths": 176,
-          "dealt": 41200,
-          "received": 31100,
-          "pick": 176,
-          "miss": 294,
-          "accuracy": 28.5,
           "qualified": true
         },
         {
@@ -1492,18 +1492,6 @@
           "qualified": false
         },
         {
-          "player": "freeze",
-          "matches": 4,
-          "kills": 5,
-          "deaths": 5,
-          "dealt": 1900,
-          "received": 2000,
-          "pick": 6,
-          "miss": 8,
-          "accuracy": 16.8,
-          "qualified": false
-        },
-        {
           "player": "zaLTys",
           "matches": 3,
           "kills": 6,
@@ -1513,6 +1501,18 @@
           "pick": 12,
           "miss": 27,
           "accuracy": 16.7,
+          "qualified": false
+        },
+        {
+          "player": "freeze",
+          "matches": 5,
+          "kills": 6,
+          "deaths": 6,
+          "dealt": 2200,
+          "received": 2500,
+          "pick": 10,
+          "miss": 9,
+          "accuracy": 15.8,
           "qualified": false
         },
         {
@@ -2387,14 +2387,14 @@
         },
         {
           "player": "B100D",
-          "matches": 53,
+          "matches": 54,
           "kills": 104,
           "deaths": 103,
-          "dealt": 27965,
-          "received": 32415,
-          "pick": 198,
-          "miss": 555,
-          "accuracy": 19.7,
+          "dealt": 28138,
+          "received": 32610,
+          "pick": 201,
+          "miss": 558,
+          "accuracy": 19.6,
           "qualified": true
         },
         {
@@ -2902,18 +2902,6 @@
           "qualified": true
         },
         {
-          "player": "freeze",
-          "matches": 4,
-          "kills": 1,
-          "deaths": 1,
-          "dealt": 748,
-          "received": 950,
-          "pick": 11,
-          "miss": 12,
-          "accuracy": 14.5,
-          "qualified": false
-        },
-        {
           "player": "Abyys",
           "matches": 5,
           "kills": 4,
@@ -2936,6 +2924,18 @@
           "miss": 91,
           "accuracy": 13.8,
           "qualified": true
+        },
+        {
+          "player": "freeze",
+          "matches": 5,
+          "kills": 1,
+          "deaths": 1,
+          "dealt": 943,
+          "received": 1192,
+          "pick": 14,
+          "miss": 15,
+          "accuracy": 13.8,
+          "qualified": false
         },
         {
           "player": "tOk.P!o",
@@ -3652,6 +3652,18 @@
           "qualified": true
         },
         {
+          "player": "freeze",
+          "matches": 5,
+          "kills": 4,
+          "deaths": 13,
+          "dealt": 1728,
+          "received": 2562,
+          "pick": 11,
+          "miss": 25,
+          "accuracy": 13.8,
+          "qualified": false
+        },
+        {
           "player": "roon",
           "matches": 17,
           "kills": 55,
@@ -4252,6 +4264,18 @@
           "qualified": false
         },
         {
+          "player": "B100D",
+          "matches": 54,
+          "kills": 187,
+          "deaths": 111,
+          "dealt": 27672,
+          "received": 21768,
+          "pick": 203,
+          "miss": 426,
+          "accuracy": 11.6,
+          "qualified": true
+        },
+        {
           "player": "[HC]Reni^",
           "matches": 14,
           "kills": 52,
@@ -4273,18 +4297,6 @@
           "pick": 49,
           "miss": 194,
           "accuracy": 11.6,
-          "qualified": true
-        },
-        {
-          "player": "B100D",
-          "matches": 53,
-          "kills": 182,
-          "deaths": 110,
-          "dealt": 26802,
-          "received": 21528,
-          "pick": 197,
-          "miss": 424,
-          "accuracy": 11.5,
           "qualified": true
         },
         {
@@ -4404,18 +4416,6 @@
           "received": 846,
           "pick": 4,
           "miss": 28,
-          "accuracy": 11.0,
-          "qualified": false
-        },
-        {
-          "player": "freeze",
-          "matches": 4,
-          "kills": 3,
-          "deaths": 8,
-          "dealt": 1488,
-          "received": 1692,
-          "pick": 9,
-          "miss": 19,
           "accuracy": 11.0,
           "qualified": false
         },
