@@ -49,11 +49,11 @@
   },
   {
     "player": "cne",
-    "elo": 1683,
-    "matches": 62,
+    "elo": 1688,
+    "matches": 63,
     "wins": 34,
-    "losses": 28,
-    "winrate": 54.8
+    "losses": 29,
+    "winrate": 54.0
   },
   {
     "player": "GipSy",
@@ -78,6 +78,14 @@
     "wins": 24,
     "losses": 29,
     "winrate": 45.3
+  },
+  {
+    "player": "n0sferatu",
+    "elo": 1605,
+    "matches": 26,
+    "wins": 15,
+    "losses": 11,
+    "winrate": 57.7
   },
   {
     "player": ">daPurrI",
@@ -110,14 +118,6 @@
     "wins": 17,
     "losses": 18,
     "winrate": 48.6
-  },
-  {
-    "player": "n0sferatu",
-    "elo": 1589,
-    "matches": 25,
-    "wins": 14,
-    "losses": 11,
-    "winrate": 56.0
   },
   {
     "player": ">daweed",
@@ -232,6 +232,14 @@
     "winrate": 51.2
   },
   {
+    "player": "michaq",
+    "elo": 1535,
+    "matches": 15,
+    "wins": 7,
+    "losses": 8,
+    "winrate": 46.7
+  },
+  {
     "player": "frankie",
     "elo": 1533,
     "matches": 4,
@@ -254,14 +262,6 @@
     "wins": 2,
     "losses": 0,
     "winrate": 100.0
-  },
-  {
-    "player": "michaq",
-    "elo": 1530,
-    "matches": 14,
-    "wins": 6,
-    "losses": 8,
-    "winrate": 42.9
   },
   {
     "player": "lamerinon",
@@ -290,8 +290,8 @@
   {
     "player": "prostitute",
     "elo": 1521,
-    "matches": 2,
-    "wins": 2,
+    "matches": 3,
+    "wins": 3,
     "losses": 0,
     "winrate": 100.0
   },
@@ -976,20 +976,20 @@
     "winrate": 21.4
   },
   {
-    "player": "Maniek",
-    "elo": 1323,
-    "matches": 67,
-    "wins": 29,
-    "losses": 38,
-    "winrate": 43.3
-  },
-  {
     "player": "VITALIS",
     "elo": 1321,
     "matches": 59,
     "wins": 24,
     "losses": 35,
     "winrate": 40.7
+  },
+  {
+    "player": "Maniek",
+    "elo": 1320,
+    "matches": 68,
+    "wins": 29,
+    "losses": 39,
+    "winrate": 42.6
   },
   {
     "player": "mAc",
@@ -1009,10 +1009,10 @@
   },
   {
     "player": "jabb@",
-    "elo": 1237,
-    "matches": 110,
+    "elo": 1221,
+    "matches": 111,
     "wins": 50,
-    "losses": 60,
-    "winrate": 45.5
+    "losses": 61,
+    "winrate": 45.0
   }
 ]
