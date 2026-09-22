@@ -904,18 +904,6 @@
           "qualified": false
         },
         {
-          "player": "B100D",
-          "matches": 49,
-          "kills": 194,
-          "deaths": 171,
-          "dealt": 39200,
-          "received": 29200,
-          "pick": 168,
-          "miss": 288,
-          "accuracy": 28.7,
-          "qualified": true
-        },
-        {
           "player": "=PFH=ZYGA",
           "matches": 3,
           "kills": 36,
@@ -925,6 +913,18 @@
           "pick": 10,
           "miss": 34,
           "accuracy": 28.7,
+          "qualified": true
+        },
+        {
+          "player": "B100D",
+          "matches": 50,
+          "kills": 196,
+          "deaths": 171,
+          "dealt": 39800,
+          "received": 29200,
+          "pick": 170,
+          "miss": 289,
+          "accuracy": 28.5,
           "qualified": true
         },
         {
@@ -1562,6 +1562,18 @@
           "miss": 16,
           "accuracy": 0.0,
           "qualified": false
+        },
+        {
+          "player": "freeze",
+          "matches": 1,
+          "kills": 0,
+          "deaths": 2,
+          "dealt": 0,
+          "received": 600,
+          "pick": 1,
+          "miss": 2,
+          "accuracy": 0.0,
+          "qualified": false
         }
       ]
     },
@@ -1890,6 +1902,18 @@
           "received": 3564,
           "pick": 20,
           "miss": 63,
+          "accuracy": 25.0,
+          "qualified": false
+        },
+        {
+          "player": "freeze",
+          "matches": 1,
+          "kills": 0,
+          "deaths": 0,
+          "dealt": 220,
+          "received": 212,
+          "pick": 3,
+          "miss": 3,
           "accuracy": 25.0,
           "qualified": false
         },
@@ -2278,18 +2302,6 @@
           "qualified": true
         },
         {
-          "player": "B100D",
-          "matches": 49,
-          "kills": 103,
-          "deaths": 102,
-          "dealt": 27233,
-          "received": 31581,
-          "pick": 186,
-          "miss": 544,
-          "accuracy": 20.6,
-          "qualified": true
-        },
-        {
           "player": ">purri",
           "matches": 8,
           "kills": 24,
@@ -2312,6 +2324,18 @@
           "miss": 19,
           "accuracy": 20.5,
           "qualified": false
+        },
+        {
+          "player": "B100D",
+          "matches": 50,
+          "kills": 103,
+          "deaths": 102,
+          "dealt": 27410,
+          "received": 31801,
+          "pick": 189,
+          "miss": 547,
+          "accuracy": 20.3,
+          "qualified": true
         },
         {
           "player": "senz",
@@ -3616,6 +3640,18 @@
           "qualified": false
         },
         {
+          "player": "freeze",
+          "matches": 1,
+          "kills": 0,
+          "deaths": 2,
+          "dealt": 642,
+          "received": 270,
+          "pick": 3,
+          "miss": 4,
+          "accuracy": 14.0,
+          "qualified": false
+        },
+        {
           "player": "warrior",
           "matches": 33,
           "kills": 76,
@@ -4253,13 +4289,13 @@
         },
         {
           "player": "B100D",
-          "matches": 49,
-          "kills": 174,
+          "matches": 50,
+          "kills": 176,
           "deaths": 107,
-          "dealt": 25110,
-          "received": 20040,
-          "pick": 178,
-          "miss": 415,
+          "dealt": 25380,
+          "received": 20682,
+          "pick": 182,
+          "miss": 418,
           "accuracy": 11.4,
           "qualified": true
         },
