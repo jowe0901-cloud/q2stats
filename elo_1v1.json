@@ -32,20 +32,20 @@
     "winrate": 88.2
   },
   {
-    "player": "B100D",
-    "elo": 1606,
-    "matches": 25,
-    "wins": 19,
-    "losses": 6,
-    "winrate": 76.0
-  },
-  {
     "player": "Keizer",
     "elo": 1601,
     "matches": 10,
     "wins": 9,
     "losses": 1,
     "winrate": 90.0
+  },
+  {
+    "player": "B100D",
+    "elo": 1586,
+    "matches": 26,
+    "wins": 19,
+    "losses": 7,
+    "winrate": 73.1
   },
   {
     "player": "tron",
@@ -224,6 +224,14 @@
     "winrate": 44.4
   },
   {
+    "player": "freeze",
+    "elo": 1519,
+    "matches": 4,
+    "wins": 2,
+    "losses": 2,
+    "winrate": 50.0
+  },
+  {
     "player": "fonbeers",
     "elo": 1516,
     "matches": 1,
@@ -278,14 +286,6 @@
     "wins": 1,
     "losses": 1,
     "winrate": 50.0
-  },
-  {
-    "player": "freeze",
-    "elo": 1498,
-    "matches": 3,
-    "wins": 1,
-    "losses": 2,
-    "winrate": 33.3
   },
   {
     "player": "mAc",
