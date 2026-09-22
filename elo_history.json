@@ -24146,5 +24146,50 @@
       }
     ],
     "saved_at": "2026-09-22T18:58:45+02:00"
+  },
+  {
+    "match_id": "b9f1c9a6628ecc3b",
+    "game_type": "team",
+    "winner": "Home",
+    "home_score": 74,
+    "away_score": 16,
+    "players": [
+      {
+        "player": "n0sferatu",
+        "team": "Home",
+        "old_elo": 1617,
+        "change": 10.5,
+        "new_elo": 1627
+      },
+      {
+        "player": "maq",
+        "team": "Home",
+        "old_elo": 1901,
+        "change": 10.4,
+        "new_elo": 1911
+      },
+      {
+        "player": "michaq",
+        "team": "Away",
+        "old_elo": 1532,
+        "change": -16.0,
+        "new_elo": 1516
+      },
+      {
+        "player": "prostitute",
+        "team": "Away",
+        "old_elo": 1521,
+        "change": -1.5,
+        "new_elo": 1520
+      },
+      {
+        "player": "Maniek",
+        "team": "Away",
+        "old_elo": 1304,
+        "change": -8.3,
+        "new_elo": 1296
+      }
+    ],
+    "saved_at": "2026-09-22T19:12:27+02:00"
   }
 ]
