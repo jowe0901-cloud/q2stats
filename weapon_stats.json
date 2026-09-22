@@ -39,14 +39,14 @@
         },
         {
           "player": "maq",
-          "matches": 28,
-          "kills": 310,
+          "matches": 29,
+          "kills": 316,
           "deaths": 146,
-          "dealt": 48900,
-          "received": 25000,
-          "pick": 89,
-          "miss": 330,
-          "accuracy": 43.7,
+          "dealt": 50100,
+          "received": 25600,
+          "pick": 94,
+          "miss": 338,
+          "accuracy": 43.5,
           "qualified": true
         },
         {
@@ -137,14 +137,14 @@
         },
         {
           "player": "maq",
-          "matches": 28,
-          "kills": 310,
+          "matches": 29,
+          "kills": 316,
           "deaths": 146,
-          "dealt": 48900,
-          "received": 25000,
-          "pick": 89,
-          "miss": 330,
-          "accuracy": 43.7,
+          "dealt": 50100,
+          "received": 25600,
+          "pick": 94,
+          "miss": 338,
+          "accuracy": 43.5,
           "qualified": true
         },
         {
@@ -1180,18 +1180,6 @@
           "qualified": true
         },
         {
-          "player": "freeze",
-          "matches": 8,
-          "kills": 15,
-          "deaths": 15,
-          "dealt": 3900,
-          "received": 5500,
-          "pick": 18,
-          "miss": 23,
-          "accuracy": 25.1,
-          "qualified": false
-        },
-        {
           "player": "ath|michaq",
           "matches": 1,
           "kills": 12,
@@ -1226,6 +1214,18 @@
           "miss": 455,
           "accuracy": 24.5,
           "qualified": true
+        },
+        {
+          "player": "freeze",
+          "matches": 9,
+          "kills": 15,
+          "deaths": 21,
+          "dealt": 4500,
+          "received": 6700,
+          "pick": 26,
+          "miss": 28,
+          "accuracy": 24.2,
+          "qualified": false
         },
         {
           "player": "aid",
@@ -2122,6 +2122,18 @@
           "qualified": true
         },
         {
+          "player": "maq",
+          "matches": 29,
+          "kills": 89,
+          "deaths": 65,
+          "dealt": 18112,
+          "received": 17120,
+          "pick": 94,
+          "miss": 563,
+          "accuracy": 22.3,
+          "qualified": true
+        },
+        {
           "player": "[sf]fasadin",
           "matches": 6,
           "kills": 21,
@@ -2155,18 +2167,6 @@
           "pick": 160,
           "miss": 616,
           "accuracy": 22.2,
-          "qualified": true
-        },
-        {
-          "player": "maq",
-          "matches": 28,
-          "kills": 80,
-          "deaths": 65,
-          "dealt": 15445,
-          "received": 16686,
-          "pick": 84,
-          "miss": 557,
-          "accuracy": 22.1,
           "qualified": true
         },
         {
@@ -2890,18 +2890,6 @@
           "qualified": false
         },
         {
-          "player": "freeze",
-          "matches": 8,
-          "kills": 5,
-          "deaths": 12,
-          "dealt": 2005,
-          "received": 4241,
-          "pick": 24,
-          "miss": 33,
-          "accuracy": 15.2,
-          "qualified": false
-        },
-        {
           "player": "piu-laging",
           "matches": 7,
           "kills": 23,
@@ -2912,6 +2900,18 @@
           "miss": 41,
           "accuracy": 15.1,
           "qualified": true
+        },
+        {
+          "player": "freeze",
+          "matches": 9,
+          "kills": 5,
+          "deaths": 21,
+          "dealt": 2294,
+          "received": 6942,
+          "pick": 30,
+          "miss": 43,
+          "accuracy": 14.8,
+          "qualified": false
         },
         {
           "player": "Abyys",
@@ -3473,13 +3473,13 @@
         },
         {
           "player": "maq",
-          "matches": 27,
-          "kills": 85,
-          "deaths": 71,
-          "dealt": 11670,
-          "received": 13218,
-          "pick": 68,
-          "miss": 358,
+          "matches": 28,
+          "kills": 89,
+          "deaths": 74,
+          "dealt": 12132,
+          "received": 14172,
+          "pick": 73,
+          "miss": 367,
           "accuracy": 15.0,
           "qualified": true
         },
@@ -3640,6 +3640,18 @@
           "qualified": false
         },
         {
+          "player": "freeze",
+          "matches": 9,
+          "kills": 15,
+          "deaths": 22,
+          "dealt": 5052,
+          "received": 3960,
+          "pick": 35,
+          "miss": 45,
+          "accuracy": 13.9,
+          "qualified": false
+        },
+        {
           "player": "warrior",
           "matches": 33,
           "kills": 76,
@@ -3746,18 +3758,6 @@
           "miss": 187,
           "accuracy": 13.4,
           "qualified": true
-        },
-        {
-          "player": "freeze",
-          "matches": 8,
-          "kills": 12,
-          "deaths": 18,
-          "dealt": 4098,
-          "received": 3498,
-          "pick": 26,
-          "miss": 40,
-          "accuracy": 13.4,
-          "qualified": false
         },
         {
           "player": "nem",

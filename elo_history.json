@@ -23898,5 +23898,29 @@
       }
     ],
     "saved_at": "2026-09-22T17:26:23+02:00"
+  },
+  {
+    "match_id": "cc984faacd19f211",
+    "game_type": "1v1",
+    "winner": "Home",
+    "home_score": 20,
+    "away_score": 6,
+    "players": [
+      {
+        "player": "maq",
+        "team": "Home",
+        "old_elo": 1504,
+        "change": 16.9,
+        "new_elo": 1521
+      },
+      {
+        "player": "freeze",
+        "team": "Away",
+        "old_elo": 1522,
+        "change": -16.9,
+        "new_elo": 1505
+      }
+    ],
+    "saved_at": "2026-09-22T17:37:00+02:00"
   }
 ]
