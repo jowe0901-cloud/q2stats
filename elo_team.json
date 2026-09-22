@@ -73,11 +73,11 @@
   },
   {
     "player": "n0sferatu",
-    "elo": 1659,
-    "matches": 30,
+    "elo": 1650,
+    "matches": 31,
     "wins": 19,
-    "losses": 11,
-    "winrate": 63.3
+    "losses": 12,
+    "winrate": 61.3
   },
   {
     "player": "rul",
@@ -86,6 +86,14 @@
     "wins": 24,
     "losses": 29,
     "winrate": 45.3
+  },
+  {
+    "player": "roon",
+    "elo": 1607,
+    "matches": 13,
+    "wins": 8,
+    "losses": 5,
+    "winrate": 61.5
   },
   {
     "player": ">daPurrI",
@@ -101,14 +109,6 @@
     "matches": 36,
     "wins": 21,
     "losses": 15,
-    "winrate": 58.3
-  },
-  {
-    "player": "roon",
-    "elo": 1597,
-    "matches": 12,
-    "wins": 7,
-    "losses": 5,
     "winrate": 58.3
   },
   {
@@ -376,6 +376,14 @@
     "winrate": 40.0
   },
   {
+    "player": "prostitute",
+    "elo": 1509,
+    "matches": 8,
+    "wins": 5,
+    "losses": 3,
+    "winrate": 62.5
+  },
+  {
     "player": "michaq",
     "elo": 1508,
     "matches": 18,
@@ -614,14 +622,6 @@
     "wins": 1,
     "losses": 2,
     "winrate": 33.3
-  },
-  {
-    "player": "prostitute",
-    "elo": 1493,
-    "matches": 7,
-    "wins": 4,
-    "losses": 3,
-    "winrate": 57.1
   },
   {
     "player": "odi",
@@ -912,14 +912,6 @@
     "winrate": 38.5
   },
   {
-    "player": "Qiub",
-    "elo": 1432,
-    "matches": 11,
-    "wins": 3,
-    "losses": 8,
-    "winrate": 27.3
-  },
-  {
     "player": "senz",
     "elo": 1429,
     "matches": 22,
@@ -934,6 +926,14 @@
     "wins": 4,
     "losses": 7,
     "winrate": 36.4
+  },
+  {
+    "player": "Qiub",
+    "elo": 1416,
+    "matches": 12,
+    "wins": 3,
+    "losses": 9,
+    "winrate": 25.0
   },
   {
     "player": "damz.",
