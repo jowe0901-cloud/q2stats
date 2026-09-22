@@ -917,13 +917,13 @@
         },
         {
           "player": "B100D",
-          "matches": 50,
-          "kills": 196,
-          "deaths": 171,
-          "dealt": 39800,
-          "received": 29200,
-          "pick": 170,
-          "miss": 289,
+          "matches": 51,
+          "kills": 197,
+          "deaths": 173,
+          "dealt": 40200,
+          "received": 29900,
+          "pick": 172,
+          "miss": 291,
           "accuracy": 28.5,
           "qualified": true
         },
@@ -1528,6 +1528,18 @@
           "qualified": false
         },
         {
+          "player": "freeze",
+          "matches": 2,
+          "kills": 2,
+          "deaths": 3,
+          "dealt": 700,
+          "received": 1000,
+          "pick": 3,
+          "miss": 4,
+          "accuracy": 12.5,
+          "qualified": false
+        },
+        {
           "player": "rawhide",
           "matches": 1,
           "kills": 0,
@@ -1560,18 +1572,6 @@
           "received": 1300,
           "pick": 1,
           "miss": 16,
-          "accuracy": 0.0,
-          "qualified": false
-        },
-        {
-          "player": "freeze",
-          "matches": 1,
-          "kills": 0,
-          "deaths": 2,
-          "dealt": 0,
-          "received": 600,
-          "pick": 1,
-          "miss": 2,
           "accuracy": 0.0,
           "qualified": false
         }
@@ -1902,18 +1902,6 @@
           "received": 3564,
           "pick": 20,
           "miss": 63,
-          "accuracy": 25.0,
-          "qualified": false
-        },
-        {
-          "player": "freeze",
-          "matches": 1,
-          "kills": 0,
-          "deaths": 0,
-          "dealt": 220,
-          "received": 212,
-          "pick": 3,
-          "miss": 3,
           "accuracy": 25.0,
           "qualified": false
         },
@@ -2327,13 +2315,13 @@
         },
         {
           "player": "B100D",
-          "matches": 50,
+          "matches": 51,
           "kills": 103,
           "deaths": 102,
-          "dealt": 27410,
-          "received": 31801,
-          "pick": 189,
-          "miss": 547,
+          "dealt": 27708,
+          "received": 31837,
+          "pick": 191,
+          "miss": 549,
           "accuracy": 20.3,
           "qualified": true
         },
@@ -3022,6 +3010,18 @@
           "qualified": false
         },
         {
+          "player": "freeze",
+          "matches": 2,
+          "kills": 0,
+          "deaths": 0,
+          "dealt": 220,
+          "received": 558,
+          "pick": 5,
+          "miss": 5,
+          "accuracy": 12.5,
+          "qualified": false
+        },
+        {
           "player": "szef|shotman",
           "matches": 9,
           "kills": 16,
@@ -3640,18 +3640,6 @@
           "qualified": false
         },
         {
-          "player": "freeze",
-          "matches": 1,
-          "kills": 0,
-          "deaths": 2,
-          "dealt": 642,
-          "received": 270,
-          "pick": 3,
-          "miss": 4,
-          "accuracy": 14.0,
-          "qualified": false
-        },
-        {
           "player": "warrior",
           "matches": 33,
           "kills": 76,
@@ -4060,6 +4048,18 @@
           "qualified": false
         },
         {
+          "player": "freeze",
+          "matches": 2,
+          "kills": 1,
+          "deaths": 2,
+          "dealt": 876,
+          "received": 852,
+          "pick": 5,
+          "miss": 9,
+          "accuracy": 12.5,
+          "qualified": false
+        },
+        {
           "player": "qw",
           "matches": 78,
           "kills": 153,
@@ -4289,13 +4289,13 @@
         },
         {
           "player": "B100D",
-          "matches": 50,
+          "matches": 51,
           "kills": 176,
-          "deaths": 107,
-          "dealt": 25380,
-          "received": 20682,
-          "pick": 182,
-          "miss": 418,
+          "deaths": 108,
+          "dealt": 25962,
+          "received": 20916,
+          "pick": 187,
+          "miss": 420,
           "accuracy": 11.4,
           "qualified": true
         },
