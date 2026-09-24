@@ -17,11 +17,11 @@
   },
   {
     "player": "qw",
-    "elo": 1773,
-    "matches": 119,
+    "elo": 1757,
+    "matches": 120,
     "wins": 61,
-    "losses": 58,
-    "winrate": 51.3
+    "losses": 59,
+    "winrate": 50.8
   },
   {
     "player": "cne",
@@ -48,20 +48,20 @@
     "winrate": 57.7
   },
   {
+    "player": "rul",
+    "elo": 1699,
+    "matches": 65,
+    "wins": 34,
+    "losses": 31,
+    "winrate": 52.3
+  },
+  {
     "player": "fon",
     "elo": 1696,
     "matches": 52,
     "wins": 32,
     "losses": 20,
     "winrate": 61.5
-  },
-  {
-    "player": "rul",
-    "elo": 1684,
-    "matches": 64,
-    "wins": 33,
-    "losses": 31,
-    "winrate": 51.6
   },
   {
     "player": "myrmidon^",
@@ -120,6 +120,14 @@
     "winrate": 85.7
   },
   {
+    "player": "faint",
+    "elo": 1592,
+    "matches": 13,
+    "wins": 8,
+    "losses": 5,
+    "winrate": 61.5
+  },
+  {
     "player": "CoLD",
     "elo": 1585,
     "matches": 37,
@@ -134,14 +142,6 @@
     "wins": 7,
     "losses": 1,
     "winrate": 87.5
-  },
-  {
-    "player": "faint",
-    "elo": 1576,
-    "matches": 12,
-    "wins": 7,
-    "losses": 5,
-    "winrate": 58.3
   },
   {
     "player": ">OPTIMIZER",
@@ -288,14 +288,6 @@
     "winrate": 66.7
   },
   {
-    "player": "Player-345",
-    "elo": 1523,
-    "matches": 42,
-    "wins": 21,
-    "losses": 21,
-    "winrate": 50.0
-  },
-  {
     "player": "KaPo",
     "elo": 1520,
     "matches": 8,
@@ -382,6 +374,14 @@
     "wins": 1,
     "losses": 0,
     "winrate": 100.0
+  },
+  {
+    "player": "Player-345",
+    "elo": 1511,
+    "matches": 43,
+    "wins": 21,
+    "losses": 22,
+    "winrate": 48.8
   },
   {
     "player": "kreg",
