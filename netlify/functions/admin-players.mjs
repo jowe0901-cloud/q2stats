@@ -50,8 +50,8 @@ export default async (req) => {
         SELECT
           mp.name,
           COUNT(*)::int AS matches,
-          COUNT(DISTINCT mp.player_id)::int
-            FILTER (WHERE mp.player_id IS NOT NULL) AS player_id_count,
+          COUNT(DISTINCT mp.player_id)
+            FILTER (WHERE mp.player_id IS NOT NULL)::int AS player_id_count,
           MIN(mp.player_id) FILTER (WHERE mp.player_id IS NOT NULL) AS player_id,
           MIN(mp.profile_id) FILTER (WHERE mp.profile_id IS NOT NULL) AS profile_id
         FROM match_players mp
