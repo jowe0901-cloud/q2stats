@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Player Admin · Q2Stats Beta</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .admin-login,.admin-toolbar{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+    .admin-input{background:#0c1016;color:var(--text);border:1px solid var(--line);border-radius:10px;padding:11px 12px;font:inherit}
+    .admin-input:focus{outline:none;border-color:#596678}
+    .admin-search{min-width:min(420px,100%);flex:1}
+    .admin-btn{background:#161d27;color:var(--text);border:1px solid #3a4656;border-radius:10px;padding:10px 14px;font-weight:800;cursor:pointer}
+    .admin-btn:hover{border-color:#596678}.admin-btn.primary{background:var(--accent);border-color:var(--accent);color:white}
+    .admin-btn:disabled{opacity:.45;cursor:not-allowed}
+    .admin-note{color:var(--muted);font-size:12px;line-height:1.5}
+    .admin-status{margin-top:12px;padding:10px 12px;border:1px solid var(--line);border-radius:10px;color:var(--muted);font-size:12px}
+    .admin-status.good{color:var(--good)}.admin-status.bad{color:var(--bad)}
+    .admin-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:18px}
+    .admin-list{max-height:620px;overflow:auto;border:1px solid var(--line);border-radius:12px}
+    .admin-player{display:grid;grid-template-columns:auto 1fr auto;gap:10px;align-items:center;padding:10px 12px;border-bottom:1px solid #1d2430}
+    .admin-player:last-child{border-bottom:0}.admin-player:hover{background:#161d27}
+    .admin-player small{display:block;color:var(--muted);margin-top:3px}
+    .admin-player.assigned{opacity:.5}.admin-player input{width:16px;height:16px}
+    .selection{display:grid;gap:8px;margin:12px 0}
+    .selection-row{display:flex;justify-content:space-between;gap:10px;align-items:center;background:#0d1117;border:1px solid #1d2530;border-radius:10px;padding:10px}
+    .selection-row label{display:flex;gap:8px;align-items:center;font-weight:800}
+    .profile-row{padding:10px 0;border-bottom:1px solid #1d2430}.profile-row:last-child{border-bottom:0}
+    .profile-row strong{display:block}.profile-row small{color:var(--muted)}
+    @media(max-width:850px){.admin-grid{grid-template-columns:1fr}.admin-list{max-height:460px}}
+  </style>
+</head>
+<body>
+<header class="topbar">
+  <a class="brand no-underline" href="index.html"><span>Q2</span>STATS <small>BETA</small></a>
+  <nav><a href="index.html">Overview</a><a class="active" href="#">Admin</a></nav>
+</header>
+
+<main class="wrap">
+  <section class="archive-head">
+    <div>
+      <div class="eyebrow">PRIVATE ADMIN</div>
+      <h1>Player identities</h1>
+      <p>Merge historical nicknames into one public profile without rewriting match history.</p>
+    </div>
+  </section>
+
+  <section class="panel" id="loginPanel">
+    <div class="panel-head"><div><span class="eyebrow">ACCESS</span><h2>Admin key</h2></div></div>
+    <div class="admin-login">
+      <input class="admin-input admin-search" id="adminKey" type="password" autocomplete="off" placeholder="Q2STATS_ADMIN_KEY">
+      <button class="admin-btn primary" id="connectBtn">Connect</button>
+    </div>
+    <p class="admin-note">The key is kept only in this browser tab and is never written into this page.</p>
+    <div class="admin-status" id="status">Not connected.</div>
+  </section>
+
+  <section class="admin-grid" id="adminArea" hidden>
+    <article class="panel">
+      <div class="panel-head"><div><span class="eyebrow">NICKNAMES</span><h2>Existing players</h2></div></div>
+      <div class="admin-toolbar">
+        <input class="admin-input admin-search" id="search" placeholder="Search nickname…">
+        <button class="admin-btn" id="clearBtn">Clear selection</button>
+      </div>
+      <p class="admin-note">Select only nicknames you know belong to the same real player. Existing profile assignments are disabled.</p>
+      <div class="admin-list" id="playerList"></div>
+    </article>
+
+    <div>
+      <article class="panel">
+        <div class="panel-head"><div><span class="eyebrow">NEW PROFILE</span><h2>Merge selection</h2></div></div>
+        <div id="selection" class="selection"><div class="empty">No nicknames selected.</div></div>
+        <p class="admin-note">Choose one selected nickname as the public main nickname. Historical matches keep the nickname used in that match. Elo is not recalculated by this action.</p>
+        <button class="admin-btn primary" id="createBtn" disabled>Create profile</button>
+      </article>
+
+      <article class="panel">
+        <div class="panel-head"><div><span class="eyebrow">PROFILES</span><h2>Existing profiles</h2></div></div>
+        <div id="profiles"><div class="empty">No profiles yet.</div></div>
+      </article>
+    </div>
+  </section>
+</main>
+
+<footer>Q2Stats Beta · Admin</footer>
+
+<script>
+const API="/api/admin/players";
+let adminKey="", data={profiles:[],players:[]}, selected=new Set(), primary="";
+
+const esc=s=>String(s??"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[m]));
+const statusEl=document.getElementById("status");
+function setStatus(msg,type=""){statusEl.textContent=msg;statusEl.className="admin-status "+type}
+
+async function api(method="GET",body){
+  const r=await fetch(API,{
+    method,
+    cache:"no-store",
+    headers:{
+      "x-q2stats-admin-key":adminKey,
+      ...(body?{"content-type":"application/json"}:{})
+    },
+    body:body?JSON.stringify(body):undefined
+  });
+  let out={};
+  try{out=await r.json()}catch{}
+  if(!r.ok)throw new Error(out.error||`HTTP ${r.status}`);
+  return out;
+}
+
+async function load(){
+  data=await api();
+  document.getElementById("adminArea").hidden=false;
+  setStatus(`Connected · ${data.players.length} nicknames · ${data.profiles.length} profiles`,"good");
+  renderPlayers();renderSelection();renderProfiles();
+}
+
+function renderPlayers(){
+  const q=document.getElementById("search").value.trim().toLowerCase();
+  const rows=(data.players||[]).filter(p=>!q||String(p.name).toLowerCase().includes(q));
+  document.getElementById("playerList").innerHTML=rows.length?rows.map(p=>{
+    const assigned=p.profile_id!=null;
+    const checked=selected.has(p.name);
+    const idHint=p.player_id_count?` · agent ID available`:"";
+    return `<label class="admin-player ${assigned?"assigned":""}">
+      <input type="checkbox" data-name="${esc(p.name)}" ${checked?"checked":""} ${assigned?"disabled":""}>
+      <span><strong>${esc(p.name)}</strong><small>${p.matches} matches${idHint}${assigned?` · profile ${esc(p.profile_id)}`:""}</small></span>
+      <span class="pill">${assigned?"Assigned":"Free"}</span>
+    </label>`;
+  }).join(""):'<div class="empty">No matching nicknames.</div>';
+
+  document.querySelectorAll("#playerList input[type=checkbox]").forEach(cb=>{
+    cb.onchange=()=>{
+      const n=cb.dataset.name;
+      if(cb.checked){selected.add(n);if(!primary)primary=n}
+      else{selected.delete(n);if(primary===n)primary=[...selected][0]||""}
+      renderSelection();renderPlayers();
+    };
+  });
+}
+
+function renderSelection(){
+  const el=document.getElementById("selection"), names=[...selected];
+  if(!names.length){
+    el.innerHTML='<div class="empty">No nicknames selected.</div>';
+    document.getElementById("createBtn").disabled=true;
+    return;
+  }
+  if(!selected.has(primary))primary=names[0];
+  el.innerHTML=names.map(n=>`<div class="selection-row">
+    <label><input type="radio" name="primary" value="${esc(n)}" ${n===primary?"checked":""}> ${esc(n)}</label>
+    <span class="pill">${n===primary?"MAIN":"ALIAS"}</span>
+  </div>`).join("");
+  el.querySelectorAll('input[name="primary"]').forEach(r=>r.onchange=()=>{primary=r.value;renderSelection()});
+  document.getElementById("createBtn").disabled=false;
+}
+
+function renderProfiles(){
+  const ps=data.profiles||[];
+  document.getElementById("profiles").innerHTML=ps.length?ps.map(p=>`<div class="profile-row">
+    <strong>${esc(p.primary_name)}</strong>
+    <small>Profile ${esc(p.id)} · ${(p.aliases||[]).map(esc).join(", ")||"No aliases"}</small>
+  </div>`).join(""):'<div class="empty">No profiles yet.</div>';
+}
+
+document.getElementById("connectBtn").onclick=async()=>{
+  adminKey=document.getElementById("adminKey").value;
+  if(!adminKey){setStatus("Enter the admin key.","bad");return}
+  setStatus("Connecting…");
+  try{await load();document.getElementById("adminKey").value=""}
+  catch(e){adminKey="";document.getElementById("adminArea").hidden=true;setStatus(e.message,"bad")}
+};
+
+document.getElementById("search").oninput=renderPlayers;
+document.getElementById("clearBtn").onclick=()=>{selected.clear();primary="";renderPlayers();renderSelection()};
+
+document.getElementById("createBtn").onclick=async()=>{
+  const aliases=[...selected];
+  if(!primary||!aliases.length)return;
+  const msg=`Create profile "${primary}" and link these nicknames?\n\n${aliases.join("\n")}\n\nThis changes profile links in production. Elo will NOT be recalculated yet.`;
+  if(!confirm(msg))return;
+  document.getElementById("createBtn").disabled=true;
+  setStatus("Creating profile…");
+  try{
+    const createdName=primary;
+    await api("POST",{primary_name:primary,aliases});
+    selected.clear();primary="";
+    await load();
+    setStatus(`Profile "${createdName}" created. Elo has not been recalculated.`,"good");
+  }catch(e){
+    setStatus(e.message,"bad");
+    document.getElementById("createBtn").disabled=false;
+  }
+};
+</script>
+</body>
+</html>
