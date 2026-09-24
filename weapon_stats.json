@@ -257,14 +257,14 @@
         },
         {
           "player": "rul",
-          "matches": 41,
-          "kills": 346,
-          "deaths": 246,
-          "dealt": 58900,
-          "received": 38700,
-          "pick": 89,
-          "miss": 520,
-          "accuracy": 39.7,
+          "matches": 42,
+          "kills": 359,
+          "deaths": 256,
+          "dealt": 61400,
+          "received": 40200,
+          "pick": 90,
+          "miss": 533,
+          "accuracy": 39.8,
           "qualified": true
         },
         {
@@ -568,18 +568,6 @@
           "qualified": false
         },
         {
-          "player": "qw",
-          "matches": 85,
-          "kills": 598,
-          "deaths": 443,
-          "dealt": 95400,
-          "received": 73100,
-          "pick": 149,
-          "miss": 1046,
-          "accuracy": 33.8,
-          "qualified": true
-        },
-        {
           "player": "a",
           "matches": 9,
           "kills": 45,
@@ -589,6 +577,18 @@
           "pick": 52,
           "miss": 68,
           "accuracy": 33.8,
+          "qualified": true
+        },
+        {
+          "player": "qw",
+          "matches": 86,
+          "kills": 602,
+          "deaths": 447,
+          "dealt": 96200,
+          "received": 73800,
+          "pick": 153,
+          "miss": 1056,
+          "accuracy": 33.6,
           "qualified": true
         },
         {
@@ -653,14 +653,26 @@
         },
         {
           "player": "faint",
-          "matches": 8,
-          "kills": 36,
-          "deaths": 33,
-          "dealt": 5700,
-          "received": 5500,
-          "pick": 8,
-          "miss": 92,
-          "accuracy": 33.1,
+          "matches": 9,
+          "kills": 44,
+          "deaths": 34,
+          "dealt": 7000,
+          "received": 6200,
+          "pick": 9,
+          "miss": 105,
+          "accuracy": 33.0,
+          "qualified": true
+        },
+        {
+          "player": "prostitute",
+          "matches": 9,
+          "kills": 43,
+          "deaths": 73,
+          "dealt": 6100,
+          "received": 9500,
+          "pick": 13,
+          "miss": 144,
+          "accuracy": 32.9,
           "qualified": true
         },
         {
@@ -745,18 +757,6 @@
           "pick": 81,
           "miss": 386,
           "accuracy": 31.9,
-          "qualified": true
-        },
-        {
-          "player": "prostitute",
-          "matches": 8,
-          "kills": 35,
-          "deaths": 66,
-          "dealt": 5200,
-          "received": 8600,
-          "pick": 13,
-          "miss": 130,
-          "accuracy": 31.7,
           "qualified": true
         },
         {
@@ -1725,14 +1725,14 @@
         },
         {
           "player": "rul",
-          "matches": 41,
+          "matches": 42,
           "kills": 112,
-          "deaths": 120,
-          "dealt": 22331,
-          "received": 25573,
-          "pick": 77,
-          "miss": 840,
-          "accuracy": 30.1,
+          "deaths": 121,
+          "dealt": 22466,
+          "received": 25978,
+          "pick": 79,
+          "miss": 861,
+          "accuracy": 30.0,
           "qualified": true
         },
         {
@@ -1749,14 +1749,14 @@
         },
         {
           "player": "faint",
-          "matches": 8,
-          "kills": 26,
+          "matches": 9,
+          "kills": 28,
           "deaths": 23,
-          "dealt": 5580,
-          "received": 5222,
-          "pick": 15,
-          "miss": 172,
-          "accuracy": 28.6,
+          "dealt": 6277,
+          "received": 5375,
+          "pick": 16,
+          "miss": 194,
+          "accuracy": 28.3,
           "qualified": true
         }
       ],
@@ -1859,14 +1859,14 @@
         },
         {
           "player": "rul",
-          "matches": 41,
+          "matches": 42,
           "kills": 112,
-          "deaths": 120,
-          "dealt": 22331,
-          "received": 25573,
-          "pick": 77,
-          "miss": 840,
-          "accuracy": 30.1,
+          "deaths": 121,
+          "dealt": 22466,
+          "received": 25978,
+          "pick": 79,
+          "miss": 861,
+          "accuracy": 30.0,
           "qualified": true
         },
         {
@@ -1931,14 +1931,14 @@
         },
         {
           "player": "faint",
-          "matches": 8,
-          "kills": 26,
+          "matches": 9,
+          "kills": 28,
           "deaths": 23,
-          "dealt": 5580,
-          "received": 5222,
-          "pick": 15,
-          "miss": 172,
-          "accuracy": 28.6,
+          "dealt": 6277,
+          "received": 5375,
+          "pick": 16,
+          "miss": 194,
+          "accuracy": 28.3,
           "qualified": true
         },
         {
@@ -1999,18 +1999,6 @@
           "pick": 173,
           "miss": 635,
           "accuracy": 25.9,
-          "qualified": true
-        },
-        {
-          "player": "prostitute",
-          "matches": 8,
-          "kills": 55,
-          "deaths": 32,
-          "dealt": 8519,
-          "received": 6876,
-          "pick": 50,
-          "miss": 142,
-          "accuracy": 25.5,
           "qualified": true
         },
         {
@@ -2096,6 +2084,18 @@
           "miss": 63,
           "accuracy": 25.0,
           "qualified": false
+        },
+        {
+          "player": "prostitute",
+          "matches": 9,
+          "kills": 65,
+          "deaths": 34,
+          "dealt": 9965,
+          "received": 7302,
+          "pick": 57,
+          "miss": 158,
+          "accuracy": 24.9,
+          "qualified": true
         },
         {
           "player": "VITALIS",
@@ -2315,13 +2315,13 @@
         },
         {
           "player": "qw",
-          "matches": 85,
+          "matches": 86,
           "kills": 183,
-          "deaths": 218,
-          "dealt": 36560,
-          "received": 46131,
-          "pick": 179,
-          "miss": 1709,
+          "deaths": 224,
+          "dealt": 36672,
+          "received": 47046,
+          "pick": 180,
+          "miss": 1731,
           "accuracy": 22.2,
           "qualified": true
         },
@@ -3640,6 +3640,18 @@
           "qualified": true
         },
         {
+          "player": "rul",
+          "matches": 41,
+          "kills": 127,
+          "deaths": 113,
+          "dealt": 18522,
+          "received": 17436,
+          "pick": 71,
+          "miss": 509,
+          "accuracy": 15.7,
+          "qualified": true
+        },
+        {
           "player": "[sYnth]Scooby",
           "matches": 24,
           "kills": 109,
@@ -3661,18 +3673,6 @@
           "pick": 53,
           "miss": 68,
           "accuracy": 15.7,
-          "qualified": true
-        },
-        {
-          "player": "rul",
-          "matches": 40,
-          "kills": 124,
-          "deaths": 113,
-          "dealt": 17910,
-          "received": 17418,
-          "pick": 70,
-          "miss": 499,
-          "accuracy": 15.6,
           "qualified": true
         },
         {
@@ -3856,18 +3856,6 @@
           "qualified": true
         },
         {
-          "player": "faint",
-          "matches": 8,
-          "kills": 56,
-          "deaths": 19,
-          "dealt": 7332,
-          "received": 2916,
-          "pick": 36,
-          "miss": 75,
-          "accuracy": 14.5,
-          "qualified": true
-        },
-        {
           "player": "roon",
           "matches": 25,
           "kills": 87,
@@ -3880,16 +3868,16 @@
           "qualified": true
         },
         {
-          "player": "prostitute",
-          "matches": 6,
-          "kills": 14,
-          "deaths": 13,
-          "dealt": 1650,
-          "received": 1392,
-          "pick": 8,
-          "miss": 80,
+          "player": "faint",
+          "matches": 9,
+          "kills": 65,
+          "deaths": 19,
+          "dealt": 8376,
+          "received": 3078,
+          "pick": 41,
+          "miss": 81,
           "accuracy": 14.4,
-          "qualified": false
+          "qualified": true
         },
         {
           "player": "michaq",
@@ -3902,6 +3890,18 @@
           "miss": 299,
           "accuracy": 14.2,
           "qualified": true
+        },
+        {
+          "player": "prostitute",
+          "matches": 7,
+          "kills": 19,
+          "deaths": 13,
+          "dealt": 2184,
+          "received": 1392,
+          "pick": 10,
+          "miss": 89,
+          "accuracy": 14.2,
+          "qualified": false
         },
         {
           "player": "Dark Abyys",
@@ -4276,6 +4276,18 @@
           "qualified": true
         },
         {
+          "player": "qw",
+          "matches": 84,
+          "kills": 169,
+          "deaths": 236,
+          "dealt": 24564,
+          "received": 36438,
+          "pick": 129,
+          "miss": 1085,
+          "accuracy": 12.7,
+          "qualified": true
+        },
+        {
           "player": "zip",
           "matches": 25,
           "kills": 71,
@@ -4334,18 +4346,6 @@
           "miss": 87,
           "accuracy": 12.6,
           "qualified": false
-        },
-        {
-          "player": "qw",
-          "matches": 83,
-          "kills": 169,
-          "deaths": 229,
-          "dealt": 24522,
-          "received": 35448,
-          "pick": 128,
-          "miss": 1075,
-          "accuracy": 12.5,
-          "qualified": true
         },
         {
           "player": "mAc",

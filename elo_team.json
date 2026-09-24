@@ -8,20 +8,20 @@
     "winrate": 78.3
   },
   {
-    "player": "qw",
-    "elo": 1824,
-    "matches": 115,
-    "wins": 61,
-    "losses": 54,
-    "winrate": 53.0
-  },
-  {
     "player": "warrior",
     "elo": 1814,
     "matches": 40,
     "wins": 29,
     "losses": 11,
     "winrate": 72.5
+  },
+  {
+    "player": "qw",
+    "elo": 1808,
+    "matches": 116,
+    "wins": 61,
+    "losses": 55,
+    "winrate": 52.6
   },
   {
     "player": "cne",
@@ -81,11 +81,11 @@
   },
   {
     "player": "rul",
-    "elo": 1633,
-    "matches": 60,
-    "wins": 29,
+    "elo": 1646,
+    "matches": 61,
+    "wins": 30,
     "losses": 31,
-    "winrate": 48.3
+    "winrate": 49.2
   },
   {
     "player": "roon",
@@ -256,6 +256,14 @@
     "winrate": 100.0
   },
   {
+    "player": "faint",
+    "elo": 1528,
+    "matches": 9,
+    "wins": 4,
+    "losses": 5,
+    "winrate": 44.4
+  },
+  {
     "player": "asd_krzys",
     "elo": 1525,
     "matches": 33,
@@ -278,6 +286,14 @@
     "wins": 4,
     "losses": 1,
     "winrate": 80.0
+  },
+  {
+    "player": "prostitute",
+    "elo": 1524,
+    "matches": 9,
+    "wins": 6,
+    "losses": 3,
+    "winrate": 66.7
   },
   {
     "player": "KaPo",
@@ -368,14 +384,6 @@
     "winrate": 100.0
   },
   {
-    "player": "faint",
-    "elo": 1512,
-    "matches": 8,
-    "wins": 3,
-    "losses": 5,
-    "winrate": 37.5
-  },
-  {
     "player": "kreg",
     "elo": 1511,
     "matches": 1,
@@ -390,14 +398,6 @@
     "wins": 2,
     "losses": 3,
     "winrate": 40.0
-  },
-  {
-    "player": "prostitute",
-    "elo": 1509,
-    "matches": 8,
-    "wins": 5,
-    "losses": 3,
-    "winrate": 62.5
   },
   {
     "player": "slonik",
