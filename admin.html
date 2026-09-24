@@ -81,6 +81,13 @@
       </article>
 
       <article class="panel">
+        <div class="panel-head"><div><span class="eyebrow">ELO</span><h2>Rebuild ratings</h2></div></div>
+        <p class="admin-note">Run this after creating a profile, adding or removing an alias, or changing MAIN. Elo is rebuilt chronologically from match history using each profile's current MAIN nickname.</p>
+        <button class="admin-btn primary" id="rebuildEloBtn" type="button">Rebuild Elo</button>
+        <div class="admin-status" id="eloStatus">No rebuild run in this browser tab.</div>
+      </article>
+
+      <article class="panel">
         <div class="panel-head"><div><span class="eyebrow">PROFILES</span><h2>Existing profiles</h2></div></div>
         <div id="profiles"><div class="empty">No profiles yet.</div></div>
       </article>
@@ -243,6 +250,34 @@ document.getElementById("connectBtn").onclick=async()=>{
 
 document.getElementById("search").oninput=renderPlayers;
 document.getElementById("clearBtn").onclick=()=>{selected.clear();primary="";renderPlayers();renderSelection()};
+
+document.getElementById("rebuildEloBtn").onclick=async()=>{
+  if(!confirm("Rebuild all Elo ratings from match history now?\n\nThis recalculates Team and 1v1 Elo using the current player profiles and MAIN nicknames."))return;
+  const btn=document.getElementById("rebuildEloBtn");
+  const eloStatus=document.getElementById("eloStatus");
+  btn.disabled=true;
+  eloStatus.textContent="Rebuilding Elo…";
+  eloStatus.className="admin-status";
+  try{
+    const r=await fetch("/.netlify/functions/elo-rebuild",{
+      method:"POST",
+      cache:"no-store",
+      headers:{"x-q2stats-admin-key":adminKey}
+    });
+    let out={};
+    try{out=await r.json()}catch{}
+    if(!r.ok)throw new Error(out.error||`HTTP ${r.status}`);
+    eloStatus.textContent=`Done · ${out.matches_used} matches · ${out.ratings_written} ratings · ${out.history_written} history rows`;
+    eloStatus.className="admin-status good";
+    setStatus("Elo rebuild completed.","good");
+  }catch(e){
+    eloStatus.textContent=`Rebuild failed · ${e.message}`;
+    eloStatus.className="admin-status bad";
+    setStatus(e.message,"bad");
+  }finally{
+    btn.disabled=false;
+  }
+};
 
 document.getElementById("createBtn").onclick=async()=>{
   const aliases=[...selected];
