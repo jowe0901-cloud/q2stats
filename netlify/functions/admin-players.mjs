@@ -21,7 +21,9 @@ export default async (req) => {
   try {
     // First version:
     // GET  /api/admin/players
-    // POST /api/admin/players  { primary_name, aliases?: [] }
+    // POST /api/admin/players
+    //   create:    { primary_name, aliases?: [] }
+    //   add_alias: { action: "add_alias", profile_id, nickname }
     //
     // No Elo rows are changed here. Elo recalculation will be a separate step.
 
@@ -75,6 +77,163 @@ export default async (req) => {
       body = await req.json();
     } catch {
       return json({ status: "error", error: "Invalid JSON" }, 400);
+    }
+
+    const action = clean(body?.action);
+
+    if (action === "add_alias") {
+      const profileId = Number(body?.profile_id);
+      const nickname = clean(body?.nickname);
+
+      if (!Number.isSafeInteger(profileId) || profileId <= 0) {
+        return json({ status: "error", error: "Valid profile_id is required" }, 400);
+      }
+
+      if (!nickname) {
+        return json({ status: "error", error: "nickname is required" }, 400);
+      }
+
+      const client = await db.pool.connect();
+      let transactionStarted = false;
+
+      try {
+        await client.query("BEGIN");
+        transactionStarted = true;
+
+        const profileResult = await client.query(
+          `
+            SELECT id, primary_name
+            FROM player_profiles
+            WHERE id = $1
+            FOR UPDATE
+          `,
+          [profileId]
+        );
+
+        if (!profileResult.rows.length) {
+          await client.query("ROLLBACK");
+          transactionStarted = false;
+          return json({ status: "error", error: "Profile not found" }, 404);
+        }
+
+        const aliasConflict = await client.query(
+          `
+            SELECT nickname, profile_id
+            FROM player_aliases
+            WHERE nickname = $1
+          `,
+          [nickname]
+        );
+
+        if (aliasConflict.rows.length) {
+          await client.query("ROLLBACK");
+          transactionStarted = false;
+          return json(
+            {
+              status: "conflict",
+              error: "Nickname already belongs to a profile",
+              conflicts: aliasConflict.rows
+            },
+            409
+          );
+        }
+
+        // Never steal historical rows already attached to another profile.
+        const rowConflict = await client.query(
+          `
+            SELECT DISTINCT profile_id
+            FROM match_players
+            WHERE name = $1
+              AND profile_id IS NOT NULL
+              AND profile_id <> $2
+          `,
+          [nickname, profileId]
+        );
+
+        if (rowConflict.rows.length) {
+          await client.query("ROLLBACK");
+          transactionStarted = false;
+          return json(
+            {
+              status: "conflict",
+              error: "Nickname has historical rows linked to another profile"
+            },
+            409
+          );
+        }
+
+        await client.query(
+          `
+            INSERT INTO player_aliases (profile_id, nickname)
+            VALUES ($1, $2)
+          `,
+          [profileId, nickname]
+        );
+
+        const linkedResult = await client.query(
+          `
+            UPDATE match_players
+            SET profile_id = $1
+            WHERE name = $2
+              AND profile_id IS NULL
+            RETURNING player_id
+          `,
+          [profileId, nickname]
+        );
+
+        const playerIds = [
+          ...new Set(
+            linkedResult.rows
+              .map((row) => clean(row.player_id))
+              .filter(Boolean)
+          )
+        ];
+
+        for (const playerId of playerIds) {
+          await client.query(
+            `
+              INSERT INTO player_identities (profile_id, player_id)
+              VALUES ($1, $2)
+              ON CONFLICT (player_id) DO NOTHING
+            `,
+            [profileId, playerId]
+          );
+        }
+
+        await client.query(
+          `
+            UPDATE player_profiles
+            SET updated_at = NOW()
+            WHERE id = $1
+          `,
+          [profileId]
+        );
+
+        await client.query("COMMIT");
+        transactionStarted = false;
+
+        return json(
+          {
+            status: "alias_added",
+            profile: profileResult.rows[0],
+            nickname,
+            linked_matches: linkedResult.rowCount,
+            warning: "Elo has not been recalculated."
+          },
+          200
+        );
+      } catch (error) {
+        if (transactionStarted) {
+          try {
+            await client.query("ROLLBACK");
+          } catch (rollbackError) {
+            console.error("Q2Stats add alias rollback failed:", rollbackError);
+          }
+        }
+        throw error;
+      } finally {
+        client.release();
+      }
     }
 
     const primaryName = clean(body?.primary_name);
