@@ -55,7 +55,7 @@ async function saveWeapons(db,matchId,players){
 
 async function playersForMatch(db,matchId){
  return await db.sql`
-  SELECT name, team, player_id, frags, deaths, damage, ping, suicides, teamkills,
+  SELECT name, team, frags, deaths, damage, ping, suicides, teamkills,
          teleports, damage_received, team_damage, team_damage_received
   FROM match_players WHERE match_id=${matchId}
   ORDER BY frags DESC, name ASC
@@ -132,8 +132,6 @@ export default async(request)=>{
   const serverRows=await db.sql`SELECT id,name,enabled FROM servers WHERE server_key_hash=${hash} LIMIT 1`;
   if(!serverRows.length||!serverRows[0].enabled)return json(401,{status:"error",error:"Unauthorized"});
   const server=serverRows[0],body=await request.json();
-   const matchServer=typeof body.server==="string"?body.server.trim():"";
-   if(!matchServer)return json(400,{status:"error",error:"server is required"});
   if(!body.match_id||!Array.isArray(body.players)||!body.players.length)return json(400,{status:"error",error:"match_id and players are required"});
   const existing=await db.sql`SELECT id FROM matches WHERE match_id=${body.match_id} LIMIT 1`;
   if(existing.length){

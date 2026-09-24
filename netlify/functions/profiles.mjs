@@ -13,7 +13,6 @@ const clean = v => String(v ?? "").trim();
 function toPlayerRow(row) {
   return {
     name: row.name,
-    player_id: row.player_id ?? null,
     profile_id: row.profile_id ?? null,
     team: row.team,
     frags: Number(row.frags ?? 0),
@@ -67,20 +66,12 @@ export default async request => {
 
     const profile = profiles[0];
 
-    const aliasRows = await db.sql`
-      SELECT nickname
-      FROM player_aliases
-      WHERE profile_id = ${profile.id}
-      ORDER BY CASE WHEN nickname = ${profile.primary_name} THEN 0 ELSE 1 END,
-               LOWER(nickname), nickname
-    `;
-
     const matchRows = await db.sql`
       SELECT
         m.id, m.match_id, m.server, m.map, m.game_type,
         m.home_score, m.away_score, m.winner, m.match_type,
         m.port, m.saved_at, m.created_at,
-        mp.name, mp.player_id, mp.profile_id, mp.team,
+        mp.name, mp.profile_id, mp.team,
         mp.frags, mp.deaths, mp.damage, mp.ping,
         mp.suicides, mp.teamkills, mp.teleports,
         mp.damage_received, mp.team_damage, mp.team_damage_received
@@ -182,7 +173,6 @@ export default async request => {
     return json(200, {
       status: "ok",
       profile,
-      aliases: aliasRows.map(r => r.nickname),
       total_matches: matches.length,
       matches,
       weapons: {
