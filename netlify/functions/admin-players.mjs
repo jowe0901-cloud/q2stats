@@ -25,6 +25,7 @@ export default async (req) => {
     //   create:    { primary_name, aliases?: [] }
     //   add_alias:    { action: "add_alias", profile_id, nickname }
     //   remove_alias: { action: "remove_alias", profile_id, nickname }
+    //   set_primary:  { action: "set_primary", profile_id, nickname }
     //
     // No Elo rows are changed here. Elo recalculation will be a separate step.
 
@@ -81,6 +82,96 @@ export default async (req) => {
     }
 
     const action = clean(body?.action);
+
+    if (action === "set_primary") {
+      const profileId = Number(body?.profile_id);
+      const nickname = clean(body?.nickname);
+
+      if (!Number.isSafeInteger(profileId) || profileId <= 0) {
+        return json({ status: "error", error: "Valid profile_id is required" }, 400);
+      }
+
+      if (!nickname) {
+        return json({ status: "error", error: "nickname is required" }, 400);
+      }
+
+      const client = await db.pool.connect();
+      let transactionStarted = false;
+
+      try {
+        await client.query("BEGIN");
+        transactionStarted = true;
+
+        const profileResult = await client.query(
+          `
+            SELECT id, primary_name
+            FROM player_profiles
+            WHERE id = $1
+            FOR UPDATE
+          `,
+          [profileId]
+        );
+
+        if (!profileResult.rows.length) {
+          await client.query("ROLLBACK");
+          transactionStarted = false;
+          return json({ status: "error", error: "Profile not found" }, 404);
+        }
+
+        const aliasResult = await client.query(
+          `
+            SELECT nickname
+            FROM player_aliases
+            WHERE profile_id = $1
+              AND nickname = $2
+          `,
+          [profileId, nickname]
+        );
+
+        if (!aliasResult.rows.length) {
+          await client.query("ROLLBACK");
+          transactionStarted = false;
+          return json(
+            {
+              status: "conflict",
+              error: "Primary nickname must already belong to this profile"
+            },
+            409
+          );
+        }
+
+        const updatedResult = await client.query(
+          `
+            UPDATE player_profiles
+            SET primary_name = $2,
+                updated_at = NOW()
+            WHERE id = $1
+            RETURNING id, primary_name, created_at, updated_at
+          `,
+          [profileId, nickname]
+        );
+
+        await client.query("COMMIT");
+        transactionStarted = false;
+
+        return json({
+          status: "primary_changed",
+          profile: updatedResult.rows[0],
+          warning: "Historical match names and Elo have not been changed."
+        });
+      } catch (error) {
+        if (transactionStarted) {
+          try {
+            await client.query("ROLLBACK");
+          } catch (rollbackError) {
+            console.error("Q2Stats set primary rollback failed:", rollbackError);
+          }
+        }
+        throw error;
+      } finally {
+        client.release();
+      }
+    }
 
     if (action === "remove_alias") {
       const profileId = Number(body?.profile_id);
