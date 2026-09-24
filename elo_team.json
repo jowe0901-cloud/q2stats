@@ -17,11 +17,11 @@
   },
   {
     "player": "qw",
-    "elo": 1808,
-    "matches": 116,
+    "elo": 1805,
+    "matches": 117,
     "wins": 61,
-    "losses": 55,
-    "winrate": 52.6
+    "losses": 56,
+    "winrate": 52.1
   },
   {
     "player": "cne",
@@ -81,11 +81,11 @@
   },
   {
     "player": "rul",
-    "elo": 1646,
-    "matches": 61,
-    "wins": 30,
+    "elo": 1654,
+    "matches": 62,
+    "wins": 31,
     "losses": 31,
-    "winrate": 49.2
+    "winrate": 50.0
   },
   {
     "player": "roon",
@@ -168,14 +168,6 @@
     "winrate": 53.3
   },
   {
-    "player": "badman",
-    "elo": 1557,
-    "matches": 78,
-    "wins": 35,
-    "losses": 43,
-    "winrate": 44.9
-  },
-  {
     "player": "ZYGA",
     "elo": 1554,
     "matches": 7,
@@ -190,6 +182,22 @@
     "wins": 3,
     "losses": 1,
     "winrate": 75.0
+  },
+  {
+    "player": "faint",
+    "elo": 1544,
+    "matches": 10,
+    "wins": 5,
+    "losses": 5,
+    "winrate": 50.0
+  },
+  {
+    "player": "badman",
+    "elo": 1541,
+    "matches": 79,
+    "wins": 35,
+    "losses": 44,
+    "winrate": 44.3
   },
   {
     "player": "OPTIMIZER",
@@ -254,14 +262,6 @@
     "wins": 2,
     "losses": 0,
     "winrate": 100.0
-  },
-  {
-    "player": "faint",
-    "elo": 1528,
-    "matches": 9,
-    "wins": 4,
-    "losses": 5,
-    "winrate": 44.4
   },
   {
     "player": "asd_krzys",
