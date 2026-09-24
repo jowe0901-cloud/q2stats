@@ -24,25 +24,31 @@ export async function updateEloForMatch(db, matchId){
       return {status:"skipped",reason:"match_not_found",match_id:matchId};
     }
 
+    // Historical match_players.name is never rewritten. For Elo, a linked
+    // profile uses its primary_name; an unlinked player keeps the nickname.
     const pr=await client.query(
-      `SELECT match_id,name,team,frags,deaths,damage,suicides,teamkills,
-              damage_received,team_damage
-       FROM match_players WHERE match_id=$1 ORDER BY id ASC`,
+      `SELECT mp.match_id,
+              mp.name AS historical_name,
+              COALESCE(pp.primary_name, mp.name) AS name,
+              mp.team,mp.frags,mp.deaths,mp.damage,mp.suicides,mp.teamkills,
+              mp.damage_received,mp.team_damage
+       FROM match_players mp
+       LEFT JOIN player_profiles pp ON pp.id=mp.profile_id
+       WHERE mp.match_id=$1
+       ORDER BY mp.id ASC`,
       [matchId]
     );
 
     const cache={team:new Map(),"1v1":new Map()};
     const get=(type,name)=>{
-      if(!cache[type].has(name)) cache[type].set(name,{rating:START_ELO,matches:0,wins:0,losses:0,_loaded:false});
+      if(!cache[type].has(name)) cache[type].set(name,{rating:START_ELO,matches:0,wins:0,losses:0});
       return cache[type].get(name);
     };
 
-    // Load current ratings for all active names before calculation.
-    for(const p of pr.rows){
-      const name=String(p.name||"").trim();
-      if(!name) continue;
+    // Load current ratings for the resolved Elo identities.
+    const names=[...new Set(pr.rows.map(p=>String(p.name||"").trim()).filter(Boolean))];
+    for(const name of names){
       for(const type of ["team","1v1"]){
-        if(cache[type].has(name)) continue;
         const rr=await client.query(
           `SELECT rating,matches,wins,losses FROM elo_ratings
            WHERE player_name=$1 AND elo_type=$2 AND algorithm_version=$3 LIMIT 1`,

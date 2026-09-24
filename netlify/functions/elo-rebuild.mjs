@@ -1,5 +1,5 @@
 import { getDatabase } from "@netlify/database";
-import { VERSION, START_ELO, normalizePlayers, calculateMatchElo } from "./elo-engine.mjs";
+import { VERSION, START_ELO, calculateMatchElo } from "./elo-engine.mjs";
 
 const json = (status, body) =>
   new Response(JSON.stringify(body), {
@@ -21,11 +21,20 @@ export default async (request) => {
       FROM matches
       ORDER BY COALESCE(saved_at,created_at) ASC,id ASC
     `);
+
+    // Preserve the historical nickname in match_players, but use the
+    // profile's primary_name as the Elo identity when a profile exists.
     const pr=await client.query(`
-      SELECT match_id,name,team,frags,deaths,damage,suicides,teamkills,
-             damage_received,team_damage
-      FROM match_players ORDER BY id ASC
+      SELECT mp.match_id,
+             mp.name AS historical_name,
+             COALESCE(pp.primary_name, mp.name) AS name,
+             mp.team,mp.frags,mp.deaths,mp.damage,mp.suicides,mp.teamkills,
+             mp.damage_received,mp.team_damage
+      FROM match_players mp
+      LEFT JOIN player_profiles pp ON pp.id=mp.profile_id
+      ORDER BY mp.id ASC
     `);
+
     const by=new Map();
     for(const p of pr.rows){
       if(!by.has(p.match_id)) by.set(p.match_id,[]);
