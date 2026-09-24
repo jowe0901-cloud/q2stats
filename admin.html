@@ -27,6 +27,12 @@
     .selection-row label{display:flex;gap:8px;align-items:center;font-weight:800}
     .profile-row{padding:10px 0;border-bottom:1px solid #1d2430}.profile-row:last-child{border-bottom:0}
     .profile-row strong{display:block}.profile-row small{color:var(--muted)}
+    .profile-head{display:flex;justify-content:space-between;gap:10px;align-items:center}
+    .profile-aliases{display:flex;gap:7px;flex-wrap:wrap;margin-top:9px}
+    .alias-chip{display:inline-flex;align-items:center;gap:7px;background:#0d1117;border:1px solid #1d2530;border-radius:999px;padding:5px 8px;font-size:12px}
+    .alias-remove{border:0;background:transparent;color:var(--bad);cursor:pointer;font-weight:900;padding:0 2px}
+    .profile-actions{display:flex;gap:8px;align-items:center;margin-top:10px;flex-wrap:wrap}
+    .profile-actions .admin-input{flex:1;min-width:150px}
     @media(max-width:850px){.admin-grid{grid-template-columns:1fr}.admin-list{max-height:460px}}
   </style>
 </head>
@@ -157,10 +163,60 @@ function renderSelection(){
 
 function renderProfiles(){
   const ps=data.profiles||[];
-  document.getElementById("profiles").innerHTML=ps.length?ps.map(p=>`<div class="profile-row">
-    <strong>${esc(p.primary_name)}</strong>
-    <small>Profile ${esc(p.id)} · ${(p.aliases||[]).map(esc).join(", ")||"No aliases"}</small>
-  </div>`).join(""):'<div class="empty">No profiles yet.</div>';
+  const el=document.getElementById("profiles");
+  el.innerHTML=ps.length?ps.map(p=>{
+    const aliases=p.aliases||[];
+    return `<div class="profile-row" data-profile="${esc(p.id)}">
+      <div class="profile-head">
+        <div><strong>${esc(p.primary_name)}</strong><small>Profile ${esc(p.id)}</small></div>
+        <span class="pill">${aliases.length} nickname${aliases.length===1?"":"s"}</span>
+      </div>
+      <div class="profile-aliases">${aliases.map(n=>`<span class="alias-chip">${esc(n)}${n===p.primary_name?` <b>MAIN</b>`:` <button class="alias-remove" type="button" data-remove="${esc(n)}" title="Remove alias">×</button>`}</span>`).join("")||'<span class="admin-note">No aliases</span>'}</div>
+      <div class="profile-actions">
+        <input class="admin-input" data-alias-input placeholder="Add existing nickname…">
+        <button class="admin-btn" type="button" data-add-alias>Add alias</button>
+      </div>
+    </div>`;
+  }).join(""):'<div class="empty">No profiles yet.</div>';
+
+  el.querySelectorAll(".profile-row").forEach(row=>{
+    const profileId=Number(row.dataset.profile);
+    const profile=ps.find(p=>Number(p.id)===profileId);
+    const input=row.querySelector("[data-alias-input]");
+    const addBtn=row.querySelector("[data-add-alias]");
+
+    addBtn.onclick=async()=>{
+      const nickname=input.value.trim();
+      if(!nickname)return;
+      const player=(data.players||[]).find(p=>p.name===nickname);
+      if(!player){setStatus(`Nickname "${nickname}" was not found in match history.`,"bad");return}
+      if(player.profile_id!=null){setStatus(`Nickname "${nickname}" already belongs to profile ${player.profile_id}.`,"bad");return}
+      if(!confirm(`Add "${nickname}" to profile "${profile.primary_name}"?\n\nHistorical match names will stay unchanged. Elo will NOT be recalculated yet.`))return;
+      addBtn.disabled=true;
+      setStatus(`Adding "${nickname}"…`);
+      try{
+        await api("POST",{action:"add_alias",profile_id:profileId,nickname});
+        await load();
+        setStatus(`Alias "${nickname}" added to "${profile.primary_name}". Elo has not been recalculated.`,"good");
+      }catch(e){setStatus(e.message,"bad");addBtn.disabled=false}
+    };
+
+    input.onkeydown=e=>{if(e.key==="Enter"){e.preventDefault();addBtn.click()}};
+
+    row.querySelectorAll("[data-remove]").forEach(btn=>{
+      btn.onclick=async()=>{
+        const nickname=btn.dataset.remove;
+        if(!confirm(`Remove alias "${nickname}" from profile "${profile.primary_name}"?\n\nIts historical matches will be detached from this profile. Elo will NOT be recalculated yet.`))return;
+        btn.disabled=true;
+        setStatus(`Removing "${nickname}"…`);
+        try{
+          await api("POST",{action:"remove_alias",profile_id:profileId,nickname});
+          await load();
+          setStatus(`Alias "${nickname}" removed from "${profile.primary_name}". Elo has not been recalculated.`,"good");
+        }catch(e){setStatus(e.message,"bad");btn.disabled=false}
+      };
+    });
+  });
 }
 
 document.getElementById("connectBtn").onclick=async()=>{
