@@ -91,65 +91,112 @@ export default async (req) => {
 
     const aliases = [...new Set([primaryName, ...requestedAliases])];
 
-    // Do not silently steal a nickname from another profile.
-    const conflicts = await db.sql`
-      SELECT nickname, profile_id
-      FROM player_aliases
-      WHERE nickname = ANY(${aliases})
-    `;
+    // All profile creation/linking writes run on one PostgreSQL connection.
+    // If any step fails, the entire operation is rolled back.
+    const client = await db.pool.connect();
+    let profile;
+    let transactionStarted = false;
 
-    if (conflicts.length) {
-      return json(
-        {
-          status: "conflict",
-          error: "One or more nicknames already belong to a profile",
-          conflicts
-        },
-        409
+    try {
+      await client.query("BEGIN");
+      transactionStarted = true;
+
+      // Do not silently steal a nickname from another profile.
+      // This check is repeated inside the transaction so the following
+      // writes are protected as one atomic operation.
+      const conflictResult = await client.query(
+        `
+          SELECT nickname, profile_id
+          FROM player_aliases
+          WHERE nickname = ANY($1::text[])
+        `,
+        [aliases]
       );
-    }
 
-    // Create the public profile.
-    const created = await db.sql`
-      INSERT INTO player_profiles (primary_name)
-      VALUES (${primaryName})
-      RETURNING id, primary_name, created_at, updated_at
-    `;
+      if (conflictResult.rows.length) {
+        await client.query("ROLLBACK");
+        transactionStarted = false;
 
-    const profile = created[0];
+        return json(
+          {
+            status: "conflict",
+            error: "One or more nicknames already belong to a profile",
+            conflicts: conflictResult.rows
+          },
+          409
+        );
+      }
 
-    // Add aliases one by one. This deliberately preserves match_players.name.
-    for (const nickname of aliases) {
-      await db.sql`
-        INSERT INTO player_aliases (profile_id, nickname)
-        VALUES (${profile.id}, ${nickname})
-      `;
+      const createdResult = await client.query(
+        `
+          INSERT INTO player_profiles (primary_name)
+          VALUES ($1)
+          RETURNING id, primary_name, created_at, updated_at
+        `,
+        [primaryName]
+      );
 
-      // Link all historical rows carrying this exact nickname.
-      await db.sql`
-        UPDATE match_players
-        SET profile_id = ${profile.id}
-        WHERE name = ${nickname}
-          AND profile_id IS NULL
-      `;
-    }
+      profile = createdResult.rows[0];
 
-    // Link known agent identities found on the newly linked match rows.
-    // A player_id already assigned to another profile is never reassigned here.
-    const identities = await db.sql`
-      SELECT DISTINCT player_id
-      FROM match_players
-      WHERE profile_id = ${profile.id}
-        AND player_id IS NOT NULL
-        AND player_id <> ''
-    `;
+      // Preserve match_players.name. Only attach the historical rows
+      // to the new internal profile.
+      for (const nickname of aliases) {
+        await client.query(
+          `
+            INSERT INTO player_aliases (profile_id, nickname)
+            VALUES ($1, $2)
+          `,
+          [profile.id, nickname]
+        );
 
-    for (const row of identities) {
-      await db.sql`
-        INSERT INTO player_identities (profile_id, player_id)
-        VALUES (${profile.id}, ${row.player_id})
-        ON CONFLICT (player_id) DO NOTHING
-      `;
+        await client.query(
+          `
+            UPDATE match_players
+            SET profile_id = $1
+            WHERE name = $2
+              AND profile_id IS NULL
+          `,
+          [profile.id, nickname]
+        );
+      }
+
+      // Link known agent identities found on the newly linked match rows.
+      // Existing player_id ownership is never reassigned.
+      const identityResult = await client.query(
+        `
+          SELECT DISTINCT player_id
+          FROM match_players
+          WHERE profile_id = $1
+            AND player_id IS NOT NULL
+            AND player_id <> ''
+        `,
+        [profile.id]
+      );
+
+      for (const row of identityResult.rows) {
+        await client.query(
+          `
+            INSERT INTO player_identities (profile_id, player_id)
+            VALUES ($1, $2)
+            ON CONFLICT (player_id) DO NOTHING
+          `,
+          [profile.id, row.player_id]
+        );
+      }
+
+      await client.query("COMMIT");
+      transactionStarted = false;
+    } catch (error) {
+      if (transactionStarted) {
+        try {
+          await client.query("ROLLBACK");
+        } catch (rollbackError) {
+          console.error("Q2Stats player profile rollback failed:", rollbackError);
+        }
+      }
+      throw error;
+    } finally {
+      client.release();
     }
 
     return json(
