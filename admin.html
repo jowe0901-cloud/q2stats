@@ -171,7 +171,7 @@ function renderProfiles(){
         <div><strong>${esc(p.primary_name)}</strong><small>Profile ${esc(p.id)}</small></div>
         <span class="pill">${aliases.length} nickname${aliases.length===1?"":"s"}</span>
       </div>
-      <div class="profile-aliases">${aliases.map(n=>`<span class="alias-chip">${esc(n)}${n===p.primary_name?` <b>MAIN</b>`:` <button class="alias-remove" type="button" data-remove="${esc(n)}" title="Remove alias">×</button>`}</span>`).join("")||'<span class="admin-note">No aliases</span>'}</div>
+      <div class="profile-aliases">${aliases.map(n=>`<span class="alias-chip">${esc(n)}${n===p.primary_name?` <b>MAIN</b>`:` <button class="admin-btn" type="button" data-primary="${esc(n)}" style="padding:3px 7px;font-size:11px">Set MAIN</button><button class="alias-remove" type="button" data-remove="${esc(n)}" title="Remove alias">×</button>`}</span>`).join("")||'<span class="admin-note">No aliases</span>'}</div>
       <div class="profile-actions">
         <input class="admin-input" data-alias-input placeholder="Add existing nickname…">
         <button class="admin-btn" type="button" data-add-alias>Add alias</button>
@@ -202,6 +202,20 @@ function renderProfiles(){
     };
 
     input.onkeydown=e=>{if(e.key==="Enter"){e.preventDefault();addBtn.click()}};
+
+    row.querySelectorAll("[data-primary]").forEach(btn=>{
+      btn.onclick=async()=>{
+        const nickname=btn.dataset.primary;
+        if(!confirm(`Set "${nickname}" as MAIN for profile "${profile.primary_name}"?\n\nHistorical match names will stay unchanged. Elo will NOT be recalculated.`))return;
+        btn.disabled=true;
+        setStatus(`Changing MAIN to "${nickname}"…`);
+        try{
+          await api("POST",{action:"set_primary",profile_id:profileId,nickname});
+          await load();
+          setStatus(`MAIN nickname changed to "${nickname}". Elo has not been recalculated.`,"good");
+        }catch(e){setStatus(e.message,"bad");btn.disabled=false}
+      };
+    });
 
     row.querySelectorAll("[data-remove]").forEach(btn=>{
       btn.onclick=async()=>{
