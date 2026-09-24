@@ -105,6 +105,13 @@ const esc=s=>String(s??"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&
 const statusEl=document.getElementById("status");
 function setStatus(msg,type=""){statusEl.textContent=msg;statusEl.className="admin-status "+type}
 
+function markEloRebuildRequired(){
+  const el=document.getElementById("eloStatus");
+  if(!el)return;
+  el.textContent="Elo rebuild required · Player identities have changed since the last rebuild.";
+  el.className="admin-status bad";
+}
+
 async function api(method="GET",body){
   const r=await fetch(API,{
     method,
@@ -204,6 +211,7 @@ function renderProfiles(){
       try{
         await api("POST",{action:"add_alias",profile_id:profileId,nickname});
         await load();
+        markEloRebuildRequired();
         setStatus(`Alias "${nickname}" added to "${profile.primary_name}". Elo has not been recalculated.`,"good");
       }catch(e){setStatus(e.message,"bad");addBtn.disabled=false}
     };
@@ -219,6 +227,7 @@ function renderProfiles(){
         try{
           await api("POST",{action:"set_primary",profile_id:profileId,nickname});
           await load();
+          markEloRebuildRequired();
           setStatus(`MAIN nickname changed to "${nickname}". Elo has not been recalculated.`,"good");
         }catch(e){setStatus(e.message,"bad");btn.disabled=false}
       };
@@ -233,6 +242,7 @@ function renderProfiles(){
         try{
           await api("POST",{action:"remove_alias",profile_id:profileId,nickname});
           await load();
+          markEloRebuildRequired();
           setStatus(`Alias "${nickname}" removed from "${profile.primary_name}". Elo has not been recalculated.`,"good");
         }catch(e){setStatus(e.message,"bad");btn.disabled=false}
       };
@@ -267,7 +277,7 @@ document.getElementById("rebuildEloBtn").onclick=async()=>{
     let out={};
     try{out=await r.json()}catch{}
     if(!r.ok)throw new Error(out.error||`HTTP ${r.status}`);
-    eloStatus.textContent=`Done · ${out.matches_used} matches · ${out.ratings_written} ratings · ${out.history_written} history rows`;
+    eloStatus.textContent=`Elo up to date · ${out.matches_used} matches · ${out.ratings_written} ratings · ${out.history_written} history rows`;
     eloStatus.className="admin-status good";
     setStatus("Elo rebuild completed.","good");
   }catch(e){
@@ -291,6 +301,7 @@ document.getElementById("createBtn").onclick=async()=>{
     await api("POST",{primary_name:primary,aliases});
     selected.clear();primary="";
     await load();
+    markEloRebuildRequired();
     setStatus(`Profile "${createdName}" created. Elo has not been recalculated.`,"good");
   }catch(e){
     setStatus(e.message,"bad");
