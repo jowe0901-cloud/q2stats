@@ -132,6 +132,10 @@ export default async(request)=>{
   const serverRows=await db.sql`SELECT id,name,enabled FROM servers WHERE server_key_hash=${hash} LIMIT 1`;
   if(!serverRows.length||!serverRows[0].enabled)return json(401,{status:"error",error:"Unauthorized"});
   const server=serverRows[0],body=await request.json();
+   const matchServer =
+    typeof body.server === "string" && body.server.trim()
+     ? body.server.trim()
+     : server.name;
   if(!body.match_id||!Array.isArray(body.players)||!body.players.length)return json(400,{status:"error",error:"match_id and players are required"});
   const existing=await db.sql`SELECT id FROM matches WHERE match_id=${body.match_id} LIMIT 1`;
   if(existing.length){
