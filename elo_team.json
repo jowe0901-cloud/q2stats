@@ -88,20 +88,20 @@
     "winrate": 53.3
   },
   {
+    "player": "roon",
+    "elo": 1629,
+    "matches": 20,
+    "wins": 12,
+    "losses": 8,
+    "winrate": 60.0
+  },
+  {
     "player": "[sYnth]Scooby",
     "elo": 1616,
     "matches": 38,
     "wins": 19,
     "losses": 19,
     "winrate": 50.0
-  },
-  {
-    "player": "roon",
-    "elo": 1613,
-    "matches": 19,
-    "wins": 11,
-    "losses": 8,
-    "winrate": 57.9
   },
   {
     "player": ">daPurrI",
@@ -128,14 +128,6 @@
     "winrate": 61.5
   },
   {
-    "player": "CoLD",
-    "elo": 1585,
-    "matches": 37,
-    "wins": 21,
-    "losses": 16,
-    "winrate": 56.8
-  },
-  {
     "player": ">daweed",
     "elo": 1579,
     "matches": 8,
@@ -150,6 +142,14 @@
     "wins": 5,
     "losses": 0,
     "winrate": 100.0
+  },
+  {
+    "player": "CoLD",
+    "elo": 1573,
+    "matches": 38,
+    "wins": 21,
+    "losses": 17,
+    "winrate": 55.3
   },
   {
     "player": ">purri",
@@ -1049,11 +1049,11 @@
   },
   {
     "player": "VITALIS",
-    "elo": 1287,
-    "matches": 72,
-    "wins": 30,
+    "elo": 1290,
+    "matches": 73,
+    "wins": 31,
     "losses": 42,
-    "winrate": 41.7
+    "winrate": 42.5
   },
   {
     "player": "LiOn]tRk[",
@@ -1065,10 +1065,10 @@
   },
   {
     "player": "jabb@",
-    "elo": 1204,
-    "matches": 129,
+    "elo": 1190,
+    "matches": 130,
     "wins": 58,
-    "losses": 71,
-    "winrate": 45.0
+    "losses": 72,
+    "winrate": 44.6
   }
 ]
