@@ -544,6 +544,18 @@
           "qualified": true
         },
         {
+          "player": "prostitute",
+          "matches": 14,
+          "kills": 63,
+          "deaths": 105,
+          "dealt": 9700,
+          "received": 14300,
+          "pick": 18,
+          "miss": 211,
+          "accuracy": 34.2,
+          "qualified": true
+        },
+        {
           "player": "Dark Abyys",
           "matches": 5,
           "kills": 28,
@@ -553,18 +565,6 @@
           "pick": 8,
           "miss": 51,
           "accuracy": 34.2,
-          "qualified": true
-        },
-        {
-          "player": "prostitute",
-          "matches": 13,
-          "kills": 57,
-          "deaths": 97,
-          "dealt": 8700,
-          "received": 13400,
-          "pick": 17,
-          "miss": 198,
-          "accuracy": 34.1,
           "qualified": true
         },
         {
@@ -904,6 +904,18 @@
           "qualified": false
         },
         {
+          "player": "jabb@",
+          "matches": 95,
+          "kills": 258,
+          "deaths": 622,
+          "dealt": 42100,
+          "received": 97300,
+          "pick": 184,
+          "miss": 927,
+          "accuracy": 29.6,
+          "qualified": true
+        },
+        {
           "player": "shNoodle",
           "matches": 11,
           "kills": 71,
@@ -913,18 +925,6 @@
           "pick": 27,
           "miss": 157,
           "accuracy": 29.6,
-          "qualified": true
-        },
-        {
-          "player": "jabb@",
-          "matches": 94,
-          "kills": 248,
-          "deaths": 617,
-          "dealt": 40200,
-          "received": 96600,
-          "pick": 182,
-          "miss": 915,
-          "accuracy": 29.4,
           "qualified": true
         },
         {
@@ -1493,15 +1493,27 @@
         },
         {
           "player": "sevvq",
-          "matches": 13,
-          "kills": 18,
-          "deaths": 139,
-          "dealt": 5900,
-          "received": 19400,
-          "pick": 66,
-          "miss": 113,
+          "matches": 14,
+          "kills": 24,
+          "deaths": 147,
+          "dealt": 6600,
+          "received": 20700,
+          "pick": 69,
+          "miss": 124,
+          "accuracy": 19.4,
+          "qualified": true
+        },
+        {
+          "player": "VITALIS",
+          "matches": 52,
+          "kills": 106,
+          "deaths": 238,
+          "dealt": 15900,
+          "received": 34000,
+          "pick": 57,
+          "miss": 628,
           "accuracy": 19.2,
-          "qualified": false
+          "qualified": true
         },
         {
           "player": "piu-chilin",
@@ -1526,18 +1538,6 @@
           "miss": 33,
           "accuracy": 19.0,
           "qualified": false
-        },
-        {
-          "player": "VITALIS",
-          "matches": 51,
-          "kills": 100,
-          "deaths": 236,
-          "dealt": 15100,
-          "received": 33400,
-          "pick": 56,
-          "miss": 615,
-          "accuracy": 18.8,
-          "qualified": true
         },
         {
           "player": "sase",
@@ -1572,6 +1572,18 @@
           "received": 6600,
           "pick": 9,
           "miss": 49,
+          "accuracy": 18.0,
+          "qualified": false
+        },
+        {
+          "player": "Qiub/afc",
+          "matches": 4,
+          "kills": 9,
+          "deaths": 33,
+          "dealt": 1500,
+          "received": 5300,
+          "pick": 13,
+          "miss": 44,
           "accuracy": 18.0,
           "qualified": false
         },
@@ -1660,27 +1672,15 @@
           "qualified": false
         },
         {
-          "player": "Qiub/afc",
-          "matches": 3,
-          "kills": 2,
-          "deaths": 23,
-          "dealt": 600,
-          "received": 3700,
-          "pick": 9,
-          "miss": 34,
-          "accuracy": 9.7,
-          "qualified": false
-        },
-        {
           "player": "Domik_v_derevne",
-          "matches": 2,
-          "kills": 0,
-          "deaths": 26,
-          "dealt": 0,
-          "received": 4000,
-          "pick": 1,
-          "miss": 34,
-          "accuracy": 0.0,
+          "matches": 3,
+          "kills": 4,
+          "deaths": 32,
+          "dealt": 600,
+          "received": 4800,
+          "pick": 4,
+          "miss": 45,
+          "accuracy": 7.0,
           "qualified": false
         },
         {
@@ -1725,14 +1725,14 @@
       "top5": [
         {
           "player": "Qiub/afc",
-          "matches": 3,
-          "kills": 21,
-          "deaths": 14,
-          "dealt": 3412,
-          "received": 2964,
-          "pick": 23,
-          "miss": 50,
-          "accuracy": 38.3,
+          "matches": 4,
+          "kills": 25,
+          "deaths": 17,
+          "dealt": 4425,
+          "received": 3707,
+          "pick": 28,
+          "miss": 71,
+          "accuracy": 39.0,
           "qualified": true
         },
         {
@@ -1787,14 +1787,14 @@
       "all_players": [
         {
           "player": "Qiub/afc",
-          "matches": 3,
-          "kills": 21,
-          "deaths": 14,
-          "dealt": 3412,
-          "received": 2964,
-          "pick": 23,
-          "miss": 50,
-          "accuracy": 38.3,
+          "matches": 4,
+          "kills": 25,
+          "deaths": 17,
+          "dealt": 4425,
+          "received": 3707,
+          "pick": 28,
+          "miss": 71,
+          "accuracy": 39.0,
           "qualified": true
         },
         {
@@ -2123,14 +2123,14 @@
         },
         {
           "player": "VITALIS",
-          "matches": 52,
-          "kills": 223,
-          "deaths": 166,
-          "dealt": 43298,
-          "received": 35060,
-          "pick": 226,
-          "miss": 1067,
-          "accuracy": 24.2,
+          "matches": 53,
+          "kills": 232,
+          "deaths": 170,
+          "dealt": 45231,
+          "received": 35856,
+          "pick": 232,
+          "miss": 1087,
+          "accuracy": 24.3,
           "qualified": true
         },
         {
@@ -2206,6 +2206,18 @@
           "qualified": false
         },
         {
+          "player": "prostitute",
+          "matches": 14,
+          "kills": 110,
+          "deaths": 49,
+          "dealt": 17956,
+          "received": 11809,
+          "pick": 91,
+          "miss": 243,
+          "accuracy": 23.4,
+          "qualified": true
+        },
+        {
           "player": "shNoodle",
           "matches": 11,
           "kills": 38,
@@ -2239,18 +2251,6 @@
           "pick": 28,
           "miss": 167,
           "accuracy": 23.1,
-          "qualified": true
-        },
-        {
-          "player": "prostitute",
-          "matches": 13,
-          "kills": 103,
-          "deaths": 46,
-          "dealt": 16854,
-          "received": 10847,
-          "pick": 87,
-          "miss": 221,
-          "accuracy": 23.0,
           "qualified": true
         },
         {
@@ -2387,14 +2387,14 @@
         },
         {
           "player": "jabb@",
-          "matches": 96,
+          "matches": 97,
           "kills": 352,
-          "deaths": 424,
-          "dealt": 72675,
-          "received": 91979,
-          "pick": 488,
-          "miss": 1460,
-          "accuracy": 21.5,
+          "deaths": 429,
+          "dealt": 72745,
+          "received": 93181,
+          "pick": 491,
+          "miss": 1483,
+          "accuracy": 21.4,
           "qualified": true
         },
         {
@@ -2890,6 +2890,18 @@
           "qualified": true
         },
         {
+          "player": "sevvq",
+          "matches": 14,
+          "kills": 28,
+          "deaths": 74,
+          "dealt": 8003,
+          "received": 14746,
+          "pick": 75,
+          "miss": 211,
+          "accuracy": 17.6,
+          "qualified": true
+        },
+        {
           "player": "mAc",
           "matches": 21,
           "kills": 57,
@@ -2998,18 +3010,6 @@
           "qualified": true
         },
         {
-          "player": "sevvq",
-          "matches": 13,
-          "kills": 24,
-          "deaths": 72,
-          "dealt": 7361,
-          "received": 14385,
-          "pick": 70,
-          "miss": 190,
-          "accuracy": 16.6,
-          "qualified": true
-        },
-        {
           "player": "z0diac",
           "matches": 5,
           "kills": 17,
@@ -3058,6 +3058,18 @@
           "qualified": false
         },
         {
+          "player": "Domik_v_derevne",
+          "matches": 3,
+          "kills": 10,
+          "deaths": 18,
+          "dealt": 1945,
+          "received": 3004,
+          "pick": 19,
+          "miss": 59,
+          "accuracy": 16.0,
+          "qualified": false
+        },
+        {
           "player": "ptr",
           "matches": 2,
           "kills": 8,
@@ -3066,18 +3078,6 @@
           "received": 2470,
           "pick": 4,
           "miss": 15,
-          "accuracy": 16.0,
-          "qualified": false
-        },
-        {
-          "player": "Domik_v_derevne",
-          "matches": 2,
-          "kills": 8,
-          "deaths": 9,
-          "dealt": 1641,
-          "received": 1580,
-          "pick": 16,
-          "miss": 36,
           "accuracy": 16.0,
           "qualified": false
         },
@@ -3458,18 +3458,6 @@
           "qualified": true
         },
         {
-          "player": "prostitute",
-          "matches": 11,
-          "kills": 33,
-          "deaths": 20,
-          "dealt": 3846,
-          "received": 2958,
-          "pick": 24,
-          "miss": 141,
-          "accuracy": 16.2,
-          "qualified": true
-        },
-        {
           "player": "lamerinon",
           "matches": 6,
           "kills": 21,
@@ -3491,6 +3479,18 @@
           "pick": 22,
           "miss": 148,
           "accuracy": 16.1,
+          "qualified": true
+        },
+        {
+          "player": "asd_krzys",
+          "matches": 26,
+          "kills": 78,
+          "deaths": 54,
+          "dealt": 12162,
+          "received": 8154,
+          "pick": 59,
+          "miss": 319,
+          "accuracy": 16.0,
           "qualified": true
         }
       ],
@@ -3640,30 +3640,6 @@
           "qualified": false
         },
         {
-          "player": "Qiub/afc",
-          "matches": 3,
-          "kills": 5,
-          "deaths": 21,
-          "dealt": 1104,
-          "received": 2016,
-          "pick": 3,
-          "miss": 37,
-          "accuracy": 16.3,
-          "qualified": false
-        },
-        {
-          "player": "prostitute",
-          "matches": 11,
-          "kills": 33,
-          "deaths": 20,
-          "dealt": 3846,
-          "received": 2958,
-          "pick": 24,
-          "miss": 141,
-          "accuracy": 16.2,
-          "qualified": true
-        },
-        {
           "player": "lamerinon",
           "matches": 6,
           "kills": 21,
@@ -3698,6 +3674,30 @@
           "miss": 319,
           "accuracy": 16.0,
           "qualified": true
+        },
+        {
+          "player": "prostitute",
+          "matches": 12,
+          "kills": 34,
+          "deaths": 21,
+          "dealt": 3924,
+          "received": 3234,
+          "pick": 25,
+          "miss": 150,
+          "accuracy": 16.0,
+          "qualified": true
+        },
+        {
+          "player": "Qiub/afc",
+          "matches": 4,
+          "kills": 9,
+          "deaths": 21,
+          "dealt": 1512,
+          "received": 2220,
+          "pick": 6,
+          "miss": 44,
+          "accuracy": 16.0,
+          "qualified": false
         },
         {
           "player": "rul",
@@ -4145,13 +4145,13 @@
         },
         {
           "player": "jabb@",
-          "matches": 96,
-          "kills": 338,
-          "deaths": 310,
-          "dealt": 49314,
-          "received": 41946,
-          "pick": 300,
-          "miss": 933,
+          "matches": 97,
+          "kills": 341,
+          "deaths": 313,
+          "dealt": 50034,
+          "received": 42174,
+          "pick": 303,
+          "miss": 940,
           "accuracy": 13.1,
           "qualified": true
         },
@@ -4236,18 +4236,6 @@
           "received": 1410,
           "pick": 10,
           "miss": 31,
-          "accuracy": 13.0,
-          "qualified": false
-        },
-        {
-          "player": "sevvq",
-          "matches": 13,
-          "kills": 9,
-          "deaths": 67,
-          "dealt": 4002,
-          "received": 11148,
-          "pick": 63,
-          "miss": 146,
           "accuracy": 13.0,
           "qualified": false
         },
@@ -4346,6 +4334,18 @@
           "miss": 401,
           "accuracy": 12.8,
           "qualified": true
+        },
+        {
+          "player": "sevvq",
+          "matches": 14,
+          "kills": 9,
+          "deaths": 70,
+          "dealt": 4218,
+          "received": 11436,
+          "pick": 64,
+          "miss": 155,
+          "accuracy": 12.8,
+          "qualified": false
         },
         {
           "player": "zip",
@@ -4852,18 +4852,6 @@
           "qualified": false
         },
         {
-          "player": "Domik_v_derevne",
-          "matches": 2,
-          "kills": 0,
-          "deaths": 8,
-          "dealt": 198,
-          "received": 780,
-          "pick": 5,
-          "miss": 34,
-          "accuracy": 11.0,
-          "qualified": false
-        },
-        {
           "player": "Qiub",
           "matches": 12,
           "kills": 5,
@@ -5009,14 +4997,14 @@
         },
         {
           "player": "VITALIS",
-          "matches": 52,
-          "kills": 60,
-          "deaths": 114,
-          "dealt": 9774,
-          "received": 16458,
-          "pick": 88,
-          "miss": 641,
-          "accuracy": 9.5,
+          "matches": 53,
+          "kills": 62,
+          "deaths": 115,
+          "dealt": 9954,
+          "received": 16800,
+          "pick": 89,
+          "miss": 650,
+          "accuracy": 9.6,
           "qualified": true
         },
         {
@@ -5029,6 +5017,18 @@
           "pick": 8,
           "miss": 38,
           "accuracy": 9.3,
+          "qualified": false
+        },
+        {
+          "player": "Domik_v_derevne",
+          "matches": 3,
+          "kills": 0,
+          "deaths": 10,
+          "dealt": 234,
+          "received": 1080,
+          "pick": 6,
+          "miss": 43,
+          "accuracy": 8.7,
           "qualified": false
         },
         {
