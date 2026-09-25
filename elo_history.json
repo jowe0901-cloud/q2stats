@@ -27464,5 +27464,57 @@
       }
     ],
     "saved_at": "2026-09-25T21:25:38+02:00"
+  },
+  {
+    "match_id": "dfb64f32c14aba63",
+    "game_type": "team",
+    "winner": "Home",
+    "home_score": 72,
+    "away_score": 42,
+    "players": [
+      {
+        "player": "cne",
+        "team": "Home",
+        "old_elo": 1785,
+        "change": 14.8,
+        "new_elo": 1800
+      },
+      {
+        "player": "asd_krzys",
+        "team": "Home",
+        "old_elo": 1549,
+        "change": 14.5,
+        "new_elo": 1563
+      },
+      {
+        "player": "qw",
+        "team": "Home",
+        "old_elo": 1757,
+        "change": 6.6,
+        "new_elo": 1763
+      },
+      {
+        "player": "sevvq",
+        "team": "Away",
+        "old_elo": 1365,
+        "change": -16,
+        "new_elo": 1349
+      },
+      {
+        "player": "Br00m^^",
+        "team": "Away",
+        "old_elo": 1496,
+        "change": -5.2,
+        "new_elo": 1491
+      },
+      {
+        "player": "maq",
+        "team": "Away",
+        "old_elo": 1904,
+        "change": -11.8,
+        "new_elo": 1892
+      }
+    ],
+    "saved_at": "2026-09-25T21:39:04+02:00"
   }
 ]
