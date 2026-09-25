@@ -15,14 +15,14 @@
       "top5": [
         {
           "player": "lynx",
-          "matches": 8,
-          "kills": 26,
-          "deaths": 33,
-          "dealt": 5000,
-          "received": 6100,
-          "pick": 16,
-          "miss": 84,
-          "accuracy": 48.9,
+          "matches": 9,
+          "kills": 33,
+          "deaths": 36,
+          "dealt": 6400,
+          "received": 7700,
+          "pick": 18,
+          "miss": 99,
+          "accuracy": 47.3,
           "qualified": true
         },
         {
@@ -100,18 +100,6 @@
           "qualified": false
         },
         {
-          "player": "lynx",
-          "matches": 8,
-          "kills": 26,
-          "deaths": 33,
-          "dealt": 5000,
-          "received": 6100,
-          "pick": 16,
-          "miss": 84,
-          "accuracy": 48.9,
-          "qualified": true
-        },
-        {
           "player": "frankie",
           "matches": 4,
           "kills": 12,
@@ -122,6 +110,18 @@
           "miss": 17,
           "accuracy": 48.2,
           "qualified": false
+        },
+        {
+          "player": "lynx",
+          "matches": 9,
+          "kills": 33,
+          "deaths": 36,
+          "dealt": 6400,
+          "received": 7700,
+          "pick": 18,
+          "miss": 99,
+          "accuracy": 47.3,
+          "qualified": true
         },
         {
           "player": "kartonkupy%",
@@ -628,6 +628,18 @@
           "qualified": true
         },
         {
+          "player": "badman",
+          "matches": 69,
+          "kills": 620,
+          "deaths": 497,
+          "dealt": 93800,
+          "received": 78000,
+          "pick": 155,
+          "miss": 939,
+          "accuracy": 33.6,
+          "qualified": true
+        },
+        {
           "player": "fon",
           "matches": 45,
           "kills": 412,
@@ -649,18 +661,6 @@
           "pick": 113,
           "miss": 176,
           "accuracy": 33.5,
-          "qualified": true
-        },
-        {
-          "player": "badman",
-          "matches": 68,
-          "kills": 613,
-          "deaths": 491,
-          "dealt": 91400,
-          "received": 76600,
-          "pick": 150,
-          "miss": 927,
-          "accuracy": 33.4,
           "qualified": true
         },
         {
@@ -785,13 +785,13 @@
         },
         {
           "player": "need1",
-          "matches": 40,
-          "kills": 185,
-          "deaths": 166,
-          "dealt": 28100,
-          "received": 29600,
-          "pick": 86,
-          "miss": 443,
+          "matches": 41,
+          "kills": 192,
+          "deaths": 174,
+          "dealt": 29100,
+          "received": 31000,
+          "pick": 91,
+          "miss": 455,
           "accuracy": 31.3,
           "qualified": true
         },
@@ -1001,14 +1001,14 @@
         },
         {
           "player": "TAITI",
-          "matches": 9,
-          "kills": 33,
-          "deaths": 81,
-          "dealt": 6000,
-          "received": 12800,
-          "pick": 27,
-          "miss": 95,
-          "accuracy": 28.2,
+          "matches": 10,
+          "kills": 40,
+          "deaths": 92,
+          "dealt": 7400,
+          "received": 14600,
+          "pick": 32,
+          "miss": 107,
+          "accuracy": 28.3,
           "qualified": true
         },
         {
@@ -2014,6 +2014,18 @@
           "qualified": false
         },
         {
+          "player": "need1",
+          "matches": 42,
+          "kills": 189,
+          "deaths": 127,
+          "dealt": 37395,
+          "received": 32887,
+          "pick": 192,
+          "miss": 730,
+          "accuracy": 25.7,
+          "qualified": true
+        },
+        {
           "player": "ping80",
           "matches": 14,
           "kills": 68,
@@ -2048,18 +2060,6 @@
           "miss": 19,
           "accuracy": 25.5,
           "qualified": false
-        },
-        {
-          "player": "need1",
-          "matches": 41,
-          "kills": 188,
-          "deaths": 122,
-          "dealt": 36626,
-          "received": 31722,
-          "pick": 189,
-          "miss": 714,
-          "accuracy": 25.4,
-          "qualified": true
         },
         {
           "player": "[sYnth]Scooby",
@@ -2194,18 +2194,6 @@
           "qualified": true
         },
         {
-          "player": "lynx",
-          "matches": 8,
-          "kills": 29,
-          "deaths": 28,
-          "dealt": 5439,
-          "received": 5158,
-          "pick": 35,
-          "miss": 122,
-          "accuracy": 23.6,
-          "qualified": true
-        },
-        {
           "player": "OESD",
           "matches": 2,
           "kills": 8,
@@ -2227,6 +2215,18 @@
           "pick": 91,
           "miss": 243,
           "accuracy": 23.4,
+          "qualified": true
+        },
+        {
+          "player": "lynx",
+          "matches": 9,
+          "kills": 33,
+          "deaths": 29,
+          "dealt": 6156,
+          "received": 5985,
+          "pick": 40,
+          "miss": 136,
+          "accuracy": 23.1,
           "qualified": true
         },
         {
@@ -2650,6 +2650,18 @@
           "qualified": true
         },
         {
+          "player": "TAITI",
+          "matches": 10,
+          "kills": 20,
+          "deaths": 20,
+          "dealt": 4839,
+          "received": 6009,
+          "pick": 43,
+          "miss": 160,
+          "accuracy": 19.0,
+          "qualified": true
+        },
+        {
           "player": ">purri",
           "matches": 11,
           "kills": 28,
@@ -2771,14 +2783,14 @@
         },
         {
           "player": "badman",
-          "matches": 68,
+          "matches": 69,
           "kills": 119,
-          "deaths": 200,
-          "dealt": 21728,
-          "received": 38758,
-          "pick": 227,
-          "miss": 1439,
-          "accuracy": 18.4,
+          "deaths": 203,
+          "dealt": 22079,
+          "received": 39441,
+          "pick": 234,
+          "miss": 1451,
+          "accuracy": 18.3,
           "qualified": true
         },
         {
@@ -3018,18 +3030,6 @@
           "received": 2532,
           "pick": 23,
           "miss": 72,
-          "accuracy": 16.4,
-          "qualified": false
-        },
-        {
-          "player": "TAITI",
-          "matches": 9,
-          "kills": 16,
-          "deaths": 20,
-          "dealt": 3797,
-          "received": 5403,
-          "pick": 39,
-          "miss": 145,
           "accuracy": 16.4,
           "qualified": false
         },
@@ -3833,13 +3833,13 @@
         },
         {
           "player": "badman",
-          "matches": 66,
-          "kills": 177,
-          "deaths": 170,
-          "dealt": 26100,
-          "received": 23892,
-          "pick": 161,
-          "miss": 860,
+          "matches": 67,
+          "kills": 182,
+          "deaths": 172,
+          "dealt": 27114,
+          "received": 24606,
+          "pick": 168,
+          "miss": 871,
           "accuracy": 14.8,
           "qualified": true
         },
@@ -4337,13 +4337,13 @@
         },
         {
           "player": "need1",
-          "matches": 40,
+          "matches": 41,
           "kills": 59,
-          "deaths": 71,
+          "deaths": 72,
           "dealt": 10182,
-          "received": 12510,
-          "pick": 84,
-          "miss": 455,
+          "received": 12888,
+          "pick": 86,
+          "miss": 471,
           "accuracy": 12.7,
           "qualified": true
         },
@@ -4720,6 +4720,18 @@
           "qualified": false
         },
         {
+          "player": "TAITI",
+          "matches": 10,
+          "kills": 19,
+          "deaths": 28,
+          "dealt": 3954,
+          "received": 4374,
+          "pick": 36,
+          "miss": 126,
+          "accuracy": 11.3,
+          "qualified": false
+        },
+        {
           "player": "dolar",
           "matches": 7,
           "kills": 19,
@@ -4729,6 +4741,18 @@
           "pick": 47,
           "miss": 45,
           "accuracy": 11.3,
+          "qualified": false
+        },
+        {
+          "player": "lynx",
+          "matches": 9,
+          "kills": 11,
+          "deaths": 26,
+          "dealt": 3480,
+          "received": 4266,
+          "pick": 37,
+          "miss": 94,
+          "accuracy": 11.2,
           "qualified": false
         },
         {
@@ -4840,18 +4864,6 @@
           "qualified": false
         },
         {
-          "player": "TAITI",
-          "matches": 9,
-          "kills": 17,
-          "deaths": 26,
-          "dealt": 3294,
-          "received": 3810,
-          "pick": 31,
-          "miss": 113,
-          "accuracy": 10.9,
-          "qualified": false
-        },
-        {
           "player": "Qiub",
           "matches": 12,
           "kills": 5,
@@ -4874,18 +4886,6 @@
           "miss": 546,
           "accuracy": 10.6,
           "qualified": true
-        },
-        {
-          "player": "lynx",
-          "matches": 8,
-          "kills": 10,
-          "deaths": 23,
-          "dealt": 3048,
-          "received": 3816,
-          "pick": 33,
-          "miss": 80,
-          "accuracy": 10.5,
-          "qualified": false
         },
         {
           "player": "fff",
