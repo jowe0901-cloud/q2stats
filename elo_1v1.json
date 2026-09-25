@@ -112,20 +112,20 @@
     "winrate": 100.0
   },
   {
-    "player": "ping80",
-    "elo": 1565,
-    "matches": 5,
-    "wins": 5,
-    "losses": 0,
-    "winrate": 100.0
-  },
-  {
     "player": "m",
     "elo": 1555,
     "matches": 4,
     "wins": 4,
     "losses": 0,
     "winrate": 100.0
+  },
+  {
+    "player": "ping80",
+    "elo": 1546,
+    "matches": 6,
+    "wins": 5,
+    "losses": 1,
+    "winrate": 83.3
   },
   {
     "player": "Logic",
@@ -166,6 +166,14 @@
     "wins": 3,
     "losses": 0,
     "winrate": 100.0
+  },
+  {
+    "player": "maq",
+    "elo": 1536,
+    "matches": 9,
+    "wins": 6,
+    "losses": 3,
+    "winrate": 66.7
   },
   {
     "player": ">daPurrI",
@@ -246,14 +254,6 @@
     "wins": 4,
     "losses": 5,
     "winrate": 44.4
-  },
-  {
-    "player": "maq",
-    "elo": 1518,
-    "matches": 8,
-    "wins": 5,
-    "losses": 3,
-    "winrate": 62.5
   },
   {
     "player": "fonbeers",
