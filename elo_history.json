@@ -26863,5 +26863,29 @@
       }
     ],
     "saved_at": "2026-09-25T16:56:48+02:00"
+  },
+  {
+    "match_id": "9a573e006ff3933a",
+    "game_type": "1v1",
+    "winner": "Home",
+    "home_score": 7,
+    "away_score": 0,
+    "players": [
+      {
+        "player": "need2",
+        "team": "Home",
+        "old_elo": 1520,
+        "change": 17.8,
+        "new_elo": 1537
+      },
+      {
+        "player": "B100D",
+        "team": "Away",
+        "old_elo": 1559,
+        "change": -17.8,
+        "new_elo": 1541
+      }
+    ],
+    "saved_at": "2026-09-25T17:02:09+02:00"
   }
 ]

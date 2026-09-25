@@ -220,18 +220,6 @@
           "qualified": true
         },
         {
-          "player": "need2",
-          "matches": 1,
-          "kills": 4,
-          "deaths": 0,
-          "dealt": 900,
-          "received": 400,
-          "pick": 1,
-          "miss": 3,
-          "accuracy": 41.0,
-          "qualified": false
-        },
-        {
           "player": "lamerinon",
           "matches": 6,
           "kills": 46,
@@ -566,6 +554,18 @@
           "miss": 51,
           "accuracy": 34.2,
           "qualified": true
+        },
+        {
+          "player": "need2",
+          "matches": 2,
+          "kills": 6,
+          "deaths": 0,
+          "dealt": 1400,
+          "received": 600,
+          "pick": 2,
+          "miss": 7,
+          "accuracy": 34.0,
+          "qualified": false
         },
         {
           "player": "fff",
@@ -928,18 +928,6 @@
           "qualified": true
         },
         {
-          "player": "B100D",
-          "matches": 58,
-          "kills": 224,
-          "deaths": 198,
-          "dealt": 46500,
-          "received": 34800,
-          "pick": 200,
-          "miss": 319,
-          "accuracy": 29.3,
-          "qualified": true
-        },
-        {
           "player": "cne",
           "matches": 55,
           "kills": 597,
@@ -961,6 +949,18 @@
           "pick": 99,
           "miss": 296,
           "accuracy": 29.2,
+          "qualified": true
+        },
+        {
+          "player": "B100D",
+          "matches": 59,
+          "kills": 224,
+          "deaths": 200,
+          "dealt": 46700,
+          "received": 35300,
+          "pick": 204,
+          "miss": 320,
+          "accuracy": 29.0,
           "qualified": true
         },
         {
@@ -2554,18 +2554,6 @@
           "qualified": true
         },
         {
-          "player": "B100D",
-          "matches": 58,
-          "kills": 106,
-          "deaths": 106,
-          "dealt": 29051,
-          "received": 33938,
-          "pick": 213,
-          "miss": 603,
-          "accuracy": 19.6,
-          "qualified": true
-        },
-        {
           "player": "lolercoaster",
           "matches": 8,
           "kills": 24,
@@ -2578,6 +2566,18 @@
           "qualified": true
         },
         {
+          "player": "need2",
+          "matches": 2,
+          "kills": 3,
+          "deaths": 0,
+          "dealt": 1520,
+          "received": 352,
+          "pick": 9,
+          "miss": 5,
+          "accuracy": 19.5,
+          "qualified": false
+        },
+        {
           "player": "m",
           "matches": 35,
           "kills": 187,
@@ -2586,6 +2586,18 @@
           "received": 22723,
           "pick": 195,
           "miss": 583,
+          "accuracy": 19.3,
+          "qualified": true
+        },
+        {
+          "player": "B100D",
+          "matches": 59,
+          "kills": 106,
+          "deaths": 108,
+          "dealt": 29051,
+          "received": 34810,
+          "pick": 215,
+          "miss": 607,
           "accuracy": 19.3,
           "qualified": true
         },
@@ -2958,18 +2970,6 @@
           "received": 1124,
           "pick": 8,
           "miss": 9,
-          "accuracy": 17.0,
-          "qualified": false
-        },
-        {
-          "player": "need2",
-          "matches": 1,
-          "kills": 1,
-          "deaths": 0,
-          "dealt": 648,
-          "received": 258,
-          "pick": 5,
-          "miss": 3,
           "accuracy": 17.0,
           "qualified": false
         },
@@ -3976,6 +3976,18 @@
           "qualified": false
         },
         {
+          "player": "need2",
+          "matches": 2,
+          "kills": 3,
+          "deaths": 0,
+          "dealt": 666,
+          "received": 492,
+          "pick": 6,
+          "miss": 8,
+          "accuracy": 14.0,
+          "qualified": false
+        },
+        {
           "player": "kartonkupy%",
           "matches": 1,
           "kills": 1,
@@ -4685,14 +4697,14 @@
         },
         {
           "player": "B100D",
-          "matches": 58,
+          "matches": 59,
           "kills": 196,
-          "deaths": 115,
-          "dealt": 29742,
-          "received": 22956,
-          "pick": 218,
-          "miss": 466,
-          "accuracy": 11.5,
+          "deaths": 117,
+          "dealt": 29916,
+          "received": 23322,
+          "pick": 222,
+          "miss": 468,
+          "accuracy": 11.4,
           "qualified": true
         },
         {
@@ -4944,18 +4956,6 @@
           "received": 714,
           "pick": 9,
           "miss": 15,
-          "accuracy": 10.0,
-          "qualified": false
-        },
-        {
-          "player": "need2",
-          "matches": 1,
-          "kills": 1,
-          "deaths": 0,
-          "dealt": 300,
-          "received": 318,
-          "pick": 4,
-          "miss": 4,
           "accuracy": 10.0,
           "qualified": false
         },
