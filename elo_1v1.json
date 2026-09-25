@@ -272,6 +272,14 @@
     "winrate": 100.0
   },
   {
+    "player": "prostitute",
+    "elo": 1516,
+    "matches": 1,
+    "wins": 1,
+    "losses": 0,
+    "winrate": 100.0
+  },
+  {
     "player": "shNoodle",
     "elo": 1513,
     "matches": 1,
@@ -326,14 +334,6 @@
     "wins": 2,
     "losses": 2,
     "winrate": 50.0
-  },
-  {
-    "player": "lolercoaster",
-    "elo": 1493,
-    "matches": 3,
-    "wins": 1,
-    "losses": 2,
-    "winrate": 33.3
   },
   {
     "player": "freeze",
@@ -454,6 +454,14 @@
     "wins": 0,
     "losses": 1,
     "winrate": 0.0
+  },
+  {
+    "player": "lolercoaster",
+    "elo": 1478,
+    "matches": 4,
+    "wins": 1,
+    "losses": 3,
+    "winrate": 25.0
   },
   {
     "player": "lynx",
