@@ -210392,5 +210392,322 @@
       }
     ],
     "saved_at": "2026-09-25T00:31:20+02:00"
+  },
+  {
+    "match_id": "5ed915ca8a41c773",
+    "game_type": "team",
+    "hostname": "PacketFlinger.com ~ OpenTDM ~ Germany #3",
+    "mapname": "q2duel5",
+    "match_type": "Duel",
+    "port": 27910,
+    "winner": "Away",
+    "home_score": 7,
+    "away_score": 41,
+    "players": [
+      {
+        "name": "B100D",
+        "kills": 17,
+        "deaths": 2,
+        "suicides": 0,
+        "teamkills": 0,
+        "teleports": 0,
+        "damage": 3594,
+        "damage_received": 1028,
+        "team_damage": 0,
+        "team_damage_received": 109,
+        "weapons": {
+          "Super Shotgun": {
+            "accuracy": null,
+            "kills": null,
+            "deaths": 0,
+            "dealt": null,
+            "received": 108,
+            "pick": 1,
+            "miss": 19
+          },
+          "Machinegun": {
+            "accuracy": null,
+            "kills": null,
+            "deaths": 0,
+            "dealt": null,
+            "received": 64,
+            "pick": 1,
+            "miss": 8
+          },
+          "Chaingun": {
+            "accuracy": 11,
+            "kills": 1,
+            "deaths": 0,
+            "dealt": 294,
+            "received": 270,
+            "pick": 3,
+            "miss": 20
+          },
+          "Grenades": {
+            "accuracy": null,
+            "kills": null,
+            "deaths": 0,
+            "dealt": null,
+            "received": 109,
+            "pick": 0,
+            "miss": 0
+          },
+          "Grenade Launcher": {
+            "accuracy": null,
+            "kills": null,
+            "deaths": null,
+            "dealt": null,
+            "received": null,
+            "pick": 2,
+            "miss": 4
+          },
+          "Rocket Launcher": {
+            "accuracy": null,
+            "kills": null,
+            "deaths": 0,
+            "dealt": null,
+            "received": 162,
+            "pick": 0,
+            "miss": 21
+          },
+          "Railgun": {
+            "accuracy": 41,
+            "kills": 16,
+            "deaths": 2,
+            "dealt": 3300,
+            "received": 300,
+            "pick": 16,
+            "miss": 7
+          }
+        },
+        "team": "Unknown"
+      },
+      {
+        "name": "prostitute",
+        "kills": 24,
+        "deaths": 9,
+        "suicides": 0,
+        "teamkills": 0,
+        "teleports": 0,
+        "damage": 3764,
+        "damage_received": 2786,
+        "team_damage": 109,
+        "team_damage_received": 0,
+        "weapons": {
+          "Super Shotgun": {
+            "accuracy": 38,
+            "kills": 0,
+            "deaths": 1,
+            "dealt": 114,
+            "received": 384,
+            "pick": 3,
+            "miss": 17
+          },
+          "Machinegun": {
+            "accuracy": null,
+            "kills": null,
+            "deaths": 0,
+            "dealt": null,
+            "received": 64,
+            "pick": 1,
+            "miss": 8
+          },
+          "Chaingun": {
+            "accuracy": 10,
+            "kills": 6,
+            "deaths": 1,
+            "dealt": 438,
+            "received": 534,
+            "pick": 4,
+            "miss": 19
+          },
+          "Grenades": {
+            "accuracy": 0,
+            "kills": 0,
+            "deaths": 1,
+            "dealt": 0,
+            "received": 162,
+            "pick": 0,
+            "miss": 0
+          },
+          "Grenade Launcher": {
+            "accuracy": 20,
+            "kills": 1,
+            "deaths": 0,
+            "dealt": 277,
+            "received": 60,
+            "pick": 2,
+            "miss": 4
+          },
+          "Rocket Launcher": {
+            "accuracy": 17,
+            "kills": 8,
+            "deaths": 5,
+            "dealt": 1420,
+            "received": 1377,
+            "pick": 2,
+            "miss": 19
+          },
+          "Railgun": {
+            "accuracy": 36,
+            "kills": 8,
+            "deaths": 1,
+            "dealt": 1500,
+            "received": 100,
+            "pick": 1,
+            "miss": 22
+          }
+        },
+        "team": "Unknown"
+      },
+      {
+        "name": "Domik_v_derevne",
+        "kills": 5,
+        "deaths": 32,
+        "suicides": 2,
+        "teamkills": 2,
+        "teleports": 0,
+        "damage": 1532,
+        "damage_received": 4606,
+        "team_damage": 206,
+        "team_damage_received": 114,
+        "weapons": {
+          "Super Shotgun": {
+            "accuracy": 64,
+            "kills": 0,
+            "deaths": 0,
+            "dealt": 108,
+            "received": 66,
+            "pick": 8,
+            "miss": 12
+          },
+          "Machinegun": {
+            "accuracy": 8,
+            "kills": 0,
+            "deaths": null,
+            "dealt": 48,
+            "received": null,
+            "pick": 2,
+            "miss": 7
+          },
+          "Chaingun": {
+            "accuracy": 15,
+            "kills": 0,
+            "deaths": 5,
+            "dealt": 174,
+            "received": 468,
+            "pick": 3,
+            "miss": 20
+          },
+          "Grenades": {
+            "accuracy": 20,
+            "kills": 1,
+            "deaths": null,
+            "dealt": 162,
+            "received": null,
+            "pick": 0,
+            "miss": 0
+          },
+          "Grenade Launcher": {
+            "accuracy": null,
+            "kills": null,
+            "deaths": 1,
+            "dealt": null,
+            "received": 277,
+            "pick": 2,
+            "miss": 4
+          },
+          "Rocket Launcher": {
+            "accuracy": 17,
+            "kills": 6,
+            "deaths": 7,
+            "dealt": 965,
+            "received": 1095,
+            "pick": 9,
+            "miss": 12
+          },
+          "Railgun": {
+            "accuracy": 0,
+            "kills": 0,
+            "deaths": 17,
+            "dealt": 0,
+            "received": 2700,
+            "pick": 1,
+            "miss": 22
+          }
+        },
+        "team": "Unknown"
+      },
+      {
+        "name": "ping80",
+        "kills": 6,
+        "deaths": 13,
+        "suicides": 0,
+        "teamkills": 0,
+        "teleports": 0,
+        "damage": 2012,
+        "damage_received": 2973,
+        "team_damage": 114,
+        "team_damage_received": 206,
+        "weapons": {
+          "Super Shotgun": {
+            "accuracy": 91,
+            "kills": 1,
+            "deaths": 0,
+            "dealt": 384,
+            "received": 48,
+            "pick": 4,
+            "miss": 16
+          },
+          "Machinegun": {
+            "accuracy": 10,
+            "kills": 0,
+            "deaths": null,
+            "dealt": 80,
+            "received": null,
+            "pick": 3,
+            "miss": 6
+          },
+          "Chaingun": {
+            "accuracy": 10,
+            "kills": 1,
+            "deaths": 2,
+            "dealt": 630,
+            "received": 264,
+            "pick": 7,
+            "miss": 16
+          },
+          "Grenades": {
+            "accuracy": 34,
+            "kills": 0,
+            "deaths": null,
+            "dealt": 109,
+            "received": null,
+            "pick": 0,
+            "miss": 0
+          },
+          "Rocket Launcher": {
+            "accuracy": 11,
+            "kills": 1,
+            "deaths": 3,
+            "dealt": 364,
+            "received": 546,
+            "pick": 5,
+            "miss": 16
+          },
+          "Railgun": {
+            "accuracy": 40,
+            "kills": 3,
+            "deaths": 7,
+            "dealt": 400,
+            "received": 2100,
+            "pick": 0,
+            "miss": 23
+          }
+        },
+        "team": "Unknown"
+      }
+    ],
+    "saved_at": "2026-09-25T15:26:48+02:00"
   }
 ]
