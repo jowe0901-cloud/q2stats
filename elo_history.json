@@ -27367,5 +27367,36 @@
       }
     ],
     "saved_at": "2026-09-25T21:11:08+02:00"
+  },
+  {
+    "match_id": "96d06f138cd86b04",
+    "game_type": "team",
+    "winner": "Home",
+    "home_score": 72,
+    "away_score": 38,
+    "players": [
+      {
+        "player": "badman",
+        "team": "Home",
+        "old_elo": 1555,
+        "change": 16,
+        "new_elo": 1571
+      },
+      {
+        "player": "CoLD",
+        "team": "Away",
+        "old_elo": 1563,
+        "change": -6.9,
+        "new_elo": 1557
+      },
+      {
+        "player": "gart",
+        "team": "Away",
+        "old_elo": 1526,
+        "change": -16,
+        "new_elo": 1510
+      }
+    ],
+    "saved_at": "2026-09-25T21:22:42+02:00"
   }
 ]
