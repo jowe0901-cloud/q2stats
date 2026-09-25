@@ -136,6 +136,14 @@
     "winrate": 87.5
   },
   {
+    "player": "badman",
+    "elo": 1578,
+    "matches": 83,
+    "wins": 38,
+    "losses": 45,
+    "winrate": 45.8
+  },
+  {
     "player": ">OPTIMIZER",
     "elo": 1574,
     "matches": 5,
@@ -158,14 +166,6 @@
     "wins": 4,
     "losses": 0,
     "winrate": 100.0
-  },
-  {
-    "player": "badman",
-    "elo": 1562,
-    "matches": 82,
-    "wins": 37,
-    "losses": 45,
-    "winrate": 45.1
   },
   {
     "player": "asd_krzys",
@@ -262,14 +262,6 @@
     "wins": 2,
     "losses": 0,
     "winrate": 100.0
-  },
-  {
-    "player": "TAITI",
-    "elo": 1524,
-    "matches": 6,
-    "wins": 4,
-    "losses": 2,
-    "winrate": 66.7
   },
   {
     "player": "lamerinon",
@@ -398,6 +390,14 @@
     "wins": 2,
     "losses": 2,
     "winrate": 50.0
+  },
+  {
+    "player": "TAITI",
+    "elo": 1508,
+    "matches": 7,
+    "wins": 4,
+    "losses": 3,
+    "winrate": 57.1
   },
   {
     "player": ".pM.tfa",
@@ -656,20 +656,20 @@
     "winrate": 42.9
   },
   {
+    "player": "need1",
+    "elo": 1486,
+    "matches": 56,
+    "wins": 30,
+    "losses": 26,
+    "winrate": 53.6
+  },
+  {
     "player": "RED",
     "elo": 1486,
     "matches": 5,
     "wins": 2,
     "losses": 3,
     "winrate": 40.0
-  },
-  {
-    "player": "need1",
-    "elo": 1484,
-    "matches": 55,
-    "wins": 29,
-    "losses": 26,
-    "winrate": 52.7
   },
   {
     "player": "[G2H]DEMON",
@@ -936,20 +936,20 @@
     "winrate": 0.0
   },
   {
-    "player": "lynx",
-    "elo": 1445,
-    "matches": 12,
-    "wins": 4,
-    "losses": 8,
-    "winrate": 33.3
-  },
-  {
     "player": "xRSNx",
     "elo": 1445,
     "matches": 6,
     "wins": 1,
     "losses": 5,
     "winrate": 16.7
+  },
+  {
+    "player": "lynx",
+    "elo": 1443,
+    "matches": 13,
+    "wins": 4,
+    "losses": 9,
+    "winrate": 30.8
   },
   {
     "player": "Qiub/afc",

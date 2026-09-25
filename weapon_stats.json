@@ -14,6 +14,18 @@
     "Railgun": {
       "top5": [
         {
+          "player": "lynx",
+          "matches": 8,
+          "kills": 26,
+          "deaths": 33,
+          "dealt": 5000,
+          "received": 6100,
+          "pick": 16,
+          "miss": 84,
+          "accuracy": 48.9,
+          "qualified": true
+        },
+        {
           "player": "David",
           "matches": 6,
           "kills": 116,
@@ -60,18 +72,6 @@
           "miss": 532,
           "accuracy": 42.0,
           "qualified": true
-        },
-        {
-          "player": "lamerinon",
-          "matches": 6,
-          "kills": 46,
-          "deaths": 34,
-          "dealt": 6900,
-          "received": 5700,
-          "pick": 12,
-          "miss": 86,
-          "accuracy": 40.5,
-          "qualified": true
         }
       ],
       "all_players": [
@@ -88,18 +88,6 @@
           "qualified": false
         },
         {
-          "player": "lynx",
-          "matches": 7,
-          "kills": 17,
-          "deaths": 28,
-          "dealt": 3800,
-          "received": 5300,
-          "pick": 10,
-          "miss": 72,
-          "accuracy": 50.4,
-          "qualified": false
-        },
-        {
           "player": "f3",
           "matches": 1,
           "kills": 5,
@@ -110,6 +98,18 @@
           "miss": 26,
           "accuracy": 50.0,
           "qualified": false
+        },
+        {
+          "player": "lynx",
+          "matches": 8,
+          "kills": 26,
+          "deaths": 33,
+          "dealt": 5000,
+          "received": 6100,
+          "pick": 16,
+          "miss": 84,
+          "accuracy": 48.9,
+          "qualified": true
         },
         {
           "player": "frankie",
@@ -653,14 +653,14 @@
         },
         {
           "player": "badman",
-          "matches": 67,
-          "kills": 599,
-          "deaths": 488,
-          "dealt": 88500,
-          "received": 76100,
-          "pick": 145,
-          "miss": 914,
-          "accuracy": 33.3,
+          "matches": 68,
+          "kills": 613,
+          "deaths": 491,
+          "dealt": 91400,
+          "received": 76600,
+          "pick": 150,
+          "miss": 927,
+          "accuracy": 33.4,
           "qualified": true
         },
         {
@@ -785,13 +785,13 @@
         },
         {
           "player": "need1",
-          "matches": 39,
-          "kills": 183,
-          "deaths": 160,
-          "dealt": 27800,
-          "received": 28700,
-          "pick": 85,
-          "miss": 426,
+          "matches": 40,
+          "kills": 185,
+          "deaths": 166,
+          "dealt": 28100,
+          "received": 29600,
+          "pick": 86,
+          "miss": 443,
           "accuracy": 31.3,
           "qualified": true
         },
@@ -866,18 +866,6 @@
           "miss": 9,
           "accuracy": 30.0,
           "qualified": false
-        },
-        {
-          "player": "TAITI",
-          "matches": 8,
-          "kills": 33,
-          "deaths": 70,
-          "dealt": 5800,
-          "received": 10400,
-          "pick": 21,
-          "miss": 83,
-          "accuracy": 29.8,
-          "qualified": true
         },
         {
           "player": "slonik",
@@ -1010,6 +998,18 @@
           "miss": 18,
           "accuracy": 28.5,
           "qualified": false
+        },
+        {
+          "player": "TAITI",
+          "matches": 9,
+          "kills": 33,
+          "deaths": 81,
+          "dealt": 6000,
+          "received": 12800,
+          "pick": 27,
+          "miss": 95,
+          "accuracy": 28.2,
+          "qualified": true
         },
         {
           "player": "r",
@@ -2014,18 +2014,6 @@
           "qualified": false
         },
         {
-          "player": "need1",
-          "matches": 40,
-          "kills": 186,
-          "deaths": 116,
-          "dealt": 36509,
-          "received": 30615,
-          "pick": 187,
-          "miss": 698,
-          "accuracy": 25.9,
-          "qualified": true
-        },
-        {
           "player": "ping80",
           "matches": 14,
           "kills": 68,
@@ -2060,6 +2048,18 @@
           "miss": 19,
           "accuracy": 25.5,
           "qualified": false
+        },
+        {
+          "player": "need1",
+          "matches": 41,
+          "kills": 188,
+          "deaths": 122,
+          "dealt": 36626,
+          "received": 31722,
+          "pick": 189,
+          "miss": 714,
+          "accuracy": 25.4,
+          "qualified": true
         },
         {
           "player": "[sYnth]Scooby",
@@ -2195,14 +2195,14 @@
         },
         {
           "player": "lynx",
-          "matches": 7,
-          "kills": 21,
-          "deaths": 26,
-          "dealt": 4232,
-          "received": 4650,
-          "pick": 27,
-          "miss": 112,
-          "accuracy": 23.7,
+          "matches": 8,
+          "kills": 29,
+          "deaths": 28,
+          "dealt": 5439,
+          "received": 5158,
+          "pick": 35,
+          "miss": 122,
+          "accuracy": 23.6,
           "qualified": true
         },
         {
@@ -2770,6 +2770,18 @@
           "qualified": true
         },
         {
+          "player": "badman",
+          "matches": 68,
+          "kills": 119,
+          "deaths": 200,
+          "dealt": 21728,
+          "received": 38758,
+          "pick": 227,
+          "miss": 1439,
+          "accuracy": 18.4,
+          "qualified": true
+        },
+        {
           "player": "fff",
           "matches": 5,
           "kills": 6,
@@ -2780,18 +2792,6 @@
           "miss": 10,
           "accuracy": 18.2,
           "qualified": false
-        },
-        {
-          "player": "badman",
-          "matches": 67,
-          "kills": 117,
-          "deaths": 194,
-          "dealt": 21413,
-          "received": 37537,
-          "pick": 225,
-          "miss": 1423,
-          "accuracy": 18.1,
-          "qualified": true
         },
         {
           "player": "aid",
@@ -3022,6 +3022,18 @@
           "qualified": false
         },
         {
+          "player": "TAITI",
+          "matches": 9,
+          "kills": 16,
+          "deaths": 20,
+          "dealt": 3797,
+          "received": 5403,
+          "pick": 39,
+          "miss": 145,
+          "accuracy": 16.4,
+          "qualified": false
+        },
+        {
           "player": "n0sferatu",
           "matches": 41,
           "kills": 121,
@@ -3187,18 +3199,6 @@
           "pick": 14,
           "miss": 96,
           "accuracy": 14.4,
-          "qualified": false
-        },
-        {
-          "player": "TAITI",
-          "matches": 8,
-          "kills": 12,
-          "deaths": 18,
-          "dealt": 2707,
-          "received": 5147,
-          "pick": 33,
-          "miss": 133,
-          "accuracy": 14.0,
           "qualified": false
         },
         {
@@ -3832,6 +3832,18 @@
           "qualified": false
         },
         {
+          "player": "badman",
+          "matches": 66,
+          "kills": 177,
+          "deaths": 170,
+          "dealt": 26100,
+          "received": 23892,
+          "pick": 161,
+          "miss": 860,
+          "accuracy": 14.8,
+          "qualified": true
+        },
+        {
           "player": "szef|shotman",
           "matches": 9,
           "kills": 7,
@@ -3842,18 +3854,6 @@
           "miss": 105,
           "accuracy": 14.8,
           "qualified": false
-        },
-        {
-          "player": "badman",
-          "matches": 65,
-          "kills": 174,
-          "deaths": 168,
-          "dealt": 25398,
-          "received": 23628,
-          "pick": 155,
-          "miss": 848,
-          "accuracy": 14.7,
-          "qualified": true
         },
         {
           "player": "maq",
@@ -4312,18 +4312,6 @@
           "qualified": true
         },
         {
-          "player": "need1",
-          "matches": 39,
-          "kills": 57,
-          "deaths": 67,
-          "dealt": 9888,
-          "received": 12240,
-          "pick": 81,
-          "miss": 440,
-          "accuracy": 12.8,
-          "qualified": true
-        },
-        {
           "player": "cne",
           "matches": 58,
           "kills": 135,
@@ -4344,6 +4332,18 @@
           "received": 10110,
           "pick": 94,
           "miss": 270,
+          "accuracy": 12.7,
+          "qualified": true
+        },
+        {
+          "player": "need1",
+          "matches": 40,
+          "kills": 59,
+          "deaths": 71,
+          "dealt": 10182,
+          "received": 12510,
+          "pick": 84,
+          "miss": 455,
           "accuracy": 12.7,
           "qualified": true
         },
@@ -4780,18 +4780,6 @@
           "qualified": true
         },
         {
-          "player": "TAITI",
-          "matches": 8,
-          "kills": 14,
-          "deaths": 23,
-          "dealt": 3018,
-          "received": 3294,
-          "pick": 25,
-          "miss": 101,
-          "accuracy": 11.0,
-          "qualified": false
-        },
-        {
           "player": "//VERSACE",
           "matches": 2,
           "kills": 6,
@@ -4852,6 +4840,18 @@
           "qualified": false
         },
         {
+          "player": "TAITI",
+          "matches": 9,
+          "kills": 17,
+          "deaths": 26,
+          "dealt": 3294,
+          "received": 3810,
+          "pick": 31,
+          "miss": 113,
+          "accuracy": 10.9,
+          "qualified": false
+        },
+        {
           "player": "Qiub",
           "matches": 12,
           "kills": 5,
@@ -4874,6 +4874,18 @@
           "miss": 546,
           "accuracy": 10.6,
           "qualified": true
+        },
+        {
+          "player": "lynx",
+          "matches": 8,
+          "kills": 10,
+          "deaths": 23,
+          "dealt": 3048,
+          "received": 3816,
+          "pick": 33,
+          "miss": 80,
+          "accuracy": 10.5,
+          "qualified": false
         },
         {
           "player": "fff",
@@ -4934,18 +4946,6 @@
           "miss": 69,
           "accuracy": 10.0,
           "qualified": true
-        },
-        {
-          "player": "lynx",
-          "matches": 7,
-          "kills": 8,
-          "deaths": 22,
-          "dealt": 2790,
-          "received": 3336,
-          "pick": 30,
-          "miss": 65,
-          "accuracy": 10.0,
-          "qualified": false
         },
         {
           "player": "OESD",
