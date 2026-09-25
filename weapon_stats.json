@@ -496,18 +496,6 @@
           "qualified": false
         },
         {
-          "player": "prostitute",
-          "matches": 12,
-          "kills": 55,
-          "deaths": 84,
-          "dealt": 8400,
-          "received": 11400,
-          "pick": 15,
-          "miss": 188,
-          "accuracy": 34.9,
-          "qualified": true
-        },
-        {
           "player": "//VERSACE",
           "matches": 2,
           "kills": 4,
@@ -565,6 +553,18 @@
           "pick": 8,
           "miss": 51,
           "accuracy": 34.2,
+          "qualified": true
+        },
+        {
+          "player": "prostitute",
+          "matches": 13,
+          "kills": 57,
+          "deaths": 97,
+          "dealt": 8700,
+          "received": 13400,
+          "pick": 17,
+          "miss": 198,
+          "accuracy": 34.1,
           "qualified": true
         },
         {
@@ -917,13 +917,13 @@
         },
         {
           "player": "jabb@",
-          "matches": 93,
-          "kills": 245,
-          "deaths": 601,
-          "dealt": 39400,
-          "received": 94200,
-          "pick": 176,
-          "miss": 909,
+          "matches": 94,
+          "kills": 248,
+          "deaths": 617,
+          "dealt": 40200,
+          "received": 96600,
+          "pick": 182,
+          "miss": 915,
           "accuracy": 29.4,
           "qualified": true
         },
@@ -1024,6 +1024,18 @@
           "qualified": true
         },
         {
+          "player": "r",
+          "matches": 40,
+          "kills": 111,
+          "deaths": 261,
+          "dealt": 17300,
+          "received": 38200,
+          "pick": 74,
+          "miss": 457,
+          "accuracy": 27.8,
+          "qualified": true
+        },
+        {
           "player": "senz",
           "matches": 19,
           "kills": 50,
@@ -1046,18 +1058,6 @@
           "miss": 43,
           "accuracy": 27.7,
           "qualified": false
-        },
-        {
-          "player": "r",
-          "matches": 39,
-          "kills": 109,
-          "deaths": 261,
-          "dealt": 16900,
-          "received": 38100,
-          "pick": 74,
-          "miss": 445,
-          "accuracy": 27.4,
-          "qualified": true
         },
         {
           "player": "tomato-gose",
@@ -1528,6 +1528,18 @@
           "qualified": false
         },
         {
+          "player": "VITALIS",
+          "matches": 51,
+          "kills": 100,
+          "deaths": 236,
+          "dealt": 15100,
+          "received": 33400,
+          "pick": 56,
+          "miss": 615,
+          "accuracy": 18.8,
+          "qualified": true
+        },
+        {
           "player": "sase",
           "matches": 3,
           "kills": 8,
@@ -1538,18 +1550,6 @@
           "miss": 26,
           "accuracy": 18.7,
           "qualified": false
-        },
-        {
-          "player": "VITALIS",
-          "matches": 50,
-          "kills": 96,
-          "deaths": 231,
-          "dealt": 14400,
-          "received": 32700,
-          "pick": 53,
-          "miss": 606,
-          "accuracy": 18.5,
-          "qualified": true
         },
         {
           "player": "lolercoaster",
@@ -1672,6 +1672,18 @@
           "qualified": false
         },
         {
+          "player": "Domik_v_derevne",
+          "matches": 2,
+          "kills": 0,
+          "deaths": 26,
+          "dealt": 0,
+          "received": 4000,
+          "pick": 1,
+          "miss": 34,
+          "accuracy": 0.0,
+          "qualified": false
+        },
+        {
           "player": "rawhide",
           "matches": 1,
           "kills": 0,
@@ -1704,18 +1716,6 @@
           "received": 1300,
           "pick": 1,
           "miss": 16,
-          "accuracy": 0.0,
-          "qualified": false
-        },
-        {
-          "player": "Domik_v_derevne",
-          "matches": 1,
-          "kills": 0,
-          "deaths": 17,
-          "dealt": 0,
-          "received": 2700,
-          "pick": 1,
-          "miss": 22,
           "accuracy": 0.0,
           "qualified": false
         }
@@ -2111,26 +2111,26 @@
         },
         {
           "player": "r",
-          "matches": 39,
-          "kills": 190,
-          "deaths": 180,
-          "dealt": 34428,
-          "received": 38658,
-          "pick": 159,
-          "miss": 692,
+          "matches": 40,
+          "kills": 199,
+          "deaths": 183,
+          "dealt": 35955,
+          "received": 39954,
+          "pick": 160,
+          "miss": 722,
           "accuracy": 24.6,
           "qualified": true
         },
         {
           "player": "VITALIS",
-          "matches": 51,
+          "matches": 52,
           "kills": 223,
-          "deaths": 163,
-          "dealt": 42836,
-          "received": 34362,
-          "pick": 222,
-          "miss": 1040,
-          "accuracy": 24.4,
+          "deaths": 166,
+          "dealt": 43298,
+          "received": 35060,
+          "pick": 226,
+          "miss": 1067,
+          "accuracy": 24.2,
           "qualified": true
         },
         {
@@ -2194,18 +2194,6 @@
           "qualified": true
         },
         {
-          "player": "prostitute",
-          "matches": 12,
-          "kills": 98,
-          "deaths": 42,
-          "dealt": 15819,
-          "received": 9908,
-          "pick": 77,
-          "miss": 200,
-          "accuracy": 23.5,
-          "qualified": true
-        },
-        {
           "player": "OESD",
           "matches": 2,
           "kills": 8,
@@ -2251,6 +2239,18 @@
           "pick": 28,
           "miss": 167,
           "accuracy": 23.1,
+          "qualified": true
+        },
+        {
+          "player": "prostitute",
+          "matches": 13,
+          "kills": 103,
+          "deaths": 46,
+          "dealt": 16854,
+          "received": 10847,
+          "pick": 87,
+          "miss": 221,
+          "accuracy": 23.0,
           "qualified": true
         },
         {
@@ -2387,13 +2387,13 @@
         },
         {
           "player": "jabb@",
-          "matches": 95,
-          "kills": 350,
-          "deaths": 419,
-          "dealt": 72064,
-          "received": 90963,
-          "pick": 482,
-          "miss": 1435,
+          "matches": 96,
+          "kills": 352,
+          "deaths": 424,
+          "dealt": 72675,
+          "received": 91979,
+          "pick": 488,
+          "miss": 1460,
           "accuracy": 21.5,
           "qualified": true
         },
@@ -2950,18 +2950,6 @@
           "qualified": false
         },
         {
-          "player": "Domik_v_derevne",
-          "matches": 1,
-          "kills": 6,
-          "deaths": 7,
-          "dealt": 965,
-          "received": 1095,
-          "pick": 9,
-          "miss": 12,
-          "accuracy": 17.0,
-          "qualified": false
-        },
-        {
           "player": "syanid",
           "matches": 1,
           "kills": 5,
@@ -3078,6 +3066,18 @@
           "received": 2470,
           "pick": 4,
           "miss": 15,
+          "accuracy": 16.0,
+          "qualified": false
+        },
+        {
+          "player": "Domik_v_derevne",
+          "matches": 2,
+          "kills": 8,
+          "deaths": 9,
+          "dealt": 1641,
+          "received": 1580,
+          "pick": 16,
+          "miss": 36,
           "accuracy": 16.0,
           "qualified": false
         },
@@ -3458,6 +3458,18 @@
           "qualified": true
         },
         {
+          "player": "prostitute",
+          "matches": 11,
+          "kills": 33,
+          "deaths": 20,
+          "dealt": 3846,
+          "received": 2958,
+          "pick": 24,
+          "miss": 141,
+          "accuracy": 16.2,
+          "qualified": true
+        },
+        {
           "player": "lamerinon",
           "matches": 6,
           "kills": 21,
@@ -3479,18 +3491,6 @@
           "pick": 22,
           "miss": 148,
           "accuracy": 16.1,
-          "qualified": true
-        },
-        {
-          "player": "asd_krzys",
-          "matches": 26,
-          "kills": 78,
-          "deaths": 54,
-          "dealt": 12162,
-          "received": 8154,
-          "pick": 59,
-          "miss": 319,
-          "accuracy": 16.0,
           "qualified": true
         }
       ],
@@ -3652,6 +3652,18 @@
           "qualified": false
         },
         {
+          "player": "prostitute",
+          "matches": 11,
+          "kills": 33,
+          "deaths": 20,
+          "dealt": 3846,
+          "received": 2958,
+          "pick": 24,
+          "miss": 141,
+          "accuracy": 16.2,
+          "qualified": true
+        },
+        {
           "player": "lamerinon",
           "matches": 6,
           "kills": 21,
@@ -3708,18 +3720,6 @@
           "received": 9372,
           "pick": 68,
           "miss": 334,
-          "accuracy": 15.7,
-          "qualified": true
-        },
-        {
-          "player": "prostitute",
-          "matches": 10,
-          "kills": 28,
-          "deaths": 18,
-          "dealt": 3126,
-          "received": 2766,
-          "pick": 20,
-          "miss": 129,
           "accuracy": 15.7,
           "qualified": true
         },
@@ -3828,18 +3828,6 @@
           "received": 594,
           "pick": 1,
           "miss": 14,
-          "accuracy": 15.0,
-          "qualified": false
-        },
-        {
-          "player": "Domik_v_derevne",
-          "matches": 1,
-          "kills": 0,
-          "deaths": 5,
-          "dealt": 174,
-          "received": 468,
-          "pick": 3,
-          "miss": 20,
           "accuracy": 15.0,
           "qualified": false
         },
@@ -4157,13 +4145,13 @@
         },
         {
           "player": "jabb@",
-          "matches": 95,
-          "kills": 337,
-          "deaths": 308,
-          "dealt": 49026,
-          "received": 41604,
-          "pick": 296,
-          "miss": 921,
+          "matches": 96,
+          "kills": 338,
+          "deaths": 310,
+          "dealt": 49314,
+          "received": 41946,
+          "pick": 300,
+          "miss": 933,
           "accuracy": 13.1,
           "qualified": true
         },
@@ -4781,13 +4769,13 @@
         },
         {
           "player": "r",
-          "matches": 38,
-          "kills": 89,
-          "deaths": 146,
-          "dealt": 16590,
-          "received": 18960,
-          "pick": 151,
-          "miss": 388,
+          "matches": 39,
+          "kills": 95,
+          "deaths": 150,
+          "dealt": 17268,
+          "received": 19470,
+          "pick": 155,
+          "miss": 400,
           "accuracy": 11.1,
           "qualified": true
         },
@@ -4860,6 +4848,18 @@
           "received": 48,
           "pick": 8,
           "miss": 1,
+          "accuracy": 11.0,
+          "qualified": false
+        },
+        {
+          "player": "Domik_v_derevne",
+          "matches": 2,
+          "kills": 0,
+          "deaths": 8,
+          "dealt": 198,
+          "received": 780,
+          "pick": 5,
+          "miss": 34,
           "accuracy": 11.0,
           "qualified": false
         },
@@ -5009,14 +5009,14 @@
         },
         {
           "player": "VITALIS",
-          "matches": 51,
-          "kills": 59,
-          "deaths": 112,
-          "dealt": 9606,
-          "received": 16002,
-          "pick": 86,
-          "miss": 627,
-          "accuracy": 9.6,
+          "matches": 52,
+          "kills": 60,
+          "deaths": 114,
+          "dealt": 9774,
+          "received": 16458,
+          "pick": 88,
+          "miss": 641,
+          "accuracy": 9.5,
           "qualified": true
         },
         {

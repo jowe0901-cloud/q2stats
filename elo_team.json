@@ -296,26 +296,10 @@
     "winrate": 75.0
   },
   {
-    "player": "prostitute",
-    "elo": 1519,
-    "matches": 10,
-    "wins": 6,
-    "losses": 4,
-    "winrate": 60.0
-  },
-  {
     "player": "Dark",
     "elo": 1517,
     "matches": 2,
     "wins": 2,
-    "losses": 0,
-    "winrate": 100.0
-  },
-  {
-    "player": "Domik_v_derevne",
-    "elo": 1516,
-    "matches": 5,
-    "wins": 5,
     "losses": 0,
     "winrate": 100.0
   },
@@ -400,6 +384,14 @@
     "winrate": 40.0
   },
   {
+    "player": "Domik_v_derevne",
+    "elo": 1508,
+    "matches": 6,
+    "wins": 5,
+    "losses": 1,
+    "winrate": 83.3
+  },
+  {
     "player": "slonik",
     "elo": 1508,
     "matches": 4,
@@ -446,6 +438,14 @@
     "wins": 0,
     "losses": 1,
     "winrate": 0.0
+  },
+  {
+    "player": "prostitute",
+    "elo": 1504,
+    "matches": 11,
+    "wins": 6,
+    "losses": 5,
+    "winrate": 54.5
   },
   {
     "player": "aid",
@@ -824,6 +824,14 @@
     "winrate": 33.3
   },
   {
+    "player": "r",
+    "elo": 1473,
+    "matches": 52,
+    "wins": 30,
+    "losses": 22,
+    "winrate": 57.7
+  },
+  {
     "player": "Tai",
     "elo": 1473,
     "matches": 3,
@@ -910,14 +918,6 @@
     "wins": 1,
     "losses": 3,
     "winrate": 25.0
-  },
-  {
-    "player": "r",
-    "elo": 1457,
-    "matches": 51,
-    "wins": 29,
-    "losses": 22,
-    "winrate": 56.9
   },
   {
     "player": "Qiub/afc",
@@ -1049,11 +1049,11 @@
   },
   {
     "player": "VITALIS",
-    "elo": 1290,
-    "matches": 74,
-    "wins": 32,
+    "elo": 1305,
+    "matches": 75,
+    "wins": 33,
     "losses": 42,
-    "winrate": 43.2
+    "winrate": 44.0
   },
   {
     "player": "LiOn]tRk[",
@@ -1065,10 +1065,10 @@
   },
   {
     "player": "jabb@",
-    "elo": 1176,
-    "matches": 131,
+    "elo": 1160,
+    "matches": 132,
     "wins": 58,
-    "losses": 73,
-    "winrate": 44.3
+    "losses": 74,
+    "winrate": 43.9
   }
 ]
