@@ -40,20 +40,20 @@
     "winrate": 65.2
   },
   {
+    "player": "rul",
+    "elo": 1721,
+    "matches": 68,
+    "wins": 36,
+    "losses": 32,
+    "winrate": 52.9
+  },
+  {
     "player": "Keizer",
     "elo": 1715,
     "matches": 52,
     "wins": 30,
     "losses": 22,
     "winrate": 57.7
-  },
-  {
-    "player": "rul",
-    "elo": 1705,
-    "matches": 67,
-    "wins": 35,
-    "losses": 32,
-    "winrate": 52.2
   },
   {
     "player": "fon",
@@ -104,6 +104,14 @@
     "winrate": 50.0
   },
   {
+    "player": "faint",
+    "elo": 1608,
+    "matches": 14,
+    "wins": 9,
+    "losses": 5,
+    "winrate": 64.3
+  },
+  {
     "player": ">daPurrI",
     "elo": 1603,
     "matches": 9,
@@ -120,14 +128,6 @@
     "winrate": 85.7
   },
   {
-    "player": "faint",
-    "elo": 1592,
-    "matches": 13,
-    "wins": 8,
-    "losses": 5,
-    "winrate": 61.5
-  },
-  {
     "player": ">daweed",
     "elo": 1579,
     "matches": 8,
@@ -136,28 +136,12 @@
     "winrate": 87.5
   },
   {
-    "player": "asd_krzys",
-    "elo": 1576,
-    "matches": 37,
-    "wins": 21,
-    "losses": 16,
-    "winrate": 56.8
-  },
-  {
     "player": ">OPTIMIZER",
     "elo": 1574,
     "matches": 5,
     "wins": 5,
     "losses": 0,
     "winrate": 100.0
-  },
-  {
-    "player": "badman",
-    "elo": 1571,
-    "matches": 81,
-    "wins": 37,
-    "losses": 44,
-    "winrate": 45.7
   },
   {
     "player": ">purri",
@@ -174,6 +158,22 @@
     "wins": 4,
     "losses": 0,
     "winrate": 100.0
+  },
+  {
+    "player": "badman",
+    "elo": 1562,
+    "matches": 82,
+    "wins": 37,
+    "losses": 45,
+    "winrate": 45.1
+  },
+  {
+    "player": "asd_krzys",
+    "elo": 1562,
+    "matches": 38,
+    "wins": 21,
+    "losses": 17,
+    "winrate": 55.3
   },
   {
     "player": "B100D",
@@ -214,14 +214,6 @@
     "wins": 3,
     "losses": 0,
     "winrate": 100.0
-  },
-  {
-    "player": "TAITI",
-    "elo": 1540,
-    "matches": 5,
-    "wins": 4,
-    "losses": 1,
-    "winrate": 80.0
   },
   {
     "player": "lolercoaster",
@@ -270,6 +262,14 @@
     "wins": 2,
     "losses": 0,
     "winrate": 100.0
+  },
+  {
+    "player": "TAITI",
+    "elo": 1524,
+    "matches": 6,
+    "wins": 4,
+    "losses": 2,
+    "winrate": 66.7
   },
   {
     "player": "lamerinon",
@@ -600,14 +600,6 @@
     "winrate": 50.0
   },
   {
-    "player": "m",
-    "elo": 1495,
-    "matches": 36,
-    "wins": 16,
-    "losses": 20,
-    "winrate": 44.4
-  },
-  {
     "player": "sase",
     "elo": 1493,
     "matches": 3,
@@ -670,6 +662,14 @@
     "wins": 2,
     "losses": 3,
     "winrate": 40.0
+  },
+  {
+    "player": "need1",
+    "elo": 1484,
+    "matches": 55,
+    "wins": 29,
+    "losses": 26,
+    "winrate": 52.7
   },
   {
     "player": "[G2H]DEMON",
@@ -768,6 +768,14 @@
     "winrate": 44.8
   },
   {
+    "player": "m",
+    "elo": 1479,
+    "matches": 37,
+    "wins": 16,
+    "losses": 21,
+    "winrate": 43.2
+  },
+  {
     "player": "yin",
     "elo": 1479,
     "matches": 3,
@@ -846,14 +854,6 @@
     "wins": 7,
     "losses": 10,
     "winrate": 41.2
-  },
-  {
-    "player": "need1",
-    "elo": 1470,
-    "matches": 54,
-    "wins": 28,
-    "losses": 26,
-    "winrate": 51.9
   },
   {
     "player": "[PK]Intruder",
@@ -1025,11 +1025,11 @@
   },
   {
     "player": "Maniek",
-    "elo": 1337,
-    "matches": 73,
-    "wins": 32,
+    "elo": 1348,
+    "matches": 74,
+    "wins": 33,
     "losses": 41,
-    "winrate": 43.8
+    "winrate": 44.6
   },
   {
     "player": "VITALIS",
