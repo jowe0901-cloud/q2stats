@@ -28956,5 +28956,43 @@
       }
     ],
     "saved_at": "2026-09-26T20:44:24+02:00"
+  },
+  {
+    "match_id": "129eef2bed2505da",
+    "game_type": "team",
+    "winner": "Away",
+    "home_score": 43,
+    "away_score": 48,
+    "players": [
+      {
+        "player": "r",
+        "team": "Home",
+        "old_elo": 1519,
+        "change": -14.8,
+        "new_elo": 1504
+      },
+      {
+        "player": "asd_krzys",
+        "team": "Home",
+        "old_elo": 1545,
+        "change": 6.2,
+        "new_elo": 1552
+      },
+      {
+        "player": "Qiub",
+        "team": "Home",
+        "old_elo": 1416,
+        "change": -16,
+        "new_elo": 1400
+      },
+      {
+        "player": "sevvq",
+        "team": "Away",
+        "old_elo": 1336,
+        "change": 16,
+        "new_elo": 1352
+      }
+    ],
+    "saved_at": "2026-09-26T20:55:47+02:00"
   }
 ]
