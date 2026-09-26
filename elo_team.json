@@ -216,14 +216,6 @@
     "winrate": 83.3
   },
   {
-    "player": "B100D",
-    "elo": 1536,
-    "matches": 66,
-    "wins": 33,
-    "losses": 33,
-    "winrate": 50.0
-  },
-  {
     "player": "=PFH=ZYGA",
     "elo": 1536,
     "matches": 3,
@@ -278,6 +270,14 @@
     "wins": 6,
     "losses": 3,
     "winrate": 66.7
+  },
+  {
+    "player": "B100D",
+    "elo": 1524,
+    "matches": 67,
+    "wins": 33,
+    "losses": 34,
+    "winrate": 49.3
   },
   {
     "player": "lamerinon",
@@ -350,6 +350,14 @@
     "wins": 1,
     "losses": 0,
     "winrate": 100.0
+  },
+  {
+    "player": "michaq",
+    "elo": 1515,
+    "matches": 28,
+    "wins": 12,
+    "losses": 16,
+    "winrate": 42.9
   },
   {
     "player": "bobo",
@@ -542,14 +550,6 @@
     "wins": 3,
     "losses": 3,
     "winrate": 50.0
-  },
-  {
-    "player": "michaq",
-    "elo": 1499,
-    "matches": 27,
-    "wins": 11,
-    "losses": 16,
-    "winrate": 40.7
   },
   {
     "player": "s",
@@ -1009,11 +1009,11 @@
   },
   {
     "player": "need1",
-    "elo": 1398,
-    "matches": 67,
-    "wins": 34,
+    "elo": 1409,
+    "matches": 68,
+    "wins": 35,
     "losses": 33,
-    "winrate": 50.7
+    "winrate": 51.5
   },
   {
     "player": "Maniek",
@@ -1089,10 +1089,10 @@
   },
   {
     "player": "jabb@",
-    "elo": 1145,
-    "matches": 143,
+    "elo": 1129,
+    "matches": 144,
     "wins": 63,
-    "losses": 80,
-    "winrate": 44.1
+    "losses": 81,
+    "winrate": 43.8
   }
 ]
