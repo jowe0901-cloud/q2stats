@@ -784,18 +784,6 @@
           "qualified": true
         },
         {
-          "player": "Puma!",
-          "matches": 25,
-          "kills": 194,
-          "deaths": 194,
-          "dealt": 32400,
-          "received": 28700,
-          "pick": 99,
-          "miss": 295,
-          "accuracy": 31.3,
-          "qualified": true
-        },
-        {
           "player": "need1",
           "matches": 41,
           "kills": 192,
@@ -829,6 +817,18 @@
           "pick": 49,
           "miss": 175,
           "accuracy": 30.9,
+          "qualified": true
+        },
+        {
+          "player": "Puma!",
+          "matches": 26,
+          "kills": 194,
+          "deaths": 197,
+          "dealt": 32500,
+          "received": 29900,
+          "pick": 100,
+          "miss": 300,
+          "accuracy": 30.6,
           "qualified": true
         },
         {
@@ -940,18 +940,6 @@
           "qualified": true
         },
         {
-          "player": "B100D",
-          "matches": 61,
-          "kills": 237,
-          "deaths": 217,
-          "dealt": 49000,
-          "received": 37900,
-          "pick": 211,
-          "miss": 338,
-          "accuracy": 29.0,
-          "qualified": true
-        },
-        {
           "player": "#ABBYS",
           "matches": 1,
           "kills": 7,
@@ -962,6 +950,18 @@
           "miss": 12,
           "accuracy": 29.0,
           "qualified": false
+        },
+        {
+          "player": "B100D",
+          "matches": 62,
+          "kills": 240,
+          "deaths": 217,
+          "dealt": 50200,
+          "received": 38000,
+          "pick": 216,
+          "miss": 339,
+          "accuracy": 28.9,
+          "qualified": true
         },
         {
           "player": "=PFH=ZYGA",
@@ -2651,14 +2651,14 @@
         },
         {
           "player": "B100D",
-          "matches": 61,
-          "kills": 108,
+          "matches": 62,
+          "kills": 110,
           "deaths": 114,
-          "dealt": 29923,
-          "received": 36412,
-          "pick": 226,
-          "miss": 647,
-          "accuracy": 19.1,
+          "dealt": 30339,
+          "received": 37405,
+          "pick": 227,
+          "miss": 660,
+          "accuracy": 19.0,
           "qualified": true
         },
         {
@@ -2696,18 +2696,6 @@
           "miss": 55,
           "accuracy": 18.9,
           "qualified": false
-        },
-        {
-          "player": "Puma!",
-          "matches": 25,
-          "kills": 67,
-          "deaths": 73,
-          "dealt": 13322,
-          "received": 16807,
-          "pick": 122,
-          "miss": 413,
-          "accuracy": 18.8,
-          "qualified": true
         },
         {
           "player": "[sf]T3RM!N4ToR",
@@ -2791,6 +2779,18 @@
           "pick": 147,
           "miss": 297,
           "accuracy": 18.5,
+          "qualified": true
+        },
+        {
+          "player": "Puma!",
+          "matches": 26,
+          "kills": 67,
+          "deaths": 75,
+          "dealt": 14178,
+          "received": 17386,
+          "pick": 135,
+          "miss": 414,
+          "accuracy": 18.4,
           "qualified": true
         },
         {
@@ -4180,6 +4180,18 @@
           "qualified": true
         },
         {
+          "player": "Puma!",
+          "matches": 24,
+          "kills": 31,
+          "deaths": 78,
+          "dealt": 6276,
+          "received": 12282,
+          "pick": 70,
+          "miss": 302,
+          "accuracy": 13.1,
+          "qualified": true
+        },
+        {
           "player": "[sf]fasadin",
           "matches": 6,
           "kills": 25,
@@ -4296,18 +4308,6 @@
           "received": 7944,
           "pick": 133,
           "miss": 106,
-          "accuracy": 12.9,
-          "qualified": true
-        },
-        {
-          "player": "Puma!",
-          "matches": 23,
-          "kills": 30,
-          "deaths": 73,
-          "dealt": 5862,
-          "received": 11634,
-          "pick": 64,
-          "miss": 294,
           "accuracy": 12.9,
           "qualified": true
         },
@@ -4709,13 +4709,13 @@
         },
         {
           "player": "B100D",
-          "matches": 61,
-          "kills": 197,
-          "deaths": 124,
-          "dealt": 30198,
-          "received": 24774,
-          "pick": 224,
-          "miss": 499,
+          "matches": 62,
+          "kills": 202,
+          "deaths": 125,
+          "dealt": 30846,
+          "received": 25188,
+          "pick": 232,
+          "miss": 505,
           "accuracy": 11.4,
           "qualified": true
         },
