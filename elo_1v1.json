@@ -280,6 +280,14 @@
     "winrate": 44.4
   },
   {
+    "player": "myrmidon^",
+    "elo": 1519,
+    "matches": 4,
+    "wins": 3,
+    "losses": 1,
+    "winrate": 75.0
+  },
+  {
     "player": "fonbeers",
     "elo": 1516,
     "matches": 1,
@@ -302,14 +310,6 @@
     "wins": 1,
     "losses": 0,
     "winrate": 100.0
-  },
-  {
-    "player": "myrmidon^",
-    "elo": 1509,
-    "matches": 3,
-    "wins": 2,
-    "losses": 1,
-    "winrate": 66.7
   },
   {
     "player": "piu-chilin",
@@ -689,10 +689,10 @@
   },
   {
     "player": "jabb@",
-    "elo": 1355,
-    "matches": 24,
+    "elo": 1346,
+    "matches": 25,
     "wins": 4,
-    "losses": 20,
-    "winrate": 16.7
+    "losses": 21,
+    "winrate": 16.0
   }
 ]

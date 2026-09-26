@@ -364,6 +364,18 @@
           "qualified": true
         },
         {
+          "player": "myrmidon^",
+          "matches": 55,
+          "kills": 523,
+          "deaths": 390,
+          "dealt": 83100,
+          "received": 58400,
+          "pick": 161,
+          "miss": 583,
+          "accuracy": 37.1,
+          "qualified": true
+        },
+        {
           "player": "tOk.P!o",
           "matches": 6,
           "kills": 45,
@@ -410,18 +422,6 @@
           "miss": 23,
           "accuracy": 36.8,
           "qualified": false
-        },
-        {
-          "player": "myrmidon^",
-          "matches": 54,
-          "kills": 517,
-          "deaths": 390,
-          "dealt": 82200,
-          "received": 58300,
-          "pick": 157,
-          "miss": 579,
-          "accuracy": 36.7,
-          "qualified": true
         },
         {
           "player": "bobo",
@@ -904,18 +904,6 @@
           "qualified": false
         },
         {
-          "player": "jabb@",
-          "matches": 108,
-          "kills": 294,
-          "deaths": 710,
-          "dealt": 48500,
-          "received": 112000,
-          "pick": 222,
-          "miss": 1065,
-          "accuracy": 29.8,
-          "qualified": true
-        },
-        {
           "player": "slonik",
           "matches": 4,
           "kills": 19,
@@ -948,6 +936,18 @@
           "received": 55100,
           "pick": 227,
           "miss": 577,
+          "accuracy": 29.6,
+          "qualified": true
+        },
+        {
+          "player": "jabb@",
+          "matches": 109,
+          "kills": 294,
+          "deaths": 716,
+          "dealt": 48600,
+          "received": 112900,
+          "pick": 226,
+          "miss": 1069,
           "accuracy": 29.6,
           "qualified": true
         },
@@ -2255,13 +2255,13 @@
         },
         {
           "player": "myrmidon^",
-          "matches": 53,
-          "kills": 145,
-          "deaths": 188,
-          "dealt": 29796,
-          "received": 36885,
-          "pick": 154,
-          "miss": 1081,
+          "matches": 54,
+          "kills": 146,
+          "deaths": 191,
+          "dealt": 30411,
+          "received": 37916,
+          "pick": 158,
+          "miss": 1085,
           "accuracy": 23.1,
           "qualified": true
         },
@@ -2386,6 +2386,18 @@
           "qualified": false
         },
         {
+          "player": "jabb@",
+          "matches": 111,
+          "kills": 405,
+          "deaths": 501,
+          "dealt": 85994,
+          "received": 109297,
+          "pick": 568,
+          "miss": 1673,
+          "accuracy": 21.8,
+          "qualified": true
+        },
+        {
           "player": "qw",
           "matches": 92,
           "kills": 190,
@@ -2395,18 +2407,6 @@
           "pick": 203,
           "miss": 1824,
           "accuracy": 21.8,
-          "qualified": true
-        },
-        {
-          "player": "jabb@",
-          "matches": 110,
-          "kills": 402,
-          "deaths": 500,
-          "dealt": 85032,
-          "received": 108568,
-          "pick": 564,
-          "miss": 1669,
-          "accuracy": 21.7,
           "qualified": true
         },
         {
@@ -3845,13 +3845,13 @@
         },
         {
           "player": "myrmidon^",
-          "matches": 53,
-          "kills": 132,
-          "deaths": 135,
-          "dealt": 20334,
-          "received": 21384,
-          "pick": 92,
-          "miss": 632,
+          "matches": 54,
+          "kills": 134,
+          "deaths": 139,
+          "dealt": 20646,
+          "received": 21846,
+          "pick": 95,
+          "miss": 637,
           "accuracy": 15.2,
           "qualified": true
         },
@@ -4193,13 +4193,13 @@
         },
         {
           "player": "jabb@",
-          "matches": 110,
-          "kills": 394,
-          "deaths": 371,
-          "dealt": 59352,
-          "received": 49176,
-          "pick": 369,
-          "miss": 1073,
+          "matches": 111,
+          "kills": 398,
+          "deaths": 373,
+          "dealt": 59814,
+          "received": 49488,
+          "pick": 374,
+          "miss": 1076,
           "accuracy": 13.3,
           "qualified": true
         },
