@@ -560,20 +560,20 @@
     "winrate": 66.7
   },
   {
+    "player": "r",
+    "elo": 1498,
+    "matches": 55,
+    "wins": 33,
+    "losses": 22,
+    "winrate": 60.0
+  },
+  {
     "player": "freeze",
     "elo": 1498,
     "matches": 6,
     "wins": 3,
     "losses": 3,
     "winrate": 50.0
-  },
-  {
-    "player": "r",
-    "elo": 1497,
-    "matches": 54,
-    "wins": 32,
-    "losses": 22,
-    "winrate": 59.3
   },
   {
     "player": "FRZ",
@@ -678,6 +678,14 @@
     "wins": 12,
     "losses": 16,
     "winrate": 42.9
+  },
+  {
+    "player": "SUPER-LAG",
+    "elo": 1486,
+    "matches": 62,
+    "wins": 35,
+    "losses": 27,
+    "winrate": 56.5
   },
   {
     "player": "RED",
@@ -806,14 +814,6 @@
     "wins": 19,
     "losses": 21,
     "winrate": 47.5
-  },
-  {
-    "player": "SUPER-LAG",
-    "elo": 1478,
-    "matches": 61,
-    "wins": 34,
-    "losses": 27,
-    "winrate": 55.7
   },
   {
     "player": "Dark Abyys",
@@ -1065,11 +1065,11 @@
   },
   {
     "player": "damz.",
-    "elo": 1318,
-    "matches": 20,
+    "elo": 1302,
+    "matches": 21,
     "wins": 5,
-    "losses": 15,
-    "winrate": 25.0
+    "losses": 16,
+    "winrate": 23.8
   },
   {
     "player": "mAc",
@@ -1089,10 +1089,10 @@
   },
   {
     "player": "jabb@",
-    "elo": 1144,
-    "matches": 145,
+    "elo": 1151,
+    "matches": 146,
     "wins": 64,
-    "losses": 81,
-    "winrate": 44.1
+    "losses": 82,
+    "winrate": 43.8
   }
 ]
