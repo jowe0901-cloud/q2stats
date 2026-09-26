@@ -200,14 +200,6 @@
     "winrate": 75.0
   },
   {
-    "player": "B100D",
-    "elo": 1543,
-    "matches": 64,
-    "wins": 33,
-    "losses": 31,
-    "winrate": 51.6
-  },
-  {
     "player": "OPTIMIZER",
     "elo": 1540,
     "matches": 3,
@@ -222,6 +214,14 @@
     "wins": 5,
     "losses": 1,
     "winrate": 83.3
+  },
+  {
+    "player": "B100D",
+    "elo": 1537,
+    "matches": 65,
+    "wins": 33,
+    "losses": 32,
+    "winrate": 50.8
   },
   {
     "player": "=PFH=ZYGA",
@@ -406,6 +406,14 @@
     "wins": 1,
     "losses": 0,
     "winrate": 100.0
+  },
+  {
+    "player": "michaq",
+    "elo": 1507,
+    "matches": 24,
+    "wins": 10,
+    "losses": 14,
+    "winrate": 41.7
   },
   {
     "player": "SZEF",
@@ -624,14 +632,6 @@
     "winrate": 48.5
   },
   {
-    "player": "michaq",
-    "elo": 1491,
-    "matches": 23,
-    "wins": 9,
-    "losses": 14,
-    "winrate": 39.1
-  },
-  {
     "player": "kurwa_ping80",
     "elo": 1490,
     "matches": 1,
@@ -705,6 +705,14 @@
   },
   {
     "player": "Deft0ne",
+    "elo": 1484,
+    "matches": 1,
+    "wins": 0,
+    "losses": 1,
+    "winrate": 0.0
+  },
+  {
+    "player": "_Logic",
     "elo": 1484,
     "matches": 1,
     "wins": 0,
@@ -968,20 +976,20 @@
     "winrate": 40.9
   },
   {
+    "player": "need1",
+    "elo": 1425,
+    "matches": 64,
+    "wins": 33,
+    "losses": 31,
+    "winrate": 51.6
+  },
+  {
     "player": "[sf]T3RM!N4ToR",
     "elo": 1424,
     "matches": 11,
     "wins": 4,
     "losses": 7,
     "winrate": 36.4
-  },
-  {
-    "player": "need1",
-    "elo": 1421,
-    "matches": 63,
-    "wins": 32,
-    "losses": 31,
-    "winrate": 50.8
   },
   {
     "player": "Qiub",
