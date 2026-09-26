@@ -16,20 +16,20 @@
     "winrate": 73.2
   },
   {
-    "player": "qw",
-    "elo": 1811,
-    "matches": 126,
-    "wins": 66,
-    "losses": 60,
-    "winrate": 52.4
-  },
-  {
     "player": "cne",
     "elo": 1808,
     "matches": 74,
     "wins": 44,
     "losses": 30,
     "winrate": 59.5
+  },
+  {
+    "player": "qw",
+    "elo": 1795,
+    "matches": 127,
+    "wins": 66,
+    "losses": 61,
+    "winrate": 52.0
   },
   {
     "player": "[sf]fasadin",
@@ -128,6 +128,14 @@
     "winrate": 85.7
   },
   {
+    "player": "asd_krzys",
+    "elo": 1588,
+    "matches": 49,
+    "wins": 25,
+    "losses": 24,
+    "winrate": 51.0
+  },
+  {
     "player": "badman",
     "elo": 1579,
     "matches": 85,
@@ -150,14 +158,6 @@
     "wins": 5,
     "losses": 0,
     "winrate": 100.0
-  },
-  {
-    "player": "asd_krzys",
-    "elo": 1572,
-    "matches": 48,
-    "wins": 24,
-    "losses": 24,
-    "winrate": 50.0
   },
   {
     "player": ">purri",
@@ -374,6 +374,14 @@
     "wins": 2,
     "losses": 1,
     "winrate": 66.7
+  },
+  {
+    "player": "z0diac",
+    "elo": 1514,
+    "matches": 7,
+    "wins": 4,
+    "losses": 3,
+    "winrate": 57.1
   },
   {
     "player": "kartonkupy%",
@@ -600,14 +608,6 @@
     "winrate": 50.0
   },
   {
-    "player": "z0diac",
-    "elo": 1498,
-    "matches": 6,
-    "wins": 3,
-    "losses": 3,
-    "winrate": 50.0
-  },
-  {
     "player": "FRZ",
     "elo": 1497,
     "matches": 2,
@@ -693,14 +693,6 @@
     "matches": 7,
     "wins": 3,
     "losses": 4,
-    "winrate": 42.9
-  },
-  {
-    "player": "Puma!",
-    "elo": 1487,
-    "matches": 28,
-    "wins": 12,
-    "losses": 16,
     "winrate": 42.9
   },
   {
@@ -864,6 +856,14 @@
     "winrate": 33.3
   },
   {
+    "player": "Puma!",
+    "elo": 1472,
+    "matches": 29,
+    "wins": 12,
+    "losses": 17,
+    "winrate": 41.4
+  },
+  {
     "player": "LiOn",
     "elo": 1471,
     "matches": 3,
@@ -952,14 +952,6 @@
     "winrate": 45.8
   },
   {
-    "player": "TERMINAKOR",
-    "elo": 1455,
-    "matches": 4,
-    "wins": 1,
-    "losses": 3,
-    "winrate": 25.0
-  },
-  {
     "player": "deoll",
     "elo": 1452,
     "matches": 3,
@@ -1006,6 +998,14 @@
     "wins": 0,
     "losses": 4,
     "winrate": 0.0
+  },
+  {
+    "player": "TERMINAKOR",
+    "elo": 1439,
+    "matches": 5,
+    "wins": 1,
+    "losses": 4,
+    "winrate": 20.0
   },
   {
     "player": "shotman",
@@ -1113,10 +1113,10 @@
   },
   {
     "player": "jabb@",
-    "elo": 1130,
-    "matches": 154,
-    "wins": 67,
+    "elo": 1145,
+    "matches": 155,
+    "wins": 68,
     "losses": 87,
-    "winrate": 43.5
+    "winrate": 43.9
   }
 ]
