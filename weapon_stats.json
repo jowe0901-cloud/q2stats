@@ -473,13 +473,13 @@
         },
         {
           "player": "ptr",
-          "matches": 3,
+          "matches": 4,
           "kills": 9,
           "deaths": 4,
           "dealt": 1800,
-          "received": 1900,
-          "pick": 1,
-          "miss": 8,
+          "received": 2400,
+          "pick": 2,
+          "miss": 9,
           "accuracy": 35.0,
           "qualified": false
         },
@@ -542,6 +542,18 @@
           "miss": 7,
           "accuracy": 34.5,
           "qualified": false
+        },
+        {
+          "player": "shad",
+          "matches": 25,
+          "kills": 122,
+          "deaths": 66,
+          "dealt": 31700,
+          "received": 15900,
+          "pick": 119,
+          "miss": 177,
+          "accuracy": 34.4,
+          "qualified": true
         },
         {
           "player": "Larik",
@@ -649,18 +661,6 @@
           "pick": 52,
           "miss": 68,
           "accuracy": 33.8,
-          "qualified": true
-        },
-        {
-          "player": "shad",
-          "matches": 24,
-          "kills": 122,
-          "deaths": 66,
-          "dealt": 31200,
-          "received": 15900,
-          "pick": 118,
-          "miss": 176,
-          "accuracy": 33.7,
           "qualified": true
         },
         {
@@ -2686,18 +2686,6 @@
           "qualified": true
         },
         {
-          "player": "ptr",
-          "matches": 3,
-          "kills": 18,
-          "deaths": 5,
-          "dealt": 3157,
-          "received": 3067,
-          "pick": 6,
-          "miss": 22,
-          "accuracy": 19.0,
-          "qualified": false
-        },
-        {
           "player": ">purri",
           "matches": 11,
           "kills": 28,
@@ -2806,6 +2794,18 @@
           "qualified": true
         },
         {
+          "player": "ptr",
+          "matches": 4,
+          "kills": 19,
+          "deaths": 5,
+          "dealt": 3609,
+          "received": 3348,
+          "pick": 8,
+          "miss": 26,
+          "accuracy": 18.5,
+          "qualified": false
+        },
+        {
           "player": "badman",
           "matches": 70,
           "kills": 119,
@@ -2903,13 +2903,13 @@
         },
         {
           "player": "shad",
-          "matches": 24,
+          "matches": 25,
           "kills": 54,
-          "deaths": 55,
-          "dealt": 18654,
-          "received": 19094,
-          "pick": 129,
-          "miss": 195,
+          "deaths": 56,
+          "dealt": 18935,
+          "received": 19641,
+          "pick": 133,
+          "miss": 197,
           "accuracy": 17.5,
           "qualified": true
         },
@@ -4169,13 +4169,13 @@
         },
         {
           "player": "shad",
-          "matches": 24,
-          "kills": 84,
-          "deaths": 54,
-          "dealt": 17760,
-          "received": 14952,
-          "pick": 109,
-          "miss": 218,
+          "matches": 25,
+          "kills": 85,
+          "deaths": 56,
+          "dealt": 18168,
+          "received": 15390,
+          "pick": 111,
+          "miss": 220,
           "accuracy": 13.1,
           "qualified": true
         },
@@ -4708,6 +4708,18 @@
           "qualified": true
         },
         {
+          "player": "ptr",
+          "matches": 4,
+          "kills": 17,
+          "deaths": 5,
+          "dealt": 3264,
+          "received": 1422,
+          "pick": 17,
+          "miss": 10,
+          "accuracy": 11.5,
+          "qualified": false
+        },
+        {
           "player": "RED",
           "matches": 5,
           "kills": 13,
@@ -4740,18 +4752,6 @@
           "received": 5214,
           "pick": 47,
           "miss": 45,
-          "accuracy": 11.3,
-          "qualified": false
-        },
-        {
-          "player": "ptr",
-          "matches": 3,
-          "kills": 15,
-          "deaths": 4,
-          "dealt": 2826,
-          "received": 1014,
-          "pick": 15,
-          "miss": 8,
           "accuracy": 11.3,
           "qualified": false
         },

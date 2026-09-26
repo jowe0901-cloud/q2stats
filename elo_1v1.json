@@ -16,14 +16,6 @@
     "winrate": 88.2
   },
   {
-    "player": "shad",
-    "elo": 1607,
-    "matches": 20,
-    "wins": 17,
-    "losses": 3,
-    "winrate": 85.0
-  },
-  {
     "player": "Keizer",
     "elo": 1601,
     "matches": 10,
@@ -40,6 +32,14 @@
     "winrate": 76.7
   },
   {
+    "player": "shad",
+    "elo": 1589,
+    "matches": 21,
+    "wins": 17,
+    "losses": 4,
+    "winrate": 81.0
+  },
+  {
     "player": "tron",
     "elo": 1583,
     "matches": 8,
@@ -52,6 +52,14 @@
     "elo": 1581,
     "matches": 7,
     "wins": 7,
+    "losses": 0,
+    "winrate": 100.0
+  },
+  {
+    "player": "ptr",
+    "elo": 1579,
+    "matches": 5,
+    "wins": 5,
     "losses": 0,
     "winrate": 100.0
   },
@@ -100,14 +108,6 @@
     "elo": 1565,
     "matches": 5,
     "wins": 5,
-    "losses": 0,
-    "winrate": 100.0
-  },
-  {
-    "player": "ptr",
-    "elo": 1561,
-    "matches": 4,
-    "wins": 4,
     "losses": 0,
     "winrate": 100.0
   },
