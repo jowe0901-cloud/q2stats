@@ -64,20 +64,20 @@
     "winrate": 61.5
   },
   {
+    "player": "myrmidon^",
+    "elo": 1696,
+    "matches": 61,
+    "wins": 34,
+    "losses": 27,
+    "winrate": 55.7
+  },
+  {
     "player": "n0sferatu",
     "elo": 1681,
     "matches": 38,
     "wins": 23,
     "losses": 15,
     "winrate": 60.5
-  },
-  {
-    "player": "myrmidon^",
-    "elo": 1680,
-    "matches": 60,
-    "wins": 33,
-    "losses": 27,
-    "winrate": 55.0
   },
   {
     "player": "GipSy",
@@ -168,14 +168,6 @@
     "winrate": 100.0
   },
   {
-    "player": "asd_krzys",
-    "elo": 1562,
-    "matches": 38,
-    "wins": 21,
-    "losses": 17,
-    "winrate": 55.3
-  },
-  {
     "player": "CoLD",
     "elo": 1557,
     "matches": 40,
@@ -198,6 +190,14 @@
     "wins": 3,
     "losses": 1,
     "winrate": 75.0
+  },
+  {
+    "player": "asd_krzys",
+    "elo": 1546,
+    "matches": 39,
+    "wins": 21,
+    "losses": 18,
+    "winrate": 53.8
   },
   {
     "player": "B100D",
@@ -704,14 +704,6 @@
     "winrate": 0.0
   },
   {
-    "player": "deoll",
-    "elo": 1484,
-    "matches": 1,
-    "wins": 0,
-    "losses": 1,
-    "winrate": 0.0
-  },
-  {
     "player": "zaLTys",
     "elo": 1484,
     "matches": 1,
@@ -896,6 +888,14 @@
     "winrate": 0.0
   },
   {
+    "player": "deoll",
+    "elo": 1468,
+    "matches": 2,
+    "wins": 0,
+    "losses": 2,
+    "winrate": 0.0
+  },
+  {
     "player": "sparkq2",
     "elo": 1468,
     "matches": 2,
@@ -1073,11 +1073,11 @@
   },
   {
     "player": "damz.",
-    "elo": 1271,
-    "matches": 24,
-    "wins": 5,
+    "elo": 1287,
+    "matches": 25,
+    "wins": 6,
     "losses": 19,
-    "winrate": 20.8
+    "winrate": 24.0
   },
   {
     "player": "LiOn]tRk[",
@@ -1089,10 +1089,10 @@
   },
   {
     "player": "jabb@",
-    "elo": 1117,
-    "matches": 149,
-    "wins": 64,
+    "elo": 1129,
+    "matches": 150,
+    "wins": 65,
     "losses": 85,
-    "winrate": 43.0
+    "winrate": 43.3
   }
 ]
