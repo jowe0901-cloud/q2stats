@@ -25,11 +25,11 @@
   },
   {
     "player": "qw",
-    "elo": 1801,
-    "matches": 124,
+    "elo": 1798,
+    "matches": 125,
     "wins": 65,
-    "losses": 59,
-    "winrate": 52.4
+    "losses": 60,
+    "winrate": 52.0
   },
   {
     "player": "[sf]fasadin",
@@ -136,6 +136,14 @@
     "winrate": 44.7
   },
   {
+    "player": "asd_krzys",
+    "elo": 1579,
+    "matches": 47,
+    "wins": 24,
+    "losses": 23,
+    "winrate": 51.1
+  },
+  {
     "player": ">daweed",
     "elo": 1579,
     "matches": 8,
@@ -166,14 +174,6 @@
     "wins": 4,
     "losses": 0,
     "winrate": 100.0
-  },
-  {
-    "player": "asd_krzys",
-    "elo": 1563,
-    "matches": 46,
-    "wins": 23,
-    "losses": 23,
-    "winrate": 50.0
   },
   {
     "player": "CoLD",
@@ -480,14 +480,6 @@
     "winrate": 50.0
   },
   {
-    "player": "Br00m^^",
-    "elo": 1502,
-    "matches": 67,
-    "wins": 33,
-    "losses": 34,
-    "winrate": 49.3
-  },
-  {
     "player": "Gaymidon^",
     "elo": 1502,
     "matches": 4,
@@ -704,6 +696,14 @@
     "winrate": 42.9
   },
   {
+    "player": "Br00m^^",
+    "elo": 1486,
+    "matches": 68,
+    "wins": 33,
+    "losses": 35,
+    "winrate": 48.5
+  },
+  {
     "player": "RED",
     "elo": 1486,
     "matches": 5,
@@ -880,6 +880,14 @@
     "winrate": 41.2
   },
   {
+    "player": "TERMINAKOR",
+    "elo": 1471,
+    "matches": 3,
+    "wins": 1,
+    "losses": 2,
+    "winrate": 33.3
+  },
+  {
     "player": "GUSIUS",
     "elo": 1470,
     "matches": 45,
@@ -921,14 +929,6 @@
   },
   {
     "player": "macintosh",
-    "elo": 1468,
-    "matches": 2,
-    "wins": 0,
-    "losses": 2,
-    "winrate": 0.0
-  },
-  {
-    "player": "TERMINAKOR",
     "elo": 1468,
     "matches": 2,
     "wins": 0,
@@ -1113,10 +1113,10 @@
   },
   {
     "player": "jabb@",
-    "elo": 1128,
-    "matches": 152,
-    "wins": 66,
+    "elo": 1140,
+    "matches": 153,
+    "wins": 67,
     "losses": 86,
-    "winrate": 43.4
+    "winrate": 43.8
   }
 ]
