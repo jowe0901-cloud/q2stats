@@ -64,14 +64,6 @@
     "winrate": 61.5
   },
   {
-    "player": "GipSy",
-    "elo": 1689,
-    "matches": 77,
-    "wins": 42,
-    "losses": 35,
-    "winrate": 54.5
-  },
-  {
     "player": "myrmidon^",
     "elo": 1682,
     "matches": 56,
@@ -86,6 +78,14 @@
     "wins": 23,
     "losses": 15,
     "winrate": 60.5
+  },
+  {
+    "player": "GipSy",
+    "elo": 1673,
+    "matches": 78,
+    "wins": 42,
+    "losses": 36,
+    "winrate": 53.8
   },
   {
     "player": "roon",
@@ -640,14 +640,6 @@
     "winrate": 0.0
   },
   {
-    "player": "GUSIUS",
-    "elo": 1489,
-    "matches": 42,
-    "wins": 19,
-    "losses": 23,
-    "winrate": 45.2
-  },
-  {
     "player": "KaPo",
     "elo": 1488,
     "matches": 10,
@@ -838,6 +830,14 @@
     "wins": 1,
     "losses": 2,
     "winrate": 33.3
+  },
+  {
+    "player": "GUSIUS",
+    "elo": 1473,
+    "matches": 43,
+    "wins": 19,
+    "losses": 24,
+    "winrate": 44.2
   },
   {
     "player": "Tai",
@@ -1065,10 +1065,10 @@
   },
   {
     "player": "jabb@",
-    "elo": 1144,
-    "matches": 135,
-    "wins": 59,
+    "elo": 1160,
+    "matches": 136,
+    "wins": 60,
     "losses": 76,
-    "winrate": 43.7
+    "winrate": 44.1
   }
 ]
