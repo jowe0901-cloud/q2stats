@@ -81,11 +81,11 @@
   },
   {
     "player": "GipSy",
-    "elo": 1664,
-    "matches": 75,
-    "wins": 40,
+    "elo": 1673,
+    "matches": 76,
+    "wins": 41,
     "losses": 35,
-    "winrate": 53.3
+    "winrate": 53.9
   },
   {
     "player": "roon",
@@ -176,14 +176,6 @@
     "winrate": 55.3
   },
   {
-    "player": "B100D",
-    "elo": 1561,
-    "matches": 60,
-    "wins": 32,
-    "losses": 28,
-    "winrate": 53.3
-  },
-  {
     "player": "CoLD",
     "elo": 1557,
     "matches": 40,
@@ -198,6 +190,14 @@
     "wins": 5,
     "losses": 2,
     "winrate": 71.4
+  },
+  {
+    "player": "B100D",
+    "elo": 1553,
+    "matches": 61,
+    "wins": 32,
+    "losses": 29,
+    "winrate": 52.5
   },
   {
     "player": "David",
@@ -728,6 +728,14 @@
     "winrate": 25.0
   },
   {
+    "player": "GUSIUS",
+    "elo": 1480,
+    "matches": 41,
+    "wins": 18,
+    "losses": 23,
+    "winrate": 43.9
+  },
+  {
     "player": "[ds]ads",
     "elo": 1480,
     "matches": 14,
@@ -896,14 +904,6 @@
     "winrate": 0.0
   },
   {
-    "player": "GUSIUS",
-    "elo": 1464,
-    "matches": 40,
-    "wins": 17,
-    "losses": 23,
-    "winrate": 42.5
-  },
-  {
     "player": "Ice wallow",
     "elo": 1459,
     "matches": 3,
@@ -1065,10 +1065,10 @@
   },
   {
     "player": "jabb@",
-    "elo": 1176,
-    "matches": 133,
+    "elo": 1160,
+    "matches": 134,
     "wins": 59,
-    "losses": 74,
-    "winrate": 44.4
+    "losses": 75,
+    "winrate": 44.0
   }
 ]
