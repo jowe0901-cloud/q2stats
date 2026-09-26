@@ -208,6 +208,14 @@
     "winrate": 60.0
   },
   {
+    "player": "prostitute",
+    "elo": 1528,
+    "matches": 2,
+    "wins": 2,
+    "losses": 0,
+    "winrate": 100.0
+  },
+  {
     "player": "lamerator",
     "elo": 1527,
     "matches": 2,
@@ -273,14 +281,6 @@
   },
   {
     "player": "fonbeers",
-    "elo": 1516,
-    "matches": 1,
-    "wins": 1,
-    "losses": 0,
-    "winrate": 100.0
-  },
-  {
-    "player": "prostitute",
     "elo": 1516,
     "matches": 1,
     "wins": 1,
@@ -592,14 +592,6 @@
     "winrate": 22.7
   },
   {
-    "player": "GUSIUS",
-    "elo": 1436,
-    "matches": 12,
-    "wins": 3,
-    "losses": 9,
-    "winrate": 25.0
-  },
-  {
     "player": "r",
     "elo": 1431,
     "matches": 5,
@@ -638,6 +630,14 @@
     "wins": 9,
     "losses": 19,
     "winrate": 32.1
+  },
+  {
+    "player": "GUSIUS",
+    "elo": 1424,
+    "matches": 13,
+    "wins": 3,
+    "losses": 10,
+    "winrate": 23.1
   },
   {
     "player": "Bullz",
