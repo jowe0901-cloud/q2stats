@@ -76,18 +76,6 @@
       ],
       "all_players": [
         {
-          "player": "TERMINAKOR",
-          "matches": 5,
-          "kills": 9,
-          "deaths": 28,
-          "dealt": 1000,
-          "received": 3600,
-          "pick": 8,
-          "miss": 58,
-          "accuracy": 54.0,
-          "qualified": false
-        },
-        {
           "player": "SZEF",
           "matches": 1,
           "kills": 26,
@@ -96,6 +84,18 @@
           "received": 1300,
           "pick": 4,
           "miss": 11,
+          "accuracy": 53.0,
+          "qualified": false
+        },
+        {
+          "player": "TERMINAKOR",
+          "matches": 6,
+          "kills": 9,
+          "deaths": 33,
+          "dealt": 1100,
+          "received": 4400,
+          "pick": 9,
+          "miss": 69,
           "accuracy": 53.0,
           "qualified": false
         },
@@ -724,6 +724,18 @@
           "qualified": true
         },
         {
+          "player": "asd_krzys",
+          "matches": 45,
+          "kills": 243,
+          "deaths": 272,
+          "dealt": 37900,
+          "received": 43800,
+          "pick": 54,
+          "miss": 607,
+          "accuracy": 33.7,
+          "qualified": true
+        },
+        {
           "player": "fon",
           "matches": 45,
           "kills": 412,
@@ -733,18 +745,6 @@
           "pick": 161,
           "miss": 554,
           "accuracy": 33.5,
-          "qualified": true
-        },
-        {
-          "player": "asd_krzys",
-          "matches": 44,
-          "kills": 238,
-          "deaths": 268,
-          "dealt": 37100,
-          "received": 42700,
-          "pick": 54,
-          "miss": 595,
-          "accuracy": 33.3,
           "qualified": true
         },
         {
@@ -760,27 +760,15 @@
           "qualified": true
         },
         {
-          "player": "z0diac",
-          "matches": 7,
-          "kills": 37,
-          "deaths": 31,
-          "dealt": 5700,
-          "received": 7600,
-          "pick": 15,
-          "miss": 80,
-          "accuracy": 33.1,
-          "qualified": true
-        },
-        {
           "player": "qw",
-          "matches": 97,
-          "kills": 665,
-          "deaths": 502,
-          "dealt": 105400,
-          "received": 83100,
-          "pick": 179,
-          "miss": 1161,
-          "accuracy": 33.0,
+          "matches": 98,
+          "kills": 669,
+          "deaths": 504,
+          "dealt": 107000,
+          "received": 84000,
+          "pick": 186,
+          "miss": 1166,
+          "accuracy": 32.9,
           "qualified": true
         },
         {
@@ -877,6 +865,18 @@
           "pick": 117,
           "miss": 346,
           "accuracy": 31.6,
+          "qualified": true
+        },
+        {
+          "player": "z0diac",
+          "matches": 8,
+          "kills": 41,
+          "deaths": 33,
+          "dealt": 6500,
+          "received": 8200,
+          "pick": 15,
+          "miss": 92,
+          "accuracy": 31.5,
           "qualified": true
         },
         {
@@ -1324,6 +1324,18 @@
           "qualified": true
         },
         {
+          "player": "Br00m^^",
+          "matches": 56,
+          "kills": 286,
+          "deaths": 302,
+          "dealt": 43700,
+          "received": 48600,
+          "pick": 111,
+          "miss": 764,
+          "accuracy": 25.0,
+          "qualified": true
+        },
+        {
           "player": "ath|michaq",
           "matches": 2,
           "kills": 15,
@@ -1346,18 +1358,6 @@
           "miss": 35,
           "accuracy": 25.0,
           "qualified": false
-        },
-        {
-          "player": "Br00m^^",
-          "matches": 55,
-          "kills": 279,
-          "deaths": 302,
-          "dealt": 42700,
-          "received": 48000,
-          "pick": 110,
-          "miss": 753,
-          "accuracy": 24.9,
-          "qualified": true
         },
         {
           "player": "SUPER-LAG",
@@ -2302,18 +2302,6 @@
           "qualified": true
         },
         {
-          "player": "asd_krzys",
-          "matches": 44,
-          "kills": 161,
-          "deaths": 129,
-          "dealt": 30944,
-          "received": 28208,
-          "pick": 145,
-          "miss": 942,
-          "accuracy": 23.1,
-          "qualified": true
-        },
-        {
           "player": "insomnia",
           "matches": 7,
           "kills": 33,
@@ -2335,6 +2323,18 @@
           "pick": 28,
           "miss": 167,
           "accuracy": 23.1,
+          "qualified": true
+        },
+        {
+          "player": "asd_krzys",
+          "matches": 45,
+          "kills": 168,
+          "deaths": 130,
+          "dealt": 31960,
+          "received": 28557,
+          "pick": 149,
+          "miss": 960,
+          "accuracy": 23.0,
           "qualified": true
         },
         {
@@ -2399,13 +2399,13 @@
         },
         {
           "player": "qw",
-          "matches": 97,
+          "matches": 98,
           "kills": 210,
-          "deaths": 257,
+          "deaths": 261,
           "dealt": 42716,
-          "received": 53592,
+          "received": 54157,
           "pick": 214,
-          "miss": 1938,
+          "miss": 1960,
           "accuracy": 22.4,
           "qualified": true
         },
@@ -2567,14 +2567,14 @@
         },
         {
           "player": "Br00m^^",
-          "matches": 55,
-          "kills": 181,
-          "deaths": 193,
-          "dealt": 31092,
-          "received": 39479,
-          "pick": 109,
-          "miss": 1236,
-          "accuracy": 20.8,
+          "matches": 56,
+          "kills": 187,
+          "deaths": 194,
+          "dealt": 31924,
+          "received": 39848,
+          "pick": 111,
+          "miss": 1256,
+          "accuracy": 20.7,
           "qualified": true
         },
         {
@@ -2735,13 +2735,13 @@
         },
         {
           "player": "z0diac",
-          "matches": 7,
-          "kills": 28,
+          "matches": 8,
+          "kills": 32,
           "deaths": 16,
-          "dealt": 5018,
-          "received": 3996,
-          "pick": 27,
-          "miss": 119,
+          "dealt": 5654,
+          "received": 4258,
+          "pick": 32,
+          "miss": 136,
           "accuracy": 19.4,
           "qualified": true
         },
@@ -3406,6 +3406,18 @@
           "qualified": false
         },
         {
+          "player": "TERMINAKOR",
+          "matches": 6,
+          "kills": 14,
+          "deaths": 37,
+          "dealt": 2911,
+          "received": 6068,
+          "pick": 39,
+          "miss": 108,
+          "accuracy": 12.8,
+          "qualified": false
+        },
+        {
           "player": "RED",
           "matches": 5,
           "kills": 13,
@@ -3414,18 +3426,6 @@
           "received": 3925,
           "pick": 21,
           "miss": 87,
-          "accuracy": 12.8,
-          "qualified": false
-        },
-        {
-          "player": "TERMINAKOR",
-          "matches": 5,
-          "kills": 13,
-          "deaths": 27,
-          "dealt": 2562,
-          "received": 4871,
-          "pick": 34,
-          "miss": 91,
           "accuracy": 12.8,
           "qualified": false
         },
@@ -4012,18 +4012,6 @@
           "qualified": true
         },
         {
-          "player": "asd_krzys",
-          "matches": 42,
-          "kills": 133,
-          "deaths": 93,
-          "dealt": 19764,
-          "received": 13452,
-          "pick": 105,
-          "miss": 489,
-          "accuracy": 14.8,
-          "qualified": true
-        },
-        {
           "player": "szef|shotman",
           "matches": 9,
           "kills": 7,
@@ -4044,6 +4032,18 @@
           "received": 21282,
           "pick": 124,
           "miss": 502,
+          "accuracy": 14.7,
+          "qualified": true
+        },
+        {
+          "player": "asd_krzys",
+          "matches": 43,
+          "kills": 141,
+          "deaths": 93,
+          "dealt": 20586,
+          "received": 13536,
+          "pick": 108,
+          "miss": 501,
           "accuracy": 14.7,
           "qualified": true
         },
@@ -4540,18 +4540,6 @@
           "qualified": true
         },
         {
-          "player": "qw",
-          "matches": 95,
-          "kills": 184,
-          "deaths": 266,
-          "dealt": 26754,
-          "received": 42480,
-          "pick": 149,
-          "miss": 1204,
-          "accuracy": 12.7,
-          "qualified": true
-        },
-        {
           "player": "cne",
           "matches": 58,
           "kills": 135,
@@ -4598,6 +4586,18 @@
           "miss": 34,
           "accuracy": 12.7,
           "qualified": false
+        },
+        {
+          "player": "qw",
+          "matches": 96,
+          "kills": 184,
+          "deaths": 273,
+          "dealt": 26832,
+          "received": 43236,
+          "pick": 150,
+          "miss": 1218,
+          "accuracy": 12.6,
+          "qualified": true
         },
         {
           "player": "mAc",
@@ -4769,13 +4769,13 @@
         },
         {
           "player": "Br00m^^",
-          "matches": 53,
-          "kills": 137,
+          "matches": 54,
+          "kills": 144,
           "deaths": 110,
-          "dealt": 21810,
-          "received": 17316,
-          "pick": 155,
-          "miss": 646,
+          "dealt": 22794,
+          "received": 17364,
+          "pick": 163,
+          "miss": 653,
           "accuracy": 11.8,
           "qualified": true
         },
@@ -5117,15 +5117,15 @@
         },
         {
           "player": "z0diac",
-          "matches": 7,
-          "kills": 15,
+          "matches": 8,
+          "kills": 20,
           "deaths": 14,
-          "dealt": 2406,
+          "dealt": 3072,
           "received": 2100,
-          "pick": 21,
-          "miss": 92,
-          "accuracy": 10.4,
-          "qualified": false
+          "pick": 22,
+          "miss": 106,
+          "accuracy": 10.5,
+          "qualified": true
         },
         {
           "player": "fff",
@@ -5357,13 +5357,13 @@
         },
         {
           "player": "TERMINAKOR",
-          "matches": 5,
+          "matches": 6,
           "kills": 3,
-          "deaths": 10,
+          "deaths": 16,
           "dealt": 360,
-          "received": 1410,
+          "received": 2280,
           "pick": 4,
-          "miss": 65,
+          "miss": 80,
           "accuracy": 4.0,
           "qualified": false
         },
