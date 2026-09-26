@@ -508,6 +508,18 @@
           "qualified": false
         },
         {
+          "player": "lameratorion",
+          "matches": 1,
+          "kills": 6,
+          "deaths": 0,
+          "dealt": 800,
+          "received": 0,
+          "pick": 2,
+          "miss": 4,
+          "accuracy": 35.0,
+          "qualified": false
+        },
+        {
           "player": "Z1rco",
           "matches": 2,
           "kills": 1,
@@ -832,18 +844,6 @@
           "qualified": true
         },
         {
-          "player": "need1",
-          "matches": 49,
-          "kills": 212,
-          "deaths": 238,
-          "dealt": 32700,
-          "received": 41400,
-          "pick": 104,
-          "miss": 535,
-          "accuracy": 31.1,
-          "qualified": true
-        },
-        {
           "player": "ping80",
           "matches": 15,
           "kills": 55,
@@ -853,6 +853,18 @@
           "pick": 49,
           "miss": 175,
           "accuracy": 30.9,
+          "qualified": true
+        },
+        {
+          "player": "need1",
+          "matches": 50,
+          "kills": 212,
+          "deaths": 248,
+          "dealt": 32700,
+          "received": 42800,
+          "pick": 107,
+          "miss": 538,
+          "accuracy": 30.5,
           "qualified": true
         },
         {
@@ -965,13 +977,13 @@
         },
         {
           "player": "michaq",
-          "matches": 35,
+          "matches": 36,
           "kills": 227,
-          "deaths": 242,
+          "deaths": 252,
           "dealt": 42900,
-          "received": 46900,
+          "received": 49000,
           "pick": 126,
-          "miss": 350,
+          "miss": 356,
           "accuracy": 28.9,
           "qualified": true
         },
@@ -2147,13 +2159,13 @@
         },
         {
           "player": "need1",
-          "matches": 51,
-          "kills": 225,
-          "deaths": 156,
-          "dealt": 45576,
-          "received": 40196,
-          "pick": 259,
-          "miss": 838,
+          "matches": 52,
+          "kills": 230,
+          "deaths": 161,
+          "dealt": 47110,
+          "received": 41457,
+          "pick": 267,
+          "miss": 849,
           "accuracy": 24.2,
           "qualified": true
         },
@@ -3203,14 +3215,14 @@
         },
         {
           "player": "michaq",
-          "matches": 35,
-          "kills": 115,
-          "deaths": 114,
-          "dealt": 26137,
-          "received": 28202,
-          "pick": 169,
-          "miss": 530,
-          "accuracy": 15.2,
+          "matches": 36,
+          "kills": 117,
+          "deaths": 117,
+          "dealt": 26970,
+          "received": 29063,
+          "pick": 176,
+          "miss": 542,
+          "accuracy": 15.1,
           "qualified": true
         },
         {
@@ -3224,6 +3236,18 @@
           "miss": 41,
           "accuracy": 15.1,
           "qualified": true
+        },
+        {
+          "player": "lameratorion",
+          "matches": 1,
+          "kills": 5,
+          "deaths": 5,
+          "dealt": 982,
+          "received": 1191,
+          "pick": 2,
+          "miss": 17,
+          "accuracy": 15.0,
+          "qualified": false
         },
         {
           "player": "Abyys",
@@ -3724,6 +3748,18 @@
           "qualified": false
         },
         {
+          "player": "lameratorion",
+          "matches": 1,
+          "kills": 3,
+          "deaths": 3,
+          "dealt": 390,
+          "received": 564,
+          "pick": 4,
+          "miss": 9,
+          "accuracy": 16.0,
+          "qualified": false
+        },
+        {
           "player": "prostitute",
           "matches": 13,
           "kills": 37,
@@ -4085,13 +4121,13 @@
         },
         {
           "player": "michaq",
-          "matches": 33,
-          "kills": 93,
-          "deaths": 120,
-          "dealt": 14478,
-          "received": 19992,
-          "pick": 125,
-          "miss": 360,
+          "matches": 34,
+          "kills": 96,
+          "deaths": 122,
+          "dealt": 15258,
+          "received": 20304,
+          "pick": 132,
+          "miss": 366,
           "accuracy": 13.6,
           "qualified": true
         },
@@ -4408,18 +4444,6 @@
           "qualified": false
         },
         {
-          "player": "need1",
-          "matches": 50,
-          "kills": 72,
-          "deaths": 102,
-          "dealt": 12144,
-          "received": 17466,
-          "pick": 100,
-          "miss": 555,
-          "accuracy": 12.6,
-          "qualified": true
-        },
-        {
           "player": "qw",
           "matches": 90,
           "kills": 176,
@@ -4428,6 +4452,18 @@
           "received": 39732,
           "pick": 141,
           "miss": 1143,
+          "accuracy": 12.5,
+          "qualified": true
+        },
+        {
+          "player": "need1",
+          "matches": 51,
+          "kills": 72,
+          "deaths": 105,
+          "dealt": 12222,
+          "received": 17970,
+          "pick": 101,
+          "miss": 567,
           "accuracy": 12.5,
           "qualified": true
         },
