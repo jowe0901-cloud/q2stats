@@ -81,11 +81,11 @@
   },
   {
     "player": "GipSy",
-    "elo": 1674,
-    "matches": 79,
+    "elo": 1670,
+    "matches": 80,
     "wins": 43,
-    "losses": 36,
-    "winrate": 54.4
+    "losses": 37,
+    "winrate": 53.8
   },
   {
     "player": "roon",
@@ -256,6 +256,14 @@
     "winrate": 75.0
   },
   {
+    "player": "ping80",
+    "elo": 1531,
+    "matches": 14,
+    "wins": 8,
+    "losses": 6,
+    "winrate": 57.1
+  },
+  {
     "player": "lameroxonix",
     "elo": 1530,
     "matches": 2,
@@ -326,14 +334,6 @@
     "wins": 1,
     "losses": 0,
     "winrate": 100.0
-  },
-  {
-    "player": "ping80",
-    "elo": 1515,
-    "matches": 13,
-    "wins": 7,
-    "losses": 6,
-    "winrate": 53.8
   },
   {
     "player": "bobo",
@@ -656,14 +656,6 @@
     "winrate": 42.9
   },
   {
-    "player": "GUSIUS",
-    "elo": 1486,
-    "matches": 44,
-    "wins": 20,
-    "losses": 24,
-    "winrate": 45.5
-  },
-  {
     "player": "RED",
     "elo": 1486,
     "matches": 5,
@@ -862,6 +854,14 @@
     "wins": 7,
     "losses": 10,
     "winrate": 41.2
+  },
+  {
+    "player": "GUSIUS",
+    "elo": 1470,
+    "matches": 45,
+    "wins": 20,
+    "losses": 25,
+    "winrate": 44.4
   },
   {
     "player": "[PK]Intruder",
@@ -1065,10 +1065,10 @@
   },
   {
     "player": "jabb@",
-    "elo": 1144,
-    "matches": 137,
-    "wins": 60,
+    "elo": 1155,
+    "matches": 138,
+    "wins": 61,
     "losses": 77,
-    "winrate": 43.8
+    "winrate": 44.2
   }
 ]
