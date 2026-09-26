@@ -304,6 +304,14 @@
     "winrate": 100.0
   },
   {
+    "player": "myrmidon^",
+    "elo": 1509,
+    "matches": 3,
+    "wins": 2,
+    "losses": 1,
+    "winrate": 66.7
+  },
+  {
     "player": "piu-chilin",
     "elo": 1509,
     "matches": 7,
@@ -322,14 +330,6 @@
   {
     "player": "//VERSACE",
     "elo": 1501,
-    "matches": 2,
-    "wins": 1,
-    "losses": 1,
-    "winrate": 50.0
-  },
-  {
-    "player": "myrmidon^",
-    "elo": 1499,
     "matches": 2,
     "wins": 1,
     "losses": 1,
@@ -689,10 +689,10 @@
   },
   {
     "player": "jabb@",
-    "elo": 1365,
-    "matches": 23,
+    "elo": 1355,
+    "matches": 24,
     "wins": 4,
-    "losses": 19,
-    "winrate": 17.4
+    "losses": 20,
+    "winrate": 16.7
   }
 ]

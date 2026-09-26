@@ -352,18 +352,6 @@
           "qualified": false
         },
         {
-          "player": "myrmidon^",
-          "matches": 53,
-          "kills": 517,
-          "deaths": 390,
-          "dealt": 82200,
-          "received": 58100,
-          "pick": 153,
-          "miss": 574,
-          "accuracy": 37.4,
-          "qualified": true
-        },
-        {
           "player": "roon",
           "matches": 29,
           "kills": 291,
@@ -422,6 +410,18 @@
           "miss": 23,
           "accuracy": 36.8,
           "qualified": false
+        },
+        {
+          "player": "myrmidon^",
+          "matches": 54,
+          "kills": 517,
+          "deaths": 390,
+          "dealt": 82200,
+          "received": 58300,
+          "pick": 157,
+          "miss": 579,
+          "accuracy": 36.7,
+          "qualified": true
         },
         {
           "player": "bobo",
@@ -904,6 +904,18 @@
           "qualified": false
         },
         {
+          "player": "jabb@",
+          "matches": 108,
+          "kills": 294,
+          "deaths": 710,
+          "dealt": 48500,
+          "received": 112000,
+          "pick": 222,
+          "miss": 1065,
+          "accuracy": 29.8,
+          "qualified": true
+        },
+        {
           "player": "slonik",
           "matches": 4,
           "kills": 19,
@@ -914,18 +926,6 @@
           "miss": 45,
           "accuracy": 29.8,
           "qualified": false
-        },
-        {
-          "player": "jabb@",
-          "matches": 107,
-          "kills": 294,
-          "deaths": 710,
-          "dealt": 48300,
-          "received": 112000,
-          "pick": 217,
-          "miss": 1061,
-          "accuracy": 29.7,
-          "qualified": true
         },
         {
           "player": "[d][s][a][d][s]",
@@ -2255,13 +2255,13 @@
         },
         {
           "player": "myrmidon^",
-          "matches": 52,
-          "kills": 139,
+          "matches": 53,
+          "kills": 145,
           "deaths": 188,
-          "dealt": 28640,
-          "received": 36699,
-          "pick": 148,
-          "miss": 1078,
+          "dealt": 29796,
+          "received": 36885,
+          "pick": 154,
+          "miss": 1081,
           "accuracy": 23.1,
           "qualified": true
         },
@@ -2386,18 +2386,6 @@
           "qualified": false
         },
         {
-          "player": "jabb@",
-          "matches": 109,
-          "kills": 402,
-          "deaths": 494,
-          "dealt": 84846,
-          "received": 107377,
-          "pick": 561,
-          "miss": 1663,
-          "accuracy": 21.8,
-          "qualified": true
-        },
-        {
           "player": "qw",
           "matches": 92,
           "kills": 190,
@@ -2407,6 +2395,18 @@
           "pick": 203,
           "miss": 1824,
           "accuracy": 21.8,
+          "qualified": true
+        },
+        {
+          "player": "jabb@",
+          "matches": 110,
+          "kills": 402,
+          "deaths": 500,
+          "dealt": 85032,
+          "received": 108568,
+          "pick": 564,
+          "miss": 1669,
+          "accuracy": 21.7,
           "qualified": true
         },
         {
@@ -3832,18 +3832,6 @@
           "qualified": true
         },
         {
-          "player": "myrmidon^",
-          "matches": 52,
-          "kills": 127,
-          "deaths": 133,
-          "dealt": 19548,
-          "received": 20988,
-          "pick": 89,
-          "miss": 626,
-          "accuracy": 15.3,
-          "qualified": true
-        },
-        {
           "player": "norm",
           "matches": 13,
           "kills": 67,
@@ -3853,6 +3841,18 @@
           "pick": 68,
           "miss": 141,
           "accuracy": 15.3,
+          "qualified": true
+        },
+        {
+          "player": "myrmidon^",
+          "matches": 53,
+          "kills": 132,
+          "deaths": 135,
+          "dealt": 20334,
+          "received": 21384,
+          "pick": 92,
+          "miss": 632,
+          "accuracy": 15.2,
           "qualified": true
         },
         {
@@ -4193,13 +4193,13 @@
         },
         {
           "player": "jabb@",
-          "matches": 109,
-          "kills": 392,
-          "deaths": 366,
-          "dealt": 58956,
-          "received": 48390,
-          "pick": 363,
-          "miss": 1070,
+          "matches": 110,
+          "kills": 394,
+          "deaths": 371,
+          "dealt": 59352,
+          "received": 49176,
+          "pick": 369,
+          "miss": 1073,
           "accuracy": 13.3,
           "qualified": true
         },
