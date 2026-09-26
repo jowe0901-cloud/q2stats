@@ -64,20 +64,20 @@
     "winrate": 61.5
   },
   {
-    "player": "myrmidon^",
-    "elo": 1692,
-    "matches": 59,
-    "wins": 33,
-    "losses": 26,
-    "winrate": 55.9
-  },
-  {
     "player": "n0sferatu",
     "elo": 1681,
     "matches": 38,
     "wins": 23,
     "losses": 15,
     "winrate": 60.5
+  },
+  {
+    "player": "myrmidon^",
+    "elo": 1680,
+    "matches": 60,
+    "wins": 33,
+    "losses": 27,
+    "winrate": 55.0
   },
   {
     "player": "GipSy",
@@ -920,14 +920,6 @@
     "winrate": 25.0
   },
   {
-    "player": "need1",
-    "elo": 1453,
-    "matches": 61,
-    "wins": 32,
-    "losses": 29,
-    "winrate": 52.5
-  },
-  {
     "player": "TIM",
     "elo": 1451,
     "matches": 10,
@@ -958,6 +950,14 @@
     "wins": 0,
     "losses": 4,
     "winrate": 0.0
+  },
+  {
+    "player": "need1",
+    "elo": 1437,
+    "matches": 62,
+    "wins": 32,
+    "losses": 30,
+    "winrate": 51.6
   },
   {
     "player": "shotman",
@@ -992,6 +992,14 @@
     "winrate": 25.0
   },
   {
+    "player": "Maniek",
+    "elo": 1364,
+    "matches": 75,
+    "wins": 34,
+    "losses": 41,
+    "winrate": 45.3
+  },
+  {
     "player": "[HC]Reni^",
     "elo": 1353,
     "matches": 34,
@@ -1022,14 +1030,6 @@
     "wins": 8,
     "losses": 13,
     "winrate": 38.1
-  },
-  {
-    "player": "Maniek",
-    "elo": 1348,
-    "matches": 74,
-    "wins": 33,
-    "losses": 41,
-    "winrate": 44.6
   },
   {
     "player": "VITALIS",
@@ -1065,10 +1065,10 @@
   },
   {
     "player": "jabb@",
-    "elo": 1145,
-    "matches": 141,
-    "wins": 62,
+    "elo": 1161,
+    "matches": 142,
+    "wins": 63,
     "losses": 79,
-    "winrate": 44.0
+    "winrate": 44.4
   }
 ]
