@@ -857,14 +857,14 @@
         },
         {
           "player": "jabb@",
-          "matches": 114,
+          "matches": 115,
           "kills": 299,
-          "deaths": 731,
-          "dealt": 50600,
-          "received": 116200,
-          "pick": 241,
-          "miss": 1091,
-          "accuracy": 30.6,
+          "deaths": 737,
+          "dealt": 50800,
+          "received": 117200,
+          "pick": 243,
+          "miss": 1098,
+          "accuracy": 30.5,
           "qualified": true
         },
         {
@@ -989,14 +989,14 @@
         },
         {
           "player": "r",
-          "matches": 45,
-          "kills": 125,
-          "deaths": 284,
-          "dealt": 19500,
-          "received": 41700,
-          "pick": 79,
-          "miss": 500,
-          "accuracy": 28.8,
+          "matches": 46,
+          "kills": 128,
+          "deaths": 286,
+          "dealt": 20300,
+          "received": 42200,
+          "pick": 80,
+          "miss": 508,
+          "accuracy": 28.9,
           "qualified": true
         },
         {
@@ -1313,13 +1313,13 @@
         },
         {
           "player": "SUPER-LAG",
-          "matches": 58,
-          "kills": 249,
-          "deaths": 297,
-          "dealt": 40600,
-          "received": 53200,
-          "pick": 118,
-          "miss": 529,
+          "matches": 59,
+          "kills": 255,
+          "deaths": 299,
+          "dealt": 41400,
+          "received": 53700,
+          "pick": 119,
+          "miss": 537,
           "accuracy": 24.7,
           "qualified": true
         },
@@ -1433,14 +1433,14 @@
         },
         {
           "player": "damz.",
-          "matches": 27,
-          "kills": 39,
-          "deaths": 202,
-          "dealt": 7000,
-          "received": 27200,
-          "pick": 55,
-          "miss": 285,
-          "accuracy": 21.1,
+          "matches": 28,
+          "kills": 42,
+          "deaths": 204,
+          "dealt": 7800,
+          "received": 27800,
+          "pick": 60,
+          "miss": 289,
+          "accuracy": 21.2,
           "qualified": true
         },
         {
@@ -2098,6 +2098,18 @@
           "qualified": true
         },
         {
+          "player": "r",
+          "matches": 46,
+          "kills": 235,
+          "deaths": 208,
+          "dealt": 42967,
+          "received": 46542,
+          "pick": 180,
+          "miss": 846,
+          "accuracy": 25.3,
+          "qualified": true
+        },
+        {
           "player": "[d][s][a][d][s]",
           "matches": 3,
           "kills": 19,
@@ -2120,18 +2132,6 @@
           "miss": 18,
           "accuracy": 25.3,
           "qualified": false
-        },
-        {
-          "player": "r",
-          "matches": 45,
-          "kills": 233,
-          "deaths": 204,
-          "dealt": 42116,
-          "received": 45382,
-          "pick": 179,
-          "miss": 828,
-          "accuracy": 25.1,
-          "qualified": true
         },
         {
           "player": "yin",
@@ -2350,6 +2350,18 @@
           "qualified": true
         },
         {
+          "player": "jabb@",
+          "matches": 117,
+          "kills": 433,
+          "deaths": 522,
+          "dealt": 92466,
+          "received": 115865,
+          "pick": 603,
+          "miss": 1740,
+          "accuracy": 22.0,
+          "qualified": true
+        },
+        {
           "player": "a",
           "matches": 9,
           "kills": 26,
@@ -2372,18 +2384,6 @@
           "miss": 25,
           "accuracy": 22.0,
           "qualified": false
-        },
-        {
-          "player": "jabb@",
-          "matches": 116,
-          "kills": 428,
-          "deaths": 517,
-          "dealt": 91099,
-          "received": 114046,
-          "pick": 594,
-          "miss": 1730,
-          "accuracy": 21.9,
-          "qualified": true
         },
         {
           "player": "qw",
@@ -2422,18 +2422,6 @@
           "qualified": true
         },
         {
-          "player": "damz.",
-          "matches": 28,
-          "kills": 88,
-          "deaths": 130,
-          "dealt": 19173,
-          "received": 25616,
-          "pick": 202,
-          "miss": 426,
-          "accuracy": 21.6,
-          "qualified": true
-        },
-        {
           "player": "GUSIUS",
           "matches": 30,
           "kills": 69,
@@ -2455,6 +2443,18 @@
           "pick": 182,
           "miss": 109,
           "accuracy": 21.4,
+          "qualified": true
+        },
+        {
+          "player": "damz.",
+          "matches": 29,
+          "kills": 91,
+          "deaths": 133,
+          "dealt": 19767,
+          "received": 26349,
+          "pick": 207,
+          "miss": 440,
+          "accuracy": 21.3,
           "qualified": true
         },
         {
@@ -2674,6 +2674,18 @@
           "qualified": true
         },
         {
+          "player": "SUPER-LAG",
+          "matches": 59,
+          "kills": 232,
+          "deaths": 181,
+          "dealt": 49275,
+          "received": 42680,
+          "pick": 254,
+          "miss": 987,
+          "accuracy": 19.3,
+          "qualified": true
+        },
+        {
           "player": "m",
           "matches": 36,
           "kills": 189,
@@ -2707,18 +2719,6 @@
           "pick": 66,
           "miss": 69,
           "accuracy": 19.3,
-          "qualified": true
-        },
-        {
-          "player": "SUPER-LAG",
-          "matches": 58,
-          "kills": 226,
-          "deaths": 177,
-          "dealt": 47952,
-          "received": 41722,
-          "pick": 250,
-          "miss": 972,
-          "accuracy": 19.2,
           "qualified": true
         },
         {
@@ -4192,18 +4192,6 @@
           "qualified": true
         },
         {
-          "player": "jabb@",
-          "matches": 116,
-          "kills": 415,
-          "deaths": 394,
-          "dealt": 63234,
-          "received": 52554,
-          "pick": 396,
-          "miss": 1113,
-          "accuracy": 13.3,
-          "qualified": true
-        },
-        {
           "player": "CoLD",
           "matches": 28,
           "kills": 112,
@@ -4226,6 +4214,18 @@
           "miss": 34,
           "accuracy": 13.3,
           "qualified": false
+        },
+        {
+          "player": "jabb@",
+          "matches": 117,
+          "kills": 415,
+          "deaths": 401,
+          "dealt": 63486,
+          "received": 53202,
+          "pick": 400,
+          "miss": 1123,
+          "accuracy": 13.2,
+          "qualified": true
         },
         {
           "player": "piu-chill",
@@ -4804,6 +4804,18 @@
           "qualified": false
         },
         {
+          "player": "damz.",
+          "matches": 28,
+          "kills": 42,
+          "deaths": 76,
+          "dealt": 8874,
+          "received": 9354,
+          "pick": 108,
+          "miss": 273,
+          "accuracy": 11.4,
+          "qualified": true
+        },
+        {
           "player": "RED",
           "matches": 5,
           "kills": 13,
@@ -4828,18 +4840,6 @@
           "qualified": true
         },
         {
-          "player": "damz.",
-          "matches": 27,
-          "kills": 40,
-          "deaths": 70,
-          "dealt": 8532,
-          "received": 8592,
-          "pick": 104,
-          "miss": 263,
-          "accuracy": 11.3,
-          "qualified": true
-        },
-        {
           "player": "dolar",
           "matches": 7,
           "kills": 19,
@@ -4853,13 +4853,13 @@
         },
         {
           "player": "r",
-          "matches": 44,
-          "kills": 115,
-          "deaths": 169,
-          "dealt": 19806,
-          "received": 22596,
-          "pick": 170,
-          "miss": 455,
+          "matches": 45,
+          "kills": 123,
+          "deaths": 170,
+          "dealt": 20514,
+          "received": 22908,
+          "pick": 173,
+          "miss": 466,
           "accuracy": 11.2,
           "qualified": true
         },
@@ -4973,13 +4973,13 @@
         },
         {
           "player": "SUPER-LAG",
-          "matches": 57,
-          "kills": 173,
-          "deaths": 162,
-          "dealt": 25950,
-          "received": 28290,
-          "pick": 190,
-          "miss": 581,
+          "matches": 58,
+          "kills": 178,
+          "deaths": 163,
+          "dealt": 26652,
+          "received": 28572,
+          "pick": 193,
+          "miss": 592,
           "accuracy": 10.8,
           "qualified": true
         },
