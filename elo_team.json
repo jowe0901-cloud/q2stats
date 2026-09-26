@@ -288,6 +288,14 @@
     "winrate": 50.0
   },
   {
+    "player": "lameratorion",
+    "elo": 1523,
+    "matches": 2,
+    "wins": 1,
+    "losses": 1,
+    "winrate": 50.0
+  },
+  {
     "player": "prostitute",
     "elo": 1518,
     "matches": 12,
@@ -337,14 +345,6 @@
   },
   {
     "player": "[sopot]ping80",
-    "elo": 1516,
-    "matches": 1,
-    "wins": 1,
-    "losses": 0,
-    "winrate": 100.0
-  },
-  {
-    "player": "lameratorion",
     "elo": 1516,
     "matches": 1,
     "wins": 1,
@@ -544,6 +544,14 @@
     "winrate": 50.0
   },
   {
+    "player": "michaq",
+    "elo": 1499,
+    "matches": 27,
+    "wins": 11,
+    "losses": 16,
+    "winrate": 40.7
+  },
+  {
     "player": "s",
     "elo": 1499,
     "matches": 3,
@@ -646,14 +654,6 @@
     "wins": 0,
     "losses": 1,
     "winrate": 0.0
-  },
-  {
-    "player": "michaq",
-    "elo": 1489,
-    "matches": 26,
-    "wins": 10,
-    "losses": 16,
-    "winrate": 38.5
   },
   {
     "player": "KaPo",
@@ -1009,11 +1009,11 @@
   },
   {
     "player": "need1",
-    "elo": 1393,
-    "matches": 66,
-    "wins": 33,
+    "elo": 1398,
+    "matches": 67,
+    "wins": 34,
     "losses": 33,
-    "winrate": 50.0
+    "winrate": 50.7
   },
   {
     "player": "Maniek",
@@ -1089,10 +1089,10 @@
   },
   {
     "player": "jabb@",
-    "elo": 1161,
-    "matches": 142,
+    "elo": 1145,
+    "matches": 143,
     "wins": 63,
-    "losses": 79,
-    "winrate": 44.4
+    "losses": 80,
+    "winrate": 44.1
   }
 ]
