@@ -796,6 +796,18 @@
           "qualified": true
         },
         {
+          "player": "GUSIUS",
+          "matches": 27,
+          "kills": 179,
+          "deaths": 174,
+          "dealt": 33500,
+          "received": 30500,
+          "pick": 101,
+          "miss": 219,
+          "accuracy": 31.3,
+          "qualified": true
+        },
+        {
           "player": "gart",
           "matches": 32,
           "kills": 289,
@@ -805,18 +817,6 @@
           "pick": 183,
           "miss": 319,
           "accuracy": 31.2,
-          "qualified": true
-        },
-        {
-          "player": "GUSIUS",
-          "matches": 26,
-          "kills": 167,
-          "deaths": 170,
-          "dealt": 31500,
-          "received": 29500,
-          "pick": 99,
-          "miss": 210,
-          "accuracy": 31.1,
           "qualified": true
         },
         {
@@ -905,13 +905,13 @@
         },
         {
           "player": "jabb@",
-          "matches": 96,
+          "matches": 97,
           "kills": 258,
-          "deaths": 632,
-          "dealt": 42300,
-          "received": 98700,
-          "pick": 188,
-          "miss": 937,
+          "deaths": 642,
+          "dealt": 42600,
+          "received": 100100,
+          "pick": 191,
+          "miss": 945,
           "accuracy": 29.6,
           "qualified": true
         },
@@ -940,6 +940,18 @@
           "qualified": true
         },
         {
+          "player": "B100D",
+          "matches": 61,
+          "kills": 237,
+          "deaths": 217,
+          "dealt": 49000,
+          "received": 37900,
+          "pick": 211,
+          "miss": 338,
+          "accuracy": 29.0,
+          "qualified": true
+        },
+        {
           "player": "#ABBYS",
           "matches": 1,
           "kills": 7,
@@ -950,18 +962,6 @@
           "miss": 12,
           "accuracy": 29.0,
           "qualified": false
-        },
-        {
-          "player": "B100D",
-          "matches": 60,
-          "kills": 229,
-          "deaths": 209,
-          "dealt": 47600,
-          "received": 36600,
-          "pick": 206,
-          "miss": 332,
-          "accuracy": 28.9,
-          "qualified": true
         },
         {
           "player": "=PFH=ZYGA",
@@ -1205,14 +1205,14 @@
         },
         {
           "player": "GipSy",
-          "matches": 72,
-          "kills": 421,
-          "deaths": 404,
-          "dealt": 76500,
-          "received": 79900,
-          "pick": 258,
-          "miss": 601,
-          "accuracy": 25.8,
+          "matches": 73,
+          "kills": 427,
+          "deaths": 408,
+          "dealt": 77200,
+          "received": 80600,
+          "pick": 259,
+          "miss": 611,
+          "accuracy": 25.9,
           "qualified": true
         },
         {
@@ -2374,18 +2374,6 @@
           "qualified": true
         },
         {
-          "player": "jabb@",
-          "matches": 98,
-          "kills": 355,
-          "deaths": 437,
-          "dealt": 74238,
-          "received": 94869,
-          "pick": 503,
-          "miss": 1502,
-          "accuracy": 21.4,
-          "qualified": true
-        },
-        {
           "player": "piu-chill",
           "matches": 19,
           "kills": 107,
@@ -2395,6 +2383,18 @@
           "pick": 182,
           "miss": 109,
           "accuracy": 21.4,
+          "qualified": true
+        },
+        {
+          "player": "jabb@",
+          "matches": 99,
+          "kills": 358,
+          "deaths": 443,
+          "dealt": 74902,
+          "received": 96276,
+          "pick": 513,
+          "miss": 1512,
+          "accuracy": 21.3,
           "qualified": true
         },
         {
@@ -2626,18 +2626,6 @@
           "qualified": true
         },
         {
-          "player": "B100D",
-          "matches": 60,
-          "kills": 106,
-          "deaths": 109,
-          "dealt": 29301,
-          "received": 35348,
-          "pick": 221,
-          "miss": 632,
-          "accuracy": 19.2,
-          "qualified": true
-        },
-        {
           "player": "SUPER-LAG",
           "matches": 54,
           "kills": 212,
@@ -2646,6 +2634,18 @@
           "received": 38269,
           "pick": 233,
           "miss": 913,
+          "accuracy": 19.1,
+          "qualified": true
+        },
+        {
+          "player": "B100D",
+          "matches": 61,
+          "kills": 108,
+          "deaths": 114,
+          "dealt": 29923,
+          "received": 36412,
+          "pick": 226,
+          "miss": 647,
           "accuracy": 19.1,
           "qualified": true
         },
@@ -2806,6 +2806,18 @@
           "qualified": false
         },
         {
+          "player": "GUSIUS",
+          "matches": 27,
+          "kills": 65,
+          "deaths": 98,
+          "dealt": 15912,
+          "received": 25315,
+          "pick": 137,
+          "miss": 377,
+          "accuracy": 18.1,
+          "qualified": true
+        },
+        {
           "player": "aid",
           "matches": 4,
           "kills": 16,
@@ -2878,18 +2890,6 @@
           "qualified": false
         },
         {
-          "player": "GUSIUS",
-          "matches": 26,
-          "kills": 61,
-          "deaths": 94,
-          "dealt": 15271,
-          "received": 24497,
-          "pick": 134,
-          "miss": 360,
-          "accuracy": 17.6,
-          "qualified": true
-        },
-        {
           "player": "shad",
           "matches": 23,
           "kills": 53,
@@ -2915,13 +2915,13 @@
         },
         {
           "player": "GipSy",
-          "matches": 73,
-          "kills": 203,
-          "deaths": 226,
-          "dealt": 50406,
-          "received": 60117,
-          "pick": 326,
-          "miss": 986,
+          "matches": 74,
+          "kills": 210,
+          "deaths": 227,
+          "dealt": 51897,
+          "received": 60795,
+          "pick": 328,
+          "miss": 1004,
           "accuracy": 17.0,
           "qualified": true
         },
@@ -4025,13 +4025,13 @@
         },
         {
           "player": "GUSIUS",
-          "matches": 26,
-          "kills": 68,
-          "deaths": 70,
-          "dealt": 13134,
-          "received": 15888,
-          "pick": 112,
-          "miss": 254,
+          "matches": 27,
+          "kills": 69,
+          "deaths": 72,
+          "dealt": 13416,
+          "received": 16098,
+          "pick": 114,
+          "miss": 266,
           "accuracy": 13.7,
           "qualified": true
         },
@@ -4169,13 +4169,13 @@
         },
         {
           "player": "jabb@",
-          "matches": 98,
-          "kills": 344,
-          "deaths": 320,
-          "dealt": 50556,
-          "received": 42828,
-          "pick": 306,
-          "miss": 956,
+          "matches": 99,
+          "kills": 345,
+          "deaths": 329,
+          "dealt": 50856,
+          "received": 43554,
+          "pick": 312,
+          "miss": 964,
           "accuracy": 13.1,
           "qualified": true
         },
@@ -4709,25 +4709,25 @@
         },
         {
           "player": "GipSy",
-          "matches": 72,
-          "kills": 188,
+          "matches": 73,
+          "kills": 202,
           "deaths": 226,
-          "dealt": 36762,
-          "received": 37752,
-          "pick": 325,
-          "miss": 685,
+          "dealt": 38190,
+          "received": 37986,
+          "pick": 330,
+          "miss": 694,
           "accuracy": 11.5,
           "qualified": true
         },
         {
           "player": "B100D",
-          "matches": 60,
-          "kills": 196,
-          "deaths": 118,
-          "dealt": 30054,
-          "received": 23790,
-          "pick": 223,
-          "miss": 486,
+          "matches": 61,
+          "kills": 197,
+          "deaths": 124,
+          "dealt": 30198,
+          "received": 24774,
+          "pick": 224,
+          "miss": 499,
           "accuracy": 11.4,
           "qualified": true
         },
