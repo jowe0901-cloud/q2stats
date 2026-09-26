@@ -432,6 +432,14 @@
     "winrate": 0.0
   },
   {
+    "player": "r",
+    "elo": 1506,
+    "matches": 56,
+    "wins": 34,
+    "losses": 22,
+    "winrate": 60.7
+  },
+  {
     "player": "slayer",
     "elo": 1506,
     "matches": 1,
@@ -470,6 +478,14 @@
     "wins": 2,
     "losses": 1,
     "winrate": 66.7
+  },
+  {
+    "player": "SUPER-LAG",
+    "elo": 1501,
+    "matches": 63,
+    "wins": 36,
+    "losses": 27,
+    "winrate": 57.1
   },
   {
     "player": "ath|michaq",
@@ -558,14 +574,6 @@
     "wins": 2,
     "losses": 1,
     "winrate": 66.7
-  },
-  {
-    "player": "r",
-    "elo": 1498,
-    "matches": 55,
-    "wins": 33,
-    "losses": 22,
-    "winrate": 60.0
   },
   {
     "player": "freeze",
@@ -678,14 +686,6 @@
     "wins": 12,
     "losses": 16,
     "winrate": 42.9
-  },
-  {
-    "player": "SUPER-LAG",
-    "elo": 1486,
-    "matches": 62,
-    "wins": 35,
-    "losses": 27,
-    "winrate": 56.5
   },
   {
     "player": "RED",
@@ -1064,20 +1064,20 @@
     "winrate": 44.9
   },
   {
-    "player": "damz.",
-    "elo": 1302,
-    "matches": 21,
-    "wins": 5,
-    "losses": 16,
-    "winrate": 23.8
-  },
-  {
     "player": "mAc",
     "elo": 1300,
     "matches": 21,
     "wins": 6,
     "losses": 15,
     "winrate": 28.6
+  },
+  {
+    "player": "damz.",
+    "elo": 1296,
+    "matches": 22,
+    "wins": 5,
+    "losses": 17,
+    "winrate": 22.7
   },
   {
     "player": "LiOn]tRk[",
@@ -1089,10 +1089,10 @@
   },
   {
     "player": "jabb@",
-    "elo": 1151,
-    "matches": 146,
+    "elo": 1135,
+    "matches": 147,
     "wins": 64,
-    "losses": 82,
-    "winrate": 43.8
+    "losses": 83,
+    "winrate": 43.5
   }
 ]
