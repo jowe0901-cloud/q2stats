@@ -28562,5 +28562,29 @@
       }
     ],
     "saved_at": "2026-09-26T18:06:06+02:00"
+  },
+  {
+    "match_id": "f97d0bf9a7f40a75",
+    "game_type": "1v1",
+    "winner": "Home",
+    "home_score": 6,
+    "away_score": 2,
+    "players": [
+      {
+        "player": "myrmidon^",
+        "team": "Home",
+        "old_elo": 1519,
+        "change": 8.6,
+        "new_elo": 1527
+      },
+      {
+        "player": "jabb@",
+        "team": "Away",
+        "old_elo": 1346,
+        "change": -8.6,
+        "new_elo": 1337
+      }
+    ],
+    "saved_at": "2026-09-26T18:22:18+02:00"
   }
 ]
