@@ -200,6 +200,14 @@
     "winrate": 75.0
   },
   {
+    "player": "B100D",
+    "elo": 1540,
+    "matches": 68,
+    "wins": 34,
+    "losses": 34,
+    "winrate": 50.0
+  },
+  {
     "player": "OPTIMIZER",
     "elo": 1540,
     "matches": 3,
@@ -272,14 +280,6 @@
     "winrate": 66.7
   },
   {
-    "player": "B100D",
-    "elo": 1524,
-    "matches": 67,
-    "wins": 33,
-    "losses": 34,
-    "winrate": 49.3
-  },
-  {
     "player": "lamerinon",
     "elo": 1524,
     "matches": 6,
@@ -350,14 +350,6 @@
     "wins": 1,
     "losses": 0,
     "winrate": 100.0
-  },
-  {
-    "player": "michaq",
-    "elo": 1515,
-    "matches": 28,
-    "wins": 12,
-    "losses": 16,
-    "winrate": 42.9
   },
   {
     "player": "bobo",
@@ -494,6 +486,14 @@
     "wins": 1,
     "losses": 0,
     "winrate": 100.0
+  },
+  {
+    "player": "michaq",
+    "elo": 1500,
+    "matches": 29,
+    "wins": 12,
+    "losses": 17,
+    "winrate": 41.4
   },
   {
     "player": "Iron Maiden",
@@ -1009,11 +1009,11 @@
   },
   {
     "player": "need1",
-    "elo": 1409,
-    "matches": 68,
+    "elo": 1393,
+    "matches": 69,
     "wins": 35,
-    "losses": 33,
-    "winrate": 51.5
+    "losses": 34,
+    "winrate": 50.7
   },
   {
     "player": "Maniek",
@@ -1089,10 +1089,10 @@
   },
   {
     "player": "jabb@",
-    "elo": 1129,
-    "matches": 144,
-    "wins": 63,
+    "elo": 1144,
+    "matches": 145,
+    "wins": 64,
     "losses": 81,
-    "winrate": 43.8
+    "winrate": 44.1
   }
 ]
