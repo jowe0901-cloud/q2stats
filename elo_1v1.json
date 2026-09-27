@@ -152,6 +152,14 @@
     "winrate": 100.0
   },
   {
+    "player": "pyt0ng",
+    "elo": 1538,
+    "matches": 5,
+    "wins": 4,
+    "losses": 1,
+    "winrate": 80.0
+  },
+  {
     "player": "need2",
     "elo": 1537,
     "matches": 2,
@@ -234,14 +242,6 @@
   {
     "player": "need1",
     "elo": 1525,
-    "matches": 4,
-    "wins": 3,
-    "losses": 1,
-    "winrate": 75.0
-  },
-  {
-    "player": "pyt0ng",
-    "elo": 1524,
     "matches": 4,
     "wins": 3,
     "losses": 1,
@@ -504,14 +504,6 @@
     "winrate": 0.0
   },
   {
-    "player": "f0rest",
-    "elo": 1476,
-    "matches": 4,
-    "wins": 1,
-    "losses": 3,
-    "winrate": 25.0
-  },
-  {
     "player": "senz",
     "elo": 1473,
     "matches": 3,
@@ -574,6 +566,14 @@
     "wins": 10,
     "losses": 19,
     "winrate": 34.5
+  },
+  {
+    "player": "f0rest",
+    "elo": 1462,
+    "matches": 5,
+    "wins": 1,
+    "losses": 4,
+    "winrate": 20.0
   },
   {
     "player": "dolar",
