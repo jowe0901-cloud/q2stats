@@ -592,6 +592,14 @@
     "winrate": 22.7
   },
   {
+    "player": "GipSy",
+    "elo": 1439,
+    "matches": 36,
+    "wins": 16,
+    "losses": 20,
+    "winrate": 44.4
+  },
+  {
     "player": "r",
     "elo": 1431,
     "matches": 5,
@@ -622,14 +630,6 @@
     "wins": 0,
     "losses": 7,
     "winrate": 0.0
-  },
-  {
-    "player": "GipSy",
-    "elo": 1425,
-    "matches": 35,
-    "wins": 15,
-    "losses": 20,
-    "winrate": 42.9
   },
   {
     "player": "Maniek",
@@ -680,19 +680,19 @@
     "winrate": 0.0
   },
   {
-    "player": "jabb@",
-    "elo": 1381,
-    "matches": 28,
-    "wins": 6,
-    "losses": 22,
-    "winrate": 21.4
-  },
-  {
     "player": "v4cio",
     "elo": 1376,
     "matches": 16,
     "wins": 2,
     "losses": 14,
     "winrate": 12.5
+  },
+  {
+    "player": "jabb@",
+    "elo": 1367,
+    "matches": 29,
+    "wins": 6,
+    "losses": 23,
+    "winrate": 20.7
   }
 ]
