@@ -73,11 +73,11 @@
   },
   {
     "player": "fon",
-    "elo": 1691,
-    "matches": 53,
-    "wins": 32,
+    "elo": 1696,
+    "matches": 54,
+    "wins": 33,
     "losses": 21,
-    "winrate": 60.4
+    "winrate": 61.1
   },
   {
     "player": "n0sferatu",
@@ -288,6 +288,14 @@
     "winrate": 50.0
   },
   {
+    "player": "B100D",
+    "elo": 1522,
+    "matches": 71,
+    "wins": 35,
+    "losses": 36,
+    "winrate": 49.3
+  },
+  {
     "player": "r",
     "elo": 1520,
     "matches": 62,
@@ -406,14 +414,6 @@
     "wins": 1,
     "losses": 0,
     "winrate": 100.0
-  },
-  {
-    "player": "B100D",
-    "elo": 1510,
-    "matches": 70,
-    "wins": 34,
-    "losses": 36,
-    "winrate": 48.6
   },
   {
     "player": "gart",
@@ -1074,10 +1074,10 @@
   {
     "player": "Maniek",
     "elo": 1384,
-    "matches": 79,
+    "matches": 80,
     "wins": 36,
-    "losses": 43,
-    "winrate": 45.6
+    "losses": 44,
+    "winrate": 45.0
   },
   {
     "player": "sevvq",
@@ -1145,10 +1145,10 @@
   },
   {
     "player": "jabb@",
-    "elo": 1141,
-    "matches": 157,
+    "elo": 1125,
+    "matches": 158,
     "wins": 69,
-    "losses": 88,
-    "winrate": 43.9
+    "losses": 89,
+    "winrate": 43.7
   }
 ]
