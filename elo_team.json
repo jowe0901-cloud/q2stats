@@ -464,6 +464,14 @@
     "winrate": 0.0
   },
   {
+    "player": "odi",
+    "elo": 1506,
+    "matches": 9,
+    "wins": 4,
+    "losses": 5,
+    "winrate": 44.4
+  },
+  {
     "player": "slayer",
     "elo": 1506,
     "matches": 1,
@@ -686,14 +694,6 @@
     "wins": 1,
     "losses": 2,
     "winrate": 33.3
-  },
-  {
-    "player": "odi",
-    "elo": 1492,
-    "matches": 8,
-    "wins": 3,
-    "losses": 5,
-    "winrate": 37.5
   },
   {
     "player": "kurwa_ping80",
@@ -1129,11 +1129,11 @@
   },
   {
     "player": "damz.",
-    "elo": 1279,
-    "matches": 27,
+    "elo": 1267,
+    "matches": 28,
     "wins": 7,
-    "losses": 20,
-    "winrate": 25.9
+    "losses": 21,
+    "winrate": 25.0
   },
   {
     "player": "LiOn]tRk[",
@@ -1145,10 +1145,10 @@
   },
   {
     "player": "jabb@",
-    "elo": 1111,
-    "matches": 159,
+    "elo": 1106,
+    "matches": 160,
     "wins": 69,
-    "losses": 90,
-    "winrate": 43.4
+    "losses": 91,
+    "winrate": 43.1
   }
 ]

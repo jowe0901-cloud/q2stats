@@ -496,6 +496,18 @@
           "qualified": true
         },
         {
+          "player": "odi",
+          "matches": 7,
+          "kills": 15,
+          "deaths": 35,
+          "dealt": 3100,
+          "received": 5300,
+          "pick": 6,
+          "miss": 86,
+          "accuracy": 35.3,
+          "qualified": false
+        },
+        {
           "player": "Maniek",
           "matches": 87,
           "kills": 470,
@@ -784,18 +796,6 @@
           "qualified": true
         },
         {
-          "player": "odi",
-          "matches": 6,
-          "kills": 8,
-          "deaths": 33,
-          "dealt": 1600,
-          "received": 4900,
-          "pick": 3,
-          "miss": 69,
-          "accuracy": 32.8,
-          "qualified": false
-        },
-        {
           "player": "GUSIUS",
           "matches": 31,
           "kills": 232,
@@ -929,13 +929,13 @@
         },
         {
           "player": "jabb@",
-          "matches": 130,
-          "kills": 352,
-          "deaths": 831,
-          "dealt": 60600,
-          "received": 132600,
-          "pick": 281,
-          "miss": 1248,
+          "matches": 131,
+          "kills": 354,
+          "deaths": 845,
+          "dealt": 61100,
+          "received": 135000,
+          "pick": 288,
+          "miss": 1261,
           "accuracy": 30.6,
           "qualified": true
         },
@@ -1456,18 +1456,6 @@
           "qualified": false
         },
         {
-          "player": "damz.",
-          "matches": 31,
-          "kills": 57,
-          "deaths": 216,
-          "dealt": 10200,
-          "received": 29500,
-          "pick": 66,
-          "miss": 319,
-          "accuracy": 22.9,
-          "qualified": true
-        },
-        {
           "player": "piu-need1",
           "matches": 6,
           "kills": 31,
@@ -1477,6 +1465,18 @@
           "pick": 38,
           "miss": 53,
           "accuracy": 22.8,
+          "qualified": true
+        },
+        {
+          "player": "damz.",
+          "matches": 32,
+          "kills": 59,
+          "deaths": 227,
+          "dealt": 10700,
+          "received": 30900,
+          "pick": 69,
+          "miss": 336,
+          "accuracy": 22.6,
           "qualified": true
         },
         {
@@ -2411,14 +2411,14 @@
         },
         {
           "player": "jabb@",
-          "matches": 132,
-          "kills": 489,
-          "deaths": 602,
-          "dealt": 102970,
-          "received": 130335,
-          "pick": 666,
-          "miss": 1963,
-          "accuracy": 22.8,
+          "matches": 133,
+          "kills": 491,
+          "deaths": 608,
+          "dealt": 103298,
+          "received": 131388,
+          "pick": 670,
+          "miss": 1978,
+          "accuracy": 22.9,
           "qualified": true
         },
         {
@@ -2490,6 +2490,18 @@
           "received": 56155,
           "pick": 225,
           "miss": 2094,
+          "accuracy": 22.0,
+          "qualified": true
+        },
+        {
+          "player": "damz.",
+          "matches": 33,
+          "kills": 103,
+          "deaths": 146,
+          "dealt": 22092,
+          "received": 29219,
+          "pick": 225,
+          "miss": 513,
           "accuracy": 22.0,
           "qualified": true
         },
@@ -2638,18 +2650,6 @@
           "qualified": true
         },
         {
-          "player": "damz.",
-          "matches": 32,
-          "kills": 101,
-          "deaths": 143,
-          "dealt": 21441,
-          "received": 28460,
-          "pick": 222,
-          "miss": 497,
-          "accuracy": 21.0,
-          "qualified": true
-        },
-        {
           "player": "warrior",
           "matches": 38,
           "kills": 88,
@@ -2672,6 +2672,18 @@
           "miss": 218,
           "accuracy": 21.0,
           "qualified": true
+        },
+        {
+          "player": "odi",
+          "matches": 7,
+          "kills": 13,
+          "deaths": 23,
+          "dealt": 2990,
+          "received": 4635,
+          "pick": 17,
+          "miss": 135,
+          "accuracy": 21.0,
+          "qualified": false
         },
         {
           "player": "bobo",
@@ -2958,18 +2970,6 @@
           "received": 2269,
           "pick": 12,
           "miss": 42,
-          "accuracy": 18.8,
-          "qualified": false
-        },
-        {
-          "player": "odi",
-          "matches": 6,
-          "kills": 10,
-          "deaths": 20,
-          "dealt": 2431,
-          "received": 3958,
-          "pick": 12,
-          "miss": 121,
           "accuracy": 18.8,
           "qualified": false
         },
@@ -4048,6 +4048,18 @@
           "qualified": true
         },
         {
+          "player": "odi",
+          "matches": 7,
+          "kills": 40,
+          "deaths": 10,
+          "dealt": 4290,
+          "received": 3186,
+          "pick": 15,
+          "miss": 84,
+          "accuracy": 15.1,
+          "qualified": true
+        },
+        {
           "player": "asd_krzys",
           "matches": 49,
           "kills": 157,
@@ -4128,18 +4140,6 @@
           "received": 21282,
           "pick": 124,
           "miss": 502,
-          "accuracy": 14.7,
-          "qualified": true
-        },
-        {
-          "player": "odi",
-          "matches": 6,
-          "kills": 32,
-          "deaths": 9,
-          "dealt": 3498,
-          "received": 2604,
-          "pick": 14,
-          "miss": 66,
           "accuracy": 14.7,
           "qualified": true
         },
@@ -4361,13 +4361,13 @@
         },
         {
           "player": "jabb@",
-          "matches": 132,
-          "kills": 465,
-          "deaths": 451,
-          "dealt": 71700,
-          "received": 59700,
-          "pick": 464,
-          "miss": 1256,
+          "matches": 133,
+          "kills": 466,
+          "deaths": 456,
+          "dealt": 71946,
+          "received": 60192,
+          "pick": 470,
+          "miss": 1269,
           "accuracy": 13.5,
           "qualified": true
         },
@@ -5021,13 +5021,13 @@
         },
         {
           "player": "damz.",
-          "matches": 31,
-          "kills": 47,
-          "deaths": 83,
-          "dealt": 9534,
-          "received": 10260,
-          "pick": 108,
-          "miss": 310,
+          "matches": 32,
+          "kills": 49,
+          "deaths": 90,
+          "dealt": 10374,
+          "received": 11004,
+          "pick": 115,
+          "miss": 322,
           "accuracy": 11.5,
           "qualified": true
         },
