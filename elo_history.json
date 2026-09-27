@@ -31046,5 +31046,29 @@
       }
     ],
     "saved_at": "2026-09-27T22:36:13+02:00"
+  },
+  {
+    "match_id": "f5ef41fa3f6e5f3e",
+    "game_type": "1v1",
+    "winner": "Home",
+    "home_score": 21,
+    "away_score": 5,
+    "players": [
+      {
+        "player": "piu-wiu",
+        "team": "Home",
+        "old_elo": 1500,
+        "change": 12.6,
+        "new_elo": 1513
+      },
+      {
+        "player": "Maniek",
+        "team": "Away",
+        "old_elo": 1424,
+        "change": -12.6,
+        "new_elo": 1411
+      }
+    ],
+    "saved_at": "2026-09-27T22:38:04+02:00"
   }
 ]
