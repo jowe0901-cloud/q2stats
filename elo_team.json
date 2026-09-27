@@ -368,6 +368,14 @@
     "winrate": 100.0
   },
   {
+    "player": "michaq",
+    "elo": 1514,
+    "matches": 30,
+    "wins": 13,
+    "losses": 17,
+    "winrate": 43.3
+  },
+  {
     "player": "bobo",
     "elo": 1514,
     "matches": 3,
@@ -382,6 +390,14 @@
     "wins": 1,
     "losses": 0,
     "winrate": 100.0
+  },
+  {
+    "player": "odi",
+    "elo": 1513,
+    "matches": 10,
+    "wins": 5,
+    "losses": 5,
+    "winrate": 50.0
   },
   {
     "player": "Player-345",
@@ -464,14 +480,6 @@
     "winrate": 0.0
   },
   {
-    "player": "odi",
-    "elo": 1506,
-    "matches": 9,
-    "wins": 4,
-    "losses": 5,
-    "winrate": 44.4
-  },
-  {
     "player": "slayer",
     "elo": 1506,
     "matches": 1,
@@ -542,14 +550,6 @@
     "wins": 1,
     "losses": 0,
     "winrate": 100.0
-  },
-  {
-    "player": "michaq",
-    "elo": 1500,
-    "matches": 29,
-    "wins": 12,
-    "losses": 17,
-    "winrate": 41.4
   },
   {
     "player": "Iron Maiden",
@@ -1128,14 +1128,6 @@
     "winrate": 28.6
   },
   {
-    "player": "damz.",
-    "elo": 1267,
-    "matches": 28,
-    "wins": 7,
-    "losses": 21,
-    "winrate": 25.0
-  },
-  {
     "player": "LiOn]tRk[",
     "elo": 1260,
     "matches": 27,
@@ -1144,11 +1136,19 @@
     "winrate": 18.5
   },
   {
+    "player": "damz.",
+    "elo": 1251,
+    "matches": 29,
+    "wins": 7,
+    "losses": 22,
+    "winrate": 24.1
+  },
+  {
     "player": "jabb@",
-    "elo": 1106,
-    "matches": 160,
+    "elo": 1100,
+    "matches": 161,
     "wins": 69,
-    "losses": 91,
-    "winrate": 43.1
+    "losses": 92,
+    "winrate": 42.9
   }
 ]
