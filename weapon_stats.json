@@ -112,6 +112,18 @@
           "qualified": false
         },
         {
+          "player": "lameratorotor",
+          "matches": 1,
+          "kills": 22,
+          "deaths": 1,
+          "dealt": 2700,
+          "received": 300,
+          "pick": 0,
+          "miss": 18,
+          "accuracy": 48.0,
+          "qualified": false
+        },
+        {
           "player": "thenorm",
           "matches": 1,
           "kills": 9,
@@ -521,13 +533,13 @@
         },
         {
           "player": "Maniek",
-          "matches": 88,
-          "kills": 474,
-          "deaths": 530,
-          "dealt": 88600,
-          "received": 101700,
-          "pick": 307,
-          "miss": 915,
+          "matches": 89,
+          "kills": 481,
+          "deaths": 544,
+          "dealt": 89800,
+          "received": 103700,
+          "pick": 311,
+          "miss": 929,
           "accuracy": 35.0,
           "qualified": true
         },
@@ -929,14 +941,14 @@
         },
         {
           "player": "jabb@",
-          "matches": 133,
-          "kills": 359,
-          "deaths": 869,
-          "dealt": 61900,
-          "received": 139100,
-          "pick": 293,
-          "miss": 1283,
-          "accuracy": 30.5,
+          "matches": 134,
+          "kills": 374,
+          "deaths": 876,
+          "dealt": 64100,
+          "received": 140300,
+          "pick": 299,
+          "miss": 1295,
+          "accuracy": 30.6,
           "qualified": true
         },
         {
@@ -1048,6 +1060,18 @@
           "qualified": true
         },
         {
+          "player": "r",
+          "matches": 52,
+          "kills": 139,
+          "deaths": 318,
+          "dealt": 21700,
+          "received": 46700,
+          "pick": 85,
+          "miss": 602,
+          "accuracy": 29.3,
+          "qualified": true
+        },
+        {
           "player": "TeRmi.FCB",
           "matches": 3,
           "kills": 13,
@@ -1058,18 +1082,6 @@
           "miss": 29,
           "accuracy": 29.3,
           "qualified": false
-        },
-        {
-          "player": "r",
-          "matches": 51,
-          "kills": 134,
-          "deaths": 315,
-          "dealt": 21100,
-          "received": 46200,
-          "pick": 85,
-          "miss": 584,
-          "accuracy": 29.0,
-          "qualified": true
         },
         {
           "player": "Qiub",
@@ -1193,13 +1205,13 @@
         },
         {
           "player": "CoLD",
-          "matches": 29,
-          "kills": 182,
-          "deaths": 210,
-          "dealt": 31700,
-          "received": 35700,
-          "pick": 116,
-          "miss": 366,
+          "matches": 30,
+          "kills": 185,
+          "deaths": 232,
+          "dealt": 32400,
+          "received": 38300,
+          "pick": 118,
+          "miss": 382,
           "accuracy": 27.2,
           "qualified": true
         },
@@ -1385,13 +1397,13 @@
         },
         {
           "player": "SUPER-LAG",
-          "matches": 61,
-          "kills": 262,
-          "deaths": 310,
-          "dealt": 42700,
-          "received": 55800,
-          "pick": 122,
-          "miss": 572,
+          "matches": 62,
+          "kills": 267,
+          "deaths": 325,
+          "dealt": 43500,
+          "received": 57600,
+          "pick": 125,
+          "miss": 587,
           "accuracy": 24.9,
           "qualified": true
         },
@@ -1625,13 +1637,13 @@
         },
         {
           "player": "VITALIS",
-          "matches": 54,
+          "matches": 55,
           "kills": 110,
-          "deaths": 245,
+          "deaths": 254,
           "dealt": 16500,
-          "received": 35100,
+          "received": 36200,
           "pick": 58,
-          "miss": 654,
+          "miss": 672,
           "accuracy": 19.1,
           "qualified": true
         },
@@ -2183,14 +2195,14 @@
         },
         {
           "player": "r",
-          "matches": 51,
-          "kills": 266,
-          "deaths": 227,
-          "dealt": 49149,
-          "received": 51926,
-          "pick": 198,
-          "miss": 966,
-          "accuracy": 25.8,
+          "matches": 52,
+          "kills": 276,
+          "deaths": 231,
+          "dealt": 50715,
+          "received": 53318,
+          "pick": 200,
+          "miss": 992,
+          "accuracy": 25.9,
           "qualified": true
         },
         {
@@ -2267,13 +2279,13 @@
         },
         {
           "player": "VITALIS",
-          "matches": 55,
-          "kills": 239,
-          "deaths": 176,
-          "dealt": 46354,
-          "received": 37015,
-          "pick": 238,
-          "miss": 1137,
+          "matches": 56,
+          "kills": 242,
+          "deaths": 179,
+          "dealt": 47215,
+          "received": 37597,
+          "pick": 244,
+          "miss": 1159,
           "accuracy": 24.1,
           "qualified": true
         },
@@ -2434,18 +2446,6 @@
           "qualified": false
         },
         {
-          "player": "jabb@",
-          "matches": 135,
-          "kills": 503,
-          "deaths": 618,
-          "dealt": 105468,
-          "received": 133390,
-          "pick": 681,
-          "miss": 2009,
-          "accuracy": 22.8,
-          "qualified": true
-        },
-        {
           "player": "odi",
           "matches": 9,
           "kills": 19,
@@ -2479,6 +2479,18 @@
           "pick": 49,
           "miss": 176,
           "accuracy": 22.7,
+          "qualified": true
+        },
+        {
+          "player": "jabb@",
+          "matches": 136,
+          "kills": 503,
+          "deaths": 624,
+          "dealt": 105468,
+          "received": 134375,
+          "pick": 681,
+          "miss": 2037,
+          "accuracy": 22.6,
           "qualified": true
         },
         {
@@ -2830,18 +2842,6 @@
           "qualified": false
         },
         {
-          "player": "Maniek",
-          "matches": 88,
-          "kills": 293,
-          "deaths": 308,
-          "dealt": 65234,
-          "received": 73981,
-          "pick": 446,
-          "miss": 1387,
-          "accuracy": 19.9,
-          "qualified": true
-        },
-        {
           "player": "Lavrov",
           "matches": 5,
           "kills": 24,
@@ -2851,6 +2851,18 @@
           "pick": 45,
           "miss": 56,
           "accuracy": 19.8,
+          "qualified": true
+        },
+        {
+          "player": "Maniek",
+          "matches": 89,
+          "kills": 293,
+          "deaths": 315,
+          "dealt": 65349,
+          "received": 74872,
+          "pick": 450,
+          "miss": 1411,
+          "accuracy": 19.7,
           "qualified": true
         },
         {
@@ -2878,6 +2890,18 @@
           "qualified": false
         },
         {
+          "player": "SUPER-LAG",
+          "matches": 62,
+          "kills": 251,
+          "deaths": 196,
+          "dealt": 52777,
+          "received": 45712,
+          "pick": 268,
+          "miss": 1066,
+          "accuracy": 19.4,
+          "qualified": true
+        },
+        {
           "player": "piu-sleepy",
           "matches": 15,
           "kills": 60,
@@ -2902,14 +2926,14 @@
           "qualified": true
         },
         {
-          "player": "SUPER-LAG",
-          "matches": 61,
-          "kills": 243,
-          "deaths": 190,
-          "dealt": 51130,
-          "received": 44627,
-          "pick": 262,
-          "miss": 1044,
+          "player": "CoLD",
+          "matches": 30,
+          "kills": 95,
+          "deaths": 128,
+          "dealt": 16429,
+          "received": 25845,
+          "pick": 101,
+          "miss": 644,
           "accuracy": 19.2,
           "qualified": true
         },
@@ -2950,16 +2974,16 @@
           "qualified": true
         },
         {
-          "player": "CoLD",
-          "matches": 29,
-          "kills": 92,
-          "deaths": 125,
-          "dealt": 15917,
-          "received": 25318,
-          "pick": 100,
-          "miss": 617,
-          "accuracy": 18.9,
-          "qualified": true
+          "player": "lameratorotor",
+          "matches": 1,
+          "kills": 7,
+          "deaths": 1,
+          "dealt": 960,
+          "received": 397,
+          "pick": 6,
+          "miss": 22,
+          "accuracy": 19.0,
+          "qualified": false
         },
         {
           "player": "sevvq",
@@ -4361,13 +4385,13 @@
         },
         {
           "player": "jabb@",
-          "matches": 135,
+          "matches": 136,
           "kills": 474,
           "deaths": 466,
           "dealt": 73476,
-          "received": 61398,
+          "received": 61464,
           "pick": 478,
-          "miss": 1292,
+          "miss": 1308,
           "accuracy": 13.6,
           "qualified": true
         },
@@ -4444,6 +4468,18 @@
           "qualified": true
         },
         {
+          "player": "CoLD",
+          "matches": 30,
+          "kills": 118,
+          "deaths": 96,
+          "dealt": 16128,
+          "received": 14424,
+          "pick": 112,
+          "miss": 363,
+          "accuracy": 13.3,
+          "qualified": true
+        },
+        {
           "player": "nem",
           "matches": 7,
           "kills": 11,
@@ -4480,14 +4516,14 @@
           "qualified": true
         },
         {
-          "player": "CoLD",
-          "matches": 29,
-          "kills": 116,
-          "deaths": 93,
-          "dealt": 15960,
-          "received": 14094,
-          "pick": 111,
-          "miss": 348,
+          "player": "Maniek",
+          "matches": 88,
+          "kills": 209,
+          "deaths": 280,
+          "dealt": 41316,
+          "received": 46368,
+          "pick": 348,
+          "miss": 955,
           "accuracy": 13.1,
           "qualified": true
         },
@@ -4622,18 +4658,6 @@
           "miss": 12,
           "accuracy": 13.0,
           "qualified": false
-        },
-        {
-          "player": "Maniek",
-          "matches": 87,
-          "kills": 209,
-          "deaths": 279,
-          "dealt": 41058,
-          "received": 46194,
-          "pick": 346,
-          "miss": 941,
-          "accuracy": 12.9,
-          "qualified": true
         },
         {
           "player": "piu-sleepy",
@@ -5105,13 +5129,13 @@
         },
         {
           "player": "r",
-          "matches": 50,
-          "kills": 143,
-          "deaths": 184,
-          "dealt": 23958,
-          "received": 24594,
-          "pick": 196,
-          "miss": 526,
+          "matches": 51,
+          "kills": 146,
+          "deaths": 185,
+          "dealt": 24330,
+          "received": 24996,
+          "pick": 201,
+          "miss": 537,
           "accuracy": 11.3,
           "qualified": true
         },
@@ -5272,6 +5296,18 @@
           "qualified": false
         },
         {
+          "player": "SUPER-LAG",
+          "matches": 61,
+          "kills": 184,
+          "deaths": 173,
+          "dealt": 27804,
+          "received": 30096,
+          "pick": 201,
+          "miss": 642,
+          "accuracy": 10.9,
+          "qualified": true
+        },
+        {
           "player": "z0diac",
           "matches": 18,
           "kills": 41,
@@ -5281,18 +5317,6 @@
           "pick": 41,
           "miss": 217,
           "accuracy": 10.9,
-          "qualified": true
-        },
-        {
-          "player": "SUPER-LAG",
-          "matches": 60,
-          "kills": 184,
-          "deaths": 169,
-          "dealt": 27582,
-          "received": 29628,
-          "pick": 198,
-          "miss": 629,
-          "accuracy": 10.8,
           "qualified": true
         },
         {
@@ -5417,13 +5441,13 @@
         },
         {
           "player": "VITALIS",
-          "matches": 55,
+          "matches": 56,
           "kills": 65,
-          "deaths": 120,
-          "dealt": 10176,
-          "received": 17304,
-          "pick": 92,
-          "miss": 676,
+          "deaths": 124,
+          "dealt": 10230,
+          "received": 17826,
+          "pick": 93,
+          "miss": 691,
           "accuracy": 9.4,
           "qualified": true
         },
@@ -5566,6 +5590,18 @@
           "deaths": 0,
           "dealt": 0,
           "received": 18,
+          "pick": 0,
+          "miss": 16,
+          "accuracy": 0.0,
+          "qualified": false
+        },
+        {
+          "player": "lameratorotor",
+          "matches": 1,
+          "kills": 0,
+          "deaths": 0,
+          "dealt": 0,
+          "received": 96,
           "pick": 0,
           "miss": 16,
           "accuracy": 0.0,
