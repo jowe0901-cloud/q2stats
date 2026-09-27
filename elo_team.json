@@ -64,20 +64,20 @@
     "winrate": 61.8
   },
   {
-    "player": "GipSy",
-    "elo": 1700,
-    "matches": 85,
-    "wins": 46,
-    "losses": 39,
-    "winrate": 54.1
-  },
-  {
     "player": "[sf]fasadin",
     "elo": 1699,
     "matches": 25,
     "wins": 15,
     "losses": 10,
     "winrate": 60.0
+  },
+  {
+    "player": "GipSy",
+    "elo": 1694,
+    "matches": 86,
+    "wins": 46,
+    "losses": 40,
+    "winrate": 53.5
   },
   {
     "player": "n0sferatu",
@@ -176,6 +176,14 @@
     "winrate": 100.0
   },
   {
+    "player": "ping80",
+    "elo": 1559,
+    "matches": 18,
+    "wins": 10,
+    "losses": 8,
+    "winrate": 55.6
+  },
+  {
     "player": "CoLD",
     "elo": 1557,
     "matches": 40,
@@ -190,14 +198,6 @@
     "wins": 5,
     "losses": 2,
     "winrate": 71.4
-  },
-  {
-    "player": "ping80",
-    "elo": 1552,
-    "matches": 17,
-    "wins": 10,
-    "losses": 7,
-    "winrate": 58.8
   },
   {
     "player": "David",
@@ -264,6 +264,14 @@
     "winrate": 100.0
   },
   {
+    "player": "B100D",
+    "elo": 1525,
+    "matches": 76,
+    "wins": 38,
+    "losses": 38,
+    "winrate": 50.0
+  },
+  {
     "player": "TAITI",
     "elo": 1525,
     "matches": 9,
@@ -294,14 +302,6 @@
     "wins": 38,
     "losses": 24,
     "winrate": 61.3
-  },
-  {
-    "player": "B100D",
-    "elo": 1519,
-    "matches": 75,
-    "wins": 37,
-    "losses": 38,
-    "winrate": 49.3
   },
   {
     "player": "prostitute",
@@ -1057,11 +1057,11 @@
   },
   {
     "player": "need1",
-    "elo": 1397,
-    "matches": 70,
-    "wins": 36,
+    "elo": 1411,
+    "matches": 71,
+    "wins": 37,
     "losses": 34,
-    "winrate": 51.4
+    "winrate": 52.1
   },
   {
     "player": "TERMINAKOR",
@@ -1073,19 +1073,11 @@
   },
   {
     "player": "Maniek",
-    "elo": 1369,
-    "matches": 81,
-    "wins": 36,
+    "elo": 1379,
+    "matches": 82,
+    "wins": 37,
     "losses": 45,
-    "winrate": 44.4
-  },
-  {
-    "player": "sevvq",
-    "elo": 1367,
-    "matches": 28,
-    "wins": 12,
-    "losses": 16,
-    "winrate": 42.9
+    "winrate": 45.1
   },
   {
     "player": "[HC]Reni^",
@@ -1102,6 +1094,14 @@
     "wins": 0,
     "losses": 10,
     "winrate": 0.0
+  },
+  {
+    "player": "sevvq",
+    "elo": 1351,
+    "matches": 29,
+    "wins": 12,
+    "losses": 17,
+    "winrate": 41.4
   },
   {
     "player": "error",
