@@ -484,18 +484,6 @@
           "qualified": false
         },
         {
-          "player": "Maniek",
-          "matches": 83,
-          "kills": 455,
-          "deaths": 504,
-          "dealt": 84300,
-          "received": 96700,
-          "pick": 295,
-          "miss": 858,
-          "accuracy": 35.5,
-          "qualified": true
-        },
-        {
           "player": "norm",
           "matches": 13,
           "kills": 125,
@@ -517,6 +505,18 @@
           "pick": 23,
           "miss": 102,
           "accuracy": 35.4,
+          "qualified": true
+        },
+        {
+          "player": "Maniek",
+          "matches": 84,
+          "kills": 455,
+          "deaths": 510,
+          "dealt": 84300,
+          "received": 98200,
+          "pick": 296,
+          "miss": 863,
+          "accuracy": 35.1,
           "qualified": true
         },
         {
@@ -662,18 +662,6 @@
           "miss": 51,
           "accuracy": 34.2,
           "qualified": true
-        },
-        {
-          "player": "TeRmi.FCB",
-          "matches": 2,
-          "kills": 11,
-          "deaths": 19,
-          "dealt": 1700,
-          "received": 3000,
-          "pick": 5,
-          "miss": 23,
-          "accuracy": 34.0,
-          "qualified": false
         },
         {
           "player": "need2",
@@ -1060,6 +1048,18 @@
           "qualified": true
         },
         {
+          "player": "TeRmi.FCB",
+          "matches": 3,
+          "kills": 13,
+          "deaths": 21,
+          "dealt": 2000,
+          "received": 3300,
+          "pick": 5,
+          "miss": 29,
+          "accuracy": 29.3,
+          "qualified": false
+        },
+        {
           "player": "michaq",
           "matches": 39,
           "kills": 247,
@@ -1120,6 +1120,18 @@
           "qualified": false
         },
         {
+          "player": "B100D",
+          "matches": 71,
+          "kills": 280,
+          "deaths": 276,
+          "dealt": 57600,
+          "received": 47200,
+          "pick": 250,
+          "miss": 419,
+          "accuracy": 28.4,
+          "qualified": true
+        },
+        {
           "player": "TAITI",
           "matches": 11,
           "kills": 47,
@@ -1129,18 +1141,6 @@
           "pick": 37,
           "miss": 119,
           "accuracy": 28.4,
-          "qualified": true
-        },
-        {
-          "player": "B100D",
-          "matches": 70,
-          "kills": 275,
-          "deaths": 266,
-          "dealt": 56600,
-          "received": 45600,
-          "pick": 245,
-          "miss": 418,
-          "accuracy": 28.2,
           "qualified": true
         },
         {
@@ -2819,14 +2819,14 @@
         },
         {
           "player": "Maniek",
-          "matches": 83,
-          "kills": 279,
-          "deaths": 287,
-          "dealt": 61940,
-          "received": 69965,
-          "pick": 433,
-          "miss": 1282,
-          "accuracy": 19.5,
+          "matches": 84,
+          "kills": 280,
+          "deaths": 288,
+          "dealt": 62620,
+          "received": 70385,
+          "pick": 434,
+          "miss": 1295,
+          "accuracy": 19.6,
           "qualified": true
         },
         {
@@ -2962,18 +2962,6 @@
           "qualified": false
         },
         {
-          "player": "B100D",
-          "matches": 70,
-          "kills": 132,
-          "deaths": 128,
-          "dealt": 34716,
-          "received": 41873,
-          "pick": 269,
-          "miss": 791,
-          "accuracy": 18.7,
-          "qualified": true
-        },
-        {
           "player": "CoLD",
           "matches": 28,
           "kills": 83,
@@ -3020,6 +3008,18 @@
           "miss": 26,
           "accuracy": 18.5,
           "qualified": false
+        },
+        {
+          "player": "B100D",
+          "matches": 71,
+          "kills": 132,
+          "deaths": 129,
+          "dealt": 34716,
+          "received": 42235,
+          "pick": 275,
+          "miss": 799,
+          "accuracy": 18.4,
+          "qualified": true
         },
         {
           "player": "badman",
@@ -3538,18 +3538,6 @@
           "qualified": false
         },
         {
-          "player": "TeRmi.FCB",
-          "matches": 2,
-          "kills": 3,
-          "deaths": 4,
-          "dealt": 572,
-          "received": 1100,
-          "pick": 6,
-          "miss": 37,
-          "accuracy": 12.0,
-          "qualified": false
-        },
-        {
           "player": "szef|shotman",
           "matches": 9,
           "kills": 16,
@@ -3607,6 +3595,18 @@
           "pick": 4,
           "miss": 18,
           "accuracy": 11.0,
+          "qualified": false
+        },
+        {
+          "player": "TeRmi.FCB",
+          "matches": 3,
+          "kills": 5,
+          "deaths": 5,
+          "dealt": 1085,
+          "received": 1729,
+          "pick": 10,
+          "miss": 47,
+          "accuracy": 10.7,
           "qualified": false
         },
         {
@@ -4588,18 +4588,6 @@
           "qualified": false
         },
         {
-          "player": "Maniek",
-          "matches": 82,
-          "kills": 183,
-          "deaths": 257,
-          "dealt": 37236,
-          "received": 42984,
-          "pick": 332,
-          "miss": 871,
-          "accuracy": 12.9,
-          "qualified": true
-        },
-        {
           "player": "piu-sleepy",
           "matches": 15,
           "kills": 80,
@@ -4609,6 +4597,18 @@
           "pick": 133,
           "miss": 106,
           "accuracy": 12.9,
+          "qualified": true
+        },
+        {
+          "player": "Maniek",
+          "matches": 83,
+          "kills": 191,
+          "deaths": 259,
+          "dealt": 38400,
+          "received": 43506,
+          "pick": 335,
+          "miss": 879,
+          "accuracy": 12.8,
           "qualified": true
         },
         {
@@ -4925,13 +4925,13 @@
         },
         {
           "player": "B100D",
-          "matches": 70,
-          "kills": 230,
-          "deaths": 150,
-          "dealt": 35676,
-          "received": 29130,
-          "pick": 267,
-          "miss": 597,
+          "matches": 71,
+          "kills": 231,
+          "deaths": 152,
+          "dealt": 36222,
+          "received": 29544,
+          "pick": 272,
+          "miss": 603,
           "accuracy": 11.7,
           "qualified": true
         },
@@ -5100,6 +5100,18 @@
           "received": 5214,
           "pick": 47,
           "miss": 45,
+          "accuracy": 11.3,
+          "qualified": false
+        },
+        {
+          "player": "TeRmi.FCB",
+          "matches": 3,
+          "kills": 4,
+          "deaths": 13,
+          "dealt": 1020,
+          "received": 2100,
+          "pick": 9,
+          "miss": 33,
           "accuracy": 11.3,
           "qualified": false
         },
@@ -5365,18 +5377,6 @@
           "pick": 12,
           "miss": 39,
           "accuracy": 9.7,
-          "qualified": false
-        },
-        {
-          "player": "TeRmi.FCB",
-          "matches": 2,
-          "kills": 1,
-          "deaths": 5,
-          "dealt": 444,
-          "received": 750,
-          "pick": 6,
-          "miss": 25,
-          "accuracy": 9.5,
           "qualified": false
         },
         {

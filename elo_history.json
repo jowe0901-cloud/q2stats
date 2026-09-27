@@ -30200,5 +30200,36 @@
       }
     ],
     "saved_at": "2026-09-27T13:38:53+02:00"
+  },
+  {
+    "match_id": "14e79dd1e53f5eba",
+    "game_type": "team",
+    "winner": "Away",
+    "home_score": 14,
+    "away_score": 24,
+    "players": [
+      {
+        "player": "B100D",
+        "team": "Home",
+        "old_elo": 1526,
+        "change": -16,
+        "new_elo": 1510
+      },
+      {
+        "player": "Maniek",
+        "team": "Home",
+        "old_elo": 1377,
+        "change": 7,
+        "new_elo": 1384
+      },
+      {
+        "player": "TeRmi.FCB",
+        "team": "Away",
+        "old_elo": 1496,
+        "change": 7.9,
+        "new_elo": 1504
+      }
+    ],
+    "saved_at": "2026-09-27T13:53:28+02:00"
   }
 ]
