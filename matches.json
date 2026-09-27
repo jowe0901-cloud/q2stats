@@ -247104,5 +247104,145 @@
       }
     ],
     "saved_at": "2026-09-27T14:51:21+02:00"
+  },
+  {
+    "match_id": "983796ab5f562dfa",
+    "game_type": "team",
+    "hostname": "PacketFlinger.com ~ OpenTDM ~ Germany #3",
+    "mapname": "q2dm1",
+    "match_type": "TDM",
+    "port": 27910,
+    "winner": "Home",
+    "home_score": 39,
+    "away_score": 9,
+    "players": [
+      {
+        "name": "z0diac",
+        "kills": 0,
+        "deaths": 3,
+        "suicides": 0,
+        "teamkills": 0,
+        "teleports": 0,
+        "damage": 0,
+        "damage_received": 369,
+        "team_damage": 0,
+        "team_damage_received": 0,
+        "weapons": {
+          "Chaingun": {
+            "accuracy": null,
+            "kills": null,
+            "deaths": 1,
+            "dealt": null,
+            "received": 132,
+            "pick": 0,
+            "miss": 1
+          },
+          "Rocket Launcher": {
+            "accuracy": null,
+            "kills": null,
+            "deaths": 2,
+            "dealt": null,
+            "received": 237,
+            "pick": 0,
+            "miss": 2
+          }
+        },
+        "team": "Away",
+        "ping": 60,
+        "player_id": "1",
+        "elo_type": "team",
+        "elo_before": 1518,
+        "elo_change": -16,
+        "elo_after": 1502
+      },
+      {
+        "name": "ping80",
+        "kills": 2,
+        "deaths": 0,
+        "suicides": 0,
+        "teamkills": 0,
+        "teleports": 0,
+        "damage": 150,
+        "damage_received": 12,
+        "team_damage": 24,
+        "team_damage_received": 0,
+        "weapons": {
+          "Super Shotgun": {
+            "accuracy": null,
+            "kills": null,
+            "deaths": 0,
+            "dealt": null,
+            "received": 12,
+            "pick": 0,
+            "miss": 1
+          },
+          "Chaingun": {
+            "accuracy": 11,
+            "kills": 2,
+            "deaths": null,
+            "dealt": 150,
+            "received": null,
+            "pick": 1,
+            "miss": 0
+          }
+        },
+        "team": "Home",
+        "ping": 31,
+        "player_id": "5",
+        "elo_type": "team",
+        "elo_before": 1536,
+        "elo_change": 16,
+        "elo_after": 1552
+      },
+      {
+        "name": "B100D",
+        "kills": 0,
+        "deaths": 1,
+        "suicides": 0,
+        "teamkills": 0,
+        "teleports": 0,
+        "damage": 12,
+        "damage_received": 100,
+        "team_damage": 0,
+        "team_damage_received": 0,
+        "weapons": {
+          "Super Shotgun": {
+            "accuracy": 34,
+            "kills": 0,
+            "deaths": null,
+            "dealt": 12,
+            "received": null,
+            "pick": 1,
+            "miss": 0
+          },
+          "Chaingun": {
+            "accuracy": null,
+            "kills": null,
+            "deaths": 1,
+            "dealt": null,
+            "received": 18,
+            "pick": 0,
+            "miss": 1
+          },
+          "Rocket Launcher": {
+            "accuracy": null,
+            "kills": null,
+            "deaths": 0,
+            "dealt": null,
+            "received": 82,
+            "pick": 1,
+            "miss": 1
+          }
+        },
+        "team": "Away",
+        "ping": 41,
+        "player_id": "7",
+        "elo_type": "team",
+        "elo_before": 1521,
+        "elo_change": -10.2,
+        "elo_after": 1511
+      }
+    ],
+    "saved_at": "2026-09-27T14:54:32+02:00"
   }
 ]
