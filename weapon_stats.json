@@ -39,26 +39,26 @@
         },
         {
           "player": "maq",
-          "matches": 51,
-          "kills": 536,
+          "matches": 52,
+          "kills": 547,
           "deaths": 235,
-          "dealt": 86600,
-          "received": 42700,
-          "pick": 155,
-          "miss": 579,
-          "accuracy": 41.9,
+          "dealt": 88300,
+          "received": 42800,
+          "pick": 156,
+          "miss": 580,
+          "accuracy": 41.8,
           "qualified": true
         },
         {
           "player": "lynx",
-          "matches": 13,
+          "matches": 14,
           "kills": 43,
-          "deaths": 65,
-          "dealt": 8400,
-          "received": 13500,
-          "pick": 24,
-          "miss": 148,
-          "accuracy": 41.8,
+          "deaths": 76,
+          "dealt": 8500,
+          "received": 15200,
+          "pick": 25,
+          "miss": 149,
+          "accuracy": 41.2,
           "qualified": true
         },
         {
@@ -209,26 +209,26 @@
         },
         {
           "player": "maq",
-          "matches": 51,
-          "kills": 536,
+          "matches": 52,
+          "kills": 547,
           "deaths": 235,
-          "dealt": 86600,
-          "received": 42700,
-          "pick": 155,
-          "miss": 579,
-          "accuracy": 41.9,
+          "dealt": 88300,
+          "received": 42800,
+          "pick": 156,
+          "miss": 580,
+          "accuracy": 41.8,
           "qualified": true
         },
         {
           "player": "lynx",
-          "matches": 13,
+          "matches": 14,
           "kills": 43,
-          "deaths": 65,
-          "dealt": 8400,
-          "received": 13500,
-          "pick": 24,
-          "miss": 148,
-          "accuracy": 41.8,
+          "deaths": 76,
+          "dealt": 8500,
+          "received": 15200,
+          "pick": 25,
+          "miss": 149,
+          "accuracy": 41.2,
           "qualified": true
         },
         {
@@ -2566,6 +2566,18 @@
           "qualified": true
         },
         {
+          "player": "maq",
+          "matches": 52,
+          "kills": 159,
+          "deaths": 123,
+          "dealt": 32127,
+          "received": 32568,
+          "pick": 172,
+          "miss": 954,
+          "accuracy": 22.5,
+          "qualified": true
+        },
+        {
           "player": "lamerationor",
           "matches": 2,
           "kills": 10,
@@ -2576,18 +2588,6 @@
           "miss": 37,
           "accuracy": 22.5,
           "qualified": false
-        },
-        {
-          "player": "maq",
-          "matches": 51,
-          "kills": 148,
-          "deaths": 122,
-          "dealt": 30456,
-          "received": 32044,
-          "pick": 170,
-          "miss": 943,
-          "accuracy": 22.3,
-          "qualified": true
         },
         {
           "player": "damz.",
@@ -2758,18 +2758,6 @@
           "qualified": true
         },
         {
-          "player": "lynx",
-          "matches": 13,
-          "kills": 49,
-          "deaths": 39,
-          "dealt": 9182,
-          "received": 8584,
-          "pick": 60,
-          "miss": 205,
-          "accuracy": 21.1,
-          "qualified": true
-        },
-        {
           "player": "TAITI",
           "matches": 11,
           "kills": 24,
@@ -2838,6 +2826,18 @@
           "received": 40635,
           "pick": 188,
           "miss": 910,
+          "accuracy": 20.2,
+          "qualified": true
+        },
+        {
+          "player": "lynx",
+          "matches": 14,
+          "kills": 50,
+          "deaths": 50,
+          "dealt": 9617,
+          "received": 10533,
+          "pick": 71,
+          "miss": 207,
           "accuracy": 20.2,
           "qualified": true
         },
@@ -4277,13 +4277,13 @@
         },
         {
           "player": "maq",
-          "matches": 47,
-          "kills": 148,
+          "matches": 48,
+          "kills": 153,
           "deaths": 106,
-          "dealt": 22098,
-          "received": 22908,
-          "pick": 133,
-          "miss": 558,
+          "dealt": 22542,
+          "received": 23202,
+          "pick": 134,
+          "miss": 563,
           "accuracy": 14.7,
           "qualified": true
         },
@@ -5116,18 +5116,6 @@
           "qualified": true
         },
         {
-          "player": "lynx",
-          "matches": 13,
-          "kills": 18,
-          "deaths": 39,
-          "dealt": 4626,
-          "received": 5952,
-          "pick": 48,
-          "miss": 142,
-          "accuracy": 11.7,
-          "qualified": false
-        },
-        {
           "player": "n0sferatu",
           "matches": 37,
           "kills": 97,
@@ -5174,6 +5162,18 @@
           "miss": 139,
           "accuracy": 11.6,
           "qualified": true
+        },
+        {
+          "player": "lynx",
+          "matches": 14,
+          "kills": 18,
+          "deaths": 44,
+          "dealt": 4920,
+          "received": 6396,
+          "pick": 53,
+          "miss": 143,
+          "accuracy": 11.6,
+          "qualified": false
         },
         {
           "player": "ping80",

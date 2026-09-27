@@ -128,6 +128,14 @@
     "winrate": 100.0
   },
   {
+    "player": "maq",
+    "elo": 1550,
+    "matches": 10,
+    "wins": 7,
+    "losses": 3,
+    "winrate": 70.0
+  },
+  {
     "player": "ping80",
     "elo": 1546,
     "matches": 6,
@@ -166,14 +174,6 @@
     "wins": 2,
     "losses": 0,
     "winrate": 100.0
-  },
-  {
-    "player": "maq",
-    "elo": 1536,
-    "matches": 9,
-    "wins": 6,
-    "losses": 3,
-    "winrate": 66.7
   },
   {
     "player": "roon",
@@ -504,14 +504,6 @@
     "winrate": 25.0
   },
   {
-    "player": "lynx",
-    "elo": 1476,
-    "matches": 2,
-    "wins": 0,
-    "losses": 2,
-    "winrate": 0.0
-  },
-  {
     "player": "senz",
     "elo": 1473,
     "matches": 3,
@@ -574,6 +566,14 @@
     "wins": 10,
     "losses": 19,
     "winrate": 34.5
+  },
+  {
+    "player": "lynx",
+    "elo": 1463,
+    "matches": 3,
+    "wins": 0,
+    "losses": 3,
+    "winrate": 0.0
   },
   {
     "player": "dolar",
