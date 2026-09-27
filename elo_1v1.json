@@ -64,6 +64,14 @@
     "winrate": 100.0
   },
   {
+    "player": "David",
+    "elo": 1575,
+    "matches": 6,
+    "wins": 6,
+    "losses": 0,
+    "winrate": 100.0
+  },
+  {
     "player": "maq",
     "elo": 1573,
     "matches": 12,
@@ -98,14 +106,6 @@
   {
     "player": ">dapurri",
     "elo": 1567,
-    "matches": 5,
-    "wins": 5,
-    "losses": 0,
-    "winrate": 100.0
-  },
-  {
-    "player": "David",
-    "elo": 1565,
     "matches": 5,
     "wins": 5,
     "losses": 0,
@@ -624,19 +624,19 @@
     "winrate": 22.7
   },
   {
-    "player": "lynx",
-    "elo": 1440,
+    "player": "r",
+    "elo": 1431,
     "matches": 5,
     "wins": 0,
     "losses": 5,
     "winrate": 0.0
   },
   {
-    "player": "r",
-    "elo": 1431,
-    "matches": 5,
+    "player": "lynx",
+    "elo": 1429,
+    "matches": 6,
     "wins": 0,
-    "losses": 5,
+    "losses": 6,
     "winrate": 0.0
   },
   {
