@@ -1,11 +1,11 @@
 [
   {
     "player": "maq",
-    "elo": 1900,
-    "matches": 52,
-    "wins": 37,
+    "elo": 1916,
+    "matches": 53,
+    "wins": 38,
     "losses": 15,
-    "winrate": 71.2
+    "winrate": 71.7
   },
   {
     "player": "warrior",
@@ -456,14 +456,6 @@
     "winrate": 100.0
   },
   {
-    "player": "z0diac",
-    "elo": 1507,
-    "matches": 20,
-    "wins": 10,
-    "losses": 10,
-    "winrate": 50.0
-  },
-  {
     "player": "SZEF",
     "elo": 1507,
     "matches": 1,
@@ -696,6 +688,14 @@
     "winrate": 50.0
   },
   {
+    "player": "z0diac",
+    "elo": 1493,
+    "matches": 21,
+    "wins": 10,
+    "losses": 11,
+    "winrate": 47.6
+  },
+  {
     "player": "sase",
     "elo": 1493,
     "matches": 3,
@@ -824,6 +824,14 @@
     "winrate": 25.0
   },
   {
+    "player": "m",
+    "elo": 1481,
+    "matches": 42,
+    "wins": 18,
+    "losses": 24,
+    "winrate": 42.9
+  },
+  {
     "player": "[ds]ads",
     "elo": 1480,
     "matches": 14,
@@ -880,14 +888,6 @@
     "winrate": 40.0
   },
   {
-    "player": "lynx",
-    "elo": 1475,
-    "matches": 17,
-    "wins": 7,
-    "losses": 10,
-    "winrate": 41.2
-  },
-  {
     "player": "T3RM!N4ToR",
     "elo": 1474,
     "matches": 3,
@@ -910,14 +910,6 @@
     "wins": 1,
     "losses": 2,
     "winrate": 33.3
-  },
-  {
-    "player": "m",
-    "elo": 1472,
-    "matches": 41,
-    "wins": 17,
-    "losses": 24,
-    "winrate": 41.5
   },
   {
     "player": "LiOn",
@@ -990,6 +982,14 @@
     "wins": 0,
     "losses": 3,
     "winrate": 0.0
+  },
+  {
+    "player": "lynx",
+    "elo": 1459,
+    "matches": 18,
+    "wins": 7,
+    "losses": 11,
+    "winrate": 38.9
   },
   {
     "player": "Abyys",
