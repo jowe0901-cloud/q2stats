@@ -365,13 +365,13 @@
         },
         {
           "player": "roon",
-          "matches": 29,
-          "kills": 291,
-          "deaths": 189,
-          "dealt": 47500,
-          "received": 34600,
-          "pick": 137,
-          "miss": 339,
+          "matches": 30,
+          "kills": 295,
+          "deaths": 191,
+          "dealt": 48400,
+          "received": 35600,
+          "pick": 139,
+          "miss": 346,
           "accuracy": 37.4,
           "qualified": true
         },
@@ -1024,18 +1024,6 @@
           "qualified": false
         },
         {
-          "player": "cne",
-          "matches": 61,
-          "kills": 698,
-          "deaths": 340,
-          "dealt": 108800,
-          "received": 56200,
-          "pick": 229,
-          "miss": 593,
-          "accuracy": 29.6,
-          "qualified": true
-        },
-        {
           "player": "r",
           "matches": 50,
           "kills": 134,
@@ -1045,6 +1033,18 @@
           "pick": 84,
           "miss": 557,
           "accuracy": 29.6,
+          "qualified": true
+        },
+        {
+          "player": "cne",
+          "matches": 62,
+          "kills": 701,
+          "deaths": 344,
+          "dealt": 109800,
+          "received": 56700,
+          "pick": 233,
+          "miss": 598,
+          "accuracy": 29.5,
           "qualified": true
         },
         {
@@ -1144,18 +1144,6 @@
           "qualified": true
         },
         {
-          "player": "senz",
-          "matches": 21,
-          "kills": 60,
-          "deaths": 95,
-          "dealt": 11400,
-          "received": 16200,
-          "pick": 32,
-          "miss": 233,
-          "accuracy": 28.1,
-          "qualified": true
-        },
-        {
           "player": "SUPER-LAG+DRUNK",
           "matches": 2,
           "kills": 13,
@@ -1166,6 +1154,18 @@
           "miss": 27,
           "accuracy": 28.0,
           "qualified": false
+        },
+        {
+          "player": "senz",
+          "matches": 22,
+          "kills": 62,
+          "deaths": 99,
+          "dealt": 11800,
+          "received": 16700,
+          "pick": 34,
+          "miss": 240,
+          "accuracy": 27.8,
+          "qualified": true
         },
         {
           "player": "s",
@@ -2123,14 +2123,14 @@
         },
         {
           "player": "roon",
-          "matches": 29,
-          "kills": 135,
-          "deaths": 95,
-          "dealt": 25941,
-          "received": 22339,
-          "pick": 134,
-          "miss": 436,
-          "accuracy": 26.8,
+          "matches": 30,
+          "kills": 138,
+          "deaths": 99,
+          "dealt": 26733,
+          "received": 23335,
+          "pick": 138,
+          "miss": 450,
+          "accuracy": 26.5,
           "qualified": true
         },
         {
@@ -2698,18 +2698,6 @@
           "qualified": false
         },
         {
-          "player": "senz",
-          "matches": 21,
-          "kills": 68,
-          "deaths": 72,
-          "dealt": 13259,
-          "received": 14803,
-          "pick": 101,
-          "miss": 333,
-          "accuracy": 20.3,
-          "qualified": true
-        },
-        {
           "player": "Keizer",
           "matches": 60,
           "kills": 165,
@@ -2719,6 +2707,18 @@
           "pick": 188,
           "miss": 910,
           "accuracy": 20.2,
+          "qualified": true
+        },
+        {
+          "player": "senz",
+          "matches": 22,
+          "kills": 69,
+          "deaths": 75,
+          "dealt": 13481,
+          "received": 15718,
+          "pick": 104,
+          "miss": 348,
+          "accuracy": 20.1,
           "qualified": true
         },
         {
@@ -3227,13 +3227,13 @@
         },
         {
           "player": "cne",
-          "matches": 61,
-          "kills": 173,
+          "matches": 62,
+          "kills": 175,
           "deaths": 154,
-          "dealt": 29649,
-          "received": 34114,
-          "pick": 193,
-          "miss": 1233,
+          "dealt": 30397,
+          "received": 34444,
+          "pick": 199,
+          "miss": 1245,
           "accuracy": 16.6,
           "qualified": true
         },
@@ -4181,14 +4181,14 @@
         },
         {
           "player": "roon",
-          "matches": 28,
-          "kills": 104,
-          "deaths": 83,
-          "dealt": 15498,
-          "received": 14334,
-          "pick": 123,
-          "miss": 329,
-          "accuracy": 14.3,
+          "matches": 29,
+          "kills": 106,
+          "deaths": 89,
+          "dealt": 16032,
+          "received": 15084,
+          "pick": 124,
+          "miss": 340,
+          "accuracy": 14.4,
           "qualified": true
         },
         {
@@ -4637,13 +4637,13 @@
         },
         {
           "player": "cne",
-          "matches": 59,
-          "kills": 136,
-          "deaths": 170,
-          "dealt": 18768,
-          "received": 24744,
-          "pick": 108,
-          "miss": 720,
+          "matches": 60,
+          "kills": 140,
+          "deaths": 176,
+          "dealt": 19374,
+          "received": 25818,
+          "pick": 112,
+          "miss": 728,
           "accuracy": 12.7,
           "qualified": true
         },
@@ -4937,13 +4937,13 @@
         },
         {
           "player": "senz",
-          "matches": 20,
-          "kills": 43,
-          "deaths": 45,
-          "dealt": 7098,
-          "received": 8898,
-          "pick": 53,
-          "miss": 217,
+          "matches": 21,
+          "kills": 47,
+          "deaths": 47,
+          "dealt": 7806,
+          "received": 9498,
+          "pick": 58,
+          "miss": 224,
           "accuracy": 11.7,
           "qualified": true
         },
