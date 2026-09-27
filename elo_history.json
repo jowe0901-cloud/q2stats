@@ -31139,5 +31139,29 @@
       }
     ],
     "saved_at": "2026-09-27T22:54:41+02:00"
+  },
+  {
+    "match_id": "1ad35f4e6e95dea8",
+    "game_type": "1v1",
+    "winner": "Home",
+    "home_score": 30,
+    "away_score": 22,
+    "players": [
+      {
+        "player": "pyt0ng",
+        "team": "Home",
+        "old_elo": 1538,
+        "change": 12.6,
+        "new_elo": 1550
+      },
+      {
+        "player": "f0rest",
+        "team": "Away",
+        "old_elo": 1462,
+        "change": -12.6,
+        "new_elo": 1450
+      }
+    ],
+    "saved_at": "2026-09-27T22:59:59+02:00"
   }
 ]
