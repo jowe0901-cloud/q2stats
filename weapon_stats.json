@@ -341,15 +341,15 @@
         },
         {
           "player": "pyt0ng",
-          "matches": 2,
-          "kills": 38,
-          "deaths": 9,
-          "dealt": 6000,
-          "received": 1500,
-          "pick": 23,
-          "miss": 11,
-          "accuracy": 38.5,
-          "qualified": false
+          "matches": 3,
+          "kills": 51,
+          "deaths": 12,
+          "dealt": 8500,
+          "received": 2400,
+          "pick": 33,
+          "miss": 15,
+          "accuracy": 38.3,
+          "qualified": true
         },
         {
           "player": "Gaymidon^",
@@ -844,18 +844,6 @@
           "qualified": true
         },
         {
-          "player": "f0rest",
-          "matches": 2,
-          "kills": 9,
-          "deaths": 38,
-          "dealt": 1500,
-          "received": 6000,
-          "pick": 11,
-          "miss": 23,
-          "accuracy": 32.5,
-          "qualified": false
-        },
-        {
           "player": "Tai",
           "matches": 4,
           "kills": 16,
@@ -901,6 +889,18 @@
           "pick": 4,
           "miss": 23,
           "accuracy": 32.0,
+          "qualified": false
+        },
+        {
+          "player": "f0rest",
+          "matches": 3,
+          "kills": 12,
+          "deaths": 51,
+          "dealt": 2400,
+          "received": 8500,
+          "pick": 15,
+          "miss": 33,
+          "accuracy": 31.7,
           "qualified": false
         },
         {
@@ -1940,6 +1940,18 @@
           "qualified": true
         },
         {
+          "player": "pyt0ng",
+          "matches": 3,
+          "kills": 22,
+          "deaths": 6,
+          "dealt": 4705,
+          "received": 3038,
+          "pick": 22,
+          "miss": 22,
+          "accuracy": 30.7,
+          "qualified": true
+        },
+        {
           "player": "rul",
           "matches": 54,
           "kills": 154,
@@ -1949,18 +1961,6 @@
           "pick": 115,
           "miss": 1059,
           "accuracy": 29.2,
-          "qualified": true
-        },
-        {
-          "player": "Qiub",
-          "matches": 14,
-          "kills": 86,
-          "deaths": 56,
-          "dealt": 15543,
-          "received": 12114,
-          "pick": 107,
-          "miss": 248,
-          "accuracy": 28.5,
           "qualified": true
         }
       ],
@@ -2026,18 +2026,6 @@
           "qualified": false
         },
         {
-          "player": "pyt0ng",
-          "matches": 2,
-          "kills": 19,
-          "deaths": 4,
-          "dealt": 4109,
-          "received": 1701,
-          "pick": 18,
-          "miss": 14,
-          "accuracy": 34.5,
-          "qualified": false
-        },
-        {
           "player": "Q",
           "matches": 2,
           "kills": 19,
@@ -2070,6 +2058,18 @@
           "received": 3608,
           "pick": 37,
           "miss": 65,
+          "accuracy": 30.7,
+          "qualified": true
+        },
+        {
+          "player": "pyt0ng",
+          "matches": 3,
+          "kills": 22,
+          "deaths": 6,
+          "dealt": 4705,
+          "received": 3038,
+          "pick": 22,
+          "miss": 22,
           "accuracy": 30.7,
           "qualified": true
         },
@@ -2554,6 +2554,18 @@
           "qualified": false
         },
         {
+          "player": "f0rest",
+          "matches": 3,
+          "kills": 6,
+          "deaths": 22,
+          "dealt": 2504,
+          "received": 5009,
+          "pick": 22,
+          "miss": 22,
+          "accuracy": 22.3,
+          "qualified": false
+        },
+        {
           "player": "damz.",
           "matches": 37,
           "kills": 123,
@@ -2624,18 +2636,6 @@
           "miss": 98,
           "accuracy": 22.0,
           "qualified": true
-        },
-        {
-          "player": "f0rest",
-          "matches": 2,
-          "kills": 4,
-          "deaths": 19,
-          "dealt": 1379,
-          "received": 4213,
-          "pick": 14,
-          "miss": 18,
-          "accuracy": 22.0,
-          "qualified": false
         },
         {
           "player": "T3RM!N4ToR",
@@ -4036,18 +4036,6 @@
           "qualified": true
         },
         {
-          "player": "f0rest",
-          "matches": 2,
-          "kills": 10,
-          "deaths": 8,
-          "dealt": 1734,
-          "received": 1188,
-          "pick": 21,
-          "miss": 9,
-          "accuracy": 16.0,
-          "qualified": false
-        },
-        {
           "player": "Qiub/afc",
           "matches": 4,
           "kills": 9,
@@ -4106,6 +4094,18 @@
           "miss": 68,
           "accuracy": 15.7,
           "qualified": true
+        },
+        {
+          "player": "f0rest",
+          "matches": 3,
+          "kills": 15,
+          "deaths": 10,
+          "dealt": 2892,
+          "received": 1824,
+          "pick": 30,
+          "miss": 14,
+          "accuracy": 15.7,
+          "qualified": false
         },
         {
           "player": "rul",
@@ -5380,18 +5380,6 @@
           "qualified": true
         },
         {
-          "player": "pyt0ng",
-          "matches": 2,
-          "kills": 8,
-          "deaths": 10,
-          "dealt": 1188,
-          "received": 1734,
-          "pick": 9,
-          "miss": 21,
-          "accuracy": 10.5,
-          "qualified": false
-        },
-        {
           "player": "lamerationor",
           "matches": 2,
           "kills": 5,
@@ -5413,6 +5401,18 @@
           "pick": 19,
           "miss": 14,
           "accuracy": 10.4,
+          "qualified": false
+        },
+        {
+          "player": "pyt0ng",
+          "matches": 3,
+          "kills": 10,
+          "deaths": 15,
+          "dealt": 1824,
+          "received": 2892,
+          "pick": 14,
+          "miss": 30,
+          "accuracy": 10.3,
           "qualified": false
         },
         {
