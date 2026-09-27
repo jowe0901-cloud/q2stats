@@ -9,11 +9,11 @@
   },
   {
     "player": "warrior",
-    "elo": 1823,
-    "matches": 41,
-    "wins": 30,
+    "elo": 1839,
+    "matches": 42,
+    "wins": 31,
     "losses": 11,
-    "winrate": 73.2
+    "winrate": 73.8
   },
   {
     "player": "qw",
@@ -73,11 +73,11 @@
   },
   {
     "player": "fon",
-    "elo": 1696,
-    "matches": 52,
+    "elo": 1691,
+    "matches": 53,
     "wins": 32,
-    "losses": 20,
-    "winrate": 61.5
+    "losses": 21,
+    "winrate": 60.4
   },
   {
     "player": "n0sferatu",
@@ -200,14 +200,6 @@
     "winrate": 75.0
   },
   {
-    "player": "B100D",
-    "elo": 1540,
-    "matches": 68,
-    "wins": 34,
-    "losses": 34,
-    "winrate": 50.0
-  },
-  {
     "player": "OPTIMIZER",
     "elo": 1540,
     "matches": 3,
@@ -262,6 +254,14 @@
     "wins": 2,
     "losses": 0,
     "winrate": 100.0
+  },
+  {
+    "player": "B100D",
+    "elo": 1526,
+    "matches": 69,
+    "wins": 34,
+    "losses": 35,
+    "winrate": 49.3
   },
   {
     "player": "TAITI",
@@ -672,6 +672,14 @@
     "winrate": 50.0
   },
   {
+    "player": "TeRmi.FCB",
+    "elo": 1496,
+    "matches": 2,
+    "wins": 1,
+    "losses": 1,
+    "winrate": 50.0
+  },
+  {
     "player": "sase",
     "elo": 1493,
     "matches": 3,
@@ -769,14 +777,6 @@
   },
   {
     "player": "benzyna",
-    "elo": 1484,
-    "matches": 1,
-    "wins": 0,
-    "losses": 1,
-    "winrate": 0.0
-  },
-  {
-    "player": "TeRmi.FCB",
     "elo": 1484,
     "matches": 1,
     "wins": 0,
@@ -1064,20 +1064,20 @@
     "winrate": 50.7
   },
   {
-    "player": "Maniek",
-    "elo": 1393,
-    "matches": 77,
-    "wins": 36,
-    "losses": 41,
-    "winrate": 46.8
-  },
-  {
     "player": "TERMINAKOR",
     "elo": 1391,
     "matches": 8,
     "wins": 1,
     "losses": 7,
     "winrate": 12.5
+  },
+  {
+    "player": "Maniek",
+    "elo": 1377,
+    "matches": 78,
+    "wins": 36,
+    "losses": 42,
+    "winrate": 46.2
   },
   {
     "player": "sevvq",
