@@ -168,6 +168,14 @@
     "winrate": 66.7
   },
   {
+    "player": "roon",
+    "elo": 1534,
+    "matches": 9,
+    "wins": 6,
+    "losses": 3,
+    "winrate": 66.7
+  },
+  {
     "player": ">daPurrI",
     "elo": 1533,
     "matches": 3,
@@ -230,14 +238,6 @@
     "wins": 3,
     "losses": 1,
     "winrate": 75.0
-  },
-  {
-    "player": "roon",
-    "elo": 1525,
-    "matches": 8,
-    "wins": 5,
-    "losses": 3,
-    "winrate": 62.5
   },
   {
     "player": "n0sferatu",
@@ -697,10 +697,10 @@
   },
   {
     "player": "jabb@",
-    "elo": 1343,
-    "matches": 31,
+    "elo": 1335,
+    "matches": 32,
     "wins": 6,
-    "losses": 25,
-    "winrate": 19.4
+    "losses": 26,
+    "winrate": 18.8
   }
 ]
