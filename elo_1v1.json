@@ -88,14 +88,6 @@
     "winrate": 85.7
   },
   {
-    "player": "pyt0ng",
-    "elo": 1572,
-    "matches": 8,
-    "wins": 7,
-    "losses": 1,
-    "winrate": 87.5
-  },
-  {
     "player": "cne",
     "elo": 1568,
     "matches": 7,
@@ -134,6 +126,14 @@
     "wins": 4,
     "losses": 0,
     "winrate": 100.0
+  },
+  {
+    "player": "pyt0ng",
+    "elo": 1550,
+    "matches": 9,
+    "wins": 7,
+    "losses": 2,
+    "winrate": 77.8
   },
   {
     "player": "piu-wiu",
@@ -600,6 +600,14 @@
     "winrate": 22.2
   },
   {
+    "player": "f0rest",
+    "elo": 1450,
+    "matches": 9,
+    "wins": 2,
+    "losses": 7,
+    "winrate": 22.2
+  },
+  {
     "player": "Grrga",
     "elo": 1443,
     "matches": 4,
@@ -638,14 +646,6 @@
     "wins": 2,
     "losses": 9,
     "winrate": 18.2
-  },
-  {
-    "player": "f0rest",
-    "elo": 1428,
-    "matches": 8,
-    "wins": 1,
-    "losses": 7,
-    "winrate": 12.5
   },
   {
     "player": "damz.",
