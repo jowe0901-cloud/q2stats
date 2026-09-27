@@ -128,14 +128,6 @@
     "winrate": 100.0
   },
   {
-    "player": "piu-wiu",
-    "elo": 1553,
-    "matches": 5,
-    "wins": 5,
-    "losses": 0,
-    "winrate": 100.0
-  },
-  {
     "player": "ping80",
     "elo": 1546,
     "matches": 6,
@@ -214,6 +206,14 @@
     "wins": 3,
     "losses": 2,
     "winrate": 60.0
+  },
+  {
+    "player": "piu-wiu",
+    "elo": 1529,
+    "matches": 6,
+    "wins": 5,
+    "losses": 1,
+    "winrate": 83.3
   },
   {
     "player": "prostitute",
@@ -696,20 +696,20 @@
     "winrate": 0.0
   },
   {
+    "player": "Maniek",
+    "elo": 1394,
+    "matches": 34,
+    "wins": 10,
+    "losses": 24,
+    "winrate": 29.4
+  },
+  {
     "player": "v4cio",
     "elo": 1376,
     "matches": 16,
     "wins": 2,
     "losses": 14,
     "winrate": 12.5
-  },
-  {
-    "player": "Maniek",
-    "elo": 1371,
-    "matches": 33,
-    "wins": 9,
-    "losses": 24,
-    "winrate": 27.3
   },
   {
     "player": "Puma!",
