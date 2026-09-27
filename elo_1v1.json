@@ -360,6 +360,14 @@
     "winrate": 0.0
   },
   {
+    "player": "GipSy",
+    "elo": 1488,
+    "matches": 40,
+    "wins": 20,
+    "losses": 20,
+    "winrate": 50.0
+  },
+  {
     "player": "warrior",
     "elo": 1487,
     "matches": 3,
@@ -470,14 +478,6 @@
     "wins": 1,
     "losses": 3,
     "winrate": 25.0
-  },
-  {
-    "player": "GipSy",
-    "elo": 1476,
-    "matches": 39,
-    "wins": 19,
-    "losses": 20,
-    "winrate": 48.7
   },
   {
     "player": "lynx",
@@ -672,20 +672,20 @@
     "winrate": 0.0
   },
   {
-    "player": "Puma!",
-    "elo": 1384,
-    "matches": 12,
-    "wins": 1,
-    "losses": 11,
-    "winrate": 8.3
-  },
-  {
     "player": "v4cio",
     "elo": 1376,
     "matches": 16,
     "wins": 2,
     "losses": 14,
     "winrate": 12.5
+  },
+  {
+    "player": "Puma!",
+    "elo": 1372,
+    "matches": 13,
+    "wins": 1,
+    "losses": 12,
+    "winrate": 7.7
   },
   {
     "player": "jabb@",
