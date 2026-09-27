@@ -605,14 +605,14 @@
         },
         {
           "player": "Maniek",
-          "matches": 90,
-          "kills": 482,
-          "deaths": 545,
-          "dealt": 89900,
-          "received": 103900,
-          "pick": 317,
-          "miss": 933,
-          "accuracy": 34.9,
+          "matches": 91,
+          "kills": 486,
+          "deaths": 547,
+          "dealt": 91000,
+          "received": 104300,
+          "pick": 324,
+          "miss": 943,
+          "accuracy": 34.8,
           "qualified": true
         },
         {
@@ -1792,6 +1792,18 @@
           "qualified": false
         },
         {
+          "player": "piu-wiu",
+          "matches": 2,
+          "kills": 3,
+          "deaths": 5,
+          "dealt": 600,
+          "received": 1200,
+          "pick": 14,
+          "miss": 13,
+          "accuracy": 15.5,
+          "qualified": false
+        },
+        {
           "player": "sparkq2",
           "matches": 2,
           "kills": 2,
@@ -1837,18 +1849,6 @@
           "pick": 8,
           "miss": 55,
           "accuracy": 14.2,
-          "qualified": false
-        },
-        {
-          "player": "piu-wiu",
-          "matches": 1,
-          "kills": 1,
-          "deaths": 1,
-          "dealt": 200,
-          "received": 100,
-          "pick": 4,
-          "miss": 6,
-          "accuracy": 12.0,
           "qualified": false
         },
         {
@@ -2902,18 +2902,6 @@
           "qualified": false
         },
         {
-          "player": "Maniek",
-          "matches": 90,
-          "kills": 296,
-          "deaths": 321,
-          "dealt": 66684,
-          "received": 76836,
-          "pick": 454,
-          "miss": 1423,
-          "accuracy": 19.8,
-          "qualified": true
-        },
-        {
           "player": "Lavrov",
           "matches": 5,
           "kills": 24,
@@ -2923,6 +2911,18 @@
           "pick": 45,
           "miss": 56,
           "accuracy": 19.8,
+          "qualified": true
+        },
+        {
+          "player": "Maniek",
+          "matches": 91,
+          "kills": 299,
+          "deaths": 327,
+          "dealt": 67326,
+          "received": 78218,
+          "pick": 461,
+          "miss": 1432,
+          "accuracy": 19.7,
           "qualified": true
         },
         {
@@ -3138,6 +3138,18 @@
           "received": 3348,
           "pick": 8,
           "miss": 26,
+          "accuracy": 18.5,
+          "qualified": false
+        },
+        {
+          "player": "piu-wiu",
+          "matches": 2,
+          "kills": 12,
+          "deaths": 6,
+          "dealt": 3117,
+          "received": 2318,
+          "pick": 21,
+          "miss": 11,
           "accuracy": 18.5,
           "qualified": false
         },
@@ -3512,18 +3524,6 @@
           "miss": 41,
           "accuracy": 15.1,
           "qualified": true
-        },
-        {
-          "player": "piu-wiu",
-          "matches": 1,
-          "kills": 6,
-          "deaths": 3,
-          "dealt": 1803,
-          "received": 1593,
-          "pick": 12,
-          "miss": 4,
-          "accuracy": 15.0,
-          "qualified": false
         },
         {
           "player": "Abyys",
@@ -4228,18 +4228,6 @@
           "qualified": false
         },
         {
-          "player": "piu-wiu",
-          "matches": 1,
-          "kills": 12,
-          "deaths": 0,
-          "dealt": 1656,
-          "received": 168,
-          "pick": 9,
-          "miss": 4,
-          "accuracy": 15.0,
-          "qualified": false
-        },
-        {
           "player": "Bullz",
           "matches": 5,
           "kills": 8,
@@ -4382,6 +4370,18 @@
           "miss": 64,
           "accuracy": 14.0,
           "qualified": true
+        },
+        {
+          "player": "piu-wiu",
+          "matches": 2,
+          "kills": 22,
+          "deaths": 1,
+          "dealt": 2976,
+          "received": 474,
+          "pick": 17,
+          "miss": 11,
+          "accuracy": 14.0,
+          "qualified": false
         },
         {
           "player": "need2",
@@ -4625,13 +4625,13 @@
         },
         {
           "player": "Maniek",
-          "matches": 89,
-          "kills": 209,
-          "deaths": 292,
-          "dealt": 41484,
-          "received": 48024,
-          "pick": 352,
-          "miss": 964,
+          "matches": 90,
+          "kills": 210,
+          "deaths": 302,
+          "dealt": 41790,
+          "received": 49344,
+          "pick": 359,
+          "miss": 972,
           "accuracy": 13.0,
           "qualified": true
         },
