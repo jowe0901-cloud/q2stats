@@ -15,14 +15,14 @@
       "top5": [
         {
           "player": "David",
-          "matches": 7,
-          "kills": 139,
-          "deaths": 14,
-          "dealt": 17200,
-          "received": 2900,
-          "pick": 35,
-          "miss": 62,
-          "accuracy": 43.6,
+          "matches": 8,
+          "kills": 160,
+          "deaths": 16,
+          "dealt": 20000,
+          "received": 3800,
+          "pick": 38,
+          "miss": 73,
+          "accuracy": 43.2,
           "qualified": true
         },
         {
@@ -149,14 +149,14 @@
         },
         {
           "player": "David",
-          "matches": 7,
-          "kills": 139,
-          "deaths": 14,
-          "dealt": 17200,
-          "received": 2900,
-          "pick": 35,
-          "miss": 62,
-          "accuracy": 43.6,
+          "matches": 8,
+          "kills": 160,
+          "deaths": 16,
+          "dealt": 20000,
+          "received": 3800,
+          "pick": 38,
+          "miss": 73,
+          "accuracy": 43.2,
           "qualified": true
         },
         {
@@ -292,18 +292,6 @@
           "qualified": true
         },
         {
-          "player": "lynx",
-          "matches": 17,
-          "kills": 47,
-          "deaths": 110,
-          "dealt": 9800,
-          "received": 21000,
-          "pick": 38,
-          "miss": 161,
-          "accuracy": 39.2,
-          "qualified": true
-        },
-        {
           "player": "xRSNx",
           "matches": 6,
           "kills": 33,
@@ -325,6 +313,18 @@
           "pick": 2,
           "miss": 48,
           "accuracy": 39.0,
+          "qualified": true
+        },
+        {
+          "player": "lynx",
+          "matches": 18,
+          "kills": 49,
+          "deaths": 131,
+          "dealt": 10700,
+          "received": 23800,
+          "pick": 49,
+          "miss": 164,
+          "accuracy": 38.9,
           "qualified": true
         },
         {
@@ -1941,14 +1941,14 @@
         },
         {
           "player": "David",
-          "matches": 7,
-          "kills": 49,
+          "matches": 8,
+          "kills": 54,
           "deaths": 5,
-          "dealt": 9557,
-          "received": 4433,
-          "pick": 44,
-          "miss": 73,
-          "accuracy": 30.7,
+          "dealt": 10920,
+          "received": 4984,
+          "pick": 53,
+          "miss": 78,
+          "accuracy": 30.4,
           "qualified": true
         },
         {
@@ -2063,14 +2063,14 @@
         },
         {
           "player": "David",
-          "matches": 7,
-          "kills": 49,
+          "matches": 8,
+          "kills": 54,
           "deaths": 5,
-          "dealt": 9557,
-          "received": 4433,
-          "pick": 44,
-          "miss": 73,
-          "accuracy": 30.7,
+          "dealt": 10920,
+          "received": 4984,
+          "pick": 53,
+          "miss": 78,
+          "accuracy": 30.4,
           "qualified": true
         },
         {
@@ -3070,18 +3070,6 @@
           "qualified": false
         },
         {
-          "player": "lynx",
-          "matches": 17,
-          "kills": 51,
-          "deaths": 65,
-          "dealt": 11271,
-          "received": 13929,
-          "pick": 96,
-          "miss": 222,
-          "accuracy": 18.8,
-          "qualified": true
-        },
-        {
           "player": "[sf]T3RM!N4ToR",
           "matches": 4,
           "kills": 14,
@@ -3152,6 +3140,18 @@
           "miss": 26,
           "accuracy": 18.5,
           "qualified": false
+        },
+        {
+          "player": "lynx",
+          "matches": 18,
+          "kills": 51,
+          "deaths": 70,
+          "dealt": 11702,
+          "received": 15335,
+          "pick": 101,
+          "miss": 231,
+          "accuracy": 18.4,
+          "qualified": true
         },
         {
           "player": "badman",
@@ -4313,13 +4313,13 @@
         },
         {
           "player": "David",
-          "matches": 7,
-          "kills": 52,
+          "matches": 8,
+          "kills": 66,
           "deaths": 6,
-          "dealt": 6996,
-          "received": 2250,
-          "pick": 26,
-          "miss": 70,
+          "dealt": 8658,
+          "received": 2484,
+          "pick": 34,
+          "miss": 76,
           "accuracy": 14.6,
           "qualified": true
         },
@@ -5212,18 +5212,6 @@
           "qualified": true
         },
         {
-          "player": "lynx",
-          "matches": 17,
-          "kills": 21,
-          "deaths": 70,
-          "dealt": 6786,
-          "received": 9852,
-          "pick": 77,
-          "miss": 167,
-          "accuracy": 11.4,
-          "qualified": true
-        },
-        {
           "player": "RED",
           "matches": 5,
           "kills": 13,
@@ -5256,6 +5244,18 @@
           "received": 13344,
           "pick": 129,
           "miss": 362,
+          "accuracy": 11.3,
+          "qualified": true
+        },
+        {
+          "player": "lynx",
+          "matches": 18,
+          "kills": 21,
+          "deaths": 84,
+          "dealt": 7020,
+          "received": 11514,
+          "pick": 83,
+          "miss": 175,
           "accuracy": 11.3,
           "qualified": true
         },

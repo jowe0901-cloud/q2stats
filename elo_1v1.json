@@ -32,6 +32,14 @@
     "winrate": 81.0
   },
   {
+    "player": "David",
+    "elo": 1585,
+    "matches": 7,
+    "wins": 7,
+    "losses": 0,
+    "winrate": 100.0
+  },
+  {
     "player": "tron",
     "elo": 1583,
     "matches": 8,
@@ -58,14 +66,6 @@
   {
     "player": "piu-need1",
     "elo": 1578,
-    "matches": 6,
-    "wins": 6,
-    "losses": 0,
-    "winrate": 100.0
-  },
-  {
-    "player": "David",
-    "elo": 1575,
     "matches": 6,
     "wins": 6,
     "losses": 0,
@@ -632,14 +632,6 @@
     "winrate": 0.0
   },
   {
-    "player": "lynx",
-    "elo": 1429,
-    "matches": 6,
-    "wins": 0,
-    "losses": 6,
-    "winrate": 0.0
-  },
-  {
     "player": "Pacifist_(AVB)",
     "elo": 1429,
     "matches": 11,
@@ -686,6 +678,14 @@
     "wins": 2,
     "losses": 7,
     "winrate": 22.2
+  },
+  {
+    "player": "lynx",
+    "elo": 1420,
+    "matches": 7,
+    "wins": 0,
+    "losses": 7,
+    "winrate": 0.0
   },
   {
     "player": "error",
