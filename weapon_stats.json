@@ -50,6 +50,18 @@
           "qualified": true
         },
         {
+          "player": "_Logic",
+          "matches": 3,
+          "kills": 21,
+          "deaths": 11,
+          "dealt": 3000,
+          "received": 2700,
+          "pick": 9,
+          "miss": 32,
+          "accuracy": 42.3,
+          "qualified": true
+        },
+        {
           "player": "maq",
           "matches": 47,
           "kills": 480,
@@ -59,18 +71,6 @@
           "pick": 144,
           "miss": 532,
           "accuracy": 42.0,
-          "qualified": true
-        },
-        {
-          "player": "lamerinon",
-          "matches": 6,
-          "kills": 46,
-          "deaths": 34,
-          "dealt": 6900,
-          "received": 5700,
-          "pick": 12,
-          "miss": 86,
-          "accuracy": 40.5,
           "qualified": true
         }
       ],
@@ -85,18 +85,6 @@
           "pick": 4,
           "miss": 11,
           "accuracy": 53.0,
-          "qualified": false
-        },
-        {
-          "player": "_Logic",
-          "matches": 2,
-          "kills": 18,
-          "deaths": 5,
-          "dealt": 2500,
-          "received": 800,
-          "pick": 4,
-          "miss": 20,
-          "accuracy": 51.5,
           "qualified": false
         },
         {
@@ -182,6 +170,18 @@
           "miss": 7,
           "accuracy": 42.5,
           "qualified": false
+        },
+        {
+          "player": "_Logic",
+          "matches": 3,
+          "kills": 21,
+          "deaths": 11,
+          "dealt": 3000,
+          "received": 2700,
+          "pick": 9,
+          "miss": 32,
+          "accuracy": 42.3,
+          "qualified": true
         },
         {
           "player": "maq",
@@ -857,14 +857,14 @@
         },
         {
           "player": "Puma!",
-          "matches": 35,
-          "kills": 285,
-          "deaths": 252,
-          "dealt": 48000,
-          "received": 37700,
-          "pick": 142,
-          "miss": 379,
-          "accuracy": 31.6,
+          "matches": 36,
+          "kills": 291,
+          "deaths": 255,
+          "dealt": 49900,
+          "received": 38200,
+          "pick": 154,
+          "miss": 384,
+          "accuracy": 31.5,
           "qualified": true
         },
         {
@@ -2770,18 +2770,6 @@
           "qualified": false
         },
         {
-          "player": "Puma!",
-          "matches": 35,
-          "kills": 85,
-          "deaths": 117,
-          "dealt": 18264,
-          "received": 26876,
-          "pick": 170,
-          "miss": 564,
-          "accuracy": 19.9,
-          "qualified": true
-        },
-        {
           "player": "Lavrov",
           "matches": 5,
           "kills": 24,
@@ -2791,6 +2779,18 @@
           "pick": 45,
           "miss": 56,
           "accuracy": 19.8,
+          "qualified": true
+        },
+        {
+          "player": "Puma!",
+          "matches": 36,
+          "kills": 87,
+          "deaths": 122,
+          "dealt": 18550,
+          "received": 28176,
+          "pick": 174,
+          "miss": 576,
+          "accuracy": 19.7,
           "qualified": true
         },
         {
@@ -3454,6 +3454,18 @@
           "qualified": false
         },
         {
+          "player": "_Logic",
+          "matches": 3,
+          "kills": 18,
+          "deaths": 9,
+          "dealt": 3052,
+          "received": 2009,
+          "pick": 25,
+          "miss": 39,
+          "accuracy": 13.3,
+          "qualified": false
+        },
+        {
           "player": "Deft0ne",
           "matches": 1,
           "kills": 2,
@@ -3487,18 +3499,6 @@
           "pick": 40,
           "miss": 35,
           "accuracy": 12.8,
-          "qualified": false
-        },
-        {
-          "player": "_Logic",
-          "matches": 2,
-          "kills": 13,
-          "deaths": 7,
-          "dealt": 1816,
-          "received": 1607,
-          "pick": 13,
-          "miss": 35,
-          "accuracy": 12.0,
           "qualified": false
         },
         {
@@ -4192,18 +4192,6 @@
           "qualified": false
         },
         {
-          "player": "_Logic",
-          "matches": 2,
-          "kills": 5,
-          "deaths": 11,
-          "dealt": 876,
-          "received": 1350,
-          "pick": 4,
-          "miss": 22,
-          "accuracy": 14.0,
-          "qualified": false
-        },
-        {
           "player": "need2",
           "matches": 2,
           "kills": 3,
@@ -4284,6 +4272,18 @@
           "received": 1350,
           "pick": 29,
           "miss": 26,
+          "accuracy": 13.7,
+          "qualified": false
+        },
+        {
+          "player": "_Logic",
+          "matches": 3,
+          "kills": 7,
+          "deaths": 13,
+          "dealt": 1596,
+          "received": 1806,
+          "pick": 11,
+          "miss": 30,
           "accuracy": 13.7,
           "qualified": false
         },
@@ -4637,13 +4637,13 @@
         },
         {
           "player": "Puma!",
-          "matches": 33,
-          "kills": 40,
-          "deaths": 116,
-          "dealt": 7548,
-          "received": 18492,
-          "pick": 97,
-          "miss": 400,
+          "matches": 34,
+          "kills": 42,
+          "deaths": 118,
+          "dealt": 8004,
+          "received": 19212,
+          "pick": 105,
+          "miss": 407,
           "accuracy": 12.5,
           "qualified": true
         },
