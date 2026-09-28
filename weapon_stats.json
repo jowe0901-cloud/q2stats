@@ -736,18 +736,6 @@
           "qualified": false
         },
         {
-          "player": "badman",
-          "matches": 76,
-          "kills": 684,
-          "deaths": 530,
-          "dealt": 105600,
-          "received": 84500,
-          "pick": 175,
-          "miss": 1013,
-          "accuracy": 33.8,
-          "qualified": true
-        },
-        {
           "player": "a",
           "matches": 9,
           "kills": 45,
@@ -757,6 +745,18 @@
           "pick": 52,
           "miss": 68,
           "accuracy": 33.8,
+          "qualified": true
+        },
+        {
+          "player": "badman",
+          "matches": 77,
+          "kills": 692,
+          "deaths": 532,
+          "dealt": 106900,
+          "received": 85000,
+          "pick": 178,
+          "miss": 1018,
+          "accuracy": 33.7,
           "qualified": true
         },
         {
@@ -953,13 +953,13 @@
         },
         {
           "player": "jabb@",
-          "matches": 135,
-          "kills": 374,
-          "deaths": 876,
-          "dealt": 64100,
-          "received": 140500,
-          "pick": 299,
-          "miss": 1297,
+          "matches": 136,
+          "kills": 376,
+          "deaths": 884,
+          "dealt": 64600,
+          "received": 141800,
+          "pick": 304,
+          "miss": 1300,
           "accuracy": 30.6,
           "qualified": true
         },
@@ -2530,18 +2530,6 @@
           "qualified": true
         },
         {
-          "player": "jabb@",
-          "matches": 137,
-          "kills": 503,
-          "deaths": 626,
-          "dealt": 105743,
-          "received": 135132,
-          "pick": 683,
-          "miss": 2039,
-          "accuracy": 22.6,
-          "qualified": true
-        },
-        {
           "player": "asd_krzys",
           "matches": 53,
           "kills": 186,
@@ -2563,6 +2551,18 @@
           "pick": 146,
           "miss": 439,
           "accuracy": 22.6,
+          "qualified": true
+        },
+        {
+          "player": "jabb@",
+          "matches": 138,
+          "kills": 503,
+          "deaths": 628,
+          "dealt": 105894,
+          "received": 135745,
+          "pick": 686,
+          "miss": 2044,
+          "accuracy": 22.5,
           "qualified": true
         },
         {
@@ -3154,6 +3154,18 @@
           "qualified": true
         },
         {
+          "player": "badman",
+          "matches": 77,
+          "kills": 134,
+          "deaths": 224,
+          "dealt": 25739,
+          "received": 44511,
+          "pick": 264,
+          "miss": 1560,
+          "accuracy": 18.3,
+          "qualified": true
+        },
+        {
           "player": "B100D",
           "matches": 91,
           "kills": 171,
@@ -3162,18 +3174,6 @@
           "received": 54809,
           "pick": 360,
           "miss": 1030,
-          "accuracy": 18.2,
-          "qualified": true
-        },
-        {
-          "player": "badman",
-          "matches": 76,
-          "kills": 132,
-          "deaths": 224,
-          "dealt": 25171,
-          "received": 44360,
-          "pick": 259,
-          "miss": 1557,
           "accuracy": 18.2,
           "qualified": true
         },
@@ -4385,13 +4385,13 @@
         },
         {
           "player": "badman",
-          "matches": 74,
-          "kills": 199,
-          "deaths": 179,
-          "dealt": 30192,
-          "received": 26898,
-          "pick": 189,
-          "miss": 961,
+          "matches": 75,
+          "kills": 201,
+          "deaths": 180,
+          "dealt": 30492,
+          "received": 27144,
+          "pick": 195,
+          "miss": 964,
           "accuracy": 14.3,
           "qualified": true
         },
@@ -4529,13 +4529,13 @@
         },
         {
           "player": "jabb@",
-          "matches": 137,
-          "kills": 474,
-          "deaths": 466,
-          "dealt": 73836,
-          "received": 61710,
-          "pick": 481,
-          "miss": 1309,
+          "matches": 138,
+          "kills": 475,
+          "deaths": 468,
+          "dealt": 74082,
+          "received": 62010,
+          "pick": 484,
+          "miss": 1315,
           "accuracy": 13.5,
           "qualified": true
         },
