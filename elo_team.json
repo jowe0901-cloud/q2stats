@@ -8,20 +8,20 @@
     "winrate": 72.4
   },
   {
+    "player": "cne",
+    "elo": 1844,
+    "matches": 79,
+    "wins": 48,
+    "losses": 31,
+    "winrate": 60.8
+  },
+  {
     "player": "warrior",
     "elo": 1839,
     "matches": 42,
     "wins": 31,
     "losses": 11,
     "winrate": 73.8
-  },
-  {
-    "player": "cne",
-    "elo": 1828,
-    "matches": 78,
-    "wins": 47,
-    "losses": 31,
-    "winrate": 60.3
   },
   {
     "player": "GipSy",
@@ -33,27 +33,19 @@
   },
   {
     "player": "rul",
-    "elo": 1769,
-    "matches": 75,
-    "wins": 41,
+    "elo": 1772,
+    "matches": 76,
+    "wins": 42,
     "losses": 34,
-    "winrate": 54.7
+    "winrate": 55.3
   },
   {
     "player": "qw",
-    "elo": 1746,
-    "matches": 143,
-    "wins": 70,
+    "elo": 1755,
+    "matches": 144,
+    "wins": 71,
     "losses": 73,
-    "winrate": 49.0
-  },
-  {
-    "player": "myrmidon^",
-    "elo": 1741,
-    "matches": 66,
-    "wins": 38,
-    "losses": 28,
-    "winrate": 57.6
+    "winrate": 49.3
   },
   {
     "player": "fon",
@@ -62,6 +54,14 @@
     "wins": 36,
     "losses": 21,
     "winrate": 63.2
+  },
+  {
+    "player": "myrmidon^",
+    "elo": 1732,
+    "matches": 67,
+    "wins": 38,
+    "losses": 29,
+    "winrate": 56.7
   },
   {
     "player": "Keizer",
@@ -89,11 +89,11 @@
   },
   {
     "player": "roon",
-    "elo": 1645,
-    "matches": 22,
+    "elo": 1637,
+    "matches": 23,
     "wins": 13,
-    "losses": 9,
-    "winrate": 59.1
+    "losses": 10,
+    "winrate": 56.5
   },
   {
     "player": "badman",
@@ -104,20 +104,20 @@
     "winrate": 46.2
   },
   {
+    "player": "asd_krzys",
+    "elo": 1622,
+    "matches": 63,
+    "wins": 33,
+    "losses": 30,
+    "winrate": 52.4
+  },
+  {
     "player": "[sYnth]Scooby",
     "elo": 1616,
     "matches": 38,
     "wins": 19,
     "losses": 19,
     "winrate": 50.0
-  },
-  {
-    "player": "asd_krzys",
-    "elo": 1613,
-    "matches": 62,
-    "wins": 32,
-    "losses": 30,
-    "winrate": 51.6
   },
   {
     "player": "faint",
@@ -1177,10 +1177,10 @@
   },
   {
     "player": "jabb@",
-    "elo": 1089,
-    "matches": 166,
+    "elo": 1073,
+    "matches": 167,
     "wins": 71,
-    "losses": 95,
-    "winrate": 42.8
+    "losses": 96,
+    "winrate": 42.5
   }
 ]
