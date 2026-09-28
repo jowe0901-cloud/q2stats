@@ -264,6 +264,14 @@
     "winrate": 75.0
   },
   {
+    "player": "badman",
+    "elo": 1522,
+    "matches": 5,
+    "wins": 4,
+    "losses": 1,
+    "winrate": 80.0
+  },
+  {
     "player": "needd1",
     "elo": 1521,
     "matches": 2,
@@ -310,14 +318,6 @@
     "wins": 1,
     "losses": 0,
     "winrate": 100.0
-  },
-  {
-    "player": "badman",
-    "elo": 1515,
-    "matches": 4,
-    "wins": 3,
-    "losses": 1,
-    "winrate": 75.0
   },
   {
     "player": "shNoodle",
@@ -721,10 +721,10 @@
   },
   {
     "player": "jabb@",
-    "elo": 1309,
-    "matches": 35,
+    "elo": 1301,
+    "matches": 36,
     "wins": 6,
-    "losses": 29,
-    "winrate": 17.1
+    "losses": 30,
+    "winrate": 16.7
   }
 ]
