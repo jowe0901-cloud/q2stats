@@ -39,14 +39,14 @@
         },
         {
           "player": "maq",
-          "matches": 59,
-          "kills": 576,
+          "matches": 60,
+          "kills": 591,
           "deaths": 239,
-          "dealt": 95700,
-          "received": 44900,
-          "pick": 170,
-          "miss": 597,
-          "accuracy": 41.3,
+          "dealt": 98100,
+          "received": 45000,
+          "pick": 171,
+          "miss": 600,
+          "accuracy": 41.4,
           "qualified": true
         },
         {
@@ -209,14 +209,14 @@
         },
         {
           "player": "maq",
-          "matches": 59,
-          "kills": 576,
+          "matches": 60,
+          "kills": 591,
           "deaths": 239,
-          "dealt": 95700,
-          "received": 44900,
-          "pick": 170,
-          "miss": 597,
-          "accuracy": 41.3,
+          "dealt": 98100,
+          "received": 45000,
+          "pick": 171,
+          "miss": 600,
+          "accuracy": 41.4,
           "qualified": true
         },
         {
@@ -916,18 +916,6 @@
           "qualified": true
         },
         {
-          "player": "ping80",
-          "matches": 19,
-          "kills": 64,
-          "deaths": 100,
-          "dealt": 11300,
-          "received": 21400,
-          "pick": 53,
-          "miss": 218,
-          "accuracy": 31.3,
-          "qualified": true
-        },
-        {
           "player": "gart",
           "matches": 38,
           "kills": 332,
@@ -996,6 +984,18 @@
           "received": 46700,
           "pick": 119,
           "miss": 590,
+          "accuracy": 30.2,
+          "qualified": true
+        },
+        {
+          "player": "ping80",
+          "matches": 20,
+          "kills": 64,
+          "deaths": 115,
+          "dealt": 11400,
+          "received": 23800,
+          "pick": 56,
+          "miss": 219,
           "accuracy": 30.2,
           "qualified": true
         },
@@ -2242,18 +2242,6 @@
           "qualified": true
         },
         {
-          "player": "ping80",
-          "matches": 19,
-          "kills": 103,
-          "deaths": 61,
-          "dealt": 21574,
-          "received": 15521,
-          "pick": 96,
-          "miss": 227,
-          "accuracy": 25.8,
-          "qualified": true
-        },
-        {
           "player": "f0rest",
           "matches": 9,
           "kills": 37,
@@ -2336,6 +2324,18 @@
           "miss": 27,
           "accuracy": 25.0,
           "qualified": false
+        },
+        {
+          "player": "ping80",
+          "matches": 20,
+          "kills": 103,
+          "deaths": 61,
+          "dealt": 21574,
+          "received": 15645,
+          "pick": 98,
+          "miss": 230,
+          "accuracy": 24.5,
+          "qualified": true
         },
         {
           "player": "VITALIS",
@@ -2578,18 +2578,6 @@
           "qualified": false
         },
         {
-          "player": "maq",
-          "matches": 59,
-          "kills": 170,
-          "deaths": 127,
-          "dealt": 34925,
-          "received": 35003,
-          "pick": 188,
-          "miss": 987,
-          "accuracy": 22.2,
-          "qualified": true
-        },
-        {
           "player": "damz.",
           "matches": 37,
           "kills": 123,
@@ -2612,6 +2600,18 @@
           "miss": 72,
           "accuracy": 22.2,
           "qualified": false
+        },
+        {
+          "player": "maq",
+          "matches": 60,
+          "kills": 170,
+          "deaths": 127,
+          "dealt": 35003,
+          "received": 35003,
+          "pick": 191,
+          "miss": 989,
+          "accuracy": 22.0,
+          "qualified": true
         },
         {
           "player": "a",
@@ -4324,18 +4324,6 @@
           "qualified": true
         },
         {
-          "player": "maq",
-          "matches": 55,
-          "kills": 177,
-          "deaths": 114,
-          "dealt": 25848,
-          "received": 26640,
-          "pick": 161,
-          "miss": 603,
-          "accuracy": 14.5,
-          "qualified": true
-        },
-        {
           "player": "badman",
           "matches": 73,
           "kills": 199,
@@ -4344,6 +4332,18 @@
           "received": 26538,
           "pick": 188,
           "miss": 958,
+          "accuracy": 14.4,
+          "qualified": true
+        },
+        {
+          "player": "maq",
+          "matches": 56,
+          "kills": 179,
+          "deaths": 114,
+          "dealt": 26106,
+          "received": 26754,
+          "pick": 166,
+          "miss": 605,
           "accuracy": 14.4,
           "qualified": true
         },
@@ -5129,13 +5129,13 @@
         },
         {
           "player": "ping80",
-          "matches": 20,
+          "matches": 21,
           "kills": 90,
-          "deaths": 45,
-          "dealt": 13098,
-          "received": 7728,
-          "pick": 101,
-          "miss": 188,
+          "deaths": 47,
+          "dealt": 13212,
+          "received": 7986,
+          "pick": 103,
+          "miss": 193,
           "accuracy": 11.6,
           "qualified": true
         },
