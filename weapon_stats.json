@@ -112,18 +112,6 @@
           "qualified": false
         },
         {
-          "player": "lameratorotor",
-          "matches": 1,
-          "kills": 22,
-          "deaths": 1,
-          "dealt": 2700,
-          "received": 300,
-          "pick": 0,
-          "miss": 18,
-          "accuracy": 48.0,
-          "qualified": false
-        },
-        {
           "player": "thenorm",
           "matches": 1,
           "kills": 9,
@@ -880,6 +868,18 @@
           "qualified": true
         },
         {
+          "player": "lameratorotor",
+          "matches": 2,
+          "kills": 23,
+          "deaths": 4,
+          "dealt": 3000,
+          "received": 800,
+          "pick": 4,
+          "miss": 22,
+          "accuracy": 32.0,
+          "qualified": false
+        },
+        {
           "player": "kostjq",
           "matches": 1,
           "kills": 5,
@@ -1168,18 +1168,6 @@
           "qualified": false
         },
         {
-          "player": "B100D",
-          "matches": 86,
-          "kills": 334,
-          "deaths": 327,
-          "dealt": 70300,
-          "received": 58200,
-          "pick": 306,
-          "miss": 506,
-          "accuracy": 28.4,
-          "qualified": true
-        },
-        {
           "player": "TAITI",
           "matches": 11,
           "kills": 47,
@@ -1189,6 +1177,18 @@
           "pick": 37,
           "miss": 119,
           "accuracy": 28.4,
+          "qualified": true
+        },
+        {
+          "player": "B100D",
+          "matches": 87,
+          "kills": 336,
+          "deaths": 331,
+          "dealt": 70600,
+          "received": 58700,
+          "pick": 310,
+          "miss": 510,
+          "accuracy": 28.3,
           "qualified": true
         },
         {
@@ -1397,14 +1397,14 @@
         },
         {
           "player": "GipSy",
-          "matches": 90,
-          "kills": 500,
+          "matches": 91,
+          "kills": 501,
           "deaths": 498,
-          "dealt": 90400,
-          "received": 98300,
+          "dealt": 90600,
+          "received": 98500,
           "pick": 310,
-          "miss": 792,
-          "accuracy": 25.7,
+          "miss": 800,
+          "accuracy": 25.6,
           "qualified": true
         },
         {
@@ -1445,14 +1445,14 @@
         },
         {
           "player": "SUPER-LAG",
-          "matches": 66,
-          "kills": 280,
-          "deaths": 352,
-          "dealt": 45600,
-          "received": 62300,
+          "matches": 67,
+          "kills": 286,
+          "deaths": 355,
+          "dealt": 46400,
+          "received": 62700,
           "pick": 133,
-          "miss": 630,
-          "accuracy": 24.7,
+          "miss": 638,
+          "accuracy": 24.9,
           "qualified": true
         },
         {
@@ -2975,14 +2975,14 @@
         },
         {
           "player": "SUPER-LAG",
-          "matches": 66,
-          "kills": 267,
-          "deaths": 212,
-          "dealt": 56076,
-          "received": 48466,
-          "pick": 289,
-          "miss": 1120,
-          "accuracy": 19.3,
+          "matches": 67,
+          "kills": 272,
+          "deaths": 213,
+          "dealt": 57696,
+          "received": 48939,
+          "pick": 295,
+          "miss": 1137,
+          "accuracy": 19.4,
           "qualified": true
         },
         {
@@ -3044,18 +3044,6 @@
           "miss": 56,
           "accuracy": 19.0,
           "qualified": true
-        },
-        {
-          "player": "lameratorotor",
-          "matches": 1,
-          "kills": 7,
-          "deaths": 1,
-          "dealt": 960,
-          "received": 397,
-          "pick": 6,
-          "miss": 22,
-          "accuracy": 19.0,
-          "qualified": false
         },
         {
           "player": "m",
@@ -3167,14 +3155,14 @@
         },
         {
           "player": "B100D",
-          "matches": 87,
-          "kills": 162,
-          "deaths": 165,
-          "dealt": 42233,
-          "received": 50884,
-          "pick": 340,
-          "miss": 967,
-          "accuracy": 18.3,
+          "matches": 88,
+          "kills": 164,
+          "deaths": 171,
+          "dealt": 43020,
+          "received": 52651,
+          "pick": 349,
+          "miss": 981,
+          "accuracy": 18.2,
           "qualified": true
         },
         {
@@ -3275,13 +3263,13 @@
         },
         {
           "player": "GipSy",
-          "matches": 92,
-          "kills": 293,
-          "deaths": 283,
-          "dealt": 67963,
-          "received": 74726,
-          "pick": 416,
-          "miss": 1233,
+          "matches": 93,
+          "kills": 299,
+          "deaths": 285,
+          "dealt": 69588,
+          "received": 75354,
+          "pick": 423,
+          "miss": 1249,
           "accuracy": 17.6,
           "qualified": true
         },
@@ -3548,6 +3536,18 @@
           "miss": 41,
           "accuracy": 15.1,
           "qualified": true
+        },
+        {
+          "player": "lameratorotor",
+          "matches": 2,
+          "kills": 8,
+          "deaths": 6,
+          "dealt": 1131,
+          "received": 2249,
+          "pick": 7,
+          "miss": 44,
+          "accuracy": 15.0,
+          "qualified": false
         },
         {
           "player": "Abyys",
@@ -4744,6 +4744,18 @@
           "qualified": false
         },
         {
+          "player": "lameratorotor",
+          "matches": 2,
+          "kills": 6,
+          "deaths": 2,
+          "dealt": 924,
+          "received": 576,
+          "pick": 4,
+          "miss": 23,
+          "accuracy": 13.0,
+          "qualified": false
+        },
+        {
           "player": "macintosh",
           "matches": 2,
           "kills": 2,
@@ -5129,13 +5141,13 @@
         },
         {
           "player": "B100D",
-          "matches": 87,
-          "kills": 276,
-          "deaths": 198,
-          "dealt": 44160,
-          "received": 37458,
-          "pick": 326,
-          "miss": 723,
+          "matches": 88,
+          "kills": 277,
+          "deaths": 201,
+          "dealt": 44478,
+          "received": 37830,
+          "pick": 327,
+          "miss": 733,
           "accuracy": 11.7,
           "qualified": true
         },
@@ -5237,13 +5249,13 @@
         },
         {
           "player": "GipSy",
-          "matches": 90,
-          "kills": 260,
-          "deaths": 261,
-          "dealt": 48558,
-          "received": 44514,
-          "pick": 400,
-          "miss": 862,
+          "matches": 91,
+          "kills": 263,
+          "deaths": 262,
+          "dealt": 49110,
+          "received": 44964,
+          "pick": 402,
+          "miss": 871,
           "accuracy": 11.4,
           "qualified": true
         },
@@ -5441,13 +5453,13 @@
         },
         {
           "player": "SUPER-LAG",
-          "matches": 65,
-          "kills": 193,
-          "deaths": 191,
-          "dealt": 29316,
-          "received": 31920,
-          "pick": 217,
-          "miss": 692,
+          "matches": 66,
+          "kills": 195,
+          "deaths": 197,
+          "dealt": 29616,
+          "received": 32712,
+          "pick": 221,
+          "miss": 699,
           "accuracy": 10.8,
           "qualified": true
         },
@@ -5734,18 +5746,6 @@
           "deaths": 0,
           "dealt": 0,
           "received": 18,
-          "pick": 0,
-          "miss": 16,
-          "accuracy": 0.0,
-          "qualified": false
-        },
-        {
-          "player": "lameratorotor",
-          "matches": 1,
-          "kills": 0,
-          "deaths": 0,
-          "dealt": 0,
-          "received": 96,
           "pick": 0,
           "miss": 16,
           "accuracy": 0.0,
