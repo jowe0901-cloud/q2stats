@@ -9,11 +9,11 @@
   },
   {
     "player": "cne",
-    "elo": 1844,
-    "matches": 79,
-    "wins": 48,
+    "elo": 1854,
+    "matches": 80,
+    "wins": 49,
     "losses": 31,
-    "winrate": 60.8
+    "winrate": 61.3
   },
   {
     "player": "warrior",
@@ -33,19 +33,19 @@
   },
   {
     "player": "rul",
-    "elo": 1772,
-    "matches": 76,
-    "wins": 42,
+    "elo": 1779,
+    "matches": 77,
+    "wins": 43,
     "losses": 34,
-    "winrate": 55.3
+    "winrate": 55.8
   },
   {
     "player": "qw",
-    "elo": 1755,
-    "matches": 144,
-    "wins": 71,
+    "elo": 1768,
+    "matches": 145,
+    "wins": 72,
     "losses": 73,
-    "winrate": 49.3
+    "winrate": 49.7
   },
   {
     "player": "fon",
@@ -105,11 +105,11 @@
   },
   {
     "player": "asd_krzys",
-    "elo": 1622,
-    "matches": 63,
-    "wins": 33,
+    "elo": 1623,
+    "matches": 64,
+    "wins": 34,
     "losses": 30,
-    "winrate": 52.4
+    "winrate": 53.1
   },
   {
     "player": "[sYnth]Scooby",
@@ -696,14 +696,6 @@
     "winrate": 33.3
   },
   {
-    "player": "Br00m^^",
-    "elo": 1492,
-    "matches": 79,
-    "wins": 39,
-    "losses": 40,
-    "winrate": 49.4
-  },
-  {
     "player": "kurwa_ping80",
     "elo": 1490,
     "matches": 1,
@@ -734,6 +726,14 @@
     "wins": 3,
     "losses": 4,
     "winrate": 42.9
+  },
+  {
+    "player": "Br00m^^",
+    "elo": 1486,
+    "matches": 80,
+    "wins": 39,
+    "losses": 41,
+    "winrate": 48.8
   },
   {
     "player": "Puma!",
@@ -832,14 +832,6 @@
     "winrate": 33.3
   },
   {
-    "player": "tron",
-    "elo": 1479,
-    "matches": 29,
-    "wins": 13,
-    "losses": 16,
-    "winrate": 44.8
-  },
-  {
     "player": "yin",
     "elo": 1479,
     "matches": 3,
@@ -910,6 +902,14 @@
     "wins": 7,
     "losses": 10,
     "winrate": 41.2
+  },
+  {
+    "player": "tron",
+    "elo": 1470,
+    "matches": 30,
+    "wins": 13,
+    "losses": 17,
+    "winrate": 43.3
   },
   {
     "player": "freeze",
@@ -1177,10 +1177,10 @@
   },
   {
     "player": "jabb@",
-    "elo": 1073,
-    "matches": 167,
+    "elo": 1057,
+    "matches": 168,
     "wins": 71,
-    "losses": 96,
-    "winrate": 42.5
+    "losses": 97,
+    "winrate": 42.3
   }
 ]
