@@ -112,14 +112,6 @@
     "winrate": 100.0
   },
   {
-    "player": "ping80",
-    "elo": 1565,
-    "matches": 9,
-    "wins": 7,
-    "losses": 2,
-    "winrate": 77.8
-  },
-  {
     "player": "piu-wiu",
     "elo": 1557,
     "matches": 9,
@@ -142,6 +134,14 @@
     "wins": 7,
     "losses": 2,
     "winrate": 77.8
+  },
+  {
+    "player": "ping80",
+    "elo": 1545,
+    "matches": 10,
+    "wins": 7,
+    "losses": 3,
+    "winrate": 70.0
   },
   {
     "player": "Logic",
@@ -368,6 +368,14 @@
     "winrate": 50.0
   },
   {
+    "player": "freeze",
+    "elo": 1497,
+    "matches": 12,
+    "wins": 5,
+    "losses": 7,
+    "winrate": 41.7
+  },
+  {
     "player": "B100D",
     "elo": 1490,
     "matches": 37,
@@ -494,14 +502,6 @@
     "wins": 1,
     "losses": 3,
     "winrate": 25.0
-  },
-  {
-    "player": "freeze",
-    "elo": 1477,
-    "matches": 11,
-    "wins": 4,
-    "losses": 7,
-    "winrate": 36.4
   },
   {
     "player": "senz",
