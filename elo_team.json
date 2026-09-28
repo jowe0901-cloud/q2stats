@@ -1,11 +1,11 @@
 [
   {
     "player": "maq",
-    "elo": 1946,
-    "matches": 56,
-    "wins": 41,
+    "elo": 1953,
+    "matches": 57,
+    "wins": 42,
     "losses": 15,
-    "winrate": 73.2
+    "winrate": 73.7
   },
   {
     "player": "warrior",
@@ -144,20 +144,20 @@
     "winrate": 85.7
   },
   {
+    "player": "B100D",
+    "elo": 1590,
+    "matches": 81,
+    "wins": 43,
+    "losses": 38,
+    "winrate": 53.1
+  },
+  {
     "player": ">daweed",
     "elo": 1579,
     "matches": 8,
     "wins": 7,
     "losses": 1,
     "winrate": 87.5
-  },
-  {
-    "player": "B100D",
-    "elo": 1574,
-    "matches": 80,
-    "wins": 42,
-    "losses": 38,
-    "winrate": 52.5
   },
   {
     "player": ">OPTIMIZER",
@@ -176,20 +176,20 @@
     "winrate": 100.0
   },
   {
-    "player": "ping80",
-    "elo": 1564,
-    "matches": 19,
-    "wins": 10,
-    "losses": 9,
-    "winrate": 52.6
-  },
-  {
     "player": "daweed",
     "elo": 1564,
     "matches": 4,
     "wins": 4,
     "losses": 0,
     "winrate": 100.0
+  },
+  {
+    "player": "ping80",
+    "elo": 1558,
+    "matches": 20,
+    "wins": 10,
+    "losses": 10,
+    "winrate": 50.0
   },
   {
     "player": "ZYGA",
@@ -728,14 +728,6 @@
     "winrate": 42.9
   },
   {
-    "player": "SUPER-LAG",
-    "elo": 1486,
-    "matches": 71,
-    "wins": 41,
-    "losses": 30,
-    "winrate": 57.7
-  },
-  {
     "player": "Puma!",
     "elo": 1486,
     "matches": 31,
@@ -926,6 +918,14 @@
     "wins": 7,
     "losses": 10,
     "winrate": 41.2
+  },
+  {
+    "player": "SUPER-LAG",
+    "elo": 1470,
+    "matches": 72,
+    "wins": 41,
+    "losses": 31,
+    "winrate": 56.9
   },
   {
     "player": "freeze",
