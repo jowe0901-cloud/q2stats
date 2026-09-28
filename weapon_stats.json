@@ -820,6 +820,18 @@
           "qualified": true
         },
         {
+          "player": "qw",
+          "matches": 114,
+          "kills": 757,
+          "deaths": 571,
+          "dealt": 123100,
+          "received": 94500,
+          "pick": 233,
+          "miss": 1306,
+          "accuracy": 32.5,
+          "qualified": true
+        },
+        {
           "player": "tron",
           "matches": 31,
           "kills": 136,
@@ -829,18 +841,6 @@
           "pick": 95,
           "miss": 266,
           "accuracy": 32.5,
-          "qualified": true
-        },
-        {
-          "player": "qw",
-          "matches": 113,
-          "kills": 754,
-          "deaths": 569,
-          "dealt": 122100,
-          "received": 94300,
-          "pick": 232,
-          "miss": 1300,
-          "accuracy": 32.3,
           "qualified": true
         },
         {
@@ -988,18 +988,6 @@
           "qualified": true
         },
         {
-          "player": "Qiub",
-          "matches": 15,
-          "kills": 60,
-          "deaths": 98,
-          "dealt": 10500,
-          "received": 15400,
-          "pick": 39,
-          "miss": 160,
-          "accuracy": 30.3,
-          "qualified": true
-        },
-        {
           "player": "need1",
           "matches": 55,
           "kills": 233,
@@ -1032,6 +1020,18 @@
           "received": 17500,
           "pick": 36,
           "miss": 193,
+          "accuracy": 29.8,
+          "qualified": true
+        },
+        {
+          "player": "Qiub",
+          "matches": 16,
+          "kills": 61,
+          "deaths": 100,
+          "dealt": 10800,
+          "received": 15800,
+          "pick": 43,
+          "miss": 163,
           "accuracy": 29.8,
           "qualified": true
         },
@@ -1397,14 +1397,14 @@
         },
         {
           "player": "GipSy",
-          "matches": 95,
-          "kills": 506,
-          "deaths": 504,
-          "dealt": 91700,
-          "received": 100200,
-          "pick": 315,
-          "miss": 825,
-          "accuracy": 25.4,
+          "matches": 96,
+          "kills": 510,
+          "deaths": 505,
+          "dealt": 92300,
+          "received": 100800,
+          "pick": 316,
+          "miss": 831,
+          "accuracy": 25.5,
           "qualified": true
         },
         {
@@ -1516,18 +1516,6 @@
           "qualified": true
         },
         {
-          "player": "damz.",
-          "matches": 40,
-          "kills": 65,
-          "deaths": 290,
-          "dealt": 12000,
-          "received": 38400,
-          "pick": 83,
-          "miss": 413,
-          "accuracy": 22.8,
-          "qualified": true
-        },
-        {
           "player": "piu-need1",
           "matches": 6,
           "kills": 31,
@@ -1549,6 +1537,18 @@
           "pick": 87,
           "miss": 252,
           "accuracy": 22.3,
+          "qualified": true
+        },
+        {
+          "player": "damz.",
+          "matches": 41,
+          "kills": 65,
+          "deaths": 293,
+          "dealt": 12000,
+          "received": 39100,
+          "pick": 84,
+          "miss": 419,
+          "accuracy": 22.2,
           "qualified": true
         },
         {
@@ -1964,18 +1964,6 @@
           "qualified": true
         },
         {
-          "player": "Qiub",
-          "matches": 15,
-          "kills": 95,
-          "deaths": 57,
-          "dealt": 16943,
-          "received": 12456,
-          "pick": 111,
-          "miss": 253,
-          "accuracy": 29.4,
-          "qualified": true
-        },
-        {
           "player": "pyt0ng",
           "matches": 9,
           "kills": 50,
@@ -1985,6 +1973,18 @@
           "pick": 67,
           "miss": 59,
           "accuracy": 29.3,
+          "qualified": true
+        },
+        {
+          "player": "rul",
+          "matches": 55,
+          "kills": 163,
+          "deaths": 159,
+          "dealt": 31834,
+          "received": 36113,
+          "pick": 117,
+          "miss": 1071,
+          "accuracy": 29.2,
           "qualified": true
         }
       ],
@@ -2110,18 +2110,6 @@
           "qualified": false
         },
         {
-          "player": "Qiub",
-          "matches": 15,
-          "kills": 95,
-          "deaths": 57,
-          "dealt": 16943,
-          "received": 12456,
-          "pick": 111,
-          "miss": 253,
-          "accuracy": 29.4,
-          "qualified": true
-        },
-        {
           "player": "pyt0ng",
           "matches": 9,
           "kills": 50,
@@ -2168,6 +2156,18 @@
           "miss": 48,
           "accuracy": 29.0,
           "qualified": false
+        },
+        {
+          "player": "Qiub",
+          "matches": 16,
+          "kills": 98,
+          "deaths": 65,
+          "dealt": 17602,
+          "received": 14207,
+          "pick": 119,
+          "miss": 265,
+          "accuracy": 28.9,
+          "qualified": true
         },
         {
           "player": "Gaymidon^",
@@ -2591,13 +2591,13 @@
         },
         {
           "player": "qw",
-          "matches": 113,
-          "kills": 231,
-          "deaths": 300,
-          "dealt": 46727,
-          "received": 62140,
-          "pick": 250,
-          "miss": 2219,
+          "matches": 114,
+          "kills": 234,
+          "deaths": 304,
+          "dealt": 47405,
+          "received": 63227,
+          "pick": 253,
+          "miss": 2236,
           "accuracy": 22.0,
           "qualified": true
         },
@@ -2639,13 +2639,13 @@
         },
         {
           "player": "damz.",
-          "matches": 41,
-          "kills": 129,
-          "deaths": 174,
-          "dealt": 26756,
-          "received": 35511,
-          "pick": 267,
-          "miss": 610,
+          "matches": 42,
+          "kills": 136,
+          "deaths": 178,
+          "dealt": 28104,
+          "received": 36305,
+          "pick": 274,
+          "miss": 623,
           "accuracy": 21.7,
           "qualified": true
         },
@@ -3190,6 +3190,18 @@
           "qualified": false
         },
         {
+          "player": "GipSy",
+          "matches": 98,
+          "kills": 328,
+          "deaths": 290,
+          "dealt": 74888,
+          "received": 77699,
+          "pick": 436,
+          "miss": 1315,
+          "accuracy": 18.0,
+          "qualified": true
+        },
+        {
           "player": "aid",
           "matches": 4,
           "kills": 16,
@@ -3212,18 +3224,6 @@
           "miss": 4,
           "accuracy": 18.0,
           "qualified": false
-        },
-        {
-          "player": "GipSy",
-          "matches": 97,
-          "kills": 322,
-          "deaths": 287,
-          "dealt": 73516,
-          "received": 76854,
-          "pick": 434,
-          "miss": 1297,
-          "accuracy": 17.9,
-          "qualified": true
         },
         {
           "player": "piu-need1",
@@ -4889,13 +4889,13 @@
         },
         {
           "player": "qw",
-          "matches": 111,
-          "kills": 214,
+          "matches": 112,
+          "kills": 219,
           "deaths": 310,
-          "dealt": 30588,
-          "received": 50046,
-          "pick": 167,
-          "miss": 1401,
+          "dealt": 31560,
+          "received": 50670,
+          "pick": 169,
+          "miss": 1412,
           "accuracy": 12.5,
           "qualified": true
         },
@@ -5260,16 +5260,16 @@
           "qualified": false
         },
         {
-          "player": "Qiub",
-          "matches": 15,
-          "kills": 9,
-          "deaths": 32,
-          "dealt": 1824,
-          "received": 4962,
-          "pick": 11,
-          "miss": 181,
-          "accuracy": 11.4,
-          "qualified": false
+          "player": "GipSy",
+          "matches": 96,
+          "kills": 289,
+          "deaths": 272,
+          "dealt": 52842,
+          "received": 46782,
+          "pick": 422,
+          "miss": 908,
+          "accuracy": 11.3,
+          "qualified": true
         },
         {
           "player": "r",
@@ -5280,6 +5280,18 @@
           "received": 24996,
           "pick": 201,
           "miss": 537,
+          "accuracy": 11.3,
+          "qualified": true
+        },
+        {
+          "player": "damz.",
+          "matches": 41,
+          "kills": 62,
+          "deaths": 132,
+          "dealt": 12780,
+          "received": 15960,
+          "pick": 149,
+          "miss": 401,
           "accuracy": 11.3,
           "qualified": true
         },
@@ -5320,30 +5332,6 @@
           "qualified": false
         },
         {
-          "player": "GipSy",
-          "matches": 95,
-          "kills": 285,
-          "deaths": 268,
-          "dealt": 51810,
-          "received": 46056,
-          "pick": 416,
-          "miss": 901,
-          "accuracy": 11.2,
-          "qualified": true
-        },
-        {
-          "player": "damz.",
-          "matches": 40,
-          "kills": 60,
-          "deaths": 130,
-          "dealt": 12222,
-          "received": 15570,
-          "pick": 146,
-          "miss": 391,
-          "accuracy": 11.2,
-          "qualified": true
-        },
-        {
           "player": "[sf]fasadin",
           "matches": 8,
           "kills": 28,
@@ -5377,6 +5365,18 @@
           "pick": 22,
           "miss": 57,
           "accuracy": 11.2,
+          "qualified": false
+        },
+        {
+          "player": "Qiub",
+          "matches": 16,
+          "kills": 10,
+          "deaths": 38,
+          "dealt": 1968,
+          "received": 5928,
+          "pick": 13,
+          "miss": 192,
+          "accuracy": 11.1,
           "qualified": false
         },
         {
