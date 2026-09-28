@@ -460,18 +460,6 @@
           "qualified": true
         },
         {
-          "player": "Player-345",
-          "matches": 48,
-          "kills": 284,
-          "deaths": 301,
-          "dealt": 56800,
-          "received": 51400,
-          "pick": 196,
-          "miss": 412,
-          "accuracy": 36.5,
-          "qualified": true
-        },
-        {
           "player": "Kargul3000",
           "matches": 2,
           "kills": 10,
@@ -493,6 +481,18 @@
           "pick": 83,
           "miss": 46,
           "accuracy": 36.3,
+          "qualified": true
+        },
+        {
+          "player": "Player-345",
+          "matches": 49,
+          "kills": 284,
+          "deaths": 307,
+          "dealt": 57800,
+          "received": 52600,
+          "pick": 204,
+          "miss": 415,
+          "accuracy": 36.2,
           "qualified": true
         },
         {
@@ -796,18 +796,6 @@
           "qualified": true
         },
         {
-          "player": ">purri",
-          "matches": 20,
-          "kills": 146,
-          "deaths": 77,
-          "dealt": 29100,
-          "received": 22200,
-          "pick": 118,
-          "miss": 137,
-          "accuracy": 32.9,
-          "qualified": true
-        },
-        {
           "player": "odi",
           "matches": 13,
           "kills": 35,
@@ -829,6 +817,18 @@
           "pick": 125,
           "miss": 269,
           "accuracy": 32.7,
+          "qualified": true
+        },
+        {
+          "player": ">purri",
+          "matches": 21,
+          "kills": 152,
+          "deaths": 77,
+          "dealt": 30300,
+          "received": 23200,
+          "pick": 121,
+          "miss": 145,
+          "accuracy": 32.6,
           "qualified": true
         },
         {
@@ -2831,14 +2831,14 @@
         },
         {
           "player": "Player-345",
-          "matches": 48,
+          "matches": 49,
           "kills": 90,
-          "deaths": 160,
-          "dealt": 26744,
-          "received": 35938,
-          "pick": 232,
-          "miss": 682,
-          "accuracy": 20.5,
+          "deaths": 164,
+          "dealt": 27088,
+          "received": 37110,
+          "pick": 240,
+          "miss": 689,
+          "accuracy": 20.6,
           "qualified": true
         },
         {
@@ -3202,18 +3202,6 @@
           "qualified": false
         },
         {
-          "player": ">purri",
-          "matches": 20,
-          "kills": 44,
-          "deaths": 25,
-          "dealt": 14800,
-          "received": 13272,
-          "pick": 98,
-          "miss": 143,
-          "accuracy": 18.1,
-          "qualified": true
-        },
-        {
           "player": "aid",
           "matches": 4,
           "kills": 16,
@@ -3247,6 +3235,18 @@
           "pick": 449,
           "miss": 1384,
           "accuracy": 17.9,
+          "qualified": true
+        },
+        {
+          "player": ">purri",
+          "matches": 21,
+          "kills": 48,
+          "deaths": 25,
+          "dealt": 15925,
+          "received": 13616,
+          "pick": 105,
+          "miss": 151,
+          "accuracy": 17.8,
           "qualified": true
         },
         {
@@ -4373,13 +4373,13 @@
         },
         {
           "player": "Player-345",
-          "matches": 48,
-          "kills": 174,
-          "deaths": 157,
-          "dealt": 28680,
-          "received": 25512,
-          "pick": 223,
-          "miss": 448,
+          "matches": 49,
+          "kills": 175,
+          "deaths": 162,
+          "dealt": 29484,
+          "received": 26370,
+          "pick": 234,
+          "miss": 452,
           "accuracy": 14.5,
           "qualified": true
         },
@@ -4481,13 +4481,13 @@
         },
         {
           "player": ">purri",
-          "matches": 20,
-          "kills": 97,
-          "deaths": 50,
-          "dealt": 16842,
-          "received": 14178,
-          "pick": 120,
-          "miss": 138,
+          "matches": 21,
+          "kills": 102,
+          "deaths": 51,
+          "dealt": 17700,
+          "received": 14982,
+          "pick": 124,
+          "miss": 149,
           "accuracy": 13.8,
           "qualified": true
         },
