@@ -32,6 +32,14 @@
     "winrate": 55.2
   },
   {
+    "player": "rul",
+    "elo": 1747,
+    "matches": 73,
+    "wins": 39,
+    "losses": 34,
+    "winrate": 53.4
+  },
+  {
     "player": "qw",
     "elo": 1746,
     "matches": 143,
@@ -46,14 +54,6 @@
     "wins": 36,
     "losses": 21,
     "winrate": 63.2
-  },
-  {
-    "player": "rul",
-    "elo": 1732,
-    "matches": 72,
-    "wins": 38,
-    "losses": 34,
-    "winrate": 52.8
   },
   {
     "player": "myrmidon^",
@@ -73,11 +73,11 @@
   },
   {
     "player": "[sf]fasadin",
-    "elo": 1699,
-    "matches": 25,
+    "elo": 1693,
+    "matches": 26,
     "wins": 15,
-    "losses": 10,
-    "winrate": 60.0
+    "losses": 11,
+    "winrate": 57.7
   },
   {
     "player": "n0sferatu",
@@ -96,6 +96,14 @@
     "winrate": 59.1
   },
   {
+    "player": "badman",
+    "elo": 1626,
+    "matches": 91,
+    "wins": 42,
+    "losses": 49,
+    "winrate": 46.2
+  },
+  {
     "player": "asd_krzys",
     "elo": 1621,
     "matches": 61,
@@ -110,14 +118,6 @@
     "wins": 19,
     "losses": 19,
     "winrate": 50.0
-  },
-  {
-    "player": "badman",
-    "elo": 1610,
-    "matches": 90,
-    "wins": 41,
-    "losses": 49,
-    "winrate": 45.6
   },
   {
     "player": "faint",
@@ -848,14 +848,6 @@
     "winrate": 33.3
   },
   {
-    "player": "RED",
-    "elo": 1479,
-    "matches": 8,
-    "wins": 4,
-    "losses": 4,
-    "winrate": 50.0
-  },
-  {
     "player": "zip",
     "elo": 1478,
     "matches": 40,
@@ -974,6 +966,14 @@
     "wins": 5,
     "losses": 6,
     "winrate": 45.5
+  },
+  {
+    "player": "RED",
+    "elo": 1463,
+    "matches": 9,
+    "wins": 4,
+    "losses": 5,
+    "winrate": 44.4
   },
   {
     "player": "Q.obs",
@@ -1096,20 +1096,20 @@
     "winrate": 52.1
   },
   {
+    "player": "Maniek",
+    "elo": 1375,
+    "matches": 89,
+    "wins": 41,
+    "losses": 48,
+    "winrate": 46.1
+  },
+  {
     "player": "TERMINAKOR",
     "elo": 1375,
     "matches": 9,
     "wins": 1,
     "losses": 8,
     "winrate": 11.1
-  },
-  {
-    "player": "Maniek",
-    "elo": 1366,
-    "matches": 88,
-    "wins": 40,
-    "losses": 48,
-    "winrate": 45.5
   },
   {
     "player": "[HC]Reni^",
@@ -1153,11 +1153,11 @@
   },
   {
     "player": "VITALIS",
-    "elo": 1294,
-    "matches": 81,
-    "wins": 35,
+    "elo": 1295,
+    "matches": 82,
+    "wins": 36,
     "losses": 46,
-    "winrate": 43.2
+    "winrate": 43.9
   },
   {
     "player": "LiOn]tRk[",
@@ -1177,10 +1177,10 @@
   },
   {
     "player": "jabb@",
-    "elo": 1129,
-    "matches": 163,
+    "elo": 1120,
+    "matches": 164,
     "wins": 71,
-    "losses": 92,
-    "winrate": 43.6
+    "losses": 93,
+    "winrate": 43.3
   }
 ]
