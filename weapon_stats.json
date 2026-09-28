@@ -388,18 +388,6 @@
           "qualified": true
         },
         {
-          "player": "Player-345",
-          "matches": 46,
-          "kills": 284,
-          "deaths": 293,
-          "dealt": 55300,
-          "received": 48200,
-          "pick": 184,
-          "miss": 395,
-          "accuracy": 37.0,
-          "qualified": true
-        },
-        {
           "player": "tOk.P!o",
           "matches": 6,
           "kills": 45,
@@ -434,6 +422,18 @@
           "miss": 10,
           "accuracy": 37.0,
           "qualified": false
+        },
+        {
+          "player": "Player-345",
+          "matches": 47,
+          "kills": 284,
+          "deaths": 298,
+          "dealt": 56200,
+          "received": 50000,
+          "pick": 189,
+          "miss": 403,
+          "accuracy": 36.9,
+          "qualified": true
         },
         {
           "player": "Pacifist_(AVB)",
@@ -736,18 +736,6 @@
           "qualified": false
         },
         {
-          "player": ">purri",
-          "matches": 18,
-          "kills": 138,
-          "deaths": 77,
-          "dealt": 25900,
-          "received": 20700,
-          "pick": 101,
-          "miss": 125,
-          "accuracy": 33.8,
-          "qualified": true
-        },
-        {
           "player": "a",
           "matches": 9,
           "kills": 45,
@@ -781,6 +769,18 @@
           "pick": 180,
           "miss": 602,
           "accuracy": 33.4,
+          "qualified": true
+        },
+        {
+          "player": ">purri",
+          "matches": 19,
+          "kills": 143,
+          "deaths": 77,
+          "dealt": 27700,
+          "received": 21600,
+          "pick": 109,
+          "miss": 130,
+          "accuracy": 33.3,
           "qualified": true
         },
         {
@@ -2819,14 +2819,14 @@
         },
         {
           "player": "Player-345",
-          "matches": 46,
+          "matches": 47,
           "kills": 89,
-          "deaths": 158,
-          "dealt": 25170,
-          "received": 35262,
-          "pick": 216,
-          "miss": 676,
-          "accuracy": 20.9,
+          "deaths": 160,
+          "dealt": 25629,
+          "received": 35682,
+          "pick": 222,
+          "miss": 678,
+          "accuracy": 20.7,
           "qualified": true
         },
         {
@@ -3046,18 +3046,6 @@
           "qualified": true
         },
         {
-          "player": ">purri",
-          "matches": 18,
-          "kills": 42,
-          "deaths": 24,
-          "dealt": 14270,
-          "received": 11620,
-          "pick": 92,
-          "miss": 127,
-          "accuracy": 19.2,
-          "qualified": true
-        },
-        {
           "player": "piu-chilin",
           "matches": 7,
           "kills": 28,
@@ -3104,6 +3092,18 @@
           "miss": 55,
           "accuracy": 18.9,
           "qualified": false
+        },
+        {
+          "player": ">purri",
+          "matches": 19,
+          "kills": 44,
+          "deaths": 24,
+          "dealt": 14644,
+          "received": 12157,
+          "pick": 94,
+          "miss": 133,
+          "accuracy": 18.8,
+          "qualified": true
         },
         {
           "player": "[sf]T3RM!N4ToR",
@@ -4348,18 +4348,6 @@
           "qualified": false
         },
         {
-          "player": "Player-345",
-          "matches": 46,
-          "kills": 173,
-          "deaths": 147,
-          "dealt": 28494,
-          "received": 23460,
-          "pick": 211,
-          "miss": 433,
-          "accuracy": 14.6,
-          "qualified": true
-        },
-        {
           "player": "David",
           "matches": 8,
           "kills": 66,
@@ -4405,6 +4393,18 @@
           "pick": 127,
           "miss": 351,
           "accuracy": 14.4,
+          "qualified": true
+        },
+        {
+          "player": "Player-345",
+          "matches": 47,
+          "kills": 173,
+          "deaths": 152,
+          "dealt": 28506,
+          "received": 24438,
+          "pick": 218,
+          "miss": 440,
+          "accuracy": 14.3,
           "qualified": true
         },
         {
@@ -4469,13 +4469,13 @@
         },
         {
           "player": ">purri",
-          "matches": 18,
-          "kills": 87,
+          "matches": 19,
+          "kills": 92,
           "deaths": 49,
-          "dealt": 14790,
-          "received": 13992,
-          "pick": 105,
-          "miss": 126,
+          "dealt": 15768,
+          "received": 14004,
+          "pick": 112,
+          "miss": 133,
           "accuracy": 13.9,
           "qualified": true
         },
