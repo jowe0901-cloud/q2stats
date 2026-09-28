@@ -312,6 +312,14 @@
     "winrate": 100.0
   },
   {
+    "player": "badman",
+    "elo": 1515,
+    "matches": 4,
+    "wins": 3,
+    "losses": 1,
+    "winrate": 75.0
+  },
+  {
     "player": "shNoodle",
     "elo": 1513,
     "matches": 1,
@@ -350,14 +358,6 @@
     "wins": 1,
     "losses": 2,
     "winrate": 33.3
-  },
-  {
-    "player": "badman",
-    "elo": 1507,
-    "matches": 3,
-    "wins": 2,
-    "losses": 1,
-    "winrate": 66.7
   },
   {
     "player": "//VERSACE",
@@ -721,10 +721,10 @@
   },
   {
     "player": "jabb@",
-    "elo": 1317,
-    "matches": 34,
+    "elo": 1309,
+    "matches": 35,
     "wins": 6,
-    "losses": 28,
-    "winrate": 17.6
+    "losses": 29,
+    "winrate": 17.1
   }
 ]
