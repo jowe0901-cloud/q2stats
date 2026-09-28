@@ -25,11 +25,19 @@
   },
   {
     "player": "qw",
-    "elo": 1765,
-    "matches": 137,
+    "elo": 1762,
+    "matches": 138,
     "wins": 69,
-    "losses": 68,
-    "winrate": 50.4
+    "losses": 69,
+    "winrate": 50.0
+  },
+  {
+    "player": "GipSy",
+    "elo": 1740,
+    "matches": 90,
+    "wins": 49,
+    "losses": 41,
+    "winrate": 54.4
   },
   {
     "player": "fon",
@@ -46,14 +54,6 @@
     "wins": 38,
     "losses": 34,
     "winrate": 52.8
-  },
-  {
-    "player": "GipSy",
-    "elo": 1724,
-    "matches": 89,
-    "wins": 48,
-    "losses": 41,
-    "winrate": 53.9
   },
   {
     "player": "myrmidon^",
@@ -616,6 +616,14 @@
     "winrate": 66.7
   },
   {
+    "player": "odi",
+    "elo": 1498,
+    "matches": 15,
+    "wins": 7,
+    "losses": 8,
+    "winrate": 46.7
+  },
+  {
     "player": "FRZ",
     "elo": 1497,
     "matches": 2,
@@ -654,14 +662,6 @@
     "wins": 1,
     "losses": 1,
     "winrate": 50.0
-  },
-  {
-    "player": "odi",
-    "elo": 1495,
-    "matches": 14,
-    "wins": 6,
-    "losses": 8,
-    "winrate": 42.9
   },
   {
     "player": "kreg",
@@ -960,14 +960,6 @@
     "winrate": 0.0
   },
   {
-    "player": "SUPER-LAG",
-    "elo": 1467,
-    "matches": 75,
-    "wins": 43,
-    "losses": 32,
-    "winrate": 57.3
-  },
-  {
     "player": "TIM",
     "elo": 1463,
     "matches": 11,
@@ -1022,6 +1014,14 @@
     "wins": 0,
     "losses": 3,
     "winrate": 0.0
+  },
+  {
+    "player": "SUPER-LAG",
+    "elo": 1451,
+    "matches": 76,
+    "wins": 43,
+    "losses": 33,
+    "winrate": 56.6
   },
   {
     "player": "tOk.P!o",
