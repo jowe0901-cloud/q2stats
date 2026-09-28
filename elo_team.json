@@ -41,11 +41,11 @@
   },
   {
     "player": "qw",
-    "elo": 1791,
-    "matches": 150,
+    "elo": 1775,
+    "matches": 151,
     "wins": 75,
-    "losses": 75,
-    "winrate": 50.0
+    "losses": 76,
+    "winrate": 49.7
   },
   {
     "player": "fon",
@@ -176,6 +176,14 @@
     "winrate": 100.0
   },
   {
+    "player": "David",
+    "elo": 1565,
+    "matches": 5,
+    "wins": 4,
+    "losses": 1,
+    "winrate": 80.0
+  },
+  {
     "player": "daweed",
     "elo": 1564,
     "matches": 4,
@@ -214,14 +222,6 @@
     "wins": 22,
     "losses": 20,
     "winrate": 52.4
-  },
-  {
-    "player": "David",
-    "elo": 1549,
-    "matches": 4,
-    "wins": 3,
-    "losses": 1,
-    "winrate": 75.0
   },
   {
     "player": "_Logic",
@@ -456,6 +456,14 @@
     "winrate": 85.7
   },
   {
+    "player": "m",
+    "elo": 1508,
+    "matches": 44,
+    "wins": 20,
+    "losses": 24,
+    "winrate": 45.5
+  },
+  {
     "player": "slonik",
     "elo": 1508,
     "matches": 4,
@@ -678,14 +686,6 @@
     "wins": 1,
     "losses": 1,
     "winrate": 50.0
-  },
-  {
-    "player": "m",
-    "elo": 1494,
-    "matches": 43,
-    "wins": 19,
-    "losses": 24,
-    "winrate": 44.2
   },
   {
     "player": "z0diac",
@@ -1121,11 +1121,11 @@
   },
   {
     "player": "Maniek",
-    "elo": 1407,
-    "matches": 91,
+    "elo": 1394,
+    "matches": 92,
     "wins": 43,
-    "losses": 48,
-    "winrate": 47.3
+    "losses": 49,
+    "winrate": 46.7
   },
   {
     "player": "TERMINAKOR",
