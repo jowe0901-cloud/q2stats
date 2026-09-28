@@ -797,14 +797,14 @@
         },
         {
           "player": "qw",
-          "matches": 106,
-          "kills": 726,
-          "deaths": 547,
-          "dealt": 116400,
-          "received": 90500,
-          "pick": 208,
-          "miss": 1258,
-          "accuracy": 32.9,
+          "matches": 107,
+          "kills": 730,
+          "deaths": 557,
+          "dealt": 117300,
+          "received": 92300,
+          "pick": 211,
+          "miss": 1265,
+          "accuracy": 32.7,
           "qualified": true
         },
         {
@@ -820,6 +820,18 @@
           "qualified": true
         },
         {
+          "player": "odi",
+          "matches": 12,
+          "kills": 33,
+          "deaths": 61,
+          "dealt": 5500,
+          "received": 10200,
+          "pick": 11,
+          "miss": 142,
+          "accuracy": 32.7,
+          "qualified": true
+        },
+        {
           "player": "tron",
           "matches": 31,
           "kills": 136,
@@ -828,18 +840,6 @@
           "received": 26500,
           "pick": 95,
           "miss": 266,
-          "accuracy": 32.5,
-          "qualified": true
-        },
-        {
-          "player": "odi",
-          "matches": 11,
-          "kills": 31,
-          "deaths": 57,
-          "dealt": 5300,
-          "received": 9700,
-          "pick": 11,
-          "miss": 132,
           "accuracy": 32.5,
           "qualified": true
         },
@@ -1420,18 +1420,6 @@
           "qualified": true
         },
         {
-          "player": "SUPER-LAG",
-          "matches": 68,
-          "kills": 289,
-          "deaths": 360,
-          "dealt": 46700,
-          "received": 64000,
-          "pick": 134,
-          "miss": 650,
-          "accuracy": 25.0,
-          "qualified": true
-        },
-        {
           "player": "ath|michaq",
           "matches": 2,
           "kills": 15,
@@ -1454,6 +1442,18 @@
           "miss": 35,
           "accuracy": 25.0,
           "qualified": false
+        },
+        {
+          "player": "SUPER-LAG",
+          "matches": 69,
+          "kills": 291,
+          "deaths": 371,
+          "dealt": 46900,
+          "received": 66000,
+          "pick": 137,
+          "miss": 657,
+          "accuracy": 24.9,
+          "qualified": true
         },
         {
           "player": "TIM",
@@ -2579,14 +2579,14 @@
         },
         {
           "player": "odi",
-          "matches": 11,
-          "kills": 22,
-          "deaths": 38,
-          "dealt": 5367,
-          "received": 7877,
-          "pick": 31,
-          "miss": 211,
-          "accuracy": 22.4,
+          "matches": 12,
+          "kills": 29,
+          "deaths": 44,
+          "dealt": 6770,
+          "received": 9533,
+          "pick": 34,
+          "miss": 226,
+          "accuracy": 22.3,
           "qualified": true
         },
         {
@@ -2651,13 +2651,13 @@
         },
         {
           "player": "qw",
-          "matches": 106,
-          "kills": 217,
-          "deaths": 277,
-          "dealt": 43710,
-          "received": 57443,
-          "pick": 227,
-          "miss": 2140,
+          "matches": 107,
+          "kills": 220,
+          "deaths": 280,
+          "dealt": 44351,
+          "received": 58131,
+          "pick": 233,
+          "miss": 2152,
           "accuracy": 21.8,
           "qualified": true
         },
@@ -2975,13 +2975,13 @@
         },
         {
           "player": "SUPER-LAG",
-          "matches": 68,
-          "kills": 274,
-          "deaths": 217,
-          "dealt": 58304,
-          "received": 49587,
-          "pick": 301,
-          "miss": 1154,
+          "matches": 69,
+          "kills": 279,
+          "deaths": 222,
+          "dealt": 59947,
+          "received": 50745,
+          "pick": 309,
+          "miss": 1164,
           "accuracy": 19.4,
           "qualified": true
         },
@@ -4168,18 +4168,6 @@
           "qualified": true
         },
         {
-          "player": "odi",
-          "matches": 11,
-          "kills": 57,
-          "deaths": 20,
-          "dealt": 6492,
-          "received": 5124,
-          "pick": 28,
-          "miss": 126,
-          "accuracy": 15.4,
-          "qualified": true
-        },
-        {
           "player": "ZYGA",
           "matches": 7,
           "kills": 33,
@@ -4200,6 +4188,18 @@
           "received": 6042,
           "pick": 68,
           "miss": 141,
+          "accuracy": 15.3,
+          "qualified": true
+        },
+        {
+          "player": "odi",
+          "matches": 12,
+          "kills": 62,
+          "deaths": 20,
+          "dealt": 7242,
+          "received": 5310,
+          "pick": 33,
+          "miss": 132,
           "accuracy": 15.3,
           "qualified": true
         },
@@ -4889,13 +4889,13 @@
         },
         {
           "player": "qw",
-          "matches": 104,
+          "matches": 105,
           "kills": 199,
-          "deaths": 295,
-          "dealt": 28584,
-          "received": 47046,
-          "pick": 153,
-          "miss": 1335,
+          "deaths": 296,
+          "dealt": 28662,
+          "received": 47238,
+          "pick": 154,
+          "miss": 1345,
           "accuracy": 12.6,
           "qualified": true
         },
@@ -5453,13 +5453,13 @@
         },
         {
           "player": "SUPER-LAG",
-          "matches": 67,
-          "kills": 198,
-          "deaths": 205,
-          "dealt": 30168,
-          "received": 33528,
-          "pick": 226,
-          "miss": 707,
+          "matches": 68,
+          "kills": 199,
+          "deaths": 210,
+          "dealt": 30558,
+          "received": 34182,
+          "pick": 230,
+          "miss": 714,
           "accuracy": 10.8,
           "qualified": true
         },
