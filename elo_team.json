@@ -24,6 +24,14 @@
     "winrate": 73.8
   },
   {
+    "player": "rul",
+    "elo": 1796,
+    "matches": 79,
+    "wins": 45,
+    "losses": 34,
+    "winrate": 57.0
+  },
+  {
     "player": "GipSy",
     "elo": 1795,
     "matches": 96,
@@ -32,20 +40,12 @@
     "winrate": 55.2
   },
   {
-    "player": "rul",
-    "elo": 1780,
-    "matches": 78,
-    "wins": 44,
-    "losses": 34,
-    "winrate": 56.4
-  },
-  {
     "player": "qw",
-    "elo": 1761,
-    "matches": 146,
+    "elo": 1752,
+    "matches": 147,
     "wins": 72,
-    "losses": 74,
-    "winrate": 49.3
+    "losses": 75,
+    "winrate": 49.0
   },
   {
     "player": "fon",
@@ -89,19 +89,19 @@
   },
   {
     "player": "roon",
-    "elo": 1637,
-    "matches": 23,
-    "wins": 13,
+    "elo": 1650,
+    "matches": 24,
+    "wins": 14,
     "losses": 10,
-    "winrate": 56.5
+    "winrate": 58.3
   },
   {
     "player": "asd_krzys",
-    "elo": 1631,
-    "matches": 65,
-    "wins": 35,
+    "elo": 1640,
+    "matches": 66,
+    "wins": 36,
     "losses": 30,
-    "winrate": 53.8
+    "winrate": 54.5
   },
   {
     "player": "badman",
@@ -704,14 +704,6 @@
     "winrate": 50.0
   },
   {
-    "player": "shNoodle",
-    "elo": 1488,
-    "matches": 16,
-    "wins": 8,
-    "losses": 8,
-    "winrate": 50.0
-  },
-  {
     "player": "KaPo",
     "elo": 1488,
     "matches": 10,
@@ -726,14 +718,6 @@
     "wins": 3,
     "losses": 4,
     "winrate": 42.9
-  },
-  {
-    "player": "Br00m^^",
-    "elo": 1487,
-    "matches": 81,
-    "wins": 39,
-    "losses": 42,
-    "winrate": 48.1
   },
   {
     "player": "Puma!",
@@ -848,6 +832,14 @@
     "winrate": 47.5
   },
   {
+    "player": "shNoodle",
+    "elo": 1476,
+    "matches": 17,
+    "wins": 8,
+    "losses": 9,
+    "winrate": 47.1
+  },
+  {
     "player": "Dark Abyys",
     "elo": 1476,
     "matches": 5,
@@ -886,6 +878,14 @@
     "wins": 1,
     "losses": 2,
     "winrate": 33.3
+  },
+  {
+    "player": "Br00m^^",
+    "elo": 1471,
+    "matches": 82,
+    "wins": 39,
+    "losses": 43,
+    "winrate": 47.6
   },
   {
     "player": "LiOn",
