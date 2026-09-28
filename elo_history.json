@@ -32012,5 +32012,36 @@
       }
     ],
     "saved_at": "2026-09-28T16:57:17+02:00"
+  },
+  {
+    "match_id": "760171faf8a5ec05",
+    "game_type": "team",
+    "winner": "Home",
+    "home_score": 36,
+    "away_score": 14,
+    "players": [
+      {
+        "player": "GipSy",
+        "team": "Home",
+        "old_elo": 1708,
+        "change": 16,
+        "new_elo": 1724
+      },
+      {
+        "player": "B100D",
+        "team": "Away",
+        "old_elo": 1574,
+        "change": -16,
+        "new_elo": 1558
+      },
+      {
+        "player": "lameratorotor",
+        "team": "Away",
+        "old_elo": 1505,
+        "change": -2.7,
+        "new_elo": 1503
+      }
+    ],
+    "saved_at": "2026-09-28T17:08:57+02:00"
   }
 ]
