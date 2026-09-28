@@ -1,11 +1,11 @@
 [
   {
     "player": "maq",
-    "elo": 1927,
-    "matches": 54,
-    "wins": 39,
+    "elo": 1941,
+    "matches": 55,
+    "wins": 40,
     "losses": 15,
-    "winrate": 72.2
+    "winrate": 72.7
   },
   {
     "player": "warrior",
@@ -73,11 +73,11 @@
   },
   {
     "player": "GipSy",
-    "elo": 1694,
-    "matches": 86,
+    "elo": 1692,
+    "matches": 87,
     "wins": 46,
-    "losses": 40,
-    "winrate": 53.5
+    "losses": 41,
+    "winrate": 52.9
   },
   {
     "player": "n0sferatu",
@@ -184,6 +184,14 @@
     "winrate": 100.0
   },
   {
+    "player": "B100D",
+    "elo": 1559,
+    "matches": 79,
+    "wins": 41,
+    "losses": 38,
+    "winrate": 51.9
+  },
+  {
     "player": "ZYGA",
     "elo": 1554,
     "matches": 7,
@@ -214,14 +222,6 @@
     "wins": 3,
     "losses": 1,
     "winrate": 75.0
-  },
-  {
-    "player": "B100D",
-    "elo": 1543,
-    "matches": 78,
-    "wins": 40,
-    "losses": 38,
-    "winrate": 51.3
   },
   {
     "player": "OPTIMIZER",
@@ -512,6 +512,14 @@
     "winrate": 50.0
   },
   {
+    "player": "SUPER-LAG",
+    "elo": 1502,
+    "matches": 70,
+    "wins": 41,
+    "losses": 29,
+    "winrate": 58.6
+  },
+  {
     "player": "Gaymidon^",
     "elo": 1502,
     "matches": 4,
@@ -614,14 +622,6 @@
     "wins": 2,
     "losses": 1,
     "winrate": 66.7
-  },
-  {
-    "player": "SUPER-LAG",
-    "elo": 1498,
-    "matches": 69,
-    "wins": 40,
-    "losses": 29,
-    "winrate": 58.0
   },
   {
     "player": "FRZ",
@@ -800,20 +800,20 @@
     "winrate": 0.0
   },
   {
+    "player": "Q.obs",
+    "elo": 1484,
+    "matches": 1,
+    "wins": 0,
+    "losses": 1,
+    "winrate": 0.0
+  },
+  {
     "player": "Spojler",
     "elo": 1483,
     "matches": 8,
     "wins": 4,
     "losses": 4,
     "winrate": 50.0
-  },
-  {
-    "player": "freeze",
-    "elo": 1482,
-    "matches": 7,
-    "wins": 3,
-    "losses": 4,
-    "winrate": 42.9
   },
   {
     "player": "shad",
@@ -926,6 +926,14 @@
     "wins": 7,
     "losses": 10,
     "winrate": 41.2
+  },
+  {
+    "player": "freeze",
+    "elo": 1469,
+    "matches": 8,
+    "wins": 3,
+    "losses": 5,
+    "winrate": 37.5
   },
   {
     "player": "[PK]Intruder",
