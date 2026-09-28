@@ -304,18 +304,6 @@
           "qualified": true
         },
         {
-          "player": "_Logic",
-          "matches": 6,
-          "kills": 42,
-          "deaths": 24,
-          "dealt": 5600,
-          "received": 4100,
-          "pick": 21,
-          "miss": 60,
-          "accuracy": 38.7,
-          "qualified": true
-        },
-        {
           "player": "[sf]fasadin",
           "matches": 8,
           "kills": 100,
@@ -458,6 +446,18 @@
           "miss": 39,
           "accuracy": 36.7,
           "qualified": false
+        },
+        {
+          "player": "_Logic",
+          "matches": 7,
+          "kills": 46,
+          "deaths": 25,
+          "dealt": 6000,
+          "received": 4300,
+          "pick": 21,
+          "miss": 66,
+          "accuracy": 36.6,
+          "qualified": true
         },
         {
           "player": "Kargul3000",
@@ -833,14 +833,14 @@
         },
         {
           "player": "qw",
-          "matches": 111,
-          "kills": 744,
+          "matches": 112,
+          "kills": 751,
           "deaths": 568,
-          "dealt": 119900,
-          "received": 93900,
-          "pick": 228,
-          "miss": 1289,
-          "accuracy": 32.4,
+          "dealt": 121200,
+          "received": 94000,
+          "pick": 230,
+          "miss": 1293,
+          "accuracy": 32.3,
           "qualified": true
         },
         {
@@ -1553,13 +1553,13 @@
         },
         {
           "player": "damz.",
-          "matches": 38,
+          "matches": 39,
           "kills": 64,
-          "deaths": 276,
+          "deaths": 284,
           "dealt": 11900,
-          "received": 36700,
+          "received": 37700,
           "pick": 82,
-          "miss": 399,
+          "miss": 405,
           "accuracy": 22.0,
           "qualified": true
         },
@@ -2627,14 +2627,26 @@
         },
         {
           "player": "qw",
-          "matches": 111,
+          "matches": 112,
           "kills": 231,
-          "deaths": 296,
-          "dealt": 46549,
-          "received": 61335,
+          "deaths": 298,
+          "dealt": 46652,
+          "received": 61742,
           "pick": 248,
-          "miss": 2197,
-          "accuracy": 21.7,
+          "miss": 2212,
+          "accuracy": 21.8,
+          "qualified": true
+        },
+        {
+          "player": "damz.",
+          "matches": 40,
+          "kills": 127,
+          "deaths": 166,
+          "dealt": 26480,
+          "received": 34381,
+          "pick": 264,
+          "miss": 604,
+          "accuracy": 21.6,
           "qualified": true
         },
         {
@@ -2647,18 +2659,6 @@
           "pick": 105,
           "miss": 346,
           "accuracy": 21.6,
-          "qualified": true
-        },
-        {
-          "player": "damz.",
-          "matches": 39,
-          "kills": 125,
-          "deaths": 166,
-          "dealt": 25679,
-          "received": 33962,
-          "pick": 256,
-          "miss": 597,
-          "accuracy": 21.5,
           "qualified": true
         },
         {
@@ -3395,13 +3395,13 @@
         },
         {
           "player": "_Logic",
-          "matches": 6,
-          "kills": 31,
+          "matches": 7,
+          "kills": 34,
           "deaths": 19,
-          "dealt": 5271,
-          "received": 4054,
-          "pick": 39,
-          "miss": 80,
+          "dealt": 6412,
+          "received": 4543,
+          "pick": 45,
+          "miss": 89,
           "accuracy": 16.3,
           "qualified": true
         },
@@ -4168,6 +4168,18 @@
           "qualified": true
         },
         {
+          "player": "_Logic",
+          "matches": 7,
+          "kills": 22,
+          "deaths": 20,
+          "dealt": 3366,
+          "received": 2934,
+          "pick": 19,
+          "miss": 70,
+          "accuracy": 15.4,
+          "qualified": true
+        },
+        {
           "player": "norm",
           "matches": 13,
           "kills": 67,
@@ -4178,18 +4190,6 @@
           "miss": 141,
           "accuracy": 15.3,
           "qualified": true
-        },
-        {
-          "player": "_Logic",
-          "matches": 6,
-          "kills": 8,
-          "deaths": 18,
-          "dealt": 2040,
-          "received": 2652,
-          "pick": 15,
-          "miss": 64,
-          "accuracy": 15.3,
-          "qualified": false
         },
         {
           "player": "myrmidon^",
@@ -4889,13 +4889,13 @@
         },
         {
           "player": "qw",
-          "matches": 109,
-          "kills": 207,
-          "deaths": 305,
-          "dealt": 29754,
-          "received": 49104,
+          "matches": 110,
+          "kills": 212,
+          "deaths": 309,
+          "dealt": 30420,
+          "received": 49992,
           "pick": 163,
-          "miss": 1386,
+          "miss": 1396,
           "accuracy": 12.5,
           "qualified": true
         },
@@ -5320,18 +5320,6 @@
           "qualified": false
         },
         {
-          "player": "damz.",
-          "matches": 38,
-          "kills": 57,
-          "deaths": 117,
-          "dealt": 11886,
-          "received": 14280,
-          "pick": 140,
-          "miss": 378,
-          "accuracy": 11.2,
-          "qualified": true
-        },
-        {
           "player": "[sf]fasadin",
           "matches": 8,
           "kills": 28,
@@ -5366,6 +5354,18 @@
           "miss": 57,
           "accuracy": 11.2,
           "qualified": false
+        },
+        {
+          "player": "damz.",
+          "matches": 39,
+          "kills": 57,
+          "deaths": 129,
+          "dealt": 12048,
+          "received": 15450,
+          "pick": 143,
+          "miss": 385,
+          "accuracy": 11.1,
+          "qualified": true
         },
         {
           "player": "Qiub",

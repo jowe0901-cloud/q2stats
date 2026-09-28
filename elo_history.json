@@ -32295,5 +32295,36 @@
       }
     ],
     "saved_at": "2026-09-28T18:43:34+02:00"
+  },
+  {
+    "match_id": "430dd7f174486448",
+    "game_type": "team",
+    "winner": "Away",
+    "home_score": 15,
+    "away_score": 37,
+    "players": [
+      {
+        "player": "damz.",
+        "team": "Home",
+        "old_elo": 1196,
+        "change": -14.7,
+        "new_elo": 1181
+      },
+      {
+        "player": "_Logic",
+        "team": "Away",
+        "old_elo": 1531,
+        "change": 13.6,
+        "new_elo": 1545
+      },
+      {
+        "player": "qw",
+        "team": "Away",
+        "old_elo": 1757,
+        "change": 2.1,
+        "new_elo": 1759
+      }
+    ],
+    "saved_at": "2026-09-28T18:55:12+02:00"
   }
 ]
