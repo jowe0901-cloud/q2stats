@@ -15,14 +15,14 @@
       "top5": [
         {
           "player": "David",
-          "matches": 16,
-          "kills": 272,
-          "deaths": 29,
-          "dealt": 37100,
-          "received": 7200,
-          "pick": 72,
-          "miss": 124,
-          "accuracy": 44.0,
+          "matches": 17,
+          "kills": 291,
+          "deaths": 31,
+          "dealt": 40100,
+          "received": 7700,
+          "pick": 79,
+          "miss": 135,
+          "accuracy": 43.9,
           "qualified": true
         },
         {
@@ -137,14 +137,14 @@
         },
         {
           "player": "David",
-          "matches": 16,
-          "kills": 272,
-          "deaths": 29,
-          "dealt": 37100,
-          "received": 7200,
-          "pick": 72,
-          "miss": 124,
-          "accuracy": 44.0,
+          "matches": 17,
+          "kills": 291,
+          "deaths": 31,
+          "dealt": 40100,
+          "received": 7700,
+          "pick": 79,
+          "miss": 135,
+          "accuracy": 43.9,
           "qualified": true
         },
         {
@@ -785,14 +785,14 @@
         },
         {
           "player": "badman",
-          "matches": 84,
-          "kills": 732,
-          "deaths": 576,
-          "dealt": 113300,
-          "received": 91700,
-          "pick": 203,
-          "miss": 1052,
-          "accuracy": 33.2,
+          "matches": 85,
+          "kills": 735,
+          "deaths": 594,
+          "dealt": 113700,
+          "received": 94300,
+          "pick": 211,
+          "miss": 1062,
+          "accuracy": 33.1,
           "qualified": true
         },
         {
@@ -845,14 +845,14 @@
         },
         {
           "player": "qw",
-          "matches": 127,
+          "matches": 128,
           "kills": 833,
-          "deaths": 639,
-          "dealt": 136100,
-          "received": 106200,
-          "pick": 269,
-          "miss": 1434,
-          "accuracy": 32.4,
+          "deaths": 647,
+          "dealt": 136400,
+          "received": 107300,
+          "pick": 271,
+          "miss": 1450,
+          "accuracy": 32.6,
           "qualified": true
         },
         {
@@ -1252,6 +1252,18 @@
           "qualified": false
         },
         {
+          "player": "KaPo",
+          "matches": 11,
+          "kills": 50,
+          "deaths": 76,
+          "dealt": 7900,
+          "received": 11000,
+          "pick": 17,
+          "miss": 170,
+          "accuracy": 27.6,
+          "qualified": true
+        },
+        {
           "player": "tomato-gose",
           "matches": 5,
           "kills": 23,
@@ -1381,18 +1393,6 @@
           "pick": 105,
           "miss": 140,
           "accuracy": 26.1,
-          "qualified": true
-        },
-        {
-          "player": "KaPo",
-          "matches": 10,
-          "kills": 44,
-          "deaths": 76,
-          "dealt": 7200,
-          "received": 10800,
-          "pick": 16,
-          "miss": 153,
-          "accuracy": 26.0,
           "qualified": true
         },
         {
@@ -2242,18 +2242,6 @@
           "qualified": true
         },
         {
-          "player": "David",
-          "matches": 16,
-          "kills": 90,
-          "deaths": 15,
-          "dealt": 18510,
-          "received": 10065,
-          "pick": 84,
-          "miss": 155,
-          "accuracy": 27.8,
-          "qualified": true
-        },
-        {
           "player": "faint",
           "matches": 15,
           "kills": 47,
@@ -2263,6 +2251,18 @@
           "pick": 24,
           "miss": 287,
           "accuracy": 26.9,
+          "qualified": true
+        },
+        {
+          "player": "David",
+          "matches": 17,
+          "kills": 91,
+          "deaths": 16,
+          "dealt": 18714,
+          "received": 10175,
+          "pick": 87,
+          "miss": 169,
+          "accuracy": 26.8,
           "qualified": true
         },
         {
@@ -2699,14 +2699,14 @@
         },
         {
           "player": "qw",
-          "matches": 127,
-          "kills": 264,
-          "deaths": 341,
-          "dealt": 53607,
-          "received": 70321,
-          "pick": 298,
-          "miss": 2453,
-          "accuracy": 21.9,
+          "matches": 128,
+          "kills": 266,
+          "deaths": 346,
+          "dealt": 53808,
+          "received": 71116,
+          "pick": 303,
+          "miss": 2465,
+          "accuracy": 21.8,
           "qualified": true
         },
         {
@@ -2719,6 +2719,18 @@
           "pick": 105,
           "miss": 346,
           "accuracy": 21.6,
+          "qualified": true
+        },
+        {
+          "player": "KaPo",
+          "matches": 11,
+          "kills": 67,
+          "deaths": 35,
+          "dealt": 9476,
+          "received": 7232,
+          "pick": 43,
+          "miss": 229,
+          "accuracy": 21.5,
           "qualified": true
         },
         {
@@ -2826,18 +2838,6 @@
           "received": 24609,
           "pick": 111,
           "miss": 796,
-          "accuracy": 21.0,
-          "qualified": true
-        },
-        {
-          "player": "KaPo",
-          "matches": 10,
-          "kills": 55,
-          "deaths": 31,
-          "dealt": 7967,
-          "received": 6633,
-          "pick": 37,
-          "miss": 218,
           "accuracy": 21.0,
           "qualified": true
         },
@@ -3154,18 +3154,6 @@
           "qualified": true
         },
         {
-          "player": "badman",
-          "matches": 84,
-          "kills": 141,
-          "deaths": 241,
-          "dealt": 28252,
-          "received": 49143,
-          "pick": 293,
-          "miss": 1606,
-          "accuracy": 18.6,
-          "qualified": true
-        },
-        {
           "player": "lolercoaster",
           "matches": 10,
           "kills": 29,
@@ -3175,6 +3163,18 @@
           "pick": 40,
           "miss": 126,
           "accuracy": 18.6,
+          "qualified": true
+        },
+        {
+          "player": "badman",
+          "matches": 85,
+          "kills": 143,
+          "deaths": 248,
+          "dealt": 28554,
+          "received": 50104,
+          "pick": 296,
+          "miss": 1620,
+          "accuracy": 18.5,
           "qualified": true
         },
         {
@@ -4348,18 +4348,6 @@
           "qualified": true
         },
         {
-          "player": "David",
-          "matches": 16,
-          "kills": 131,
-          "deaths": 12,
-          "dealt": 17928,
-          "received": 4764,
-          "pick": 62,
-          "miss": 143,
-          "accuracy": 15.2,
-          "qualified": true
-        },
-        {
           "player": "odi",
           "matches": 13,
           "kills": 65,
@@ -4381,6 +4369,18 @@
           "pick": 89,
           "miss": 47,
           "accuracy": 15.2,
+          "qualified": true
+        },
+        {
+          "player": "David",
+          "matches": 17,
+          "kills": 140,
+          "deaths": 13,
+          "dealt": 19104,
+          "received": 5076,
+          "pick": 66,
+          "miss": 157,
+          "accuracy": 15.1,
           "qualified": true
         },
         {
@@ -4541,13 +4541,13 @@
         },
         {
           "player": "badman",
-          "matches": 82,
-          "kills": 212,
-          "deaths": 199,
-          "dealt": 32616,
-          "received": 30750,
-          "pick": 225,
-          "miss": 1001,
+          "matches": 83,
+          "kills": 213,
+          "deaths": 206,
+          "dealt": 32754,
+          "received": 31620,
+          "pick": 229,
+          "miss": 1015,
           "accuracy": 14.2,
           "qualified": true
         },
@@ -4961,13 +4961,13 @@
         },
         {
           "player": "qw",
-          "matches": 125,
-          "kills": 244,
-          "deaths": 362,
-          "dealt": 35856,
-          "received": 58692,
-          "pick": 196,
-          "miss": 1548,
+          "matches": 126,
+          "kills": 246,
+          "deaths": 368,
+          "dealt": 36216,
+          "received": 59430,
+          "pick": 203,
+          "miss": 1559,
           "accuracy": 12.7,
           "qualified": true
         },
@@ -5644,6 +5644,18 @@
           "qualified": false
         },
         {
+          "player": "KaPo",
+          "matches": 10,
+          "kills": 34,
+          "deaths": 26,
+          "dealt": 3834,
+          "received": 3546,
+          "pick": 26,
+          "miss": 161,
+          "accuracy": 10.4,
+          "qualified": true
+        },
+        {
           "player": "fff",
           "matches": 5,
           "kills": 9,
@@ -5666,18 +5678,6 @@
           "miss": 22,
           "accuracy": 10.3,
           "qualified": false
-        },
-        {
-          "player": "KaPo",
-          "matches": 9,
-          "kills": 31,
-          "deaths": 25,
-          "dealt": 3402,
-          "received": 3360,
-          "pick": 23,
-          "miss": 146,
-          "accuracy": 10.2,
-          "qualified": true
         },
         {
           "player": "LiOn]tRk[",
