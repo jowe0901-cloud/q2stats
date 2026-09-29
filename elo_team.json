@@ -49,11 +49,11 @@
   },
   {
     "player": "qw",
-    "elo": 1728,
-    "matches": 161,
+    "elo": 1713,
+    "matches": 162,
     "wins": 78,
-    "losses": 83,
-    "winrate": 48.4
+    "losses": 84,
+    "winrate": 48.1
   },
   {
     "player": "Keizer",
@@ -472,14 +472,6 @@
     "winrate": 40.0
   },
   {
-    "player": "Domik_v_derevne",
-    "elo": 1508,
-    "matches": 7,
-    "wins": 6,
-    "losses": 1,
-    "winrate": 85.7
-  },
-  {
     "player": "slonik",
     "elo": 1508,
     "matches": 4,
@@ -688,6 +680,14 @@
     "winrate": 50.0
   },
   {
+    "player": "z0diac",
+    "elo": 1497,
+    "matches": 25,
+    "wins": 11,
+    "losses": 14,
+    "winrate": 44.0
+  },
+  {
     "player": "OESD",
     "elo": 1496,
     "matches": 2,
@@ -710,6 +710,14 @@
     "wins": 1,
     "losses": 2,
     "winrate": 33.3
+  },
+  {
+    "player": "Domik_v_derevne",
+    "elo": 1492,
+    "matches": 8,
+    "wins": 6,
+    "losses": 2,
+    "winrate": 75.0
   },
   {
     "player": "kurwa_ping80",
@@ -806,14 +814,6 @@
     "wins": 4,
     "losses": 4,
     "winrate": 50.0
-  },
-  {
-    "player": "z0diac",
-    "elo": 1483,
-    "matches": 24,
-    "wins": 10,
-    "losses": 14,
-    "winrate": 41.7
   },
   {
     "player": "shad",
@@ -1136,6 +1136,14 @@
     "winrate": 11.1
   },
   {
+    "player": "Maniek",
+    "elo": 1360,
+    "matches": 97,
+    "wins": 44,
+    "losses": 53,
+    "winrate": 45.4
+  },
+  {
     "player": "[HC]Reni^",
     "elo": 1353,
     "matches": 34,
@@ -1158,14 +1166,6 @@
     "wins": 3,
     "losses": 11,
     "winrate": 21.4
-  },
-  {
-    "player": "Maniek",
-    "elo": 1344,
-    "matches": 96,
-    "wins": 43,
-    "losses": 53,
-    "winrate": 44.8
   },
   {
     "player": "sevvq",
@@ -1209,10 +1209,10 @@
   },
   {
     "player": "jabb@",
-    "elo": 1151,
-    "matches": 175,
+    "elo": 1146,
+    "matches": 176,
     "wins": 78,
-    "losses": 97,
-    "winrate": 44.6
+    "losses": 98,
+    "winrate": 44.3
   }
 ]
