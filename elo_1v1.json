@@ -184,6 +184,14 @@
     "winrate": 100.0
   },
   {
+    "player": "GipSy",
+    "elo": 1538,
+    "matches": 44,
+    "wins": 24,
+    "losses": 20,
+    "winrate": 54.5
+  },
+  {
     "player": "need2",
     "elo": 1537,
     "matches": 2,
@@ -214,14 +222,6 @@
     "wins": 2,
     "losses": 0,
     "winrate": 100.0
-  },
-  {
-    "player": "GipSy",
-    "elo": 1529,
-    "matches": 43,
-    "wins": 23,
-    "losses": 20,
-    "winrate": 53.5
   },
   {
     "player": "fff",
@@ -704,20 +704,20 @@
     "winrate": 17.9
   },
   {
-    "player": "v4cio",
-    "elo": 1364,
-    "matches": 20,
-    "wins": 3,
-    "losses": 17,
-    "winrate": 15.0
-  },
-  {
     "player": "Puma!",
     "elo": 1362,
     "matches": 14,
     "wins": 1,
     "losses": 13,
     "winrate": 7.1
+  },
+  {
+    "player": "v4cio",
+    "elo": 1355,
+    "matches": 21,
+    "wins": 3,
+    "losses": 18,
+    "winrate": 14.3
   },
   {
     "player": "Maniek",
