@@ -57,11 +57,11 @@
   },
   {
     "player": "qw",
-    "elo": 1730,
-    "matches": 156,
+    "elo": 1720,
+    "matches": 157,
     "wins": 76,
-    "losses": 80,
-    "winrate": 48.7
+    "losses": 81,
+    "winrate": 48.4
   },
   {
     "player": "Keizer",
@@ -120,14 +120,6 @@
     "winrate": 87.5
   },
   {
-    "player": "badman",
-    "elo": 1610,
-    "matches": 92,
-    "wins": 42,
-    "losses": 50,
-    "winrate": 45.7
-  },
-  {
     "player": "faint",
     "elo": 1608,
     "matches": 15,
@@ -150,6 +142,14 @@
     "wins": 6,
     "losses": 1,
     "winrate": 85.7
+  },
+  {
+    "player": "badman",
+    "elo": 1594,
+    "matches": 93,
+    "wins": 42,
+    "losses": 51,
+    "winrate": 45.2
   },
   {
     "player": "ping80",
@@ -334,6 +334,14 @@
     "wins": 2,
     "losses": 0,
     "winrate": 100.0
+  },
+  {
+    "player": "KaPo",
+    "elo": 1519,
+    "matches": 12,
+    "wins": 8,
+    "losses": 4,
+    "winrate": 66.7
   },
   {
     "player": "lameratorotor",
@@ -534,14 +542,6 @@
     "wins": 2,
     "losses": 2,
     "winrate": 50.0
-  },
-  {
-    "player": "KaPo",
-    "elo": 1503,
-    "matches": 11,
-    "wins": 7,
-    "losses": 4,
-    "winrate": 63.6
   },
   {
     "player": "Gaymidon^",
