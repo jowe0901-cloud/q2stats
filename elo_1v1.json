@@ -40,6 +40,14 @@
     "winrate": 100.0
   },
   {
+    "player": "ping80",
+    "elo": 1594,
+    "matches": 14,
+    "wins": 11,
+    "losses": 3,
+    "winrate": 78.6
+  },
+  {
     "player": "shad",
     "elo": 1589,
     "matches": 21,
@@ -54,14 +62,6 @@
     "wins": 7,
     "losses": 1,
     "winrate": 87.5
-  },
-  {
-    "player": "ping80",
-    "elo": 1583,
-    "matches": 13,
-    "wins": 10,
-    "losses": 3,
-    "winrate": 76.9
   },
   {
     "player": "insomnia",
@@ -568,14 +568,6 @@
     "winrate": 16.7
   },
   {
-    "player": "freeze",
-    "elo": 1459,
-    "matches": 15,
-    "wins": 5,
-    "losses": 10,
-    "winrate": 33.3
-  },
-  {
     "player": "gibon",
     "elo": 1457,
     "matches": 2,
@@ -606,6 +598,14 @@
     "wins": 2,
     "losses": 7,
     "winrate": 22.2
+  },
+  {
+    "player": "freeze",
+    "elo": 1449,
+    "matches": 16,
+    "wins": 5,
+    "losses": 11,
+    "winrate": 31.2
   },
   {
     "player": "Grrga",
