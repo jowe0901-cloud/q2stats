@@ -56,6 +56,14 @@
     "winrate": 87.5
   },
   {
+    "player": "ping80",
+    "elo": 1583,
+    "matches": 13,
+    "wins": 10,
+    "losses": 3,
+    "winrate": 76.9
+  },
+  {
     "player": "insomnia",
     "elo": 1581,
     "matches": 7,
@@ -86,14 +94,6 @@
     "wins": 5,
     "losses": 0,
     "winrate": 100.0
-  },
-  {
-    "player": "ping80",
-    "elo": 1572,
-    "matches": 12,
-    "wins": 9,
-    "losses": 3,
-    "winrate": 75.0
   },
   {
     "player": "piu-laging",
@@ -528,14 +528,6 @@
     "winrate": 40.0
   },
   {
-    "player": "freeze",
-    "elo": 1471,
-    "matches": 14,
-    "wins": 5,
-    "losses": 9,
-    "winrate": 35.7
-  },
-  {
     "player": "VITALIS",
     "elo": 1470,
     "matches": 2,
@@ -574,6 +566,14 @@
     "wins": 1,
     "losses": 5,
     "winrate": 16.7
+  },
+  {
+    "player": "freeze",
+    "elo": 1459,
+    "matches": 15,
+    "wins": 5,
+    "losses": 10,
+    "winrate": 33.3
   },
   {
     "player": "gibon",

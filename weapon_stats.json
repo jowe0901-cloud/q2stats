@@ -1037,14 +1037,14 @@
         },
         {
           "player": "ping80",
-          "matches": 28,
+          "matches": 29,
           "kills": 84,
           "deaths": 146,
-          "dealt": 16300,
-          "received": 30800,
-          "pick": 91,
-          "miss": 288,
-          "accuracy": 30.0,
+          "dealt": 16600,
+          "received": 31100,
+          "pick": 95,
+          "miss": 290,
+          "accuracy": 30.1,
           "qualified": true
         },
         {
@@ -1264,18 +1264,6 @@
           "qualified": true
         },
         {
-          "player": "freeze",
-          "matches": 17,
-          "kills": 46,
-          "deaths": 55,
-          "dealt": 10900,
-          "received": 13400,
-          "pick": 59,
-          "miss": 100,
-          "accuracy": 27.3,
-          "qualified": true
-        },
-        {
           "player": "CoLD",
           "matches": 30,
           "kills": 185,
@@ -1285,6 +1273,18 @@
           "pick": 118,
           "miss": 382,
           "accuracy": 27.2,
+          "qualified": true
+        },
+        {
+          "player": "freeze",
+          "matches": 18,
+          "kills": 46,
+          "deaths": 55,
+          "dealt": 11200,
+          "received": 13700,
+          "pick": 61,
+          "miss": 104,
+          "accuracy": 27.1,
           "qualified": true
         },
         {
@@ -2326,18 +2326,6 @@
           "qualified": false
         },
         {
-          "player": "ping80",
-          "matches": 28,
-          "kills": 154,
-          "deaths": 86,
-          "dealt": 31746,
-          "received": 23254,
-          "pick": 148,
-          "miss": 303,
-          "accuracy": 25.4,
-          "qualified": true
-        },
-        {
           "player": "[sYnth]Scooby",
           "matches": 25,
           "kills": 93,
@@ -2372,6 +2360,18 @@
           "miss": 18,
           "accuracy": 25.3,
           "qualified": false
+        },
+        {
+          "player": "ping80",
+          "matches": 29,
+          "kills": 157,
+          "deaths": 87,
+          "dealt": 32539,
+          "received": 23962,
+          "pick": 152,
+          "miss": 308,
+          "accuracy": 25.1,
+          "qualified": true
         },
         {
           "player": "yin",
@@ -3358,6 +3358,18 @@
           "qualified": true
         },
         {
+          "player": "freeze",
+          "matches": 18,
+          "kills": 25,
+          "deaths": 59,
+          "dealt": 8742,
+          "received": 16763,
+          "pick": 85,
+          "miss": 119,
+          "accuracy": 17.2,
+          "qualified": true
+        },
+        {
           "player": "Larik",
           "matches": 3,
           "kills": 22,
@@ -3462,18 +3474,6 @@
           "received": 18115,
           "pick": 114,
           "miss": 400,
-          "accuracy": 16.5,
-          "qualified": true
-        },
-        {
-          "player": "freeze",
-          "matches": 17,
-          "kills": 24,
-          "deaths": 56,
-          "dealt": 8118,
-          "received": 15903,
-          "pick": 80,
-          "miss": 115,
           "accuracy": 16.5,
           "qualified": true
         },
@@ -4576,18 +4576,6 @@
           "qualified": true
         },
         {
-          "player": "freeze",
-          "matches": 17,
-          "kills": 40,
-          "deaths": 53,
-          "dealt": 10368,
-          "received": 9948,
-          "pick": 71,
-          "miss": 120,
-          "accuracy": 13.8,
-          "qualified": true
-        },
-        {
           "player": "insomnia",
           "matches": 7,
           "kills": 37,
@@ -4644,6 +4632,18 @@
           "received": 7398,
           "pick": 81,
           "miss": 77,
+          "accuracy": 13.6,
+          "qualified": true
+        },
+        {
+          "player": "freeze",
+          "matches": 18,
+          "kills": 43,
+          "deaths": 58,
+          "dealt": 10794,
+          "received": 10746,
+          "pick": 74,
+          "miss": 125,
           "accuracy": 13.6,
           "qualified": true
         },
@@ -5104,6 +5104,18 @@
           "qualified": true
         },
         {
+          "player": "ping80",
+          "matches": 30,
+          "kills": 128,
+          "deaths": 69,
+          "dealt": 18942,
+          "received": 12930,
+          "pick": 147,
+          "miss": 265,
+          "accuracy": 12.0,
+          "qualified": true
+        },
+        {
           "player": "[d][s][a][d][s]",
           "matches": 3,
           "kills": 9,
@@ -5220,18 +5232,6 @@
           "received": 42564,
           "pick": 364,
           "miss": 799,
-          "accuracy": 11.9,
-          "qualified": true
-        },
-        {
-          "player": "ping80",
-          "matches": 29,
-          "kills": 123,
-          "deaths": 66,
-          "dealt": 18144,
-          "received": 12504,
-          "pick": 142,
-          "miss": 262,
           "accuracy": 11.9,
           "qualified": true
         },
