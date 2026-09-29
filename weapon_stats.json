@@ -39,14 +39,14 @@
         },
         {
           "player": "maq",
-          "matches": 70,
-          "kills": 677,
+          "matches": 71,
+          "kills": 683,
           "deaths": 289,
-          "dealt": 114000,
+          "dealt": 115100,
           "received": 53700,
-          "pick": 196,
-          "miss": 688,
-          "accuracy": 41.1,
+          "pick": 198,
+          "miss": 689,
+          "accuracy": 41.3,
           "qualified": true
         },
         {
@@ -197,14 +197,14 @@
         },
         {
           "player": "maq",
-          "matches": 70,
-          "kills": 677,
+          "matches": 71,
+          "kills": 683,
           "deaths": 289,
-          "dealt": 114000,
+          "dealt": 115100,
           "received": 53700,
-          "pick": 196,
-          "miss": 688,
-          "accuracy": 41.1,
+          "pick": 198,
+          "miss": 689,
+          "accuracy": 41.3,
           "qualified": true
         },
         {
@@ -1180,18 +1180,6 @@
           "qualified": true
         },
         {
-          "player": "B100D",
-          "matches": 99,
-          "kills": 371,
-          "deaths": 375,
-          "dealt": 77600,
-          "received": 67600,
-          "pick": 350,
-          "miss": 579,
-          "accuracy": 28.6,
-          "qualified": true
-        },
-        {
           "player": "[sYnth]CREATIVE",
           "matches": 2,
           "kills": 13,
@@ -1213,6 +1201,18 @@
           "pick": 37,
           "miss": 119,
           "accuracy": 28.4,
+          "qualified": true
+        },
+        {
+          "player": "B100D",
+          "matches": 100,
+          "kills": 371,
+          "deaths": 381,
+          "dealt": 77600,
+          "received": 68700,
+          "pick": 351,
+          "miss": 581,
+          "accuracy": 28.3,
           "qualified": true
         },
         {
@@ -2843,13 +2843,13 @@
         },
         {
           "player": "maq",
-          "matches": 70,
-          "kills": 185,
+          "matches": 71,
+          "kills": 186,
           "deaths": 160,
-          "dealt": 39014,
-          "received": 43671,
-          "pick": 227,
-          "miss": 1138,
+          "dealt": 39558,
+          "received": 44171,
+          "pick": 230,
+          "miss": 1141,
           "accuracy": 20.8,
           "qualified": true
         },
@@ -3215,13 +3215,13 @@
         },
         {
           "player": "B100D",
-          "matches": 100,
+          "matches": 101,
           "kills": 183,
-          "deaths": 202,
-          "dealt": 47810,
-          "received": 60305,
-          "pick": 392,
-          "miss": 1101,
+          "deaths": 203,
+          "dealt": 48310,
+          "received": 60896,
+          "pick": 395,
+          "miss": 1104,
           "accuracy": 18.1,
           "qualified": true
         },
@@ -4456,6 +4456,18 @@
           "qualified": false
         },
         {
+          "player": "maq",
+          "matches": 67,
+          "kills": 197,
+          "deaths": 143,
+          "dealt": 29706,
+          "received": 31794,
+          "pick": 190,
+          "miss": 709,
+          "accuracy": 14.7,
+          "qualified": true
+        },
+        {
           "player": "asd_krzys",
           "matches": 60,
           "kills": 181,
@@ -4488,18 +4500,6 @@
           "received": 27960,
           "pick": 222,
           "miss": 593,
-          "accuracy": 14.5,
-          "qualified": true
-        },
-        {
-          "player": "maq",
-          "matches": 66,
-          "kills": 195,
-          "deaths": 142,
-          "dealt": 29388,
-          "received": 31422,
-          "pick": 188,
-          "miss": 703,
           "accuracy": 14.5,
           "qualified": true
         },
@@ -5237,13 +5237,13 @@
         },
         {
           "player": "B100D",
-          "matches": 100,
-          "kills": 304,
-          "deaths": 239,
-          "dealt": 51012,
-          "received": 44574,
-          "pick": 382,
-          "miss": 825,
+          "matches": 101,
+          "kills": 305,
+          "deaths": 241,
+          "dealt": 51384,
+          "received": 44892,
+          "pick": 388,
+          "miss": 827,
           "accuracy": 11.8,
           "qualified": true
         },
