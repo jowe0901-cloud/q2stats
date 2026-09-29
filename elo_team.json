@@ -48,12 +48,12 @@
     "winrate": 56.7
   },
   {
-    "player": "fon",
-    "elo": 1707,
-    "matches": 59,
-    "wins": 36,
-    "losses": 23,
-    "winrate": 61.0
+    "player": "qw",
+    "elo": 1712,
+    "matches": 160,
+    "wins": 77,
+    "losses": 83,
+    "winrate": 48.1
   },
   {
     "player": "Keizer",
@@ -64,20 +64,20 @@
     "winrate": 56.6
   },
   {
-    "player": "qw",
-    "elo": 1696,
-    "matches": 159,
-    "wins": 76,
-    "losses": 83,
-    "winrate": 47.8
-  },
-  {
     "player": "[sf]fasadin",
     "elo": 1693,
     "matches": 26,
     "wins": 15,
     "losses": 11,
     "winrate": 57.7
+  },
+  {
+    "player": "fon",
+    "elo": 1691,
+    "matches": 60,
+    "wins": 36,
+    "losses": 24,
+    "winrate": 60.0
   },
   {
     "player": "n0sferatu",
@@ -96,6 +96,14 @@
     "winrate": 60.0
   },
   {
+    "player": "asd_krzys",
+    "elo": 1626,
+    "matches": 70,
+    "wins": 37,
+    "losses": 33,
+    "winrate": 52.9
+  },
+  {
     "player": "[sYnth]Scooby",
     "elo": 1616,
     "matches": 38,
@@ -104,28 +112,12 @@
     "winrate": 50.0
   },
   {
-    "player": "asd_krzys",
-    "elo": 1615,
-    "matches": 69,
-    "wins": 36,
-    "losses": 33,
-    "winrate": 52.2
-  },
-  {
     "player": "David",
     "elo": 1613,
     "matches": 8,
     "wins": 7,
     "losses": 1,
     "winrate": 87.5
-  },
-  {
-    "player": "badman",
-    "elo": 1608,
-    "matches": 94,
-    "wins": 43,
-    "losses": 51,
-    "winrate": 45.7
   },
   {
     "player": "faint",
@@ -150,6 +142,14 @@
     "wins": 6,
     "losses": 1,
     "winrate": 85.7
+  },
+  {
+    "player": "badman",
+    "elo": 1601,
+    "matches": 95,
+    "wins": 43,
+    "losses": 52,
+    "winrate": 45.3
   },
   {
     "player": "ping80",
@@ -706,10 +706,10 @@
   {
     "player": "z0diac",
     "elo": 1493,
-    "matches": 21,
+    "matches": 22,
     "wins": 10,
-    "losses": 11,
-    "winrate": 47.6
+    "losses": 12,
+    "winrate": 45.5
   },
   {
     "player": "sase",
@@ -814,14 +814,6 @@
     "wins": 1,
     "losses": 3,
     "winrate": 25.0
-  },
-  {
-    "player": "Br00m^^",
-    "elo": 1480,
-    "matches": 85,
-    "wins": 41,
-    "losses": 44,
-    "winrate": 48.2
   },
   {
     "player": "[ds]ads",
@@ -968,12 +960,28 @@
     "winrate": 0.0
   },
   {
+    "player": "tron",
+    "elo": 1466,
+    "matches": 34,
+    "wins": 15,
+    "losses": 19,
+    "winrate": 44.1
+  },
+  {
     "player": "freeze",
     "elo": 1466,
     "matches": 10,
     "wins": 4,
     "losses": 6,
     "winrate": 40.0
+  },
+  {
+    "player": "Br00m^^",
+    "elo": 1464,
+    "matches": 86,
+    "wins": 41,
+    "losses": 45,
+    "winrate": 47.7
   },
   {
     "player": "RED",
@@ -990,14 +998,6 @@
     "wins": 5,
     "losses": 6,
     "winrate": 45.5
-  },
-  {
-    "player": "tron",
-    "elo": 1462,
-    "matches": 33,
-    "wins": 14,
-    "losses": 19,
-    "winrate": 42.4
   },
   {
     "player": "Q.obs",
@@ -1209,10 +1209,10 @@
   },
   {
     "player": "jabb@",
-    "elo": 1121,
-    "matches": 172,
-    "wins": 75,
+    "elo": 1135,
+    "matches": 173,
+    "wins": 76,
     "losses": 97,
-    "winrate": 43.6
+    "winrate": 43.9
   }
 ]
