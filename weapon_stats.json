@@ -1037,14 +1037,14 @@
         },
         {
           "player": "ping80",
-          "matches": 27,
-          "kills": 83,
-          "deaths": 145,
-          "dealt": 16100,
-          "received": 30700,
-          "pick": 86,
-          "miss": 284,
-          "accuracy": 30.4,
+          "matches": 28,
+          "kills": 84,
+          "deaths": 146,
+          "dealt": 16300,
+          "received": 30800,
+          "pick": 91,
+          "miss": 288,
+          "accuracy": 30.0,
           "qualified": true
         },
         {
@@ -1216,18 +1216,6 @@
           "qualified": true
         },
         {
-          "player": "freeze",
-          "matches": 16,
-          "kills": 45,
-          "deaths": 54,
-          "dealt": 10800,
-          "received": 13200,
-          "pick": 55,
-          "miss": 95,
-          "accuracy": 28.2,
-          "qualified": true
-        },
-        {
           "player": "SUPER-LAG+DRUNK",
           "matches": 2,
           "kills": 13,
@@ -1273,6 +1261,18 @@
           "pick": 36,
           "miss": 32,
           "accuracy": 27.4,
+          "qualified": true
+        },
+        {
+          "player": "freeze",
+          "matches": 17,
+          "kills": 46,
+          "deaths": 55,
+          "dealt": 10900,
+          "received": 13400,
+          "pick": 59,
+          "miss": 100,
+          "accuracy": 27.3,
           "qualified": true
         },
         {
@@ -2327,13 +2327,13 @@
         },
         {
           "player": "ping80",
-          "matches": 27,
-          "kills": 151,
-          "deaths": 85,
-          "dealt": 31254,
-          "received": 22694,
-          "pick": 144,
-          "miss": 298,
+          "matches": 28,
+          "kills": 154,
+          "deaths": 86,
+          "dealt": 31746,
+          "received": 23254,
+          "pick": 148,
+          "miss": 303,
           "accuracy": 25.4,
           "qualified": true
         },
@@ -3454,18 +3454,6 @@
           "qualified": true
         },
         {
-          "player": "freeze",
-          "matches": 16,
-          "kills": 23,
-          "deaths": 53,
-          "dealt": 7702,
-          "received": 15364,
-          "pick": 75,
-          "miss": 111,
-          "accuracy": 16.6,
-          "qualified": true
-        },
-        {
           "player": "mAc",
           "matches": 22,
           "kills": 58,
@@ -3474,6 +3462,18 @@
           "received": 18115,
           "pick": 114,
           "miss": 400,
+          "accuracy": 16.5,
+          "qualified": true
+        },
+        {
+          "player": "freeze",
+          "matches": 17,
+          "kills": 24,
+          "deaths": 56,
+          "dealt": 8118,
+          "received": 15903,
+          "pick": 80,
+          "miss": 115,
           "accuracy": 16.5,
           "qualified": true
         },
@@ -4576,6 +4576,18 @@
           "qualified": true
         },
         {
+          "player": "freeze",
+          "matches": 17,
+          "kills": 40,
+          "deaths": 53,
+          "dealt": 10368,
+          "received": 9948,
+          "pick": 71,
+          "miss": 120,
+          "accuracy": 13.8,
+          "qualified": true
+        },
+        {
           "player": "insomnia",
           "matches": 7,
           "kills": 37,
@@ -4680,18 +4692,6 @@
           "received": 18312,
           "pick": 138,
           "miss": 314,
-          "accuracy": 13.5,
-          "qualified": true
-        },
-        {
-          "player": "freeze",
-          "matches": 16,
-          "kills": 39,
-          "deaths": 49,
-          "dealt": 10056,
-          "received": 9150,
-          "pick": 66,
-          "miss": 117,
           "accuracy": 13.5,
           "qualified": true
         },
@@ -5225,13 +5225,13 @@
         },
         {
           "player": "ping80",
-          "matches": 28,
-          "kills": 119,
-          "deaths": 65,
-          "dealt": 17346,
-          "received": 12192,
-          "pick": 139,
-          "miss": 257,
+          "matches": 29,
+          "kills": 123,
+          "deaths": 66,
+          "dealt": 18144,
+          "received": 12504,
+          "pick": 142,
+          "miss": 262,
           "accuracy": 11.9,
           "qualified": true
         },
