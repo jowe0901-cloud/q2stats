@@ -33727,5 +33727,29 @@
       }
     ],
     "saved_at": "2026-09-29T13:25:11+02:00"
+  },
+  {
+    "match_id": "06615e5c9a3572ea",
+    "game_type": "1v1",
+    "winner": "Home",
+    "home_score": 11,
+    "away_score": 1,
+    "players": [
+      {
+        "player": "B100D",
+        "team": "Home",
+        "old_elo": 1464,
+        "change": 12.5,
+        "new_elo": 1476
+      },
+      {
+        "player": "v4cio",
+        "team": "Away",
+        "old_elo": 1386,
+        "change": -12.5,
+        "new_elo": 1374
+      }
+    ],
+    "saved_at": "2026-09-29T13:32:31+02:00"
   }
 ]
