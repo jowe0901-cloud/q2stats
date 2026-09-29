@@ -24,20 +24,20 @@
     "winrate": 76.2
   },
   {
+    "player": "David",
+    "elo": 1610,
+    "matches": 10,
+    "wins": 10,
+    "losses": 0,
+    "winrate": 100.0
+  },
+  {
     "player": "Keizer",
     "elo": 1601,
     "matches": 10,
     "wins": 9,
     "losses": 1,
     "winrate": 90.0
-  },
-  {
-    "player": "David",
-    "elo": 1598,
-    "matches": 9,
-    "wins": 9,
-    "losses": 0,
-    "winrate": 100.0
   },
   {
     "player": "ping80",
@@ -376,14 +376,6 @@
     "winrate": 50.0
   },
   {
-    "player": "badman",
-    "elo": 1497,
-    "matches": 6,
-    "wins": 4,
-    "losses": 2,
-    "winrate": 66.7
-  },
-  {
     "player": "warrior",
     "elo": 1487,
     "matches": 3,
@@ -398,6 +390,14 @@
     "wins": 0,
     "losses": 1,
     "winrate": 0.0
+  },
+  {
+    "player": "badman",
+    "elo": 1486,
+    "matches": 7,
+    "wins": 4,
+    "losses": 3,
+    "winrate": 57.1
   },
   {
     "player": "slayer",
