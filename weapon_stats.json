@@ -796,6 +796,18 @@
           "qualified": true
         },
         {
+          "player": "need0",
+          "matches": 2,
+          "kills": 5,
+          "deaths": 6,
+          "dealt": 1100,
+          "received": 1100,
+          "pick": 2,
+          "miss": 8,
+          "accuracy": 33.0,
+          "qualified": false
+        },
+        {
           "player": "tron",
           "matches": 32,
           "kills": 137,
@@ -833,14 +845,14 @@
         },
         {
           "player": "qw",
-          "matches": 125,
-          "kills": 826,
-          "deaths": 628,
-          "dealt": 134700,
-          "received": 103900,
-          "pick": 265,
+          "matches": 126,
+          "kills": 827,
+          "deaths": 632,
+          "dealt": 134900,
+          "received": 104600,
+          "pick": 268,
           "miss": 1423,
-          "accuracy": 32.5,
+          "accuracy": 32.3,
           "qualified": true
         },
         {
@@ -1608,18 +1620,6 @@
           "received": 3600,
           "pick": 18,
           "miss": 25,
-          "accuracy": 22.0,
-          "qualified": false
-        },
-        {
-          "player": "need0",
-          "matches": 1,
-          "kills": 1,
-          "deaths": 5,
-          "dealt": 400,
-          "received": 900,
-          "pick": 2,
-          "miss": 5,
           "accuracy": 22.0,
           "qualified": false
         },
@@ -2687,14 +2687,14 @@
         },
         {
           "player": "qw",
-          "matches": 125,
-          "kills": 260,
+          "matches": 126,
+          "kills": 261,
           "deaths": 338,
-          "dealt": 52689,
-          "received": 69578,
-          "pick": 292,
-          "miss": 2436,
-          "accuracy": 21.9,
+          "dealt": 53012,
+          "received": 69700,
+          "pick": 295,
+          "miss": 2438,
+          "accuracy": 21.8,
           "qualified": true
         },
         {
@@ -3682,18 +3682,6 @@
           "qualified": false
         },
         {
-          "player": "need0",
-          "matches": 1,
-          "kills": 3,
-          "deaths": 0,
-          "dealt": 501,
-          "received": 333,
-          "pick": 3,
-          "miss": 13,
-          "accuracy": 14.0,
-          "qualified": false
-        },
-        {
           "player": "tOk.P!o",
           "matches": 6,
           "kills": 4,
@@ -3835,6 +3823,18 @@
           "pick": 10,
           "miss": 47,
           "accuracy": 10.7,
+          "qualified": false
+        },
+        {
+          "player": "need0",
+          "matches": 2,
+          "kills": 3,
+          "deaths": 1,
+          "dealt": 577,
+          "received": 750,
+          "pick": 5,
+          "miss": 16,
+          "accuracy": 9.0,
           "qualified": false
         },
         {
@@ -4154,18 +4154,6 @@
           "miss": 97,
           "accuracy": 17.1,
           "qualified": true
-        },
-        {
-          "player": "need0",
-          "matches": 1,
-          "kills": 4,
-          "deaths": 3,
-          "dealt": 930,
-          "received": 606,
-          "pick": 4,
-          "miss": 7,
-          "accuracy": 17.0,
-          "qualified": false
         },
         {
           "player": "frankie",
@@ -4550,6 +4538,18 @@
           "miss": 208,
           "accuracy": 14.0,
           "qualified": true
+        },
+        {
+          "player": "need0",
+          "matches": 2,
+          "kills": 7,
+          "deaths": 3,
+          "dealt": 1458,
+          "received": 606,
+          "pick": 7,
+          "miss": 7,
+          "accuracy": 14.0,
+          "qualified": false
         },
         {
           "player": "kartonkupy%",
@@ -4937,13 +4937,13 @@
         },
         {
           "player": "qw",
-          "matches": 123,
+          "matches": 124,
           "kills": 242,
-          "deaths": 356,
+          "deaths": 359,
           "dealt": 35262,
-          "received": 57660,
+          "received": 58188,
           "pick": 193,
-          "miss": 1535,
+          "miss": 1538,
           "accuracy": 12.7,
           "qualified": true
         },

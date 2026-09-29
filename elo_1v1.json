@@ -312,6 +312,14 @@
     "winrate": 100.0
   },
   {
+    "player": "need0",
+    "elo": 1514,
+    "matches": 1,
+    "wins": 1,
+    "losses": 0,
+    "winrate": 100.0
+  },
+  {
     "player": "shNoodle",
     "elo": 1513,
     "matches": 1,
@@ -584,14 +592,6 @@
     "winrate": 0.0
   },
   {
-    "player": "qw",
-    "elo": 1453,
-    "matches": 3,
-    "wins": 0,
-    "losses": 3,
-    "winrate": 0.0
-  },
-  {
     "player": "a",
     "elo": 1452,
     "matches": 9,
@@ -610,6 +610,14 @@
   {
     "player": "Grrga",
     "elo": 1443,
+    "matches": 4,
+    "wins": 0,
+    "losses": 4,
+    "winrate": 0.0
+  },
+  {
+    "player": "qw",
+    "elo": 1439,
     "matches": 4,
     "wins": 0,
     "losses": 4,
