@@ -1277,13 +1277,13 @@
         },
         {
           "player": "freeze",
-          "matches": 19,
+          "matches": 20,
           "kills": 46,
-          "deaths": 56,
+          "deaths": 57,
           "dealt": 11300,
-          "received": 13900,
+          "received": 14100,
           "pick": 63,
-          "miss": 108,
+          "miss": 116,
           "accuracy": 27.0,
           "qualified": true
         },
@@ -1384,6 +1384,18 @@
           "qualified": true
         },
         {
+          "player": "GipSy",
+          "matches": 105,
+          "kills": 536,
+          "deaths": 521,
+          "dealt": 98800,
+          "received": 105400,
+          "pick": 337,
+          "miss": 885,
+          "accuracy": 26.0,
+          "qualified": true
+        },
+        {
           "player": "KaPo",
           "matches": 10,
           "kills": 44,
@@ -1429,18 +1441,6 @@
           "pick": 29,
           "miss": 133,
           "accuracy": 25.8,
-          "qualified": true
-        },
-        {
-          "player": "GipSy",
-          "matches": 104,
-          "kills": 535,
-          "deaths": 521,
-          "dealt": 98600,
-          "received": 105400,
-          "pick": 329,
-          "miss": 885,
-          "accuracy": 25.6,
           "qualified": true
         },
         {
@@ -3239,12 +3239,12 @@
         },
         {
           "player": "GipSy",
-          "matches": 106,
-          "kills": 353,
+          "matches": 107,
+          "kills": 359,
           "deaths": 310,
-          "dealt": 80279,
-          "received": 83510,
-          "pick": 463,
+          "dealt": 81699,
+          "received": 83582,
+          "pick": 472,
           "miss": 1402,
           "accuracy": 18.0,
           "qualified": true
@@ -3359,13 +3359,13 @@
         },
         {
           "player": "freeze",
-          "matches": 19,
+          "matches": 20,
           "kills": 26,
-          "deaths": 61,
+          "deaths": 67,
           "dealt": 9344,
-          "received": 17737,
+          "received": 19157,
           "pick": 89,
-          "miss": 123,
+          "miss": 132,
           "accuracy": 17.2,
           "qualified": true
         },
@@ -4577,13 +4577,13 @@
         },
         {
           "player": "freeze",
-          "matches": 19,
+          "matches": 20,
           "kills": 45,
-          "deaths": 65,
+          "deaths": 66,
           "dealt": 11184,
-          "received": 11856,
+          "received": 12228,
           "pick": 77,
-          "miss": 130,
+          "miss": 139,
           "accuracy": 13.7,
           "qualified": true
         },
@@ -5429,12 +5429,12 @@
         },
         {
           "player": "GipSy",
-          "matches": 104,
-          "kills": 323,
+          "matches": 105,
+          "kills": 324,
           "deaths": 285,
-          "dealt": 57996,
+          "dealt": 58368,
           "received": 49242,
-          "pick": 459,
+          "pick": 468,
           "miss": 954,
           "accuracy": 11.3,
           "qualified": true
