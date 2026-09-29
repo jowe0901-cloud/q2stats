@@ -976,18 +976,6 @@
           "qualified": true
         },
         {
-          "player": "jabb@",
-          "matches": 145,
-          "kills": 397,
-          "deaths": 963,
-          "dealt": 67900,
-          "received": 153100,
-          "pick": 321,
-          "miss": 1397,
-          "accuracy": 30.6,
-          "qualified": true
-        },
-        {
           "player": "shNoodle",
           "matches": 16,
           "kills": 104,
@@ -997,6 +985,18 @@
           "pick": 39,
           "miss": 219,
           "accuracy": 30.6,
+          "qualified": true
+        },
+        {
+          "player": "jabb@",
+          "matches": 146,
+          "kills": 399,
+          "deaths": 970,
+          "dealt": 68100,
+          "received": 154300,
+          "pick": 321,
+          "miss": 1408,
+          "accuracy": 30.5,
           "qualified": true
         },
         {
@@ -1084,18 +1084,6 @@
           "qualified": false
         },
         {
-          "player": "cne",
-          "matches": 68,
-          "kills": 768,
-          "deaths": 368,
-          "dealt": 118800,
-          "received": 60100,
-          "pick": 253,
-          "miss": 670,
-          "accuracy": 29.7,
-          "qualified": true
-        },
-        {
           "player": "[d][s][a][d][s]",
           "matches": 3,
           "kills": 16,
@@ -1106,6 +1094,18 @@
           "miss": 32,
           "accuracy": 29.7,
           "qualified": false
+        },
+        {
+          "player": "cne",
+          "matches": 69,
+          "kills": 781,
+          "deaths": 372,
+          "dealt": 120300,
+          "received": 60700,
+          "pick": 256,
+          "miss": 678,
+          "accuracy": 29.6,
+          "qualified": true
         },
         {
           "player": "michaq",
@@ -1252,18 +1252,6 @@
           "qualified": false
         },
         {
-          "player": "CoLD",
-          "matches": 31,
-          "kills": 193,
-          "deaths": 240,
-          "dealt": 33800,
-          "received": 39500,
-          "pick": 126,
-          "miss": 393,
-          "accuracy": 27.5,
-          "qualified": true
-        },
-        {
           "player": "tomato-gose",
           "matches": 5,
           "kills": 23,
@@ -1273,6 +1261,18 @@
           "pick": 36,
           "miss": 32,
           "accuracy": 27.4,
+          "qualified": true
+        },
+        {
+          "player": "CoLD",
+          "matches": 32,
+          "kills": 194,
+          "deaths": 245,
+          "dealt": 34300,
+          "received": 40100,
+          "pick": 132,
+          "miss": 398,
+          "accuracy": 27.2,
           "qualified": true
         },
         {
@@ -2614,6 +2614,18 @@
           "qualified": true
         },
         {
+          "player": "jabb@",
+          "matches": 148,
+          "kills": 542,
+          "deaths": 657,
+          "dealt": 112646,
+          "received": 143108,
+          "pick": 732,
+          "miss": 2193,
+          "accuracy": 22.6,
+          "qualified": true
+        },
+        {
           "player": "GUSIUS",
           "matches": 31,
           "kills": 73,
@@ -2623,18 +2635,6 @@
           "pick": 146,
           "miss": 439,
           "accuracy": 22.6,
-          "qualified": true
-        },
-        {
-          "player": "jabb@",
-          "matches": 147,
-          "kills": 533,
-          "deaths": 652,
-          "dealt": 111344,
-          "received": 141685,
-          "pick": 724,
-          "miss": 2184,
-          "accuracy": 22.5,
           "qualified": true
         },
         {
@@ -3034,6 +3034,18 @@
           "qualified": true
         },
         {
+          "player": "CoLD",
+          "matches": 32,
+          "kills": 103,
+          "deaths": 143,
+          "dealt": 18459,
+          "received": 28856,
+          "pick": 108,
+          "miss": 672,
+          "accuracy": 19.6,
+          "qualified": true
+        },
+        {
           "player": "tewls",
           "matches": 2,
           "kills": 7,
@@ -3044,18 +3056,6 @@
           "miss": 44,
           "accuracy": 19.5,
           "qualified": false
-        },
-        {
-          "player": "CoLD",
-          "matches": 31,
-          "kills": 99,
-          "deaths": 134,
-          "dealt": 17526,
-          "received": 27341,
-          "pick": 105,
-          "miss": 658,
-          "accuracy": 19.4,
-          "qualified": true
         },
         {
           "player": "SUPER-LAG",
@@ -3370,6 +3370,18 @@
           "qualified": true
         },
         {
+          "player": "cne",
+          "matches": 69,
+          "kills": 192,
+          "deaths": 185,
+          "dealt": 33409,
+          "received": 39542,
+          "pick": 216,
+          "miss": 1370,
+          "accuracy": 17.0,
+          "qualified": true
+        },
+        {
           "player": "Larik",
           "matches": 3,
           "kills": 22,
@@ -3428,18 +3440,6 @@
           "miss": 38,
           "accuracy": 17.0,
           "qualified": false
-        },
-        {
-          "player": "cne",
-          "matches": 68,
-          "kills": 189,
-          "deaths": 177,
-          "dealt": 32683,
-          "received": 38413,
-          "pick": 212,
-          "miss": 1357,
-          "accuracy": 16.9,
-          "qualified": true
         },
         {
           "player": "freeze",
@@ -4625,13 +4625,13 @@
         },
         {
           "player": "jabb@",
-          "matches": 147,
-          "kills": 498,
-          "deaths": 489,
-          "dealt": 78180,
-          "received": 65058,
-          "pick": 517,
-          "miss": 1402,
+          "matches": 148,
+          "kills": 499,
+          "deaths": 492,
+          "dealt": 78486,
+          "received": 65244,
+          "pick": 520,
+          "miss": 1412,
           "accuracy": 13.6,
           "qualified": true
         },
@@ -4769,13 +4769,13 @@
         },
         {
           "player": "CoLD",
-          "matches": 31,
-          "kills": 120,
-          "deaths": 99,
-          "dealt": 16560,
-          "received": 14838,
-          "pick": 115,
-          "miss": 378,
+          "matches": 32,
+          "kills": 123,
+          "deaths": 103,
+          "dealt": 16884,
+          "received": 15444,
+          "pick": 117,
+          "miss": 389,
           "accuracy": 13.2,
           "qualified": true
         },
@@ -4817,13 +4817,13 @@
         },
         {
           "player": "cne",
-          "matches": 66,
-          "kills": 155,
-          "deaths": 188,
-          "dealt": 21528,
-          "received": 27636,
-          "pick": 127,
-          "miss": 806,
+          "matches": 67,
+          "kills": 158,
+          "deaths": 189,
+          "dealt": 21846,
+          "received": 27858,
+          "pick": 130,
+          "miss": 816,
           "accuracy": 13.0,
           "qualified": true
         },
