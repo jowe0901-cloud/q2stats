@@ -928,6 +928,18 @@
           "qualified": true
         },
         {
+          "player": "gart",
+          "matches": 39,
+          "kills": 338,
+          "deaths": 303,
+          "dealt": 67000,
+          "received": 58300,
+          "pick": 223,
+          "miss": 361,
+          "accuracy": 31.2,
+          "qualified": true
+        },
+        {
           "player": "Puma!",
           "matches": 38,
           "kills": 310,
@@ -937,18 +949,6 @@
           "pick": 161,
           "miss": 414,
           "accuracy": 31.1,
-          "qualified": true
-        },
-        {
-          "player": "gart",
-          "matches": 38,
-          "kills": 332,
-          "deaths": 303,
-          "dealt": 65400,
-          "received": 58200,
-          "pick": 221,
-          "miss": 359,
-          "accuracy": 30.9,
           "qualified": true
         },
         {
@@ -1193,14 +1193,14 @@
         },
         {
           "player": "B100D",
-          "matches": 90,
+          "matches": 91,
           "kills": 354,
-          "deaths": 338,
-          "dealt": 73100,
-          "received": 59900,
-          "pick": 321,
-          "miss": 527,
-          "accuracy": 28.0,
+          "deaths": 344,
+          "dealt": 73200,
+          "received": 61500,
+          "pick": 323,
+          "miss": 529,
+          "accuracy": 28.2,
           "qualified": true
         },
         {
@@ -3190,18 +3190,6 @@
           "qualified": true
         },
         {
-          "player": "B100D",
-          "matches": 91,
-          "kills": 171,
-          "deaths": 177,
-          "dealt": 44350,
-          "received": 54809,
-          "pick": 360,
-          "miss": 1030,
-          "accuracy": 18.2,
-          "qualified": true
-        },
-        {
           "player": "fff",
           "matches": 5,
           "kills": 6,
@@ -3223,6 +3211,18 @@
           "pick": 169,
           "miss": 149,
           "accuracy": 18.1,
+          "qualified": true
+        },
+        {
+          "player": "B100D",
+          "matches": 92,
+          "kills": 171,
+          "deaths": 177,
+          "dealt": 44350,
+          "received": 54809,
+          "pick": 364,
+          "miss": 1032,
+          "accuracy": 18.0,
           "qualified": true
         },
         {
@@ -3550,18 +3550,6 @@
           "qualified": false
         },
         {
-          "player": "gart",
-          "matches": 38,
-          "kills": 38,
-          "deaths": 138,
-          "dealt": 11367,
-          "received": 33579,
-          "pick": 118,
-          "miss": 461,
-          "accuracy": 15.4,
-          "qualified": true
-        },
-        {
           "player": "TERMINAKOR",
           "matches": 9,
           "kills": 21,
@@ -3619,6 +3607,18 @@
           "pick": 54,
           "miss": 41,
           "accuracy": 15.1,
+          "qualified": true
+        },
+        {
+          "player": "gart",
+          "matches": 39,
+          "kills": 38,
+          "deaths": 138,
+          "dealt": 11367,
+          "received": 33579,
+          "pick": 120,
+          "miss": 465,
+          "accuracy": 15.0,
           "qualified": true
         },
         {
@@ -4325,13 +4325,13 @@
         },
         {
           "player": "gart",
-          "matches": 37,
-          "kills": 90,
+          "matches": 38,
+          "kills": 94,
           "deaths": 128,
-          "dealt": 20844,
-          "received": 22674,
-          "pick": 207,
-          "miss": 366,
+          "dealt": 21402,
+          "received": 23298,
+          "pick": 211,
+          "miss": 370,
           "accuracy": 15.1,
           "qualified": true
         },
@@ -5189,13 +5189,13 @@
         },
         {
           "player": "B100D",
-          "matches": 91,
+          "matches": 92,
           "kills": 286,
-          "deaths": 210,
-          "dealt": 46584,
-          "received": 39054,
-          "pick": 336,
-          "miss": 762,
+          "deaths": 214,
+          "dealt": 47208,
+          "received": 39612,
+          "pick": 340,
+          "miss": 766,
           "accuracy": 11.8,
           "qualified": true
         },

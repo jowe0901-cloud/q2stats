@@ -278434,5 +278434,178 @@
       }
     ],
     "saved_at": "2026-09-29T00:41:37+02:00"
+  },
+  {
+    "match_id": "6b1bbc647c51cd54",
+    "game_type": "1v1",
+    "hostname": "PacketFlinger.com ~ OpenTDM ~ Germany #3",
+    "mapname": "q2rdm2",
+    "match_type": "Duel",
+    "port": 27910,
+    "winner": "Home",
+    "home_score": 10,
+    "away_score": 1,
+    "players": [
+      {
+        "name": "B100D",
+        "kills": 1,
+        "deaths": 10,
+        "suicides": 0,
+        "teamkills": 0,
+        "teleports": 0,
+        "damage": 940,
+        "damage_received": 2158,
+        "team_damage": 0,
+        "team_damage_received": 0,
+        "weapons": {
+          "Super Shotgun": {
+            "accuracy": 100,
+            "kills": 1,
+            "deaths": null,
+            "dealt": 42,
+            "received": null,
+            "pick": 4,
+            "miss": 1
+          },
+          "Machinegun": {
+            "accuracy": null,
+            "kills": null,
+            "deaths": null,
+            "dealt": null,
+            "received": null,
+            "pick": 1,
+            "miss": 4
+          },
+          "Chaingun": {
+            "accuracy": 15,
+            "kills": 0,
+            "deaths": 4,
+            "dealt": 624,
+            "received": 558,
+            "pick": 4,
+            "miss": 4
+          },
+          "Grenades": {
+            "accuracy": 0,
+            "kills": 0,
+            "deaths": null,
+            "dealt": 0,
+            "received": null,
+            "pick": 0,
+            "miss": 0
+          },
+          "Grenade Launcher": {
+            "accuracy": 29,
+            "kills": 0,
+            "deaths": null,
+            "dealt": 144,
+            "received": null,
+            "pick": 2,
+            "miss": 1
+          },
+          "Rocket Launcher": {
+            "accuracy": 0,
+            "kills": 0,
+            "deaths": null,
+            "dealt": 0,
+            "received": null,
+            "pick": 4,
+            "miss": 2
+          },
+          "Railgun": {
+            "accuracy": 50,
+            "kills": 0,
+            "deaths": 6,
+            "dealt": 100,
+            "received": 1600,
+            "pick": 2,
+            "miss": 2
+          }
+        },
+        "team": "Away",
+        "ping": 39,
+        "player_id": "3",
+        "elo_type": "1v1",
+        "elo_before": 1490,
+        "elo_change": -17.1,
+        "elo_after": 1473
+      },
+      {
+        "name": "gart",
+        "kills": 10,
+        "deaths": 1,
+        "suicides": 0,
+        "teamkills": 0,
+        "teleports": 0,
+        "damage": 2158,
+        "damage_received": 940,
+        "team_damage": 0,
+        "team_damage_received": 0,
+        "weapons": {
+          "Super Shotgun": {
+            "accuracy": null,
+            "kills": null,
+            "deaths": 1,
+            "dealt": null,
+            "received": 42,
+            "pick": 1,
+            "miss": 4
+          },
+          "Machinegun": {
+            "accuracy": null,
+            "kills": null,
+            "deaths": null,
+            "dealt": null,
+            "received": null,
+            "pick": 4,
+            "miss": 1
+          },
+          "Chaingun": {
+            "accuracy": 14,
+            "kills": 4,
+            "deaths": 0,
+            "dealt": 558,
+            "received": 624,
+            "pick": 4,
+            "miss": 4
+          },
+          "Grenade Launcher": {
+            "accuracy": null,
+            "kills": null,
+            "deaths": 0,
+            "dealt": null,
+            "received": 144,
+            "pick": 1,
+            "miss": 2
+          },
+          "Rocket Launcher": {
+            "accuracy": 0,
+            "kills": 0,
+            "deaths": null,
+            "dealt": 0,
+            "received": null,
+            "pick": 2,
+            "miss": 4
+          },
+          "Railgun": {
+            "accuracy": 43,
+            "kills": 6,
+            "deaths": 0,
+            "dealt": 1600,
+            "received": 100,
+            "pick": 2,
+            "miss": 2
+          }
+        },
+        "team": "Home",
+        "ping": 21,
+        "player_id": "1",
+        "elo_type": "1v1",
+        "elo_before": 1466,
+        "elo_change": 17.1,
+        "elo_after": 1483
+      }
+    ],
+    "saved_at": "2026-09-29T13:06:22+02:00"
   }
 ]
