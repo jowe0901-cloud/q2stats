@@ -9,11 +9,11 @@
   },
   {
     "player": "cne",
-    "elo": 1870,
-    "matches": 81,
+    "elo": 1854,
+    "matches": 82,
     "wins": 50,
-    "losses": 31,
-    "winrate": 61.7
+    "losses": 32,
+    "winrate": 61.0
   },
   {
     "player": "warrior",
@@ -89,11 +89,11 @@
   },
   {
     "player": "roon",
-    "elo": 1650,
-    "matches": 24,
-    "wins": 14,
+    "elo": 1666,
+    "matches": 25,
+    "wins": 15,
     "losses": 10,
-    "winrate": 58.3
+    "winrate": 60.0
   },
   {
     "player": "badman",
@@ -208,14 +208,6 @@
     "winrate": 75.0
   },
   {
-    "player": "CoLD",
-    "elo": 1553,
-    "matches": 42,
-    "wins": 22,
-    "losses": 20,
-    "winrate": 52.4
-  },
-  {
     "player": "B100D",
     "elo": 1548,
     "matches": 89,
@@ -246,6 +238,14 @@
     "wins": 5,
     "losses": 1,
     "winrate": 83.3
+  },
+  {
+    "player": "CoLD",
+    "elo": 1537,
+    "matches": 43,
+    "wins": 22,
+    "losses": 21,
+    "winrate": 51.2
   },
   {
     "player": "=PFH=ZYGA",
@@ -1209,10 +1209,10 @@
   },
   {
     "player": "jabb@",
-    "elo": 1057,
-    "matches": 168,
-    "wins": 71,
+    "elo": 1073,
+    "matches": 169,
+    "wins": 72,
     "losses": 97,
-    "winrate": 42.3
+    "winrate": 42.6
   }
 ]
