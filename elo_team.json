@@ -152,20 +152,20 @@
     "winrate": 85.7
   },
   {
-    "player": "B100D",
-    "elo": 1592,
-    "matches": 86,
-    "wins": 46,
-    "losses": 40,
-    "winrate": 53.5
-  },
-  {
     "player": ">daweed",
     "elo": 1579,
     "matches": 8,
     "wins": 7,
     "losses": 1,
     "winrate": 87.5
+  },
+  {
+    "player": "B100D",
+    "elo": 1576,
+    "matches": 87,
+    "wins": 46,
+    "losses": 41,
+    "winrate": 52.9
   },
   {
     "player": ">OPTIMIZER",
@@ -190,6 +190,14 @@
     "wins": 4,
     "losses": 0,
     "winrate": 100.0
+  },
+  {
+    "player": "ping80",
+    "elo": 1558,
+    "matches": 22,
+    "wins": 11,
+    "losses": 11,
+    "winrate": 50.0
   },
   {
     "player": "ZYGA",
@@ -222,14 +230,6 @@
     "wins": 5,
     "losses": 1,
     "winrate": 83.3
-  },
-  {
-    "player": "ping80",
-    "elo": 1542,
-    "matches": 21,
-    "wins": 10,
-    "losses": 11,
-    "winrate": 47.6
   },
   {
     "player": "OPTIMIZER",
@@ -816,6 +816,14 @@
     "winrate": 25.0
   },
   {
+    "player": "freeze",
+    "elo": 1480,
+    "matches": 9,
+    "wins": 4,
+    "losses": 5,
+    "winrate": 44.4
+  },
+  {
     "player": "[ds]ads",
     "elo": 1480,
     "matches": 14,
@@ -926,14 +934,6 @@
     "wins": 13,
     "losses": 17,
     "winrate": 43.3
-  },
-  {
-    "player": "freeze",
-    "elo": 1469,
-    "matches": 8,
-    "wins": 3,
-    "losses": 5,
-    "winrate": 37.5
   },
   {
     "player": "[PK]Intruder",
