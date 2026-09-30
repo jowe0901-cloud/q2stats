@@ -36192,5 +36192,71 @@
       }
     ],
     "saved_at": "2026-09-30T21:58:18+02:00"
+  },
+  {
+    "match_id": "c983fbf031f22ac8",
+    "game_type": "team",
+    "winner": "Away",
+    "home_score": 47,
+    "away_score": 89,
+    "players": [
+      {
+        "player": "qw",
+        "team": "Home",
+        "old_elo": 1744,
+        "change": -2.6,
+        "new_elo": 1741
+      },
+      {
+        "player": "jabb@",
+        "team": "Home",
+        "old_elo": 1203,
+        "change": -14.9,
+        "new_elo": 1188
+      },
+      {
+        "player": "Puma!",
+        "team": "Home",
+        "old_elo": 1430,
+        "change": -12.1,
+        "new_elo": 1418
+      },
+      {
+        "player": "TERMINAKOR",
+        "team": "Home",
+        "old_elo": 1359,
+        "change": -16,
+        "new_elo": 1343
+      },
+      {
+        "player": "z0diac",
+        "team": "Away",
+        "old_elo": 1502,
+        "change": 5.2,
+        "new_elo": 1507
+      },
+      {
+        "player": "Maniek",
+        "team": "Away",
+        "old_elo": 1376,
+        "change": 11.9,
+        "new_elo": 1388
+      },
+      {
+        "player": "fon",
+        "team": "Away",
+        "old_elo": 1649,
+        "change": 16,
+        "new_elo": 1665
+      },
+      {
+        "player": "Br00m^^",
+        "team": "Away",
+        "old_elo": 1480,
+        "change": 15.7,
+        "new_elo": 1496
+      }
+    ],
+    "saved_at": "2026-09-30T22:01:46+02:00"
   }
 ]
