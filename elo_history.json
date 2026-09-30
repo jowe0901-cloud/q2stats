@@ -35662,5 +35662,43 @@
       }
     ],
     "saved_at": "2026-09-30T19:54:41+02:00"
+  },
+  {
+    "match_id": "365c5fd42cc236e8",
+    "game_type": "team",
+    "winner": "Home",
+    "home_score": 29,
+    "away_score": 24,
+    "players": [
+      {
+        "player": "yin",
+        "team": "Home",
+        "old_elo": 1479,
+        "change": 9.1,
+        "new_elo": 1488
+      },
+      {
+        "player": "jabb@",
+        "team": "Home",
+        "old_elo": 1159,
+        "change": 16,
+        "new_elo": 1175
+      },
+      {
+        "player": "damz.",
+        "team": "Away",
+        "old_elo": 1147,
+        "change": -16,
+        "new_elo": 1131
+      },
+      {
+        "player": "CoLD",
+        "team": "Away",
+        "old_elo": 1544,
+        "change": -9.2,
+        "new_elo": 1534
+      }
+    ],
+    "saved_at": "2026-09-30T20:08:55+02:00"
   }
 ]
