@@ -120,14 +120,6 @@
     "winrate": 100.0
   },
   {
-    "player": "GipSy",
-    "elo": 1565,
-    "matches": 47,
-    "wins": 27,
-    "losses": 20,
-    "winrate": 57.4
-  },
-  {
     "player": "piu-wiu",
     "elo": 1557,
     "matches": 9,
@@ -182,6 +174,14 @@
     "wins": 15,
     "losses": 7,
     "winrate": 68.2
+  },
+  {
+    "player": "GipSy",
+    "elo": 1543,
+    "matches": 48,
+    "wins": 27,
+    "losses": 21,
+    "winrate": 56.2
   },
   {
     "player": "piu-relax",
@@ -624,6 +624,14 @@
     "winrate": 29.4
   },
   {
+    "player": "B100D",
+    "elo": 1436,
+    "matches": 52,
+    "wins": 26,
+    "losses": 26,
+    "winrate": 50.0
+  },
+  {
     "player": "r",
     "elo": 1431,
     "matches": 5,
@@ -686,14 +694,6 @@
     "wins": 0,
     "losses": 7,
     "winrate": 0.0
-  },
-  {
-    "player": "B100D",
-    "elo": 1414,
-    "matches": 51,
-    "wins": 25,
-    "losses": 26,
-    "winrate": 49.0
   },
   {
     "player": "error",
