@@ -9,11 +9,11 @@
   },
   {
     "player": "cne",
-    "elo": 1856,
-    "matches": 84,
+    "elo": 1840,
+    "matches": 85,
     "wins": 50,
-    "losses": 34,
-    "winrate": 59.5
+    "losses": 35,
+    "winrate": 58.8
   },
   {
     "player": "warrior",
@@ -41,11 +41,11 @@
   },
   {
     "player": "rul",
-    "elo": 1773,
-    "matches": 87,
-    "wins": 48,
+    "elo": 1780,
+    "matches": 88,
+    "wins": 49,
     "losses": 39,
-    "winrate": 55.2
+    "winrate": 55.7
   },
   {
     "player": "qw",
@@ -80,20 +80,20 @@
     "winrate": 60.5
   },
   {
+    "player": "asd_krzys",
+    "elo": 1677,
+    "matches": 77,
+    "wins": 42,
+    "losses": 35,
+    "winrate": 54.5
+  },
+  {
     "player": "fon",
     "elo": 1665,
     "matches": 68,
     "wins": 39,
     "losses": 29,
     "winrate": 57.4
-  },
-  {
-    "player": "asd_krzys",
-    "elo": 1661,
-    "matches": 76,
-    "wins": 41,
-    "losses": 35,
-    "winrate": 53.9
   },
   {
     "player": "roon",
@@ -168,14 +168,6 @@
     "winrate": 100.0
   },
   {
-    "player": "badman",
-    "elo": 1568,
-    "matches": 101,
-    "wins": 45,
-    "losses": 56,
-    "winrate": 44.6
-  },
-  {
     "player": ">purri",
     "elo": 1568,
     "matches": 5,
@@ -190,6 +182,14 @@
     "wins": 6,
     "losses": 2,
     "winrate": 75.0
+  },
+  {
+    "player": "badman",
+    "elo": 1564,
+    "matches": 102,
+    "wins": 45,
+    "losses": 57,
+    "winrate": 44.1
   },
   {
     "player": "daweed",
