@@ -35600,5 +35600,29 @@
       }
     ],
     "saved_at": "2026-09-30T19:14:57+02:00"
+  },
+  {
+    "match_id": "e177889ec43194dc",
+    "game_type": "1v1",
+    "winner": "Home",
+    "home_score": 21,
+    "away_score": 2,
+    "players": [
+      {
+        "player": "maq",
+        "team": "Home",
+        "old_elo": 1641,
+        "change": 9.3,
+        "new_elo": 1651
+      },
+      {
+        "player": "Qiub",
+        "team": "Away",
+        "old_elo": 1486,
+        "change": -9.3,
+        "new_elo": 1477
+      }
+    ],
+    "saved_at": "2026-09-30T19:25:24+02:00"
   }
 ]
