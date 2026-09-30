@@ -32,20 +32,20 @@
     "winrate": 60.3
   },
   {
+    "player": "rul",
+    "elo": 1798,
+    "matches": 90,
+    "wins": 51,
+    "losses": 39,
+    "winrate": 56.7
+  },
+  {
     "player": "GipSy",
     "elo": 1789,
     "matches": 104,
     "wins": 58,
     "losses": 46,
     "winrate": 55.8
-  },
-  {
-    "player": "rul",
-    "elo": 1782,
-    "matches": 89,
-    "wins": 50,
-    "losses": 39,
-    "winrate": 56.2
   },
   {
     "player": "qw",
@@ -65,11 +65,11 @@
   },
   {
     "player": "asd_krzys",
-    "elo": 1693,
-    "matches": 78,
-    "wins": 43,
+    "elo": 1697,
+    "matches": 79,
+    "wins": 44,
     "losses": 35,
-    "winrate": 55.1
+    "winrate": 55.7
   },
   {
     "player": "[sf]fasadin",
@@ -192,14 +192,6 @@
     "winrate": 100.0
   },
   {
-    "player": "badman",
-    "elo": 1560,
-    "matches": 103,
-    "wins": 45,
-    "losses": 58,
-    "winrate": 43.7
-  },
-  {
     "player": "B100D",
     "elo": 1557,
     "matches": 94,
@@ -230,6 +222,14 @@
     "wins": 42,
     "losses": 25,
     "winrate": 62.7
+  },
+  {
+    "player": "badman",
+    "elo": 1544,
+    "matches": 104,
+    "wins": 45,
+    "losses": 59,
+    "winrate": 43.3
   },
   {
     "player": "OPTIMIZER",
