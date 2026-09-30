@@ -365,13 +365,13 @@
         },
         {
           "player": "roon",
-          "matches": 34,
-          "kills": 333,
-          "deaths": 219,
-          "dealt": 54000,
-          "received": 40500,
-          "pick": 150,
-          "miss": 394,
+          "matches": 35,
+          "kills": 342,
+          "deaths": 234,
+          "dealt": 55200,
+          "received": 42700,
+          "pick": 153,
+          "miss": 409,
           "accuracy": 37.7,
           "qualified": true
         },
@@ -785,13 +785,13 @@
         },
         {
           "player": "fon",
-          "matches": 56,
-          "kills": 518,
-          "deaths": 408,
-          "dealt": 80000,
-          "received": 60400,
-          "pick": 200,
-          "miss": 674,
+          "matches": 57,
+          "kills": 520,
+          "deaths": 413,
+          "dealt": 80700,
+          "received": 61200,
+          "pick": 202,
+          "miss": 690,
           "accuracy": 33.4,
           "qualified": true
         },
@@ -904,6 +904,18 @@
           "qualified": true
         },
         {
+          "player": "The General",
+          "matches": 2,
+          "kills": 11,
+          "deaths": 11,
+          "dealt": 1700,
+          "received": 1500,
+          "pick": 6,
+          "miss": 27,
+          "accuracy": 32.0,
+          "qualified": false
+        },
+        {
           "player": "kostjq",
           "matches": 1,
           "kills": 5,
@@ -989,13 +1001,13 @@
         },
         {
           "player": "jabb@",
-          "matches": 157,
-          "kills": 435,
-          "deaths": 1038,
-          "dealt": 74800,
-          "received": 166500,
-          "pick": 339,
-          "miss": 1523,
+          "matches": 158,
+          "kills": 439,
+          "deaths": 1043,
+          "dealt": 75400,
+          "received": 167700,
+          "pick": 342,
+          "miss": 1538,
           "accuracy": 30.5,
           "qualified": true
         },
@@ -1252,6 +1264,18 @@
           "qualified": false
         },
         {
+          "player": "CoLD",
+          "matches": 37,
+          "kills": 232,
+          "deaths": 269,
+          "dealt": 41600,
+          "received": 44100,
+          "pick": 154,
+          "miss": 443,
+          "accuracy": 27.8,
+          "qualified": true
+        },
+        {
           "player": "senz",
           "matches": 22,
           "kills": 62,
@@ -1288,27 +1312,15 @@
           "qualified": true
         },
         {
-          "player": "CoLD",
-          "matches": 36,
-          "kills": 223,
-          "deaths": 262,
-          "dealt": 40000,
-          "received": 43000,
-          "pick": 150,
-          "miss": 429,
-          "accuracy": 27.3,
-          "qualified": true
-        },
-        {
           "player": "KaPo",
-          "matches": 12,
-          "kills": 54,
-          "deaths": 77,
-          "dealt": 8400,
-          "received": 11200,
+          "matches": 13,
+          "kills": 56,
+          "deaths": 85,
+          "dealt": 8900,
+          "received": 12400,
           "pick": 17,
-          "miss": 182,
-          "accuracy": 27.2,
+          "miss": 200,
+          "accuracy": 27.3,
           "qualified": true
         },
         {
@@ -1430,18 +1442,6 @@
           "miss": 140,
           "accuracy": 26.1,
           "qualified": true
-        },
-        {
-          "player": "The General",
-          "matches": 1,
-          "kills": 5,
-          "deaths": 8,
-          "dealt": 700,
-          "received": 1000,
-          "pick": 4,
-          "miss": 11,
-          "accuracy": 26.0,
-          "qualified": false
         },
         {
           "player": "GIB@N",
@@ -1781,14 +1781,14 @@
         },
         {
           "player": "VITALIS",
-          "matches": 61,
-          "kills": 121,
-          "deaths": 283,
-          "dealt": 18300,
-          "received": 40600,
-          "pick": 62,
-          "miss": 751,
-          "accuracy": 19.1,
+          "matches": 62,
+          "kills": 125,
+          "deaths": 285,
+          "dealt": 18700,
+          "received": 40900,
+          "pick": 63,
+          "miss": 768,
+          "accuracy": 19.2,
           "qualified": true
         },
         {
@@ -2278,16 +2278,16 @@
           "qualified": false
         },
         {
-          "player": "The General",
-          "matches": 1,
-          "kills": 2,
-          "deaths": 3,
-          "dealt": 471,
-          "received": 441,
-          "pick": 4,
-          "miss": 23,
-          "accuracy": 28.0,
-          "qualified": false
+          "player": "roon",
+          "matches": 35,
+          "kills": 155,
+          "deaths": 119,
+          "dealt": 30153,
+          "received": 27119,
+          "pick": 151,
+          "miss": 543,
+          "accuracy": 27.0,
+          "qualified": true
         },
         {
           "player": "lameratorix",
@@ -2302,18 +2302,6 @@
           "qualified": false
         },
         {
-          "player": "fon",
-          "matches": 56,
-          "kills": 174,
-          "deaths": 186,
-          "dealt": 29925,
-          "received": 36846,
-          "pick": 204,
-          "miss": 1146,
-          "accuracy": 26.9,
-          "qualified": true
-        },
-        {
           "player": "faint",
           "matches": 15,
           "kills": 47,
@@ -2326,6 +2314,18 @@
           "qualified": true
         },
         {
+          "player": "fon",
+          "matches": 57,
+          "kills": 177,
+          "deaths": 191,
+          "dealt": 30286,
+          "received": 37547,
+          "pick": 207,
+          "miss": 1172,
+          "accuracy": 26.8,
+          "qualified": true
+        },
+        {
           "player": "David",
           "matches": 17,
           "kills": 91,
@@ -2335,18 +2335,6 @@
           "pick": 87,
           "miss": 169,
           "accuracy": 26.8,
-          "qualified": true
-        },
-        {
-          "player": "roon",
-          "matches": 34,
-          "kills": 152,
-          "deaths": 112,
-          "dealt": 29501,
-          "received": 26116,
-          "pick": 150,
-          "miss": 515,
-          "accuracy": 26.6,
           "qualified": true
         },
         {
@@ -2566,18 +2554,6 @@
           "qualified": false
         },
         {
-          "player": "VITALIS",
-          "matches": 62,
-          "kills": 276,
-          "deaths": 194,
-          "dealt": 52051,
-          "received": 40279,
-          "pick": 272,
-          "miss": 1286,
-          "accuracy": 23.5,
-          "qualified": true
-        },
-        {
           "player": "kreg",
           "matches": 2,
           "kills": 10,
@@ -2600,6 +2576,18 @@
           "miss": 19,
           "accuracy": 23.5,
           "qualified": false
+        },
+        {
+          "player": "VITALIS",
+          "matches": 63,
+          "kills": 279,
+          "deaths": 199,
+          "dealt": 52483,
+          "received": 41163,
+          "pick": 276,
+          "miss": 1311,
+          "accuracy": 23.4,
+          "qualified": true
         },
         {
           "player": "shNoodle",
@@ -2626,6 +2614,18 @@
           "qualified": true
         },
         {
+          "player": "jabb@",
+          "matches": 160,
+          "kills": 606,
+          "deaths": 706,
+          "dealt": 124736,
+          "received": 153422,
+          "pick": 794,
+          "miss": 2369,
+          "accuracy": 23.1,
+          "qualified": true
+        },
+        {
           "player": "insomnia",
           "matches": 7,
           "kills": 33,
@@ -2647,18 +2647,6 @@
           "pick": 28,
           "miss": 167,
           "accuracy": 23.1,
-          "qualified": true
-        },
-        {
-          "player": "jabb@",
-          "matches": 159,
-          "kills": 598,
-          "deaths": 698,
-          "dealt": 123406,
-          "received": 152333,
-          "pick": 788,
-          "miss": 2346,
-          "accuracy": 23.0,
           "qualified": true
         },
         {
@@ -2806,16 +2794,16 @@
           "qualified": true
         },
         {
-          "player": "KaPo",
-          "matches": 12,
-          "kills": 70,
-          "deaths": 36,
-          "dealt": 10214,
-          "received": 7960,
-          "pick": 45,
-          "miss": 244,
+          "player": "The General",
+          "matches": 2,
+          "kills": 6,
+          "deaths": 9,
+          "dealt": 862,
+          "received": 1368,
+          "pick": 7,
+          "miss": 49,
           "accuracy": 21.5,
-          "qualified": true
+          "qualified": false
         },
         {
           "player": "piu-chill",
@@ -2923,6 +2911,18 @@
           "pick": 306,
           "miss": 712,
           "accuracy": 20.9,
+          "qualified": true
+        },
+        {
+          "player": "KaPo",
+          "matches": 13,
+          "kills": 72,
+          "deaths": 37,
+          "dealt": 10586,
+          "received": 8262,
+          "pick": 48,
+          "miss": 270,
+          "accuracy": 20.8,
           "qualified": true
         },
         {
@@ -3130,6 +3130,18 @@
           "qualified": false
         },
         {
+          "player": "CoLD",
+          "matches": 37,
+          "kills": 123,
+          "deaths": 174,
+          "dealt": 21524,
+          "received": 34318,
+          "pick": 119,
+          "miss": 772,
+          "accuracy": 19.4,
+          "qualified": true
+        },
+        {
           "player": "SUPER-LAG",
           "matches": 70,
           "kills": 281,
@@ -3151,18 +3163,6 @@
           "pick": 66,
           "miss": 69,
           "accuracy": 19.3,
-          "qualified": true
-        },
-        {
-          "player": "CoLD",
-          "matches": 36,
-          "kills": 116,
-          "deaths": 167,
-          "dealt": 20501,
-          "received": 33203,
-          "pick": 116,
-          "miss": 746,
-          "accuracy": 19.0,
           "qualified": true
         },
         {
@@ -4600,6 +4600,18 @@
           "qualified": true
         },
         {
+          "player": "roon",
+          "matches": 34,
+          "kills": 129,
+          "deaths": 97,
+          "dealt": 19014,
+          "received": 16836,
+          "pick": 136,
+          "miss": 404,
+          "accuracy": 14.6,
+          "qualified": true
+        },
+        {
           "player": "maq",
           "matches": 74,
           "kills": 218,
@@ -4609,18 +4621,6 @@
           "pick": 216,
           "miss": 757,
           "accuracy": 14.5,
-          "qualified": true
-        },
-        {
-          "player": "roon",
-          "matches": 33,
-          "kills": 121,
-          "deaths": 97,
-          "dealt": 18114,
-          "received": 16524,
-          "pick": 133,
-          "miss": 388,
-          "accuracy": 14.4,
           "qualified": true
         },
         {
@@ -4684,18 +4684,6 @@
           "qualified": false
         },
         {
-          "player": "The General",
-          "matches": 1,
-          "kills": 0,
-          "deaths": 2,
-          "dealt": 168,
-          "received": 258,
-          "pick": 1,
-          "miss": 15,
-          "accuracy": 14.0,
-          "qualified": false
-        },
-        {
           "player": "michaq",
           "matches": 41,
           "kills": 130,
@@ -4705,6 +4693,18 @@
           "pick": 152,
           "miss": 456,
           "accuracy": 13.9,
+          "qualified": true
+        },
+        {
+          "player": "fon",
+          "matches": 57,
+          "kills": 128,
+          "deaths": 136,
+          "dealt": 18360,
+          "received": 21822,
+          "pick": 95,
+          "miss": 765,
+          "accuracy": 13.7,
           "qualified": true
         },
         {
@@ -4769,13 +4769,25 @@
         },
         {
           "player": "jabb@",
-          "matches": 159,
-          "kills": 539,
-          "deaths": 523,
-          "dealt": 85074,
-          "received": 69528,
-          "pick": 558,
-          "miss": 1520,
+          "matches": 160,
+          "kills": 544,
+          "deaths": 524,
+          "dealt": 85800,
+          "received": 69618,
+          "pick": 563,
+          "miss": 1534,
+          "accuracy": 13.5,
+          "qualified": true
+        },
+        {
+          "player": "CoLD",
+          "matches": 37,
+          "kills": 143,
+          "deaths": 123,
+          "dealt": 19500,
+          "received": 18036,
+          "pick": 138,
+          "miss": 447,
           "accuracy": 13.5,
           "qualified": true
         },
@@ -4788,18 +4800,6 @@
           "received": 17076,
           "pick": 105,
           "miss": 511,
-          "accuracy": 13.5,
-          "qualified": true
-        },
-        {
-          "player": "fon",
-          "matches": 56,
-          "kills": 126,
-          "deaths": 129,
-          "dealt": 17922,
-          "received": 21150,
-          "pick": 93,
-          "miss": 748,
           "accuracy": 13.5,
           "qualified": true
         },
@@ -4850,18 +4850,6 @@
           "miss": 23,
           "accuracy": 13.5,
           "qualified": false
-        },
-        {
-          "player": "CoLD",
-          "matches": 36,
-          "kills": 140,
-          "deaths": 121,
-          "dealt": 19032,
-          "received": 17700,
-          "pick": 134,
-          "miss": 432,
-          "accuracy": 13.4,
-          "qualified": true
         },
         {
           "player": "nem",
@@ -5560,6 +5548,18 @@
           "qualified": false
         },
         {
+          "player": "The General",
+          "matches": 2,
+          "kills": 1,
+          "deaths": 5,
+          "dealt": 288,
+          "received": 564,
+          "pick": 4,
+          "miss": 31,
+          "accuracy": 11.5,
+          "qualified": false
+        },
+        {
           "player": "Qiub",
           "matches": 19,
           "kills": 14,
@@ -5765,14 +5765,14 @@
         },
         {
           "player": "KaPo",
-          "matches": 11,
-          "kills": 38,
-          "deaths": 29,
-          "dealt": 4374,
-          "received": 3840,
-          "pick": 29,
-          "miss": 168,
-          "accuracy": 10.6,
+          "matches": 12,
+          "kills": 39,
+          "deaths": 32,
+          "dealt": 4518,
+          "received": 4374,
+          "pick": 30,
+          "miss": 186,
+          "accuracy": 10.5,
           "qualified": true
         },
         {
@@ -5897,13 +5897,13 @@
         },
         {
           "player": "VITALIS",
-          "matches": 61,
+          "matches": 62,
           "kills": 72,
-          "deaths": 132,
+          "deaths": 137,
           "dealt": 11136,
-          "received": 19920,
+          "received": 20556,
           "pick": 101,
-          "miss": 751,
+          "miss": 770,
           "accuracy": 9.2,
           "qualified": true
         },
