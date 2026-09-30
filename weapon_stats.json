@@ -976,6 +976,18 @@
           "qualified": true
         },
         {
+          "player": "need1",
+          "matches": 57,
+          "kills": 240,
+          "deaths": 268,
+          "dealt": 37900,
+          "received": 47300,
+          "pick": 121,
+          "miss": 604,
+          "accuracy": 30.5,
+          "qualified": true
+        },
+        {
           "player": "[HC]Reni^",
           "matches": 14,
           "kills": 36,
@@ -1008,18 +1020,6 @@
           "received": 33800,
           "pick": 164,
           "miss": 447,
-          "accuracy": 30.4,
-          "qualified": true
-        },
-        {
-          "player": "need1",
-          "matches": 56,
-          "kills": 236,
-          "deaths": 268,
-          "dealt": 37000,
-          "received": 47300,
-          "pick": 119,
-          "miss": 593,
           "accuracy": 30.4,
           "qualified": true
         },
@@ -1216,18 +1216,6 @@
           "qualified": true
         },
         {
-          "player": "B100D",
-          "matches": 115,
-          "kills": 408,
-          "deaths": 451,
-          "dealt": 85100,
-          "received": 81600,
-          "pick": 386,
-          "miss": 662,
-          "accuracy": 28.1,
-          "qualified": true
-        },
-        {
           "player": "SUPER-LAG+DRUNK",
           "matches": 2,
           "kills": 13,
@@ -1238,6 +1226,18 @@
           "miss": 27,
           "accuracy": 28.0,
           "qualified": false
+        },
+        {
+          "player": "B100D",
+          "matches": 116,
+          "kills": 408,
+          "deaths": 455,
+          "dealt": 85100,
+          "received": 82500,
+          "pick": 389,
+          "miss": 672,
+          "accuracy": 27.8,
+          "qualified": true
         },
         {
           "player": "senz",
@@ -2554,18 +2554,6 @@
           "qualified": false
         },
         {
-          "player": "need1",
-          "matches": 58,
-          "kills": 250,
-          "deaths": 183,
-          "dealt": 52007,
-          "received": 46976,
-          "pick": 297,
-          "miss": 926,
-          "accuracy": 23.3,
-          "qualified": true
-        },
-        {
           "player": "shNoodle",
           "matches": 16,
           "kills": 57,
@@ -2611,6 +2599,18 @@
           "pick": 28,
           "miss": 167,
           "accuracy": 23.1,
+          "qualified": true
+        },
+        {
+          "player": "need1",
+          "matches": 59,
+          "kills": 251,
+          "deaths": 183,
+          "dealt": 52284,
+          "received": 47229,
+          "pick": 300,
+          "miss": 937,
+          "accuracy": 23.0,
           "qualified": true
         },
         {
@@ -3263,13 +3263,13 @@
         },
         {
           "player": "B100D",
-          "matches": 116,
+          "matches": 117,
           "kills": 208,
-          "deaths": 242,
-          "dealt": 55038,
-          "received": 69110,
-          "pick": 447,
-          "miss": 1213,
+          "deaths": 243,
+          "dealt": 55291,
+          "received": 69420,
+          "pick": 449,
+          "miss": 1225,
           "accuracy": 18.1,
           "qualified": true
         },
@@ -5081,14 +5081,14 @@
         },
         {
           "player": "need1",
-          "matches": 57,
-          "kills": 88,
+          "matches": 58,
+          "kills": 92,
           "deaths": 124,
-          "dealt": 15366,
-          "received": 21672,
-          "pick": 126,
-          "miss": 634,
-          "accuracy": 12.6,
+          "dealt": 15642,
+          "received": 21846,
+          "pick": 129,
+          "miss": 646,
+          "accuracy": 12.5,
           "qualified": true
         },
         {
@@ -5332,18 +5332,6 @@
           "qualified": true
         },
         {
-          "player": "B100D",
-          "matches": 116,
-          "kills": 336,
-          "deaths": 271,
-          "dealt": 57072,
-          "received": 50094,
-          "pick": 449,
-          "miss": 916,
-          "accuracy": 11.8,
-          "qualified": true
-        },
-        {
           "player": "sevvq",
           "matches": 27,
           "kills": 25,
@@ -5378,6 +5366,18 @@
           "miss": 55,
           "accuracy": 11.8,
           "qualified": false
+        },
+        {
+          "player": "B100D",
+          "matches": 117,
+          "kills": 336,
+          "deaths": 275,
+          "dealt": 57246,
+          "received": 50370,
+          "pick": 452,
+          "miss": 928,
+          "accuracy": 11.7,
+          "qualified": true
         },
         {
           "player": "senz",

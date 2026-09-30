@@ -128,6 +128,14 @@
     "winrate": 88.9
   },
   {
+    "player": "need1",
+    "elo": 1556,
+    "matches": 6,
+    "wins": 5,
+    "losses": 1,
+    "winrate": 83.3
+  },
+  {
     "player": "m",
     "elo": 1555,
     "matches": 4,
@@ -142,14 +150,6 @@
     "wins": 7,
     "losses": 2,
     "winrate": 77.8
-  },
-  {
-    "player": "need1",
-    "elo": 1546,
-    "matches": 5,
-    "wins": 4,
-    "losses": 1,
-    "winrate": 80.0
   },
   {
     "player": "Logic",
@@ -697,11 +697,11 @@
   },
   {
     "player": "B100D",
-    "elo": 1411,
-    "matches": 54,
+    "elo": 1401,
+    "matches": 55,
     "wins": 26,
-    "losses": 28,
-    "winrate": 48.1
+    "losses": 29,
+    "winrate": 47.3
   },
   {
     "player": "error",
