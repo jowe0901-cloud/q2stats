@@ -49,11 +49,11 @@
   },
   {
     "player": "qw",
-    "elo": 1781,
-    "matches": 175,
-    "wins": 85,
+    "elo": 1786,
+    "matches": 176,
+    "wins": 86,
     "losses": 90,
-    "winrate": 48.6
+    "winrate": 48.9
   },
   {
     "player": "Keizer",
@@ -225,11 +225,11 @@
   },
   {
     "player": "r",
-    "elo": 1548,
-    "matches": 72,
+    "elo": 1550,
+    "matches": 73,
     "wins": 45,
-    "losses": 27,
-    "winrate": 62.5
+    "losses": 28,
+    "winrate": 61.6
   },
   {
     "player": "OPTIMIZER",
@@ -488,6 +488,14 @@
     "winrate": 50.0
   },
   {
+    "player": "m",
+    "elo": 1507,
+    "matches": 48,
+    "wins": 22,
+    "losses": 26,
+    "winrate": 45.8
+  },
+  {
     "player": ".pM.tfa",
     "elo": 1507,
     "matches": 1,
@@ -720,14 +728,6 @@
     "winrate": 50.0
   },
   {
-    "player": "m",
-    "elo": 1494,
-    "matches": 47,
-    "wins": 21,
-    "losses": 26,
-    "winrate": 44.7
-  },
-  {
     "player": "sase",
     "elo": 1493,
     "matches": 3,
@@ -742,14 +742,6 @@
     "wins": 6,
     "losses": 2,
     "winrate": 75.0
-  },
-  {
-    "player": "z0diac",
-    "elo": 1492,
-    "matches": 36,
-    "wins": 17,
-    "losses": 19,
-    "winrate": 47.2
   },
   {
     "player": "kurwa_ping80",
@@ -774,14 +766,6 @@
     "wins": 3,
     "losses": 4,
     "winrate": 42.9
-  },
-  {
-    "player": "tewls",
-    "elo": 1485,
-    "matches": 6,
-    "wins": 2,
-    "losses": 4,
-    "winrate": 33.3
   },
   {
     "player": "[G2H]DEMON",
@@ -904,6 +888,14 @@
     "winrate": 40.0
   },
   {
+    "player": "z0diac",
+    "elo": 1476,
+    "matches": 37,
+    "wins": 17,
+    "losses": 20,
+    "winrate": 45.9
+  },
+  {
     "player": "TIM",
     "elo": 1475,
     "matches": 13,
@@ -958,6 +950,14 @@
     "wins": 7,
     "losses": 10,
     "winrate": 41.2
+  },
+  {
+    "player": "tewls",
+    "elo": 1469,
+    "matches": 7,
+    "wins": 2,
+    "losses": 5,
+    "winrate": 28.6
   },
   {
     "player": "[PK]Intruder",
@@ -1112,20 +1112,20 @@
     "winrate": 0.0
   },
   {
+    "player": "tron",
+    "elo": 1439,
+    "matches": 46,
+    "wins": 20,
+    "losses": 26,
+    "winrate": 43.5
+  },
+  {
     "player": "shotman",
     "elo": 1437,
     "matches": 7,
     "wins": 1,
     "losses": 6,
     "winrate": 14.3
-  },
-  {
-    "player": "tron",
-    "elo": 1426,
-    "matches": 45,
-    "wins": 19,
-    "losses": 26,
-    "winrate": 42.2
   },
   {
     "player": "[sf]T3RM!N4ToR",
