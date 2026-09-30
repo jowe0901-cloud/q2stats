@@ -25,11 +25,19 @@
   },
   {
     "player": "rul",
-    "elo": 1817,
-    "matches": 84,
+    "elo": 1805,
+    "matches": 85,
     "wins": 48,
-    "losses": 36,
-    "winrate": 57.1
+    "losses": 37,
+    "winrate": 56.5
+  },
+  {
+    "player": "myrmidon^",
+    "elo": 1796,
+    "matches": 71,
+    "wins": 42,
+    "losses": 29,
+    "winrate": 59.2
   },
   {
     "player": "GipSy",
@@ -38,14 +46,6 @@
     "wins": 58,
     "losses": 46,
     "winrate": 55.8
-  },
-  {
-    "player": "myrmidon^",
-    "elo": 1780,
-    "matches": 70,
-    "wins": 41,
-    "losses": 29,
-    "winrate": 58.6
   },
   {
     "player": "qw",
@@ -81,11 +81,11 @@
   },
   {
     "player": "asd_krzys",
-    "elo": 1661,
-    "matches": 73,
-    "wins": 40,
+    "elo": 1673,
+    "matches": 74,
+    "wins": 41,
     "losses": 33,
-    "winrate": 54.8
+    "winrate": 55.4
   },
   {
     "player": "roon",
@@ -184,14 +184,6 @@
     "winrate": 75.0
   },
   {
-    "player": "badman",
-    "elo": 1565,
-    "matches": 98,
-    "wins": 43,
-    "losses": 55,
-    "winrate": 43.9
-  },
-  {
     "player": "daweed",
     "elo": 1564,
     "matches": 4,
@@ -222,6 +214,14 @@
     "wins": 3,
     "losses": 1,
     "winrate": 75.0
+  },
+  {
+    "player": "badman",
+    "elo": 1549,
+    "matches": 99,
+    "wins": 43,
+    "losses": 56,
+    "winrate": 43.4
   },
   {
     "player": "r",
