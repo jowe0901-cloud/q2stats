@@ -264,6 +264,14 @@
     "winrate": 100.0
   },
   {
+    "player": "lameration",
+    "elo": 1525,
+    "matches": 2,
+    "wins": 2,
+    "losses": 0,
+    "winrate": 100.0
+  },
+  {
     "player": "n0sferatu",
     "elo": 1523,
     "matches": 7,
@@ -329,14 +337,6 @@
   },
   {
     "player": "syanid",
-    "elo": 1513,
-    "matches": 1,
-    "wins": 1,
-    "losses": 0,
-    "winrate": 100.0
-  },
-  {
-    "player": "lameration",
     "elo": 1513,
     "matches": 1,
     "wins": 1,
@@ -672,14 +672,6 @@
     "winrate": 23.1
   },
   {
-    "player": "B100D",
-    "elo": 1423,
-    "matches": 53,
-    "wins": 26,
-    "losses": 27,
-    "winrate": 49.1
-  },
-  {
     "player": "Bullz",
     "elo": 1423,
     "matches": 8,
@@ -702,6 +694,14 @@
     "wins": 0,
     "losses": 7,
     "winrate": 0.0
+  },
+  {
+    "player": "B100D",
+    "elo": 1411,
+    "matches": 54,
+    "wins": 26,
+    "losses": 28,
+    "winrate": 48.1
   },
   {
     "player": "error",

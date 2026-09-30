@@ -1217,14 +1217,14 @@
         },
         {
           "player": "B100D",
-          "matches": 114,
+          "matches": 115,
           "kills": 408,
-          "deaths": 446,
-          "dealt": 85000,
-          "received": 80600,
-          "pick": 385,
-          "miss": 661,
-          "accuracy": 28.3,
+          "deaths": 451,
+          "dealt": 85100,
+          "received": 81600,
+          "pick": 386,
+          "miss": 662,
+          "accuracy": 28.1,
           "qualified": true
         },
         {
@@ -1320,6 +1320,18 @@
           "received": 5600,
           "pick": 8,
           "miss": 26,
+          "accuracy": 27.0,
+          "qualified": false
+        },
+        {
+          "player": "lameration",
+          "matches": 3,
+          "kills": 7,
+          "deaths": 8,
+          "dealt": 1600,
+          "received": 1300,
+          "pick": 4,
+          "miss": 14,
           "accuracy": 27.0,
           "qualified": false
         },
@@ -1633,18 +1645,6 @@
           "pick": 18,
           "miss": 25,
           "accuracy": 22.0,
-          "qualified": false
-        },
-        {
-          "player": "lameration",
-          "matches": 2,
-          "kills": 2,
-          "deaths": 8,
-          "dealt": 600,
-          "received": 1200,
-          "pick": 3,
-          "miss": 13,
-          "accuracy": 21.5,
           "qualified": false
         },
         {
@@ -2506,6 +2506,18 @@
           "qualified": true
         },
         {
+          "player": "lameration",
+          "matches": 3,
+          "kills": 13,
+          "deaths": 4,
+          "dealt": 1909,
+          "received": 942,
+          "pick": 10,
+          "miss": 24,
+          "accuracy": 23.7,
+          "qualified": false
+        },
+        {
           "player": "VITALIS",
           "matches": 61,
           "kills": 270,
@@ -3251,13 +3263,13 @@
         },
         {
           "player": "B100D",
-          "matches": 115,
-          "kills": 207,
-          "deaths": 240,
-          "dealt": 54884,
-          "received": 68683,
-          "pick": 444,
-          "miss": 1212,
+          "matches": 116,
+          "kills": 208,
+          "deaths": 242,
+          "dealt": 55038,
+          "received": 69110,
+          "pick": 447,
+          "miss": 1213,
           "accuracy": 18.1,
           "qualified": true
         },
@@ -3596,18 +3608,6 @@
           "miss": 657,
           "accuracy": 15.5,
           "qualified": true
-        },
-        {
-          "player": "lameration",
-          "matches": 2,
-          "kills": 11,
-          "deaths": 3,
-          "dealt": 1530,
-          "received": 788,
-          "pick": 9,
-          "miss": 21,
-          "accuracy": 15.5,
-          "qualified": false
         },
         {
           "player": "Kargul3000",
@@ -5092,18 +5092,6 @@
           "qualified": true
         },
         {
-          "player": "lameration",
-          "matches": 2,
-          "kills": 2,
-          "deaths": 2,
-          "dealt": 660,
-          "received": 1056,
-          "pick": 3,
-          "miss": 17,
-          "accuracy": 12.5,
-          "qualified": false
-        },
-        {
           "player": "mAc",
           "matches": 22,
           "kills": 51,
@@ -5184,6 +5172,18 @@
           "received": 1752,
           "pick": 15,
           "miss": 26,
+          "accuracy": 12.3,
+          "qualified": false
+        },
+        {
+          "player": "lameration",
+          "matches": 3,
+          "kills": 4,
+          "deaths": 2,
+          "dealt": 936,
+          "received": 1356,
+          "pick": 6,
+          "miss": 21,
           "accuracy": 12.3,
           "qualified": false
         },
@@ -5333,13 +5333,13 @@
         },
         {
           "player": "B100D",
-          "matches": 115,
+          "matches": 116,
           "kills": 336,
-          "deaths": 269,
-          "dealt": 56772,
-          "received": 49818,
-          "pick": 445,
-          "miss": 913,
+          "deaths": 271,
+          "dealt": 57072,
+          "received": 50094,
+          "pick": 449,
+          "miss": 916,
           "accuracy": 11.8,
           "qualified": true
         },
