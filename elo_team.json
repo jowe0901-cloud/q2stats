@@ -16,20 +16,20 @@
     "winrate": 59.5
   },
   {
-    "player": "rul",
-    "elo": 1842,
-    "matches": 82,
-    "wins": 48,
-    "losses": 34,
-    "winrate": 58.5
-  },
-  {
     "player": "warrior",
     "elo": 1839,
     "matches": 42,
     "wins": 31,
     "losses": 11,
     "winrate": 73.8
+  },
+  {
+    "player": "rul",
+    "elo": 1833,
+    "matches": 83,
+    "wins": 48,
+    "losses": 35,
+    "winrate": 57.8
   },
   {
     "player": "GipSy",
@@ -41,11 +41,11 @@
   },
   {
     "player": "myrmidon^",
-    "elo": 1748,
-    "matches": 68,
-    "wins": 39,
+    "elo": 1764,
+    "matches": 69,
+    "wins": 40,
     "losses": 29,
-    "winrate": 57.4
+    "winrate": 58.0
   },
   {
     "player": "qw",
@@ -97,11 +97,11 @@
   },
   {
     "player": "asd_krzys",
-    "elo": 1642,
-    "matches": 71,
-    "wins": 38,
+    "elo": 1653,
+    "matches": 72,
+    "wins": 39,
     "losses": 33,
-    "winrate": 53.5
+    "winrate": 54.2
   },
   {
     "player": "[sYnth]Scooby",
@@ -152,14 +152,6 @@
     "winrate": 85.7
   },
   {
-    "player": "badman",
-    "elo": 1585,
-    "matches": 96,
-    "wins": 43,
-    "losses": 53,
-    "winrate": 44.8
-  },
-  {
     "player": ">daweed",
     "elo": 1579,
     "matches": 8,
@@ -174,6 +166,14 @@
     "wins": 5,
     "losses": 0,
     "winrate": 100.0
+  },
+  {
+    "player": "badman",
+    "elo": 1569,
+    "matches": 97,
+    "wins": 43,
+    "losses": 54,
+    "winrate": 44.3
   },
   {
     "player": ">purri",
