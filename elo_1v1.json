@@ -24,20 +24,20 @@
     "winrate": 78.3
   },
   {
+    "player": "Keizer",
+    "elo": 1636,
+    "matches": 14,
+    "wins": 13,
+    "losses": 1,
+    "winrate": 92.9
+  },
+  {
     "player": "David",
     "elo": 1630,
     "matches": 12,
     "wins": 12,
     "losses": 0,
     "winrate": 100.0
-  },
-  {
-    "player": "Keizer",
-    "elo": 1628,
-    "matches": 13,
-    "wins": 12,
-    "losses": 1,
-    "winrate": 92.3
   },
   {
     "player": "ping80",
@@ -632,14 +632,6 @@
     "winrate": 0.0
   },
   {
-    "player": "B100D",
-    "elo": 1429,
-    "matches": 49,
-    "wins": 25,
-    "losses": 24,
-    "winrate": 51.0
-  },
-  {
     "player": "Pacifist_(AVB)",
     "elo": 1429,
     "matches": 11,
@@ -686,6 +678,14 @@
     "wins": 2,
     "losses": 7,
     "winrate": 22.2
+  },
+  {
+    "player": "B100D",
+    "elo": 1421,
+    "matches": 50,
+    "wins": 25,
+    "losses": 25,
+    "winrate": 50.0
   },
   {
     "player": "lynx",
