@@ -1,11 +1,11 @@
 [
   {
     "player": "maq",
-    "elo": 1941,
-    "matches": 61,
+    "elo": 1930,
+    "matches": 62,
     "wins": 43,
-    "losses": 18,
-    "winrate": 70.5
+    "losses": 19,
+    "winrate": 69.4
   },
   {
     "player": "cne",
@@ -33,11 +33,11 @@
   },
   {
     "player": "GipSy",
-    "elo": 1812,
-    "matches": 98,
-    "wins": 55,
+    "elo": 1824,
+    "matches": 99,
+    "wins": 56,
     "losses": 43,
-    "winrate": 56.1
+    "winrate": 56.6
   },
   {
     "player": "myrmidon^",
@@ -136,20 +136,20 @@
     "winrate": 88.9
   },
   {
+    "player": "ping80",
+    "elo": 1602,
+    "matches": 25,
+    "wins": 14,
+    "losses": 11,
+    "winrate": 56.0
+  },
+  {
     "player": "norm",
     "elo": 1602,
     "matches": 7,
     "wins": 6,
     "losses": 1,
     "winrate": 85.7
-  },
-  {
-    "player": "ping80",
-    "elo": 1586,
-    "matches": 24,
-    "wins": 13,
-    "losses": 11,
-    "winrate": 54.2
   },
   {
     "player": "badman",
@@ -206,14 +206,6 @@
     "wins": 3,
     "losses": 1,
     "winrate": 75.0
-  },
-  {
-    "player": "B100D",
-    "elo": 1548,
-    "matches": 89,
-    "wins": 46,
-    "losses": 43,
-    "winrate": 51.7
   },
   {
     "player": "_Logic",
@@ -278,6 +270,14 @@
     "wins": 3,
     "losses": 1,
     "winrate": 75.0
+  },
+  {
+    "player": "B100D",
+    "elo": 1532,
+    "matches": 90,
+    "wins": 46,
+    "losses": 44,
+    "winrate": 51.1
   },
   {
     "player": "lameroxonix",
