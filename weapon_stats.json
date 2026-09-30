@@ -1120,18 +1120,6 @@
           "qualified": true
         },
         {
-          "player": "ping80",
-          "matches": 35,
-          "kills": 108,
-          "deaths": 166,
-          "dealt": 21100,
-          "received": 36500,
-          "pick": 119,
-          "miss": 339,
-          "accuracy": 29.3,
-          "qualified": true
-        },
-        {
           "player": "TeRmi.FCB",
           "matches": 3,
           "kills": 13,
@@ -1142,6 +1130,18 @@
           "miss": 29,
           "accuracy": 29.3,
           "qualified": false
+        },
+        {
+          "player": "ping80",
+          "matches": 36,
+          "kills": 109,
+          "deaths": 166,
+          "dealt": 21400,
+          "received": 36500,
+          "pick": 121,
+          "miss": 339,
+          "accuracy": 29.2,
+          "qualified": true
         },
         {
           "player": "Qiub",
@@ -1205,14 +1205,14 @@
         },
         {
           "player": "B100D",
-          "matches": 110,
-          "kills": 389,
-          "deaths": 426,
-          "dealt": 81500,
-          "received": 77500,
-          "pick": 373,
-          "miss": 629,
-          "accuracy": 28.0,
+          "matches": 111,
+          "kills": 398,
+          "deaths": 430,
+          "dealt": 82700,
+          "received": 78000,
+          "pick": 376,
+          "miss": 636,
+          "accuracy": 28.1,
           "qualified": true
         },
         {
@@ -1348,18 +1348,6 @@
           "qualified": true
         },
         {
-          "player": "GipSy",
-          "matches": 109,
-          "kills": 591,
-          "deaths": 539,
-          "dealt": 108100,
-          "received": 108600,
-          "pick": 367,
-          "miss": 917,
-          "accuracy": 26.2,
-          "qualified": true
-        },
-        {
           "player": "m",
           "matches": 43,
           "kills": 111,
@@ -1406,6 +1394,18 @@
           "miss": 9,
           "accuracy": 26.0,
           "qualified": false
+        },
+        {
+          "player": "GipSy",
+          "matches": 110,
+          "kills": 591,
+          "deaths": 540,
+          "dealt": 108100,
+          "received": 108900,
+          "pick": 367,
+          "miss": 919,
+          "accuracy": 25.9,
+          "qualified": true
         },
         {
           "player": "freeze",
@@ -2374,18 +2374,6 @@
           "qualified": false
         },
         {
-          "player": "ping80",
-          "matches": 35,
-          "kills": 186,
-          "deaths": 91,
-          "dealt": 39272,
-          "received": 27719,
-          "pick": 184,
-          "miss": 356,
-          "accuracy": 25.1,
-          "qualified": true
-        },
-        {
           "player": "yin",
           "matches": 4,
           "kills": 13,
@@ -2408,6 +2396,18 @@
           "miss": 27,
           "accuracy": 25.0,
           "qualified": false
+        },
+        {
+          "player": "ping80",
+          "matches": 36,
+          "kills": 186,
+          "deaths": 92,
+          "dealt": 39272,
+          "received": 27919,
+          "pick": 185,
+          "miss": 357,
+          "accuracy": 24.4,
+          "qualified": true
         },
         {
           "player": "[HC]Reni^",
@@ -3239,13 +3239,25 @@
         },
         {
           "player": "GipSy",
-          "matches": 111,
-          "kills": 374,
+          "matches": 112,
+          "kills": 375,
           "deaths": 322,
-          "dealt": 84976,
+          "dealt": 85127,
           "received": 86448,
-          "pick": 485,
-          "miss": 1457,
+          "pick": 486,
+          "miss": 1458,
+          "accuracy": 18.0,
+          "qualified": true
+        },
+        {
+          "player": "B100D",
+          "matches": 112,
+          "kills": 201,
+          "deaths": 224,
+          "dealt": 53145,
+          "received": 66435,
+          "pick": 430,
+          "miss": 1179,
           "accuracy": 18.0,
           "qualified": true
         },
@@ -3272,18 +3284,6 @@
           "miss": 4,
           "accuracy": 18.0,
           "qualified": false
-        },
-        {
-          "player": "B100D",
-          "matches": 111,
-          "kills": 195,
-          "deaths": 222,
-          "dealt": 52019,
-          "received": 65638,
-          "pick": 426,
-          "miss": 1164,
-          "accuracy": 17.9,
-          "qualified": true
         },
         {
           "player": ">purri",
@@ -5069,13 +5069,13 @@
         },
         {
           "player": "ping80",
-          "matches": 36,
+          "matches": 37,
           "kills": 177,
-          "deaths": 82,
+          "deaths": 83,
           "dealt": 26466,
-          "received": 16254,
+          "received": 16494,
           "pick": 193,
-          "miss": 310,
+          "miss": 312,
           "accuracy": 12.3,
           "qualified": true
         },
@@ -5261,13 +5261,13 @@
         },
         {
           "player": "B100D",
-          "matches": 111,
-          "kills": 320,
-          "deaths": 260,
-          "dealt": 54606,
-          "received": 48342,
-          "pick": 427,
-          "miss": 883,
+          "matches": 112,
+          "kills": 326,
+          "deaths": 261,
+          "dealt": 55248,
+          "received": 48528,
+          "pick": 431,
+          "miss": 890,
           "accuracy": 11.8,
           "qualified": true
         },
@@ -5453,12 +5453,12 @@
         },
         {
           "player": "GipSy",
-          "matches": 109,
-          "kills": 330,
+          "matches": 110,
+          "kills": 331,
           "deaths": 292,
-          "dealt": 59274,
+          "dealt": 59514,
           "received": 50484,
-          "pick": 475,
+          "pick": 477,
           "miss": 1011,
           "accuracy": 11.3,
           "qualified": true
