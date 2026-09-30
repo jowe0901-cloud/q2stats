@@ -295029,5 +295029,169 @@
       }
     ],
     "saved_at": "2026-09-30T17:42:55+02:00"
+  },
+  {
+    "match_id": "7eb9ea1a8c572b07",
+    "game_type": "1v1",
+    "hostname": "PacketFlinger.com ~ OpenTDM ~ Germany #3",
+    "mapname": "q2duel5",
+    "match_type": "Duel",
+    "port": 27910,
+    "winner": "Home",
+    "home_score": 12,
+    "away_score": 1,
+    "players": [
+      {
+        "name": "damz.",
+        "kills": 1,
+        "deaths": 12,
+        "suicides": 0,
+        "teamkills": 0,
+        "teleports": 0,
+        "damage": 938,
+        "damage_received": 2079,
+        "team_damage": 0,
+        "team_damage_received": 0,
+        "weapons": {
+          "Super Shotgun": {
+            "accuracy": 59,
+            "kills": 0,
+            "deaths": null,
+            "dealt": 168,
+            "received": null,
+            "pick": 5,
+            "miss": 1
+          },
+          "Chaingun": {
+            "accuracy": 14,
+            "kills": 1,
+            "deaths": 2,
+            "dealt": 540,
+            "received": 276,
+            "pick": 6,
+            "miss": 2
+          },
+          "Grenades": {
+            "accuracy": 0,
+            "kills": 0,
+            "deaths": null,
+            "dealt": 0,
+            "received": null,
+            "pick": 0,
+            "miss": 0
+          },
+          "Grenade Launcher": {
+            "accuracy": 0,
+            "kills": 0,
+            "deaths": null,
+            "dealt": 0,
+            "received": null,
+            "pick": 3,
+            "miss": 0
+          },
+          "Rocket Launcher": {
+            "accuracy": 0,
+            "kills": 0,
+            "deaths": 4,
+            "dealt": 0,
+            "received": 1103,
+            "pick": 2,
+            "miss": 6
+          },
+          "HyperBlaster": {
+            "accuracy": null,
+            "kills": null,
+            "deaths": null,
+            "dealt": null,
+            "received": null,
+            "pick": 2,
+            "miss": 1
+          },
+          "Railgun": {
+            "accuracy": 17,
+            "kills": 0,
+            "deaths": 6,
+            "dealt": 200,
+            "received": 700,
+            "pick": 3,
+            "miss": 5
+          }
+        },
+        "team": "Away",
+        "ping": 33,
+        "player_id": "4",
+        "elo_type": "1v1",
+        "elo_before": 1427,
+        "elo_change": -11.5,
+        "elo_after": 1416
+      },
+      {
+        "name": "prostitute",
+        "kills": 12,
+        "deaths": 1,
+        "suicides": 0,
+        "teamkills": 0,
+        "teleports": 0,
+        "damage": 2079,
+        "damage_received": 969,
+        "team_damage": 0,
+        "team_damage_received": 0,
+        "weapons": {
+          "Super Shotgun": {
+            "accuracy": null,
+            "kills": null,
+            "deaths": 0,
+            "dealt": null,
+            "received": 168,
+            "pick": 1,
+            "miss": 5
+          },
+          "Chaingun": {
+            "accuracy": 11,
+            "kills": 2,
+            "deaths": 1,
+            "dealt": 276,
+            "received": 540,
+            "pick": 2,
+            "miss": 6
+          },
+          "Rocket Launcher": {
+            "accuracy": 29,
+            "kills": 4,
+            "deaths": 0,
+            "dealt": 1103,
+            "received": 31,
+            "pick": 6,
+            "miss": 2
+          },
+          "HyperBlaster": {
+            "accuracy": null,
+            "kills": null,
+            "deaths": null,
+            "dealt": null,
+            "received": null,
+            "pick": 1,
+            "miss": 2
+          },
+          "Railgun": {
+            "accuracy": 22,
+            "kills": 6,
+            "deaths": 0,
+            "dealt": 700,
+            "received": 200,
+            "pick": 5,
+            "miss": 3
+          }
+        },
+        "team": "Home",
+        "ping": 39,
+        "player_id": "5",
+        "elo_type": "1v1",
+        "elo_before": 1528,
+        "elo_change": 11.5,
+        "elo_after": 1540
+      }
+    ],
+    "saved_at": "2026-09-30T18:59:57+02:00"
   }
 ]

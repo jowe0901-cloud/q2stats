@@ -192,6 +192,14 @@
     "winrate": 100.0
   },
   {
+    "player": "prostitute",
+    "elo": 1540,
+    "matches": 3,
+    "wins": 3,
+    "losses": 0,
+    "winrate": 100.0
+  },
+  {
     "player": "need2",
     "elo": 1537,
     "matches": 2,
@@ -230,14 +238,6 @@
     "wins": 3,
     "losses": 2,
     "winrate": 60.0
-  },
-  {
-    "player": "prostitute",
-    "elo": 1528,
-    "matches": 2,
-    "wins": 2,
-    "losses": 0,
-    "winrate": 100.0
   },
   {
     "player": "myrmidon^",
@@ -648,14 +648,6 @@
     "winrate": 18.2
   },
   {
-    "player": "damz.",
-    "elo": 1427,
-    "matches": 5,
-    "wins": 0,
-    "losses": 5,
-    "winrate": 0.0
-  },
-  {
     "player": "sevvq",
     "elo": 1426,
     "matches": 7,
@@ -701,6 +693,14 @@
     "matches": 7,
     "wins": 0,
     "losses": 7,
+    "winrate": 0.0
+  },
+  {
+    "player": "damz.",
+    "elo": 1416,
+    "matches": 6,
+    "wins": 0,
+    "losses": 6,
     "winrate": 0.0
   },
   {

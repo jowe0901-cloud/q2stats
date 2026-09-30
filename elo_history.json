@@ -35552,5 +35552,29 @@
       }
     ],
     "saved_at": "2026-09-30T17:42:55+02:00"
+  },
+  {
+    "match_id": "7eb9ea1a8c572b07",
+    "game_type": "1v1",
+    "winner": "Home",
+    "home_score": 12,
+    "away_score": 1,
+    "players": [
+      {
+        "player": "prostitute",
+        "team": "Home",
+        "old_elo": 1528,
+        "change": 11.5,
+        "new_elo": 1540
+      },
+      {
+        "player": "damz.",
+        "team": "Away",
+        "old_elo": 1427,
+        "change": -11.5,
+        "new_elo": 1416
+      }
+    ],
+    "saved_at": "2026-09-30T18:59:57+02:00"
   }
 ]
