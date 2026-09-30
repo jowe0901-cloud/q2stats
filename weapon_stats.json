@@ -868,6 +868,18 @@
           "qualified": false
         },
         {
+          "player": "Keizer",
+          "matches": 62,
+          "kills": 371,
+          "deaths": 266,
+          "dealt": 65000,
+          "received": 54500,
+          "pick": 142,
+          "miss": 535,
+          "accuracy": 32.0,
+          "qualified": true
+        },
+        {
           "player": "asd_krzys",
           "matches": 66,
           "kills": 351,
@@ -902,18 +914,6 @@
           "miss": 23,
           "accuracy": 32.0,
           "qualified": false
-        },
-        {
-          "player": "Keizer",
-          "matches": 61,
-          "kills": 368,
-          "deaths": 266,
-          "dealt": 64200,
-          "received": 54500,
-          "pick": 139,
-          "miss": 531,
-          "accuracy": 31.8,
-          "qualified": true
         },
         {
           "player": ">purri",
@@ -1205,13 +1205,13 @@
         },
         {
           "player": "B100D",
-          "matches": 103,
+          "matches": 104,
           "kills": 375,
-          "deaths": 389,
+          "deaths": 392,
           "dealt": 78700,
-          "received": 71000,
+          "received": 71800,
           "pick": 357,
-          "miss": 586,
+          "miss": 593,
           "accuracy": 28.3,
           "qualified": true
         },
@@ -2915,13 +2915,13 @@
         },
         {
           "player": "Keizer",
-          "matches": 61,
+          "matches": 62,
           "kills": 166,
           "deaths": 163,
           "dealt": 35842,
-          "received": 41573,
+          "received": 41783,
           "pick": 192,
-          "miss": 922,
+          "miss": 927,
           "accuracy": 20.1,
           "qualified": true
         },
@@ -3275,13 +3275,13 @@
         },
         {
           "player": "B100D",
-          "matches": 104,
+          "matches": 105,
           "kills": 184,
           "deaths": 204,
-          "dealt": 49020,
+          "dealt": 49230,
           "received": 61553,
-          "pick": 403,
-          "miss": 1113,
+          "pick": 405,
+          "miss": 1116,
           "accuracy": 17.9,
           "qualified": true
         },
@@ -4517,13 +4517,13 @@
         },
         {
           "player": "Keizer",
-          "matches": 61,
+          "matches": 62,
           "kills": 265,
           "deaths": 167,
           "dealt": 40536,
-          "received": 29154,
-          "pick": 226,
-          "miss": 603,
+          "received": 29166,
+          "pick": 228,
+          "miss": 610,
           "accuracy": 14.5,
           "qualified": true
         },
@@ -5260,18 +5260,6 @@
           "qualified": true
         },
         {
-          "player": "B100D",
-          "matches": 104,
-          "kills": 308,
-          "deaths": 245,
-          "dealt": 52500,
-          "received": 45774,
-          "pick": 401,
-          "miss": 835,
-          "accuracy": 11.8,
-          "qualified": true
-        },
-        {
           "player": "sevvq",
           "matches": 27,
           "kills": 25,
@@ -5306,6 +5294,18 @@
           "miss": 55,
           "accuracy": 11.8,
           "qualified": false
+        },
+        {
+          "player": "B100D",
+          "matches": 105,
+          "kills": 308,
+          "deaths": 245,
+          "dealt": 52512,
+          "received": 45774,
+          "pick": 403,
+          "miss": 842,
+          "accuracy": 11.7,
+          "qualified": true
         },
         {
           "player": "senz",
