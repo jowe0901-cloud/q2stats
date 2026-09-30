@@ -8,20 +8,20 @@
     "winrate": 69.4
   },
   {
-    "player": "cne",
-    "elo": 1840,
-    "matches": 85,
-    "wins": 50,
-    "losses": 35,
-    "winrate": 58.8
-  },
-  {
     "player": "warrior",
     "elo": 1839,
     "matches": 42,
     "wins": 31,
     "losses": 11,
     "winrate": 73.8
+  },
+  {
+    "player": "cne",
+    "elo": 1824,
+    "matches": 86,
+    "wins": 50,
+    "losses": 36,
+    "winrate": 58.1
   },
   {
     "player": "myrmidon^",
@@ -41,11 +41,11 @@
   },
   {
     "player": "rul",
-    "elo": 1780,
-    "matches": 88,
-    "wins": 49,
+    "elo": 1782,
+    "matches": 89,
+    "wins": 50,
     "losses": 39,
-    "winrate": 55.7
+    "winrate": 56.2
   },
   {
     "player": "qw",
@@ -64,6 +64,14 @@
     "winrate": 56.6
   },
   {
+    "player": "asd_krzys",
+    "elo": 1693,
+    "matches": 78,
+    "wins": 43,
+    "losses": 35,
+    "winrate": 55.1
+  },
+  {
     "player": "[sf]fasadin",
     "elo": 1693,
     "matches": 26,
@@ -78,14 +86,6 @@
     "wins": 23,
     "losses": 15,
     "winrate": 60.5
-  },
-  {
-    "player": "asd_krzys",
-    "elo": 1677,
-    "matches": 77,
-    "wins": 42,
-    "losses": 35,
-    "winrate": 54.5
   },
   {
     "player": "fon",
@@ -184,20 +184,20 @@
     "winrate": 75.0
   },
   {
-    "player": "badman",
-    "elo": 1564,
-    "matches": 102,
-    "wins": 45,
-    "losses": 57,
-    "winrate": 44.1
-  },
-  {
     "player": "daweed",
     "elo": 1564,
     "matches": 4,
     "wins": 4,
     "losses": 0,
     "winrate": 100.0
+  },
+  {
+    "player": "badman",
+    "elo": 1560,
+    "matches": 103,
+    "wins": 45,
+    "losses": 58,
+    "winrate": 43.7
   },
   {
     "player": "B100D",
