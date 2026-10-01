@@ -8,20 +8,20 @@
     "winrate": 65.3
   },
   {
+    "player": "cne",
+    "elo": 1889,
+    "matches": 91,
+    "wins": 55,
+    "losses": 36,
+    "winrate": 60.4
+  },
+  {
     "player": "warrior",
     "elo": 1887,
     "matches": 45,
     "wins": 34,
     "losses": 11,
     "winrate": 75.6
-  },
-  {
-    "player": "cne",
-    "elo": 1875,
-    "matches": 90,
-    "wins": 54,
-    "losses": 36,
-    "winrate": 60.0
   },
   {
     "player": "myrmidon^",
@@ -57,11 +57,11 @@
   },
   {
     "player": "asd_krzys",
-    "elo": 1704,
-    "matches": 82,
-    "wins": 46,
+    "elo": 1718,
+    "matches": 83,
+    "wins": 47,
     "losses": 36,
-    "winrate": 56.1
+    "winrate": 56.6
   },
   {
     "player": "Keizer",
@@ -202,10 +202,10 @@
   {
     "player": "r",
     "elo": 1554,
-    "matches": 74,
-    "wins": 46,
+    "matches": 75,
+    "wins": 47,
     "losses": 28,
-    "winrate": 62.2
+    "winrate": 62.7
   },
   {
     "player": "ZYGA",
@@ -230,14 +230,6 @@
     "wins": 54,
     "losses": 49,
     "winrate": 52.4
-  },
-  {
-    "player": "lameratorion",
-    "elo": 1542,
-    "matches": 9,
-    "wins": 5,
-    "losses": 4,
-    "winrate": 55.6
   },
   {
     "player": "OPTIMIZER",
@@ -296,12 +288,12 @@
     "winrate": 100.0
   },
   {
-    "player": "Br00m^^",
-    "elo": 1529,
-    "matches": 94,
-    "wins": 45,
-    "losses": 49,
-    "winrate": 47.9
+    "player": "lameratorion",
+    "elo": 1530,
+    "matches": 10,
+    "wins": 5,
+    "losses": 5,
+    "winrate": 50.0
   },
   {
     "player": "CoLD",
@@ -318,6 +310,14 @@
     "wins": 2,
     "losses": 0,
     "winrate": 100.0
+  },
+  {
+    "player": "Br00m^^",
+    "elo": 1526,
+    "matches": 95,
+    "wins": 45,
+    "losses": 50,
+    "winrate": 47.4
   },
   {
     "player": "TAITI",
@@ -672,14 +672,6 @@
     "winrate": 66.7
   },
   {
-    "player": "odi",
-    "elo": 1498,
-    "matches": 15,
-    "wins": 7,
-    "losses": 8,
-    "winrate": 46.7
-  },
-  {
     "player": "FRZ",
     "elo": 1497,
     "matches": 2,
@@ -776,6 +768,14 @@
     "winrate": 42.9
   },
   {
+    "player": "odi",
+    "elo": 1484,
+    "matches": 16,
+    "wins": 7,
+    "losses": 9,
+    "winrate": 43.8
+  },
+  {
     "player": "[G2H]DEMON",
     "elo": 1484,
     "matches": 1,
@@ -864,6 +864,14 @@
     "winrate": 25.0
   },
   {
+    "player": "z0diac",
+    "elo": 1482,
+    "matches": 40,
+    "wins": 19,
+    "losses": 21,
+    "winrate": 47.5
+  },
+  {
     "player": "[ds]ads",
     "elo": 1480,
     "matches": 14,
@@ -902,14 +910,6 @@
     "wins": 2,
     "losses": 3,
     "winrate": 40.0
-  },
-  {
-    "player": "z0diac",
-    "elo": 1476,
-    "matches": 39,
-    "wins": 18,
-    "losses": 21,
-    "winrate": 46.2
   },
   {
     "player": "TIM",
@@ -1257,11 +1257,11 @@
   },
   {
     "player": "jabb@",
-    "elo": 1174,
-    "matches": 200,
+    "elo": 1164,
+    "matches": 201,
     "wins": 90,
-    "losses": 110,
-    "winrate": 45.0
+    "losses": 111,
+    "winrate": 44.8
   },
   {
     "player": "damz.",
