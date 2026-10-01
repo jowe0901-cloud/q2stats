@@ -1,11 +1,11 @@
 [
   {
     "player": "maq",
-    "elo": 1933,
-    "matches": 68,
+    "elo": 1917,
+    "matches": 69,
     "wins": 46,
-    "losses": 22,
-    "winrate": 67.6
+    "losses": 23,
+    "winrate": 66.7
   },
   {
     "player": "warrior",
@@ -224,14 +224,6 @@
     "winrate": 75.0
   },
   {
-    "player": "B100D",
-    "elo": 1547,
-    "matches": 101,
-    "wins": 53,
-    "losses": 48,
-    "winrate": 52.5
-  },
-  {
     "player": "OPTIMIZER",
     "elo": 1540,
     "matches": 3,
@@ -278,6 +270,14 @@
     "wins": 3,
     "losses": 1,
     "winrate": 75.0
+  },
+  {
+    "player": "B100D",
+    "elo": 1531,
+    "matches": 102,
+    "wins": 53,
+    "losses": 49,
+    "winrate": 52.0
   },
   {
     "player": "lameroxonix",
@@ -470,6 +470,14 @@
     "wins": 21,
     "losses": 22,
     "winrate": 48.8
+  },
+  {
+    "player": "lameration",
+    "elo": 1511,
+    "matches": 4,
+    "wins": 1,
+    "losses": 3,
+    "winrate": 25.0
   },
   {
     "player": "fonbeers",
@@ -712,14 +720,6 @@
     "winrate": 50.0
   },
   {
-    "player": "lameration",
-    "elo": 1495,
-    "matches": 3,
-    "wins": 0,
-    "losses": 3,
-    "winrate": 0.0
-  },
-  {
     "player": "sase",
     "elo": 1493,
     "matches": 3,
@@ -880,6 +880,14 @@
     "winrate": 47.5
   },
   {
+    "player": "SUPER-LAG",
+    "elo": 1477,
+    "matches": 84,
+    "wins": 47,
+    "losses": 37,
+    "winrate": 56.0
+  },
+  {
     "player": "shNoodle",
     "elo": 1476,
     "matches": 17,
@@ -1030,14 +1038,6 @@
     "wins": 0,
     "losses": 3,
     "winrate": 0.0
-  },
-  {
-    "player": "SUPER-LAG",
-    "elo": 1461,
-    "matches": 83,
-    "wins": 46,
-    "losses": 37,
-    "winrate": 55.4
   },
   {
     "player": "The General",
