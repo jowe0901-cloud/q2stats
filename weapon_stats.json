@@ -1240,6 +1240,18 @@
           "qualified": false
         },
         {
+          "player": "B100D",
+          "matches": 128,
+          "kills": 442,
+          "deaths": 503,
+          "dealt": 93000,
+          "received": 91800,
+          "pick": 428,
+          "miss": 746,
+          "accuracy": 28.0,
+          "qualified": true
+        },
+        {
           "player": "SUPER-LAG+DRUNK",
           "matches": 2,
           "kills": 13,
@@ -1250,18 +1262,6 @@
           "miss": 27,
           "accuracy": 28.0,
           "qualified": false
-        },
-        {
-          "player": "B100D",
-          "matches": 127,
-          "kills": 439,
-          "deaths": 501,
-          "dealt": 92500,
-          "received": 91300,
-          "pick": 425,
-          "miss": 738,
-          "accuracy": 27.9,
-          "qualified": true
         },
         {
           "player": "CoLD",
@@ -1344,18 +1344,6 @@
           "received": 5600,
           "pick": 8,
           "miss": 26,
-          "accuracy": 27.0,
-          "qualified": false
-        },
-        {
-          "player": "lameration",
-          "matches": 3,
-          "kills": 7,
-          "deaths": 8,
-          "dealt": 1600,
-          "received": 1300,
-          "pick": 4,
-          "miss": 14,
           "accuracy": 27.0,
           "qualified": false
         },
@@ -1492,18 +1480,6 @@
           "qualified": true
         },
         {
-          "player": "SUPER-LAG",
-          "matches": 76,
-          "kills": 320,
-          "deaths": 412,
-          "dealt": 52800,
-          "received": 73500,
-          "pick": 149,
-          "miss": 735,
-          "accuracy": 25.2,
-          "qualified": true
-        },
-        {
           "player": "The General",
           "matches": 4,
           "kills": 14,
@@ -1516,6 +1492,18 @@
           "qualified": false
         },
         {
+          "player": "SUPER-LAG",
+          "matches": 77,
+          "kills": 325,
+          "deaths": 414,
+          "dealt": 53600,
+          "received": 74000,
+          "pick": 150,
+          "miss": 745,
+          "accuracy": 25.1,
+          "qualified": true
+        },
+        {
           "player": "ath|michaq",
           "matches": 2,
           "kills": 15,
@@ -1523,6 +1511,18 @@
           "dealt": 2300,
           "received": 2500,
           "pick": 7,
+          "miss": 24,
+          "accuracy": 25.0,
+          "qualified": false
+        },
+        {
+          "player": "lameration",
+          "matches": 4,
+          "kills": 8,
+          "deaths": 11,
+          "dealt": 1800,
+          "received": 1900,
+          "pick": 5,
           "miss": 24,
           "accuracy": 25.0,
           "qualified": false
@@ -2590,18 +2590,6 @@
           "qualified": true
         },
         {
-          "player": "lameration",
-          "matches": 3,
-          "kills": 13,
-          "deaths": 4,
-          "dealt": 1909,
-          "received": 942,
-          "pick": 10,
-          "miss": 24,
-          "accuracy": 23.7,
-          "qualified": false
-        },
-        {
           "player": "jabb@",
           "matches": 168,
           "kills": 644,
@@ -2612,6 +2600,18 @@
           "miss": 2539,
           "accuracy": 23.5,
           "qualified": true
+        },
+        {
+          "player": "lameration",
+          "matches": 4,
+          "kills": 18,
+          "deaths": 4,
+          "dealt": 3457,
+          "received": 1374,
+          "pick": 14,
+          "miss": 42,
+          "accuracy": 23.5,
+          "qualified": false
         },
         {
           "player": "kreg",
@@ -3167,13 +3167,13 @@
         },
         {
           "player": "SUPER-LAG",
-          "matches": 76,
-          "kills": 297,
-          "deaths": 250,
-          "dealt": 65624,
-          "received": 56614,
-          "pick": 339,
-          "miss": 1269,
+          "matches": 77,
+          "kills": 301,
+          "deaths": 252,
+          "dealt": 66288,
+          "received": 57563,
+          "pick": 340,
+          "miss": 1290,
           "accuracy": 19.7,
           "qualified": true
         },
@@ -3275,13 +3275,13 @@
         },
         {
           "player": "B100D",
-          "matches": 128,
-          "kills": 235,
-          "deaths": 260,
-          "dealt": 61519,
-          "received": 74683,
-          "pick": 495,
-          "miss": 1331,
+          "matches": 129,
+          "kills": 237,
+          "deaths": 265,
+          "dealt": 62247,
+          "received": 75816,
+          "pick": 504,
+          "miss": 1344,
           "accuracy": 18.6,
           "qualified": true
         },
@@ -5200,6 +5200,18 @@
           "qualified": true
         },
         {
+          "player": "lameration",
+          "matches": 4,
+          "kills": 7,
+          "deaths": 3,
+          "dealt": 1920,
+          "received": 1872,
+          "pick": 11,
+          "miss": 28,
+          "accuracy": 12.5,
+          "qualified": false
+        },
+        {
           "player": "mAc",
           "matches": 22,
           "kills": 51,
@@ -5292,18 +5304,6 @@
           "received": 1752,
           "pick": 15,
           "miss": 26,
-          "accuracy": 12.3,
-          "qualified": false
-        },
-        {
-          "player": "lameration",
-          "matches": 3,
-          "kills": 4,
-          "deaths": 2,
-          "dealt": 936,
-          "received": 1356,
-          "pick": 6,
-          "miss": 21,
           "accuracy": 12.3,
           "qualified": false
         },
@@ -5489,13 +5489,13 @@
         },
         {
           "player": "B100D",
-          "matches": 128,
-          "kills": 368,
-          "deaths": 300,
-          "dealt": 62106,
-          "received": 55416,
-          "pick": 503,
-          "miss": 999,
+          "matches": 129,
+          "kills": 369,
+          "deaths": 301,
+          "dealt": 62544,
+          "received": 55908,
+          "pick": 507,
+          "miss": 1007,
           "accuracy": 11.7,
           "qualified": true
         },
@@ -5813,13 +5813,13 @@
         },
         {
           "player": "SUPER-LAG",
-          "matches": 75,
-          "kills": 227,
-          "deaths": 230,
-          "dealt": 34578,
-          "received": 37116,
-          "pick": 253,
-          "miss": 787,
+          "matches": 76,
+          "kills": 230,
+          "deaths": 232,
+          "dealt": 35040,
+          "received": 37608,
+          "pick": 256,
+          "miss": 796,
           "accuracy": 10.9,
           "qualified": true
         },
