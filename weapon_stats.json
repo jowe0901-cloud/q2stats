@@ -15,13 +15,13 @@
       "top5": [
         {
           "player": "David",
-          "matches": 17,
-          "kills": 291,
-          "deaths": 31,
-          "dealt": 40100,
-          "received": 7700,
+          "matches": 18,
+          "kills": 311,
+          "deaths": 34,
+          "dealt": 43900,
+          "received": 8600,
           "pick": 79,
-          "miss": 135,
+          "miss": 146,
           "accuracy": 43.9,
           "qualified": true
         },
@@ -149,13 +149,13 @@
         },
         {
           "player": "David",
-          "matches": 17,
-          "kills": 291,
-          "deaths": 31,
-          "dealt": 40100,
-          "received": 7700,
+          "matches": 18,
+          "kills": 311,
+          "deaths": 34,
+          "dealt": 43900,
+          "received": 8600,
           "pick": 79,
-          "miss": 135,
+          "miss": 146,
           "accuracy": 43.9,
           "qualified": true
         },
@@ -880,18 +880,6 @@
           "qualified": true
         },
         {
-          "player": "tron",
-          "matches": 52,
-          "kills": 201,
-          "deaths": 234,
-          "dealt": 37800,
-          "received": 42900,
-          "pick": 145,
-          "miss": 505,
-          "accuracy": 32.0,
-          "qualified": true
-        },
-        {
           "player": "kostjq",
           "matches": 1,
           "kills": 5,
@@ -914,6 +902,18 @@
           "miss": 23,
           "accuracy": 32.0,
           "qualified": false
+        },
+        {
+          "player": "tron",
+          "matches": 53,
+          "kills": 204,
+          "deaths": 241,
+          "dealt": 38600,
+          "received": 44800,
+          "pick": 151,
+          "miss": 510,
+          "accuracy": 31.9,
+          "qualified": true
         },
         {
           "player": "Qiub",
@@ -1324,6 +1324,18 @@
           "qualified": false
         },
         {
+          "player": "yin",
+          "matches": 10,
+          "kills": 35,
+          "deaths": 72,
+          "dealt": 5700,
+          "received": 13400,
+          "pick": 16,
+          "miss": 86,
+          "accuracy": 27.4,
+          "qualified": true
+        },
+        {
           "player": "tomato-gose",
           "matches": 5,
           "kills": 23,
@@ -1489,18 +1501,6 @@
           "pick": 29,
           "miss": 133,
           "accuracy": 25.8,
-          "qualified": true
-        },
-        {
-          "player": "yin",
-          "matches": 9,
-          "kills": 31,
-          "deaths": 58,
-          "dealt": 5000,
-          "received": 11300,
-          "pick": 14,
-          "miss": 77,
-          "accuracy": 25.6,
           "qualified": true
         },
         {
@@ -1944,6 +1944,18 @@
           "received": 4200,
           "pick": 5,
           "miss": 20,
+          "accuracy": 17.0,
+          "qualified": false
+        },
+        {
+          "player": "gera",
+          "matches": 1,
+          "kills": 1,
+          "deaths": 4,
+          "dealt": 200,
+          "received": 600,
+          "pick": 3,
+          "miss": 8,
           "accuracy": 17.0,
           "qualified": false
         },
@@ -2398,18 +2410,6 @@
           "qualified": true
         },
         {
-          "player": "David",
-          "matches": 17,
-          "kills": 91,
-          "deaths": 16,
-          "dealt": 18714,
-          "received": 10175,
-          "pick": 87,
-          "miss": 169,
-          "accuracy": 26.8,
-          "qualified": true
-        },
-        {
           "player": "SUPER-LAG+DRUNK",
           "matches": 2,
           "kills": 12,
@@ -2420,6 +2420,18 @@
           "miss": 38,
           "accuracy": 26.5,
           "qualified": false
+        },
+        {
+          "player": "David",
+          "matches": 18,
+          "kills": 96,
+          "deaths": 17,
+          "dealt": 19834,
+          "received": 10319,
+          "pick": 87,
+          "miss": 183,
+          "accuracy": 26.4,
+          "qualified": true
         },
         {
           "player": "r",
@@ -2614,18 +2626,6 @@
           "qualified": true
         },
         {
-          "player": "yin",
-          "matches": 9,
-          "kills": 42,
-          "deaths": 31,
-          "dealt": 8662,
-          "received": 6301,
-          "pick": 47,
-          "miss": 108,
-          "accuracy": 23.7,
-          "qualified": true
-        },
-        {
           "player": "kreg",
           "matches": 2,
           "kills": 10,
@@ -2731,6 +2731,18 @@
           "pick": 28,
           "miss": 167,
           "accuracy": 23.1,
+          "qualified": true
+        },
+        {
+          "player": "yin",
+          "matches": 10,
+          "kills": 46,
+          "deaths": 35,
+          "dealt": 9096,
+          "received": 7206,
+          "pick": 56,
+          "miss": 113,
+          "accuracy": 23.0,
           "qualified": true
         },
         {
@@ -3166,18 +3178,6 @@
           "qualified": false
         },
         {
-          "player": "tron",
-          "matches": 52,
-          "kills": 190,
-          "deaths": 141,
-          "dealt": 37126,
-          "received": 35400,
-          "pick": 219,
-          "miss": 841,
-          "accuracy": 19.9,
-          "qualified": true
-        },
-        {
           "player": "Maniek",
           "matches": 120,
           "kills": 353,
@@ -3199,6 +3199,18 @@
           "pick": 45,
           "miss": 56,
           "accuracy": 19.8,
+          "qualified": true
+        },
+        {
+          "player": "tron",
+          "matches": 53,
+          "kills": 191,
+          "deaths": 142,
+          "dealt": 37270,
+          "received": 35751,
+          "pick": 222,
+          "miss": 852,
+          "accuracy": 19.7,
           "qualified": true
         },
         {
@@ -4148,6 +4160,18 @@
           "miss": 52,
           "accuracy": 2.5,
           "qualified": false
+        },
+        {
+          "player": "gera",
+          "matches": 1,
+          "kills": 0,
+          "deaths": 4,
+          "dealt": 0,
+          "received": 434,
+          "pick": 2,
+          "miss": 12,
+          "accuracy": 0.0,
+          "qualified": false
         }
       ]
     },
@@ -4237,6 +4261,18 @@
           "pick": 2,
           "miss": 16,
           "accuracy": 37.0,
+          "qualified": false
+        },
+        {
+          "player": "gera",
+          "matches": 1,
+          "kills": 0,
+          "deaths": 2,
+          "dealt": 24,
+          "received": 198,
+          "pick": 2,
+          "miss": 5,
+          "accuracy": 29.0,
           "qualified": false
         },
         {
@@ -4456,6 +4492,18 @@
           "qualified": false
         },
         {
+          "player": "David",
+          "matches": 18,
+          "kills": 147,
+          "deaths": 13,
+          "dealt": 19920,
+          "received": 5328,
+          "pick": 67,
+          "miss": 163,
+          "accuracy": 15.4,
+          "qualified": true
+        },
+        {
           "player": "ZYGA",
           "matches": 7,
           "kills": 33,
@@ -4525,18 +4573,6 @@
           "pick": 89,
           "miss": 47,
           "accuracy": 15.2,
-          "qualified": true
-        },
-        {
-          "player": "David",
-          "matches": 17,
-          "kills": 140,
-          "deaths": 13,
-          "dealt": 19104,
-          "received": 5076,
-          "pick": 66,
-          "miss": 157,
-          "accuracy": 15.1,
           "qualified": true
         },
         {
@@ -4780,18 +4816,6 @@
           "qualified": false
         },
         {
-          "player": "tron",
-          "matches": 51,
-          "kills": 130,
-          "deaths": 133,
-          "dealt": 21894,
-          "received": 22806,
-          "pick": 101,
-          "miss": 557,
-          "accuracy": 13.9,
-          "qualified": true
-        },
-        {
           "player": "michaq",
           "matches": 41,
           "kills": 130,
@@ -4812,6 +4836,18 @@
           "received": 80694,
           "pick": 629,
           "miss": 1830,
+          "accuracy": 13.8,
+          "qualified": true
+        },
+        {
+          "player": "tron",
+          "matches": 52,
+          "kills": 132,
+          "deaths": 138,
+          "dealt": 22338,
+          "received": 23502,
+          "pick": 104,
+          "miss": 561,
           "accuracy": 13.8,
           "qualified": true
         },
@@ -5920,18 +5956,6 @@
           "qualified": false
         },
         {
-          "player": "yin",
-          "matches": 9,
-          "kills": 4,
-          "deaths": 21,
-          "dealt": 1998,
-          "received": 4320,
-          "pick": 15,
-          "miss": 77,
-          "accuracy": 10.2,
-          "qualified": false
-        },
-        {
           "player": "LiOn]tRk[",
           "matches": 30,
           "kills": 64,
@@ -6048,6 +6072,18 @@
           "received": 1032,
           "pick": 8,
           "miss": 38,
+          "accuracy": 9.3,
+          "qualified": false
+        },
+        {
+          "player": "yin",
+          "matches": 10,
+          "kills": 4,
+          "deaths": 23,
+          "dealt": 2004,
+          "received": 4464,
+          "pick": 16,
+          "miss": 83,
           "accuracy": 9.3,
           "qualified": false
         },

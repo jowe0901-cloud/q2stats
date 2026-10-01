@@ -112,20 +112,20 @@
     "winrate": 60.0
   },
   {
+    "player": "David",
+    "elo": 1629,
+    "matches": 9,
+    "wins": 8,
+    "losses": 1,
+    "winrate": 88.9
+  },
+  {
     "player": "[sYnth]Scooby",
     "elo": 1616,
     "matches": 38,
     "wins": 19,
     "losses": 19,
     "winrate": 50.0
-  },
-  {
-    "player": "David",
-    "elo": 1613,
-    "matches": 8,
-    "wins": 7,
-    "losses": 1,
-    "winrate": 87.5
   },
   {
     "player": "faint",
@@ -600,14 +600,6 @@
     "winrate": 50.0
   },
   {
-    "player": "yin",
-    "elo": 1500,
-    "matches": 5,
-    "wins": 3,
-    "losses": 2,
-    "winrate": 60.0
-  },
-  {
     "player": "Q",
     "elo": 1500,
     "matches": 2,
@@ -646,6 +638,14 @@
     "wins": 1,
     "losses": 1,
     "winrate": 50.0
+  },
+  {
+    "player": "gera",
+    "elo": 1500,
+    "matches": 1,
+    "wins": 1,
+    "losses": 0,
+    "winrate": 100.0
   },
   {
     "player": "MORTAL",
@@ -750,6 +750,14 @@
     "wins": 0,
     "losses": 1,
     "winrate": 0.0
+  },
+  {
+    "player": "yin",
+    "elo": 1490,
+    "matches": 6,
+    "wins": 3,
+    "losses": 3,
+    "winrate": 50.0
   },
   {
     "player": "SUPER-LAG+DRUNK",
@@ -1128,14 +1136,6 @@
     "winrate": 0.0
   },
   {
-    "player": "tron",
-    "elo": 1438,
-    "matches": 47,
-    "wins": 20,
-    "losses": 27,
-    "winrate": 42.6
-  },
-  {
     "player": "Qiub",
     "elo": 1437,
     "matches": 22,
@@ -1150,6 +1150,14 @@
     "wins": 1,
     "losses": 6,
     "winrate": 14.3
+  },
+  {
+    "player": "tron",
+    "elo": 1433,
+    "matches": 48,
+    "wins": 20,
+    "losses": 28,
+    "winrate": 41.7
   },
   {
     "player": "[sf]T3RM!N4ToR",
