@@ -304,14 +304,6 @@
     "winrate": 44.4
   },
   {
-    "player": "SUPER-LAG",
-    "elo": 1517,
-    "matches": 4,
-    "wins": 3,
-    "losses": 1,
-    "winrate": 75.0
-  },
-  {
     "player": "fonbeers",
     "elo": 1516,
     "matches": 1,
@@ -382,6 +374,14 @@
     "wins": 2,
     "losses": 2,
     "winrate": 50.0
+  },
+  {
+    "player": "SUPER-LAG",
+    "elo": 1496,
+    "matches": 5,
+    "wins": 3,
+    "losses": 2,
+    "winrate": 60.0
   },
   {
     "player": "warrior",
@@ -624,6 +624,14 @@
     "winrate": 22.2
   },
   {
+    "player": "GUSIUS",
+    "elo": 1444,
+    "matches": 14,
+    "wins": 4,
+    "losses": 10,
+    "winrate": 28.6
+  },
+  {
     "player": "Grrga",
     "elo": 1443,
     "matches": 4,
@@ -670,14 +678,6 @@
     "wins": 0,
     "losses": 7,
     "winrate": 0.0
-  },
-  {
-    "player": "GUSIUS",
-    "elo": 1424,
-    "matches": 13,
-    "wins": 3,
-    "losses": 10,
-    "winrate": 23.1
   },
   {
     "player": "Bullz",
