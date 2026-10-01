@@ -532,6 +532,18 @@
           "qualified": false
         },
         {
+          "player": "fff",
+          "matches": 6,
+          "kills": 11,
+          "deaths": 8,
+          "dealt": 2700,
+          "received": 3100,
+          "pick": 5,
+          "miss": 18,
+          "accuracy": 36.0,
+          "qualified": false
+        },
+        {
           "player": "lamerator",
           "matches": 3,
           "kills": 16,
@@ -734,18 +746,6 @@
           "miss": 35,
           "accuracy": 34.0,
           "qualified": true
-        },
-        {
-          "player": "fff",
-          "matches": 5,
-          "kills": 5,
-          "deaths": 6,
-          "dealt": 1600,
-          "received": 2500,
-          "pick": 4,
-          "miss": 15,
-          "accuracy": 34.0,
-          "qualified": false
         },
         {
           "player": "benzyna",
@@ -1241,14 +1241,14 @@
         },
         {
           "player": "B100D",
-          "matches": 119,
-          "kills": 418,
-          "deaths": 461,
-          "dealt": 87600,
-          "received": 83900,
-          "pick": 398,
-          "miss": 681,
-          "accuracy": 28.0,
+          "matches": 120,
+          "kills": 420,
+          "deaths": 467,
+          "dealt": 88200,
+          "received": 85000,
+          "pick": 401,
+          "miss": 682,
+          "accuracy": 28.1,
           "qualified": true
         },
         {
@@ -3287,27 +3287,15 @@
         },
         {
           "player": "B100D",
-          "matches": 120,
+          "matches": 121,
           "kills": 213,
           "deaths": 246,
-          "dealt": 56231,
-          "received": 71174,
-          "pick": 454,
-          "miss": 1251,
+          "dealt": 56623,
+          "received": 71223,
+          "pick": 461,
+          "miss": 1252,
           "accuracy": 18.2,
           "qualified": true
-        },
-        {
-          "player": "fff",
-          "matches": 5,
-          "kills": 6,
-          "deaths": 3,
-          "dealt": 2813,
-          "received": 1521,
-          "pick": 16,
-          "miss": 10,
-          "accuracy": 18.2,
-          "qualified": false
         },
         {
           "player": "piu-sleepy",
@@ -3715,6 +3703,18 @@
           "pick": 12,
           "miss": 58,
           "accuracy": 15.3,
+          "qualified": false
+        },
+        {
+          "player": "fff",
+          "matches": 6,
+          "kills": 6,
+          "deaths": 3,
+          "dealt": 2813,
+          "received": 1913,
+          "pick": 17,
+          "miss": 17,
+          "accuracy": 15.2,
           "qualified": false
         },
         {
@@ -5272,6 +5272,18 @@
           "qualified": true
         },
         {
+          "player": "fff",
+          "matches": 6,
+          "kills": 12,
+          "deaths": 7,
+          "dealt": 1794,
+          "received": 1986,
+          "pick": 23,
+          "miss": 19,
+          "accuracy": 12.0,
+          "qualified": false
+        },
+        {
           "player": "[d][s][a][d][s]",
           "matches": 3,
           "kills": 9,
@@ -5429,13 +5441,13 @@
         },
         {
           "player": "B100D",
-          "matches": 120,
-          "kills": 347,
-          "deaths": 278,
-          "dealt": 58494,
-          "received": 51582,
-          "pick": 465,
-          "miss": 945,
+          "matches": 121,
+          "kills": 348,
+          "deaths": 281,
+          "dealt": 58896,
+          "received": 52116,
+          "pick": 470,
+          "miss": 949,
           "accuracy": 11.7,
           "qualified": true
         },
@@ -5785,18 +5797,6 @@
           "pick": 5,
           "miss": 24,
           "accuracy": 10.5,
-          "qualified": false
-        },
-        {
-          "player": "fff",
-          "matches": 5,
-          "kills": 9,
-          "deaths": 6,
-          "dealt": 1260,
-          "received": 1584,
-          "pick": 19,
-          "miss": 14,
-          "accuracy": 10.4,
           "qualified": false
         },
         {
