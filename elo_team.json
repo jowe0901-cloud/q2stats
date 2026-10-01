@@ -1,19 +1,19 @@
 [
   {
+    "player": "cne",
+    "elo": 1916,
+    "matches": 93,
+    "wins": 57,
+    "losses": 36,
+    "winrate": 61.3
+  },
+  {
     "player": "maq",
     "elo": 1913,
     "matches": 75,
     "wins": 49,
     "losses": 26,
     "winrate": 65.3
-  },
-  {
-    "player": "cne",
-    "elo": 1900,
-    "matches": 92,
-    "wins": 56,
-    "losses": 36,
-    "winrate": 60.9
   },
   {
     "player": "warrior",
@@ -40,20 +40,20 @@
     "winrate": 55.6
   },
   {
-    "player": "qw",
-    "elo": 1802,
-    "matches": 181,
-    "wins": 89,
-    "losses": 92,
-    "winrate": 49.2
-  },
-  {
     "player": "rul",
     "elo": 1798,
     "matches": 90,
     "wins": 51,
     "losses": 39,
     "winrate": 56.7
+  },
+  {
+    "player": "qw",
+    "elo": 1796,
+    "matches": 182,
+    "wins": 89,
+    "losses": 93,
+    "winrate": 48.9
   },
   {
     "player": "[sf]fasadin",
@@ -856,6 +856,14 @@
     "winrate": 50.0
   },
   {
+    "player": "z0diac",
+    "elo": 1483,
+    "matches": 47,
+    "wins": 23,
+    "losses": 24,
+    "winrate": 48.9
+  },
+  {
     "player": "shad",
     "elo": 1482,
     "matches": 4,
@@ -918,14 +926,6 @@
     "wins": 6,
     "losses": 9,
     "winrate": 40.0
-  },
-  {
-    "player": "z0diac",
-    "elo": 1475,
-    "matches": 46,
-    "wins": 22,
-    "losses": 24,
-    "winrate": 47.8
   },
   {
     "player": "T3RM!N4ToR",
@@ -1193,11 +1193,11 @@
   },
   {
     "player": "Maniek",
-    "elo": 1379,
-    "matches": 106,
+    "elo": 1363,
+    "matches": 107,
     "wins": 49,
-    "losses": 57,
-    "winrate": 46.2
+    "losses": 58,
+    "winrate": 45.8
   },
   {
     "player": "[HC]Reni^",
