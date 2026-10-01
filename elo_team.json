@@ -1,11 +1,11 @@
 [
   {
     "player": "maq",
-    "elo": 1930,
-    "matches": 64,
+    "elo": 1937,
+    "matches": 65,
     "wins": 44,
-    "losses": 20,
-    "winrate": 68.8
+    "losses": 21,
+    "winrate": 67.7
   },
   {
     "player": "warrior",
@@ -32,6 +32,14 @@
     "winrate": 60.3
   },
   {
+    "player": "qw",
+    "elo": 1805,
+    "matches": 179,
+    "wins": 88,
+    "losses": 91,
+    "winrate": 49.2
+  },
+  {
     "player": "rul",
     "elo": 1798,
     "matches": 90,
@@ -40,20 +48,12 @@
     "winrate": 56.7
   },
   {
-    "player": "qw",
-    "elo": 1793,
-    "matches": 178,
-    "wins": 87,
-    "losses": 91,
-    "winrate": 48.9
-  },
-  {
     "player": "GipSy",
-    "elo": 1789,
-    "matches": 104,
-    "wins": 58,
+    "elo": 1797,
+    "matches": 105,
+    "wins": 59,
     "losses": 46,
-    "winrate": 55.8
+    "winrate": 56.2
   },
   {
     "player": "Keizer",
@@ -224,14 +224,6 @@
     "winrate": 75.0
   },
   {
-    "player": "B100D",
-    "elo": 1551,
-    "matches": 96,
-    "wins": 50,
-    "losses": 46,
-    "winrate": 52.1
-  },
-  {
     "player": "OPTIMIZER",
     "elo": 1540,
     "matches": 3,
@@ -262,6 +254,14 @@
     "wins": 6,
     "losses": 3,
     "winrate": 66.7
+  },
+  {
+    "player": "B100D",
+    "elo": 1535,
+    "matches": 97,
+    "wins": 50,
+    "losses": 47,
+    "winrate": 51.5
   },
   {
     "player": "[d][s][a][d][s]",
@@ -1064,20 +1064,20 @@
     "winrate": 0.0
   },
   {
-    "player": "SUPER-LAG",
-    "elo": 1451,
-    "matches": 76,
-    "wins": 43,
-    "losses": 33,
-    "winrate": 56.6
-  },
-  {
     "player": "tOk.P!o",
     "elo": 1448,
     "matches": 6,
     "wins": 0,
     "losses": 6,
     "winrate": 0.0
+  },
+  {
+    "player": "GUSIUS",
+    "elo": 1447,
+    "matches": 48,
+    "wins": 21,
+    "losses": 27,
+    "winrate": 43.8
   },
   {
     "player": "senz",
@@ -1112,14 +1112,6 @@
     "winrate": 42.6
   },
   {
-    "player": "GUSIUS",
-    "elo": 1438,
-    "matches": 47,
-    "wins": 20,
-    "losses": 27,
-    "winrate": 42.6
-  },
-  {
     "player": "Qiub",
     "elo": 1437,
     "matches": 18,
@@ -1134,6 +1126,14 @@
     "wins": 1,
     "losses": 6,
     "winrate": 14.3
+  },
+  {
+    "player": "SUPER-LAG",
+    "elo": 1436,
+    "matches": 77,
+    "wins": 43,
+    "losses": 34,
+    "winrate": 55.8
   },
   {
     "player": "[sf]T3RM!N4ToR",

@@ -37189,5 +37189,57 @@
       }
     ],
     "saved_at": "2026-10-01T14:08:56+02:00"
+  },
+  {
+    "match_id": "e9171dd44483355a",
+    "game_type": "team",
+    "winner": "Away",
+    "home_score": 37,
+    "away_score": 50,
+    "players": [
+      {
+        "player": "B100D",
+        "team": "Home",
+        "old_elo": 1551,
+        "change": -16,
+        "new_elo": 1535
+      },
+      {
+        "player": "maq",
+        "team": "Home",
+        "old_elo": 1930,
+        "change": 7,
+        "new_elo": 1937
+      },
+      {
+        "player": "SUPER-LAG",
+        "team": "Home",
+        "old_elo": 1451,
+        "change": -14.9,
+        "new_elo": 1436
+      },
+      {
+        "player": "GUSIUS",
+        "team": "Away",
+        "old_elo": 1438,
+        "change": 9.3,
+        "new_elo": 1447
+      },
+      {
+        "player": "qw",
+        "team": "Away",
+        "old_elo": 1793,
+        "change": 11.7,
+        "new_elo": 1805
+      },
+      {
+        "player": "GipSy",
+        "team": "Away",
+        "old_elo": 1789,
+        "change": 8.5,
+        "new_elo": 1797
+      }
+    ],
+    "saved_at": "2026-10-01T14:20:39+02:00"
   }
 ]
