@@ -1,11 +1,11 @@
 [
   {
     "player": "maq",
-    "elo": 1910,
-    "matches": 74,
-    "wins": 48,
+    "elo": 1913,
+    "matches": 75,
+    "wins": 49,
     "losses": 26,
-    "winrate": 64.9
+    "winrate": 65.3
   },
   {
     "player": "warrior",
@@ -32,6 +32,14 @@
     "winrate": 60.3
   },
   {
+    "player": "qw",
+    "elo": 1802,
+    "matches": 181,
+    "wins": 89,
+    "losses": 92,
+    "winrate": 49.2
+  },
+  {
     "player": "rul",
     "elo": 1798,
     "matches": 90,
@@ -46,14 +54,6 @@
     "wins": 59,
     "losses": 46,
     "winrate": 56.2
-  },
-  {
-    "player": "qw",
-    "elo": 1789,
-    "matches": 180,
-    "wins": 88,
-    "losses": 92,
-    "winrate": 48.9
   },
   {
     "player": "Keizer",
@@ -1136,20 +1136,20 @@
     "winrate": 14.3
   },
   {
-    "player": "GUSIUS",
-    "elo": 1434,
-    "matches": 54,
-    "wins": 24,
-    "losses": 30,
-    "winrate": 44.4
-  },
-  {
     "player": "[sf]T3RM!N4ToR",
     "elo": 1424,
     "matches": 11,
     "wins": 4,
     "losses": 7,
     "winrate": 36.4
+  },
+  {
+    "player": "GUSIUS",
+    "elo": 1419,
+    "matches": 55,
+    "wins": 24,
+    "losses": 31,
+    "winrate": 43.6
   },
   {
     "player": "need1",
