@@ -664,18 +664,6 @@
           "qualified": false
         },
         {
-          "player": "shad",
-          "matches": 25,
-          "kills": 122,
-          "deaths": 66,
-          "dealt": 31700,
-          "received": 15900,
-          "pick": 119,
-          "miss": 177,
-          "accuracy": 34.4,
-          "qualified": true
-        },
-        {
           "player": "Larik",
           "matches": 3,
           "kills": 6,
@@ -733,6 +721,18 @@
           "pick": 30,
           "miss": 223,
           "accuracy": 34.1,
+          "qualified": true
+        },
+        {
+          "player": "shad",
+          "matches": 26,
+          "kills": 123,
+          "deaths": 66,
+          "dealt": 32200,
+          "received": 16500,
+          "pick": 121,
+          "miss": 182,
+          "accuracy": 34.0,
           "qualified": true
         },
         {
@@ -1816,6 +1816,18 @@
           "qualified": true
         },
         {
+          "player": "v4cio",
+          "matches": 21,
+          "kills": 17,
+          "deaths": 65,
+          "dealt": 7600,
+          "received": 19500,
+          "pick": 99,
+          "miss": 99,
+          "accuracy": 19.0,
+          "qualified": false
+        },
+        {
           "player": "nem",
           "matches": 7,
           "kills": 4,
@@ -1837,18 +1849,6 @@
           "pick": 10,
           "miss": 26,
           "accuracy": 18.7,
-          "qualified": false
-        },
-        {
-          "player": "v4cio",
-          "matches": 20,
-          "kills": 17,
-          "deaths": 64,
-          "dealt": 7000,
-          "received": 19000,
-          "pick": 94,
-          "miss": 97,
-          "accuracy": 18.6,
           "qualified": false
         },
         {
@@ -3479,13 +3479,13 @@
         },
         {
           "player": "shad",
-          "matches": 25,
-          "kills": 54,
-          "deaths": 56,
-          "dealt": 18935,
-          "received": 19641,
-          "pick": 133,
-          "miss": 197,
+          "matches": 26,
+          "kills": 56,
+          "deaths": 58,
+          "dealt": 20124,
+          "received": 20844,
+          "pick": 139,
+          "miss": 206,
           "accuracy": 17.5,
           "qualified": true
         },
@@ -3778,18 +3778,6 @@
           "qualified": true
         },
         {
-          "player": "v4cio",
-          "matches": 20,
-          "kills": 48,
-          "deaths": 61,
-          "dealt": 14991,
-          "received": 19426,
-          "pick": 129,
-          "miss": 113,
-          "accuracy": 14.4,
-          "qualified": true
-        },
-        {
           "player": "Abyys",
           "matches": 5,
           "kills": 4,
@@ -3800,6 +3788,18 @@
           "miss": 96,
           "accuracy": 14.4,
           "qualified": false
+        },
+        {
+          "player": "v4cio",
+          "matches": 21,
+          "kills": 50,
+          "deaths": 63,
+          "dealt": 16067,
+          "received": 20776,
+          "pick": 138,
+          "miss": 119,
+          "accuracy": 14.2,
+          "qualified": true
         },
         {
           "player": "deoll",
@@ -4948,18 +4948,6 @@
           "qualified": true
         },
         {
-          "player": "shad",
-          "matches": 25,
-          "kills": 85,
-          "deaths": 56,
-          "dealt": 18168,
-          "received": 15390,
-          "pick": 111,
-          "miss": 220,
-          "accuracy": 13.1,
-          "qualified": true
-        },
-        {
           "player": "cne",
           "matches": 70,
           "kills": 168,
@@ -5136,6 +5124,18 @@
           "received": 68214,
           "pick": 228,
           "miss": 1843,
+          "accuracy": 12.9,
+          "qualified": true
+        },
+        {
+          "player": "shad",
+          "matches": 26,
+          "kills": 88,
+          "deaths": 58,
+          "dealt": 18894,
+          "received": 15708,
+          "pick": 117,
+          "miss": 228,
           "accuracy": 12.9,
           "qualified": true
         },
@@ -5560,18 +5560,6 @@
           "qualified": true
         },
         {
-          "player": "v4cio",
-          "matches": 20,
-          "kills": 35,
-          "deaths": 71,
-          "dealt": 11346,
-          "received": 12912,
-          "pick": 151,
-          "miss": 98,
-          "accuracy": 11.6,
-          "qualified": true
-        },
-        {
           "player": "[sf]fasadin",
           "matches": 9,
           "kills": 31,
@@ -5642,6 +5630,18 @@
           "miss": 24,
           "accuracy": 11.5,
           "qualified": false
+        },
+        {
+          "player": "v4cio",
+          "matches": 21,
+          "kills": 37,
+          "deaths": 74,
+          "dealt": 11664,
+          "received": 13638,
+          "pick": 159,
+          "miss": 104,
+          "accuracy": 11.3,
+          "qualified": true
         },
         {
           "player": "lynx",

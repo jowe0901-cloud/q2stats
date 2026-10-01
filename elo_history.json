@@ -37728,5 +37728,29 @@
       }
     ],
     "saved_at": "2026-10-01T17:50:52+02:00"
+  },
+  {
+    "match_id": "c1e0e3bbd54c1c85",
+    "game_type": "1v1",
+    "winner": "Home",
+    "home_score": 8,
+    "away_score": 3,
+    "players": [
+      {
+        "player": "shad",
+        "team": "Home",
+        "old_elo": 1589,
+        "change": 6.1,
+        "new_elo": 1595
+      },
+      {
+        "player": "v4cio",
+        "team": "Away",
+        "old_elo": 1339,
+        "change": -6.1,
+        "new_elo": 1333
+      }
+    ],
+    "saved_at": "2026-10-01T17:57:10+02:00"
   }
 ]
