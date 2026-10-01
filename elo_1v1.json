@@ -120,6 +120,14 @@
     "winrate": 100.0
   },
   {
+    "player": "fff",
+    "elo": 1560,
+    "matches": 8,
+    "wins": 6,
+    "losses": 2,
+    "winrate": 75.0
+  },
+  {
     "player": "piu-wiu",
     "elo": 1557,
     "matches": 9,
@@ -150,14 +158,6 @@
     "wins": 4,
     "losses": 0,
     "winrate": 100.0
-  },
-  {
-    "player": "fff",
-    "elo": 1551,
-    "matches": 7,
-    "wins": 5,
-    "losses": 2,
-    "winrate": 71.4
   },
   {
     "player": "pyt0ng",
@@ -704,20 +704,20 @@
     "winrate": 0.0
   },
   {
-    "player": "B100D",
-    "elo": 1403,
-    "matches": 59,
-    "wins": 28,
-    "losses": 31,
-    "winrate": 47.5
-  },
-  {
     "player": "error",
     "elo": 1395,
     "matches": 9,
     "wins": 0,
     "losses": 9,
     "winrate": 0.0
+  },
+  {
+    "player": "B100D",
+    "elo": 1394,
+    "matches": 60,
+    "wins": 28,
+    "losses": 32,
+    "winrate": 46.7
   },
   {
     "player": "Player-345",
