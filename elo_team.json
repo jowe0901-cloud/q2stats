@@ -1,11 +1,11 @@
 [
   {
     "player": "maq",
-    "elo": 1921,
-    "matches": 66,
-    "wins": 44,
+    "elo": 1923,
+    "matches": 67,
+    "wins": 45,
     "losses": 22,
-    "winrate": 66.7
+    "winrate": 67.2
   },
   {
     "player": "warrior",
@@ -240,6 +240,14 @@
     "winrate": 83.3
   },
   {
+    "player": "B100D",
+    "elo": 1537,
+    "matches": 99,
+    "wins": 51,
+    "losses": 48,
+    "winrate": 51.5
+  },
+  {
     "player": "=PFH=ZYGA",
     "elo": 1536,
     "matches": 3,
@@ -318,14 +326,6 @@
     "wins": 3,
     "losses": 3,
     "winrate": 50.0
-  },
-  {
-    "player": "B100D",
-    "elo": 1522,
-    "matches": 98,
-    "wins": 50,
-    "losses": 48,
-    "winrate": 51.0
   },
   {
     "player": "KaPo",
@@ -1056,14 +1056,6 @@
     "winrate": 25.0
   },
   {
-    "player": "GUSIUS",
-    "elo": 1458,
-    "matches": 49,
-    "wins": 22,
-    "losses": 27,
-    "winrate": 44.9
-  },
-  {
     "player": "Qiub",
     "elo": 1453,
     "matches": 19,
@@ -1096,6 +1088,14 @@
     "winrate": 44.0
   },
   {
+    "player": "GUSIUS",
+    "elo": 1445,
+    "matches": 50,
+    "wins": 22,
+    "losses": 28,
+    "winrate": 44.0
+  },
+  {
     "player": "xRSNx",
     "elo": 1445,
     "matches": 6,
@@ -1120,20 +1120,20 @@
     "winrate": 42.6
   },
   {
-    "player": "SUPER-LAG",
-    "elo": 1437,
-    "matches": 78,
-    "wins": 43,
-    "losses": 35,
-    "winrate": 55.1
-  },
-  {
     "player": "shotman",
     "elo": 1437,
     "matches": 7,
     "wins": 1,
     "losses": 6,
     "winrate": 14.3
+  },
+  {
+    "player": "SUPER-LAG",
+    "elo": 1435,
+    "matches": 79,
+    "wins": 43,
+    "losses": 36,
+    "winrate": 54.4
   },
   {
     "player": "[sf]T3RM!N4ToR",
