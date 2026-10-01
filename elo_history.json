@@ -37614,5 +37614,43 @@
       }
     ],
     "saved_at": "2026-10-01T17:15:38+02:00"
+  },
+  {
+    "match_id": "a92120b245f8a860",
+    "game_type": "team",
+    "winner": "Away",
+    "home_score": 23,
+    "away_score": 36,
+    "players": [
+      {
+        "player": "jabb@",
+        "team": "Home",
+        "old_elo": 1216,
+        "change": -16,
+        "new_elo": 1200
+      },
+      {
+        "player": "maq",
+        "team": "Home",
+        "old_elo": 1933,
+        "change": -13.5,
+        "new_elo": 1920
+      },
+      {
+        "player": "lameration",
+        "team": "Away",
+        "old_elo": 1498,
+        "change": 16,
+        "new_elo": 1514
+      },
+      {
+        "player": "SUPER-LAG",
+        "team": "Away",
+        "old_elo": 1461,
+        "change": 16,
+        "new_elo": 1477
+      }
+    ],
+    "saved_at": "2026-10-01T17:27:17+02:00"
   }
 ]
