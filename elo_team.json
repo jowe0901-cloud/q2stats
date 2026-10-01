@@ -1,11 +1,11 @@
 [
   {
     "player": "maq",
-    "elo": 1937,
-    "matches": 65,
+    "elo": 1921,
+    "matches": 66,
     "wins": 44,
-    "losses": 21,
-    "winrate": 67.7
+    "losses": 22,
+    "winrate": 66.7
   },
   {
     "player": "warrior",
@@ -256,14 +256,6 @@
     "winrate": 66.7
   },
   {
-    "player": "B100D",
-    "elo": 1535,
-    "matches": 97,
-    "wins": 50,
-    "losses": 47,
-    "winrate": 51.5
-  },
-  {
     "player": "[d][s][a][d][s]",
     "elo": 1535,
     "matches": 3,
@@ -326,6 +318,14 @@
     "wins": 3,
     "losses": 3,
     "winrate": 50.0
+  },
+  {
+    "player": "B100D",
+    "elo": 1522,
+    "matches": 98,
+    "wins": 50,
+    "losses": 48,
+    "winrate": 51.0
   },
   {
     "player": "KaPo",
@@ -1056,6 +1056,22 @@
     "winrate": 25.0
   },
   {
+    "player": "GUSIUS",
+    "elo": 1458,
+    "matches": 49,
+    "wins": 22,
+    "losses": 27,
+    "winrate": 44.9
+  },
+  {
+    "player": "Qiub",
+    "elo": 1453,
+    "matches": 19,
+    "wins": 8,
+    "losses": 11,
+    "winrate": 42.1
+  },
+  {
     "player": "deoll",
     "elo": 1452,
     "matches": 3,
@@ -1070,14 +1086,6 @@
     "wins": 0,
     "losses": 6,
     "winrate": 0.0
-  },
-  {
-    "player": "GUSIUS",
-    "elo": 1447,
-    "matches": 48,
-    "wins": 21,
-    "losses": 27,
-    "winrate": 43.8
   },
   {
     "player": "senz",
@@ -1112,12 +1120,12 @@
     "winrate": 42.6
   },
   {
-    "player": "Qiub",
+    "player": "SUPER-LAG",
     "elo": 1437,
-    "matches": 18,
-    "wins": 7,
-    "losses": 11,
-    "winrate": 38.9
+    "matches": 78,
+    "wins": 43,
+    "losses": 35,
+    "winrate": 55.1
   },
   {
     "player": "shotman",
@@ -1126,14 +1134,6 @@
     "wins": 1,
     "losses": 6,
     "winrate": 14.3
-  },
-  {
-    "player": "SUPER-LAG",
-    "elo": 1436,
-    "matches": 77,
-    "wins": 43,
-    "losses": 34,
-    "winrate": 55.8
   },
   {
     "player": "[sf]T3RM!N4ToR",
