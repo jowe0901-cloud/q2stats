@@ -57,11 +57,11 @@
   },
   {
     "player": "tron",
-    "elo": 1583,
-    "matches": 8,
-    "wins": 7,
+    "elo": 1595,
+    "matches": 9,
+    "wins": 8,
     "losses": 1,
-    "winrate": 87.5
+    "winrate": 88.9
   },
   {
     "player": "insomnia",
@@ -392,14 +392,6 @@
     "winrate": 33.3
   },
   {
-    "player": "yin",
-    "elo": 1487,
-    "matches": 1,
-    "wins": 0,
-    "losses": 1,
-    "winrate": 0.0
-  },
-  {
     "player": "slayer",
     "elo": 1485,
     "matches": 1,
@@ -510,6 +502,14 @@
     "wins": 1,
     "losses": 3,
     "winrate": 25.0
+  },
+  {
+    "player": "yin",
+    "elo": 1476,
+    "matches": 2,
+    "wins": 0,
+    "losses": 2,
+    "winrate": 0.0
   },
   {
     "player": "senz",

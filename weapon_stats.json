@@ -880,6 +880,18 @@
           "qualified": true
         },
         {
+          "player": "tron",
+          "matches": 50,
+          "kills": 196,
+          "deaths": 226,
+          "dealt": 35200,
+          "received": 41300,
+          "pick": 131,
+          "miss": 505,
+          "accuracy": 32.0,
+          "qualified": true
+        },
+        {
           "player": "kostjq",
           "matches": 1,
           "kills": 5,
@@ -913,18 +925,6 @@
           "pick": 71,
           "miss": 233,
           "accuracy": 31.9,
-          "qualified": true
-        },
-        {
-          "player": "tron",
-          "matches": 49,
-          "kills": 184,
-          "deaths": 224,
-          "dealt": 32700,
-          "received": 40900,
-          "pick": 128,
-          "miss": 501,
-          "accuracy": 31.8,
           "qualified": true
         },
         {
@@ -1565,14 +1565,14 @@
         },
         {
           "player": "yin",
-          "matches": 6,
-          "kills": 21,
-          "deaths": 41,
-          "dealt": 3000,
-          "received": 6200,
-          "pick": 10,
-          "miss": 60,
-          "accuracy": 24.7,
+          "matches": 7,
+          "kills": 23,
+          "deaths": 53,
+          "dealt": 3400,
+          "received": 8700,
+          "pick": 14,
+          "miss": 63,
+          "accuracy": 24.6,
           "qualified": true
         },
         {
@@ -2542,18 +2542,6 @@
           "qualified": true
         },
         {
-          "player": "yin",
-          "matches": 6,
-          "kills": 26,
-          "deaths": 26,
-          "dealt": 4828,
-          "received": 4676,
-          "pick": 30,
-          "miss": 101,
-          "accuracy": 24.5,
-          "qualified": true
-        },
-        {
           "player": "myrmidon^",
           "matches": 73,
           "kills": 277,
@@ -2731,6 +2719,18 @@
           "pick": 28,
           "miss": 167,
           "accuracy": 23.1,
+          "qualified": true
+        },
+        {
+          "player": "yin",
+          "matches": 7,
+          "kills": 29,
+          "deaths": 28,
+          "dealt": 5580,
+          "received": 5294,
+          "pick": 35,
+          "miss": 104,
+          "accuracy": 23.0,
           "qualified": true
         },
         {
@@ -3071,13 +3071,13 @@
         },
         {
           "player": "tron",
-          "matches": 49,
-          "kills": 185,
-          "deaths": 125,
-          "dealt": 35598,
-          "received": 31147,
-          "pick": 212,
-          "miss": 824,
+          "matches": 50,
+          "kills": 187,
+          "deaths": 128,
+          "dealt": 36216,
+          "received": 31978,
+          "pick": 215,
+          "miss": 829,
           "accuracy": 20.1,
           "qualified": true
         },
@@ -4744,18 +4744,6 @@
           "qualified": false
         },
         {
-          "player": "tron",
-          "matches": 48,
-          "kills": 125,
-          "deaths": 132,
-          "dealt": 20574,
-          "received": 21990,
-          "pick": 92,
-          "miss": 550,
-          "accuracy": 14.1,
-          "qualified": true
-        },
-        {
           "player": "badman",
           "matches": 97,
           "kills": 251,
@@ -4776,6 +4764,18 @@
           "received": 19116,
           "pick": 178,
           "miss": 208,
+          "accuracy": 14.0,
+          "qualified": true
+        },
+        {
+          "player": "tron",
+          "matches": 49,
+          "kills": 127,
+          "deaths": 132,
+          "dealt": 20892,
+          "received": 22500,
+          "pick": 93,
+          "miss": 554,
           "accuracy": 14.0,
           "qualified": true
         },
@@ -5824,18 +5824,6 @@
           "qualified": false
         },
         {
-          "player": "yin",
-          "matches": 6,
-          "kills": 3,
-          "deaths": 16,
-          "dealt": 1182,
-          "received": 3000,
-          "pick": 8,
-          "miss": 68,
-          "accuracy": 11.0,
-          "qualified": false
-        },
-        {
           "player": "Q",
           "matches": 2,
           "kills": 2,
@@ -5916,6 +5904,18 @@
           "received": 1170,
           "pick": 5,
           "miss": 24,
+          "accuracy": 10.5,
+          "qualified": false
+        },
+        {
+          "player": "yin",
+          "matches": 7,
+          "kills": 3,
+          "deaths": 18,
+          "dealt": 1692,
+          "received": 3318,
+          "pick": 12,
+          "miss": 69,
           "accuracy": 10.5,
           "qualified": false
         },
