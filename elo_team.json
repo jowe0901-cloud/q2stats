@@ -96,20 +96,20 @@
     "winrate": 55.6
   },
   {
-    "player": "fon",
-    "elo": 1651,
-    "matches": 74,
-    "wins": 42,
-    "losses": 32,
-    "winrate": 56.8
-  },
-  {
     "player": "ping80",
     "elo": 1637,
     "matches": 30,
     "wins": 18,
     "losses": 12,
     "winrate": 60.0
+  },
+  {
+    "player": "fon",
+    "elo": 1635,
+    "matches": 75,
+    "wins": 42,
+    "losses": 33,
+    "winrate": 56.0
   },
   {
     "player": "[sYnth]Scooby",
@@ -161,11 +161,11 @@
   },
   {
     "player": "badman",
-    "elo": 1576,
-    "matches": 106,
+    "elo": 1577,
+    "matches": 107,
     "wins": 47,
-    "losses": 59,
-    "winrate": 44.3
+    "losses": 60,
+    "winrate": 43.9
   },
   {
     "player": ">OPTIMIZER",
@@ -224,12 +224,28 @@
     "winrate": 62.5
   },
   {
+    "player": "lameratorion",
+    "elo": 1553,
+    "matches": 13,
+    "wins": 7,
+    "losses": 6,
+    "winrate": 53.8
+  },
+  {
     "player": "B100D",
     "elo": 1545,
     "matches": 103,
     "wins": 54,
     "losses": 49,
     "winrate": 52.4
+  },
+  {
+    "player": "Br00m^^",
+    "elo": 1541,
+    "matches": 98,
+    "wins": 47,
+    "losses": 51,
+    "winrate": 48.0
   },
   {
     "player": "OPTIMIZER",
@@ -246,14 +262,6 @@
     "wins": 5,
     "losses": 1,
     "winrate": 83.3
-  },
-  {
-    "player": "lameratorion",
-    "elo": 1537,
-    "matches": 12,
-    "wins": 6,
-    "losses": 6,
-    "winrate": 50.0
   },
   {
     "player": "=PFH=ZYGA",
@@ -310,14 +318,6 @@
     "wins": 2,
     "losses": 0,
     "winrate": 100.0
-  },
-  {
-    "player": "Br00m^^",
-    "elo": 1526,
-    "matches": 97,
-    "wins": 46,
-    "losses": 51,
-    "winrate": 47.4
   },
   {
     "player": "TAITI",
@@ -744,14 +744,6 @@
     "winrate": 44.9
   },
   {
-    "player": "z0diac",
-    "elo": 1491,
-    "matches": 42,
-    "wins": 20,
-    "losses": 22,
-    "winrate": 47.6
-  },
-  {
     "player": "kurwa_ping80",
     "elo": 1490,
     "matches": 1,
@@ -894,6 +886,14 @@
     "wins": 19,
     "losses": 21,
     "winrate": 47.5
+  },
+  {
+    "player": "z0diac",
+    "elo": 1478,
+    "matches": 43,
+    "wins": 20,
+    "losses": 23,
+    "winrate": 46.5
   },
   {
     "player": "shNoodle",
@@ -1257,11 +1257,11 @@
   },
   {
     "player": "jabb@",
-    "elo": 1149,
-    "matches": 203,
-    "wins": 91,
+    "elo": 1151,
+    "matches": 204,
+    "wins": 92,
     "losses": 112,
-    "winrate": 44.8
+    "winrate": 45.1
   },
   {
     "player": "damz.",
