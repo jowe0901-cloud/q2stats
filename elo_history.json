@@ -38751,5 +38751,43 @@
       }
     ],
     "saved_at": "2026-10-01T22:29:46+02:00"
+  },
+  {
+    "match_id": "eb26c29b5b19e018",
+    "game_type": "team",
+    "winner": "Away",
+    "home_score": 24,
+    "away_score": 48,
+    "players": [
+      {
+        "player": "tron",
+        "team": "Home",
+        "old_elo": 1433,
+        "change": -6.3,
+        "new_elo": 1426
+      },
+      {
+        "player": "yin",
+        "team": "Home",
+        "old_elo": 1490,
+        "change": -16,
+        "new_elo": 1474
+      },
+      {
+        "player": "gera",
+        "team": "Away",
+        "old_elo": 1500,
+        "change": 8.5,
+        "new_elo": 1509
+      },
+      {
+        "player": "David",
+        "team": "Away",
+        "old_elo": 1629,
+        "change": 16,
+        "new_elo": 1645
+      }
+    ],
+    "saved_at": "2026-10-01T22:30:59+02:00"
   }
 ]

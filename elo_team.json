@@ -104,20 +104,20 @@
     "winrate": 57.1
   },
   {
+    "player": "David",
+    "elo": 1645,
+    "matches": 10,
+    "wins": 9,
+    "losses": 1,
+    "winrate": 90.0
+  },
+  {
     "player": "ping80",
     "elo": 1637,
     "matches": 30,
     "wins": 18,
     "losses": 12,
     "winrate": 60.0
-  },
-  {
-    "player": "David",
-    "elo": 1629,
-    "matches": 9,
-    "wins": 8,
-    "losses": 1,
-    "winrate": 88.9
   },
   {
     "player": "[sYnth]Scooby",
@@ -488,6 +488,14 @@
     "winrate": 40.0
   },
   {
+    "player": "gera",
+    "elo": 1509,
+    "matches": 2,
+    "wins": 2,
+    "losses": 0,
+    "winrate": 100.0
+  },
+  {
     "player": "slonik",
     "elo": 1508,
     "matches": 4,
@@ -640,14 +648,6 @@
     "winrate": 50.0
   },
   {
-    "player": "gera",
-    "elo": 1500,
-    "matches": 1,
-    "wins": 1,
-    "losses": 0,
-    "winrate": 100.0
-  },
-  {
     "player": "MORTAL",
     "elo": 1499,
     "matches": 5,
@@ -758,14 +758,6 @@
     "wins": 0,
     "losses": 1,
     "winrate": 0.0
-  },
-  {
-    "player": "yin",
-    "elo": 1490,
-    "matches": 6,
-    "wins": 3,
-    "losses": 3,
-    "winrate": 50.0
   },
   {
     "player": "SUPER-LAG+DRUNK",
@@ -950,6 +942,14 @@
     "wins": 1,
     "losses": 2,
     "winrate": 33.3
+  },
+  {
+    "player": "yin",
+    "elo": 1474,
+    "matches": 7,
+    "wins": 3,
+    "losses": 4,
+    "winrate": 42.9
   },
   {
     "player": "Tai",
@@ -1153,11 +1153,11 @@
   },
   {
     "player": "tron",
-    "elo": 1433,
-    "matches": 48,
+    "elo": 1426,
+    "matches": 49,
     "wins": 20,
-    "losses": 28,
-    "winrate": 41.7
+    "losses": 29,
+    "winrate": 40.8
   },
   {
     "player": "[sf]T3RM!N4ToR",
