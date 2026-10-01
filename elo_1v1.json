@@ -56,14 +56,6 @@
     "winrate": 83.3
   },
   {
-    "player": "tron",
-    "elo": 1595,
-    "matches": 9,
-    "wins": 8,
-    "losses": 1,
-    "winrate": 88.9
-  },
-  {
     "player": "insomnia",
     "elo": 1581,
     "matches": 7,
@@ -86,6 +78,14 @@
     "wins": 6,
     "losses": 0,
     "winrate": 100.0
+  },
+  {
+    "player": "tron",
+    "elo": 1574,
+    "matches": 10,
+    "wins": 8,
+    "losses": 2,
+    "winrate": 80.0
   },
   {
     "player": "daweed",
@@ -376,6 +376,14 @@
     "winrate": 50.0
   },
   {
+    "player": "yin",
+    "elo": 1497,
+    "matches": 3,
+    "wins": 1,
+    "losses": 2,
+    "winrate": 33.3
+  },
+  {
     "player": "SUPER-LAG",
     "elo": 1496,
     "matches": 5,
@@ -502,14 +510,6 @@
     "wins": 1,
     "losses": 3,
     "winrate": 25.0
-  },
-  {
-    "player": "yin",
-    "elo": 1476,
-    "matches": 2,
-    "wins": 0,
-    "losses": 2,
-    "winrate": 0.0
   },
   {
     "player": "senz",
