@@ -152,6 +152,14 @@
     "winrate": 100.0
   },
   {
+    "player": "fff",
+    "elo": 1551,
+    "matches": 7,
+    "wins": 5,
+    "losses": 2,
+    "winrate": 71.4
+  },
+  {
     "player": "pyt0ng",
     "elo": 1550,
     "matches": 9,
@@ -198,14 +206,6 @@
     "wins": 3,
     "losses": 0,
     "winrate": 100.0
-  },
-  {
-    "player": "fff",
-    "elo": 1540,
-    "matches": 6,
-    "wins": 4,
-    "losses": 2,
-    "winrate": 66.7
   },
   {
     "player": "need2",
@@ -705,11 +705,11 @@
   },
   {
     "player": "B100D",
-    "elo": 1414,
-    "matches": 58,
+    "elo": 1403,
+    "matches": 59,
     "wins": 28,
-    "losses": 30,
-    "winrate": 48.3
+    "losses": 31,
+    "winrate": 47.5
   },
   {
     "player": "error",

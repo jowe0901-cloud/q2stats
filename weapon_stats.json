@@ -328,6 +328,18 @@
           "qualified": true
         },
         {
+          "player": "fff",
+          "matches": 7,
+          "kills": 12,
+          "deaths": 10,
+          "dealt": 2800,
+          "received": 3500,
+          "pick": 6,
+          "miss": 23,
+          "accuracy": 38.3,
+          "qualified": false
+        },
+        {
           "player": "Gaymidon^",
           "matches": 4,
           "kills": 29,
@@ -528,18 +540,6 @@
           "received": 100,
           "pick": 4,
           "miss": 7,
-          "accuracy": 36.0,
-          "qualified": false
-        },
-        {
-          "player": "fff",
-          "matches": 6,
-          "kills": 11,
-          "deaths": 8,
-          "dealt": 2700,
-          "received": 3100,
-          "pick": 5,
-          "miss": 18,
           "accuracy": 36.0,
           "qualified": false
         },
@@ -1241,14 +1241,14 @@
         },
         {
           "player": "B100D",
-          "matches": 120,
-          "kills": 420,
-          "deaths": 467,
-          "dealt": 88200,
-          "received": 85000,
-          "pick": 401,
-          "miss": 682,
-          "accuracy": 28.1,
+          "matches": 121,
+          "kills": 422,
+          "deaths": 468,
+          "dealt": 88600,
+          "received": 85100,
+          "pick": 406,
+          "miss": 683,
+          "accuracy": 28.0,
           "qualified": true
         },
         {
@@ -3250,6 +3250,18 @@
           "qualified": true
         },
         {
+          "player": "B100D",
+          "matches": 122,
+          "kills": 215,
+          "deaths": 247,
+          "dealt": 57190,
+          "received": 71617,
+          "pick": 464,
+          "miss": 1255,
+          "accuracy": 18.5,
+          "qualified": true
+        },
+        {
           "player": "error",
           "matches": 23,
           "kills": 45,
@@ -3283,18 +3295,6 @@
           "pick": 101,
           "miss": 231,
           "accuracy": 18.4,
-          "qualified": true
-        },
-        {
-          "player": "B100D",
-          "matches": 121,
-          "kills": 213,
-          "deaths": 246,
-          "dealt": 56623,
-          "received": 71223,
-          "pick": 461,
-          "miss": 1252,
-          "accuracy": 18.2,
           "qualified": true
         },
         {
@@ -3574,6 +3574,18 @@
           "qualified": true
         },
         {
+          "player": "fff",
+          "matches": 7,
+          "kills": 7,
+          "deaths": 5,
+          "dealt": 3175,
+          "received": 2532,
+          "pick": 20,
+          "miss": 20,
+          "accuracy": 16.4,
+          "qualified": false
+        },
+        {
           "player": "freeze",
           "matches": 24,
           "kills": 27,
@@ -3703,18 +3715,6 @@
           "pick": 12,
           "miss": 58,
           "accuracy": 15.3,
-          "qualified": false
-        },
-        {
-          "player": "fff",
-          "matches": 6,
-          "kills": 6,
-          "deaths": 3,
-          "dealt": 2813,
-          "received": 1913,
-          "pick": 17,
-          "miss": 17,
-          "accuracy": 15.2,
           "qualified": false
         },
         {
@@ -5116,6 +5116,18 @@
           "qualified": true
         },
         {
+          "player": "fff",
+          "matches": 7,
+          "kills": 19,
+          "deaths": 7,
+          "dealt": 3168,
+          "received": 2214,
+          "pick": 27,
+          "miss": 22,
+          "accuracy": 12.7,
+          "qualified": false
+        },
+        {
           "player": "Pacifist_(AVB)",
           "matches": 11,
           "kills": 16,
@@ -5270,18 +5282,6 @@
           "miss": 41,
           "accuracy": 12.2,
           "qualified": true
-        },
-        {
-          "player": "fff",
-          "matches": 6,
-          "kills": 12,
-          "deaths": 7,
-          "dealt": 1794,
-          "received": 1986,
-          "pick": 23,
-          "miss": 19,
-          "accuracy": 12.0,
-          "qualified": false
         },
         {
           "player": "[d][s][a][d][s]",
@@ -5441,13 +5441,13 @@
         },
         {
           "player": "B100D",
-          "matches": 121,
+          "matches": 122,
           "kills": 348,
-          "deaths": 281,
-          "dealt": 58896,
-          "received": 52116,
-          "pick": 470,
-          "miss": 949,
+          "deaths": 288,
+          "dealt": 59124,
+          "received": 53490,
+          "pick": 473,
+          "miss": 953,
           "accuracy": 11.7,
           "qualified": true
         },
