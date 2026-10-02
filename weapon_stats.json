@@ -676,6 +676,18 @@
           "qualified": false
         },
         {
+          "player": "Maniek",
+          "matches": 127,
+          "kills": 698,
+          "deaths": 780,
+          "dealt": 129600,
+          "received": 146000,
+          "pick": 468,
+          "miss": 1295,
+          "accuracy": 34.3,
+          "qualified": true
+        },
+        {
           "player": "Larik",
           "matches": 3,
           "kills": 6,
@@ -686,18 +698,6 @@
           "miss": 45,
           "accuracy": 34.3,
           "qualified": false
-        },
-        {
-          "player": "Maniek",
-          "matches": 126,
-          "kills": 687,
-          "deaths": 779,
-          "dealt": 127800,
-          "received": 145600,
-          "pick": 465,
-          "miss": 1291,
-          "accuracy": 34.2,
-          "qualified": true
         },
         {
           "player": "szef|shotman",
@@ -911,18 +911,6 @@
           "dealt": 900,
           "received": 1600,
           "pick": 4,
-          "miss": 12,
-          "accuracy": 32.0,
-          "qualified": false
-        },
-        {
-          "player": "NEED-1-PLAYER",
-          "matches": 1,
-          "kills": 3,
-          "deaths": 4,
-          "dealt": 1000,
-          "received": 1000,
-          "pick": 1,
           "miss": 12,
           "accuracy": 32.0,
           "qualified": false
@@ -1588,6 +1576,18 @@
           "qualified": false
         },
         {
+          "player": "NEED-1-PLAYER",
+          "matches": 2,
+          "kills": 5,
+          "deaths": 4,
+          "dealt": 1500,
+          "received": 1200,
+          "pick": 2,
+          "miss": 18,
+          "accuracy": 24.5,
+          "qualified": false
+        },
+        {
           "player": "aid",
           "matches": 4,
           "kills": 21,
@@ -1721,14 +1721,14 @@
         },
         {
           "player": "damz.",
-          "matches": 49,
-          "kills": 80,
-          "deaths": 343,
-          "dealt": 14200,
-          "received": 46300,
-          "pick": 95,
-          "miss": 503,
-          "accuracy": 21.5,
+          "matches": 50,
+          "kills": 81,
+          "deaths": 350,
+          "dealt": 14300,
+          "received": 47400,
+          "pick": 96,
+          "miss": 509,
+          "accuracy": 21.6,
           "qualified": true
         },
         {
@@ -1901,14 +1901,14 @@
         },
         {
           "player": "lolercoaster",
-          "matches": 10,
+          "matches": 11,
           "kills": 34,
-          "deaths": 48,
-          "dealt": 7300,
-          "received": 8600,
-          "pick": 34,
-          "miss": 70,
-          "accuracy": 18.1,
+          "deaths": 54,
+          "dealt": 7800,
+          "received": 9800,
+          "pick": 36,
+          "miss": 75,
+          "accuracy": 18.4,
           "qualified": true
         },
         {
@@ -2782,6 +2782,18 @@
           "qualified": false
         },
         {
+          "player": "NEED-1-PLAYER",
+          "matches": 2,
+          "kills": 3,
+          "deaths": 5,
+          "dealt": 1356,
+          "received": 1257,
+          "pick": 6,
+          "miss": 31,
+          "accuracy": 23.0,
+          "qualified": false
+        },
+        {
           "player": "norm",
           "matches": 13,
           "kills": 53,
@@ -2862,18 +2874,6 @@
           "received": 139,
           "pick": 1,
           "miss": 25,
-          "accuracy": 22.0,
-          "qualified": false
-        },
-        {
-          "player": "NEED-1-PLAYER",
-          "matches": 1,
-          "kills": 2,
-          "deaths": 4,
-          "dealt": 558,
-          "received": 925,
-          "pick": 1,
-          "miss": 16,
           "accuracy": 22.0,
           "qualified": false
         },
@@ -2962,18 +2962,6 @@
           "qualified": true
         },
         {
-          "player": "damz.",
-          "matches": 50,
-          "kills": 165,
-          "deaths": 213,
-          "dealt": 34157,
-          "received": 44074,
-          "pick": 320,
-          "miss": 743,
-          "accuracy": 21.0,
-          "qualified": true
-        },
-        {
           "player": "maq",
           "matches": 91,
           "kills": 233,
@@ -3008,6 +2996,18 @@
           "miss": 70,
           "accuracy": 20.7,
           "qualified": false
+        },
+        {
+          "player": "damz.",
+          "matches": 51,
+          "kills": 165,
+          "deaths": 217,
+          "dealt": 34260,
+          "received": 45135,
+          "pick": 327,
+          "miss": 756,
+          "accuracy": 20.6,
+          "qualified": true
         },
         {
           "player": "Keizer",
@@ -3202,18 +3202,6 @@
           "qualified": false
         },
         {
-          "player": "Maniek",
-          "matches": 126,
-          "kills": 378,
-          "deaths": 471,
-          "dealt": 86726,
-          "received": 111740,
-          "pick": 624,
-          "miss": 2004,
-          "accuracy": 19.8,
-          "qualified": true
-        },
-        {
           "player": "tron",
           "matches": 54,
           "kills": 195,
@@ -3235,6 +3223,18 @@
           "pick": 45,
           "miss": 56,
           "accuracy": 19.8,
+          "qualified": true
+        },
+        {
+          "player": "Maniek",
+          "matches": 127,
+          "kills": 382,
+          "deaths": 471,
+          "dealt": 87566,
+          "received": 111874,
+          "pick": 627,
+          "miss": 2021,
+          "accuracy": 19.7,
           "qualified": true
         },
         {
@@ -3366,18 +3366,6 @@
           "received": 24786,
           "pick": 140,
           "miss": 456,
-          "accuracy": 18.6,
-          "qualified": true
-        },
-        {
-          "player": "lolercoaster",
-          "matches": 10,
-          "kills": 29,
-          "deaths": 34,
-          "dealt": 6399,
-          "received": 9110,
-          "pick": 40,
-          "miss": 126,
           "accuracy": 18.6,
           "qualified": true
         },
@@ -3560,6 +3548,18 @@
           "miss": 66,
           "accuracy": 17.7,
           "qualified": false
+        },
+        {
+          "player": "lolercoaster",
+          "matches": 11,
+          "kills": 30,
+          "deaths": 35,
+          "dealt": 6586,
+          "received": 9778,
+          "pick": 45,
+          "miss": 141,
+          "accuracy": 17.5,
+          "qualified": true
         },
         {
           "player": "_Logic",
@@ -5057,13 +5057,13 @@
         },
         {
           "player": "Maniek",
-          "matches": 125,
-          "kills": 272,
-          "deaths": 431,
-          "dealt": 59394,
-          "received": 70656,
-          "pick": 529,
-          "miss": 1339,
+          "matches": 126,
+          "kills": 275,
+          "deaths": 432,
+          "dealt": 59772,
+          "received": 70884,
+          "pick": 530,
+          "miss": 1354,
           "accuracy": 13.1,
           "qualified": true
         },
@@ -5632,18 +5632,6 @@
           "qualified": true
         },
         {
-          "player": "lolercoaster",
-          "matches": 10,
-          "kills": 23,
-          "deaths": 29,
-          "dealt": 3108,
-          "received": 4542,
-          "pick": 35,
-          "miss": 87,
-          "accuracy": 11.7,
-          "qualified": true
-        },
-        {
           "player": "n0sferatu",
           "matches": 37,
           "kills": 97,
@@ -5693,13 +5681,25 @@
         },
         {
           "player": "damz.",
-          "matches": 49,
-          "kills": 83,
-          "deaths": 154,
-          "dealt": 16380,
-          "received": 18564,
-          "pick": 180,
-          "miss": 472,
+          "matches": 50,
+          "kills": 85,
+          "deaths": 158,
+          "dealt": 16872,
+          "received": 18882,
+          "pick": 186,
+          "miss": 482,
+          "accuracy": 11.5,
+          "qualified": true
+        },
+        {
+          "player": "lolercoaster",
+          "matches": 11,
+          "kills": 28,
+          "deaths": 35,
+          "dealt": 4080,
+          "received": 5274,
+          "pick": 40,
+          "miss": 98,
           "accuracy": 11.5,
           "qualified": true
         },
@@ -5836,6 +5836,18 @@
           "qualified": true
         },
         {
+          "player": "NEED-1-PLAYER",
+          "matches": 2,
+          "kills": 13,
+          "deaths": 7,
+          "dealt": 1836,
+          "received": 1272,
+          "pick": 9,
+          "miss": 18,
+          "accuracy": 11.0,
+          "qualified": false
+        },
+        {
           "player": "q2dl-newplayer",
           "matches": 1,
           "kills": 8,
@@ -5856,18 +5868,6 @@
           "received": 1416,
           "pick": 18,
           "miss": 12,
-          "accuracy": 11.0,
-          "qualified": false
-        },
-        {
-          "player": "NEED-1-PLAYER",
-          "matches": 1,
-          "kills": 6,
-          "deaths": 1,
-          "dealt": 1164,
-          "received": 36,
-          "pick": 5,
-          "miss": 6,
           "accuracy": 11.0,
           "qualified": false
         },
