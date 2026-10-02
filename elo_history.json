@@ -40286,5 +40286,43 @@
       }
     ],
     "saved_at": "2026-10-03T00:57:48+02:00"
+  },
+  {
+    "match_id": "f58dc0e37cc676cb",
+    "game_type": "team",
+    "winner": "Home",
+    "home_score": 64,
+    "away_score": 40,
+    "players": [
+      {
+        "player": "a",
+        "team": "Home",
+        "old_elo": 1536,
+        "change": 16,
+        "new_elo": 1552
+      },
+      {
+        "player": "r",
+        "team": "Home",
+        "old_elo": 1575,
+        "change": 15.7,
+        "new_elo": 1591
+      },
+      {
+        "player": "z0diac",
+        "team": "Away",
+        "old_elo": 1432,
+        "change": -16,
+        "new_elo": 1416
+      },
+      {
+        "player": "qw",
+        "team": "Away",
+        "old_elo": 1798,
+        "change": -12.9,
+        "new_elo": 1785
+      }
+    ],
+    "saved_at": "2026-10-03T01:15:55+02:00"
   }
 ]
