@@ -17,11 +17,11 @@
   },
   {
     "player": "warrior",
-    "elo": 1887,
-    "matches": 45,
-    "wins": 34,
+    "elo": 1902,
+    "matches": 46,
+    "wins": 35,
     "losses": 11,
-    "winrate": 75.6
+    "winrate": 76.1
   },
   {
     "player": "myrmidon^",
@@ -368,14 +368,6 @@
     "winrate": 100.0
   },
   {
-    "player": "NEED-1-PLAYER",
-    "elo": 1517,
-    "matches": 2,
-    "wins": 2,
-    "losses": 0,
-    "winrate": 100.0
-  },
-  {
     "player": "swade",
     "elo": 1516,
     "matches": 1,
@@ -472,20 +464,20 @@
     "winrate": 100.0
   },
   {
-    "player": "gart",
-    "elo": 1512,
-    "matches": 28,
-    "wins": 13,
-    "losses": 15,
-    "winrate": 46.4
-  },
-  {
     "player": "Player-345",
     "elo": 1511,
     "matches": 43,
     "wins": 21,
     "losses": 22,
     "winrate": 48.8
+  },
+  {
+    "player": "rafal",
+    "elo": 1511,
+    "matches": 1,
+    "wins": 1,
+    "losses": 0,
+    "winrate": 100.0
   },
   {
     "player": "fonbeers",
@@ -526,6 +518,14 @@
     "wins": 0,
     "losses": 1,
     "winrate": 0.0
+  },
+  {
+    "player": "gart",
+    "elo": 1506,
+    "matches": 29,
+    "wins": 13,
+    "losses": 16,
+    "winrate": 44.8
   },
   {
     "player": "slayer",
@@ -606,6 +606,14 @@
     "wins": 1,
     "losses": 0,
     "winrate": 100.0
+  },
+  {
+    "player": "NEED-1-PLAYER",
+    "elo": 1501,
+    "matches": 3,
+    "wins": 2,
+    "losses": 1,
+    "winrate": 66.7
   },
   {
     "player": "Iron Maiden",
@@ -1106,10 +1114,10 @@
   {
     "player": "deoll",
     "elo": 1452,
-    "matches": 3,
-    "wins": 0,
+    "matches": 4,
+    "wins": 1,
     "losses": 3,
-    "winrate": 0.0
+    "winrate": 25.0
   },
   {
     "player": "tOk.P!o",
@@ -1281,10 +1289,10 @@
   },
   {
     "player": "damz.",
-    "elo": 1098,
-    "matches": 45,
+    "elo": 1100,
+    "matches": 46,
     "wins": 11,
-    "losses": 34,
-    "winrate": 24.4
+    "losses": 35,
+    "winrate": 23.9
   }
 ]
