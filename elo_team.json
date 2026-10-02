@@ -1,11 +1,11 @@
 [
   {
     "player": "warrior",
-    "elo": 1937,
-    "matches": 50,
-    "wins": 38,
+    "elo": 1953,
+    "matches": 51,
+    "wins": 39,
     "losses": 12,
-    "winrate": 76.0
+    "winrate": 76.5
   },
   {
     "player": "cne",
@@ -25,11 +25,11 @@
   },
   {
     "player": "myrmidon^",
-    "elo": 1871,
-    "matches": 79,
+    "elo": 1867,
+    "matches": 80,
     "wins": 48,
-    "losses": 31,
-    "winrate": 60.8
+    "losses": 32,
+    "winrate": 60.0
   },
   {
     "player": "GipSy",
@@ -57,11 +57,11 @@
   },
   {
     "player": "asd_krzys",
-    "elo": 1724,
-    "matches": 89,
-    "wins": 50,
+    "elo": 1740,
+    "matches": 90,
+    "wins": 51,
     "losses": 39,
-    "winrate": 56.2
+    "winrate": 56.7
   },
   {
     "player": "[sf]fasadin",
@@ -88,14 +88,6 @@
     "winrate": 60.5
   },
   {
-    "player": "roon",
-    "elo": 1654,
-    "matches": 29,
-    "wins": 16,
-    "losses": 13,
-    "winrate": 55.2
-  },
-  {
     "player": "fon",
     "elo": 1648,
     "matches": 77,
@@ -110,6 +102,14 @@
     "wins": 9,
     "losses": 1,
     "winrate": 90.0
+  },
+  {
+    "player": "roon",
+    "elo": 1638,
+    "matches": 30,
+    "wins": 16,
+    "losses": 14,
+    "winrate": 53.3
   },
   {
     "player": "ping80",
@@ -1272,14 +1272,6 @@
     "winrate": 28.6
   },
   {
-    "player": "VITALIS",
-    "elo": 1273,
-    "matches": 96,
-    "wins": 44,
-    "losses": 52,
-    "winrate": 45.8
-  },
-  {
     "player": "LiOn]tRk[",
     "elo": 1260,
     "matches": 27,
@@ -1288,12 +1280,20 @@
     "winrate": 18.5
   },
   {
+    "player": "VITALIS",
+    "elo": 1258,
+    "matches": 97,
+    "wins": 44,
+    "losses": 53,
+    "winrate": 45.4
+  },
+  {
     "player": "jabb@",
-    "elo": 1113,
-    "matches": 214,
-    "wins": 96,
+    "elo": 1116,
+    "matches": 215,
+    "wins": 97,
     "losses": 118,
-    "winrate": 44.9
+    "winrate": 45.1
   },
   {
     "player": "damz.",
