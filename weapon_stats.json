@@ -809,14 +809,14 @@
         },
         {
           "player": "asd_krzys",
-          "matches": 85,
-          "kills": 459,
-          "deaths": 473,
-          "dealt": 71600,
-          "received": 78900,
-          "pick": 119,
-          "miss": 1081,
-          "accuracy": 32.8,
+          "matches": 86,
+          "kills": 466,
+          "deaths": 480,
+          "dealt": 72800,
+          "received": 80000,
+          "pick": 122,
+          "miss": 1093,
+          "accuracy": 32.7,
           "qualified": true
         },
         {
@@ -1012,18 +1012,6 @@
           "qualified": true
         },
         {
-          "player": "z0diac",
-          "matches": 47,
-          "kills": 197,
-          "deaths": 225,
-          "dealt": 31100,
-          "received": 40900,
-          "pick": 100,
-          "miss": 564,
-          "accuracy": 30.9,
-          "qualified": true
-        },
-        {
           "player": "need1",
           "matches": 58,
           "kills": 244,
@@ -1032,6 +1020,18 @@
           "received": 47400,
           "pick": 121,
           "miss": 606,
+          "accuracy": 30.8,
+          "qualified": true
+        },
+        {
+          "player": "z0diac",
+          "matches": 48,
+          "kills": 199,
+          "deaths": 235,
+          "dealt": 31400,
+          "received": 42300,
+          "pick": 100,
+          "miss": 579,
           "accuracy": 30.8,
           "qualified": true
         },
@@ -2615,13 +2615,13 @@
         },
         {
           "player": "z0diac",
-          "matches": 48,
-          "kills": 256,
-          "deaths": 141,
-          "dealt": 46763,
-          "received": 36154,
-          "pick": 248,
-          "miss": 866,
+          "matches": 49,
+          "kills": 264,
+          "deaths": 142,
+          "dealt": 47705,
+          "received": 36528,
+          "pick": 256,
+          "miss": 888,
           "accuracy": 24.2,
           "qualified": true
         },
@@ -2854,18 +2854,6 @@
           "qualified": true
         },
         {
-          "player": "asd_krzys",
-          "matches": 85,
-          "kills": 312,
-          "deaths": 261,
-          "dealt": 57775,
-          "received": 56761,
-          "pick": 263,
-          "miss": 1770,
-          "accuracy": 22.5,
-          "qualified": true
-        },
-        {
           "player": "lamerationor",
           "matches": 2,
           "kills": 10,
@@ -2876,6 +2864,18 @@
           "miss": 37,
           "accuracy": 22.5,
           "qualified": false
+        },
+        {
+          "player": "asd_krzys",
+          "matches": 86,
+          "kills": 315,
+          "deaths": 263,
+          "dealt": 58211,
+          "received": 57116,
+          "pick": 268,
+          "miss": 1795,
+          "accuracy": 22.4,
+          "qualified": true
         },
         {
           "player": "Q.obs",
@@ -4804,18 +4804,6 @@
           "qualified": true
         },
         {
-          "player": "asd_krzys",
-          "matches": 83,
-          "kills": 287,
-          "deaths": 176,
-          "dealt": 41382,
-          "received": 27144,
-          "pick": 197,
-          "miss": 985,
-          "accuracy": 14.3,
-          "qualified": true
-        },
-        {
           "player": "Keizer",
           "matches": 65,
           "kills": 269,
@@ -4825,6 +4813,18 @@
           "pick": 239,
           "miss": 628,
           "accuracy": 14.3,
+          "qualified": true
+        },
+        {
+          "player": "asd_krzys",
+          "matches": 84,
+          "kills": 289,
+          "deaths": 176,
+          "dealt": 41784,
+          "received": 27324,
+          "pick": 199,
+          "miss": 996,
+          "accuracy": 14.2,
           "qualified": true
         },
         {
@@ -5416,18 +5416,6 @@
           "qualified": true
         },
         {
-          "player": "z0diac",
-          "matches": 46,
-          "kills": 100,
-          "deaths": 106,
-          "dealt": 14160,
-          "received": 15222,
-          "pick": 105,
-          "miss": 557,
-          "accuracy": 12.3,
-          "qualified": true
-        },
-        {
           "player": "lameration",
           "matches": 9,
           "kills": 23,
@@ -5474,6 +5462,18 @@
           "miss": 26,
           "accuracy": 12.3,
           "qualified": false
+        },
+        {
+          "player": "z0diac",
+          "matches": 47,
+          "kills": 100,
+          "deaths": 107,
+          "dealt": 14250,
+          "received": 15384,
+          "pick": 106,
+          "miss": 569,
+          "accuracy": 12.2,
+          "qualified": true
         },
         {
           "player": "piu-sleepy",
