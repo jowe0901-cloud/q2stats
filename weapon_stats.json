@@ -1576,18 +1576,6 @@
           "qualified": false
         },
         {
-          "player": "NEED-1-PLAYER",
-          "matches": 2,
-          "kills": 5,
-          "deaths": 4,
-          "dealt": 1500,
-          "received": 1200,
-          "pick": 2,
-          "miss": 18,
-          "accuracy": 24.5,
-          "qualified": false
-        },
-        {
           "player": "aid",
           "matches": 4,
           "kills": 21,
@@ -1645,6 +1633,18 @@
           "pick": 55,
           "miss": 54,
           "accuracy": 23.2,
+          "qualified": true
+        },
+        {
+          "player": "damz.",
+          "matches": 51,
+          "kills": 81,
+          "deaths": 352,
+          "dealt": 14600,
+          "received": 47800,
+          "pick": 99,
+          "miss": 515,
+          "accuracy": 22.8,
           "qualified": true
         },
         {
@@ -1720,18 +1720,6 @@
           "qualified": false
         },
         {
-          "player": "damz.",
-          "matches": 50,
-          "kills": 81,
-          "deaths": 350,
-          "dealt": 14300,
-          "received": 47400,
-          "pick": 96,
-          "miss": 509,
-          "accuracy": 21.6,
-          "qualified": true
-        },
-        {
           "player": "SUPER-LAG-DRUNK",
           "matches": 3,
           "kills": 17,
@@ -1765,6 +1753,18 @@
           "pick": 5,
           "miss": 31,
           "accuracy": 21.0,
+          "qualified": false
+        },
+        {
+          "player": "NEED-1-PLAYER",
+          "matches": 3,
+          "kills": 7,
+          "deaths": 4,
+          "dealt": 1900,
+          "received": 1500,
+          "pick": 2,
+          "miss": 27,
+          "accuracy": 20.7,
           "qualified": false
         },
         {
@@ -2638,6 +2638,18 @@
           "qualified": true
         },
         {
+          "player": "NEED-1-PLAYER",
+          "matches": 3,
+          "kills": 13,
+          "deaths": 7,
+          "dealt": 3389,
+          "received": 2325,
+          "pick": 10,
+          "miss": 53,
+          "accuracy": 23.7,
+          "qualified": false
+        },
+        {
           "player": "kreg",
           "matches": 2,
           "kills": 10,
@@ -2778,18 +2790,6 @@
           "received": 1182,
           "pick": 5,
           "miss": 50,
-          "accuracy": 23.0,
-          "qualified": false
-        },
-        {
-          "player": "NEED-1-PLAYER",
-          "matches": 2,
-          "kills": 3,
-          "deaths": 5,
-          "dealt": 1356,
-          "received": 1257,
-          "pick": 6,
-          "miss": 31,
           "accuracy": 23.0,
           "qualified": false
         },
@@ -2998,18 +2998,6 @@
           "qualified": false
         },
         {
-          "player": "damz.",
-          "matches": 51,
-          "kills": 165,
-          "deaths": 217,
-          "dealt": 34260,
-          "received": 45135,
-          "pick": 327,
-          "miss": 756,
-          "accuracy": 20.6,
-          "qualified": true
-        },
-        {
           "player": "Keizer",
           "matches": 65,
           "kills": 170,
@@ -3018,6 +3006,18 @@
           "received": 42522,
           "pick": 199,
           "miss": 945,
+          "accuracy": 20.5,
+          "qualified": true
+        },
+        {
+          "player": "damz.",
+          "matches": 52,
+          "kills": 167,
+          "deaths": 227,
+          "dealt": 35149,
+          "received": 47417,
+          "pick": 338,
+          "miss": 771,
           "accuracy": 20.5,
           "qualified": true
         },
@@ -5644,6 +5644,18 @@
           "qualified": true
         },
         {
+          "player": "damz.",
+          "matches": 51,
+          "kills": 86,
+          "deaths": 164,
+          "dealt": 17022,
+          "received": 19560,
+          "pick": 190,
+          "miss": 494,
+          "accuracy": 11.6,
+          "qualified": true
+        },
+        {
           "player": "[HC]Reni^",
           "matches": 14,
           "kills": 52,
@@ -5677,18 +5689,6 @@
           "pick": 41,
           "miss": 139,
           "accuracy": 11.6,
-          "qualified": true
-        },
-        {
-          "player": "damz.",
-          "matches": 50,
-          "kills": 85,
-          "deaths": 158,
-          "dealt": 16872,
-          "received": 18882,
-          "pick": 186,
-          "miss": 482,
-          "accuracy": 11.5,
           "qualified": true
         },
         {
@@ -5837,13 +5837,13 @@
         },
         {
           "player": "NEED-1-PLAYER",
-          "matches": 2,
-          "kills": 13,
-          "deaths": 7,
-          "dealt": 1836,
-          "received": 1272,
-          "pick": 9,
-          "miss": 18,
+          "matches": 3,
+          "kills": 19,
+          "deaths": 8,
+          "dealt": 2514,
+          "received": 1422,
+          "pick": 12,
+          "miss": 31,
           "accuracy": 11.0,
           "qualified": false
         },
