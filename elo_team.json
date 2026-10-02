@@ -41,11 +41,11 @@
   },
   {
     "player": "qw",
-    "elo": 1808,
-    "matches": 188,
+    "elo": 1798,
+    "matches": 189,
     "wins": 92,
-    "losses": 96,
-    "winrate": 48.9
+    "losses": 97,
+    "winrate": 48.7
   },
   {
     "player": "rul",
@@ -162,10 +162,10 @@
   {
     "player": "r",
     "elo": 1575,
-    "matches": 79,
-    "wins": 50,
+    "matches": 80,
+    "wins": 51,
     "losses": 29,
-    "winrate": 63.3
+    "winrate": 63.7
   },
   {
     "player": ">OPTIMIZER",
@@ -256,6 +256,14 @@
     "winrate": 100.0
   },
   {
+    "player": "a",
+    "elo": 1536,
+    "matches": 22,
+    "wins": 12,
+    "losses": 10,
+    "winrate": 54.5
+  },
+  {
     "player": "=PFH=ZYGA",
     "elo": 1536,
     "matches": 3,
@@ -342,14 +350,6 @@
     "wins": 9,
     "losses": 5,
     "winrate": 64.3
-  },
-  {
-    "player": "a",
-    "elo": 1520,
-    "matches": 21,
-    "wins": 11,
-    "losses": 10,
-    "winrate": 52.4
   },
   {
     "player": "need2",
@@ -1160,20 +1160,20 @@
     "winrate": 0.0
   },
   {
-    "player": "z0diac",
-    "elo": 1437,
-    "matches": 55,
-    "wins": 26,
-    "losses": 29,
-    "winrate": 47.3
-  },
-  {
     "player": "shotman",
     "elo": 1437,
     "matches": 7,
     "wins": 1,
     "losses": 6,
     "winrate": 14.3
+  },
+  {
+    "player": "z0diac",
+    "elo": 1432,
+    "matches": 56,
+    "wins": 26,
+    "losses": 30,
+    "winrate": 46.4
   },
   {
     "player": "Qiub",
