@@ -760,6 +760,18 @@
           "qualified": true
         },
         {
+          "player": "MK3",
+          "matches": 2,
+          "kills": 3,
+          "deaths": 1,
+          "dealt": 900,
+          "received": 600,
+          "pick": 9,
+          "miss": 8,
+          "accuracy": 33.5,
+          "qualified": false
+        },
+        {
           "player": "fon",
           "matches": 70,
           "kills": 637,
@@ -1852,18 +1864,6 @@
           "qualified": false
         },
         {
-          "player": "v4cio",
-          "matches": 24,
-          "kills": 19,
-          "deaths": 74,
-          "dealt": 8900,
-          "received": 22100,
-          "pick": 119,
-          "miss": 120,
-          "accuracy": 19.4,
-          "qualified": false
-        },
-        {
           "player": "VITALIS",
           "matches": 68,
           "kills": 137,
@@ -1872,6 +1872,18 @@
           "received": 44500,
           "pick": 69,
           "miss": 835,
+          "accuracy": 19.3,
+          "qualified": true
+        },
+        {
+          "player": "v4cio",
+          "matches": 25,
+          "kills": 20,
+          "deaths": 77,
+          "dealt": 9200,
+          "received": 22800,
+          "pick": 122,
+          "miss": 123,
           "accuracy": 19.3,
           "qualified": true
         },
@@ -1980,18 +1992,6 @@
           "received": 4200,
           "pick": 5,
           "miss": 20,
-          "accuracy": 17.0,
-          "qualified": false
-        },
-        {
-          "player": "MK3",
-          "matches": 1,
-          "kills": 0,
-          "deaths": 0,
-          "dealt": 200,
-          "received": 300,
-          "pick": 6,
-          "miss": 5,
           "accuracy": 17.0,
           "qualified": false
         },
@@ -3658,18 +3658,6 @@
           "qualified": false
         },
         {
-          "player": "MK3",
-          "matches": 1,
-          "kills": 4,
-          "deaths": 4,
-          "dealt": 2348,
-          "received": 1412,
-          "pick": 13,
-          "miss": 9,
-          "accuracy": 17.0,
-          "qualified": false
-        },
-        {
           "player": "GIB@N",
           "matches": 1,
           "kills": 3,
@@ -3826,6 +3814,18 @@
           "qualified": true
         },
         {
+          "player": "MK3",
+          "matches": 2,
+          "kills": 11,
+          "deaths": 8,
+          "dealt": 4085,
+          "received": 2619,
+          "pick": 22,
+          "miss": 15,
+          "accuracy": 15.5,
+          "qualified": false
+        },
+        {
           "player": "Kargul3000",
           "matches": 2,
           "kills": 8,
@@ -3910,6 +3910,18 @@
           "qualified": false
         },
         {
+          "player": "v4cio",
+          "matches": 25,
+          "kills": 60,
+          "deaths": 84,
+          "dealt": 19384,
+          "received": 27840,
+          "pick": 167,
+          "miss": 156,
+          "accuracy": 14.5,
+          "qualified": true
+        },
+        {
           "player": "RED",
           "matches": 10,
           "kills": 22,
@@ -3919,18 +3931,6 @@
           "pick": 39,
           "miss": 184,
           "accuracy": 14.5,
-          "qualified": true
-        },
-        {
-          "player": "v4cio",
-          "matches": 24,
-          "kills": 56,
-          "deaths": 77,
-          "dealt": 18249,
-          "received": 25972,
-          "pick": 161,
-          "miss": 147,
-          "accuracy": 14.4,
           "qualified": true
         },
         {
@@ -5536,18 +5536,6 @@
           "qualified": false
         },
         {
-          "player": "MK3",
-          "matches": 1,
-          "kills": 8,
-          "deaths": 6,
-          "dealt": 960,
-          "received": 1314,
-          "pick": 7,
-          "miss": 13,
-          "accuracy": 12.0,
-          "qualified": false
-        },
-        {
           "player": "lameraniunio",
           "matches": 2,
           "kills": 7,
@@ -5849,13 +5837,13 @@
         },
         {
           "player": "v4cio",
-          "matches": 24,
+          "matches": 25,
           "kills": 52,
-          "deaths": 92,
-          "dealt": 14544,
-          "received": 15960,
-          "pick": 191,
-          "miss": 124,
+          "deaths": 94,
+          "dealt": 15048,
+          "received": 16416,
+          "pick": 198,
+          "miss": 131,
           "accuracy": 11.2,
           "qualified": true
         },
@@ -6026,6 +6014,18 @@
           "miss": 155,
           "accuracy": 10.9,
           "qualified": true
+        },
+        {
+          "player": "MK3",
+          "matches": 2,
+          "kills": 10,
+          "deaths": 6,
+          "dealt": 1416,
+          "received": 1818,
+          "pick": 14,
+          "miss": 20,
+          "accuracy": 10.5,
+          "qualified": false
         },
         {
           "player": "lamerationor",
