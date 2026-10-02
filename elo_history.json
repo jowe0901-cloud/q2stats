@@ -39234,5 +39234,29 @@
       }
     ],
     "saved_at": "2026-10-02T19:18:37+02:00"
+  },
+  {
+    "match_id": "9b8f3642878a1e74",
+    "game_type": "1v1",
+    "winner": "Home",
+    "home_score": 28,
+    "away_score": 2,
+    "players": [
+      {
+        "player": "Maniek",
+        "team": "Home",
+        "old_elo": 1352,
+        "change": 18.4,
+        "new_elo": 1370
+      },
+      {
+        "player": "damz.",
+        "team": "Away",
+        "old_elo": 1403,
+        "change": -18.4,
+        "new_elo": 1385
+      }
+    ],
+    "saved_at": "2026-10-02T19:31:10+02:00"
   }
 ]
