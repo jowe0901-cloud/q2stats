@@ -40033,5 +40033,57 @@
       }
     ],
     "saved_at": "2026-10-02T23:03:32+02:00"
+  },
+  {
+    "match_id": "1c63de338ebc84a4",
+    "game_type": "team",
+    "winner": "Away",
+    "home_score": 39,
+    "away_score": 45,
+    "players": [
+      {
+        "player": "z0diac",
+        "team": "Home",
+        "old_elo": 1470,
+        "change": -16,
+        "new_elo": 1454
+      },
+      {
+        "player": "qw",
+        "team": "Home",
+        "old_elo": 1815,
+        "change": -9.7,
+        "new_elo": 1805
+      },
+      {
+        "player": "m",
+        "team": "Home",
+        "old_elo": 1509,
+        "change": 0.4,
+        "new_elo": 1509
+      },
+      {
+        "player": "Br00m^^",
+        "team": "Away",
+        "old_elo": 1544,
+        "change": 10.0,
+        "new_elo": 1554
+      },
+      {
+        "player": "CoLD",
+        "team": "Away",
+        "old_elo": 1523,
+        "change": 16,
+        "new_elo": 1539
+      },
+      {
+        "player": "MILF_Hunter",
+        "team": "Away",
+        "old_elo": 1458,
+        "change": 1.3,
+        "new_elo": 1459
+      }
+    ],
+    "saved_at": "2026-10-02T23:15:15+02:00"
   }
 ]

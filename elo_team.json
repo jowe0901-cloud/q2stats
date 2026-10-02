@@ -41,11 +41,11 @@
   },
   {
     "player": "qw",
-    "elo": 1815,
-    "matches": 184,
+    "elo": 1805,
+    "matches": 185,
     "wins": 91,
-    "losses": 93,
-    "winrate": 49.5
+    "losses": 94,
+    "winrate": 49.2
   },
   {
     "player": "rul",
@@ -208,6 +208,14 @@
     "winrate": 44.5
   },
   {
+    "player": "Br00m^^",
+    "elo": 1554,
+    "matches": 104,
+    "wins": 49,
+    "losses": 55,
+    "winrate": 47.1
+  },
+  {
     "player": "ZYGA",
     "elo": 1554,
     "matches": 7,
@@ -232,20 +240,20 @@
     "winrate": 53.8
   },
   {
-    "player": "Br00m^^",
-    "elo": 1544,
-    "matches": 103,
-    "wins": 48,
-    "losses": 55,
-    "winrate": 46.6
-  },
-  {
     "player": "OPTIMIZER",
     "elo": 1540,
     "matches": 3,
     "wins": 3,
     "losses": 0,
     "winrate": 100.0
+  },
+  {
+    "player": "CoLD",
+    "elo": 1539,
+    "matches": 54,
+    "wins": 26,
+    "losses": 28,
+    "winrate": 48.1
   },
   {
     "player": "=PFH=ZYGA",
@@ -318,14 +326,6 @@
     "wins": 3,
     "losses": 3,
     "winrate": 50.0
-  },
-  {
-    "player": "CoLD",
-    "elo": 1523,
-    "matches": 53,
-    "wins": 25,
-    "losses": 28,
-    "winrate": 47.2
   },
   {
     "player": "gart",
@@ -506,10 +506,10 @@
   {
     "player": "m",
     "elo": 1509,
-    "matches": 51,
+    "matches": 52,
     "wins": 24,
-    "losses": 27,
-    "winrate": 47.1
+    "losses": 28,
+    "winrate": 46.2
   },
   {
     "player": "gera",
@@ -1000,14 +1000,6 @@
     "winrate": 0.0
   },
   {
-    "player": "z0diac",
-    "elo": 1470,
-    "matches": 51,
-    "wins": 25,
-    "losses": 26,
-    "winrate": 49.0
-  },
-  {
     "player": "tewls",
     "elo": 1469,
     "matches": 7,
@@ -1121,11 +1113,19 @@
   },
   {
     "player": "MILF_Hunter",
-    "elo": 1458,
-    "matches": 4,
-    "wins": 1,
+    "elo": 1459,
+    "matches": 5,
+    "wins": 2,
     "losses": 3,
-    "winrate": 25.0
+    "winrate": 40.0
+  },
+  {
+    "player": "z0diac",
+    "elo": 1454,
+    "matches": 52,
+    "wins": 25,
+    "losses": 27,
+    "winrate": 48.1
   },
   {
     "player": "deoll",
