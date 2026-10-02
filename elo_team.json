@@ -41,11 +41,11 @@
   },
   {
     "player": "qw",
-    "elo": 1812,
-    "matches": 186,
+    "elo": 1799,
+    "matches": 187,
     "wins": 91,
-    "losses": 95,
-    "winrate": 48.9
+    "losses": 96,
+    "winrate": 48.7
   },
   {
     "player": "rul",
@@ -184,6 +184,14 @@
     "winrate": 47.6
   },
   {
+    "player": "CoLD",
+    "elo": 1568,
+    "matches": 56,
+    "wins": 28,
+    "losses": 28,
+    "winrate": 50.0
+  },
+  {
     "player": ">purri",
     "elo": 1568,
     "matches": 5,
@@ -238,14 +246,6 @@
     "wins": 7,
     "losses": 6,
     "winrate": 53.8
-  },
-  {
-    "player": "CoLD",
-    "elo": 1552,
-    "matches": 55,
-    "wins": 27,
-    "losses": 28,
-    "winrate": 49.1
   },
   {
     "player": "OPTIMIZER",
@@ -512,6 +512,14 @@
     "winrate": 100.0
   },
   {
+    "player": "gart",
+    "elo": 1508,
+    "matches": 32,
+    "wins": 14,
+    "losses": 18,
+    "winrate": 43.8
+  },
+  {
     "player": "slonik",
     "elo": 1508,
     "matches": 4,
@@ -534,14 +542,6 @@
     "wins": 0,
     "losses": 1,
     "winrate": 0.0
-  },
-  {
-    "player": "gart",
-    "elo": 1506,
-    "matches": 31,
-    "wins": 14,
-    "losses": 17,
-    "winrate": 45.2
   },
   {
     "player": "slayer",
@@ -920,14 +920,6 @@
     "winrate": 47.5
   },
   {
-    "player": "shNoodle",
-    "elo": 1476,
-    "matches": 17,
-    "wins": 8,
-    "losses": 9,
-    "winrate": 47.1
-  },
-  {
     "player": "Dark Abyys",
     "elo": 1476,
     "matches": 5,
@@ -982,6 +974,14 @@
     "wins": 1,
     "losses": 2,
     "winrate": 33.3
+  },
+  {
+    "player": "MILF_Hunter",
+    "elo": 1473,
+    "matches": 6,
+    "wins": 3,
+    "losses": 3,
+    "winrate": 50.0
   },
   {
     "player": "LiOn",
@@ -1088,6 +1088,14 @@
     "winrate": 25.0
   },
   {
+    "player": "shNoodle",
+    "elo": 1460,
+    "matches": 18,
+    "wins": 8,
+    "losses": 10,
+    "winrate": 44.4
+  },
+  {
     "player": "Ice wallow",
     "elo": 1459,
     "matches": 3,
@@ -1110,14 +1118,6 @@
     "wins": 1,
     "losses": 3,
     "winrate": 25.0
-  },
-  {
-    "player": "MILF_Hunter",
-    "elo": 1459,
-    "matches": 5,
-    "wins": 2,
-    "losses": 3,
-    "winrate": 40.0
   },
   {
     "player": "deoll",
@@ -1160,14 +1160,6 @@
     "winrate": 0.0
   },
   {
-    "player": "z0diac",
-    "elo": 1438,
-    "matches": 53,
-    "wins": 25,
-    "losses": 28,
-    "winrate": 47.2
-  },
-  {
     "player": "shotman",
     "elo": 1437,
     "matches": 7,
@@ -1200,12 +1192,20 @@
     "winrate": 36.4
   },
   {
+    "player": "z0diac",
+    "elo": 1422,
+    "matches": 54,
+    "wins": 25,
+    "losses": 29,
+    "winrate": 46.3
+  },
+  {
     "player": "GUSIUS",
-    "elo": 1413,
-    "matches": 60,
-    "wins": 27,
+    "elo": 1419,
+    "matches": 61,
+    "wins": 28,
     "losses": 33,
-    "winrate": 45.0
+    "winrate": 45.9
   },
   {
     "player": "need1",

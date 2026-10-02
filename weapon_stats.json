@@ -845,13 +845,13 @@
         },
         {
           "player": "qw",
-          "matches": 161,
-          "kills": 1090,
-          "deaths": 830,
-          "dealt": 179400,
-          "received": 139100,
-          "pick": 354,
-          "miss": 1852,
+          "matches": 162,
+          "kills": 1098,
+          "deaths": 836,
+          "dealt": 180500,
+          "received": 139800,
+          "pick": 357,
+          "miss": 1879,
           "accuracy": 32.5,
           "qualified": true
         },
@@ -953,14 +953,14 @@
         },
         {
           "player": "gart",
-          "matches": 43,
-          "kills": 395,
-          "deaths": 337,
-          "dealt": 75800,
-          "received": 63900,
-          "pick": 242,
-          "miss": 396,
-          "accuracy": 31.6,
+          "matches": 44,
+          "kills": 408,
+          "deaths": 343,
+          "dealt": 77500,
+          "received": 64700,
+          "pick": 248,
+          "miss": 420,
+          "accuracy": 31.5,
           "qualified": true
         },
         {
@@ -976,18 +976,6 @@
           "qualified": true
         },
         {
-          "player": "GUSIUS",
-          "matches": 46,
-          "kills": 338,
-          "deaths": 321,
-          "dealt": 60000,
-          "received": 53300,
-          "pick": 192,
-          "miss": 411,
-          "accuracy": 31.1,
-          "qualified": true
-        },
-        {
           "player": "lameratorion",
           "matches": 13,
           "kills": 60,
@@ -997,6 +985,18 @@
           "pick": 14,
           "miss": 136,
           "accuracy": 31.1,
+          "qualified": true
+        },
+        {
+          "player": "GUSIUS",
+          "matches": 47,
+          "kills": 349,
+          "deaths": 330,
+          "dealt": 61300,
+          "received": 54500,
+          "pick": 196,
+          "miss": 437,
+          "accuracy": 31.0,
           "qualified": true
         },
         {
@@ -1036,18 +1036,6 @@
           "qualified": true
         },
         {
-          "player": "shNoodle",
-          "matches": 16,
-          "kills": 104,
-          "deaths": 141,
-          "dealt": 17300,
-          "received": 20300,
-          "pick": 39,
-          "miss": 219,
-          "accuracy": 30.6,
-          "qualified": true
-        },
-        {
           "player": "[HC]Reni^",
           "matches": 14,
           "kills": 36,
@@ -1073,14 +1061,26 @@
         },
         {
           "player": "z0diac",
-          "matches": 54,
-          "kills": 223,
-          "deaths": 271,
-          "dealt": 34500,
-          "received": 48900,
-          "pick": 122,
-          "miss": 658,
-          "accuracy": 30.4,
+          "matches": 55,
+          "kills": 224,
+          "deaths": 277,
+          "dealt": 34600,
+          "received": 49600,
+          "pick": 124,
+          "miss": 686,
+          "accuracy": 30.2,
+          "qualified": true
+        },
+        {
+          "player": "shNoodle",
+          "matches": 17,
+          "kills": 108,
+          "deaths": 153,
+          "dealt": 17900,
+          "received": 21800,
+          "pick": 41,
+          "miss": 247,
+          "accuracy": 30.2,
           "qualified": true
         },
         {
@@ -1240,18 +1240,6 @@
           "qualified": false
         },
         {
-          "player": "CoLD",
-          "matches": 43,
-          "kills": 289,
-          "deaths": 321,
-          "dealt": 50500,
-          "received": 51800,
-          "pick": 174,
-          "miss": 524,
-          "accuracy": 28.2,
-          "qualified": true
-        },
-        {
           "player": "TIM",
           "matches": 7,
           "kills": 15,
@@ -1273,6 +1261,18 @@
           "pick": 454,
           "miss": 793,
           "accuracy": 28.1,
+          "qualified": true
+        },
+        {
+          "player": "CoLD",
+          "matches": 44,
+          "kills": 295,
+          "deaths": 328,
+          "dealt": 51200,
+          "received": 52600,
+          "pick": 178,
+          "miss": 550,
+          "accuracy": 28.0,
           "qualified": true
         },
         {
@@ -2008,6 +2008,18 @@
           "qualified": false
         },
         {
+          "player": "MILF_Hunter",
+          "matches": 6,
+          "kills": 21,
+          "deaths": 43,
+          "dealt": 3000,
+          "received": 5200,
+          "pick": 14,
+          "miss": 103,
+          "accuracy": 16.5,
+          "qualified": true
+        },
+        {
           "player": "sparkq2",
           "matches": 2,
           "kills": 2,
@@ -2041,18 +2053,6 @@
           "pick": 4,
           "miss": 5,
           "accuracy": 15.0,
-          "qualified": false
-        },
-        {
-          "player": "MILF_Hunter",
-          "matches": 5,
-          "kills": 12,
-          "deaths": 35,
-          "dealt": 1900,
-          "received": 4400,
-          "pick": 12,
-          "miss": 75,
-          "accuracy": 14.4,
           "qualified": false
         },
         {
@@ -2626,15 +2626,27 @@
           "qualified": false
         },
         {
+          "player": "MILF_Hunter",
+          "matches": 6,
+          "kills": 21,
+          "deaths": 19,
+          "dealt": 3422,
+          "received": 3796,
+          "pick": 33,
+          "miss": 108,
+          "accuracy": 24.3,
+          "qualified": true
+        },
+        {
           "player": "z0diac",
-          "matches": 55,
-          "kills": 293,
-          "deaths": 172,
-          "dealt": 52317,
-          "received": 41903,
-          "pick": 286,
-          "miss": 999,
-          "accuracy": 24.1,
+          "matches": 56,
+          "kills": 298,
+          "deaths": 178,
+          "dealt": 53256,
+          "received": 42943,
+          "pick": 290,
+          "miss": 1014,
+          "accuracy": 24.2,
           "qualified": true
         },
         {
@@ -2734,18 +2746,6 @@
           "qualified": true
         },
         {
-          "player": "shNoodle",
-          "matches": 16,
-          "kills": 57,
-          "deaths": 62,
-          "dealt": 10816,
-          "received": 10401,
-          "pick": 58,
-          "miss": 334,
-          "accuracy": 23.3,
-          "qualified": true
-        },
-        {
           "player": "lameration",
           "matches": 9,
           "kills": 36,
@@ -2756,18 +2756,6 @@
           "miss": 115,
           "accuracy": 23.2,
           "qualified": true
-        },
-        {
-          "player": "MILF_Hunter",
-          "matches": 5,
-          "kills": 17,
-          "deaths": 17,
-          "dealt": 2725,
-          "received": 3313,
-          "pick": 28,
-          "miss": 94,
-          "accuracy": 23.2,
-          "qualified": false
         },
         {
           "player": "VITALIS",
@@ -2890,6 +2878,18 @@
           "qualified": true
         },
         {
+          "player": "shNoodle",
+          "matches": 17,
+          "kills": 57,
+          "deaths": 67,
+          "dealt": 10915,
+          "received": 11031,
+          "pick": 61,
+          "miss": 350,
+          "accuracy": 22.5,
+          "qualified": true
+        },
+        {
           "player": "lamerationor",
           "matches": 2,
           "kills": 10,
@@ -2914,14 +2914,26 @@
           "qualified": true
         },
         {
+          "player": "CoLD",
+          "matches": 44,
+          "kills": 149,
+          "deaths": 196,
+          "dealt": 26197,
+          "received": 38793,
+          "pick": 136,
+          "miss": 915,
+          "accuracy": 22.1,
+          "qualified": true
+        },
+        {
           "player": "qw",
-          "matches": 161,
+          "matches": 162,
           "kills": 345,
-          "deaths": 429,
+          "deaths": 433,
           "dealt": 67893,
-          "received": 88689,
+          "received": 89269,
           "pick": 381,
-          "miss": 3135,
+          "miss": 3154,
           "accuracy": 22.0,
           "qualified": true
         },
@@ -2948,18 +2960,6 @@
           "miss": 25,
           "accuracy": 22.0,
           "qualified": false
-        },
-        {
-          "player": "CoLD",
-          "matches": 43,
-          "kills": 140,
-          "deaths": 196,
-          "dealt": 24746,
-          "received": 38623,
-          "pick": 130,
-          "miss": 902,
-          "accuracy": 21.9,
-          "qualified": true
         },
         {
           "player": "lameratorion",
@@ -3263,13 +3263,13 @@
         },
         {
           "player": "GUSIUS",
-          "matches": 46,
+          "matches": 47,
           "kills": 98,
-          "deaths": 175,
-          "dealt": 23302,
-          "received": 40488,
+          "deaths": 177,
+          "dealt": 23444,
+          "received": 41052,
           "pick": 191,
-          "miss": 684,
+          "miss": 703,
           "accuracy": 19.9,
           "qualified": true
         },
@@ -3899,13 +3899,13 @@
         },
         {
           "player": "gart",
-          "matches": 43,
+          "matches": 44,
           "kills": 42,
-          "deaths": 147,
+          "deaths": 148,
           "dealt": 12578,
-          "received": 35751,
+          "received": 36220,
           "pick": 131,
-          "miss": 535,
+          "miss": 554,
           "accuracy": 15.1,
           "qualified": true
         },
