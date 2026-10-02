@@ -904,6 +904,18 @@
           "qualified": false
         },
         {
+          "player": "NEED-1-PLAYER",
+          "matches": 1,
+          "kills": 3,
+          "deaths": 4,
+          "dealt": 1000,
+          "received": 1000,
+          "pick": 1,
+          "miss": 12,
+          "accuracy": 32.0,
+          "qualified": false
+        },
+        {
           "player": "Q",
           "matches": 2,
           "kills": 2,
@@ -1264,18 +1276,6 @@
           "qualified": false
         },
         {
-          "player": "B100D",
-          "matches": 131,
-          "kills": 467,
-          "deaths": 511,
-          "dealt": 96600,
-          "received": 93300,
-          "pick": 439,
-          "miss": 774,
-          "accuracy": 28.0,
-          "qualified": true
-        },
-        {
           "player": "SUPER-LAG+DRUNK",
           "matches": 2,
           "kills": 13,
@@ -1286,6 +1286,18 @@
           "miss": 27,
           "accuracy": 28.0,
           "qualified": false
+        },
+        {
+          "player": "B100D",
+          "matches": 132,
+          "kills": 468,
+          "deaths": 522,
+          "dealt": 96800,
+          "received": 94800,
+          "pick": 444,
+          "miss": 782,
+          "accuracy": 27.9,
+          "qualified": true
         },
         {
           "player": "CoLD",
@@ -1469,14 +1481,14 @@
         },
         {
           "player": "GipSy",
-          "matches": 121,
-          "kills": 642,
-          "deaths": 589,
-          "dealt": 116900,
-          "received": 119600,
-          "pick": 395,
-          "miss": 1017,
-          "accuracy": 25.8,
+          "matches": 122,
+          "kills": 663,
+          "deaths": 593,
+          "dealt": 119300,
+          "received": 120300,
+          "pick": 397,
+          "miss": 1028,
+          "accuracy": 25.9,
           "qualified": true
         },
         {
@@ -2854,6 +2866,18 @@
           "qualified": false
         },
         {
+          "player": "NEED-1-PLAYER",
+          "matches": 1,
+          "kills": 2,
+          "deaths": 4,
+          "dealt": 558,
+          "received": 925,
+          "pick": 1,
+          "miss": 16,
+          "accuracy": 22.0,
+          "qualified": false
+        },
+        {
           "player": "qw",
           "matches": 157,
           "kills": 343,
@@ -3322,18 +3346,6 @@
           "qualified": false
         },
         {
-          "player": "B100D",
-          "matches": 132,
-          "kills": 248,
-          "deaths": 271,
-          "dealt": 63980,
-          "received": 77443,
-          "pick": 518,
-          "miss": 1388,
-          "accuracy": 18.6,
-          "qualified": true
-        },
-        {
           "player": "sevvq",
           "matches": 27,
           "kills": 59,
@@ -3355,6 +3367,18 @@
           "pick": 40,
           "miss": 126,
           "accuracy": 18.6,
+          "qualified": true
+        },
+        {
+          "player": "B100D",
+          "matches": 133,
+          "kills": 251,
+          "deaths": 275,
+          "dealt": 64917,
+          "received": 78244,
+          "pick": 529,
+          "miss": 1394,
+          "accuracy": 18.5,
           "qualified": true
         },
         {
@@ -3443,13 +3467,13 @@
         },
         {
           "player": "GipSy",
-          "matches": 123,
-          "kills": 413,
-          "deaths": 343,
-          "dealt": 92764,
-          "received": 92473,
-          "pick": 518,
-          "miss": 1625,
+          "matches": 124,
+          "kills": 418,
+          "deaths": 345,
+          "dealt": 93586,
+          "received": 93031,
+          "pick": 520,
+          "miss": 1640,
           "accuracy": 17.8,
           "qualified": true
         },
@@ -5585,13 +5609,13 @@
         },
         {
           "player": "B100D",
-          "matches": 132,
-          "kills": 379,
-          "deaths": 308,
-          "dealt": 63774,
-          "received": 56856,
-          "pick": 519,
-          "miss": 1033,
+          "matches": 133,
+          "kills": 380,
+          "deaths": 317,
+          "dealt": 63900,
+          "received": 57870,
+          "pick": 521,
+          "miss": 1042,
           "accuracy": 11.7,
           "qualified": true
         },
@@ -5753,13 +5777,13 @@
         },
         {
           "player": "GipSy",
-          "matches": 121,
-          "kills": 355,
+          "matches": 122,
+          "kills": 361,
           "deaths": 320,
-          "dealt": 64698,
-          "received": 55434,
-          "pick": 512,
-          "miss": 1118,
+          "dealt": 65298,
+          "received": 55596,
+          "pick": 514,
+          "miss": 1127,
           "accuracy": 11.2,
           "qualified": true
         },
@@ -5832,6 +5856,18 @@
           "received": 1416,
           "pick": 18,
           "miss": 12,
+          "accuracy": 11.0,
+          "qualified": false
+        },
+        {
+          "player": "NEED-1-PLAYER",
+          "matches": 1,
+          "kills": 6,
+          "deaths": 1,
+          "dealt": 1164,
+          "received": 36,
+          "pick": 5,
+          "miss": 6,
           "accuracy": 11.0,
           "qualified": false
         },
