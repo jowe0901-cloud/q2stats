@@ -676,18 +676,6 @@
           "qualified": true
         },
         {
-          "player": "a",
-          "matches": 16,
-          "kills": 129,
-          "deaths": 117,
-          "dealt": 21900,
-          "received": 17400,
-          "pick": 69,
-          "miss": 148,
-          "accuracy": 34.4,
-          "qualified": true
-        },
-        {
           "player": "Larik",
           "matches": 3,
           "kills": 6,
@@ -721,6 +709,18 @@
           "pick": 8,
           "miss": 51,
           "accuracy": 34.2,
+          "qualified": true
+        },
+        {
+          "player": "a",
+          "matches": 17,
+          "kills": 199,
+          "deaths": 218,
+          "dealt": 49900,
+          "received": 57800,
+          "pick": 69,
+          "miss": 148,
+          "accuracy": 34.1,
           "qualified": true
         },
         {
@@ -916,18 +916,6 @@
           "qualified": false
         },
         {
-          "player": "fon5beers",
-          "matches": 1,
-          "kills": 3,
-          "deaths": 8,
-          "dealt": 900,
-          "received": 1100,
-          "pick": 3,
-          "miss": 12,
-          "accuracy": 32.0,
-          "qualified": false
-        },
-        {
           "player": "Q",
           "matches": 2,
           "kills": 2,
@@ -1036,18 +1024,6 @@
           "qualified": true
         },
         {
-          "player": "r",
-          "matches": 70,
-          "kills": 223,
-          "deaths": 403,
-          "dealt": 35100,
-          "received": 62700,
-          "pick": 122,
-          "miss": 817,
-          "accuracy": 30.8,
-          "qualified": true
-        },
-        {
           "player": "ping80",
           "matches": 41,
           "kills": 127,
@@ -1058,6 +1034,30 @@
           "miss": 396,
           "accuracy": 30.8,
           "qualified": true
+        },
+        {
+          "player": "r",
+          "matches": 71,
+          "kills": 261,
+          "deaths": 438,
+          "dealt": 50300,
+          "received": 76300,
+          "pick": 122,
+          "miss": 817,
+          "accuracy": 30.6,
+          "qualified": true
+        },
+        {
+          "player": "fon5beers",
+          "matches": 2,
+          "kills": 67,
+          "deaths": 44,
+          "dealt": 26100,
+          "received": 15500,
+          "pick": 3,
+          "miss": 12,
+          "accuracy": 30.5,
+          "qualified": false
         },
         {
           "player": "[HC]Reni^",
