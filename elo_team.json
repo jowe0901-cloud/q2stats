@@ -1,5 +1,13 @@
 [
   {
+    "player": "warrior",
+    "elo": 1921,
+    "matches": 49,
+    "wins": 37,
+    "losses": 12,
+    "winrate": 75.5
+  },
+  {
     "player": "cne",
     "elo": 1916,
     "matches": 93,
@@ -16,20 +24,12 @@
     "winrate": 65.3
   },
   {
-    "player": "warrior",
-    "elo": 1905,
-    "matches": 48,
-    "wins": 36,
-    "losses": 12,
-    "winrate": 75.0
-  },
-  {
     "player": "myrmidon^",
-    "elo": 1884,
-    "matches": 77,
+    "elo": 1877,
+    "matches": 78,
     "wins": 48,
-    "losses": 29,
-    "winrate": 62.3
+    "losses": 30,
+    "winrate": 61.5
   },
   {
     "player": "GipSy",
@@ -65,11 +65,11 @@
   },
   {
     "player": "asd_krzys",
-    "elo": 1700,
-    "matches": 87,
-    "wins": 48,
+    "elo": 1712,
+    "matches": 88,
+    "wins": 49,
     "losses": 39,
-    "winrate": 55.2
+    "winrate": 55.7
   },
   {
     "player": "Keizer",
@@ -89,11 +89,11 @@
   },
   {
     "player": "roon",
-    "elo": 1654,
-    "matches": 27,
-    "wins": 15,
+    "elo": 1670,
+    "matches": 28,
+    "wins": 16,
     "losses": 12,
-    "winrate": 55.6
+    "winrate": 57.1
   },
   {
     "player": "fon",
@@ -784,6 +784,14 @@
     "winrate": 50.0
   },
   {
+    "player": "GIB@N",
+    "elo": 1488,
+    "matches": 1,
+    "wins": 0,
+    "losses": 1,
+    "winrate": 0.0
+  },
+  {
     "player": "Puma",
     "elo": 1487,
     "matches": 7,
@@ -1128,14 +1136,6 @@
     "winrate": 0.0
   },
   {
-    "player": "Qiub",
-    "elo": 1446,
-    "matches": 24,
-    "wins": 10,
-    "losses": 14,
-    "winrate": 41.7
-  },
-  {
     "player": "senz",
     "elo": 1445,
     "matches": 25,
@@ -1166,6 +1166,14 @@
     "wins": 1,
     "losses": 6,
     "winrate": 14.3
+  },
+  {
+    "player": "Qiub",
+    "elo": 1430,
+    "matches": 25,
+    "wins": 10,
+    "losses": 15,
+    "winrate": 40.0
   },
   {
     "player": "tron",
@@ -1265,11 +1273,11 @@
   },
   {
     "player": "VITALIS",
-    "elo": 1293,
-    "matches": 94,
+    "elo": 1277,
+    "matches": 95,
     "wins": 44,
-    "losses": 50,
-    "winrate": 46.8
+    "losses": 51,
+    "winrate": 46.3
   },
   {
     "player": "LiOn]tRk[",
@@ -1281,11 +1289,11 @@
   },
   {
     "player": "jabb@",
-    "elo": 1103,
-    "matches": 212,
-    "wins": 94,
+    "elo": 1113,
+    "matches": 213,
+    "wins": 95,
     "losses": 118,
-    "winrate": 44.3
+    "winrate": 44.6
   },
   {
     "player": "damz.",
