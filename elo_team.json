@@ -240,6 +240,14 @@
     "winrate": 53.8
   },
   {
+    "player": "B100D",
+    "elo": 1545,
+    "matches": 105,
+    "wins": 55,
+    "losses": 50,
+    "winrate": 52.4
+  },
+  {
     "player": "OPTIMIZER",
     "elo": 1540,
     "matches": 3,
@@ -294,14 +302,6 @@
     "wins": 2,
     "losses": 0,
     "winrate": 100.0
-  },
-  {
-    "player": "B100D",
-    "elo": 1529,
-    "matches": 104,
-    "wins": 54,
-    "losses": 50,
-    "winrate": 51.9
   },
   {
     "player": "CoLD",
@@ -1144,20 +1144,20 @@
     "winrate": 0.0
   },
   {
-    "player": "Qiub",
-    "elo": 1437,
-    "matches": 22,
-    "wins": 9,
-    "losses": 13,
-    "winrate": 40.9
-  },
-  {
     "player": "shotman",
     "elo": 1437,
     "matches": 7,
     "wins": 1,
     "losses": 6,
     "winrate": 14.3
+  },
+  {
+    "player": "Qiub",
+    "elo": 1430,
+    "matches": 23,
+    "wins": 9,
+    "losses": 14,
+    "winrate": 39.1
   },
   {
     "player": "tron",
@@ -1273,18 +1273,18 @@
   },
   {
     "player": "jabb@",
-    "elo": 1154,
-    "matches": 207,
-    "wins": 93,
+    "elo": 1163,
+    "matches": 208,
+    "wins": 94,
     "losses": 114,
-    "winrate": 44.9
+    "winrate": 45.2
   },
   {
     "player": "damz.",
-    "elo": 1115,
-    "matches": 42,
+    "elo": 1099,
+    "matches": 43,
     "wins": 10,
-    "losses": 32,
-    "winrate": 23.8
+    "losses": 33,
+    "winrate": 23.3
   }
 ]
