@@ -200,20 +200,20 @@
     "winrate": 44.5
   },
   {
+    "player": "r",
+    "elo": 1561,
+    "matches": 77,
+    "wins": 49,
+    "losses": 28,
+    "winrate": 63.6
+  },
+  {
     "player": "Br00m^^",
     "elo": 1555,
     "matches": 100,
     "wins": 47,
     "losses": 53,
     "winrate": 47.0
-  },
-  {
-    "player": "r",
-    "elo": 1554,
-    "matches": 76,
-    "wins": 48,
-    "losses": 28,
-    "winrate": 63.2
   },
   {
     "player": "ZYGA",
@@ -784,6 +784,14 @@
     "winrate": 42.9
   },
   {
+    "player": "a",
+    "elo": 1486,
+    "matches": 18,
+    "wins": 8,
+    "losses": 10,
+    "winrate": 44.4
+  },
+  {
     "player": "odi",
     "elo": 1484,
     "matches": 16,
@@ -982,14 +990,6 @@
     "wins": 1,
     "losses": 2,
     "winrate": 33.3
-  },
-  {
-    "player": "a",
-    "elo": 1471,
-    "matches": 17,
-    "wins": 7,
-    "losses": 10,
-    "winrate": 41.2
   },
   {
     "player": "tetris",
@@ -1208,14 +1208,6 @@
     "winrate": 43.9
   },
   {
-    "player": "Maniek",
-    "elo": 1364,
-    "matches": 110,
-    "wins": 51,
-    "losses": 59,
-    "winrate": 46.4
-  },
-  {
     "player": "[HC]Reni^",
     "elo": 1353,
     "matches": 34,
@@ -1238,6 +1230,14 @@
     "wins": 3,
     "losses": 11,
     "winrate": 21.4
+  },
+  {
+    "player": "Maniek",
+    "elo": 1348,
+    "matches": 111,
+    "wins": 51,
+    "losses": 60,
+    "winrate": 45.9
   },
   {
     "player": "sevvq",
@@ -1289,10 +1289,10 @@
   },
   {
     "player": "damz.",
-    "elo": 1093,
-    "matches": 48,
+    "elo": 1087,
+    "matches": 49,
     "wins": 12,
-    "losses": 36,
-    "winrate": 25.0
+    "losses": 37,
+    "winrate": 24.5
   }
 ]
