@@ -8,20 +8,20 @@
     "winrate": 61.3
   },
   {
+    "player": "warrior",
+    "elo": 1913,
+    "matches": 47,
+    "wins": 36,
+    "losses": 11,
+    "winrate": 76.6
+  },
+  {
     "player": "maq",
     "elo": 1913,
     "matches": 75,
     "wins": 49,
     "losses": 26,
     "winrate": 65.3
-  },
-  {
-    "player": "warrior",
-    "elo": 1902,
-    "matches": 46,
-    "wins": 35,
-    "losses": 11,
-    "winrate": 76.1
   },
   {
     "player": "myrmidon^",
@@ -57,11 +57,11 @@
   },
   {
     "player": "[sf]fasadin",
-    "elo": 1716,
-    "matches": 28,
+    "elo": 1720,
+    "matches": 29,
     "wins": 16,
-    "losses": 12,
-    "winrate": 57.1
+    "losses": 13,
+    "winrate": 55.2
   },
   {
     "player": "asd_krzys",
@@ -1209,11 +1209,11 @@
   },
   {
     "player": "Maniek",
-    "elo": 1379,
-    "matches": 108,
-    "wins": 50,
+    "elo": 1380,
+    "matches": 109,
+    "wins": 51,
     "losses": 58,
-    "winrate": 46.3
+    "winrate": 46.8
   },
   {
     "player": "[HC]Reni^",
@@ -1289,10 +1289,10 @@
   },
   {
     "player": "damz.",
-    "elo": 1100,
-    "matches": 46,
+    "elo": 1084,
+    "matches": 47,
     "wins": 11,
-    "losses": 35,
-    "winrate": 23.9
+    "losses": 36,
+    "winrate": 23.4
   }
 ]
