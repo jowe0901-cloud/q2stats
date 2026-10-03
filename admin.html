@@ -33,7 +33,7 @@
     .alias-remove{border:0;background:transparent;color:var(--bad);cursor:pointer;font-weight:900;padding:0 2px}
     .profile-actions{display:flex;gap:8px;align-items:center;margin-top:10px;flex-wrap:wrap}
     .profile-actions .admin-input{flex:1;min-width:150px}
-    .setup-form{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}.setup-field{display:grid;gap:5px}.setup-field label{font-size:12px;color:var(--muted);font-weight:700}.setup-field.full{grid-column:1/-1}.setup-actions{display:flex;gap:10px;align-items:center;margin-top:12px;flex-wrap:wrap}
+    .match-check-list{display:grid;gap:10px;margin-top:12px}.match-check-row{border:1px solid var(--line);border-radius:10px;padding:10px 12px}.match-check-head{display:flex;gap:10px;justify-content:space-between;align-items:flex-start;flex-wrap:wrap}.match-check-players{margin-top:7px;color:var(--muted);font-size:12px;line-height:1.55}.setup-form{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}.setup-field{display:grid;gap:5px}.setup-field label{font-size:12px;color:var(--muted);font-weight:700}.setup-field.full{grid-column:1/-1}.setup-actions{display:flex;gap:10px;align-items:center;margin-top:12px;flex-wrap:wrap}
     @media(max-width:600px){.setup-form{grid-template-columns:1fr}.setup-field.full{grid-column:auto}}
     @media(max-width:850px){.admin-grid{grid-template-columns:1fr}.admin-list{max-height:460px}}
   </style>
@@ -97,6 +97,17 @@
       </article>
 
       <article class="panel">
+        <div class="panel-head"><div><span class="eyebrow">MATCH CLEANUP</span><h2>Check suspected duplicates</h2></div></div>
+        <p class="admin-note">Read-only lookup. Paste suspected match IDs to verify exactly what exists in the production database. This does not delete or change anything.</p>
+        <textarea class="admin-input" id="matchCheckIds" rows="7" style="width:100%;margin-top:10px" placeholder="One match ID per line, or separated by commas"></textarea>
+        <div class="setup-actions">
+          <button class="admin-btn" id="checkMatchesBtn" type="button">Check matches</button>
+          <span class="admin-note" id="matchCheckStatus">Nothing has been checked yet.</span>
+        </div>
+        <div class="match-check-list" id="matchCheckResults"></div>
+      </article>
+
+      <article class="panel">
         <div class="panel-head"><div><span class="eyebrow">PLAYER SETUP</span><h2>Edit setup</h2></div></div>
         <div class="setup-field full">
           <label for="setupProfile">Profile</label>
@@ -136,6 +147,7 @@
 const API="/api/admin/players";
 const SETUP_API="/api/admin/player-setup";
 const ELO_REBUILD_API="/api/admin/elo-rebuild";
+const ADMIN_MATCHES_API="/api/admin/matches";
 let adminKey="", data={profiles:[],players:[]}, selected=new Set(), primary="";
 
 const esc=s=>String(s??"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[m]));
@@ -354,6 +366,34 @@ document.getElementById("saveSetupBtn").onclick=async()=>{
   const body={profile_id:Number(profileId)};Object.entries(setupIds).forEach(([key,elId])=>body[key]=document.getElementById(elId).value.trim());
   document.getElementById("saveSetupBtn").disabled=true;setupStatus("Saving…");
   try{await setupApi("POST",profileId,body);setupStatus("Setup saved.")}catch(err){setupStatus(err.message)}finally{document.getElementById("saveSetupBtn").disabled=false}
+};
+
+function parseMatchCheckIds(){
+  return [...new Set(document.getElementById("matchCheckIds").value.split(/[\s,;]+/).map(v=>v.trim()).filter(Boolean))];
+}
+function renderMatchCheck(out){
+  const el=document.getElementById("matchCheckResults"),html=[];
+  for(const m of (out.matches||[])){
+    const when=m.saved_at||m.created_at||"";
+    const players=(m.players||[]).map(p=>`${esc(p.name)} (${esc(p.team)}) ${p.frags??0}/${p.deaths??0}, ${p.damage??0} dmg`).join(" · ");
+    html.push(`<div class="match-check-row"><div class="match-check-head"><strong>${esc(m.match_id)}</strong><span class="pill">FOUND</span></div><div>${esc(m.home_score)}–${esc(m.away_score)} · winner ${esc(m.winner||"?")} · ${esc(m.map||"")} · ${esc(m.game_type||"")}</div><div class="match-check-players">${esc(m.server||"")}${when?` · ${esc(when)}`:""}<br>${players||"No player rows."}</div></div>`);
+  }
+  for(const id of (out.missing||[]))html.push(`<div class="match-check-row"><div class="match-check-head"><strong>${esc(id)}</strong><span class="pill">NOT FOUND</span></div></div>`);
+  el.innerHTML=html.join("")||'<div class="empty">No results.</div>';
+}
+document.getElementById("checkMatchesBtn").onclick=async()=>{
+  if(!adminKey){setStatus("Connect with the admin key first.","bad");return}
+  const ids=parseMatchCheckIds(),status=document.getElementById("matchCheckStatus"),btn=document.getElementById("checkMatchesBtn");
+  if(!ids.length){status.textContent="Enter at least one match ID.";return}
+  if(ids.length>50){status.textContent="Maximum 50 match IDs at a time.";return}
+  btn.disabled=true;status.textContent=`Checking ${ids.length} match ID${ids.length===1?"":"s"}…`;
+  try{
+    const r=await fetch(`${ADMIN_MATCHES_API}?ids=${encodeURIComponent(ids.join(","))}`,{cache:"no-store",headers:{"x-q2stats-admin-key":adminKey}});
+    let out={};try{out=await r.json()}catch{}
+    if(!r.ok)throw new Error(out.error||`HTTP ${r.status}`);
+    renderMatchCheck(out);status.textContent=`Found ${(out.matches||[]).length} · not found ${(out.missing||[]).length}`;
+  }catch(err){status.textContent=`Check failed: ${err.message}`;setStatus(err.message,"bad")}
+  finally{btn.disabled=false}
 };
 
 document.getElementById("rebuildEloBtn").onclick=async()=>{
