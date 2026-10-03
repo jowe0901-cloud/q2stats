@@ -93,3 +93,7 @@ export default async (request) => {
     return json(500,{status:"error",error:String(e?.message||e)});
   }finally{ client.release(); }
 };
+
+export const config = {
+  path: "/api/admin/elo-rebuild"
+};

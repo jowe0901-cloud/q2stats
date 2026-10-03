@@ -10,6 +10,31 @@ const json = (status, body) => new Response(JSON.stringify(body), {
 
 const clean = v => String(v ?? "").trim();
 
+const WEAPON_NAMES = {
+  blaster: "Blaster",
+  shotgun: "Shotgun",
+  super_shotgun: "Super Shotgun",
+  supershotgun: "Super Shotgun",
+  machinegun: "Machinegun",
+  chaingun: "Chaingun",
+  grenades: "Grenades",
+  grenade_launcher: "Grenade Launcher",
+  grenadelauncher: "Grenade Launcher",
+  rocket_launcher: "Rocket Launcher",
+  rocketlauncher: "Rocket Launcher",
+  hyperblaster: "HyperBlaster",
+  hyper_blaster: "HyperBlaster",
+  railgun: "Railgun",
+  bfg: "BFG10K",
+  bfg10k: "BFG10K"
+};
+
+function canonicalWeapon(value) {
+  const raw = clean(value);
+  const key = raw.toLowerCase().replace(/[\s-]+/g, "_");
+  return WEAPON_NAMES[key] ?? raw;
+}
+
 function toPlayerRow(row) {
   return {
     name: row.name,
@@ -86,6 +111,35 @@ export default async request => {
     }
     const matches = [...grouped.values()];
 
+
+    // Aggregate this profile's own rows by game type.
+    // matchRows contains every player in the profile's matches, so only count
+    // rows that are actually linked to this profile.
+    const modeStats = {
+      team: { matches: 0, kills: 0, deaths: 0 },
+      "1v1": { matches: 0, kills: 0, deaths: 0 }
+    };
+    const seenModeMatches = { team: new Set(), "1v1": new Set() };
+
+    for (const match of matches) {
+      const mode = String(match.game_type || "").toLowerCase() === "1v1" ? "1v1" : "team";
+      const ownRows = match.players.filter(p => Number(p.profile_id) === Number(profile.id));
+      if (!ownRows.length) continue;
+
+      if (!seenModeMatches[mode].has(match.match_id)) {
+        seenModeMatches[mode].add(match.match_id);
+        modeStats[mode].matches += 1;
+      }
+      for (const p of ownRows) {
+        modeStats[mode].kills += Number(p.kills ?? p.frags ?? 0);
+        modeStats[mode].deaths += Number(p.deaths ?? 0);
+      }
+    }
+
+    for (const s of Object.values(modeStats)) {
+      s.kd = s.deaths > 0 ? s.kills / s.deaths : (s.kills > 0 ? s.kills : 0);
+    }
+
     const weaponRows = await db.sql`
       SELECT w.weapon,
         AVG(w.accuracy) FILTER (WHERE w.accuracy IS NOT NULL) AS avg_accuracy,
@@ -109,17 +163,57 @@ export default async request => {
     for (const row of weaponHistoryRows) {
       let item=byMatch.get(row.match_id);
       if(!item){ item={match_id:row.match_id,played_at:row.played_at,weapons:{}}; byMatch.set(row.match_id,item); }
-      item.weapons[row.weapon]={accuracy:row.accuracy==null?null:Number(row.accuracy),
-        kills:row.kills==null?null:Number(row.kills), deaths:row.deaths==null?null:Number(row.deaths),
-        dealt:row.dealt==null?null:Number(row.dealt), received:row.received==null?null:Number(row.received),
-        pick:row.pick==null?null:Number(row.pick), miss:row.miss==null?null:Number(row.miss)};
-    }
-    const weaponSummary=weaponRows.map(row=>({w:row.weapon,weapon:row.weapon,
-      acc:row.avg_accuracy==null?null:Number(row.avg_accuracy),
-      accuracy:row.avg_accuracy==null?null:Number(row.avg_accuracy),
-      kills:Number(row.kills||0),matches:Number(row.matches||0)}));
 
-    return json(200,{status:"ok",profile,setup,total_matches:matches.length,matches,
+      const weapon = canonicalWeapon(row.weapon);
+      const current = item.weapons[weapon] ?? {
+        accuracy_sum:0, accuracy_count:0, kills:0, deaths:0,
+        dealt:0, received:0, pick:0, miss:0
+      };
+      if(row.accuracy!=null){ current.accuracy_sum += Number(row.accuracy); current.accuracy_count += 1; }
+      current.kills += Number(row.kills || 0);
+      current.deaths += Number(row.deaths || 0);
+      current.dealt += Number(row.dealt || 0);
+      current.received += Number(row.received || 0);
+      current.pick += Number(row.pick || 0);
+      current.miss += Number(row.miss || 0);
+      item.weapons[weapon] = current;
+    }
+
+    for (const item of byMatch.values()) {
+      for (const [weapon, v] of Object.entries(item.weapons)) {
+        item.weapons[weapon] = {
+          accuracy: v.accuracy_count ? v.accuracy_sum / v.accuracy_count : null,
+          kills: v.kills, deaths: v.deaths, dealt: v.dealt,
+          received: v.received, pick: v.pick, miss: v.miss
+        };
+      }
+    }
+
+    const weaponMap = new Map();
+    for (const row of weaponRows) {
+      const weapon = canonicalWeapon(row.weapon);
+      let w = weaponMap.get(weapon);
+      if (!w) {
+        w = { weapon, kills:0, matches:0, weightedAccuracy:0, accuracyWeight:0 };
+        weaponMap.set(weapon, w);
+      }
+      const matchesCount = Number(row.matches || 0);
+      w.kills += Number(row.kills || 0);
+      w.matches += matchesCount;
+      if (row.avg_accuracy != null && matchesCount > 0) {
+        w.weightedAccuracy += Number(row.avg_accuracy) * matchesCount;
+        w.accuracyWeight += matchesCount;
+      }
+    }
+
+    const weaponSummary = [...weaponMap.values()]
+      .map(w => {
+        const accuracy = w.accuracyWeight ? w.weightedAccuracy / w.accuracyWeight : null;
+        return { w:w.weapon, weapon:w.weapon, acc:accuracy, accuracy, kills:w.kills, matches:w.matches };
+      })
+      .sort((a,b) => b.kills - a.kills || a.weapon.localeCompare(b.weapon));
+
+    return json(200,{status:"ok",profile,setup,total_matches:matches.length,matches,mode_stats:modeStats,
       weapons:{summary:weaponSummary,history:[...byMatch.values()]}});
   } catch(error) {
     console.error("Q2Stats public profile failed:",error);
