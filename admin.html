@@ -219,6 +219,7 @@ function renderProfiles(){
       <div class="profile-actions">
         <input class="admin-input" data-alias-input placeholder="Add existing nickname…">
         <button class="admin-btn" type="button" data-add-alias>Add alias</button>
+        <button class="admin-btn" type="button" data-relink>Relink matches</button>
       </div>
     </div>`;
   }).join(""):'<div class="empty">No profiles yet.</div>';
@@ -245,6 +246,18 @@ function renderProfiles(){
       }catch(e){setStatus(e.message,"bad");addBtn.disabled=false}
     };
     input.onkeydown=e=>{if(e.key==="Enter"){e.preventDefault();addBtn.click()}};
+
+    const relinkBtn=row.querySelector("[data-relink]");
+    relinkBtn.onclick=async()=>{
+      if(!confirm(`Relink all unlinked historical matches for the existing aliases on profile "${profile.primary_name}"?\n\nHistorical match names will stay unchanged. Elo will NOT be recalculated.`))return;
+      relinkBtn.disabled=true;
+      setStatus(`Relinking matches for "${profile.primary_name}"…`);
+      try{
+        const out=await api("POST",{action:"relink_matches",profile_id:profileId});
+        await load();
+        setStatus(`Relink complete for "${profile.primary_name}" · ${out.linked_matches??0} match rows linked. Elo has not been recalculated.`,"good");
+      }catch(e){setStatus(e.message,"bad");relinkBtn.disabled=false}
+    };
 
     row.querySelectorAll("[data-primary]").forEach(btn=>{
       btn.onclick=async()=>{

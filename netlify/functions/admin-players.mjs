@@ -26,6 +26,7 @@ export default async (req) => {
     //   add_alias:    { action: "add_alias", profile_id, nickname }
     //   remove_alias: { action: "remove_alias", profile_id, nickname }
     //   set_primary:  { action: "set_primary", profile_id, nickname }
+    //   relink_matches:{ action: "relink_matches", profile_id }
     //
     // No Elo rows are changed here. Elo recalculation will be a separate step.
 
@@ -300,6 +301,105 @@ export default async (req) => {
             await client.query("ROLLBACK");
           } catch (rollbackError) {
             console.error("Q2Stats remove alias rollback failed:", rollbackError);
+          }
+        }
+        throw error;
+      } finally {
+        client.release();
+      }
+    }
+
+    if (action === "relink_matches") {
+      const profileId = Number(body?.profile_id);
+
+      if (!Number.isSafeInteger(profileId) || profileId <= 0) {
+        return json({ status: "error", error: "Valid profile_id is required" }, 400);
+      }
+
+      const client = await db.pool.connect();
+      let transactionStarted = false;
+
+      try {
+        await client.query("BEGIN");
+        transactionStarted = true;
+
+        const profileResult = await client.query(
+          `
+            SELECT id, primary_name
+            FROM player_profiles
+            WHERE id = $1
+            FOR UPDATE
+          `,
+          [profileId]
+        );
+
+        if (!profileResult.rows.length) {
+          await client.query("ROLLBACK");
+          transactionStarted = false;
+          return json({ status: "error", error: "Profile not found" }, 404);
+        }
+
+        // Reuse the profile's already-approved aliases. Only unlinked rows
+        // are attached; historical nickname text is never rewritten.
+        const linkedResult = await client.query(
+          `
+            UPDATE match_players mp
+            SET profile_id = $1
+            WHERE mp.profile_id IS NULL
+              AND EXISTS (
+                SELECT 1
+                FROM player_aliases pa
+                WHERE pa.profile_id = $1
+                  AND pa.nickname = mp.name
+              )
+            RETURNING mp.player_id
+          `,
+          [profileId]
+        );
+
+        const playerIds = [
+          ...new Set(
+            linkedResult.rows
+              .map((row) => clean(row.player_id))
+              .filter(Boolean)
+          )
+        ];
+
+        for (const playerId of playerIds) {
+          await client.query(
+            `
+              INSERT INTO player_identities (profile_id, player_id)
+              VALUES ($1, $2)
+              ON CONFLICT (player_id) DO NOTHING
+            `,
+            [profileId, playerId]
+          );
+        }
+
+        await client.query(
+          `
+            UPDATE player_profiles
+            SET updated_at = NOW()
+            WHERE id = $1
+          `,
+          [profileId]
+        );
+
+        await client.query("COMMIT");
+        transactionStarted = false;
+
+        return json({
+          status: "matches_relinked",
+          profile: profileResult.rows[0],
+          linked_matches: linkedResult.rowCount,
+          warning: "Elo has not been recalculated."
+        });
+      } catch (error) {
+        if (transactionStarted) {
+          try {
+            await client.query("ROLLBACK");
+          } catch (rollbackError) {
+            console.error("Q2Stats relink matches rollback failed:", rollbackError);
           }
         }
         throw error;
