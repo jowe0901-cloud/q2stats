@@ -96,6 +96,14 @@
     "winrate": 85.7
   },
   {
+    "player": "GipSy",
+    "elo": 1568,
+    "matches": 55,
+    "wins": 33,
+    "losses": 22,
+    "winrate": 60.0
+  },
+  {
     "player": "cne",
     "elo": 1568,
     "matches": 7,
@@ -118,14 +126,6 @@
     "wins": 5,
     "losses": 0,
     "winrate": 100.0
-  },
-  {
-    "player": "GipSy",
-    "elo": 1563,
-    "matches": 54,
-    "wins": 32,
-    "losses": 22,
-    "winrate": 59.3
   },
   {
     "player": "fff",
@@ -793,10 +793,10 @@
   },
   {
     "player": "jabb@",
-    "elo": 1261,
-    "matches": 44,
+    "elo": 1257,
+    "matches": 45,
     "wins": 7,
-    "losses": 37,
-    "winrate": 15.9
+    "losses": 38,
+    "winrate": 15.6
   }
 ]
