@@ -98,7 +98,7 @@
 
       <article class="panel">
         <div class="panel-head"><div><span class="eyebrow">MATCH CLEANUP</span><h2>Check suspected duplicates</h2></div></div>
-        <p class="admin-note">Read-only lookup. Paste suspected match IDs to verify exactly what exists in the production database. This does not delete or change anything.</p>
+        <p class="admin-note">Paste suspected match IDs to verify exactly what exists in the production database. Checked matches can be deleted one at a time after an explicit confirmation. Recalculate Elo once after all duplicate deletions are finished.</p>
         <textarea class="admin-input" id="matchCheckIds" rows="7" style="width:100%;margin-top:10px" placeholder="One match ID per line, or separated by commas"></textarea>
         <div class="setup-actions">
           <button class="admin-btn" id="checkMatchesBtn" type="button">Check matches</button>
@@ -376,10 +376,28 @@ function renderMatchCheck(out){
   for(const m of (out.matches||[])){
     const when=m.saved_at||m.created_at||"";
     const players=(m.players||[]).map(p=>`${esc(p.name)} (${esc(p.team)}) ${p.frags??0}/${p.deaths??0}, ${p.damage??0} dmg`).join(" · ");
-    html.push(`<div class="match-check-row"><div class="match-check-head"><strong>${esc(m.match_id)}</strong><span class="pill">FOUND</span></div><div>${esc(m.home_score)}–${esc(m.away_score)} · winner ${esc(m.winner||"?")} · ${esc(m.map||"")} · ${esc(m.game_type||"")}</div><div class="match-check-players">${esc(m.server||"")}${when?` · ${esc(when)}`:""}<br>${players||"No player rows."}</div></div>`);
+    html.push(`<div class="match-check-row"><div class="match-check-head"><strong>${esc(m.match_id)}</strong><span class="pill">FOUND</span></div><div>${esc(m.home_score)}–${esc(m.away_score)} · winner ${esc(m.winner||"?")} · ${esc(m.map||"")} · ${esc(m.game_type||"")}</div><div class="match-check-players">${esc(m.server||"")}${when?` · ${esc(when)}`:""}<br>${players||"No player rows."}</div><div class="setup-actions"><button class="admin-btn" type="button" data-delete-match="${esc(m.match_id)}">Delete this match</button></div></div>`);
   }
   for(const id of (out.missing||[]))html.push(`<div class="match-check-row"><div class="match-check-head"><strong>${esc(id)}</strong><span class="pill">NOT FOUND</span></div></div>`);
   el.innerHTML=html.join("")||'<div class="empty">No results.</div>';
+  el.querySelectorAll("[data-delete-match]").forEach(btn=>{
+    btn.onclick=async()=>{
+      const matchId=btn.dataset.deleteMatch;
+      const typed=prompt(`DELETE MATCH FROM PRODUCTION\n\nMatch ID: ${matchId}\n\nType the complete match ID to confirm:`);
+      if(typed===null)return;
+      if(typed.trim()!==matchId){alert("Match ID did not match. Nothing was deleted.");return}
+      if(!confirm(`Final confirmation: permanently delete match ${matchId}?\n\nPlayer/weapon rows for this match will also be deleted. Elo history for this match is removed. Run Recalculate Elo after all duplicate deletions are finished.`))return;
+      btn.disabled=true;btn.textContent="Deleting…";
+      try{
+        const r=await fetch(ADMIN_MATCHES_API,{method:"DELETE",cache:"no-store",headers:{"x-q2stats-admin-key":adminKey,"content-type":"application/json"},body:JSON.stringify({match_id:matchId,confirm_match_id:typed.trim()})});
+        let deleted={};try{deleted=await r.json()}catch{}
+        if(!r.ok)throw new Error(deleted.error||`HTTP ${r.status}`);
+        setStatus(`Match ${matchId} deleted. Recalculate Elo after all duplicate deletions are complete.`,"good");
+        document.getElementById("matchCheckStatus").textContent=`Deleted ${matchId}. Elo has NOT been recalculated yet.`;
+        btn.closest(".match-check-row").remove();
+      }catch(err){btn.disabled=false;btn.textContent="Delete this match";setStatus(err.message,"bad");alert(`Delete failed: ${err.message}`)}
+    };
+  });
 }
 document.getElementById("checkMatchesBtn").onclick=async()=>{
   if(!adminKey){setStatus("Connect with the admin key first.","bad");return}
