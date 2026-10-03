@@ -67,10 +67,21 @@ async function profileIdForNickname(db,nickname){
 
 async function playersForMatch(db,matchId){
  return await db.sql`
-  SELECT name, team, frags, deaths, damage, ping, suicides, teamkills,
-         teleports, damage_received, team_damage, team_damage_received
-  FROM match_players WHERE match_id=${matchId}
-  ORDER BY frags DESC, name ASC
+  SELECT mp.name, mp.team, mp.frags, mp.deaths, mp.damage, mp.ping, mp.suicides, mp.teamkills,
+         mp.teleports, mp.damage_received, mp.team_damage, mp.team_damage_received,
+         eh.old_elo AS elo_before
+  FROM match_players mp
+  LEFT JOIN player_profiles pp ON pp.id=mp.profile_id
+  LEFT JOIN elo_history eh
+    ON eh.match_id=mp.match_id
+   AND eh.player_name=COALESCE(pp.primary_name,mp.name)
+   AND eh.elo_type=CASE
+     WHEN (SELECT COUNT(*) FROM match_players x WHERE x.match_id=mp.match_id)=2 THEN '1v1'
+     ELSE 'team'
+   END
+   AND eh.algorithm_version='v1'
+  WHERE mp.match_id=${matchId}
+  ORDER BY mp.frags DESC, mp.name ASC
  `;
 }
 
