@@ -72,14 +72,19 @@ async function playersForMatch(db,matchId){
          eh.old_elo AS elo_before
   FROM match_players mp
   LEFT JOIN player_profiles pp ON pp.id=mp.profile_id
-  LEFT JOIN elo_history eh
-    ON eh.match_id=mp.match_id
-   AND eh.player_name=COALESCE(pp.primary_name,mp.name)
-   AND eh.elo_type=CASE
-     WHEN (SELECT COUNT(*) FROM match_players x WHERE x.match_id=mp.match_id)=2 THEN '1v1'
-     ELSE 'team'
-   END
-   AND eh.algorithm_version='v1'
+   LEFT JOIN LATERAL (
+     SELECT h.old_elo
+     FROM elo_history h
+     WHERE h.match_id=mp.match_id
+       AND h.elo_type=CASE
+         WHEN (SELECT COUNT(*) FROM match_players x WHERE x.match_id=mp.match_id)=2 THEN '1v1'
+         ELSE 'team'
+       END
+       AND h.algorithm_version='v1'
+       AND (h.player_name=mp.name OR h.player_name=pp.primary_name)
+     ORDER BY CASE WHEN h.player_name=mp.name THEN 0 ELSE 1 END
+     LIMIT 1
+   ) eh ON TRUE
   WHERE mp.match_id=${matchId}
   ORDER BY mp.frags DESC, mp.name ASC
  `;
