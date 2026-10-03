@@ -5,6 +5,24 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Player · Q2Stats Beta</title>
   <link rel="stylesheet" href="styles.css">
+  <style>
+    .metric .elo-meta{display:block;margin-top:10px;font-size:.78rem;font-weight:600;color:#8f9bad;line-height:1.35}
+  
+    .profile-mode-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin:18px 0 24px}
+    .profile-mode-card{background:#111821;border:1px solid #27303d;border-radius:10px;padding:18px}
+    .mode-elo{margin-top:8px}.mode-elo span{display:block;color:#9ba7b8;font-size:.86rem}
+    .mode-elo strong{display:block;margin-top:2px;font-size:2rem;line-height:1.1}
+    .profile-mode-card .elo-meta{margin-top:12px;padding-top:10px;border-top:1px solid #27303d}
+    .mode-stats{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:16px}
+    .mode-stats div{display:flex;flex-direction:column;gap:3px}.mode-stats span{color:#8f9bad;font-size:.78rem}.mode-stats strong{font-size:1.15rem}
+    .overall-stats{grid-template-columns:repeat(3,1fr)}
+    @media(max-width:800px){.profile-mode-grid{grid-template-columns:1fr}.overall-stats{grid-template-columns:repeat(3,1fr)}}
+  
+    .player-setup{margin:18px 0 24px}.setup-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 28px}
+    .setup-row{display:flex;justify-content:space-between;gap:20px;padding:11px 0;border-bottom:1px solid #27303d}
+    .setup-row span{color:#8f9bad}.setup-row strong{text-align:right}
+    @media(max-width:700px){.setup-list{grid-template-columns:1fr}}
+  </style>
 </head>
 <body>
 <header class="topbar">
@@ -13,6 +31,11 @@
 </header>
 
 <main class="wrap">
+  <section id="playerSetup" class="card player-setup" hidden>
+    <div class="section-head"><div><span class="eyebrow">PLAYER SETUP</span><h2 id="playerSetupTitle">Player Setup</h2></div></div>
+    <div id="playerSetupList" class="setup-list"></div>
+  </section>
+
   <section class="player-hero">
     <div>
       <a class="back" href="index.html">← Back to rankings</a>
@@ -21,16 +44,35 @@
       <p id="playerSub">Loading statistics…</p>
       <div id="playerAliases" class="player-aliases"></div>
     </div>
-    <div class="elo-badge"><span>TEAM ELO</span><strong id="heroElo">—</strong><small id="heroTeamMeta">—</small></div>
   </section>
 
-  <section class="summary-grid player-metrics">
-    <article class="metric"><span>Team Elo</span><strong id="pTeamElo">—</strong><small id="pTeamMeta">—</small></article>
-    <article class="metric"><span>1v1 Elo</span><strong id="p1v1Elo">—</strong><small id="p1v1Meta">—</small></article>
-    <article class="metric"><span>Matches</span><strong id="pMatches">—</strong></article>
-    <article class="metric"><span>Winrate</span><strong id="pWinrate">—</strong></article>
-    <article class="metric"><span>K/D</span><strong id="pKD">—</strong></article>
-    <article class="metric accent"><span>Avg Damage</span><strong id="pAvgDamage">—</strong></article>
+  <section class="profile-mode-grid">
+    <article class="profile-mode-card">
+      <span class="eyebrow">TEAM</span>
+      <div class="mode-elo"><span>Team Elo</span><strong id="pTeamElo">—</strong></div>
+      <div id="pTeamRank" class="elo-meta">—</div>
+      <div class="mode-stats">
+        <div><span>Winrate</span><strong id="pTeamWinrate">—</strong></div>
+        <div><span>K/D</span><strong id="pTeamKD">—</strong></div>
+      </div>
+    </article>
+    <article class="profile-mode-card">
+      <span class="eyebrow">1V1</span>
+      <div class="mode-elo"><span>1v1 Elo</span><strong id="p1v1Elo">—</strong></div>
+      <div id="p1v1Rank" class="elo-meta">—</div>
+      <div class="mode-stats">
+        <div><span>Winrate</span><strong id="p1v1Winrate">—</strong></div>
+        <div><span>K/D</span><strong id="p1v1KD">—</strong></div>
+      </div>
+    </article>
+    <article class="profile-mode-card overall-card">
+      <span class="eyebrow">OVERALL</span>
+      <div class="mode-stats overall-stats">
+        <div><span>Matches</span><strong id="pMatches">—</strong></div>
+        <div><span>Kills</span><strong id="pKillsOverall">—</strong></div>
+        <div><span>Avg Damage</span><strong id="pAvgDamage">—</strong></div>
+      </div>
+    </article>
   </section>
 
   <section class="two-col">
@@ -66,6 +108,6 @@
 </main>
 
 <footer>Q2Stats Beta</footer>
-<script src="app.js?v=8"></script>
+<script src="app.js?v=11"></script>
 </body>
 </html>

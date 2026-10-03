@@ -27,48 +27,37 @@ function toPlayerRow(row) {
 }
 
 export default async request => {
-  if (request.method !== "GET") {
-    return json(405, { status: "error", error: "Method not allowed" });
-  }
-
+  if (request.method !== "GET") return json(405, { status: "error", error: "Method not allowed" });
   try {
     const url = new URL(request.url);
     const nickname = clean(url.searchParams.get("nickname"));
     const profileId = clean(url.searchParams.get("profile_id"));
-
-    if (!nickname && !profileId) {
-      return json(400, { status: "error", error: "nickname or profile_id is required" });
-    }
+    if (!nickname && !profileId) return json(400, { status: "error", error: "nickname or profile_id is required" });
 
     const db = getDatabase();
-
     let profiles;
     if (profileId) {
-      profiles = await db.sql`
-        SELECT id, primary_name, created_at, updated_at
-        FROM player_profiles
-        WHERE id = ${profileId}
-        LIMIT 1
-      `;
+      profiles = await db.sql`SELECT id, primary_name, created_at, updated_at FROM player_profiles WHERE id = ${profileId} LIMIT 1`;
     } else {
       profiles = await db.sql`
         SELECT DISTINCT p.id, p.primary_name, p.created_at, p.updated_at
         FROM player_profiles p
         JOIN player_aliases a ON a.profile_id = p.id
         WHERE a.nickname = ${nickname}
-        LIMIT 1
-      `;
+        LIMIT 1`;
     }
-
-    if (!profiles.length) {
-      return json(404, { status: "not_found", error: "Public profile not found" });
-    }
-
+    if (!profiles.length) return json(404, { status: "not_found", error: "Public profile not found" });
     const profile = profiles[0];
 
+    const setupRows = await db.sql`
+      SELECT mouse, mousepad, dpi, sensitivity, fov, resolution, refresh_rate
+      FROM player_setups
+      WHERE profile_id = ${profile.id}
+      LIMIT 1`;
+    const setup = setupRows[0] ?? null;
+
     const matchRows = await db.sql`
-      SELECT
-        m.id, m.match_id, m.server, m.map, m.game_type,
+      SELECT m.id, m.match_id, m.server, m.map, m.game_type,
         m.home_score, m.away_score, m.winner, m.match_type,
         m.port, m.saved_at, m.created_at,
         mp.name, mp.profile_id, mp.team,
@@ -78,121 +67,63 @@ export default async request => {
       FROM matches m
       JOIN match_players mp ON mp.match_id = m.match_id
       WHERE m.match_id IN (
-        SELECT DISTINCT profile_mp.match_id
-        FROM match_players profile_mp
+        SELECT DISTINCT profile_mp.match_id FROM match_players profile_mp
         WHERE profile_mp.profile_id = ${profile.id}
       )
-      ORDER BY COALESCE(m.saved_at, m.created_at) DESC, m.id DESC
-    `;
+      ORDER BY COALESCE(m.saved_at, m.created_at) DESC, m.id DESC`;
 
     const grouped = new Map();
     for (const row of matchRows) {
       let match = grouped.get(row.match_id);
       if (!match) {
-        match = {
-          id: row.id,
-          match_id: row.match_id,
-          server: row.server,
-          map: row.map,
-          game_type: row.game_type,
-          home_score: row.home_score,
-          away_score: row.away_score,
-          winner: row.winner,
-          match_type: row.match_type,
-          port: row.port,
-          saved_at: row.saved_at,
-          created_at: row.created_at,
-          players: []
-        };
+        match = { id:row.id, match_id:row.match_id, server:row.server, map:row.map,
+          game_type:row.game_type, home_score:row.home_score, away_score:row.away_score,
+          winner:row.winner, match_type:row.match_type, port:row.port,
+          saved_at:row.saved_at, created_at:row.created_at, players:[] };
         grouped.set(row.match_id, match);
       }
       match.players.push(toPlayerRow(row));
     }
-
     const matches = [...grouped.values()];
 
     const weaponRows = await db.sql`
-      SELECT
-        w.weapon,
+      SELECT w.weapon,
         AVG(w.accuracy) FILTER (WHERE w.accuracy IS NOT NULL) AS avg_accuracy,
-        COALESCE(SUM(w.kills), 0)::int AS kills,
-        COUNT(*)::int AS matches
+        COALESCE(SUM(w.kills), 0)::int AS kills, COUNT(*)::int AS matches
       FROM match_player_weapons w
-      JOIN match_players mp
-        ON mp.match_id = w.match_id
-       AND mp.name = w.player_name
+      JOIN match_players mp ON mp.match_id = w.match_id AND mp.name = w.player_name
       WHERE mp.profile_id = ${profile.id}
       GROUP BY w.weapon
-      ORDER BY COALESCE(SUM(w.kills), 0) DESC, w.weapon ASC
-    `;
+      ORDER BY COALESCE(SUM(w.kills), 0) DESC, w.weapon ASC`;
 
     const weaponHistoryRows = await db.sql`
-      SELECT
-        w.match_id,
-        w.weapon,
-        w.accuracy,
-        w.kills,
-        w.deaths,
-        w.dealt,
-        w.received,
-        w.pick,
-        w.miss,
+      SELECT w.match_id,w.weapon,w.accuracy,w.kills,w.deaths,w.dealt,w.received,w.pick,w.miss,
         COALESCE(m.saved_at, m.created_at) AS played_at
       FROM match_player_weapons w
-      JOIN match_players mp
-        ON mp.match_id = w.match_id
-       AND mp.name = w.player_name
+      JOIN match_players mp ON mp.match_id = w.match_id AND mp.name = w.player_name
       JOIN matches m ON m.match_id = w.match_id
       WHERE mp.profile_id = ${profile.id}
-      ORDER BY COALESCE(m.saved_at, m.created_at) ASC, m.id ASC, w.weapon ASC
-    `;
+      ORDER BY COALESCE(m.saved_at, m.created_at) ASC, m.id ASC, w.weapon ASC`;
 
     const byMatch = new Map();
     for (const row of weaponHistoryRows) {
-      let item = byMatch.get(row.match_id);
-      if (!item) {
-        item = { match_id: row.match_id, played_at: row.played_at, weapons: {} };
-        byMatch.set(row.match_id, item);
-      }
-      item.weapons[row.weapon] = {
-        accuracy: row.accuracy == null ? null : Number(row.accuracy),
-        kills: row.kills == null ? null : Number(row.kills),
-        deaths: row.deaths == null ? null : Number(row.deaths),
-        dealt: row.dealt == null ? null : Number(row.dealt),
-        received: row.received == null ? null : Number(row.received),
-        pick: row.pick == null ? null : Number(row.pick),
-        miss: row.miss == null ? null : Number(row.miss)
-      };
+      let item=byMatch.get(row.match_id);
+      if(!item){ item={match_id:row.match_id,played_at:row.played_at,weapons:{}}; byMatch.set(row.match_id,item); }
+      item.weapons[row.weapon]={accuracy:row.accuracy==null?null:Number(row.accuracy),
+        kills:row.kills==null?null:Number(row.kills), deaths:row.deaths==null?null:Number(row.deaths),
+        dealt:row.dealt==null?null:Number(row.dealt), received:row.received==null?null:Number(row.received),
+        pick:row.pick==null?null:Number(row.pick), miss:row.miss==null?null:Number(row.miss)};
     }
+    const weaponSummary=weaponRows.map(row=>({w:row.weapon,weapon:row.weapon,
+      acc:row.avg_accuracy==null?null:Number(row.avg_accuracy),
+      accuracy:row.avg_accuracy==null?null:Number(row.avg_accuracy),
+      kills:Number(row.kills||0),matches:Number(row.matches||0)}));
 
-    const weaponSummary = weaponRows.map(row => ({
-      w: row.weapon,
-      weapon: row.weapon,
-      acc: row.avg_accuracy == null ? null : Number(row.avg_accuracy),
-      accuracy: row.avg_accuracy == null ? null : Number(row.avg_accuracy),
-      kills: Number(row.kills || 0),
-      matches: Number(row.matches || 0)
-    }));
-
-    return json(200, {
-      status: "ok",
-      profile,
-      total_matches: matches.length,
-      matches,
-      weapons: {
-        summary: weaponSummary,
-        history: [...byMatch.values()]
-      }
-    });
-  } catch (error) {
-    console.error("Q2Stats public profile failed:", error);
-    return json(500, {
-      status: "error",
-      error: error.message || "Internal server error"
-    });
+    return json(200,{status:"ok",profile,setup,total_matches:matches.length,matches,
+      weapons:{summary:weaponSummary,history:[...byMatch.values()]}});
+  } catch(error) {
+    console.error("Q2Stats public profile failed:",error);
+    return json(500,{status:"error",error:error.message||"Internal server error"});
   }
 };
-
-export const config = {
-  path: "/api/v1/profiles"
-};
+export const config={path:"/api/v1/profiles"};
