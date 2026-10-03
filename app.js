@@ -145,7 +145,7 @@ function renderPlayerSetup(setup){
  if(!box||!list)return;
  const fields=[["Mouse",setup?.mouse],["Mousepad",setup?.mousepad],["DPI",setup?.dpi],
   ["Sensitivity",setup?.sensitivity],["FOV",setup?.fov],["Resolution",setup?.resolution],
-  ["Refresh rate",setup?.refresh_rate]];
+  ["Refresh rate",setup?.refresh_rate],["cl_maxfps",setup?.cl_maxfps],["Headphones",setup?.headphones]];
  const rows=fields.filter(([,v])=>v!=null&&String(v).trim()!=="");
  if(!rows.length){box.hidden=true;return}
  list.innerHTML=rows.map(([k,v])=>`<div class="setup-row"><span>${esc(k)}</span><strong>${esc(v)}</strong></div>`).join("");

@@ -50,7 +50,7 @@ export default async request => {
     const profile = profiles[0];
 
     const setupRows = await db.sql`
-      SELECT mouse, mousepad, dpi, sensitivity, fov, resolution, refresh_rate
+      SELECT mouse, mousepad, dpi, sensitivity, fov, resolution, refresh_rate, cl_maxfps, headphones
       FROM player_setups
       WHERE profile_id = ${profile.id}
       LIMIT 1`;

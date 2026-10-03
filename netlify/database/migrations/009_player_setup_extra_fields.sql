@@ -1,0 +1,3 @@
+ALTER TABLE player_setups
+  ADD COLUMN IF NOT EXISTS cl_maxfps TEXT,
+  ADD COLUMN IF NOT EXISTS headphones TEXT;

@@ -14,7 +14,7 @@ export default async req=>{
     if(req.method==="GET"){
       const profileId=String(url.searchParams.get("profile_id")||"").trim();
       if(!profileId)return json({status:"error",error:"profile_id is required"},400);
-      const rows=await db.sql`SELECT profile_id,mouse,mousepad,dpi,sensitivity,fov,resolution,refresh_rate,updated_at
+      const rows=await db.sql`SELECT profile_id,mouse,mousepad,dpi,sensitivity,fov,resolution,refresh_rate,cl_maxfps,headphones,updated_at
         FROM player_setups WHERE profile_id=${profileId} LIMIT 1`;
       return json({status:"ok",setup:rows[0]??null});
     }
@@ -28,16 +28,18 @@ export default async req=>{
 
     const mouse=clean(body.mouse),mousepad=clean(body.mousepad),dpi=clean(body.dpi),
       sensitivity=clean(body.sensitivity),fov=clean(body.fov),resolution=clean(body.resolution),
-      refreshRate=clean(body.refresh_rate);
+      refreshRate=clean(body.refresh_rate),
+      clMaxfps=clean(body.cl_maxfps),
+      headphones=clean(body.headphones);
 
     const rows=await db.sql`
-      INSERT INTO player_setups(profile_id,mouse,mousepad,dpi,sensitivity,fov,resolution,refresh_rate,updated_at)
-      VALUES(${profileId},${mouse},${mousepad},${dpi},${sensitivity},${fov},${resolution},${refreshRate},NOW())
+      INSERT INTO player_setups(profile_id,mouse,mousepad,dpi,sensitivity,fov,resolution,refresh_rate,cl_maxfps,headphones,updated_at)
+      VALUES(${profileId},${mouse},${mousepad},${dpi},${sensitivity},${fov},${resolution},${refreshRate},${clMaxfps},${headphones},NOW())
       ON CONFLICT(profile_id) DO UPDATE SET
         mouse=EXCLUDED.mouse,mousepad=EXCLUDED.mousepad,dpi=EXCLUDED.dpi,
         sensitivity=EXCLUDED.sensitivity,fov=EXCLUDED.fov,resolution=EXCLUDED.resolution,
-        refresh_rate=EXCLUDED.refresh_rate,updated_at=NOW()
-      RETURNING profile_id,mouse,mousepad,dpi,sensitivity,fov,resolution,refresh_rate,updated_at`;
+        refresh_rate=EXCLUDED.refresh_rate,cl_maxfps=EXCLUDED.cl_maxfps,headphones=EXCLUDED.headphones,updated_at=NOW()
+      RETURNING profile_id,mouse,mousepad,dpi,sensitivity,fov,resolution,refresh_rate,cl_maxfps,headphones,updated_at`;
     return json({status:"ok",setup:rows[0]});
   }catch(error){
     console.error("Q2Stats admin player setup failed:",error);
