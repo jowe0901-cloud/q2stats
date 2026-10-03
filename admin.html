@@ -77,6 +77,15 @@
       </article>
 
       <article class="panel">
+        <div class="panel-head"><div><span class="eyebrow">ELO</span><h2>Recalculate Elo</h2></div></div>
+        <p class="admin-note">Rebuild Team and 1v1 Elo from the full match history. Linked aliases use the profile's public main nickname.</p>
+        <div class="setup-actions">
+          <button class="admin-btn" id="rebuildEloBtn" type="button">Recalculate Elo</button>
+          <span class="admin-note" id="eloStatus">Run this after merging or changing player identities.</span>
+        </div>
+      </article>
+
+      <article class="panel">
         <div class="panel-head"><div><span class="eyebrow">PROFILES</span><h2>Existing profiles</h2></div></div>
         <div id="profiles"><div class="empty">No profiles yet.</div></div>
       </article>
@@ -120,6 +129,7 @@
 <script>
 const API="/api/admin/players";
 const SETUP_API="/api/admin/player-setup";
+const ELO_REBUILD_API="/api/admin/elo-rebuild";
 let adminKey="", data={profiles:[],players:[]}, selected=new Set(), primary="";
 
 const esc=s=>String(s??"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[m]));
@@ -262,6 +272,30 @@ document.getElementById("saveSetupBtn").onclick=async()=>{
   const body={profile_id:Number(profileId)};Object.entries(setupIds).forEach(([key,elId])=>body[key]=document.getElementById(elId).value.trim());
   document.getElementById("saveSetupBtn").disabled=true;setupStatus("Saving…");
   try{await setupApi("POST",profileId,body);setupStatus("Setup saved.")}catch(err){setupStatus(err.message)}finally{document.getElementById("saveSetupBtn").disabled=false}
+};
+
+document.getElementById("rebuildEloBtn").onclick=async()=>{
+  if(!adminKey){setStatus("Connect with the admin key first.","bad");return}
+  if(!confirm("Recalculate all Team and 1v1 Elo from the complete match history?\n\nUse this after merging or changing player identities."))return;
+  const btn=document.getElementById("rebuildEloBtn");
+  const eloStatus=document.getElementById("eloStatus");
+  btn.disabled=true;eloStatus.textContent="Recalculating Elo…";
+  try{
+    const r=await fetch(ELO_REBUILD_API,{
+      method:"POST",
+      cache:"no-store",
+      headers:{"x-q2stats-admin-key":adminKey}
+    });
+    let out={};try{out=await r.json()}catch{}
+    if(!r.ok)throw new Error(out.error||`HTTP ${r.status}`);
+    eloStatus.textContent=`Done · ${out.matches_used??0} matches · ${out.ratings_written??0} ratings · ${out.history_written??0} history rows`;
+    setStatus("Elo recalculated successfully.","good");
+  }catch(err){
+    eloStatus.textContent=`Elo rebuild failed: ${err.message}`;
+    setStatus(err.message,"bad");
+  }finally{
+    btn.disabled=false;
+  }
 };
 
 document.getElementById("connectBtn").onclick=async()=>{
