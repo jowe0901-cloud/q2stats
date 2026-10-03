@@ -77,7 +77,11 @@ export default async request => {
         mp.damage_received, mp.team_damage, mp.team_damage_received
       FROM matches m
       JOIN match_players mp ON mp.match_id = m.match_id
-      WHERE mp.profile_id = ${profile.id}
+      WHERE m.match_id IN (
+        SELECT DISTINCT profile_mp.match_id
+        FROM match_players profile_mp
+        WHERE profile_mp.profile_id = ${profile.id}
+      )
       ORDER BY COALESCE(m.saved_at, m.created_at) DESC, m.id DESC
     `;
 
