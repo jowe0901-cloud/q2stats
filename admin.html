@@ -27,12 +27,8 @@
     .selection-row label{display:flex;gap:8px;align-items:center;font-weight:800}
     .profile-row{padding:10px 0;border-bottom:1px solid #1d2430}.profile-row:last-child{border-bottom:0}
     .profile-row strong{display:block}.profile-row small{color:var(--muted)}
-    .profile-head{display:flex;justify-content:space-between;gap:10px;align-items:center}
-    .profile-aliases{display:flex;gap:7px;flex-wrap:wrap;margin-top:9px}
-    .alias-chip{display:inline-flex;align-items:center;gap:7px;background:#0d1117;border:1px solid #1d2530;border-radius:999px;padding:5px 8px;font-size:12px}
-    .alias-remove{border:0;background:transparent;color:var(--bad);cursor:pointer;font-weight:900;padding:0 2px}
-    .profile-actions{display:flex;gap:8px;align-items:center;margin-top:10px;flex-wrap:wrap}
-    .profile-actions .admin-input{flex:1;min-width:150px}
+    .setup-form{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}.setup-field{display:grid;gap:5px}.setup-field label{font-size:12px;color:var(--muted);font-weight:700}.setup-field.full{grid-column:1/-1}.setup-actions{display:flex;gap:10px;align-items:center;margin-top:12px;flex-wrap:wrap}
+    @media(max-width:600px){.setup-form{grid-template-columns:1fr}.setup-field.full{grid-column:auto}}
     @media(max-width:850px){.admin-grid{grid-template-columns:1fr}.admin-list{max-height:460px}}
   </style>
 </head>
@@ -81,15 +77,31 @@
       </article>
 
       <article class="panel">
-        <div class="panel-head"><div><span class="eyebrow">ELO</span><h2>Rebuild ratings</h2></div></div>
-        <p class="admin-note">Run this after creating a profile, adding or removing an alias, or changing MAIN. Elo is rebuilt chronologically from match history using each profile's current MAIN nickname.</p>
-        <button class="admin-btn primary" id="rebuildEloBtn" type="button">Rebuild Elo</button>
-        <div class="admin-status" id="eloStatus">No rebuild run in this browser tab.</div>
+        <div class="panel-head"><div><span class="eyebrow">PROFILES</span><h2>Existing profiles</h2></div></div>
+        <div id="profiles"><div class="empty">No profiles yet.</div></div>
       </article>
 
       <article class="panel">
-        <div class="panel-head"><div><span class="eyebrow">PROFILES</span><h2>Existing profiles</h2></div></div>
-        <div id="profiles"><div class="empty">No profiles yet.</div></div>
+        <div class="panel-head"><div><span class="eyebrow">PLAYER SETUP</span><h2>Edit setup</h2></div></div>
+        <div class="setup-field full">
+          <label for="setupProfile">Profile</label>
+          <select class="admin-input" id="setupProfile"><option value="">Choose profile…</option></select>
+        </div>
+        <div class="setup-form">
+          <div class="setup-field"><label>Mouse</label><input class="admin-input" id="setupMouse"></div>
+          <div class="setup-field"><label>Mousepad</label><input class="admin-input" id="setupMousepad"></div>
+          <div class="setup-field"><label>DPI</label><input class="admin-input" id="setupDpi"></div>
+          <div class="setup-field"><label>Sensitivity</label><input class="admin-input" id="setupSensitivity"></div>
+          <div class="setup-field"><label>FOV</label><input class="admin-input" id="setupFov"></div>
+          <div class="setup-field"><label>Resolution</label><input class="admin-input" id="setupResolution"></div>
+          <div class="setup-field"><label>Refresh rate</label><input class="admin-input" id="setupRefreshRate"></div>
+          <div class="setup-field"><label>cl_maxfps</label><input class="admin-input" id="setupClMaxfps"></div>
+          <div class="setup-field full"><label>Headphones</label><input class="admin-input" id="setupHeadphones"></div>
+        </div>
+        <div class="setup-actions">
+          <button class="admin-btn primary" id="saveSetupBtn" disabled>Save setup</button>
+          <span class="admin-note" id="setupStatus">Choose a profile.</span>
+        </div>
       </article>
     </div>
   </section>
@@ -99,18 +111,12 @@
 
 <script>
 const API="/api/admin/players";
+const SETUP_API="/api/admin/player-setup";
 let adminKey="", data={profiles:[],players:[]}, selected=new Set(), primary="";
 
 const esc=s=>String(s??"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[m]));
 const statusEl=document.getElementById("status");
 function setStatus(msg,type=""){statusEl.textContent=msg;statusEl.className="admin-status "+type}
-
-function markEloRebuildRequired(){
-  const el=document.getElementById("eloStatus");
-  if(!el)return;
-  el.textContent="Elo rebuild required · Player identities have changed since the last rebuild.";
-  el.className="admin-status bad";
-}
 
 async function api(method="GET",body){
   const r=await fetch(API,{
@@ -132,7 +138,7 @@ async function load(){
   data=await api();
   document.getElementById("adminArea").hidden=false;
   setStatus(`Connected · ${data.players.length} nicknames · ${data.profiles.length} profiles`,"good");
-  renderPlayers();renderSelection();renderProfiles();
+  renderPlayers();renderSelection();renderProfiles();renderSetupProfiles();
 }
 
 function renderPlayers(){
@@ -177,78 +183,44 @@ function renderSelection(){
 
 function renderProfiles(){
   const ps=data.profiles||[];
-  const el=document.getElementById("profiles");
-  el.innerHTML=ps.length?ps.map(p=>{
-    const aliases=p.aliases||[];
-    return `<div class="profile-row" data-profile="${esc(p.id)}">
-      <div class="profile-head">
-        <div><strong>${esc(p.primary_name)}</strong><small>Profile ${esc(p.id)}</small></div>
-        <span class="pill">${aliases.length} nickname${aliases.length===1?"":"s"}</span>
-      </div>
-      <div class="profile-aliases">${aliases.map(n=>`<span class="alias-chip">${esc(n)}${n===p.primary_name?` <b>MAIN</b>`:` <button class="admin-btn" type="button" data-primary="${esc(n)}" style="padding:3px 7px;font-size:11px">Set MAIN</button><button class="alias-remove" type="button" data-remove="${esc(n)}" title="Remove alias">×</button>`}</span>`).join("")||'<span class="admin-note">No aliases</span>'}</div>
-      <div class="profile-actions">
-        <input class="admin-input" data-alias-input placeholder="Add existing nickname…">
-        <button class="admin-btn" type="button" data-add-alias>Add alias</button>
-      </div>
-    </div>`;
-  }).join(""):'<div class="empty">No profiles yet.</div>';
-
-  el.querySelectorAll(".profile-row").forEach(row=>{
-    const profileId=Number(row.dataset.profile);
-    const profile=ps.find(p=>Number(p.id)===profileId);
-    const input=row.querySelector("[data-alias-input]");
-    const addBtn=row.querySelector("[data-add-alias]");
-
-    addBtn.onclick=async()=>{
-      const nickname=input.value.trim();
-      if(!nickname)return;
-      const player=(data.players||[]).find(p=>p.name===nickname);
-      if(!player){setStatus(`Nickname "${nickname}" was not found in match history.`,"bad");return}
-      if(player.profile_id!=null){setStatus(`Nickname "${nickname}" already belongs to profile ${player.profile_id}.`,"bad");return}
-      if(!confirm(`Add "${nickname}" to profile "${profile.primary_name}"?\n\nHistorical match names will stay unchanged. Elo will NOT be recalculated yet.`))return;
-      addBtn.disabled=true;
-      setStatus(`Adding "${nickname}"…`);
-      try{
-        await api("POST",{action:"add_alias",profile_id:profileId,nickname});
-        await load();
-        markEloRebuildRequired();
-        setStatus(`Alias "${nickname}" added to "${profile.primary_name}". Elo has not been recalculated.`,"good");
-      }catch(e){setStatus(e.message,"bad");addBtn.disabled=false}
-    };
-
-    input.onkeydown=e=>{if(e.key==="Enter"){e.preventDefault();addBtn.click()}};
-
-    row.querySelectorAll("[data-primary]").forEach(btn=>{
-      btn.onclick=async()=>{
-        const nickname=btn.dataset.primary;
-        if(!confirm(`Set "${nickname}" as MAIN for profile "${profile.primary_name}"?\n\nHistorical match names will stay unchanged. Elo will NOT be recalculated.`))return;
-        btn.disabled=true;
-        setStatus(`Changing MAIN to "${nickname}"…`);
-        try{
-          await api("POST",{action:"set_primary",profile_id:profileId,nickname});
-          await load();
-          markEloRebuildRequired();
-          setStatus(`MAIN nickname changed to "${nickname}". Elo has not been recalculated.`,"good");
-        }catch(e){setStatus(e.message,"bad");btn.disabled=false}
-      };
-    });
-
-    row.querySelectorAll("[data-remove]").forEach(btn=>{
-      btn.onclick=async()=>{
-        const nickname=btn.dataset.remove;
-        if(!confirm(`Remove alias "${nickname}" from profile "${profile.primary_name}"?\n\nIts historical matches will be detached from this profile. Elo will NOT be recalculated yet.`))return;
-        btn.disabled=true;
-        setStatus(`Removing "${nickname}"…`);
-        try{
-          await api("POST",{action:"remove_alias",profile_id:profileId,nickname});
-          await load();
-          markEloRebuildRequired();
-          setStatus(`Alias "${nickname}" removed from "${profile.primary_name}". Elo has not been recalculated.`,"good");
-        }catch(e){setStatus(e.message,"bad");btn.disabled=false}
-      };
-    });
-  });
+  document.getElementById("profiles").innerHTML=ps.length?ps.map(p=>`<div class="profile-row">
+    <strong>${esc(p.primary_name)}</strong>
+    <small>Profile ${esc(p.id)} · ${(p.aliases||[]).map(esc).join(", ")||"No aliases"}</small>
+  </div>`).join(""):'<div class="empty">No profiles yet.</div>';
 }
+
+
+const setupIds={mouse:"setupMouse",mousepad:"setupMousepad",dpi:"setupDpi",sensitivity:"setupSensitivity",fov:"setupFov",resolution:"setupResolution",refresh_rate:"setupRefreshRate",cl_maxfps:"setupClMaxfps",headphones:"setupHeadphones"};
+function setupStatus(msg){document.getElementById("setupStatus").textContent=msg}
+function renderSetupProfiles(){
+  const sel=document.getElementById("setupProfile"), old=sel.value;
+  sel.innerHTML='<option value="">Choose profile…</option>'+[...(data.profiles||[])].sort((a,b)=>String(a.primary_name).localeCompare(String(b.primary_name))).map(p=>`<option value="${esc(p.id)}">${esc(p.primary_name)} · Profile ${esc(p.id)}</option>`).join("");
+  if([...sel.options].some(o=>o.value===old))sel.value=old;
+}
+function clearSetup(){Object.values(setupIds).forEach(id=>document.getElementById(id).value="")}
+async function setupApi(method="GET",profileId,body){
+  const url=method==="GET"?`${SETUP_API}?profile_id=${encodeURIComponent(profileId)}`:SETUP_API;
+  const r=await fetch(url,{method,cache:"no-store",headers:{"x-q2stats-admin-key":adminKey,...(body?{"content-type":"application/json"}:{})},body:body?JSON.stringify(body):undefined});
+  let out={};try{out=await r.json()}catch{}
+  if(!r.ok)throw new Error(out.error||`HTTP ${r.status}`);
+  return out;
+}
+document.getElementById("setupProfile").onchange=async e=>{
+  const id=e.target.value;clearSetup();document.getElementById("saveSetupBtn").disabled=true;
+  if(!id){setupStatus("Choose a profile.");return}
+  setupStatus("Loading setup…");
+  try{
+    const out=await setupApi("GET",id);const setup=out.setup||{};
+    Object.entries(setupIds).forEach(([key,elId])=>document.getElementById(elId).value=setup[key]??"");
+    document.getElementById("saveSetupBtn").disabled=false;setupStatus("Ready.");
+  }catch(err){setupStatus(err.message)}
+};
+document.getElementById("saveSetupBtn").onclick=async()=>{
+  const profileId=document.getElementById("setupProfile").value;if(!profileId)return;
+  const body={profile_id:Number(profileId)};Object.entries(setupIds).forEach(([key,elId])=>body[key]=document.getElementById(elId).value.trim());
+  document.getElementById("saveSetupBtn").disabled=true;setupStatus("Saving…");
+  try{await setupApi("POST",profileId,body);setupStatus("Setup saved.")}catch(err){setupStatus(err.message)}finally{document.getElementById("saveSetupBtn").disabled=false}
+};
 
 document.getElementById("connectBtn").onclick=async()=>{
   adminKey=document.getElementById("adminKey").value;
@@ -260,34 +232,6 @@ document.getElementById("connectBtn").onclick=async()=>{
 
 document.getElementById("search").oninput=renderPlayers;
 document.getElementById("clearBtn").onclick=()=>{selected.clear();primary="";renderPlayers();renderSelection()};
-
-document.getElementById("rebuildEloBtn").onclick=async()=>{
-  if(!confirm("Rebuild all Elo ratings from match history now?\n\nThis recalculates Team and 1v1 Elo using the current player profiles and MAIN nicknames."))return;
-  const btn=document.getElementById("rebuildEloBtn");
-  const eloStatus=document.getElementById("eloStatus");
-  btn.disabled=true;
-  eloStatus.textContent="Rebuilding Elo…";
-  eloStatus.className="admin-status";
-  try{
-    const r=await fetch("/.netlify/functions/elo-rebuild",{
-      method:"POST",
-      cache:"no-store",
-      headers:{"x-q2stats-admin-key":adminKey}
-    });
-    let out={};
-    try{out=await r.json()}catch{}
-    if(!r.ok)throw new Error(out.error||`HTTP ${r.status}`);
-    eloStatus.textContent=`Elo up to date · ${out.matches_used} matches · ${out.ratings_written} ratings · ${out.history_written} history rows`;
-    eloStatus.className="admin-status good";
-    setStatus("Elo rebuild completed.","good");
-  }catch(e){
-    eloStatus.textContent=`Rebuild failed · ${e.message}`;
-    eloStatus.className="admin-status bad";
-    setStatus(e.message,"bad");
-  }finally{
-    btn.disabled=false;
-  }
-};
 
 document.getElementById("createBtn").onclick=async()=>{
   const aliases=[...selected];
@@ -301,7 +245,6 @@ document.getElementById("createBtn").onclick=async()=>{
     await api("POST",{primary_name:primary,aliases});
     selected.clear();primary="";
     await load();
-    markEloRebuildRequired();
     setStatus(`Profile "${createdName}" created. Elo has not been recalculated.`,"good");
   }catch(e){
     setStatus(e.message,"bad");
