@@ -53,6 +53,18 @@ async function saveWeapons(db,matchId,players){
  return saved;
 }
 
+async function profileIdForNickname(db,nickname){
+ const name=String(nickname??"").trim();
+ if(!name)return null;
+ const rows=await db.sql`
+  SELECT profile_id
+  FROM player_aliases
+  WHERE nickname=${name}
+  LIMIT 1
+ `;
+ return rows.length?rows[0].profile_id:null;
+}
+
 async function playersForMatch(db,matchId){
  return await db.sql`
   SELECT name, team, frags, deaths, damage, ping, suicides, teamkills,
@@ -162,10 +174,13 @@ export default async(request)=>{
     WHERE match_id=${body.match_id}
    `;
 
-   for(const p of body.players)await db.sql`
-    INSERT INTO match_players(match_id,name,team,player_id,frags,deaths,damage,ping,suicides,teamkills,teleports,damage_received,team_damage,team_damage_received)
-    VALUES(${body.match_id},${p.name||""},${p.team||""},${typeof p.player_id==="string"&&p.player_id.trim()?p.player_id.trim():null},${Number(p.frags??p.kills??0)},${Number(p.deaths||0)},${Number(p.damage||0)},${Number(p.ping||0)},${Number(p.suicides||0)},${Number(p.teamkills||0)},${Number(p.teleports||0)},${Number(p.damage_received||0)},${Number(p.team_damage||0)},${Number(p.team_damage_received||0)})
-   `;
+   for(const p of body.players){
+    const profileId=await profileIdForNickname(db,p.name);
+    await db.sql`
+     INSERT INTO match_players(match_id,name,team,player_id,profile_id,frags,deaths,damage,ping,suicides,teamkills,teleports,damage_received,team_damage,team_damage_received)
+     VALUES(${body.match_id},${p.name||""},${p.team||""},${typeof p.player_id==="string"&&p.player_id.trim()?p.player_id.trim():null},${profileId},${Number(p.frags??p.kills??0)},${Number(p.deaths||0)},${Number(p.damage||0)},${Number(p.ping||0)},${Number(p.suicides||0)},${Number(p.teamkills||0)},${Number(p.teleports||0)},${Number(p.damage_received||0)},${Number(p.team_damage||0)},${Number(p.team_damage_received||0)})
+    `;
+   }
    const weaponsSaved=await saveWeapons(db,body.match_id,body.players);
 
    await db.sql`UPDATE servers SET last_upload_at=NOW() WHERE id=${server.id}`;
@@ -177,10 +192,13 @@ export default async(request)=>{
    INSERT INTO matches(match_id,server,map,game_type,home_score,away_score,winner,match_type,port,saved_at)
    VALUES(${body.match_id},${matchServer},${body.map||"unknown"},${body.game_type||"team"},${Number(body.home_score||0)},${Number(body.away_score||0)},${body.winner||null},${body.match_type||null},${body.port??null},${body.saved_at||null})
   `;
-  for(const p of body.players)await db.sql`
-   INSERT INTO match_players(match_id,name,team,player_id,frags,deaths,damage,ping,suicides,teamkills,teleports,damage_received,team_damage,team_damage_received)
-   VALUES(${body.match_id},${p.name||""},${p.team||""},${typeof p.player_id==="string"&&p.player_id.trim()?p.player_id.trim():null},${Number(p.frags??p.kills??0)},${Number(p.deaths||0)},${Number(p.damage||0)},${Number(p.ping||0)},${Number(p.suicides||0)},${Number(p.teamkills||0)},${Number(p.teleports||0)},${Number(p.damage_received||0)},${Number(p.team_damage||0)},${Number(p.team_damage_received||0)})
-  `;
+  for(const p of body.players){
+    const profileId=await profileIdForNickname(db,p.name);
+    await db.sql`
+     INSERT INTO match_players(match_id,name,team,player_id,profile_id,frags,deaths,damage,ping,suicides,teamkills,teleports,damage_received,team_damage,team_damage_received)
+     VALUES(${body.match_id},${p.name||""},${p.team||""},${typeof p.player_id==="string"&&p.player_id.trim()?p.player_id.trim():null},${profileId},${Number(p.frags??p.kills??0)},${Number(p.deaths||0)},${Number(p.damage||0)},${Number(p.ping||0)},${Number(p.suicides||0)},${Number(p.teamkills||0)},${Number(p.teleports||0)},${Number(p.damage_received||0)},${Number(p.team_damage||0)},${Number(p.team_damage_received||0)})
+    `;
+   }
   const weaponsSaved=await saveWeapons(db,body.match_id,body.players);
   await db.sql`UPDATE servers SET last_upload_at=NOW() WHERE id=${server.id}`;
   const elo=await updateEloForMatch(db,body.match_id);
