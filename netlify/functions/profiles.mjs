@@ -47,7 +47,8 @@ function toPlayerRow(row) {
     damage_received: Number(row.damage_received ?? 0),
     suicides: Number(row.suicides ?? 0),
     teamkills: Number(row.teamkills ?? 0),
-    ping: row.ping ?? null
+    ping: row.ping ?? null,
+    elo_before: row.elo_before != null ? Number(row.elo_before) : null
   };
 }
 
@@ -88,9 +89,24 @@ export default async request => {
         mp.name, mp.profile_id, mp.team,
         mp.frags, mp.deaths, mp.damage, mp.ping,
         mp.suicides, mp.teamkills, mp.teleports,
-        mp.damage_received, mp.team_damage, mp.team_damage_received
+        mp.damage_received, mp.team_damage, mp.team_damage_received,
+        eh.old_elo AS elo_before
       FROM matches m
       JOIN match_players mp ON mp.match_id = m.match_id
+      LEFT JOIN player_profiles pp ON pp.id = mp.profile_id
+      LEFT JOIN LATERAL (
+        SELECT h.old_elo
+        FROM elo_history h
+        WHERE h.match_id = mp.match_id
+          AND h.elo_type = CASE
+            WHEN (SELECT COUNT(*) FROM match_players x WHERE x.match_id = mp.match_id) = 2 THEN '1v1'
+            ELSE 'team'
+          END
+          AND h.algorithm_version = 'v1'
+          AND (h.player_name = mp.name OR h.player_name = pp.primary_name)
+        ORDER BY CASE WHEN h.player_name = mp.name THEN 0 ELSE 1 END
+        LIMIT 1
+      ) eh ON TRUE
       WHERE m.match_id IN (
         SELECT DISTINCT profile_mp.match_id FROM match_players profile_mp
         WHERE profile_mp.profile_id = ${profile.id}

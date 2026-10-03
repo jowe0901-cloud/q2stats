@@ -177,8 +177,16 @@ async function initMatch(){
  document.getElementById("matchTitle").textContent=teamNames(m);document.getElementById("matchMap").textContent=ml.map;document.getElementById("matchServer").textContent=m.hostname||m.server||"Server not recorded";document.getElementById("matchWinner").textContent=m.winner||"—";document.getElementById("matchScore").textContent=scoreText(m);
  const realMatchId=m.match_id,is1v1=players.length===2,eloType=is1v1?"1v1":"team",eloMap=new Map();
  if(realMatchId){
-  const histories=await Promise.all(players.map(p=>loadJson(`${ELO_API}?type=${encodeURIComponent(eloType)}&player=${encodeURIComponent(pname(p))}`,{})));
-  histories.forEach((data,i)=>{const history=Array.isArray(data?.history)?data.history:[],e=history.find(x=>x.match_id===realMatchId);if(e)eloMap.set(pname(players[i]),{new_elo:e.elo_after??e.new_elo,change:e.change??e.elo_change})});
+  for(const p of players){
+   const before=Number(p.elo_before),after=Number(p.elo_after??p.new_elo),change=Number(p.elo_change??p.change);
+   if(Number.isFinite(after)&&Number.isFinite(change))eloMap.set(pname(p),{new_elo:after,change});
+   else if(Number.isFinite(before)&&Number.isFinite(change))eloMap.set(pname(p),{new_elo:before+change,change});
+  }
+  const missing=players.filter(p=>!eloMap.has(pname(p)));
+  if(missing.length){
+   const histories=await Promise.all(missing.map(p=>loadJson(`${ELO_API}?type=${encodeURIComponent(eloType)}&player=${encodeURIComponent(pname(p))}`,{})));
+   histories.forEach((data,i)=>{const history=Array.isArray(data?.history)?data.history:[],e=history.find(x=>x.match_id===realMatchId);if(e)eloMap.set(pname(missing[i]),{new_elo:e.elo_after??e.new_elo,change:e.change??e.elo_change})});
+  }
  }else{
   const hist=await loadJsonTimeout(DATA_FILES.eloHistory,[],3000),events=Array.isArray(hist)?hist:(hist.events||hist.history||[]);
   let ev=id>=0&&events[id]&&Array.isArray(events[id].players)?events[id]:null;
@@ -187,7 +195,7 @@ async function initMatch(){
  const groups=[];
  for(const p of players){const raw=String(p.team||"Other"),key=raw.toLowerCase(),label=(key==="home"||key==="red"||key==="team1")?"Home":(key==="away"||key==="blue"||key==="team2")?"Away":raw||"Other";let g=groups.find(x=>x.key===key);if(!g){g={key,label,players:[]};groups.push(g)}g.players.push(p)}
  const row=p=>{const t=ptotal(p),k=num(t.frags??t.kills??p.score),d=num(t.dths??t.deaths),net=k-d,ping=p.ping??t.ping??"—",ee=eloMap.get(pname(p));let elo='—';if(ee){const ch=num(ee.change??ee.elo_change),newElo=ee.new_elo??ee.elo_after,cls=ch>0?'positive':ch<0?'negative':'',sign=ch>0?'+':'';elo=`<span>${fmt(newElo)}</span> <span class="${cls}">(${sign}${ch.toFixed(1)})</span>`}return`<tr><td><a class="player-link" href="${playerUrl(pname(p))}">${esc(pname(p))}</a></td><td>${k}</td><td>${d}</td><td class="${net>=0?'positive':'negative'}">${net>0?'+':''}${net}</td><td>${esc(ping)}</td><td>${elo}</td></tr>`};
- const avgPreElo=g=>{const vals=g.players.map(p=>{const e=eloMap.get(pname(p));if(!e)return NaN;const after=Number(e.new_elo??e.elo_after),change=Number(e.change??e.elo_change);return Number.isFinite(after)&&Number.isFinite(change)?after-change:NaN}).filter(Number.isFinite);return vals.length?Math.round(vals.reduce((a,b)=>a+b,0)/vals.length):null};
+ const avgPreElo=g=>{const vals=g.players.map(p=>{const direct=Number(p.elo_before);if(Number.isFinite(direct))return direct;const e=eloMap.get(pname(p));if(!e)return NaN;const after=Number(e.new_elo??e.elo_after),change=Number(e.change??e.elo_change);return Number.isFinite(after)&&Number.isFinite(change)?after-change:NaN}).filter(Number.isFinite);return vals.length===g.players.length&&vals.length?Math.round(vals.reduce((a,b)=>a+b,0)/vals.length):null};
  box.innerHTML=`<div class="match-elo-note">${is1v1?'1v1 Elo':'Team Elo'} · rating after match (change) · team average uses rating before match</div>`+groups.map(g=>{g.players.sort((a,b)=>{const ta=ptotal(a),tb=ptotal(b);return num(tb.frags??tb.kills??b.score)-num(ta.frags??ta.kills??a.score)});const avg=avgPreElo(g);return`<section class="team-scoreboard"><div class="team-scoreboard-head"><span>${esc(g.label)}${avg!=null?` · Avg Elo ${fmt(avg)}`:''}</span><strong>${g.players.length} player${g.players.length===1?'':'s'}</strong></div><div class="table-wrap"><table><thead><tr><th>Player</th><th>Frags</th><th>Dths</th><th>Net</th><th>Ping</th><th>Elo</th></tr></thead><tbody>${g.players.map(row).join("")}</tbody></table></div></section>`}).join("")||'<div class="empty">No player data</div>'
 }
 if(document.getElementById("teamEloBody"))initIndex();if(document.getElementById("playerName"))initPlayer();if(document.getElementById("rankingBody"))initRankings();if(document.getElementById("allMatchList"))initMatchesPage();if(document.getElementById("matchDetail"))initMatch();

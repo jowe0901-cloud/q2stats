@@ -69,11 +69,11 @@ async function playersForMatch(db,matchId){
  return await db.sql`
   SELECT mp.name, mp.team, mp.frags, mp.deaths, mp.damage, mp.ping, mp.suicides, mp.teamkills,
          mp.teleports, mp.damage_received, mp.team_damage, mp.team_damage_received,
-         eh.old_elo AS elo_before
+         eh.old_elo AS elo_before, eh.elo_change, eh.new_elo AS elo_after
   FROM match_players mp
   LEFT JOIN player_profiles pp ON pp.id=mp.profile_id
    LEFT JOIN LATERAL (
-     SELECT h.old_elo
+     SELECT h.old_elo, h.elo_change, h.new_elo
      FROM elo_history h
      WHERE h.match_id=mp.match_id
        AND h.elo_type=CASE
