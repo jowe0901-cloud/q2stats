@@ -87,6 +87,14 @@
           <label for="setupProfile">Profile</label>
           <select class="admin-input" id="setupProfile"><option value="">Choose profile…</option></select>
         </div>
+        <div class="setup-field full" style="margin-top:12px">
+          <label for="setupImport">Paste player setup</label>
+          <textarea class="admin-input" id="setupImport" rows="8" placeholder="Mouse: Razer Viper V3 Pro&#10;Mousepad: Corsair&#10;DPI: 1600&#10;Sensitivity: 1.8&#10;FOV: 130&#10;Resolution: 3440 x 1440&#10;Refresh rate: 100&#10;cl_maxfps: 111&#10;Headphones: Razer BlackShark V3 Pro"></textarea>
+        </div>
+        <div class="setup-actions">
+          <button class="admin-btn" id="importSetupBtn" type="button">Import Setup</button>
+          <span class="admin-note">Paste a setup message and import recognized fields below. Review before saving.</span>
+        </div>
         <div class="setup-form">
           <div class="setup-field"><label>Mouse</label><input class="admin-input" id="setupMouse"></div>
           <div class="setup-field"><label>Mousepad</label><input class="admin-input" id="setupMousepad"></div>
@@ -215,6 +223,40 @@ document.getElementById("setupProfile").onchange=async e=>{
     document.getElementById("saveSetupBtn").disabled=false;setupStatus("Ready.");
   }catch(err){setupStatus(err.message)}
 };
+
+function normalizeSetupLabel(label){
+  return String(label||"").toLowerCase().trim()
+    .replace(/[–—]/g,"-")
+    .replace(/[_\s-]+/g," ");
+}
+function importSetupText(){
+  const raw=document.getElementById("setupImport").value.trim();
+  if(!raw){setupStatus("Paste a player setup first.");return}
+  const aliases={
+    "mouse":"mouse",
+    "mousepad":"mousepad","mouse pad":"mousepad",
+    "dpi":"dpi",
+    "sensitivity":"sensitivity","sens":"sensitivity",
+    "fov":"fov",
+    "resolution":"resolution","res":"resolution",
+    "refresh rate":"refresh_rate","refresh":"refresh_rate","hz":"refresh_rate",
+    "cl maxfps":"cl_maxfps","clmaxfps":"cl_maxfps","maxfps":"cl_maxfps",
+    "headphones":"headphones","headphone":"headphones","headset":"headphones"
+  };
+  let found=0;
+  raw.split(/\r?\n/).forEach(line=>{
+    const m=line.match(/^\s*([^:=]+?)\s*[:=]\s*(.*?)\s*$/);
+    if(!m)return;
+    const key=aliases[normalizeSetupLabel(m[1])];
+    const value=m[2].trim();
+    if(!key||!value||!setupIds[key])return;
+    document.getElementById(setupIds[key]).value=value;
+    found++;
+  });
+  setupStatus(found?`Imported ${found} setup field${found===1?"":"s"}. Review and click Save setup.`:"No recognized setup fields found.");
+}
+document.getElementById("importSetupBtn").onclick=importSetupText;
+
 document.getElementById("saveSetupBtn").onclick=async()=>{
   const profileId=document.getElementById("setupProfile").value;if(!profileId)return;
   const body={profile_id:Number(profileId)};Object.entries(setupIds).forEach(([key,elId])=>body[key]=document.getElementById(elId).value.trim());
