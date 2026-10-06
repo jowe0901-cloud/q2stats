@@ -33,3 +33,19 @@ canvas{width:100%;height:auto;background:#0c1016;border-radius:12px;border:1px s
 @media(max-width:600px){.panel-head{align-items:flex-start;gap:12px}.elo-history-tabs{flex-shrink:0}}
 
 .match-elo-note{margin:0 0 14px;color:var(--muted);font-size:13px}
+
+/* Match details scoreboard alignment */
+.team-scoreboard table{width:100%;table-layout:fixed}
+.team-scoreboard th:nth-child(1),.team-scoreboard td:nth-child(1){width:44%}
+.team-scoreboard th:nth-child(2),.team-scoreboard td:nth-child(2){width:10%}
+.team-scoreboard th:nth-child(3),.team-scoreboard td:nth-child(3){width:10%}
+.team-scoreboard th:nth-child(4),.team-scoreboard td:nth-child(4){width:10%}
+.team-scoreboard th:nth-child(5),.team-scoreboard td:nth-child(5){width:10%}
+.team-scoreboard th:nth-child(6),.team-scoreboard td:nth-child(6){width:16%}
+.team-scoreboard-head{gap:18px}
+.team-scoreboard-head .team-name{color:var(--text);font-size:14px;font-weight:900}
+.team-head-meta{display:flex;align-items:center;gap:18px;color:var(--muted);font-size:11px;font-weight:700;letter-spacing:.06em;white-space:nowrap}
+.team-head-meta strong{color:var(--text);font-size:13px;font-weight:900}
+.team-head-meta .team-score,.team-head-meta .team-score strong{color:var(--accent2)}
+.team-head-meta .team-score strong{font-size:17px}
+@media(max-width:600px){.team-scoreboard-head{align-items:flex-start;flex-direction:column;gap:7px}.team-head-meta{width:100%;justify-content:space-between;gap:8px}}
