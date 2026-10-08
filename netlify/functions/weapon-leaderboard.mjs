@@ -20,8 +20,8 @@ function normalizeWeaponName(weapon){
 }
 
 const WANTED_WEAPONS=new Set(["Railgun","Rocket Launcher","Chaingun"]);
-const MIN_MATCHES=3;
-const MIN_KILLS=20;
+const MIN_MATCHES=10;
+const MIN_KILLS=100;
 
 export default async(request)=>{
   if(request.method!=="GET")
