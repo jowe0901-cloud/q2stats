@@ -22,6 +22,13 @@
     .setup-row{display:flex;justify-content:space-between;gap:20px;padding:11px 0;border-bottom:1px solid #27303d}
     .setup-row span{color:#8f9bad}.setup-row strong{text-align:right}
     @media(max-width:700px){.setup-list{grid-template-columns:1fr}}
+    .recent-filters{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+    .recent-filter,.recent-view-all{background:#161d27;color:#b6c1d1;border:1px solid #354052;border-radius:7px;padding:9px 15px;cursor:pointer;font:inherit;font-weight:600}
+    .recent-filter.active{background:#ff6b46;color:#10151c;border-color:#ff6b46}
+    .recent-view-all{display:block;margin:18px auto 0;min-width:170px}
+    .recent-filter:hover,.recent-view-all:hover{border-color:#ff6b46}
+    .recent-info{color:#8f9bad;font-size:.83rem;margin:10px 0}
+    @media(max-width:600px){.recent-filters{margin-top:12px}.recent-filter{flex:1}}
   </style>
 </head>
 <body>
@@ -102,12 +109,20 @@
   </section>
 
   <section class="panel">
-    <div class="panel-head"><div><span class="eyebrow">RECENT</span><h2>Recent matches</h2></div></div>
+    <div class="panel-head"><div><span class="eyebrow">RECENT</span><h2>Recent matches</h2></div>
+      <div class="recent-filters" role="group" aria-label="Filter matches">
+        <button type="button" class="recent-filter active" data-recent-mode="all" aria-pressed="true">All</button>
+        <button type="button" class="recent-filter" data-recent-mode="1v1" aria-pressed="false">1v1</button>
+        <button type="button" class="recent-filter" data-recent-mode="team" aria-pressed="false">Team</button>
+      </div>
+    </div>
+    <div id="recentMatchInfo" class="recent-info" aria-live="polite"></div>
     <div id="playerMatches" class="match-list"></div>
+    <button type="button" id="recentViewAll" class="recent-view-all" hidden>View all games</button>
   </section>
 </main>
 
 <footer>Q2Stats Beta</footer>
-<script src="app.js?v=11"></script>
+<script src="app.js?v=12"></script>
 </body>
 </html>
