@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How Elo Works | Q2Stats</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+.guide{width:min(940px,92vw);margin:32px auto 70px;line-height:1.65}
+.guide h1{font-size:clamp(34px,5vw,58px);line-height:1.08;letter-spacing:-.04em;margin:10px 0 18px}
+.guide h2{font-size:22px;margin:0 0 14px}
+.guide p{color:var(--muted);margin:12px 0}
+.guide p strong,.guide li strong{color:var(--text)}
+.guide .lead{font-size:17px;line-height:1.7}
+.guide section{background:rgba(17,21,28,.9);border:1px solid var(--line);border-radius:16px;padding:24px;margin:18px 0}
+.guide .scroll{overflow-x:auto}
+.guide table{min-width:540px}
+.guide .formula{background:#0d1117;border:1px solid var(--line);color:var(--accent2);padding:15px 17px;border-radius:12px;overflow-x:auto;white-space:pre-wrap;overflow-wrap:anywhere;font:13px/1.75 Consolas,monospace}
+.guide .note{border-left:3px solid var(--accent);padding-left:14px}
+.guide li{margin:6px 0}
+.guide .muted{font-size:13px;color:var(--muted)}
+.elo-back{border:1px solid var(--line);padding:9px 13px;border-radius:99px;text-decoration:none;color:var(--accent2);font-size:12px;font-weight:800}
+.elo-back:hover{border-color:var(--accent);color:var(--text)}
+@media(max-width:600px){.guide section{padding:17px}.guide{margin-top:22px}}
+</style>
+</head>
+<body>
+<header class="topbar"><a class="brand no-underline" href="index.html"><span>Q2</span>STATS <small>BETA</small></a><a class="elo-back" href="index.html">← Back to Overview</a></header>
+<main class="guide">
+<div class="eyebrow">RATING SYSTEM · VERSION 1</div>
+<h1>How Elo Works</h1>
+<p class="lead">Q2Stats uses separate Elo ratings for <strong>Team Games</strong> and <strong>1v1</strong>. Every player starts at <strong>1500 Elo</strong> in each category. Here is how the current algorithm calculates rating changes.</p>
+<section><h2>1. Team Games: Match Result &amp; Team Strength</h2>
+<p>The system calculates the average Elo of each team and estimates the probability of winning. The result is used to determine a base Elo change.</p>
+<div class="formula">Expected = 1 / (1 + 10^((OpponentTeamAverageElo - YourTeamAverageElo) / 400))
+BaseElo = 16 * (Result - Expected)</div>
+<p><strong>Result = 1</strong> for a win, <strong>0</strong> for a loss. The team K-factor is <strong>16</strong>. Beating a stronger team produces a larger base gain; losing to a stronger team produces a smaller base loss.</p>
+</section>
+<section><h2>2. Individual Performance (Perf)</h2>
+<p>In Team Games, the base Elo change is adjusted using each player's individual performance.</p>
+<div class="scroll"><table><thead><tr><th>Metric</th><th>Weight</th><th>Raw statistic</th></tr></thead><tbody>
+<tr><td>Net</td><td>40%</td><td>Frags − Deaths</td></tr>
+<tr><td>K/D</td><td>25%</td><td>Frags / Deaths*</td></tr>
+<tr><td>Net Damage</td><td>25%</td><td>Damage Dealt − Damage Received</td></tr>
+<tr><td>Discipline</td><td>10%</td><td>Suicides, teamkills and team damage</td></tr>
+</tbody></table></div>
+<p>Net, K/D and Net Damage are converted to percentile scores by comparing each player with <strong>all players in the match</strong>, including teammates and opponents. A percentile counts the share of other players with a strictly lower value; ties do not count as lower.</p>
+<div class="formula">Percentile = 100 * (NumberOfOtherPlayersWithLowerValue / (TotalPlayers - 1))
+
+Perf = (NetPercentile * 0.40)
+     + (KDPercentile * 0.25)
+     + (DamagePercentile * 0.25)
+     + (Discipline * 0.10)
+
+Discipline = clamp(100 - 15*Suicides - 10*Teamkills - 0.02*TeamDamage, 0, 100)</div>
+<p class="muted">* If deaths are zero, the current algorithm uses frags as the K/D value instead of dividing by zero. For a single-player percentile input, the percentile is 100.</p>
+</section>
+<section><h2>3. Final Team Elo Change</h2>
+<div class="formula">WIN:  EloChange = clamp(BaseElo + (Perf - 50) * 0.25, 0, 16)
+LOSS: EloChange = clamp(BaseElo + (Perf - 50) * 0.34 + CloseLossBonus, -16, 7)</div>
+<p><strong>Close-loss bonus:</strong> +1 if the player loses, has Perf of at least 80, and the score difference is 5 or less.</p>
+<p class="note">A player can gain up to <strong>+7 Elo on a loss</strong> after a strong individual performance. A winning player can receive <strong>0 Elo</strong> after a weak performance.</p>
+</section>
+<section><h2>4. Team Game Examples</h2>
+<p>Both teams average 1500 Elo, so Expected = 0.50 and Base Elo is +8 for a win or −8 for a loss. Examples assume no close-loss bonus.</p>
+<div class="scroll"><table><thead><tr><th>Result</th><th>Perf</th><th>Base Elo</th><th>Perf adjustment</th><th>Final Elo</th></tr></thead><tbody>
+<tr><td>Win</td><td>90</td><td>+8.00</td><td>+10.00</td><td><strong>+16.00</strong> (capped)</td></tr>
+<tr><td>Win</td><td>70</td><td>+8.00</td><td>+5.00</td><td><strong>+13.00</strong></td></tr>
+<tr><td>Win</td><td>30</td><td>+8.00</td><td>−5.00</td><td><strong>+3.00</strong></td></tr>
+<tr><td>Loss</td><td>80</td><td>−8.00</td><td>+10.20</td><td><strong>+2.20</strong></td></tr>
+<tr><td>Loss</td><td>50</td><td>−8.00</td><td>0.00</td><td><strong>−8.00</strong></td></tr>
+<tr><td>Loss</td><td>30</td><td>−8.00</td><td>−6.80</td><td><strong>−14.80</strong></td></tr>
+</tbody></table></div>
+</section>
+<section><h2>5. 1v1 Elo</h2>
+<p>1v1 uses standard win/loss Elo without individual performance adjustments. Opponent strength affects the expected result.</p>
+<div class="formula">Expected = 1 / (1 + 10^((OpponentElo - YourElo) / 400))
+EloChange = 32 * (Result - Expected)</div>
+<p>Starting Elo is 1500, and the 1v1 K-factor is 32. Frags, deaths, Net, K/D and damage do not directly affect 1v1 Elo.</p>
+</section>
+<section><h2>6. Development &amp; Feedback</h2>
+<p>This is the current <strong>v1 algorithm</strong>, not a finished or perfect measure of skill. In particular, Net and K/D have a strong influence on the individual performance adjustment. As more matches are played, we want to evaluate the results and fine-tune the balance between winning and individual contribution.</p>
+<p>Feedback from the Quake 2 community is welcome.</p>
+</section>
+</main>
+</body></html>
