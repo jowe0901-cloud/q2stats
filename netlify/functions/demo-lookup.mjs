@@ -33,18 +33,31 @@ export async function handler(event) {
       const localAsUtc = Date.UTC(+day.slice(0, 4), +day.slice(4, 6) - 1, +day.slice(6, 8), +clock.slice(0, 2), +clock.slice(2, 4), +clock.slice(4, 6));
       return [2, 1].map(h => localAsUtc - h * 3600000).filter(ms => formatter.format(new Date(ms)).replace(',', '') === expected);
     };
-    const matches = [];
+    // Use all maps: the next DE3 recording marks the boundary of the previous one.
+    // This is an inferred boundary, not a verified demo end time.
+    const recordings = new Map();
     const re = /PFDE3_(\d{8})-(\d{6})_([a-z0-9_-]+)\.mvd2/gi;
     for (const hit of html.matchAll(re)) {
       const [filename, day, clock, map] = hit;
-      if (day < '20261009' || map.toLowerCase() !== q.map.toLowerCase()) continue;
+      if (day < '20261009') continue;
       for (const start of startUtc(day, clock)) {
-        const delta = end - start;
-        if (delta >= 0 && delta <= MAX_MATCH_MINUTES * 60000) matches.push({ filename, delta });
+        recordings.set(`${filename}:${start}`, { filename, map: map.toLowerCase(), start });
       }
     }
-    const unique = [...new Map(matches.map(m => [m.filename, m])).values()];
-    // No guessing if multiple recordings could correspond to this match.
+    const ordered = [...recordings.values()].sort((a, b) => a.start - b.start);
+    const candidates = [];
+    for (let i = 0; i < ordered.length; i++) {
+      const recording = ordered[i];
+      if (recording.map !== q.map.toLowerCase()) continue;
+      const delta = end - recording.start;
+      if (delta < 0 || delta > MAX_MATCH_MINUTES * 60000) continue;
+      // If another recording started before this match ended, the earlier
+      // recording is not a safe match. Check all maps, not just this map.
+      const next = ordered[i + 1];
+      if (next && next.start <= end) continue;
+      candidates.push({ filename: recording.filename, delta });
+    }
+    const unique = [...new Map(candidates.map(m => [m.filename, m])).values()];
     return respond({
       demo: unique.length === 1 ? ARCHIVE + encodeURIComponent(unique[0].filename) : null,
       reason: unique.length === 0 ? 'no_match' : unique.length > 1 ? 'multiple_candidates' : 'matched',
