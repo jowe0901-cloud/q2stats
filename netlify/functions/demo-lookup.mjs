@@ -3,16 +3,17 @@ const ARCHIVE = 'https://pfl.gr/mvd/de3/';
 const SERVER = 'PacketFlinger.com ~ OpenTDM ~ Germany #3';
 const FIRST_LOCAL_DAY = '2026-10-09';
 const MAX_MATCH_MINUTES = 25;
-const respond = (body, statusCode = 200) => ({ statusCode, headers: { 'content-type': 'application/json; charset=utf-8', 'cache-control': 'public, max-age=300' }, body: JSON.stringify(body) });
+const respond = (body, statusCode = 200) => ({ statusCode, headers: { 'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-store' }, body: JSON.stringify(body) });
 
 export async function handler(event) {
   const q = event.queryStringParameters || {};
-  if (q.server !== SERVER || !/^[a-z0-9_-]{1,40}$/i.test(q.map || '')) return respond({ demo: null });
+  if (q.server !== SERVER) return respond({ demo: null, reason: 'server_mismatch' });
+  if (!/^[a-z0-9_-]{1,40}$/i.test(q.map || '')) return respond({ demo: null, reason: 'invalid_map' });
   const end = Date.parse(q.saved_at || '');
-  if (!Number.isFinite(end)) return respond({ demo: null });
+  if (!Number.isFinite(end)) return respond({ demo: null, reason: 'invalid_saved_at' });
   // Compare using Swedish local calendar date, including the Oct 2026 DST change.
   const swedishDate = new Intl.DateTimeFormat('en-CA', { timeZone: 'Europe/Stockholm', year: 'numeric', month: '2-digit', day: '2-digit' }).format(new Date(end));
-  if (swedishDate < FIRST_LOCAL_DAY) return respond({ demo: null });
+  if (swedishDate < FIRST_LOCAL_DAY) return respond({ demo: null, reason: 'before_start_date' });
 
   try {
     const controller = new AbortController();
@@ -44,8 +45,12 @@ export async function handler(event) {
     }
     const unique = [...new Map(matches.map(m => [m.filename, m])).values()];
     // No guessing if multiple recordings could correspond to this match.
-    return respond({ demo: unique.length === 1 ? ARCHIVE + encodeURIComponent(unique[0].filename) : null });
-  } catch {
-    return respond({ demo: null });
+    return respond({
+      demo: unique.length === 1 ? ARCHIVE + encodeURIComponent(unique[0].filename) : null,
+      reason: unique.length === 0 ? 'no_match' : unique.length > 1 ? 'multiple_candidates' : 'matched',
+      candidates: unique.map(m => ({ filename: m.filename, minutes_before_saved_at: Math.round(m.delta / 6000) / 10 }))
+    });
+  } catch (error) {
+    return respond({ demo: null, reason: 'archive_unavailable' });
   }
 }
