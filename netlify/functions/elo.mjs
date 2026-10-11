@@ -1,6 +1,7 @@
 import { getDatabase } from "@netlify/database";
 
-const VERSION = "v1";
+const TEAM_VERSION = "v2-team-perf";
+const DUEL_VERSION = "v1";
 
 const json = (status, body) => new Response(JSON.stringify(body), {
   status,
@@ -30,6 +31,7 @@ export default async (request) => {
     const limit = Math.max(1, Math.min(Number.isFinite(rawLimit) ? Math.trunc(rawLimit) : 100, 100));
     const offset = Math.max(0, Number.isFinite(rawOffset) ? Math.trunc(rawOffset) : 0);
 
+    const VERSION = type === "team" ? TEAM_VERSION : DUEL_VERSION;
     const db = getDatabase();
 
     // Player Elo history mode.

@@ -102,7 +102,7 @@ export default async request => {
             WHEN (SELECT COUNT(*) FROM match_players x WHERE x.match_id = mp.match_id) = 2 THEN '1v1'
             ELSE 'team'
           END
-          AND h.algorithm_version = 'v1'
+          AND h.algorithm_version = CASE WHEN h.elo_type='team' THEN 'v2-team-perf' ELSE 'v1' END
           AND (h.player_name = mp.name OR h.player_name = pp.primary_name)
         ORDER BY CASE WHEN h.player_name = mp.name THEN 0 ELSE 1 END
         LIMIT 1

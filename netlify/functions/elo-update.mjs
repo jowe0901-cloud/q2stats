@@ -1,18 +1,10 @@
-import { VERSION, START_ELO, calculateMatchElo } from "./elo-engine.mjs";
+import { VERSION, START_ELO, calculateMatchElo, normalizePlayers } from "./elo-engine.mjs";
 
 export async function updateEloForMatch(db, matchId){
   const client=await db.pool.connect();
   try{
     await client.query("BEGIN");
-
-    const existing=await client.query(
-      `SELECT 1 FROM elo_history WHERE match_id=$1 AND algorithm_version=$2 LIMIT 1`,
-      [matchId,VERSION]
-    );
-    if(existing.rows.length){
-      await client.query("COMMIT");
-      return {status:"already_calculated",match_id:matchId};
-    }
+    await client.query("SELECT pg_advisory_xact_lock(62107, 2)");
 
     const mr=await client.query(
       `SELECT id,match_id,home_score,away_score,winner,saved_at,created_at
@@ -39,6 +31,17 @@ export async function updateEloForMatch(db, matchId){
       [matchId]
     );
 
+    const ps=normalizePlayers(pr.rows);
+    const isDuel=ps.length===2 && ps.filter(p=>p.team==="Home").length===1 && ps.filter(p=>p.team==="Away").length===1;
+    const eloVersion=isDuel ? "v1" : VERSION;
+    const existing=await client.query(
+      `SELECT 1 FROM elo_history WHERE match_id=$1 AND algorithm_version=$2 AND elo_type=$3 LIMIT 1`,
+      [matchId,eloVersion,isDuel?"1v1":"team"]);
+    if(existing.rows.length){
+      await client.query("COMMIT");
+      return {status:"already_calculated",match_id:matchId};
+    }
+
     const cache={team:new Map(),"1v1":new Map()};
     const get=(type,name)=>{
       if(!cache[type].has(name)) cache[type].set(name,{rating:START_ELO,matches:0,wins:0,losses:0});
@@ -52,7 +55,7 @@ export async function updateEloForMatch(db, matchId){
         const rr=await client.query(
           `SELECT rating,matches,wins,losses FROM elo_ratings
            WHERE player_name=$1 AND elo_type=$2 AND algorithm_version=$3 LIMIT 1`,
-          [name,type,VERSION]
+          [name,type,type==="1v1"?"v1":VERSION]
         );
         const row=rr.rows[0];
         cache[type].set(name,row
@@ -72,7 +75,7 @@ export async function updateEloForMatch(db, matchId){
         `INSERT INTO elo_history
          (match_id,player_name,elo_type,team,old_elo,elo_change,new_elo,algorithm_version)
          VALUES($1,$2,$3,$4,$5,$6,$7,$8)`,
-        [...h,VERSION]
+        [...h,eloVersion]
       );
     }
 
@@ -86,7 +89,7 @@ export async function updateEloForMatch(db, matchId){
          ON CONFLICT (player_name,elo_type,algorithm_version)
          DO UPDATE SET rating=EXCLUDED.rating,matches=EXCLUDED.matches,
                        wins=EXCLUDED.wins,losses=EXCLUDED.losses,updated_at=NOW()`,
-        [name,result.type,r.rating,r.matches,r.wins,r.losses,VERSION]
+        [name,result.type,r.rating,r.matches,r.wins,r.losses,eloVersion]
       );
     }
 

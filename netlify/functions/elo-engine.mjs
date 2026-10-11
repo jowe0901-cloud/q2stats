@@ -1,4 +1,4 @@
-const VERSION = "v1";
+const VERSION = "v2-team-perf";
 const START_ELO = 1500;
 const K_1V1 = 32;
 const K_TEAM = 16;
@@ -14,16 +14,35 @@ function percentile(values){
   return values.map(v => values.filter(x=>x<v).length/(values.length-1)*100);
 }
 function perf(players){
-  const kd=players.map(p=>n(p.deaths)>0?n(p.frags)/n(p.deaths):n(p.frags));
-  const diff=players.map(p=>n(p.frags)-n(p.deaths));
-  const dmg=players.map(p=>n(p.damage)-n(p.damage_received));
-  const a=percentile(diff), b=percentile(kd), c=percentile(dmg);
-  return players.map((p,i)=>{
-    let discipline=100-n(p.suicides)*15-n(p.teamkills)*10-(n(p.team_damage)/100)*2;
-    discipline=Math.max(0,Math.min(100,discipline));
-    return Math.round((a[i]*.40+b[i]*.25+c[i]*.25+discipline*.10)*100)/100;
+  // Team Perf v2: 15/15/15/25/25. Pickup data is not yet
+  // reliably available for historical matches, so normalize by 0.95.
+  const totals = new Map();
+  for (const p of players) {
+    const t = p.team;
+    if (!totals.has(t)) totals.set(t, { damage: 0, frags: 0, size: 0 });
+    const x = totals.get(t);
+    x.damage += n(p.damage);
+    x.frags += n(p.frags);
+    x.size++;
+  }
+  const kd = players.map(p => n(p.deaths) > 0 ? n(p.frags)/n(p.deaths) : n(p.frags));
+  const diff = players.map(p => n(p.frags)-n(p.deaths));
+  const dmg = players.map(p => n(p.damage)-n(p.damage_received));
+  const damageShare = players.map(p => {
+    const t = totals.get(p.team);
+    return t.damage > 0 ? n(p.damage)/t.damage*t.size : 0;
   });
+  const fragsShare = players.map(p => {
+    const t = totals.get(p.team);
+    return t.frags > 0 ? n(p.frags)/t.frags*t.size : 0;
+  });
+  const a = percentile(diff), b = percentile(kd), c = percentile(dmg);
+  const d = percentile(damageShare), e = percentile(fragsShare);
+  return players.map((p,i) => Math.round((
+    a[i]*.15 + b[i]*.15 + c[i]*.15 + d[i]*.25 + e[i]*.25
+  )/.95*100)/100);
 }
+
 function teamChange(base,p,won,scoreDiff){
   let ch=base+(p-50)*(won?.25:.34);
   if(!won && p>=80 && scoreDiff<=5) ch+=1;
