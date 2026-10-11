@@ -36,7 +36,7 @@ function teamNames(m){const ps=getPlayers(m),home=[],away=[],homeElo=[],awayElo=
 function teamNamesHtml(m){const s=esc(teamNames(m));return s.replace(/ \((\d[\d,]*)\)/g,' <span class="team-avg-elo">($1)</span>').replace(/\s+vs\s+/gi,' <span class="vs-badge">VS</span> ')}
 function renderMatches(matches,target,limit=12,offset=0){const el=document.getElementById(target);if(!el)return;const all=(Array.isArray(matches)?matches:[]).map((item,i)=>item&&item.__match?{m:item.__match,id:item.__id}:{m:item,id:i}).reverse(),rows=all.slice(offset,offset+limit);if(!rows.length){el.innerHTML='<div class="empty">No match data found yet.</div>';return}el.innerHTML=rows.map(({m,id})=>{const{map,date}=matchLabel(m);const href=m?.match_id?`match.html?match_id=${encodeURIComponent(m.match_id)}`:`match.html?id=${id}`;return`<a class="match match-link" href="${href}"><div class="match-meta">${esc(date||"Undated")}<br>${esc(map)}</div><div class="match-main">${teamNamesHtml(m)}</div><div class="match-score">${esc(scoreText(m))}</div></a>`}).join("")}
 
-// Player profile recent games: filter BEFORE limiting to 10, with full-history pagination.
+// Player profile recent games: 50 per page, newest first.
 function recentMatchMode(m){
  const players=getPlayers(m).filter(p=>!String(p.team||"").toLowerCase().startsWith("spect"));
  const type=String(m.game_type||m.match_type||"").toLowerCase();
@@ -44,10 +44,16 @@ function recentMatchMode(m){
 }
 function recentMatchTime(m){const v=m.played_at||m.saved_at||m.timestamp||m.date;const n=v?Date.parse(v):NaN;return Number.isFinite(n)?n:0}
 function initRecentMatches(initialMatches,playerName,canQueryApi){
- const list=document.getElementById("playerMatches"),info=document.getElementById("recentMatchInfo"),more=document.getElementById("recentViewAll");
- if(!list||!more)return;
- let mode="all",expanded=false,loading=false,loaded=false;
+ const list=document.getElementById("playerMatches"),info=document.getElementById("recentMatchInfo"),next=document.getElementById("recentViewAll");
+ if(!list||!next)return;
+ const perPage=50;
+ let mode="all",page=0,loading=false,loaded=false,loadFailed=false;
  let all=initialMatches.slice();
+ const prev=document.createElement("button");prev.type="button";prev.textContent="← Previous";
+ prev.className=next.className;prev.id="recentPrevious";
+ next.parentNode.insertBefore(prev,next);
+ const pageLabel=document.createElement("span");pageLabel.id="recentPageLabel";
+ pageLabel.style.margin="0 12px";next.parentNode.insertBefore(pageLabel,next);
  const matchKey=m=>m.match_id||JSON.stringify([m.saved_at,m.map,m.winner,m.home_score,m.away_score,getPlayers(m).map(p=>pname(p))]);
  function normalize(){
   const seen=new Set();all=all.filter(m=>{const k=matchKey(m);if(seen.has(k))return false;seen.add(k);return true});
@@ -55,13 +61,16 @@ function initRecentMatches(initialMatches,playerName,canQueryApi){
  }
  function draw(){
   normalize();const filtered=all.filter(m=>mode==="all"||recentMatchMode(m)===mode);
-  const shown=expanded?filtered:filtered.slice(0,10);
+  const pages=Math.max(1,Math.ceil(filtered.length/perPage));page=Math.min(page,pages-1);
+  const shown=filtered.slice(page*perPage,(page+1)*perPage);
   // renderMatches reverses input; pass oldest-first so newest appears first.
   renderMatches(shown.slice().reverse(),"playerMatches",shown.length);
-  if(info)info.textContent=loading?"Loading match history…":`${shown.length} of ${filtered.length}${!loaded&&canQueryApi?" loaded":""} ${mode==="all"?"matches":mode+" matches"}`;
-  more.hidden=!loading&&filtered.length<=10&&!expanded;
-  more.disabled=loading;
-  more.textContent=loading?"Loading…":expanded?"Show latest 10":"View all games";
+  if(info)info.textContent=loading?"Loading match history…":`${filtered.length}${!loaded&&canQueryApi?" loaded":""} ${mode==="all"?"matches":mode+" matches"}`;
+  prev.hidden=page===0;prev.disabled=loading;
+  next.hidden=page>=pages-1&&!(!loaded&&canQueryApi&&filtered.length>=perPage);
+  next.disabled=loading;
+  next.textContent=loading?"Loading…":"Next →";
+  pageLabel.textContent=`Page ${page+1} of ${pages}${!loaded&&canQueryApi?"+":""}`;
   document.querySelectorAll("[data-recent-mode]").forEach(b=>{const active=b.dataset.recentMode===mode;b.classList.toggle("active",active);b.setAttribute("aria-pressed",String(active))});
  }
  async function loadAll(){
@@ -78,12 +87,13 @@ function initRecentMatches(initialMatches,playerName,canQueryApi){
     if(batch.length===0||batch.length<limit)break;
     offset+=batch.length;
    }
-   all.push(...fetched);loaded=true;
-  }catch(e){if(info)info.textContent="Could not load complete history. Showing available matches.";}
-  finally{loading=false;draw()}
+   all.push(...fetched);loaded=true;loadFailed=false;
+  }catch(e){loadFailed=true;}
+  finally{loading=false;draw();if(loadFailed&&info)info.textContent="Could not load complete history. Showing available matches."}
  }
- document.querySelectorAll("[data-recent-mode]").forEach(b=>b.addEventListener("click",async()=>{mode=b.dataset.recentMode;expanded=false;await loadAll();draw()}));
- more.addEventListener("click",async()=>{if(!expanded)await loadAll();expanded=!expanded;draw()});
+ document.querySelectorAll("[data-recent-mode]").forEach(b=>b.addEventListener("click",async()=>{mode=b.dataset.recentMode;page=0;await loadAll();draw()}));
+ prev.addEventListener("click",()=>{if(page>0){page--;draw()}});
+ next.addEventListener("click",async()=>{await loadAll();const count=all.filter(m=>mode==="all"||recentMatchMode(m)===mode).length;if((page+1)*perPage<count){page++;draw()}});
  draw();
 }
 function normalizeWeaponStats(data){if(!data)return{};if(data.weapons)return data.weapons;if(Array.isArray(data)){const out={};for(const r of data){const w=r.weapon||r.name;if(!w)continue;(out[w]??=[]).push(r)}return out}return data}
@@ -213,12 +223,12 @@ for(const [mode,id] of [["team","weaponBodyTeam"],["1v1","weaponBody1v1"]]){
   const ws=weaponModes?.[mode]||Object.values(fallbackModes[mode]).map(x=>({...x,accuracy:x.accCount?x.accSum/x.accCount:null}));
   const byName=new Map(ws.map(x=>[String(x.weapon).toLowerCase(),x]));
   const ordered=WEAPON_DISPLAY_ORDER.map(w=>byName.get(w.toLowerCase())||{weapon:w,accuracy:null,kills:0,matches:0});
-  const extras=ws.filter(x=>!WEAPON_DISPLAY_ORDER.some(w=>w.toLowerCase()===String(x.weapon).toLowerCase())).sort((a,b)=>String(a.weapon).localeCompare(String(b.weapon)));
+  const extras=ws.filter(x=>!WEAPON_DISPLAY_ORDER.some(w=>w.toLowerCase()===String(x.weapon).toLowerCase()) && !/^(?:adrenaline|combat[ _-]*armor|jacket[ _-]*armor|mega[ _-]*health)$/i.test(String(x.weapon).trim())).sort((a,b)=>String(a.weapon).localeCompare(String(b.weapon)));
   document.getElementById(id).innerHTML=[...ordered,...extras].map(x=>`<tr><td>${esc(x.weapon)}</td><td>${x.accuracy==null?'—':pct(x.accuracy)}</td><td>${fmt(x.kills)}</td><td>${fmt(x.matches)}</td></tr>`).join("");
 }
 const playerMatches=centralPlayerMatches.length?centralPlayerMatches.slice().reverse():matches.map((m,id)=>({__match:m,__id:id})).filter(x=>playerResult(x.__match,name));initRecentMatches(playerMatches.map(x=>x.__match||x),name,true);
 const centralTeamEvents=Array.isArray(centralTeamHist?.history)?centralTeamHist.history:[],centralOneEvents=Array.isArray(centralOneHist?.history)?centralOneHist.history:[];let teamEv=centralTeamEvents.length?centralTeamEvents.map(e=>num(e.elo_after)):eloValues(hist,name,"team"),oneEv=centralOneEvents.length?centralOneEvents.map(e=>num(e.elo_after)):eloValues(hist,name,"1v1");if(!teamEv.length&&tr)teamEv=[num(tr.elo)];if(!oneEv.length&&or)oneEv=[num(or.elo)];const fromStart=vals=>[1500,...vals.filter((v,i,a)=>i||v!==1500)];teamEv=fromStart(teamEv);oneEv=fromStart(oneEv);const eloCanvas=document.getElementById("eloChart"),eloButtons=document.querySelectorAll("[data-elo-history]");const drawElo=type=>{const isOne=type==="1v1",values=isOne?oneEv:teamEv;drawLineChart(eloCanvas,[{name:isOne?"1v1 Elo":"Team Elo",short:isOne?"1V1":"TEAM",values}],{include:1500,reference:1500,referenceLabel:"START 1500",xStart:"Start 1500",xEnd:"Latest"});eloButtons.forEach(b=>b.classList.toggle("active",b.dataset.eloHistory===type))};eloButtons.forEach(b=>b.onclick=()=>drawElo(b.dataset.eloHistory));drawElo("team");
-const centralWeaponHistory=hasProfile&&Array.isArray(profile?.weapons?.history)?profile.weapons.history:(Array.isArray(weaponData?.history)?weaponData.history:[]),accuracyMatches=centralWeaponHistory.length?centralWeaponHistory.map(x=>({m:{match_id:x.match_id,saved_at:x.played_at},weapons:Object.fromEntries(Object.entries(x.weapons||{}).map(([w,s])=>{const raw=s?.accuracy,acc=raw==null?NaN:Number(raw);return[w,Number.isFinite(acc)?acc:NaN]}))})):localA.perMatch,preferred=["Railgun","Chaingun"],allWeapons=[...new Set(accuracyMatches.flatMap(x=>Object.keys(x.weapons)))],ordered=[...preferred.filter(w=>allWeapons.includes(w)),...allWeapons.filter(w=>!preferred.includes(w))],series=ordered.map(w=>({name:w,short:WEAPON_ABBR[w]||w.slice(0,3).toUpperCase(),values:accuracyMatches.map(x=>x.weapons[w]??NaN),hidden:!preferred.includes(w)})),legend=document.getElementById("weaponLegend");legend.innerHTML=series.map((s,i)=>`<button class="${s.hidden?"":"on"}" data-i="${i}" title="${esc(s.name)}">${esc(s.short)}</button>`).join("");const redraw=()=>drawLineChart(document.getElementById("accuracyChart"),series,{min:0,max:100,ticks:11,suffix:"%",pad:false,labelLines:true,xStart:"Oldest match",xEnd:"Latest match"});legend.querySelectorAll("button").forEach(b=>b.onclick=()=>{const i=+b.dataset.i;series[i].hidden=!series[i].hidden;b.classList.toggle("on",!series[i].hidden);redraw()});redraw()}
+const centralWeaponHistory=hasProfile&&Array.isArray(profile?.weapons?.history)?profile.weapons.history:(Array.isArray(weaponData?.history)?weaponData.history:[]),accuracyMatches=centralWeaponHistory.length?centralWeaponHistory.map(x=>({m:{match_id:x.match_id,saved_at:x.played_at},weapons:Object.fromEntries(Object.entries(x.weapons||{}).map(([w,s])=>{const raw=s?.accuracy,acc=raw==null?NaN:Number(raw);return[w,Number.isFinite(acc)?acc:NaN]}))})):localA.perMatch,preferred=["Railgun","Chaingun"],allWeapons=[...new Set(accuracyMatches.flatMap(x=>Object.keys(x.weapons)))].filter(w=>! /^(?:adrenaline|combat[ _-]*armor|jacket[ _-]*armor|mega[ _-]*health)$/i.test(w.trim())),ordered=[...preferred.filter(w=>allWeapons.includes(w)),...allWeapons.filter(w=>!preferred.includes(w))],series=ordered.map(w=>({name:w,short:WEAPON_ABBR[w]||w.slice(0,3).toUpperCase(),values:accuracyMatches.map(x=>x.weapons[w]??NaN),hidden:!preferred.includes(w)})),legend=document.getElementById("weaponLegend");legend.innerHTML=series.map((s,i)=>`<button class="${s.hidden?"":"on"}" data-i="${i}" title="${esc(s.name)}">${esc(s.short)}</button>`).join("");const redraw=()=>drawLineChart(document.getElementById("accuracyChart"),series,{min:0,max:100,ticks:11,suffix:"%",pad:false,labelLines:true,xStart:"Oldest match",xEnd:"Latest match"});legend.querySelectorAll("button").forEach(b=>b.onclick=()=>{const i=+b.dataset.i;series[i].hidden=!series[i].hidden;b.classList.toggle("on",!series[i].hidden);redraw()});redraw()}
 async function initRankings(){const q=new URLSearchParams(location.search),type=q.get("type")==="1v1"?"1v1":"team",per=100,requestedPage=Math.max(1,parseInt(q.get("page")||"1")),requestedOffset=(requestedPage-1)*per,data=await loadJson(`${ELO_API}?type=${encodeURIComponent(type)}&limit=${per}&offset=${requestedOffset}`,{rankings:[],total:0}),total=num(data?.total),pages=Math.max(1,Math.ceil(total/per)),page=Math.min(requestedPage,pages),offset=(page-1)*per;let items=Array.isArray(data?.rankings)?data.rankings:[];if(page!==requestedPage){const corrected=await loadJson(`${ELO_API}?type=${encodeURIComponent(type)}&limit=${per}&offset=${offset}`,{rankings:[],total}),items2=Array.isArray(corrected?.rankings)?corrected.rankings:[];items=items2}document.querySelectorAll("[data-ranking]").forEach(b=>b.classList.toggle("active",b.dataset.ranking===type));document.getElementById("rankingTitle").textContent=type==="1v1"?"1v1 Elo Rankings":"Team Elo Rankings";document.getElementById("rankingBody").innerHTML=rankRows(items,0,offset);const nav=document.getElementById("rankingPagination");if(nav){let h=page>1?`<a href="rankings.html?type=${type}&page=${page-1}">← Previous</a>`:"<span></span>";h+=`<span>Page ${page} of ${pages} · ${total} players</span>`;h+=page<pages?`<a href="rankings.html?type=${type}&page=${page+1}">Next →</a>`:"<span></span>";nav.innerHTML=h}}
 async function initMatchesPage(){
  const per=40,q=new URLSearchParams(location.search),requestedPage=Math.max(1,parseInt(q.get("page")||"1")),requestedOffset=(requestedPage-1)*per;
