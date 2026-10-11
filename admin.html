@@ -78,7 +78,9 @@
       <article class="panel">
         <div class="panel-head"><div><span class="eyebrow">NEW PROFILE</span><h2>Merge selection</h2></div></div>
         <div id="selection" class="selection"><div class="empty">No nicknames selected.</div></div>
-        <p class="admin-note">Choose one selected nickname as the public main nickname. Historical matches keep the nickname used in that match. Elo is not recalculated by this action.</p>
+        <label class="admin-note" for="customMain">Custom MAIN nickname (optional; can be a nickname never used in a match)</label>
+        <input class="admin-input" id="customMain" placeholder="e.g. st1mata" style="width:100%;margin:8px 0 12px">
+        <p class="admin-note">Enter a custom MAIN above, or select one of the existing nicknames below. Historical match names remain unchanged. Rebuild Elo separately.</p>
         <button class="admin-btn primary" id="createBtn" disabled>Create profile</button>
       </article>
 
@@ -233,6 +235,10 @@ function renderProfiles(){
         <button class="admin-btn" type="button" data-add-alias>Add alias</button>
         <button class="admin-btn" type="button" data-relink>Relink matches</button>
       </div>
+      <div class="profile-actions">
+        <input class="admin-input" data-custom-primary placeholder="New MAIN nickname (any name)…">
+        <button class="admin-btn" type="button" data-set-custom-primary>Set custom MAIN</button>
+      </div>
     </div>`;
   }).join(""):'<div class="empty">No profiles yet.</div>';
 
@@ -258,6 +264,22 @@ function renderProfiles(){
       }catch(e){setStatus(e.message,"bad");addBtn.disabled=false}
     };
     input.onkeydown=e=>{if(e.key==="Enter"){e.preventDefault();addBtn.click()}};
+
+    const customPrimaryInput=row.querySelector("[data-custom-primary]");
+    const customPrimaryBtn=row.querySelector("[data-set-custom-primary]");
+    customPrimaryBtn.onclick=async()=>{
+      const nickname=customPrimaryInput.value.trim();
+      if(!nickname){setStatus("Enter a MAIN nickname.","bad");return}
+      if(!confirm(`Set "${nickname}" as MAIN for profile "${profile.primary_name}"?\n\nThis nickname does not need to exist in match history. Historical match names remain unchanged. Elo will NOT be recalculated yet.`))return;
+      customPrimaryBtn.disabled=true;
+      setStatus(`Changing MAIN to "${nickname}"…`);
+      try{
+        await api("POST",{action:"set_primary",profile_id:profileId,nickname});
+        await load();
+        setStatus(`MAIN changed to "${nickname}". Rebuild Elo separately to update rankings.`,"good");
+      }catch(e){setStatus(e.message,"bad");customPrimaryBtn.disabled=false}
+    };
+    customPrimaryInput.onkeydown=e=>{if(e.key==="Enter"){e.preventDefault();customPrimaryBtn.click()}};
 
     const relinkBtn=row.querySelector("[data-relink]");
     relinkBtn.onclick=async()=>{
@@ -441,19 +463,20 @@ document.getElementById("connectBtn").onclick=async()=>{
 };
 
 document.getElementById("search").oninput=renderPlayers;
-document.getElementById("clearBtn").onclick=()=>{selected.clear();primary="";renderPlayers();renderSelection()};
+document.getElementById("clearBtn").onclick=()=>{selected.clear();primary="";document.getElementById("customMain").value="";renderPlayers();renderSelection()};
 
 document.getElementById("createBtn").onclick=async()=>{
   const aliases=[...selected];
-  if(!primary||!aliases.length)return;
-  const msg=`Create profile "${primary}" and link these nicknames?\n\n${aliases.join("\n")}\n\nThis changes profile links in production. Elo will NOT be recalculated yet.`;
+  const mainName=document.getElementById("customMain").value.trim()||primary;
+  if(!mainName||!aliases.length)return;
+  const msg=`Create profile "${mainName}" and link these nicknames?\n\n${aliases.join("\n")}\n\nThis changes profile links in production. Elo will NOT be recalculated yet.`;
   if(!confirm(msg))return;
   document.getElementById("createBtn").disabled=true;
   setStatus("Creating profile…");
   try{
-    const createdName=primary;
-    await api("POST",{primary_name:primary,aliases});
-    selected.clear();primary="";
+    const createdName=mainName;
+    await api("POST",{primary_name:mainName,aliases});
+    selected.clear();primary="";document.getElementById("customMain").value="";
     await load();
     setStatus(`Profile "${createdName}" created. Elo has not been recalculated.`,"good");
   }catch(e){

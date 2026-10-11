@@ -119,25 +119,26 @@ export default async (req) => {
           return json({ status: "error", error: "Profile not found" }, 404);
         }
 
-        const aliasResult = await client.query(
-          `
-            SELECT nickname
-            FROM player_aliases
-            WHERE profile_id = $1
-              AND nickname = $2
-          `,
-          [profileId, nickname]
+        // A new MAIN name is allowed even if it never appeared in match history.
+        // Prevent taking an alias already owned by a different profile.
+        const aliasOwner = await client.query(
+          `SELECT profile_id FROM player_aliases WHERE nickname = $1 FOR UPDATE`,
+          [nickname]
         );
-
-        if (!aliasResult.rows.length) {
+        if (aliasOwner.rows.length && Number(aliasOwner.rows[0].profile_id) !== profileId) {
           await client.query("ROLLBACK");
           transactionStarted = false;
-          return json(
-            {
-              status: "conflict",
-              error: "Primary nickname must already belong to this profile"
-            },
-            409
+          return json({ status: "conflict", error: "Nickname already belongs to another profile" }, 409);
+        }
+        if (!aliasOwner.rows.length) {
+          await client.query(
+            `INSERT INTO player_aliases (profile_id, nickname) VALUES ($1, $2)`,
+            [profileId, nickname]
+          );
+          // Link any previously unlinked matches under this exact nickname.
+          await client.query(
+            `UPDATE match_players SET profile_id = $1 WHERE name = $2 AND profile_id IS NULL`,
+            [profileId, nickname]
           );
         }
 
