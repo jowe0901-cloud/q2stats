@@ -28,13 +28,13 @@
 <body>
 <header class="topbar"><a class="brand no-underline" href="index.html"><span>Q2</span>STATS <small>BETA</small></a><a class="elo-back" href="index.html">← Back to Overview</a></header>
 <main class="guide">
-<div class="eyebrow">RATING SYSTEM · TEAM V2 / 1V1 V1</div>
+<div class="eyebrow">RATING SYSTEM · TEAM V2 (FPR) / 1V1 V1</div>
 <h1>How Elo Works</h1>
 <p class="lead">Q2Stats uses separate Elo ratings for <strong>Team Games</strong> and <strong>1v1</strong>. Every player starts at <strong>1500 Elo</strong> in each category. Here is how the current algorithm calculates rating changes.</p>
 <section class="update"><h2>Algorithm Update · October 2026</h2>
-<p><strong>Team Elo has been updated to version 2.</strong> The new performance model puts more emphasis on a player's contribution to their team through damage and frag shares, while still accounting for individual efficiency and the match result.</p>
+<p><strong>Team Elo has been updated to version 2 (FPR).</strong> The new performance model puts more emphasis on a player's contribution to their team through damage and frag shares, while still accounting for individual efficiency and the match result.</p>
 <p><strong>All historical Team Elo ratings have been recalculated</strong> using the updated algorithm, so current ratings may differ from previously displayed values. The <strong>1v1 Elo algorithm remains unchanged (v1)</strong>.</p>
-<p class="muted">Team Elo v2 replaces the earlier Perf weights (40% Net, 25% K/D, 25% Net Damage, 10% Discipline). The match-result calculation and Team Elo change limits remain the same.</p>
+<p class="muted">Team Elo v2 (FPR) replaces the earlier Perf weights (40% Net, 25% K/D, 25% Net Damage, 10% Discipline). The match-result calculation and Team Elo change limits remain the same.</p>
 </section>
 <section><h2>1. Team Games: Match Result &amp; Team Strength</h2>
 <p>The system calculates the average Elo of each team and estimates the probability of winning. The result is used to determine a base Elo change.</p>
@@ -42,7 +42,7 @@
 BaseElo = 16 * (Result - Expected)</div>
 <p><strong>Result = 1</strong> for a win, <strong>0</strong> for a loss. The team K-factor is <strong>16</strong>. Beating a stronger team produces a larger base gain; losing to a stronger team produces a smaller base loss.</p>
 </section>
-<section><h2>2. Individual Performance (Perf) · Team v2</h2>
+<section><h2>2. Individual Performance (Perf) · Team v2 (FPR)</h2>
 <p>In Team Games, the base Elo change is adjusted using each player's individual performance. The new Perf model compares five statistics across <strong>all players in the match</strong>, including teammates and opponents.</p>
 <div class="scroll"><table><thead><tr><th>Metric</th><th>Weight</th><th>Raw statistic</th></tr></thead><tbody>
 <tr><td>Net</td><td>15%</td><td>Frags − Deaths</td></tr>
@@ -87,7 +87,7 @@ EloChange = 32 * (Result - Expected)</div>
 <p>Starting Elo is 1500, and the 1v1 K-factor is 32. Frags, deaths, Net, K/D and damage do not directly affect 1v1 Elo.</p>
 </section>
 <section><h2>6. Development &amp; Feedback</h2>
-<p>Team Games now use <strong>Team Elo v2</strong>, while <strong>1v1 continues to use v1</strong>. The system is still evolving, and ratings are not a perfect measure of skill. As more matches are played, we will evaluate the results, the balance between winning and individual contribution, and the possibility of including reliable Quad and Mega pickup statistics in a future update.</p>
+<p>Team Games now use <strong>Team Elo v2 (FPR)</strong>, while <strong>1v1 continues to use v1</strong>. The system is still evolving, and ratings are not a perfect measure of skill. As more matches are played, we will evaluate the results, the balance between winning and individual contribution, and the possibility of including reliable Quad and Mega pickup statistics in a future update.</p>
 <p>Feedback from the Quake 2 community is welcome.</p>
 </section>
 </main>
