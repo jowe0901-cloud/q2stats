@@ -238,6 +238,13 @@ async function initMatch(){
  if(!m||m.status==="error"){box.innerHTML='<div class="empty">Match not found.</div>';return}
  const ml=matchLabel(m),players=getPlayers(m).filter(p=>!String(p.team||"").toLowerCase().startsWith("spect"));
  document.getElementById("matchTitle").textContent=teamNames(m);document.getElementById("matchMap").textContent=ml.map;document.getElementById("matchServer").textContent=m.hostname||m.server||"Server not recorded";document.getElementById("matchWinner").textContent=m.winner||"—";document.getElementById("matchScore").textContent=scoreText(m);
+ // Optional, read-only demo link; hidden unless the archive returns one unambiguous match.
+ const demoQuery=new URLSearchParams({server:String(m.server||""),map:String(m.map||""),saved_at:String(m.saved_at||"")});
+ loadJson(`/.netlify/functions/demo-lookup?${demoQuery}`,{}).then(data=>{
+  if(!data?.demo||!/^https:\/\/pfl\.gr\/mvd\/de3\/PFDE3_[0-9]{8}-[0-9]{6}_[a-z0-9_-]+\.mvd2$/i.test(data.demo))return;
+  const hero=document.querySelector(".match-hero");if(!hero)return;
+  const a=document.createElement("a");a.className="pill pill-link";a.href=data.demo;a.target="_blank";a.rel="noopener noreferrer";a.textContent="DEMO";a.title="Download match demo from PacketFlinger";hero.appendChild(a);
+ });
  const realMatchId=m.match_id,is1v1=players.length===2,eloType=is1v1?"1v1":"team",eloMap=new Map();
  if(realMatchId){
   for(const p of players){
