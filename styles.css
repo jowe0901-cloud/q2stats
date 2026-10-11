@@ -50,11 +50,13 @@ canvas{width:100%;height:auto;background:#0c1016;border-radius:12px;border:1px s
 .team-head-meta .team-score strong{font-size:17px}
 @media(max-width:600px){.team-scoreboard-head{align-items:flex-start;flex-direction:column;gap:7px}.team-head-meta{width:100%;justify-content:space-between;gap:8px}}
 
-/* Separate Team and 1v1 weapon statistics without changing the rest of the site. */
-.arsenal-grid,.leaderboard-modes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
-.arsenal-mode,.leaderboard-mode{min-width:0}
-.arsenal-mode h3,.leaderboard-mode>h3{font-size:13px;letter-spacing:.1em;color:var(--accent2);margin:0 0 12px}
-.arsenal-mode table{font-size:12px}
-.arsenal-mode th,.arsenal-mode td{padding:10px 6px}
-.leaderboard-mode .weapon-grid{grid-template-columns:1fr}
-@media(max-width:850px){.arsenal-grid,.leaderboard-modes{grid-template-columns:1fr}}
+/* Separate arsenal panels and two full-width leaderboard rows. */
+.arsenal-panels{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.arsenal-panels .panel{min-width:0}
+.arsenal-panels table{font-size:12px}
+.arsenal-panels th,.arsenal-panels td{padding:10px 6px}
+.leaderboard-modes{display:flex;flex-direction:column;gap:28px}
+.leaderboard-mode{min-width:0}
+.leaderboard-mode>h3{font-size:13px;letter-spacing:.1em;color:var(--accent2);margin:0 0 12px}
+.leaderboard-mode .weapon-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+@media(max-width:850px){.arsenal-panels{grid-template-columns:1fr}.leaderboard-mode .weapon-grid{grid-template-columns:1fr}}
