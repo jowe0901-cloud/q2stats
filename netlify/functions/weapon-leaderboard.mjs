@@ -36,6 +36,7 @@ export default async(request)=>{
     const rows=await db.sql`
       SELECT
         w.match_id,
+        m.game_type,
         w.player_name,
         w.weapon,
         w.accuracy,
@@ -48,6 +49,7 @@ export default async(request)=>{
         mp.profile_id,
         pp.primary_name
       FROM match_player_weapons w
+      JOIN matches m ON m.match_id=w.match_id
       LEFT JOIN match_players mp
         ON mp.match_id=w.match_id
        AND mp.name=w.player_name
@@ -70,13 +72,15 @@ export default async(request)=>{
       const playerKey=profileId
         ? `profile:${profileId}`
         : `nick:${player}`;
-      const key=`${weapon}\u0000${playerKey}`;
+      const mode=String(r.game_type||"").toLowerCase()==="1v1"?"1v1":"team";
+      const key=`${mode}\u0000${weapon}\u0000${playerKey}`;
 
       let x=grouped.get(key);
       if(!x){
         x={
           player,
           weapon,
+          mode,
           matches:new Set(),
           kills:0,
           deaths:0,
@@ -107,10 +111,11 @@ export default async(request)=>{
       }
     }
 
-    const weapons={};
+    const by_mode={team:{}, "1v1":{}};
+    for(const mode of ["team","1v1"]){
     for(const weapon of WANTED_WEAPONS){
       const all_players=[...grouped.values()]
-        .filter(x=>x.weapon===weapon)
+        .filter(x=>x.weapon===weapon && x.mode===mode)
         .map(x=>{
           const matches=x.matches.size;
           const accuracy=x.accCount?x.accSum/x.accCount:null;
@@ -134,10 +139,11 @@ export default async(request)=>{
           a.player.localeCompare(b.player)
         );
 
-      weapons[weapon]={
+      by_mode[mode][weapon]={
         top5:all_players.filter(x=>x.qualified).slice(0,5),
         all_players
       };
+    }
     }
 
     return json(200,{
@@ -146,7 +152,7 @@ export default async(request)=>{
         minimum_matches:MIN_MATCHES,
         minimum_kills:MIN_KILLS
       },
-      weapons
+      by_mode
     });
   }catch(error){
     console.error(error);

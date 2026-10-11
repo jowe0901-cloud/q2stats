@@ -229,8 +229,35 @@ export default async request => {
       })
       .sort((a,b) => b.kills - a.kills || a.weapon.localeCompare(b.weapon));
 
+    const matchModes = new Map(matches.map(m => [String(m.match_id),
+      String(m.game_type || "").toLowerCase() === "1v1" ? "1v1" : "team"]));
+    const weaponByMode = { team:new Map(), "1v1":new Map() };
+    for (const row of weaponHistoryRows) {
+      const mode = matchModes.get(String(row.match_id));
+      if (!mode) continue;
+      const weapon = canonicalWeapon(row.weapon);
+      let item = weaponByMode[mode].get(weapon);
+      if (!item) {
+        item = {weapon, kills:0, matchIds:new Set(), accSum:0, accCount:0};
+        weaponByMode[mode].set(weapon,item);
+      }
+      item.kills += Number(row.kills || 0);
+      item.matchIds.add(String(row.match_id));
+      if (row.accuracy != null && Number.isFinite(Number(row.accuracy))) {
+        item.accSum += Number(row.accuracy);
+        item.accCount++;
+      }
+    }
+    const weaponSummaryByMode = Object.fromEntries(
+      Object.entries(weaponByMode).map(([mode, map]) => [mode,
+        [...map.values()].map(w => ({
+          weapon:w.weapon, accuracy:w.accCount ? w.accSum/w.accCount : null,
+          kills:w.kills, matches:w.matchIds.size
+        })).sort((a,b) => b.kills-a.kills || a.weapon.localeCompare(b.weapon))
+      ])
+    );
     return json(200,{status:"ok",profile,setup,total_matches:matches.length,matches,mode_stats:modeStats,
-      weapons:{summary:weaponSummary,history:[...byMatch.values()]}});
+      weapons:{summary:weaponSummary,summary_by_mode:weaponSummaryByMode,history:[...byMatch.values()]}});
   } catch(error) {
     console.error("Q2Stats public profile failed:",error);
     return json(500,{status:"error",error:error.message||"Internal server error"});
