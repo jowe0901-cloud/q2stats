@@ -1,13 +1,16 @@
-// Read-only DE3 demo discovery. Never changes match records or ratings.
-const ARCHIVE = 'https://pfl.gr/mvd/de3/';
-const SERVER = 'PacketFlinger.com ~ OpenTDM ~ Germany #3';
+// Read-only PacketFlinger DE / DE3 demo discovery. Never changes match records or ratings.
+const SERVERS = {
+  'PacketFlinger.com ~ OpenTDM ~ Germany': { archive: 'https://pfl.gr/mvd/de/', prefix: 'PFDE' },
+  'PacketFlinger.com ~ OpenTDM ~ Germany #3': { archive: 'https://pfl.gr/mvd/de3/', prefix: 'PFDE3' }
+};
 const FIRST_LOCAL_DAY = '2026-10-09';
 const MAX_MATCH_MINUTES = 25;
 const respond = (body, statusCode = 200) => ({ statusCode, headers: { 'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-store' }, body: JSON.stringify(body) });
 
 export async function handler(event) {
   const q = event.queryStringParameters || {};
-  if (q.server !== SERVER) return respond({ demo: null, reason: 'server_mismatch' });
+  const server = SERVERS[q.server];
+  if (!server) return respond({ demo: null, reason: 'server_mismatch' });
   if (!/^[a-z0-9_-]{1,40}$/i.test(q.map || '')) return respond({ demo: null, reason: 'invalid_map' });
   const end = Date.parse(q.saved_at || '');
   if (!Number.isFinite(end)) return respond({ demo: null, reason: 'invalid_saved_at' });
@@ -20,12 +23,12 @@ export async function handler(event) {
     const timeout = setTimeout(() => controller.abort(), 6000);
     let html;
     try {
-      const r = await fetch(ARCHIVE, { signal: controller.signal, headers: { accept: 'text/html' } });
+      const r = await fetch(server.archive, { signal: controller.signal, headers: { accept: 'text/html' } });
       if (!r.ok) throw new Error('archive unavailable');
       html = await r.text();
     } finally { clearTimeout(timeout); }
 
-    // The PFDE3 filename date/time is local Swedish time (Europe/Stockholm).
+    // PacketFlinger filename date/time is treated as Europe/Stockholm local time.
     // Convert local wall-clock time to UTC by testing valid offsets and round-tripping.
     const formatter = new Intl.DateTimeFormat('sv-SE', { timeZone: 'Europe/Stockholm', year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit' });
     const startUtc = (day, clock) => {
@@ -33,13 +36,13 @@ export async function handler(event) {
       const localAsUtc = Date.UTC(+day.slice(0, 4), +day.slice(4, 6) - 1, +day.slice(6, 8), +clock.slice(0, 2), +clock.slice(2, 4), +clock.slice(4, 6));
       return [2, 1].map(h => localAsUtc - h * 3600000).filter(ms => formatter.format(new Date(ms)).replace(',', '') === expected);
     };
-    // Use all maps: the next DE3 recording marks the boundary of the previous one.
+    // Use all maps: the next recording marks the boundary of the previous one.
     // This is an inferred boundary, not a verified demo end time.
     const recordings = new Map();
-    const re = /PFDE3_(\d{8})-(\d{6})_([a-z0-9_-]+)\.mvd2/gi;
+    const re = /(?:PFDE3|PFDE)_(\d{8})-(\d{6})_([a-z0-9_-]+)\.mvd2/gi;
     for (const hit of html.matchAll(re)) {
       const [filename, day, clock, map] = hit;
-      if (day < '20261009') continue;
+      if (day < '20261009' || !filename.toUpperCase().startsWith(server.prefix + '_')) continue;
       for (const start of startUtc(day, clock)) {
         recordings.set(`${filename}:${start}`, { filename, map: map.toLowerCase(), start });
       }
@@ -59,7 +62,7 @@ export async function handler(event) {
     }
     const unique = [...new Map(candidates.map(m => [m.filename, m])).values()];
     return respond({
-      demo: unique.length === 1 ? ARCHIVE + encodeURIComponent(unique[0].filename) : null,
+      demo: unique.length === 1 ? server.archive + encodeURIComponent(unique[0].filename) : null,
       reason: unique.length === 0 ? 'no_match' : unique.length > 1 ? 'multiple_candidates' : 'matched',
       candidates: unique.map(m => ({ filename: m.filename, minutes_before_saved_at: Math.round(m.delta / 6000) / 10 }))
     });
