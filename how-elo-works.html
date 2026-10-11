@@ -16,6 +16,8 @@
 .guide table{min-width:540px}
 .guide .formula{background:#0d1117;border:1px solid var(--line);color:var(--accent2);padding:15px 17px;border-radius:12px;overflow-x:auto;white-space:pre-wrap;overflow-wrap:anywhere;font:13px/1.75 Consolas,monospace}
 .guide .note{border-left:3px solid var(--accent);padding-left:14px}
+.guide .update{border-color:var(--accent);background:linear-gradient(135deg,rgba(255,140,40,.09),rgba(17,21,28,.9))}
+.guide .update h2{color:var(--accent2)}
 .guide li{margin:6px 0}
 .guide .muted{font-size:13px;color:var(--muted)}
 .elo-back{border:1px solid var(--line);padding:9px 13px;border-radius:99px;text-decoration:none;color:var(--accent2);font-size:12px;font-weight:800}
@@ -26,33 +28,40 @@
 <body>
 <header class="topbar"><a class="brand no-underline" href="index.html"><span>Q2</span>STATS <small>BETA</small></a><a class="elo-back" href="index.html">← Back to Overview</a></header>
 <main class="guide">
-<div class="eyebrow">RATING SYSTEM · VERSION 1</div>
+<div class="eyebrow">RATING SYSTEM · TEAM V2 / 1V1 V1</div>
 <h1>How Elo Works</h1>
 <p class="lead">Q2Stats uses separate Elo ratings for <strong>Team Games</strong> and <strong>1v1</strong>. Every player starts at <strong>1500 Elo</strong> in each category. Here is how the current algorithm calculates rating changes.</p>
+<section class="update"><h2>Algorithm Update · October 2026</h2>
+<p><strong>Team Elo has been updated to version 2.</strong> The new performance model puts more emphasis on a player's contribution to their team through damage and frag shares, while still accounting for individual efficiency and the match result.</p>
+<p><strong>All historical Team Elo ratings have been recalculated</strong> using the updated algorithm, so current ratings may differ from previously displayed values. The <strong>1v1 Elo algorithm remains unchanged (v1)</strong>.</p>
+<p class="muted">Team Elo v2 replaces the earlier Perf weights (40% Net, 25% K/D, 25% Net Damage, 10% Discipline). The match-result calculation and Team Elo change limits remain the same.</p>
+</section>
 <section><h2>1. Team Games: Match Result &amp; Team Strength</h2>
 <p>The system calculates the average Elo of each team and estimates the probability of winning. The result is used to determine a base Elo change.</p>
 <div class="formula">Expected = 1 / (1 + 10^((OpponentTeamAverageElo - YourTeamAverageElo) / 400))
 BaseElo = 16 * (Result - Expected)</div>
 <p><strong>Result = 1</strong> for a win, <strong>0</strong> for a loss. The team K-factor is <strong>16</strong>. Beating a stronger team produces a larger base gain; losing to a stronger team produces a smaller base loss.</p>
 </section>
-<section><h2>2. Individual Performance (Perf)</h2>
-<p>In Team Games, the base Elo change is adjusted using each player's individual performance.</p>
+<section><h2>2. Individual Performance (Perf) · Team v2</h2>
+<p>In Team Games, the base Elo change is adjusted using each player's individual performance. The new Perf model compares five statistics across <strong>all players in the match</strong>, including teammates and opponents.</p>
 <div class="scroll"><table><thead><tr><th>Metric</th><th>Weight</th><th>Raw statistic</th></tr></thead><tbody>
-<tr><td>Net</td><td>40%</td><td>Frags − Deaths</td></tr>
-<tr><td>K/D</td><td>25%</td><td>Frags / Deaths*</td></tr>
-<tr><td>Net Damage</td><td>25%</td><td>Damage Dealt − Damage Received</td></tr>
-<tr><td>Discipline</td><td>10%</td><td>Suicides, teamkills and team damage</td></tr>
+<tr><td>Net</td><td>15%</td><td>Frags − Deaths</td></tr>
+<tr><td>K/D</td><td>15%</td><td>Frags / Deaths*</td></tr>
+<tr><td>Net Damage</td><td>15%</td><td>Damage Dealt − Damage Received</td></tr>
+<tr><td>Team Damage Share</td><td>25%</td><td>(Player Damage / Team Damage) × Team Size</td></tr>
+<tr><td>Team Frags Share</td><td>25%</td><td>(Player Frags / Team Frags) × Team Size</td></tr>
+<tr><td>Quad + Mega Pickups</td><td>5% reserved</td><td>Not currently included: reliable historical pickup data is unavailable</td></tr>
 </tbody></table></div>
-<p>Net, K/D and Net Damage are converted to percentile scores by comparing each player with <strong>all players in the match</strong>, including teammates and opponents. A percentile counts the share of other players with a strictly lower value; ties do not count as lower.</p>
-<div class="formula">Percentile = 100 * (NumberOfOtherPlayersWithLowerValue / (TotalPlayers - 1))
+<p>Each available metric is converted to a percentile. A percentile measures the proportion of other players with a <strong>strictly lower</strong> value; ties do not count as lower.</p>
+<div class="formula">Percentile = 100 × (NumberOfOtherPlayersWithLowerValue / (TotalPlayers - 1))
 
-Perf = (NetPercentile * 0.40)
-     + (KDPercentile * 0.25)
-     + (DamagePercentile * 0.25)
-     + (Discipline * 0.10)
-
-Discipline = clamp(100 - 15*Suicides - 10*Teamkills - 0.02*TeamDamage, 0, 100)</div>
-<p class="muted">* If deaths are zero, the current algorithm uses frags as the K/D value instead of dividing by zero. For a single-player percentile input, the percentile is 100.</p>
+Perf = (NetPercentile × 0.15
+      + KDPercentile × 0.15
+      + DamagePercentile × 0.15
+      + TeamDamageSharePercentile × 0.25
+      + TeamFragsSharePercentile × 0.25) / 0.95</div>
+<p>The 5% reserved for Quad and Mega pickups is currently redistributed proportionally across the five available metrics by dividing their weighted sum by <strong>0.95</strong>. Pickups do <strong>not</strong> currently contribute to Perf.</p>
+<p class="muted">* If deaths are zero, frags are used as the K/D value instead of dividing by zero. If team damage or team frags totals are zero, the corresponding share is set to zero. For a single-player percentile input, the percentile is 100.</p>
 </section>
 <section><h2>3. Final Team Elo Change</h2>
 <div class="formula">WIN:  EloChange = clamp(BaseElo + (Perf - 50) * 0.25, 0, 16)
@@ -78,7 +87,7 @@ EloChange = 32 * (Result - Expected)</div>
 <p>Starting Elo is 1500, and the 1v1 K-factor is 32. Frags, deaths, Net, K/D and damage do not directly affect 1v1 Elo.</p>
 </section>
 <section><h2>6. Development &amp; Feedback</h2>
-<p>This is the current <strong>v1 algorithm</strong>, not a finished or perfect measure of skill. In particular, Net and K/D have a strong influence on the individual performance adjustment. As more matches are played, we want to evaluate the results and fine-tune the balance between winning and individual contribution.</p>
+<p>Team Games now use <strong>Team Elo v2</strong>, while <strong>1v1 continues to use v1</strong>. The system is still evolving, and ratings are not a perfect measure of skill. As more matches are played, we will evaluate the results, the balance between winning and individual contribution, and the possibility of including reliable Quad and Mega pickup statistics in a future update.</p>
 <p>Feedback from the Quake 2 community is welcome.</p>
 </section>
 </main>
