@@ -49,16 +49,31 @@ export async function handler(event) {
     }
     const ordered = [...recordings.values()].sort((a, b) => a.start - b.start);
     const candidates = [];
-    for (let i = 0; i < ordered.length; i++) {
-      const recording = ordered[i];
-      if (recording.map !== q.map.toLowerCase()) continue;
-      const delta = end - recording.start;
-      if (delta < 0 || delta > MAX_MATCH_MINUTES * 60000) continue;
-      // If another recording started before this match ended, the earlier
-      // recording is not a safe match. Check all maps, not just this map.
-      const next = ordered[i + 1];
-      if (next && next.start <= end) continue;
-      candidates.push({ filename: recording.filename, delta });
+    if (server.prefix === 'PFDE') {
+      // On DE, a new demo starts at the end of the previous match.
+      // Match saved_at to that boundary, then link to the PREVIOUS recording.
+      // A tight tolerance avoids guessing when recordings are missing.
+      const BOUNDARY_TOLERANCE_MS = 2 * 60000;
+      for (let i = 0; i + 1 < ordered.length; i++) {
+        const recording = ordered[i];
+        const next = ordered[i + 1];
+        if (recording.map !== q.map.toLowerCase()) continue;
+        const duration = next.start - recording.start;
+        if (duration <= 0 || duration > MAX_MATCH_MINUTES * 60000) continue;
+        if (Math.abs(end - next.start) > BOUNDARY_TOLERANCE_MS) continue;
+        candidates.push({ filename: recording.filename, delta: end - recording.start });
+      }
+    } else {
+      // Keep existing DE3 behavior unchanged.
+      for (let i = 0; i < ordered.length; i++) {
+        const recording = ordered[i];
+        if (recording.map !== q.map.toLowerCase()) continue;
+        const delta = end - recording.start;
+        if (delta < 0 || delta > MAX_MATCH_MINUTES * 60000) continue;
+        const next = ordered[i + 1];
+        if (next && next.start <= end) continue;
+        candidates.push({ filename: recording.filename, delta });
+      }
     }
     const unique = [...new Map(candidates.map(m => [m.filename, m])).values()];
     return respond({
