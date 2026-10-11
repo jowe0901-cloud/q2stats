@@ -241,7 +241,7 @@ async function initMatch(){
  // Optional, read-only demo link; hidden unless the archive returns one unambiguous match.
  const demoQuery=new URLSearchParams({server:String(m.server||""),map:String(m.map||""),saved_at:String(m.saved_at||"")});
  loadJson(`/.netlify/functions/demo-lookup?${demoQuery}`,{}).then(data=>{
-  if(!data?.demo||!/^https:\/\/pfl\.gr\/mvd\/de3\/PFDE3_[0-9]{8}-[0-9]{6}_[a-z0-9_-]+\.mvd2$/i.test(data.demo))return;
+  if(!data?.demo||!/^https:\/\/pfl\.gr\/mvd\/(?:de\/PFDE|de3\/PFDE3)_[0-9]{8}-[0-9]{6}_[a-z0-9_-]+\.mvd2$/i.test(data.demo))return;
    const a=document.getElementById("demoDownload");if(!a)return;
    a.href=data.demo;
    a.hidden=false;
