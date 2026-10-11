@@ -86,7 +86,7 @@
 
       <article class="panel">
         <div class="panel-head"><div><span class="eyebrow">ELO</span><h2>Recalculate Elo</h2></div></div>
-        <p class="admin-note">Rebuild Team and 1v1 Elo from the full match history. Linked aliases use the profile's public main nickname.</p>
+        <p class="admin-note">Rebuild Team Elo v2 and 1v1 Elo v1 from the full match history. Linked aliases use the profile's public main nickname.</p>
         <div class="setup-actions">
           <button class="admin-btn" id="rebuildEloBtn" type="button">Recalculate Elo</button>
           <span class="admin-note" id="eloStatus">Run this after merging or changing player identities.</span>
@@ -438,12 +438,12 @@ document.getElementById("checkMatchesBtn").onclick=async()=>{
 
 document.getElementById("rebuildEloBtn").onclick=async()=>{
   if(!adminKey){setStatus("Connect with the admin key first.","bad");return}
-  if(!confirm("Recalculate all Team and 1v1 Elo from the complete match history?\n\nUse this after merging or changing player identities."))return;
+  if(!confirm("Recalculate Team Elo v2 and 1v1 Elo v1 from the complete match history?\n\nUse this after merging or changing player identities."))return;
   const btn=document.getElementById("rebuildEloBtn");
   const eloStatus=document.getElementById("eloStatus");
   btn.disabled=true;eloStatus.textContent="Recalculating Elo…";
   try{
-    const r=await fetch(ELO_REBUILD_API,{method:"POST",cache:"no-store",headers:{"x-q2stats-admin-key":adminKey}});
+    const r=await fetch(ELO_REBUILD_API,{method:"POST",cache:"no-store",headers:{"x-q2stats-admin-key":adminKey,"x-q2stats-confirm":"REBUILD_ALL_ELO"}});
     let out={};try{out=await r.json()}catch{}
     if(!r.ok)throw new Error(out.error||`HTTP ${r.status}`);
     eloStatus.textContent=`Done · ${out.matches_used??0} matches · ${out.ratings_written??0} ratings · ${out.history_written??0} history rows`;

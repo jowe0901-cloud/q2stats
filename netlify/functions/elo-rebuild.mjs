@@ -45,7 +45,7 @@ export default async (request) => {
 
     const ratings={team:new Map(), "1v1":new Map()};
     const history=[];
-    let skipped=0, used=0, oneVOne=0;
+    let skipped=0, used=0, teamMatches=0, oneVOne=0;
     const get=(type,name)=>{
       if(!ratings[type].has(name)) ratings[type].set(name,{rating:START_ELO,matches:0,wins:0,losses:0});
       return ratings[type].get(name);
@@ -54,37 +54,33 @@ export default async (request) => {
     for(const m of mr.rows){
       const result=calculateMatchElo(m,by.get(m.match_id)||[],get);
       if(!result){ skipped++; continue; }
-      if(result.type === "1v1") { oneVOne++; continue; }
+      if(result.type === "1v1") oneVOne++;
+      else teamMatches++;
       history.push(...result.changes);
       used++;
     }
 
-    // Explicit preview by default. Nothing is written unless confirmed.
-    const url = new URL(request.url);
-    const commit = url.searchParams.get("commit") === "yes" &&
-                   request.headers.get("x-q2stats-confirm") === "REBUILD_TEAM_V2";
-    const top10 = [...ratings.team.entries()]
-      .map(([player, r]) => ({player, ...r}))
-      .sort((a,b) => b.rating-a.rating).slice(0,10);
-    if (!commit) {
+    // Single admin action: Team v2 and 1v1 v1 in one transaction.
+    if (request.headers.get("x-q2stats-confirm") !== "REBUILD_ALL_ELO") {
       await client.query("ROLLBACK");
-      return json(200,{status:"preview",version:VERSION,matches_read:mr.rows.length,
-        team_matches_used:used,one_v_one_untouched:oneVOne,skipped,
-        team_players:ratings.team.size,history_rows:history.length,top10,
-        commit_instructions:"POST ?commit=yes with x-q2stats-confirm: REBUILD_TEAM_V2"});
+      return json(400,{status:"error",error:"Missing rebuild confirmation"});
     }
-    // Never touch v1 or any 1v1 rows, including v2 if they exist.
-    await client.query("DELETE FROM elo_history WHERE algorithm_version=$1 AND elo_type='team'",[VERSION]);
-    await client.query("DELETE FROM elo_ratings WHERE algorithm_version=$1 AND elo_type='team'",[VERSION]);
+    await client.query(
+      "DELETE FROM elo_history WHERE (elo_type='team' AND algorithm_version=$1) OR (elo_type='1v1' AND algorithm_version='v1')",
+      [VERSION]
+    );
+    await client.query(
+      "DELETE FROM elo_ratings WHERE (elo_type='team' AND algorithm_version=$1) OR (elo_type='1v1' AND algorithm_version='v1')",
+      [VERSION]
+    );
 
     for(const [type,map] of Object.entries(ratings)){
-      if(type!=="team") continue;
       for(const [name,r] of map){
         await client.query(
           `INSERT INTO elo_ratings
            (player_name,elo_type,rating,matches,wins,losses,algorithm_version,updated_at)
            VALUES($1,$2,$3,$4,$5,$6,$7,NOW())`,
-          [name,type,r.rating,r.matches,r.wins,r.losses,VERSION]
+          [name,type,r.rating,r.matches,r.wins,r.losses,type==="team"?VERSION:"v1"]
         );
       }
     }
@@ -93,15 +89,15 @@ export default async (request) => {
         `INSERT INTO elo_history
          (match_id,player_name,elo_type,team,old_elo,elo_change,new_elo,algorithm_version)
          VALUES($1,$2,$3,$4,$5,$6,$7,$8)`,
-        [...h,VERSION]
+        [...h,h[2]==="team"?VERSION:"v1"]
       );
     }
     await client.query("COMMIT");
 
     return json(200,{
-      status:"ok",algorithm_version:VERSION,
-      matches_read:mr.rows.length,matches_used:used,skipped,
-      ratings_written:ratings.team.size,
+      status:"ok",team_algorithm_version:VERSION,one_v_one_algorithm_version:"v1",
+      matches_read:mr.rows.length,matches_used:used,team_matches_used:teamMatches,one_v_one_matches_used:oneVOne,skipped,
+      ratings_written:ratings.team.size+ratings["1v1"].size,
       team_players:ratings.team.size,one_v_one_players:ratings["1v1"].size,
       history_written:history.length
     });
