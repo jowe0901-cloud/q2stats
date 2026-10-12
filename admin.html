@@ -17,6 +17,8 @@
     .admin-status{margin-top:12px;padding:10px 12px;border:1px solid var(--line);border-radius:10px;color:var(--muted);font-size:12px}
     .admin-status.good{color:var(--good)}.admin-status.bad{color:var(--bad)}
     .admin-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:18px}
+    .profiles-bottom{grid-column:1/-1;min-width:0}
+    .profiles-bottom .panel{margin-bottom:0}
     .admin-list{max-height:620px;overflow:auto;border:1px solid var(--line);border-radius:12px}
     .admin-player{display:grid;grid-template-columns:auto 1fr auto;gap:10px;align-items:center;padding:10px 12px;border-bottom:1px solid #1d2430}
     .admin-player:last-child{border-bottom:0}.admin-player:hover{background:#161d27}
@@ -28,6 +30,15 @@
     .profile-row{padding:10px 0;border-bottom:1px solid #1d2430}.profile-row:last-child{border-bottom:0}
     .profile-row strong{display:block}.profile-row small{color:var(--muted)}
     .profile-head{display:flex;justify-content:space-between;gap:10px;align-items:center}
+    .profile-tools{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin:12px 0}
+    .profile-tools .admin-input{flex:1;min-width:150px}
+    .profile-summary{width:100%;display:flex;justify-content:space-between;align-items:center;gap:10px;background:transparent;color:var(--text);border:0;padding:11px 0;text-align:left;cursor:pointer;font:inherit}
+    .profile-summary:hover strong{color:var(--accent)}
+    .profile-row{padding:0 12px}
+    .profile-row .profile-detail{padding:0 0 12px}
+    .profile-row:not(.open) .profile-detail{display:none}
+    .profile-chevron{font-size:16px;color:var(--muted);margin-left:8px}
+    .profile-row.open .profile-chevron{transform:rotate(90deg)}
     .profile-aliases{display:flex;gap:7px;flex-wrap:wrap;margin-top:9px}
     .alias-chip{display:inline-flex;align-items:center;gap:7px;background:#0d1117;border:1px solid #1d2530;border-radius:999px;padding:5px 8px;font-size:12px}
     .alias-remove{border:0;background:transparent;color:var(--bad);cursor:pointer;font-weight:900;padding:0 2px}
@@ -94,11 +105,6 @@
       </article>
 
       <article class="panel">
-        <div class="panel-head"><div><span class="eyebrow">PROFILES</span><h2>Existing profiles</h2></div></div>
-        <div id="profiles"><div class="empty">No profiles yet.</div></div>
-      </article>
-
-      <article class="panel">
         <div class="panel-head"><div><span class="eyebrow">MATCH CLEANUP</span><h2>Check suspected duplicates</h2></div></div>
         <p class="admin-note">Paste suspected match IDs to verify exactly what exists in the production database. Checked matches can be deleted one at a time after an explicit confirmation. Recalculate Elo once after all duplicate deletions are finished.</p>
         <textarea class="admin-input" id="matchCheckIds" rows="7" style="width:100%;margin-top:10px" placeholder="One match ID per line, or separated by commas"></textarea>
@@ -140,6 +146,18 @@
         </div>
       </article>
     </div>
+    <div class="profiles-bottom">
+      <article class="panel">
+        <div class="panel-head"><div><span class="eyebrow">PROFILES</span><h2>Existing profiles</h2></div></div>
+        <div class="profile-tools">
+          <input class="admin-input" id="profileSearch" type="search" placeholder="Search MAIN or alias…" aria-label="Search profiles">
+          <select class="admin-input" id="profileSort" aria-label="Sort profiles"><option value="az">MAIN A–Z</option><option value="za">MAIN Z–A</option><option value="aliases">Most aliases</option></select>
+        </div>
+        <p class="admin-note" id="profileCount"></p>
+        <div id="profiles"><div class="empty">No profiles yet.</div></div>
+      </article>
+
+    </div>
   </section>
 </main>
 
@@ -151,6 +169,7 @@ const SETUP_API="/api/admin/player-setup";
 const ELO_REBUILD_API="/api/admin/elo-rebuild";
 const ADMIN_MATCHES_API="/api/admin/matches";
 let adminKey="", data={profiles:[],players:[]}, selected=new Set(), primary="";
+let expandedProfileIds=new Set();
 
 const esc=s=>String(s??"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[m]));
 const statusEl=document.getElementById("status");
@@ -220,15 +239,21 @@ function renderSelection(){
 }
 
 function renderProfiles(){
-  const ps=data.profiles||[];
+  const all=data.profiles||[];
+  const q=document.getElementById("profileSearch").value.trim().toLocaleLowerCase();
+  const sort=document.getElementById("profileSort").value;
+  const ps=all.filter(p=>!q||String(p.primary_name||"").toLocaleLowerCase().includes(q)||(p.aliases||[]).some(a=>String(a).toLocaleLowerCase().includes(q)));
+  ps.sort((a,b)=>sort==="aliases"?(b.aliases||[]).length-(a.aliases||[]).length||String(a.primary_name).localeCompare(String(b.primary_name)):sort==="za"?String(b.primary_name).localeCompare(String(a.primary_name)):String(a.primary_name).localeCompare(String(b.primary_name)));
+  document.getElementById("profileCount").textContent=`Showing ${ps.length} of ${all.length} profiles`;
   const el=document.getElementById("profiles");
   el.innerHTML=ps.length?ps.map(p=>{
     const aliases=p.aliases||[];
-    return `<div class="profile-row" data-profile="${esc(p.id)}">
-      <div class="profile-head">
-        <div><strong>${esc(p.primary_name)}</strong><small>Profile ${esc(p.id)}</small></div>
-        <span class="pill">${aliases.length} nickname${aliases.length===1?"":"s"}</span>
-      </div>
+    return `<div class="profile-row ${expandedProfileIds.has(String(p.id))?"open":""}" data-profile="${esc(p.id)}">
+      <button class="profile-summary" type="button" aria-expanded="${expandedProfileIds.has(String(p.id))}" data-toggle-profile>
+        <span><strong>${esc(p.primary_name)}</strong><small style="display:block;color:var(--muted)">Profile ${esc(p.id)}</small></span>
+        <span style="display:flex;align-items:center"><span class="pill">${aliases.length} nickname${aliases.length===1?"":"s"}</span><span class="profile-chevron">›</span></span>
+      </button>
+      <div class="profile-detail">
       <div class="profile-aliases">${aliases.map(n=>`<span class="alias-chip">${esc(n)}${n===p.primary_name?` <b>MAIN</b>`:` <button class="admin-btn" type="button" data-primary="${esc(n)}" style="padding:3px 7px;font-size:11px">Set MAIN</button><button class="alias-remove" type="button" data-remove="${esc(n)}" title="Remove alias">×</button>`}</span>`).join("")||'<span class="admin-note">No aliases</span>'}</div>
       <div class="profile-actions">
         <input class="admin-input" data-alias-input placeholder="Add existing nickname…">
@@ -239,12 +264,19 @@ function renderProfiles(){
         <input class="admin-input" data-custom-primary placeholder="New MAIN nickname (any name)…">
         <button class="admin-btn" type="button" data-set-custom-primary>Set custom MAIN</button>
       </div>
+      </div>
     </div>`;
   }).join(""):'<div class="empty">No profiles yet.</div>';
 
   el.querySelectorAll(".profile-row").forEach(row=>{
     const profileId=Number(row.dataset.profile);
     const profile=ps.find(p=>Number(p.id)===profileId);
+    row.querySelector("[data-toggle-profile]").onclick=()=>{
+      const id=String(profileId);
+      if(expandedProfileIds.has(id))expandedProfileIds.delete(id);else expandedProfileIds.add(id);
+      row.classList.toggle("open",expandedProfileIds.has(id));
+      row.querySelector("[data-toggle-profile]").setAttribute("aria-expanded",String(expandedProfileIds.has(id)));
+    };
     const input=row.querySelector("[data-alias-input]");
     const addBtn=row.querySelector("[data-add-alias]");
 
@@ -463,6 +495,8 @@ document.getElementById("connectBtn").onclick=async()=>{
 };
 
 document.getElementById("search").oninput=renderPlayers;
+document.getElementById("profileSearch").oninput=renderProfiles;
+document.getElementById("profileSort").onchange=renderProfiles;
 document.getElementById("clearBtn").onclick=()=>{selected.clear();primary="";document.getElementById("customMain").value="";renderPlayers();renderSelection()};
 
 document.getElementById("createBtn").onclick=async()=>{
