@@ -53,6 +53,22 @@ async function saveWeapons(db,matchId,players){
  return saved;
 }
 
+
+// Admin-only identity observations. Never returned by public match endpoints.
+async function recordOpenTDMIdentities(db, matchId, players) {
+  for (const p of players || []) {
+    const id = typeof p?.stats_id === "string" ? p.stats_id.trim() : "";
+    const nickname = typeof p?.name === "string" ? p.name.trim() : "";
+    if (!id || !nickname || id.length > 256 || nickname.length > 128) continue;
+    await db.sql`
+      INSERT INTO opentdm_identity_observations(stats_id,nickname,last_match_id)
+      VALUES(${id},${nickname},${matchId})
+      ON CONFLICT(stats_id,nickname) DO UPDATE SET
+        last_seen=NOW(), last_match_id=EXCLUDED.last_match_id
+    `;
+  }
+}
+
 async function profileIdForNickname(db,nickname){
  const name=String(nickname??"").trim();
  if(!name)return null;
@@ -165,6 +181,7 @@ export default async(request)=>{
      ? body.server.trim()
      : server.name;
   if(!body.match_id||!Array.isArray(body.players)||!body.players.length)return json(400,{status:"error",error:"match_id and players are required"});
+  await recordOpenTDMIdentities(db,body.match_id,body.players);
   const existing=await db.sql`SELECT id FROM matches WHERE match_id=${body.match_id} LIMIT 1`;
   if(existing.length){
    const counts=await db.sql`SELECT COUNT(*)::int AS count FROM match_players WHERE match_id=${body.match_id}`;

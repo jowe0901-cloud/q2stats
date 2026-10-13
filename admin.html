@@ -158,12 +158,57 @@
       </article>
 
     </div>
+
+    <article class="panel profiles-bottom" id="opentdmIdentitiesPanel">
+      <div class="panel-head"><div><span class="eyebrow">OPENTDM · PRIVATE</span><h2>Pending identity matches</h2></div></div>
+      <p class="admin-note">New nicknames with an existing stats_id require approval. Approve adds an alias and links historical matches; rebuild Elo separately. stats_id is visible only here.</p>
+      <button class="admin-btn" type="button" id="refreshIdentityBtn">Refresh suggestions</button>
+      <div id="opentdmIdentityStatus" class="admin-note" style="margin:12px 0">Not loaded.</div>
+      <div id="opentdmIdentityList"></div>
+    </article>
   </section>
 </main>
 
 <footer>Q2Stats Beta · Admin</footer>
 
 <script>
+
+const IDENTITIES_API="/api/admin/opentdm-identities";
+async function loadIdentitySuggestions(){
+ const list=document.getElementById("opentdmIdentityList"), status=document.getElementById("opentdmIdentityStatus");
+ status.textContent="Loading…";
+ try{
+  const r=await fetch(IDENTITIES_API,{headers:{"x-q2stats-admin-key":adminKey},cache:"no-store"});
+  const result=await r.json();if(!r.ok)throw Error(result.error||`HTTP ${r.status}`);
+  status.textContent=`${result.pending.length} pending suggestion(s)`;
+  list.replaceChildren();
+  for(const entry of result.pending){
+   const row=document.createElement("div");row.className="profile-row";
+   const desc=document.createElement("div");
+   const strong=document.createElement("strong");strong.textContent=`${entry.nickname} → ${entry.suggested_main}`;
+   const small=document.createElement("small");small.textContent=`stats_id: ${entry.stats_id} · last seen: ${entry.last_seen||"unknown"}`;
+   desc.append(strong,small);row.append(desc);
+   const actions=document.createElement("div");actions.className="profile-actions";
+   for(const action of ["approve","reject"]){
+    const button=document.createElement("button");button.className="admin-btn"+(action==="approve"?" primary":"");
+    button.textContent=action==="approve"?"Approve":"Reject";
+    button.onclick=async()=>{
+     if(!confirm(`${action.toUpperCase()} ${entry.nickname} → ${entry.suggested_main}?`))return;
+     button.disabled=true;
+     try{
+      const r=await fetch(IDENTITIES_API,{method:"POST",headers:{"x-q2stats-admin-key":adminKey,"content-type":"application/json"},body:JSON.stringify({action,nickname:entry.nickname,stats_id:entry.stats_id,profile_id:entry.suggested_profile_id})});
+      const result=await r.json();if(!r.ok)throw Error(result.error||`HTTP ${r.status}`);
+      await load();await loadIdentitySuggestions();
+      setStatus(action==="approve"?"Identity approved. Recalculate Elo when ready.":"Identity suggestion rejected.","good");
+     }catch(e){setStatus(e.message,"bad");button.disabled=false}
+    };actions.append(button);
+   }
+   row.append(actions);list.append(row);
+  }
+ }catch(e){status.textContent=`Identity suggestions unavailable: ${e.message}`}
+}
+document.getElementById("refreshIdentityBtn").onclick=loadIdentitySuggestions;
+
 const API="/api/admin/players";
 const SETUP_API="/api/admin/player-setup";
 const ELO_REBUILD_API="/api/admin/elo-rebuild";
@@ -195,7 +240,7 @@ async function load(){
   data=await api();
   document.getElementById("adminArea").hidden=false;
   setStatus(`Connected · ${data.players.length} nicknames · ${data.profiles.length} profiles`,"good");
-  renderPlayers();renderSelection();renderProfiles();renderSetupProfiles();
+  renderPlayers();renderSelection();renderProfiles();renderSetupProfiles();loadIdentitySuggestions();
 }
 
 function renderPlayers(){
