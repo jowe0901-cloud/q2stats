@@ -7,6 +7,19 @@ export default async function(request){
  const db=getDatabase();
  try{
   if(request.method==="GET"){
+   if(new URL(request.url).searchParams.get("view")==="all"){
+    const rows=await db.sql`
+      SELECT o.stats_id,o.nickname,o.first_seen,o.last_seen,o.last_match_id,
+             a.profile_id,p.primary_name AS profile_main,
+             COALESCE(m.cnt,0)::int AS matches
+      FROM opentdm_identity_observations o
+      LEFT JOIN player_aliases a ON a.nickname=o.nickname
+      LEFT JOIN player_profiles p ON p.id=a.profile_id
+      LEFT JOIN (SELECT name,COUNT(*) AS cnt FROM match_players GROUP BY name) m ON m.name=o.nickname
+      ORDER BY o.last_seen DESC,o.stats_id,o.nickname LIMIT 3000
+    `;
+    return respond({status:"ok",observations:rows});
+   }
    const rows=await db.sql`
     SELECT o.stats_id,o.nickname,o.last_seen,o.last_match_id,
            p.id AS suggested_profile_id,p.primary_name AS suggested_main,
@@ -30,14 +43,16 @@ export default async function(request){
   if(request.method!=="POST")return respond({error:"Method not allowed"},405);
   const body=await request.json();
   const nickname=clean(body.nickname),statsId=clean(body.stats_id),profileId=Number(body.profile_id);
-  if(!["approve","reject"].includes(body.action)||!nickname||!statsId||!Number.isSafeInteger(profileId)||profileId<1)return respond({error:"Invalid request"},400);
+  if(!["approve","reject","link"].includes(body.action)||!nickname||!statsId||!Number.isSafeInteger(profileId)||profileId<1)return respond({error:"Invalid request"},400);
   const client=await db.pool.connect();
   try{
    await client.query("BEGIN");
    const observed=await client.query('SELECT 1 FROM opentdm_identity_observations WHERE stats_id=$1 AND nickname=$2 FOR UPDATE',[statsId,nickname]);
    if(!observed.rowCount)throw Error("Identity observation not found");
    const known=await client.query(`SELECT 1 FROM opentdm_identity_observations o JOIN player_aliases a ON a.nickname=o.nickname WHERE o.stats_id=$1 AND a.profile_id=$2 AND o.nickname<>$3 LIMIT 1`,[statsId,profileId,nickname]);
-   if(!known.rowCount)throw Error("Suggested identity is no longer linked to this profile");
+   if(body.action!=="link"&&!known.rowCount)throw Error("Suggested identity is no longer linked to this profile");
+   const profile=await client.query("SELECT id FROM player_profiles WHERE id=$1",[profileId]);
+   if(!profile.rowCount)throw Error("Profile not found");
    const conflicts=await client.query(`SELECT 1 FROM opentdm_identity_observations o JOIN player_aliases a ON a.nickname=o.nickname WHERE o.stats_id=$1 AND a.profile_id<>$2 LIMIT 1`,[statsId,profileId]);
    if(conflicts.rowCount)throw Error("Conflicting profiles for this stats_id; resolve manually");
    if(body.action==="reject"){

@@ -160,9 +160,13 @@
     </div>
 
     <article class="panel profiles-bottom" id="opentdmIdentitiesPanel">
-      <div class="panel-head"><div><span class="eyebrow">OPENTDM · PRIVATE</span><h2>Pending identity matches</h2></div></div>
-      <p class="admin-note">New nicknames with an existing stats_id require approval. Approve adds an alias and links historical matches; rebuild Elo separately. stats_id is visible only here.</p>
-      <button class="admin-btn" type="button" id="refreshIdentityBtn">Refresh suggestions</button>
+      <div class="panel-head"><div><span class="eyebrow">OPENTDM · ADMIN ONLY</span><h2>Identity Manager</h2></div></div>
+      <p class="admin-note">Grouped by stats_id. Review nicknames individually before linking them to an existing profile. Nothing is merged automatically.</p>
+      <div class="profile-tools">
+        <input class="admin-input" id="identitySearch" type="search" placeholder="Search stats_id, nickname or profile…">
+        <select class="admin-input" id="identityFilter"><option value="all">All identities</option><option value="unlinked">Unlinked nicknames</option><option value="linked">Linked nicknames</option></select>
+        <button class="admin-btn" type="button" id="refreshIdentityBtn">Refresh</button>
+      </div>
       <div id="opentdmIdentityStatus" class="admin-note" style="margin:12px 0">Not loaded.</div>
       <div id="opentdmIdentityList"></div>
     </article>
@@ -174,40 +178,72 @@
 <script>
 
 const IDENTITIES_API="/api/admin/opentdm-identities";
+let identityObservations=[], identityExpanded=new Set();
+async function identityRequest(method="GET",body){
+ const url=method==="GET"?IDENTITIES_API+"?view=all":IDENTITIES_API;
+ const r=await fetch(url,{method,cache:"no-store",headers:{"x-q2stats-admin-key":adminKey,...(body?{"content-type":"application/json"}:{})},body:body?JSON.stringify(body):undefined});
+ const result=await r.json();if(!r.ok)throw Error(result.error||`HTTP ${r.status}`);return result;
+}
 async function loadIdentitySuggestions(){
- const list=document.getElementById("opentdmIdentityList"), status=document.getElementById("opentdmIdentityStatus");
- status.textContent="Loading…";
- try{
-  const r=await fetch(IDENTITIES_API,{headers:{"x-q2stats-admin-key":adminKey},cache:"no-store"});
-  const result=await r.json();if(!r.ok)throw Error(result.error||`HTTP ${r.status}`);
-  status.textContent=`${result.pending.length} pending suggestion(s)`;
-  list.replaceChildren();
-  for(const entry of result.pending){
-   const row=document.createElement("div");row.className="profile-row";
-   const desc=document.createElement("div");
-   const strong=document.createElement("strong");strong.textContent=`${entry.nickname} → ${entry.suggested_main}`;
-   const small=document.createElement("small");small.textContent=`stats_id: ${entry.stats_id} · last seen: ${entry.last_seen||"unknown"}`;
-   desc.append(strong,small);row.append(desc);
-   const actions=document.createElement("div");actions.className="profile-actions";
-   for(const action of ["approve","reject"]){
-    const button=document.createElement("button");button.className="admin-btn"+(action==="approve"?" primary":"");
-    button.textContent=action==="approve"?"Approve":"Reject";
-    button.onclick=async()=>{
-     if(!confirm(`${action.toUpperCase()} ${entry.nickname} → ${entry.suggested_main}?`))return;
-     button.disabled=true;
-     try{
-      const r=await fetch(IDENTITIES_API,{method:"POST",headers:{"x-q2stats-admin-key":adminKey,"content-type":"application/json"},body:JSON.stringify({action,nickname:entry.nickname,stats_id:entry.stats_id,profile_id:entry.suggested_profile_id})});
-      const result=await r.json();if(!r.ok)throw Error(result.error||`HTTP ${r.status}`);
-      await load();await loadIdentitySuggestions();
-      setStatus(action==="approve"?"Identity approved. Recalculate Elo when ready.":"Identity suggestion rejected.","good");
-     }catch(e){setStatus(e.message,"bad");button.disabled=false}
-    };actions.append(button);
+ const status=document.getElementById("opentdmIdentityStatus");
+ if(!adminKey)return;
+ status.textContent="Loading identities…";
+ try{const result=await identityRequest();identityObservations=result.observations||[];renderIdentities()}
+ catch(e){status.textContent=`Identity manager unavailable: ${e.message}`}
+}
+function renderIdentities(){
+ const list=document.getElementById("opentdmIdentityList"),status=document.getElementById("opentdmIdentityStatus");
+ const q=document.getElementById("identitySearch").value.trim().toLowerCase(),filter=document.getElementById("identityFilter").value;
+ const groups=new Map();
+ for(const o of identityObservations){if(!groups.has(o.stats_id))groups.set(o.stats_id,[]);groups.get(o.stats_id).push(o)}
+ const shown=[...groups].filter(([id,rows])=>{
+  const eligible=rows.some(o=>filter==="all"||(filter==="linked"?o.profile_id!=null:o.profile_id==null));
+  return eligible&&(!q||id.toLowerCase().includes(q)||rows.some(o=>o.nickname.toLowerCase().includes(q)||String(o.profile_main||"").toLowerCase().includes(q)));
+ });
+ status.textContent=`${shown.length} stats_id · ${identityObservations.length} observed nickname records`;
+ list.replaceChildren();
+ if(!shown.length){list.textContent="No matching identities.";return}
+ for(const [id,rows] of shown){
+  const wrap=document.createElement("div");wrap.className="profile-row";
+  const head=document.createElement("button");head.type="button";head.className="profile-summary";
+  const profiles=[...new Set(rows.filter(r=>r.profile_main).map(r=>r.profile_main))];
+  const latest=rows.reduce((v,r)=>!v||r.last_seen>v?r.last_seen:v,"");
+  const summary=document.createElement("span");
+  const name=document.createElement("strong");name.textContent=`stats_id: ${id}`;
+  const meta=document.createElement("small");meta.textContent=`${rows.length} nickname(s) · ${profiles.length?profiles.join(", "):"No linked profile"} · last seen ${latest?new Date(latest).toLocaleString():"unknown"}`;
+  summary.append(name,meta);head.append(summary);
+  const arrow=document.createElement("span");arrow.textContent=identityExpanded.has(id)?"▾":"▸";head.append(arrow);
+  head.onclick=()=>{identityExpanded.has(id)?identityExpanded.delete(id):identityExpanded.add(id);renderIdentities()};wrap.append(head);
+  if(identityExpanded.has(id)){
+   for(const o of rows){
+    const item=document.createElement("div");item.className="selection-row";item.style.marginBottom="8px";item.style.flexWrap="wrap";
+    const info=document.createElement("div");
+    const nick=document.createElement("strong");nick.textContent=o.nickname;
+    const detail=document.createElement("small");detail.textContent=`${o.matches} match rows · ${o.profile_main?"Linked to "+o.profile_main:"Unlinked"} · last match ${o.last_match_id||"unknown"}`;
+    info.append(nick,detail);item.append(info);
+    if(o.profile_id==null){
+     const sel=document.createElement("select");sel.className="admin-input";
+     const empty=document.createElement("option");empty.value="";empty.textContent="Choose profile…";sel.append(empty);
+     for(const p of [...data.profiles].sort((a,b)=>a.primary_name.localeCompare(b.primary_name))){const opt=document.createElement("option");opt.value=p.id;opt.textContent=p.primary_name;sel.append(opt)}
+     const btn=document.createElement("button");btn.className="admin-btn";btn.textContent="Review & link";
+     btn.onclick=async()=>{
+      if(!sel.value)return setStatus("Choose a profile first.","bad");
+      const target=data.profiles.find(p=>String(p.id)===sel.value);
+      if(!confirm(`Link nickname "${o.nickname}" (stats_id ${id}) to profile "${target.primary_name}"?\n\nOnly this nickname will be linked. Historical match names remain unchanged. Recalculate Elo afterwards.`))return;
+      btn.disabled=true;
+      try{await identityRequest("POST",{action:"link",nickname:o.nickname,stats_id:id,profile_id:Number(sel.value)});await load();setStatus(`Linked ${o.nickname} to ${target.primary_name}. Recalculate Elo when ready.`,"good")}
+      catch(e){setStatus(e.message,"bad");btn.disabled=false}
+     };item.append(sel,btn);
+    }
+    wrap.append(item);
    }
-   row.append(actions);list.append(row);
   }
- }catch(e){status.textContent=`Identity suggestions unavailable: ${e.message}`}
+  list.append(wrap);
+ }
 }
 document.getElementById("refreshIdentityBtn").onclick=loadIdentitySuggestions;
+document.getElementById("identitySearch").oninput=renderIdentities;
+document.getElementById("identityFilter").onchange=renderIdentities;
 
 const API="/api/admin/players";
 const SETUP_API="/api/admin/player-setup";
