@@ -1,87 +1,26 @@
-// Read-only PacketFlinger DE / DE3 demo discovery. Never changes match records or ratings.
+// Verify ONLY the exact MVD2 filename supplied by OpenTDM; never infer by timestamps.
 const SERVERS = {
   'PacketFlinger.com ~ OpenTDM ~ Germany': { archive: 'https://pfl.gr/mvd/de/', prefix: 'PFDE' },
   'PacketFlinger.com ~ OpenTDM ~ Germany #3': { archive: 'https://pfl.gr/mvd/de3/', prefix: 'PFDE3' }
 };
-const FIRST_LOCAL_DAY = '2026-10-09';
-const MAX_MATCH_MINUTES = 25;
-const respond = (body, statusCode = 200) => ({ statusCode, headers: { 'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-store' }, body: JSON.stringify(body) });
-
-export async function handler(event) {
-  const q = event.queryStringParameters || {};
-  const server = SERVERS[q.server];
-  if (!server) return respond({ demo: null, reason: 'server_mismatch' });
-  if (!/^[a-z0-9_-]{1,40}$/i.test(q.map || '')) return respond({ demo: null, reason: 'invalid_map' });
-  const end = Date.parse(q.saved_at || '');
-  if (!Number.isFinite(end)) return respond({ demo: null, reason: 'invalid_saved_at' });
-  // Compare using Swedish local calendar date, including the Oct 2026 DST change.
-  const swedishDate = new Intl.DateTimeFormat('en-CA', { timeZone: 'Europe/Stockholm', year: 'numeric', month: '2-digit', day: '2-digit' }).format(new Date(end));
-  if (swedishDate < FIRST_LOCAL_DAY) return respond({ demo: null, reason: 'before_start_date' });
-
-  try {
-    const controller = new AbortController();
-    const timeout = setTimeout(() => controller.abort(), 6000);
-    let html;
-    try {
-      const r = await fetch(server.archive, { signal: controller.signal, headers: { accept: 'text/html' } });
-      if (!r.ok) throw new Error('archive unavailable');
-      html = await r.text();
-    } finally { clearTimeout(timeout); }
-
-    // PacketFlinger filename date/time is treated as Europe/Stockholm local time.
-    // Convert local wall-clock time to UTC by testing valid offsets and round-tripping.
-    const formatter = new Intl.DateTimeFormat('sv-SE', { timeZone: 'Europe/Stockholm', year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit' });
-    const startUtc = (day, clock) => {
-      const expected = `${day.slice(0, 4)}-${day.slice(4, 6)}-${day.slice(6, 8)} ${clock.slice(0, 2)}:${clock.slice(2, 4)}`;
-      const localAsUtc = Date.UTC(+day.slice(0, 4), +day.slice(4, 6) - 1, +day.slice(6, 8), +clock.slice(0, 2), +clock.slice(2, 4), +clock.slice(4, 6));
-      return [2, 1].map(h => localAsUtc - h * 3600000).filter(ms => formatter.format(new Date(ms)).replace(',', '') === expected);
-    };
-    // Use all maps: the next recording marks the boundary of the previous one.
-    // This is an inferred boundary, not a verified demo end time.
-    const recordings = new Map();
-    const re = /(?:PFDE3|PFDE)_(\d{8})-(\d{6})_([a-z0-9_-]+)\.mvd2/gi;
-    for (const hit of html.matchAll(re)) {
-      const [filename, day, clock, map] = hit;
-      if (day < '20261009' || !filename.toUpperCase().startsWith(server.prefix + '_')) continue;
-      for (const start of startUtc(day, clock)) {
-        recordings.set(`${filename}:${start}`, { filename, map: map.toLowerCase(), start });
-      }
-    }
-    const ordered = [...recordings.values()].sort((a, b) => a.start - b.start);
-    const candidates = [];
-    if (server.prefix === 'PFDE') {
-      // On DE, a new demo starts at the end of the previous match.
-      // Match saved_at to that boundary, then link to the PREVIOUS recording.
-      // A tight tolerance avoids guessing when recordings are missing.
-      const BOUNDARY_TOLERANCE_MS = 2 * 60000;
-      for (let i = 0; i + 1 < ordered.length; i++) {
-        const recording = ordered[i];
-        const next = ordered[i + 1];
-        if (recording.map !== q.map.toLowerCase()) continue;
-        const duration = next.start - recording.start;
-        if (duration <= 0 || duration > MAX_MATCH_MINUTES * 60000) continue;
-        if (Math.abs(end - next.start) > BOUNDARY_TOLERANCE_MS) continue;
-        candidates.push({ filename: recording.filename, delta: end - recording.start });
-      }
-    } else {
-      // Keep existing DE3 behavior unchanged.
-      for (let i = 0; i < ordered.length; i++) {
-        const recording = ordered[i];
-        if (recording.map !== q.map.toLowerCase()) continue;
-        const delta = end - recording.start;
-        if (delta < 0 || delta > MAX_MATCH_MINUTES * 60000) continue;
-        const next = ordered[i + 1];
-        if (next && next.start <= end) continue;
-        candidates.push({ filename: recording.filename, delta });
-      }
-    }
-    const unique = [...new Map(candidates.map(m => [m.filename, m])).values()];
-    return respond({
-      demo: unique.length === 1 ? server.archive + encodeURIComponent(unique[0].filename) : null,
-      reason: unique.length === 0 ? 'no_match' : unique.length > 1 ? 'multiple_candidates' : 'matched',
-      candidates: unique.map(m => ({ filename: m.filename, minutes_before_saved_at: Math.round(m.delta / 6000) / 10 }))
-    });
-  } catch (error) {
-    return respond({ demo: null, reason: 'archive_unavailable' });
-  }
+const respond = (body) => ({statusCode:200,headers:{'content-type':'application/json; charset=utf-8','cache-control':'no-store'},body:JSON.stringify(body)});
+export async function handler(event){
+ const q=event.queryStringParameters||{};
+ const server=SERVERS[q.server];
+ const filename=q.filename||'';
+ if(!server || !new RegExp(`^${server.prefix}_[0-9]{8}-[0-9]{6}_[a-z0-9_-]+\\.mvd2$`,'i').test(filename))
+  return respond({demo:null,reason:'invalid_server_or_filename'});
+ const url=server.archive+encodeURIComponent(filename);
+ try{
+  const controller=new AbortController();const timeout=setTimeout(()=>controller.abort(),6000);
+  try{
+   // Require exact filename to appear in the archive directory index.
+   const r=await fetch(server.archive,{signal:controller.signal,headers:{accept:'text/html'}});
+   if(!r.ok)return respond({demo:null,reason:'archive_unavailable'});
+   const html=await r.text();
+   const escaped=filename.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
+   const found=new RegExp(`(?:href=["']?[^"'<>]*\\/)?${escaped}(?=["'<>\\s?])`,'i').test(html);
+   return respond({demo:found?url:null,reason:found?'exact_match':'not_in_archive'});
+  }finally{clearTimeout(timeout)}
+ }catch{return respond({demo:null,reason:'archive_unavailable'})}
 }

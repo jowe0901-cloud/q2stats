@@ -248,14 +248,16 @@ async function initMatch(){
  if(!m||m.status==="error"){box.innerHTML='<div class="empty">Match not found.</div>';return}
  const ml=matchLabel(m),players=getPlayers(m).filter(p=>!String(p.team||"").toLowerCase().startsWith("spect"));
  document.getElementById("matchTitle").textContent=teamNames(m);document.getElementById("matchMap").textContent=ml.map;document.getElementById("matchServer").textContent=m.hostname||m.server||"Server not recorded";document.getElementById("matchWinner").textContent=m.winner||"—";document.getElementById("matchScore").textContent=scoreText(m);
- // Optional, read-only demo link; hidden unless the archive returns one unambiguous match.
- const demoQuery=new URLSearchParams({server:String(m.server||""),map:String(m.map||""),saved_at:String(m.saved_at||"")});
- loadJson(`/.netlify/functions/demo-lookup?${demoQuery}`,{}).then(data=>{
-  if(!data?.demo||!/^https:\/\/pfl\.gr\/mvd\/(?:de\/PFDE|de3\/PFDE3)_[0-9]{8}-[0-9]{6}_[a-z0-9_-]+\.mvd2$/i.test(data.demo))return;
+ // Only exact OpenTDM demo filenames; no time/map matching.
+ const demoFilename=String(m.demo_filename||m.demo||"");
+ if(/^(?:PFDE3|PFDE)_[0-9]{8}-[0-9]{6}_[a-z0-9_-]+\.mvd2$/i.test(demoFilename)){
+  const demoQuery=new URLSearchParams({server:String(m.server||m.hostname||""),filename:demoFilename});
+  loadJson(`/.netlify/functions/demo-lookup?${demoQuery}`,{}).then(data=>{
+   if(!data?.demo)return;
    const a=document.getElementById("demoDownload");if(!a)return;
-   a.href=data.demo;
-   a.hidden=false;
- });
+   a.href=data.demo;a.hidden=false;
+  });
+ }
  const realMatchId=m.match_id,is1v1=players.length===2,eloType=is1v1?"1v1":"team",eloMap=new Map();
  if(realMatchId){
   for(const p of players){

@@ -109,7 +109,7 @@ async function playersForMatch(db,matchId){
 async function getOneMatch(db,matchId){
  const rows=await db.sql`
   SELECT id, match_id, server, map, game_type, home_score, away_score,
-         winner, match_type, port, saved_at, created_at
+         winner, match_type, port, demo_filename, saved_at, created_at
   FROM matches WHERE match_id=${matchId} LIMIT 1
  `;
  if(!rows.length)return null;
@@ -135,7 +135,7 @@ async function listMatches(db,request){
   `;
   rows=await db.sql`
    SELECT m.id, m.match_id, m.server, m.map, m.game_type, m.home_score, m.away_score,
-          m.winner, m.match_type, m.port, m.saved_at, m.created_at
+          m.winner, m.match_type, m.port, m.demo_filename, m.saved_at, m.created_at
    FROM matches m
    WHERE EXISTS (
     SELECT 1 FROM match_players mp
@@ -148,7 +148,7 @@ async function listMatches(db,request){
   countRows=await db.sql`SELECT COUNT(*)::int AS count FROM matches`;
   rows=await db.sql`
    SELECT id, match_id, server, map, game_type, home_score, away_score,
-          winner, match_type, port, saved_at, created_at
+          winner, match_type, port, demo_filename, saved_at, created_at
    FROM matches
    ORDER BY COALESCE(saved_at,created_at) DESC,id DESC
    LIMIT ${limit} OFFSET ${offset}
@@ -182,12 +182,16 @@ export default async(request)=>{
      : server.name;
   if(!body.match_id||!Array.isArray(body.players)||!body.players.length)return json(400,{status:"error",error:"match_id and players are required"});
   await recordOpenTDMIdentities(db,body.match_id,body.players);
+  // Accept only the exact OpenTDM MVD2 basename, never a guessed match.
+  const demoFilename = typeof body.demo === "string" && /^(?:PFDE3|PFDE)_[0-9]{8}-[0-9]{6}_[a-z0-9_-]+\.mvd2$/i.test(body.demo)
+    ? body.demo : null;
   const existing=await db.sql`SELECT id FROM matches WHERE match_id=${body.match_id} LIMIT 1`;
   if(existing.length){
    const counts=await db.sql`SELECT COUNT(*)::int AS count FROM match_players WHERE match_id=${body.match_id}`;
    const playerCount=counts[0]?.count||0;
 
    if(playerCount>0){
+    if(demoFilename) await db.sql`UPDATE matches SET demo_filename=COALESCE(demo_filename,${demoFilename}) WHERE match_id=${body.match_id}`;
     const weaponsSaved=await saveWeapons(db,body.match_id,body.players);
     await db.sql`UPDATE servers SET last_upload_at=NOW() WHERE id=${server.id}`;
     return json(200,{status:"duplicate",match_id:body.match_id,weapons_saved:weaponsSaved,server_id:server.id});
@@ -203,7 +207,8 @@ export default async(request)=>{
         winner=${body.winner||null},
         match_type=${body.match_type||null},
         port=${body.port??null},
-        saved_at=${body.saved_at||null}
+        saved_at=${body.saved_at||null},
+        demo_filename=COALESCE(demo_filename,${demoFilename})
     WHERE match_id=${body.match_id}
    `;
 
@@ -222,8 +227,8 @@ export default async(request)=>{
   }
 
   await db.sql`
-   INSERT INTO matches(match_id,server,map,game_type,home_score,away_score,winner,match_type,port,saved_at)
-   VALUES(${body.match_id},${matchServer},${body.map||"unknown"},${body.game_type||"team"},${Number(body.home_score||0)},${Number(body.away_score||0)},${body.winner||null},${body.match_type||null},${body.port??null},${body.saved_at||null})
+   INSERT INTO matches(match_id,server,map,game_type,home_score,away_score,winner,match_type,port,saved_at,demo_filename)
+   VALUES(${body.match_id},${matchServer},${body.map||"unknown"},${body.game_type||"team"},${Number(body.home_score||0)},${Number(body.away_score||0)},${body.winner||null},${body.match_type||null},${body.port??null},${body.saved_at||null},${demoFilename})
   `;
   for(const p of body.players){
     const profileId=await profileIdForNickname(db,p.name);
