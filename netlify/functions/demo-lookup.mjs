@@ -1,7 +1,8 @@
 // Verify ONLY the exact MVD2 filename supplied by OpenTDM; never infer by timestamps.
+// This version supports only the PFDE server and its full display name.
 const SERVERS = {
-  'PacketFlinger.com ~ OpenTDM ~ Germany': { archive: 'https://pfl.gr/mvd/de/', prefix: 'PFDE' },
-  'PacketFlinger.com ~ OpenTDM ~ Germany #3': { archive: 'https://pfl.gr/mvd/de3/', prefix: 'PFDE3' }
+  'PFDE': { archive: 'https://pfl.gr/mvd/de/', prefix: 'PFDE' },
+  'PacketFlinger.com ~ OpenTDM ~ Germany': { archive: 'https://pfl.gr/mvd/de/', prefix: 'PFDE' }
 };
 const respond = (body) => ({statusCode:200,headers:{'content-type':'application/json; charset=utf-8','cache-control':'no-store'},body:JSON.stringify(body)});
 export async function handler(event){
