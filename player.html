@@ -142,11 +142,11 @@
   if (!nickname) return;
   try {
     const profileResponse = await fetch('/api/v1/profiles?nickname=' + encodeURIComponent(nickname), {cache:'no-store'});
-    if (!profileResponse.ok) return;
-    const profileData = await profileResponse.json();
+    const profileData = profileResponse.ok ? await profileResponse.json() : null;
     const id = Number(profileData?.profile?.id);
-    if (!Number.isSafeInteger(id) || id < 1) return;
-    const storageKey = 'q2stats_profile_view_' + id;
+    const hasProfile = Number.isSafeInteger(id) && id > 0;
+    const identity = hasProfile ? {profile_id:id} : {nickname};
+    const storageKey = 'q2stats_profile_view_' + (hasProfile ? 'id_' + id : 'nick_' + nickname.toLowerCase());
     const now = Date.now();
     let last = 0;
     try { last = Number(localStorage.getItem(storageKey)) || 0; } catch (_) {}
@@ -154,13 +154,13 @@
     if (now - last >= 30 * 60 * 1000) {
       response = await fetch('/api/v1/profile-views', {
         method:'POST', headers:{'content-type':'application/json'},
-        body:JSON.stringify({profile_id:id}), cache:'no-store'
+        body:JSON.stringify(identity), cache:'no-store'
       });
       if (response.ok) {
         try { localStorage.setItem(storageKey, String(now)); } catch (_) {}
       }
     } else {
-      response = await fetch('/api/v1/profile-views?profile_id=' + id, {cache:'no-store'});
+      response = await fetch('/api/v1/profile-views?' + new URLSearchParams(identity), {cache:'no-store'});
     }
     if (!response.ok) return;
     const data = await response.json();
