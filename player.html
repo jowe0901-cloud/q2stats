@@ -92,6 +92,21 @@
     </article>
   </section>
 
+  <section class="panel map-performance-panel">
+    <div class="panel-head">
+      <div><span class="eyebrow">MAP STATISTICS</span><h2>Map Performance</h2></div>
+      <div class="elo-history-tabs" role="group" aria-label="Map statistics game mode">
+        <button type="button" class="active" data-map-mode="team" aria-pressed="true">TEAM</button>
+        <button type="button" data-map-mode="1v1" aria-pressed="false">1V1</button>
+      </div>
+    </div>
+    <div id="mapPerformanceInfo" class="recent-info" aria-live="polite">Loading map statistics…</div>
+    <div class="table-wrap"><table class="map-performance-table">
+      <thead><tr><th>Map</th><th>Matches</th><th>Win %</th><th>Avg Frags</th><th>K/D</th><th>Avg DMG</th></tr></thead>
+      <tbody id="mapPerformanceBody"><tr><td colspan="6">Loading…</td></tr></tbody>
+    </table></div>
+  </section>
+
 <section class="arsenal-panels">
     <article class="panel">
       <div class="panel-head"><div><span class="eyebrow">ARSENAL · TEAM</span><h2>Weapon summary</h2></div></div>
@@ -129,7 +144,7 @@
 </main>
 
 <footer>Q2Stats Beta</footer>
-<script src="app.js?v=13"></script>
+<script src="app.js?v=14"></script>
 <script>
 // Profile views are tracked separately from match and Elo data.
 (async function showProfileViews() {
