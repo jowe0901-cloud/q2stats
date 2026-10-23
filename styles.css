@@ -84,3 +84,14 @@ canvas{width:100%;height:auto;background:#0c1016;border-radius:12px;border:1px s
   .weapon-card-title .weapon-art{width:54px;height:40px}
   .weapon-summary-name .weapon-art{width:30px;height:26px}
 }
+
+/* Player Overall includes combat stats; compact enough for the third profile card. */
+.overall-combat{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 14px;margin-top:16px;padding-top:15px;border-top:1px solid #27303d}
+.overall-combat .stat-item{padding:9px 10px;gap:8px;min-width:0;font-size:12px}
+.overall-combat .stat-item strong{white-space:nowrap}
+.map-performance-panel .panel-head{gap:12px;flex-wrap:wrap}
+.map-performance-table th:not(:first-child),.map-performance-table td:not(:first-child){text-align:right;white-space:nowrap}
+.map-performance-table td:first-child{min-width:125px}
+.map-performance-map{display:inline-flex;align-items:center;gap:10px;font-weight:800}
+.map-performance-map img{width:66px;height:48px;object-fit:cover;border:1px solid var(--line);border-radius:7px;background:#0d1117}
+@media(max-width:600px){.overall-combat{grid-template-columns:1fr 1fr}.map-performance-table th,.map-performance-table td{padding:9px 8px}}

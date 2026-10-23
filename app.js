@@ -243,6 +243,58 @@ function renderPlayerSetup(setup){
  box.hidden=false;
 }
 
+
+// Map statistics use the actual player's per-match totals, never weapon kills.
+function renderMapPerformance(matches,profileId,requestedName){
+ const body=document.getElementById("mapPerformanceBody"),info=document.getElementById("mapPerformanceInfo");
+ if(!body)return;
+ const stats={team:new Map(),"1v1":new Map()};
+ const seen=new Set();
+ for(const m of Array.isArray(matches)?matches:[]){
+  if(!m||typeof m!=="object")continue;
+  const matchId=m.match_id!=null?String(m.match_id):null;
+  if(matchId&&seen.has(matchId))continue;
+  const players=getPlayers(m).filter(p=>!String(p.team||"").toLowerCase().startsWith("spect"));
+  const mine=players.find(p=>profileId&&String(p.profile_id??"")===String(profileId))
+   ||(!profileId?players.find(p=>String(pname(p)).toLowerCase()===String(requestedName).toLowerCase()):null);
+  if(!mine)continue;
+  if(matchId)seen.add(matchId);
+  const map=String(m.map||m.mapname||"").trim();
+  if(!map)continue;
+  const mode=recentMatchMode(m),bucket=stats[mode];
+  const key=map.toLowerCase(),s=bucket.get(key)||{map,matches:0,wins:0,decided:0,frags:0,deaths:0,damage:0};
+  const t=ptotal(mine);
+  s.matches++;s.frags+=num(t.frags??t.kills);s.deaths+=num(t.dths??t.deaths);
+  s.damage+=num(t.dealt??t.damage??t.damage_dealt);
+  let won=null;
+  if(typeof mine.win==="boolean")won=mine.win;
+  else if(mine.result){const r=String(mine.result).toLowerCase();if(r.startsWith("w"))won=true;else if(r.startsWith("l"))won=false;}
+  if(won===null&&m.winner!=null){
+   const winner=String(m.winner).trim().toLowerCase();
+   const team=String(mine.team||"").trim().toLowerCase();
+   const nick=String(pname(mine)).trim().toLowerCase();
+   if(winner===team||winner===nick)won=true;
+   else if(winner==="home"||winner==="away"||winner==="red"||winner==="blue"||players.some(p=>String(pname(p)).toLowerCase()===winner))won=false;
+  }
+  if(won!==null){s.decided++;if(won)s.wins++}
+  bucket.set(key,s);
+ }
+ function draw(mode){
+  const items=[...stats[mode].values()].sort((a,b)=>b.matches-a.matches||a.map.localeCompare(b.map));
+  body.innerHTML=items.length?items.map(s=>{
+   const key=s.map.toLowerCase();
+   const img=/^[a-z0-9_-]+$/.test(key)?`<img src="images/maps/${key}.webp" alt="" loading="lazy" onerror="this.remove()">`:"";
+   const win=s.decided?`${(100*s.wins/s.decided).toFixed(1)}%`:"—";
+   const kd=s.deaths?(s.frags/s.deaths).toFixed(2):(s.frags?"∞":"—");
+   return `<tr><td><span class="map-performance-map">${img}<span>${esc(s.map)}</span></span></td><td>${fmt(s.matches)}</td><td>${win}</td><td>${(s.frags/s.matches).toFixed(1)}</td><td>${kd}</td><td>${fmt(s.damage/s.matches)}</td></tr>`;
+  }).join(""):'<tr><td colspan="6" class="empty">No map statistics available for this mode.</td></tr>';
+  info.textContent=`${items.length} maps · ${items.reduce((n,s)=>n+s.matches,0)} recorded matches · Win % based on matches with a known result`;
+  document.querySelectorAll("[data-map-mode]").forEach(b=>{const active=b.dataset.mapMode===mode;b.classList.toggle("active",active);b.setAttribute("aria-pressed",String(active))});
+ }
+ document.querySelectorAll("[data-map-mode]").forEach(b=>b.addEventListener("click",()=>draw(b.dataset.mapMode)));
+ draw("team");
+}
+
 async function initPlayer(){const requestedName=new URLSearchParams(location.search).get("name")||"Unknown";const profile=await loadJson(`${PROFILE_API}?nickname=${encodeURIComponent(requestedName)}`,null);const hasProfile=profile?.status==="ok"&&profile?.profile;const name=hasProfile?String(profile.profile.primary_name||requestedName):requestedName;document.title=`${name} · Q2Stats`;document.getElementById("playerName").textContent=name;if(hasProfile)renderPlayerSetup(profile.setup);const[matches,teamFallback,oneFallback,hist,teamPage1,teamPage2,oneData,centralMatches,weaponData,centralTeamHist,centralOneHist]=await Promise.all([loadJson(DATA_FILES.matches,[]),loadJson(DATA_FILES.teamElo,[]),loadJson(DATA_FILES.oneElo,[]),loadJson(DATA_FILES.eloHistory,[]),loadJson(`${ELO_API}?type=team&limit=100&offset=0`,{rankings:[]}),loadJson(`${ELO_API}?type=team&limit=100&offset=100`,{rankings:[]}),loadJson(`${ELO_API}?type=1v1&limit=100&offset=0`,{rankings:[]}),loadJsonTimeout(`${MATCH_API}?player=${encodeURIComponent(name)}&limit=100`,{},8000),loadJson(`${WEAPON_API}?player=${encodeURIComponent(name)}`,{}),loadJson(`${ELO_API}?type=team&player=${encodeURIComponent(name)}`,{}),loadJson(`${ELO_API}?type=1v1&player=${encodeURIComponent(name)}`,{})]);const team=[...(Array.isArray(teamPage1?.rankings)?teamPage1.rankings:[]),...(Array.isArray(teamPage2?.rankings)?teamPage2.rankings:[])],one=Array.isArray(oneData?.rankings)?oneData.rankings:[],localA=aggregatePlayer(matches,requestedName),centralPlayerMatches=hasProfile&&Array.isArray(profile.matches)?profile.matches:(Array.isArray(centralMatches?.matches)?centralMatches.matches:[]),centralComplete=hasProfile|| (Number.isFinite(Number(centralMatches?.total))&&Number(centralMatches.total)===centralPlayerMatches.length),centralA=hasProfile?aggregateProfile(profile):(centralComplete?aggregatePlayer(centralPlayerMatches,requestedName):null),a=centralA||localA,tr=team.find(x=>(x.player||x.name)===name)||(teamFallback||[]).find(x=>(x.player||x.name)===name),or=one.find(x=>(x.player||x.name)===name)||(oneFallback||[]).find(x=>(x.player||x.name)===name),wr=a.games?a.wins/a.games*100:(tr?.winrate||0),kd=a.deaths?a.kills/a.deaths:a.kills,avg=a.games?a.dealt/a.games:0,modeStats=hasProfile?profileModeStats(profile):(()=>{const out={team:{matches:0,wins:0,kills:0,deaths:0},one:{matches:0,wins:0,kills:0,deaths:0}};for(const m of centralPlayerMatches){const r=playerResult(m,requestedName);if(!r)continue;const ps=getPlayers(m).filter(p=>!String(p.team||"").toLowerCase().startsWith("spect"));const gt=String(m.game_type||m.match_type||"").toLowerCase();const is1v1=gt.includes("1v1")||gt.includes("duel")||ps.length===2;const s=is1v1?out.one:out.team;s.matches++;s.kills+=num(r.t.kills??r.t.frags);s.deaths+=num(r.t.deaths??r.t.dths);if(r.won===true)s.wins++}return out})();document.getElementById("pTeamElo").textContent=tr?fmt(tr.elo):"—";document.getElementById("p1v1Elo").textContent=or?fmt(or.elo):"—";document.getElementById("pTeamRank").textContent=tr?`Rank #${team.findIndex(x=>(x.player||x.name)===name)+1} · ${modeStats.team.matches} matches`:"—";document.getElementById("p1v1Rank").textContent=or?`Rank #${one.findIndex(x=>(x.player||x.name)===name)+1} · ${modeStats.one.matches} matches`:"—";const teamWR=modeStats.team.matches?modeStats.team.wins/modeStats.team.matches*100:0,oneWR=modeStats.one.matches?modeStats.one.wins/modeStats.one.matches*100:0,teamKD=modeStats.team.deaths?modeStats.team.kills/modeStats.team.deaths:modeStats.team.kills,oneKD=modeStats.one.deaths?modeStats.one.kills/modeStats.one.deaths:modeStats.one.kills;document.getElementById("pTeamWinrate").textContent=pct(teamWR);document.getElementById("p1v1Winrate").textContent=pct(oneWR);document.getElementById("pTeamKD").textContent=teamKD.toFixed(2);document.getElementById("p1v1KD").textContent=oneKD.toFixed(2);document.getElementById("pMatches").textContent=fmt(a.games||tr?.matches||0);document.getElementById("pKillsOverall").textContent=fmt(a.kills);document.getElementById("pAvgDamage").textContent=fmt(avg);document.getElementById("playerSub").textContent=`${a.games} recorded matches · ${fmt(a.kills)} kills · ${fmt(a.dealt)} total dealt damage`;const combat=[["Kills",a.kills],["Deaths",a.deaths],["Damage dealt",a.dealt],["Damage received",a.received],["Suicides",a.suicides],["Teamkills",a.teamkills]];document.getElementById("combatStats").innerHTML=combat.map(([k,v])=>`<div class="stat-item"><span>${k}</span><strong>${fmt(v)}</strong></div>`).join("");const weaponModes=profile?.weapons?.summary_by_mode;
 const sourceMatches=hasProfile?profile.matches:(centralComplete?centralPlayerMatches:matches);
 const fallbackModes={team:{},"1v1":{}};
@@ -272,7 +324,13 @@ for(const [mode,id] of [["team","weaponBodyTeam"],["1v1","weaponBody1v1"]]){
   const extras=ws.filter(x=>!WEAPON_DISPLAY_ORDER.some(w=>w.toLowerCase()===String(x.weapon).toLowerCase()) && !/^(?:adrenaline|combat[ _-]*armor|jacket[ _-]*armor|mega[ _-]*health)$/i.test(String(x.weapon).trim())).sort((a,b)=>String(a.weapon).localeCompare(String(b.weapon)));
   document.getElementById(id).innerHTML=[...ordered,...extras].map(x=>`<tr><td><span class="weapon-summary-name">${weaponImage(x.weapon)}<span>${esc(x.weapon)}</span></span></td><td>${x.accuracy==null?'—':pct(x.accuracy)}</td><td>${fmt(x.kills)}</td><td>${fmt(x.matches)}</td></tr>`).join("");
 }
-const playerMatches=centralPlayerMatches.length?centralPlayerMatches.slice().reverse():matches.map((m,id)=>({__match:m,__id:id})).filter(x=>playerResult(x.__match,name));initRecentMatches(playerMatches.map(x=>x.__match||x),name,true);
+renderMapPerformance(
+  hasProfile&&Array.isArray(profile.matches)?profile.matches:
+  centralPlayerMatches.length?centralPlayerMatches:matches,
+  hasProfile?profile.profile.id:null,
+  requestedName
+ );
+ const playerMatches=centralPlayerMatches.length?centralPlayerMatches.slice().reverse():matches.map((m,id)=>({__match:m,__id:id})).filter(x=>playerResult(x.__match,name));initRecentMatches(playerMatches.map(x=>x.__match||x),name,true);
 const centralTeamEvents=Array.isArray(centralTeamHist?.history)?centralTeamHist.history:[],centralOneEvents=Array.isArray(centralOneHist?.history)?centralOneHist.history:[];let teamEv=centralTeamEvents.length?centralTeamEvents.map(e=>num(e.elo_after)):eloValues(hist,name,"team"),oneEv=centralOneEvents.length?centralOneEvents.map(e=>num(e.elo_after)):eloValues(hist,name,"1v1");if(!teamEv.length&&tr)teamEv=[num(tr.elo)];if(!oneEv.length&&or)oneEv=[num(or.elo)];const fromStart=vals=>[1500,...vals.filter((v,i,a)=>i||v!==1500)];teamEv=fromStart(teamEv);oneEv=fromStart(oneEv);const eloCanvas=document.getElementById("eloChart"),eloButtons=document.querySelectorAll("[data-elo-history]");const drawElo=type=>{const isOne=type==="1v1",values=isOne?oneEv:teamEv;drawLineChart(eloCanvas,[{name:isOne?"1v1 Elo":"Team Elo",short:isOne?"1V1":"TEAM",values}],{include:1500,reference:1500,referenceLabel:"START 1500",xStart:"Start 1500",xEnd:"Latest"});eloButtons.forEach(b=>b.classList.toggle("active",b.dataset.eloHistory===type))};eloButtons.forEach(b=>b.onclick=()=>drawElo(b.dataset.eloHistory));drawElo("team");
 const centralWeaponHistory=hasProfile&&Array.isArray(profile?.weapons?.history)?profile.weapons.history:(Array.isArray(weaponData?.history)?weaponData.history:[]),accuracyMatches=centralWeaponHistory.length?centralWeaponHistory.map(x=>({m:{match_id:x.match_id,saved_at:x.played_at},weapons:Object.fromEntries(Object.entries(x.weapons||{}).map(([w,s])=>{const raw=s?.accuracy,acc=raw==null?NaN:Number(raw);return[w,Number.isFinite(acc)?acc:NaN]}))})):localA.perMatch,preferred=["Railgun","Chaingun"],allWeapons=[...new Set(accuracyMatches.flatMap(x=>Object.keys(x.weapons)))].filter(w=>! /^(?:adrenaline|combat[ _-]*armor|jacket[ _-]*armor|mega[ _-]*health)$/i.test(w.trim())),ordered=[...preferred.filter(w=>allWeapons.includes(w)),...allWeapons.filter(w=>!preferred.includes(w))],series=ordered.map(w=>({name:w,short:WEAPON_ABBR[w]||w.slice(0,3).toUpperCase(),values:accuracyMatches.map(x=>x.weapons[w]??NaN),hidden:!preferred.includes(w)})),legend=document.getElementById("weaponLegend");legend.innerHTML=series.map((s,i)=>`<button class="${s.hidden?"":"on"}" data-i="${i}" title="${esc(s.name)}">${esc(s.short)}</button>`).join("");const redraw=()=>drawLineChart(document.getElementById("accuracyChart"),series,{min:0,max:100,ticks:11,suffix:"%",pad:false,labelLines:true,xStart:"Oldest match",xEnd:"Latest match"});legend.querySelectorAll("button").forEach(b=>b.onclick=()=>{const i=+b.dataset.i;series[i].hidden=!series[i].hidden;b.classList.toggle("on",!series[i].hidden);redraw()});redraw()}
 async function initRankings(){const q=new URLSearchParams(location.search),type=q.get("type")==="1v1"?"1v1":"team",per=100,requestedPage=Math.max(1,parseInt(q.get("page")||"1")),requestedOffset=(requestedPage-1)*per,data=await loadJson(`${ELO_API}?type=${encodeURIComponent(type)}&limit=${per}&offset=${requestedOffset}`,{rankings:[],total:0}),total=num(data?.total),pages=Math.max(1,Math.ceil(total/per)),page=Math.min(requestedPage,pages),offset=(page-1)*per;let items=Array.isArray(data?.rankings)?data.rankings:[];if(page!==requestedPage){const corrected=await loadJson(`${ELO_API}?type=${encodeURIComponent(type)}&limit=${per}&offset=${offset}`,{rankings:[],total}),items2=Array.isArray(corrected?.rankings)?corrected.rankings:[];items=items2}document.querySelectorAll("[data-ranking]").forEach(b=>b.classList.toggle("active",b.dataset.ranking===type));document.getElementById("rankingTitle").textContent=type==="1v1"?"1v1 Elo Rankings":"Team Elo Rankings";document.getElementById("rankingBody").innerHTML=rankRows(items,0,offset);const nav=document.getElementById("rankingPagination");if(nav){let h=page>1?`<a href="rankings.html?type=${type}&page=${page-1}">← Previous</a>`:"<span></span>";h+=`<span>Page ${page} of ${pages} · ${total} players</span>`;h+=page<pages?`<a href="rankings.html?type=${type}&page=${page+1}">Next →</a>`:"<span></span>";nav.innerHTML=h}}
