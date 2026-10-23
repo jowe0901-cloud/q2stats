@@ -31,10 +31,19 @@ function getPlayers(m){if(Array.isArray(m?.players))return m.players;if(m?.stats
 function pname(p){return p.player||p.name||p.nickname||"Unknown"} function ptotal(p){return p.total||p.totals||p.stats||p} function pweapons(p){return p.weapons||{}}
 function rankRows(items,limit=10,startRank=0){let rows=(Array.isArray(items)?items:[]).slice().sort((a,b)=>num(b.elo)-num(a.elo));if(limit)rows=rows.slice(0,limit);return rows.map((p,i)=>`<tr><td class="rank">${startRank+i+1}</td><td><a class="player-link" href="${playerUrl(p.player||p.name)}">${esc(p.player||p.name)}</a></td><td class="elo">${fmt(p.elo)}</td><td>${fmt(p.matches)}</td><td>${fmt(p.wins)}-${fmt(p.losses)}</td><td>${pct(p.winrate??(num(p.matches)?num(p.wins)/num(p.matches)*100:0))}</td></tr>`).join("")}
 function matchLabel(m){const raw=m.saved_at||m.timestamp||m.date||"",d=raw?new Date(raw):null;let date="";if(d&&!Number.isNaN(d.getTime()))date=d.toLocaleString("sv-SE",{year:"numeric",month:"2-digit",day:"2-digit",hour:"2-digit",minute:"2-digit"}).replace(",","");else date=String(raw).replace("T"," ").slice(0,16);return{map:m.map||m.mapname||"Unknown map",date}}
+// Small map preview shared by homepage, profile history and match archive.
+function mapListPreview(map){
+ const key=String(map||"").trim().toLowerCase();
+ if(!/^[a-z0-9_-]+$/.test(key))return "";
+ return `<img class="match-list-map-image" src="images/maps/${key}.webp" alt="" loading="lazy" decoding="async" onerror="this.remove()">`;
+}
+function matchListMeta(map,date){
+ return `<div class="match-meta"><div class="match-list-map">${mapListPreview(map)}<div class="match-list-map-text">${esc(date||"Undated")}<br>${esc(map)}</div></div></div>`;
+}
 function scoreText(m){if(m.result)return String(m.result);if(m.score){if(typeof m.score==="string")return m.score;if("home"in m.score||"away"in m.score)return`${m.score.home??0} – ${m.score.away??0}`}if(m.home_score!=null||m.away_score!=null)return`${m.home_score??0} – ${m.away_score??0}`;return"—"}
 function teamNames(m){const ps=getPlayers(m),home=[],away=[],homeElo=[],awayElo=[],other=[];for(const p of ps){const t=String(p.team||"").toLowerCase(),n=pname(p),eb=Number(p.elo_before);if(t==="home"||t==="red"||t==="team1"){home.push(n);if(Number.isFinite(eb))homeElo.push(eb)}else if(t==="away"||t==="blue"||t==="team2"){away.push(n);if(Number.isFinite(eb))awayElo.push(eb)}else if(!t.startsWith("spect"))other.push(n)}if(home.length||away.length){const avg=a=>a.length?Math.round(a.reduce((x,y)=>x+y,0)/a.length):null,ha=homeElo.length===home.length?avg(homeElo):null,aa=awayElo.length===away.length?avg(awayElo):null;return`${home.join(", ")||"Home"}${ha!=null?` (${ha})`:""} vs ${away.join(", ")||"Away"}${aa!=null?` (${aa})`:""}`}if(other.length>1)return other.join(" vs ");return other[0]||m.winner||"Match"}
 function teamNamesHtml(m){const s=esc(teamNames(m));return s.replace(/ \((\d[\d,]*)\)/g,' <span class="team-avg-elo">($1)</span>').replace(/\s+vs\s+/gi,' <span class="vs-badge">VS</span> ')}
-function renderMatches(matches,target,limit=12,offset=0){const el=document.getElementById(target);if(!el)return;const all=(Array.isArray(matches)?matches:[]).map((item,i)=>item&&item.__match?{m:item.__match,id:item.__id}:{m:item,id:i}).reverse(),rows=all.slice(offset,offset+limit);if(!rows.length){el.innerHTML='<div class="empty">No match data found yet.</div>';return}el.innerHTML=rows.map(({m,id})=>{const{map,date}=matchLabel(m);const href=m?.match_id?`match.html?match_id=${encodeURIComponent(m.match_id)}`:`match.html?id=${id}`;return`<a class="match match-link" href="${href}"><div class="match-meta">${esc(date||"Undated")}<br>${esc(map)}</div><div class="match-main">${teamNamesHtml(m)}</div><div class="match-score">${esc(scoreText(m))}</div></a>`}).join("")}
+function renderMatches(matches,target,limit=12,offset=0){const el=document.getElementById(target);if(!el)return;const all=(Array.isArray(matches)?matches:[]).map((item,i)=>item&&item.__match?{m:item.__match,id:item.__id}:{m:item,id:i}).reverse(),rows=all.slice(offset,offset+limit);if(!rows.length){el.innerHTML='<div class="empty">No match data found yet.</div>';return}el.innerHTML=rows.map(({m,id})=>{const{map,date}=matchLabel(m);const href=m?.match_id?`match.html?match_id=${encodeURIComponent(m.match_id)}`:`match.html?id=${id}`;return`<a class="match match-link" href="${href}">${matchListMeta(map,date)}<div class="match-main">${teamNamesHtml(m)}</div><div class="match-score">${esc(scoreText(m))}</div></a>`}).join("")}
 
 // Player profile recent games: 5 per page, newest first.
 function recentMatchMode(m){
@@ -254,7 +263,7 @@ async function initMatchesPage(){
  if(p!==requestedPage)data=await loadJson(`${MATCH_API}?limit=${per}&offset=${offset}`,{matches:[],total});
  const matches=Array.isArray(data?.matches)?data.matches:[];total=num(data?.total??total);pages=Math.max(1,Math.ceil(total/per));
  const el=document.getElementById("allMatchList");
- if(el){el.innerHTML=matches.length?matches.map(m=>{const{map,date}=matchLabel(m);return`<a class="match match-link" href="match.html?match_id=${encodeURIComponent(m.match_id)}"><div class="match-meta">${esc(date||"Undated")}<br>${esc(map)}</div><div class="match-main">${teamNamesHtml(m)}</div><div class="match-score">${esc(scoreText(m))}</div></a>`}).join(""):'<div class="empty">No match data found yet.</div>'}
+ if(el){el.innerHTML=matches.length?matches.map(m=>{const{map,date}=matchLabel(m);return`<a class="match match-link" href="match.html?match_id=${encodeURIComponent(m.match_id)}">${matchListMeta(map,date)}<div class="match-main">${teamNamesHtml(m)}</div><div class="match-score">${esc(scoreText(m))}</div></a>`}).join(""):'<div class="empty">No match data found yet.</div>'}
  const nav=document.getElementById("pagination");if(nav){const options=Array.from({length:pages},(_,i)=>`<option value="${i+1}"${i+1===p?" selected":""}>Page ${i+1}</option>`).join("");let h=p>1?`<a href="matches.html?page=${p-1}">← Previous</a>`:"<span></span>";h+=`<span><select id="matchPageSelect" aria-label="Choose match page">${options}</select> of ${pages} · ${total} matches</span>`;h+=p<pages?`<a href="matches.html?page=${p+1}">Next →</a>`:"<span></span>";nav.innerHTML=h;const sel=document.getElementById("matchPageSelect");if(sel)sel.addEventListener("change",()=>{location.href=`matches.html?page=${sel.value}`})}
 }
 async function initMatch(){
@@ -264,7 +273,21 @@ async function initMatch(){
  else{const matches=await loadJson(DATA_FILES.matches,[]);id=parseInt(q.get("id")||"-1");m=matches[id]}
  if(!m||m.status==="error"){box.innerHTML='<div class="empty">Match not found.</div>';return}
  const ml=matchLabel(m),players=getPlayers(m).filter(p=>!String(p.team||"").toLowerCase().startsWith("spect"));
- document.getElementById("matchTitle").textContent=teamNames(m);document.getElementById("matchMap").textContent=ml.map;document.getElementById("matchServer").textContent=m.hostname||m.server||"Server not recorded";document.getElementById("matchWinner").textContent=m.winner||"—";document.getElementById("matchScore").textContent=scoreText(m);
+ document.getElementById("matchTitle").textContent=teamNames(m);document.getElementById("matchMap").textContent=ml.map;
+  // Show a map screenshot when a matching local image exists.
+  const mapElement=document.getElementById("matchMap");
+  const mapKey=String(ml.map||"").trim().toLowerCase();
+  if(mapElement&&/^[a-z0-9_-]+$/.test(mapKey)){
+    const mapImg=document.createElement("img");
+    mapImg.className="match-map-thumbnail";
+    mapImg.src=`images/maps/${mapKey}.webp`;
+    mapImg.alt=`Screenshot of ${ml.map}`;
+    mapImg.loading="lazy";
+    mapImg.decoding="async";
+    mapImg.onerror=()=>mapImg.remove();
+    mapElement.prepend(mapImg);
+    mapElement.classList.add("match-map-with-image");
+  }document.getElementById("matchServer").textContent=m.hostname||m.server||"Server not recorded";document.getElementById("matchWinner").textContent=m.winner||"—";document.getElementById("matchScore").textContent=scoreText(m);
  // Only exact OpenTDM demo filenames; no time/map matching.
  const demoFilename=String(m.demo_filename||m.demo||"");
  if(/^(?:PFDE3|PFDE)_[0-9]{8}-[0-9]{6}_[a-z0-9_-]+\.mvd2$/i.test(demoFilename)){

@@ -60,3 +60,16 @@ canvas{width:100%;height:auto;background:#0c1016;border-radius:12px;border:1px s
 .leaderboard-mode>h3{font-size:13px;letter-spacing:.1em;color:var(--accent2);margin:0 0 12px}
 .leaderboard-mode .weapon-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
 @media(max-width:850px){.arsenal-panels{grid-template-columns:1fr}.leaderboard-mode .weapon-grid{grid-template-columns:1fr}}
+
+/* Map thumbnails in the Match Details MAP metric. */
+#matchMap.match-map-with-image{display:flex;align-items:center;gap:12px;flex-wrap:wrap;min-width:0}
+#matchMap .match-map-thumbnail{width:100px;height:75px;object-fit:cover;object-position:center;border:1px solid var(--line);border-radius:8px;flex:none;background:#0d1117}
+@media(max-width:600px){#matchMap .match-map-thumbnail{width:76px;height:57px}}
+
+/* Map previews in homepage Recent Games, player recent matches and Match History. */
+.match-list-map{display:flex;align-items:center;gap:10px;min-width:0}
+.match-list-map-image{width:65px;height:49px;flex:none;object-fit:cover;border-radius:7px;border:1px solid var(--line);background:#0d1117}
+.match-list-map-text{min-width:0;line-height:1.5;overflow-wrap:anywhere}
+.match:has(.match-list-map-image){grid-template-columns:minmax(185px,210px) minmax(0,1fr) auto}
+@media(max-width:850px){.match:has(.match-list-map-image){grid-template-columns:minmax(0,1fr) auto}}
+@media(max-width:480px){.match-list-map-image{width:56px;height:42px}}
