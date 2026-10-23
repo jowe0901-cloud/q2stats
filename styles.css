@@ -73,3 +73,14 @@ canvas{width:100%;height:auto;background:#0c1016;border-radius:12px;border:1px s
 .match:has(.match-list-map-image){grid-template-columns:minmax(185px,210px) minmax(0,1fr) auto}
 @media(max-width:850px){.match:has(.match-list-map-image){grid-template-columns:minmax(0,1fr) auto}}
 @media(max-width:480px){.match-list-map-image{width:56px;height:42px}}
+
+
+/* Original Quake 2 weapon art in leaderboard cards and profile weapon summary. */
+.weapon-card-title{display:flex;align-items:center;gap:10px;min-height:46px}
+.weapon-card-title .weapon-art{width:64px;height:46px;object-fit:contain;flex:none}
+.weapon-summary-name{display:inline-flex;align-items:center;gap:8px;min-width:0}
+.weapon-summary-name .weapon-art{width:38px;height:30px;object-fit:contain;flex:none}
+@media(max-width:480px){
+  .weapon-card-title .weapon-art{width:54px;height:40px}
+  .weapon-summary-name .weapon-art{width:30px;height:26px}
+}

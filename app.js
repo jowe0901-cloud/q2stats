@@ -106,7 +106,27 @@ function initRecentMatches(initialMatches,playerName,canQueryApi){
  draw();
 }
 function normalizeWeaponStats(data){if(!data)return{};if(data.weapons)return data.weapons;if(Array.isArray(data)){const out={};for(const r of data){const w=r.weapon||r.name;if(!w)continue;(out[w]??=[]).push(r)}return out}return data}
-function renderWeapons(data){for(const mode of ["team","1v1"]){const n=normalizeWeaponStats(data?.by_mode?.[mode]);["Railgun","Rocket Launcher","Chaingun"].forEach(w=>{const el=document.getElementById(`${mode}-${w}`);if(!el)return;let rows=n[w]||[];if(!Array.isArray(rows))rows=rows.top5||[];rows=rows.slice(0,5);el.innerHTML=rows.length?rows.map((r,i)=>`<div class="weapon-row"><span>${i+1}. <a class="player-link" href="${playerUrl(r.player||r.name)}">${esc(r.player||r.name)}</a></span><span>${r.accuracy==null?'—':pct(r.accuracy)}</span><span>${fmt(r.kills)} kills</span></div>`).join(""):'<div class="empty">No data</div>'})}}
+// Weapon artwork is decorative; statistics and existing links remain unchanged.
+const WEAPON_IMAGE_FILES={
+  "railgun":"railgun.png","rocket launcher":"rocket_launcher.png",
+  "chaingun":"chaingun.png","super shotgun":"super_shotgun.png",
+  "hyperblaster":"hyper_blaster.png","hyper blaster":"hyper_blaster.png",
+  "machinegun":"machinegun.png","grenades":"grenades.png",
+  "grenade launcher":"grenade_launcher.png","shotgun":"shotgun.png",
+  "blaster":"blaster.png","bfg":"bfg.png"
+};
+function weaponImage(name){
+  const filename=WEAPON_IMAGE_FILES[String(name||"").trim().toLowerCase()];
+  return filename?`<img class="weapon-art" src="images/weapons/${filename}" alt="" loading="lazy" decoding="async" onerror="this.remove()">`:"";
+}
+function renderWeapons(data){for(const mode of ["team","1v1"]){const n=normalizeWeaponStats(data?.by_mode?.[mode]);["Railgun","Rocket Launcher","Chaingun"].forEach(w=>{const el=document.getElementById(`${mode}-${w}`);if(!el)return;
+  const card=el.closest(".weapon-card");
+  const heading=card?.querySelector("h3");
+  if(heading && !heading.querySelector(".weapon-art")){
+    heading.classList.add("weapon-card-title");
+    heading.insertAdjacentHTML("afterbegin",weaponImage(w));
+  }
+  let rows=n[w]||[];if(!Array.isArray(rows))rows=rows.top5||[];rows=rows.slice(0,5);el.innerHTML=rows.length?rows.map((r,i)=>`<div class="weapon-row"><span>${i+1}. <a class="player-link" href="${playerUrl(r.player||r.name)}">${esc(r.player||r.name)}</a></span><span>${r.accuracy==null?'—':pct(r.accuracy)}</span><span>${fmt(r.kills)} kills</span></div>`).join(""):'<div class="empty">No data</div>'})}}
 async function initIndex(){const[matchData,teamData,teamData2,oneData,weapons]=await Promise.all([loadJson(`${MATCH_API}?limit=12&offset=0`,{matches:[],total:0}),loadJson(`${ELO_API}?type=team&limit=100&offset=0`,{rankings:[]}),loadJson(`${ELO_API}?type=team&limit=100&offset=100`,{rankings:[]}),loadJson(`${ELO_API}?type=1v1&limit=100&offset=0`,{rankings:[]}),loadJson(WEAPON_LEADERBOARD_API,{})]);const matches=Array.isArray(matchData?.matches)?matchData.matches:[],team=Array.isArray(teamData?.rankings)?teamData.rankings:[],team2=Array.isArray(teamData2?.rankings)?teamData2.rankings:[],one=Array.isArray(oneData?.rankings)?oneData.rankings:[];document.getElementById("teamEloBody").innerHTML=rankRows(team,10);document.getElementById("oneEloBody").innerHTML=rankRows(one,10);renderWeapons(weapons);renderMatches(matches.slice().reverse(),"matchList",12);document.getElementById("totalMatches").textContent=fmt(matchData?.total??matches.length);document.getElementById("totalPlayers").textContent=fmt(new Set([...team,...team2,...one].map(x=>x.player||x.name).filter(Boolean)).size);const lm=matches[matches.length-1];document.getElementById("latestMatch").textContent=lm?(lm.map||lm.mapname||"Match"):"—";const top=(team||[]).slice().sort((a,b)=>num(b.elo)-num(a.elo))[0];document.getElementById("topTeam").textContent=top?`${top.player||top.name} · ${fmt(top.elo)}`:"—";document.getElementById("dataStatus").textContent=matches.length||team.length?"Data connected":"Waiting for data"}
 function playerResult(m,name){const p=getPlayers(m).find(x=>pname(x)===name);if(!p)return null;const t=ptotal(p);let won=null;if(typeof p.win==="boolean")won=p.win;else if(p.result)won=String(p.result).toLowerCase().startsWith("w");else if(m.winner)won=String(m.winner).toLowerCase()===name.toLowerCase()||String(m.winner).toLowerCase()===String(p.team||"").toLowerCase();return{p,t,won}}
 function profileModeStats(profile){
@@ -250,7 +270,7 @@ for(const [mode,id] of [["team","weaponBodyTeam"],["1v1","weaponBody1v1"]]){
   const byName=new Map(ws.map(x=>[String(x.weapon).toLowerCase(),x]));
   const ordered=WEAPON_DISPLAY_ORDER.map(w=>byName.get(w.toLowerCase())||{weapon:w,accuracy:null,kills:0,matches:0});
   const extras=ws.filter(x=>!WEAPON_DISPLAY_ORDER.some(w=>w.toLowerCase()===String(x.weapon).toLowerCase()) && !/^(?:adrenaline|combat[ _-]*armor|jacket[ _-]*armor|mega[ _-]*health)$/i.test(String(x.weapon).trim())).sort((a,b)=>String(a.weapon).localeCompare(String(b.weapon)));
-  document.getElementById(id).innerHTML=[...ordered,...extras].map(x=>`<tr><td>${esc(x.weapon)}</td><td>${x.accuracy==null?'—':pct(x.accuracy)}</td><td>${fmt(x.kills)}</td><td>${fmt(x.matches)}</td></tr>`).join("");
+  document.getElementById(id).innerHTML=[...ordered,...extras].map(x=>`<tr><td><span class="weapon-summary-name">${weaponImage(x.weapon)}<span>${esc(x.weapon)}</span></span></td><td>${x.accuracy==null?'—':pct(x.accuracy)}</td><td>${fmt(x.kills)}</td><td>${fmt(x.matches)}</td></tr>`).join("");
 }
 const playerMatches=centralPlayerMatches.length?centralPlayerMatches.slice().reverse():matches.map((m,id)=>({__match:m,__id:id})).filter(x=>playerResult(x.__match,name));initRecentMatches(playerMatches.map(x=>x.__match||x),name,true);
 const centralTeamEvents=Array.isArray(centralTeamHist?.history)?centralTeamHist.history:[],centralOneEvents=Array.isArray(centralOneHist?.history)?centralOneHist.history:[];let teamEv=centralTeamEvents.length?centralTeamEvents.map(e=>num(e.elo_after)):eloValues(hist,name,"team"),oneEv=centralOneEvents.length?centralOneEvents.map(e=>num(e.elo_after)):eloValues(hist,name,"1v1");if(!teamEv.length&&tr)teamEv=[num(tr.elo)];if(!oneEv.length&&or)oneEv=[num(or.elo)];const fromStart=vals=>[1500,...vals.filter((v,i,a)=>i||v!==1500)];teamEv=fromStart(teamEv);oneEv=fromStart(oneEv);const eloCanvas=document.getElementById("eloChart"),eloButtons=document.querySelectorAll("[data-elo-history]");const drawElo=type=>{const isOne=type==="1v1",values=isOne?oneEv:teamEv;drawLineChart(eloCanvas,[{name:isOne?"1v1 Elo":"Team Elo",short:isOne?"1V1":"TEAM",values}],{include:1500,reference:1500,referenceLabel:"START 1500",xStart:"Start 1500",xEnd:"Latest"});eloButtons.forEach(b=>b.classList.toggle("active",b.dataset.eloHistory===type))};eloButtons.forEach(b=>b.onclick=()=>drawElo(b.dataset.eloHistory));drawElo("team");
