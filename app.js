@@ -259,13 +259,18 @@ function renderMapPerformance(matches,profileId,requestedName){
    ||(!profileId?players.find(p=>String(pname(p)).toLowerCase()===String(requestedName).toLowerCase()):null);
   if(!mine)continue;
   if(matchId)seen.add(matchId);
-  const map=String(m.map||m.mapname||"").trim();
-  if(!map)continue;
+  const rawMap=String(m.map||m.mapname||"").trim().toLowerCase();
+  // Historical matches with no recorded map are excluded only from this table.
+  if(!rawMap||rawMap==="unknown")continue;
+  // Two names for the same map.
+  const key=rawMap==="aerowalk"?"q2duel1":rawMap;
+  const map=key;
   const mode=recentMatchMode(m),bucket=stats[mode];
-  const key=map.toLowerCase(),s=bucket.get(key)||{map,matches:0,wins:0,decided:0,frags:0,deaths:0,damage:0};
+  const s=bucket.get(key)||{map,matches:0,wins:0,losses:0,frags:0,deaths:0,dealt:0,received:0};
   const t=ptotal(mine);
   s.matches++;s.frags+=num(t.frags??t.kills);s.deaths+=num(t.dths??t.deaths);
-  s.damage+=num(t.dealt??t.damage??t.damage_dealt);
+  s.dealt+=num(t.dealt??t.damage??t.damage_dealt);
+  s.received+=num(t.received??t.recvd??t.damage_received);
   let won=null;
   if(typeof mine.win==="boolean")won=mine.win;
   else if(mine.result){const r=String(mine.result).toLowerCase();if(r.startsWith("w"))won=true;else if(r.startsWith("l"))won=false;}
@@ -276,7 +281,7 @@ function renderMapPerformance(matches,profileId,requestedName){
    if(winner===team||winner===nick)won=true;
    else if(winner==="home"||winner==="away"||winner==="red"||winner==="blue"||players.some(p=>String(pname(p)).toLowerCase()===winner))won=false;
   }
-  if(won!==null){s.decided++;if(won)s.wins++}
+  if(won===true)s.wins++;else if(won===false)s.losses++
   bucket.set(key,s);
  }
  function draw(mode){
@@ -284,11 +289,13 @@ function renderMapPerformance(matches,profileId,requestedName){
   body.innerHTML=items.length?items.map(s=>{
    const key=s.map.toLowerCase();
    const img=/^[a-z0-9_-]+$/.test(key)?`<img src="images/maps/${key}.webp" alt="" loading="lazy" onerror="this.remove()">`:"";
-   const win=s.decided?`${(100*s.wins/s.decided).toFixed(1)}%`:"—";
+   const decided=s.wins+s.losses;
+   const win=decided?`${(100*s.wins/decided).toFixed(1)}%`:"—";
    const kd=s.deaths?(s.frags/s.deaths).toFixed(2):(s.frags?"∞":"—");
-   return `<tr><td><span class="map-performance-map">${img}<span>${esc(s.map)}</span></span></td><td>${fmt(s.matches)}</td><td>${win}</td><td>${(s.frags/s.matches).toFixed(1)}</td><td>${kd}</td><td>${fmt(s.damage/s.matches)}</td></tr>`;
-  }).join(""):'<tr><td colspan="6" class="empty">No map statistics available for this mode.</td></tr>';
-  info.textContent=`${items.length} maps · ${items.reduce((n,s)=>n+s.matches,0)} recorded matches · Win % based on matches with a known result`;
+   const ratio=s.received?(s.dealt/s.received).toFixed(2):(s.dealt?"∞":"—");
+   return `<tr><td><span class="map-performance-map">${img}<span>${esc(s.map)}</span></span></td><td>${fmt(s.matches)}</td><td>${fmt(s.wins)}</td><td>${fmt(s.losses)}</td><td>${win}</td><td>${(s.frags/s.matches).toFixed(1)}</td><td>${(s.deaths/s.matches).toFixed(1)}</td><td>${kd}</td><td>${fmt(s.dealt/s.matches)}</td><td>${fmt(s.received/s.matches)}</td><td>${ratio}</td></tr>`;
+  }).join(""):'<tr><td colspan="11" class="empty">No map statistics available for this mode.</td></tr>';
+  info.textContent=`${items.length} maps · ${items.reduce((n,s)=>n+s.matches,0)} matches with known maps · Win % = wins / (wins + losses) · DMG Ratio = dealt / received`;
   document.querySelectorAll("[data-map-mode]").forEach(b=>{const active=b.dataset.mapMode===mode;b.classList.toggle("active",active);b.setAttribute("aria-pressed",String(active))});
  }
  document.querySelectorAll("[data-map-mode]").forEach(b=>b.addEventListener("click",()=>draw(b.dataset.mapMode)));
