@@ -293,7 +293,11 @@ function renderMapPerformance(matches,profileId,requestedName){
    const win=decided?`${(100*s.wins/decided).toFixed(1)}%`:"—";
    const kd=s.deaths?(s.frags/s.deaths).toFixed(2):(s.frags?"∞":"—");
    const ratio=s.received?(s.dealt/s.received).toFixed(2):(s.dealt?"∞":"—");
-   return `<tr><td><span class="map-performance-map">${img}<span>${esc(s.map)}</span></span></td><td>${fmt(s.matches)}</td><td>${fmt(s.wins)}</td><td>${fmt(s.losses)}</td><td>${win}</td><td>${(s.frags/s.matches).toFixed(1)}</td><td>${(s.deaths/s.matches).toFixed(1)}</td><td>${kd}</td><td>${fmt(s.dealt/s.matches)}</td><td>${fmt(s.received/s.matches)}</td><td>${ratio}</td></tr>`;
+   const tone=(v,baseline)=>v>baseline?"positive":v<baseline?"negative":"";
+   const winTone=decided?tone(s.wins/decided,0.5):"";
+   const kdTone=s.deaths?tone(s.frags/s.deaths,1):(s.frags?"positive":"");
+   const ratioTone=s.received?tone(s.dealt/s.received,1):(s.dealt?"positive":"");
+   return `<tr><td><span class="map-performance-map">${img}<span>${esc(s.map)}</span></span></td><td>${fmt(s.matches)}</td><td class="positive">${fmt(s.wins)}</td><td class="negative">${fmt(s.losses)}</td><td class="${winTone}">${win}</td><td class="positive">${(s.frags/s.matches).toFixed(1)}</td><td class="negative">${(s.deaths/s.matches).toFixed(1)}</td><td class="${kdTone}">${kd}</td><td class="positive">${fmt(s.dealt/s.matches)}</td><td class="negative">${fmt(s.received/s.matches)}</td><td class="${ratioTone}">${ratio}</td></tr>`;
   }).join(""):'<tr><td colspan="11" class="empty">No map statistics available for this mode.</td></tr>';
   info.textContent=`${items.length} maps · ${items.reduce((n,s)=>n+s.matches,0)} matches with known maps · Win % = wins / (wins + losses) · DMG Ratio = dealt / received`;
   document.querySelectorAll("[data-map-mode]").forEach(b=>{const active=b.dataset.mapMode===mode;b.classList.toggle("active",active);b.setAttribute("aria-pressed",String(active))});
