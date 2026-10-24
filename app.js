@@ -69,7 +69,7 @@ const esc=s=>String(s??"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&
 const playerUrl=n=>`player.html?name=${encodeURIComponent(n)}`,num=v=>Number(v)||0,pct=v=>`${Math.round(num(v))}%`,fmt=v=>Math.round(num(v)).toLocaleString("en-US");
 function getPlayers(m){if(Array.isArray(m?.players))return m.players;if(m?.stats&&typeof m.stats==="object")return Object.entries(m.stats).map(([name,v])=>({player:name,...v}));return[]}
 function pname(p){return p.player||p.name||p.nickname||"Unknown"} function ptotal(p){return p.total||p.totals||p.stats||p} function pweapons(p){return p.weapons||{}}
-function rankRows(items,limit=10,startRank=0){let rows=(Array.isArray(items)?items:[]).slice().sort((a,b)=>num(b.elo)-num(a.elo));if(limit)rows=rows.slice(0,limit);return rows.map((p,i)=>`<tr><td class="rank">${startRank+i+1}</td><td><a class="player-link" href="${playerUrl(p.player||p.name)}">${esc(p.player||p.name)}</a></td><td class="elo">${fmt(p.elo)}</td><td>${fmt(p.matches)}</td><td>${fmt(p.wins)}-${fmt(p.losses)}</td><td>${pct(p.winrate??(num(p.matches)?num(p.wins)/num(p.matches)*100:0))}</td></tr>`).join("")}
+function rankRows(items,limit=10,startRank=0,homepage=false){let rows=(Array.isArray(items)?items:[]).slice().sort((a,b)=>num(b.elo)-num(a.elo));if(limit)rows=rows.slice(0,limit);return rows.map((p,i)=>{const rank=startRank+i+1;const medal=homepage&&rank<=3?`<span class="elo-medal elo-medal-${rank}" aria-label="Rank ${rank}" title="Rank ${rank}">${rank}</span>`:rank;return `<tr><td class="rank">${medal}</td><td><a class="player-link" href="${playerUrl(p.player||p.name)}">${esc(p.player||p.name)}</a></td><td class="elo">${fmt(p.elo)}</td><td>${fmt(p.matches)}</td><td>${fmt(p.wins)}–${fmt(p.losses)}</td><td>${pct(p.winrate??(num(p.matches)?num(p.wins)/num(p.matches)*100:0))}</td></tr>`}).join("")}
 function matchLabel(m){const raw=m.saved_at||m.timestamp||m.date||"",d=raw?new Date(raw):null;let date="";if(d&&!Number.isNaN(d.getTime()))date=d.toLocaleString("sv-SE",{year:"numeric",month:"2-digit",day:"2-digit",hour:"2-digit",minute:"2-digit"}).replace(",","");else date=String(raw).replace("T"," ").slice(0,16);return{map:m.map||m.mapname||"Unknown map",date}}
 // Small map preview shared by homepage, profile history and match archive.
 function mapListPreview(map){
@@ -185,7 +185,7 @@ async function initIndex(){
   });
   const teamTask=loadJson(`${ELO_API}?type=team&limit=100&offset=0`,{rankings:[]}).then(teamData=>{
     const team=Array.isArray(teamData?.rankings)?teamData.rankings:[];
-    document.getElementById("teamEloBody").innerHTML=rankRows(team,10);
+    document.getElementById("teamEloBody").innerHTML=rankRows(team,10,0,true);
     const top=team.slice().sort((a,b)=>num(b.elo)-num(a.elo))[0];
     document.getElementById("topTeam").textContent=top?`${top.player||top.name} · ${fmt(top.elo)}`:"—";
     eloReady=team.length>0;updateStatus();
@@ -194,7 +194,7 @@ async function initIndex(){
   const team2Task=loadJson(`${ELO_API}?type=team&limit=100&offset=100`,{rankings:[]}).then(d=>Array.isArray(d?.rankings)?d.rankings:[]);
   const oneTask=loadJson(`${ELO_API}?type=1v1&limit=100&offset=0`,{rankings:[]}).then(oneData=>{
     const one=Array.isArray(oneData?.rankings)?oneData.rankings:[];
-    document.getElementById("oneEloBody").innerHTML=rankRows(one,10);
+    document.getElementById("oneEloBody").innerHTML=rankRows(one,10,0,true);
     return one;
   });
   const playerCountTask=Promise.all([teamTask,team2Task,oneTask]).then(([team,team2,one])=>{

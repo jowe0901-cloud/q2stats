@@ -115,3 +115,23 @@ canvas{width:100%;height:auto;background:#0c1016;border-radius:12px;border:1px s
 .map-performance-table .map-winrate-track{height:4px;width:100%;max-width:110px;border-radius:99px;overflow:hidden;background:#2b3645}
 .map-performance-table .map-winrate-fill{height:100%;background:#65d9aa;border-radius:99px}
 @media(max-width:600px){.map-performance-table th,.map-performance-table td{padding:7px 8px}}
+
+/* Homepage Elo redesign: compact, aligned columns; isolated from full rankings. */
+.homepage-elo .table-wrap{overflow-x:auto}
+.homepage-elo table{width:100%;min-width:440px;table-layout:fixed;font-size:12px;font-variant-numeric:tabular-nums}
+.homepage-elo th,.homepage-elo td{padding:10px 5px;white-space:nowrap;vertical-align:middle}
+.homepage-elo th{font-size:9px;letter-spacing:.055em}
+.homepage-elo th:nth-child(1),.homepage-elo td:nth-child(1){width:7%;text-align:center}
+.homepage-elo th:nth-child(2),.homepage-elo td:nth-child(2){width:29%;text-align:left}
+.homepage-elo th:nth-child(3),.homepage-elo td:nth-child(3){width:15%;text-align:right}
+.homepage-elo th:nth-child(4),.homepage-elo td:nth-child(4){width:15%;text-align:right}
+.homepage-elo th:nth-child(5),.homepage-elo td:nth-child(5){width:18%;text-align:right}
+.homepage-elo th:nth-child(6),.homepage-elo td:nth-child(6){width:16%;text-align:right}
+.homepage-elo .player-link{font-weight:750;overflow-wrap:anywhere;white-space:normal}
+.homepage-elo .elo{font-weight:850;color:#f3f6fb}
+.homepage-elo tbody td:not(:nth-child(2)):not(:nth-child(3)){color:#b5c1d0}
+.homepage-elo .elo-medal{display:inline-flex;align-items:center;justify-content:center;width:21px;height:21px;border-radius:50%;border:1px solid currentColor;font-weight:900;font-size:11px}
+.homepage-elo .elo-medal-1{color:#e6bc66;background:rgba(230,188,102,.1)}
+.homepage-elo .elo-medal-2{color:#b7c3d3;background:rgba(183,195,211,.08)}
+.homepage-elo .elo-medal-3{color:#c68f6b;background:rgba(198,143,107,.09)}
+@media(max-width:560px){.homepage-elo table{min-width:420px}.homepage-elo th,.homepage-elo td{padding:9px 4px}}
