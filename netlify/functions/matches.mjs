@@ -166,8 +166,18 @@ export default async(request)=>{
  try{
   if(request.method==="GET"){
    const matchId=getMatchId(request);
-   if(matchId){const match=await getOneMatch(db,matchId);return match?json(200,match):json(404,{status:"error",error:"Match not found"})}
-   return json(200,await listMatches(db,request));
+   if(matchId){
+    const match=await getOneMatch(db,matchId);
+    if(!match)return json(404,{status:"error",error:"Match not found"});
+    const response=json(200,match);
+    response.headers.set("Cache-Control","public, max-age=600");
+    response.headers.set("Netlify-CDN-Cache-Control","public, s-maxage=600");
+    return response;
+   }
+   const response=json(200,await listMatches(db,request));
+   response.headers.set("Cache-Control","public, max-age=60");
+   response.headers.set("Netlify-CDN-Cache-Control","public, s-maxage=60");
+   return response;
   }
   if(request.method!=="POST")return json(405,{status:"error",error:"Method not allowed"});
   const serverKey=request.headers.get("x-q2stats-server-key");

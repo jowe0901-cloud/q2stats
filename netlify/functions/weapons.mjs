@@ -4,7 +4,8 @@ const json=(status,body)=>new Response(JSON.stringify(body),{
  status,
  headers:{
   "content-type":"application/json; charset=utf-8",
-  "cache-control":"public, max-age=30"
+  "cache-control":"public, max-age=600",
+  "Netlify-CDN-Cache-Control":"public, s-maxage=600"
  }
 });
 

@@ -24,8 +24,45 @@ const PROFILE_API = location.hostname === "localhost"
     : "/api/v1/profiles";
 
 (function(){const st=document.createElement("style");st.textContent='.vs-badge{display:inline-block;margin:0 9px;padding:2px 7px;border:1px solid #3a4656;border-radius:5px;background:#161d27;color:#fff;font-size:.78em;font-weight:800;letter-spacing:.08em;vertical-align:1px;white-space:nowrap}.team-avg-elo{color:#7d8796;font-weight:600}';document.head.appendChild(st)})();
-async function loadJson(file,fallback=[]){try{const r=await fetch(file,{cache:"default"});if(!r.ok)throw 0;return await r.json()}catch(e){return fallback}}
-async function loadJsonTimeout(file,fallback=[],ms=8000){const c=new AbortController(),t=setTimeout(()=>c.abort(),ms);try{const r=await fetch(file,{cache:"default",signal:c.signal});if(!r.ok)throw 0;return await r.json()}catch(e){return fallback}finally{clearTimeout(t)}}
+// Cache public API responses locally per visitor. TTL: 10 min for statistics,
+// 1 min for recent match lists. Never persist error responses or huge payloads.
+const Q2_CACHE_VERSION="q2stats-public-v1:";
+const Q2_CACHE_STATS_MS=10*60*1000, Q2_CACHE_RECENT_MS=60*1000;
+const q2PendingRequests=new Map();
+function q2CachePolicy(file){
+ const url=String(file);
+ if(!/(?:\/api\/v1\/(?:matches|profiles|weapons|weapon-leaderboard)|\/\.netlify\/functions\/elo)(?:[/?]|$)/.test(url))return null;
+ if(/\/api\/v1\/matches(?:\?|$)/.test(url))return Q2_CACHE_RECENT_MS;
+ return Q2_CACHE_STATS_MS;
+}
+function q2ReadCache(file,ttl){
+ try{const raw=localStorage.getItem(Q2_CACHE_VERSION+file);if(!raw)return null;
+  const item=JSON.parse(raw);if(!item||Date.now()-item.time>=ttl){localStorage.removeItem(Q2_CACHE_VERSION+file);return null;}
+  return item.data;
+ }catch{return null;}
+}
+function q2SaveCache(file,data){
+ try{const raw=JSON.stringify({time:Date.now(),data});if(raw.length>800000)return;
+  localStorage.setItem(Q2_CACHE_VERSION+file,raw);
+ }catch{/* Storage can be disabled or full; networking still works. */}
+}
+async function q2FetchJson(file,ms){
+ const ttl=q2CachePolicy(file),key=String(file);
+ if(ttl){const cached=q2ReadCache(key,ttl);if(cached!==null)return cached;}
+ if(q2PendingRequests.has(key))return q2PendingRequests.get(key);
+ const task=(async()=>{
+  const c=ms?new AbortController():null,t=ms?setTimeout(()=>c.abort(),ms):null;
+  try{const r=await fetch(file,{cache:"default",...(c?{signal:c.signal}:{})});
+   if(!r.ok)throw Error(`HTTP ${r.status}`);
+   const data=await r.json();if(ttl&&data?.status!=="error")q2SaveCache(key,data);
+   return data;
+  }finally{if(t!==null)clearTimeout(t);}
+ })();
+ q2PendingRequests.set(key,task);
+ try{return await task;}finally{q2PendingRequests.delete(key);}
+}
+async function loadJson(file,fallback=[]){try{return await q2FetchJson(file,0)}catch{return fallback}}
+async function loadJsonTimeout(file,fallback=[],ms=8000){try{return await q2FetchJson(file,ms)}catch{return fallback}}
 const esc=s=>String(s??"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[m]));
 const playerUrl=n=>`player.html?name=${encodeURIComponent(n)}`,num=v=>Number(v)||0,pct=v=>`${Math.round(num(v))}%`,fmt=v=>Math.round(num(v)).toLocaleString("en-US");
 function getPlayers(m){if(Array.isArray(m?.players))return m.players;if(m?.stats&&typeof m.stats==="object")return Object.entries(m.stats).map(([name,v])=>({player:name,...v}));return[]}
