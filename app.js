@@ -333,9 +333,9 @@ function renderMapPerformance(matches,profileId,requestedName){
    const ratio=s.received?(s.dealt/s.received).toFixed(2):(s.dealt?"∞":"—");
    const tone=(v,baseline)=>v>baseline?"positive":v<baseline?"negative":"";
    const winTone=decided?tone(s.wins/decided,0.5):"";
-   return `<tr><td><span class="map-performance-map">${img}<span>${esc(s.map)}</span></span></td><td>${fmt(s.matches)}</td><td class="positive">${fmt(s.wins)}</td><td class="negative">${fmt(s.losses)}</td><td class="${winTone}">${win}</td><td class="positive">${(s.frags/s.matches).toFixed(1)}</td><td class="negative">${(s.deaths/s.matches).toFixed(1)}</td><td>${kd}</td><td class="positive">${fmt(s.dealt/s.matches)}</td><td class="negative">${fmt(s.received/s.matches)}</td><td>${ratio}</td></tr>`;
-  }).join(""):'<tr><td colspan="11" class="empty">No map statistics available for this mode.</td></tr>';
-  info.textContent=`${items.length} maps · ${items.reduce((n,s)=>n+s.matches,0)} matches with known maps · Win % = wins / (wins + losses) · DMG Ratio = dealt / received`;
+   return `<tr><td><span class="map-performance-map">${img}<span>${esc(s.map)}</span></span></td><td>${fmt(s.matches)}</td><td>${fmt(s.wins)}–${fmt(s.losses)}</td><td><div class="map-winrate"><span>${win}</span><div class="map-winrate-track"><div class="map-winrate-fill" style="width:${decided?(100*s.wins/decided).toFixed(1):0}%"></div></div></div></td><td>${kd}</td><td>${fmt(s.dealt/s.matches)}</td><td>${ratio}</td></tr>`;
+  }).join(""):'<tr><td colspan="7" class="empty">No map statistics available for this mode.</td></tr>';
+  info.textContent=`${items.length} maps · ${items.reduce((n,s)=>n+s.matches,0)} matches`;
   document.querySelectorAll("[data-map-mode]").forEach(b=>{const active=b.dataset.mapMode===mode;b.classList.toggle("active",active);b.setAttribute("aria-pressed",String(active))});
  }
  document.querySelectorAll("[data-map-mode]").forEach(b=>b.addEventListener("click",()=>draw(b.dataset.mapMode)));
