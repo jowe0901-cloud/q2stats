@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Player · Q2Stats Beta</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=15">
   <style>
     .profile-views{margin-top:9px;color:#8f9bad;font-size:.84rem;display:flex;align-items:center;gap:7px}
     .metric .elo-meta{display:block;margin-top:10px;font-size:.78rem;font-weight:600;color:#8f9bad;line-height:1.35}
@@ -102,8 +102,8 @@
     </div>
     <div id="mapPerformanceInfo" class="recent-info" aria-live="polite">Loading map statistics…</div>
     <div class="table-wrap"><table class="map-performance-table">
-      <thead><tr><th>Map</th><th>Matches</th><th>Wins</th><th>Losses</th><th>Win %</th><th>Avg Frags</th><th>Avg Deaths</th><th>K/D</th><th>Avg DMG Dealt</th><th>Avg DMG Recvd</th><th>DMG Ratio</th></tr></thead>
-      <tbody id="mapPerformanceBody"><tr><td colspan="11">Loading…</td></tr></tbody>
+      <thead><tr><th>Map</th><th>Matches</th><th>W–L</th><th>Win Rate</th><th>K/D</th><th>Avg DMG</th><th>DMG Ratio</th></tr></thead>
+      <tbody id="mapPerformanceBody"><tr><td colspan="7">Loading…</td></tr></tbody>
     </table></div>
   </section>
 
@@ -144,7 +144,7 @@
 </main>
 
 <footer>Q2Stats Beta</footer>
-<script src="app.js?v=14"></script>
+<script src="app.js?v=15"></script>
 <script>
 // Profile views are tracked separately from match and Elo data.
 (async function showProfileViews() {

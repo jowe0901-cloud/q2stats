@@ -95,3 +95,23 @@ canvas{width:100%;height:auto;background:#0c1016;border-radius:12px;border:1px s
 .map-performance-map{display:inline-flex;align-items:center;gap:10px;font-weight:800}
 .map-performance-map img{width:66px;height:48px;object-fit:cover;border:1px solid var(--line);border-radius:7px;background:#0d1117}
 @media(max-width:600px){.overall-combat{grid-template-columns:1fr 1fr}.map-performance-table th,.map-performance-table td{padding:9px 8px}}
+
+/* Compact Map Performance: 7 aligned columns, smaller previews and win-rate bars. */
+.map-performance-panel .table-wrap{width:100%;overflow-x:auto}
+.map-performance-table{width:100%;min-width:680px;table-layout:fixed;border-collapse:collapse}
+.map-performance-table th,.map-performance-table td{padding:8px 10px;vertical-align:middle}
+.map-performance-table th{font-size:10px;white-space:nowrap}
+.map-performance-table th:first-child,.map-performance-table td:first-child{width:25%;text-align:left}
+.map-performance-table th:nth-child(2),.map-performance-table td:nth-child(2){width:10%}
+.map-performance-table th:nth-child(3),.map-performance-table td:nth-child(3){width:10%}
+.map-performance-table th:nth-child(4),.map-performance-table td:nth-child(4){width:16%;text-align:left}
+.map-performance-table th:nth-child(5),.map-performance-table td:nth-child(5){width:10%}
+.map-performance-table th:nth-child(6),.map-performance-table td:nth-child(6){width:14%}
+.map-performance-table th:nth-child(7),.map-performance-table td:nth-child(7){width:15%}
+.map-performance-table .map-performance-map{display:inline-flex;align-items:center;gap:9px;min-height:30px}
+.map-performance-table .map-performance-map img{width:40px;height:30px;flex:none;object-fit:cover;border-radius:5px}
+.map-performance-table tbody td{height:48px;color:var(--text);font-weight:600}
+.map-performance-table .map-winrate{display:flex;flex-direction:column;align-items:flex-start;gap:5px;min-width:70px;color:#65d9aa;font-weight:800}
+.map-performance-table .map-winrate-track{height:4px;width:100%;max-width:110px;border-radius:99px;overflow:hidden;background:#2b3645}
+.map-performance-table .map-winrate-fill{height:100%;background:#65d9aa;border-radius:99px}
+@media(max-width:600px){.map-performance-table th,.map-performance-table td{padding:7px 8px}}
