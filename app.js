@@ -407,7 +407,15 @@ for(const [mode,id] of [["team","weaponBodyTeam"],["1v1","weaponBody1v1"]]){
   const byName=new Map(ws.map(x=>[String(x.weapon).toLowerCase(),x]));
   const ordered=WEAPON_DISPLAY_ORDER.map(w=>byName.get(w.toLowerCase())||{weapon:w,accuracy:null,kills:0,matches:0});
   const extras=ws.filter(x=>!WEAPON_DISPLAY_ORDER.some(w=>w.toLowerCase()===String(x.weapon).toLowerCase()) && !/^(?:adrenaline|combat[ _-]*armor|jacket[ _-]*armor|mega[ _-]*health)$/i.test(String(x.weapon).trim())).sort((a,b)=>String(a.weapon).localeCompare(String(b.weapon)));
-  document.getElementById(id).innerHTML=[...ordered,...extras].map(x=>`<tr><td><span class="weapon-summary-name">${weaponImage(x.weapon)}<span>${esc(x.weapon)}</span></span></td><td>${x.accuracy==null?'—':pct(x.accuracy)}</td><td>${fmt(x.kills)}</td><td>${fmt(x.matches)}</td></tr>`).join("");
+  const weaponBody=document.getElementById(id);
+  if(!weaponBody)continue;
+  weaponBody.closest("table")?.classList.add("weapon-summary-table");
+  weaponBody.innerHTML=[...ordered,...extras].map(x=>{
+    const accuracy=x.accuracy==null||!Number.isFinite(Number(x.accuracy))?null:Number(x.accuracy);
+    const barWidth=accuracy==null?0:Math.max(0,Math.min(100,accuracy));
+    const accuracyHtml=accuracy==null?'—':`<div class="weapon-summary-accuracy"><span>${pct(accuracy)}</span><div class="weapon-summary-track" aria-hidden="true"><div class="weapon-summary-fill" style="width:${barWidth}%"></div></div></div>`;
+    return `<tr><td><span class="weapon-summary-name">${weaponImage(x.weapon)}<span>${esc(x.weapon)}</span></span></td><td>${accuracyHtml}</td><td class="weapon-summary-kills">${fmt(x.kills)}</td><td class="weapon-summary-matches">${fmt(x.matches)}</td></tr>`;
+  }).join("");
 }
 renderMapPerformance(
   hasProfile&&Array.isArray(profile.matches)?profile.matches:
