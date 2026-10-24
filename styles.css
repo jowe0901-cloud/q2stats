@@ -135,3 +135,17 @@ canvas{width:100%;height:auto;background:#0c1016;border-radius:12px;border:1px s
 .homepage-elo .elo-medal-2{color:#b7c3d3;background:rgba(183,195,211,.08)}
 .homepage-elo .elo-medal-3{color:#c68f6b;background:rgba(198,143,107,.09)}
 @media(max-width:560px){.homepage-elo table{min-width:420px}.homepage-elo th,.homepage-elo td{padding:9px 4px}}
+
+/* Player Setup 2.0: two responsive, grouped configuration panels. */
+.player-setup{background:rgba(17,21,28,.9);border:1px solid var(--line);border-radius:16px;padding:20px;overflow:hidden}
+.player-setup .section-head h2{margin:5px 0 18px;font-size:22px}
+.player-setup .setup-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.player-setup .setup-group{min-width:0;background:#151e29;border:1px solid #2b394a;border-radius:12px;padding:16px}
+.player-setup .setup-group-title{display:flex;align-items:center;gap:9px;margin:0 0 12px;font-size:15px;color:#f3f6fa}
+.player-setup .setup-group-icon{display:inline-flex;align-items:center;justify-content:center;width:24px;height:24px;color:#ff795a;font-size:18px}
+.player-setup .setup-group-fields{display:grid}
+.player-setup .setup-row{align-items:baseline;gap:12px;padding:10px 0;border-bottom:1px solid #273443;font-size:13px}
+.player-setup .setup-row:last-child{border-bottom:0}
+.player-setup .setup-row span{color:#96a8bd}
+.player-setup .setup-row strong{color:#f4f6fa;text-align:right;overflow-wrap:anywhere}
+@media(max-width:700px){.player-setup .setup-list{grid-template-columns:1fr}}

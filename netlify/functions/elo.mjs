@@ -35,6 +35,37 @@ export default async (request) => {
     const VERSION = type === "team" ? TEAM_VERSION : DUEL_VERSION;
     const db = getDatabase();
 
+    // Exact rank for a single player, including positions beyond the first 100.
+    // Ranking order is identical to the paginated leaderboard below.
+    const rankPlayer = (url.searchParams.get("rank_player") || "").trim();
+    if (rankPlayer) {
+      const ranked = await db.sql`
+        SELECT player_name, rank, elo, matches, wins, losses, winrate
+        FROM (
+          SELECT player_name,
+            ROW_NUMBER() OVER (ORDER BY rating DESC, player_name ASC)::int AS rank,
+            ROUND(rating)::int AS elo,
+            matches, wins, losses,
+            CASE WHEN matches > 0
+              THEN ROUND((wins::numeric / matches::numeric) * 100, 1)
+              ELSE 0 END AS winrate
+          FROM elo_ratings
+          WHERE elo_type=${type} AND algorithm_version=${VERSION}
+        ) ranked_players
+        WHERE player_name=${rankPlayer}
+        LIMIT 1
+      `;
+      const r = ranked[0];
+      return json(200, {
+        status: "ok", type, algorithm_version: VERSION, player: rankPlayer,
+        ranking: r ? {
+          rank: Number(r.rank), player: r.player_name, elo: Number(r.elo),
+          matches: Number(r.matches), wins: Number(r.wins),
+          losses: Number(r.losses), winrate: Number(r.winrate)
+        } : null
+      });
+    }
+
     // Player Elo history mode.
     // Example: /.netlify/functions/elo?type=team&player=qw
     const player = (url.searchParams.get("player") || "").trim();
