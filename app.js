@@ -24,15 +24,17 @@ const PROFILE_API = location.hostname === "localhost"
     : "/api/v1/profiles";
 
 (function(){const st=document.createElement("style");st.textContent='.vs-badge{display:inline-block;margin:0 9px;padding:2px 7px;border:1px solid #3a4656;border-radius:5px;background:#161d27;color:#fff;font-size:.78em;font-weight:800;letter-spacing:.08em;vertical-align:1px;white-space:nowrap}.team-avg-elo{color:#7d8796;font-weight:600}';document.head.appendChild(st)})();
-// Cache public API responses locally per visitor. TTL: 10 min for statistics,
-// 1 min for recent match lists. Never persist error responses or huge payloads.
+// Cache public API responses locally per visitor. TTL: 60 min for weapon leaderboard,
+// 10 min for other statistics, 1 min for recent match lists. Never persist error responses or huge payloads.
 const Q2_CACHE_VERSION="q2stats-public-v1:";
 const Q2_CACHE_STATS_MS=10*60*1000, Q2_CACHE_RECENT_MS=60*1000;
+const Q2_CACHE_WEAPON_LEADERBOARD_MS=60*60*1000;
 const q2PendingRequests=new Map();
 function q2CachePolicy(file){
  const url=String(file);
  if(!/(?:\/api\/v1\/(?:matches|profiles|weapons|weapon-leaderboard)|\/\.netlify\/functions\/elo)(?:[/?]|$)/.test(url))return null;
  if(/\/api\/v1\/matches(?:\?|$)/.test(url))return Q2_CACHE_RECENT_MS;
+ if(/\/api\/v1\/weapon-leaderboard(?:\?|$)/.test(url))return Q2_CACHE_WEAPON_LEADERBOARD_MS;
  return Q2_CACHE_STATS_MS;
 }
 function q2ReadCache(file,ttl){
@@ -165,7 +167,43 @@ function renderWeapons(data){for(const mode of ["team","1v1"]){const n=normalize
     heading.insertAdjacentHTML("afterbegin",weaponImage(w));
   }
   let rows=n[w]||[];if(!Array.isArray(rows))rows=rows.top5||[];rows=rows.slice(0,5);el.innerHTML=rows.length?rows.map((r,i)=>`<div class="weapon-row"><span>${i+1}. <a class="player-link" href="${playerUrl(r.player||r.name)}">${esc(r.player||r.name)}</a></span><span>${r.accuracy==null?'—':pct(r.accuracy)}</span><span>${fmt(r.kills)} kills</span></div>`).join(""):'<div class="empty">No data</div>'})}}
-async function initIndex(){const[matchData,teamData,teamData2,oneData,weapons]=await Promise.all([loadJson(`${MATCH_API}?limit=12&offset=0`,{matches:[],total:0}),loadJson(`${ELO_API}?type=team&limit=100&offset=0`,{rankings:[]}),loadJson(`${ELO_API}?type=team&limit=100&offset=100`,{rankings:[]}),loadJson(`${ELO_API}?type=1v1&limit=100&offset=0`,{rankings:[]}),loadJson(WEAPON_LEADERBOARD_API,{})]);const matches=Array.isArray(matchData?.matches)?matchData.matches:[],team=Array.isArray(teamData?.rankings)?teamData.rankings:[],team2=Array.isArray(teamData2?.rankings)?teamData2.rankings:[],one=Array.isArray(oneData?.rankings)?oneData.rankings:[];document.getElementById("teamEloBody").innerHTML=rankRows(team,10);document.getElementById("oneEloBody").innerHTML=rankRows(one,10);renderWeapons(weapons);renderMatches(matches.slice().reverse(),"matchList",12);document.getElementById("totalMatches").textContent=fmt(matchData?.total??matches.length);document.getElementById("totalPlayers").textContent=fmt(new Set([...team,...team2,...one].map(x=>x.player||x.name).filter(Boolean)).size);const lm=matches[matches.length-1];document.getElementById("latestMatch").textContent=lm?(lm.map||lm.mapname||"Match"):"—";const top=(team||[]).slice().sort((a,b)=>num(b.elo)-num(a.elo))[0];document.getElementById("topTeam").textContent=top?`${top.player||top.name} · ${fmt(top.elo)}`:"—";document.getElementById("dataStatus").textContent=matches.length||team.length?"Data connected":"Waiting for data"}
+async function initIndex(){
+  // Render independent homepage sections as soon as their own requests finish.
+  // The slower weapon leaderboard must not delay Recent Games or Elo.
+  let matchesReady=false, eloReady=false;
+  const updateStatus=()=>{
+    const el=document.getElementById("dataStatus");
+    if(el)el.textContent=matchesReady||eloReady?"Data connected":"Waiting for data";
+  };
+  const recentTask=loadJson(`${MATCH_API}?limit=12&offset=0`,{matches:[],total:0}).then(matchData=>{
+    const matches=Array.isArray(matchData?.matches)?matchData.matches:[];
+    renderMatches(matches.slice().reverse(),"matchList",12);
+    document.getElementById("totalMatches").textContent=fmt(matchData?.total??matches.length);
+    const lm=matches[matches.length-1];
+    document.getElementById("latestMatch").textContent=lm?(lm.map||lm.mapname||"Match"):"—";
+    matchesReady=matches.length>0;updateStatus();
+  });
+  const teamTask=loadJson(`${ELO_API}?type=team&limit=100&offset=0`,{rankings:[]}).then(teamData=>{
+    const team=Array.isArray(teamData?.rankings)?teamData.rankings:[];
+    document.getElementById("teamEloBody").innerHTML=rankRows(team,10);
+    const top=team.slice().sort((a,b)=>num(b.elo)-num(a.elo))[0];
+    document.getElementById("topTeam").textContent=top?`${top.player||top.name} · ${fmt(top.elo)}`:"—";
+    eloReady=team.length>0;updateStatus();
+    return team;
+  });
+  const team2Task=loadJson(`${ELO_API}?type=team&limit=100&offset=100`,{rankings:[]}).then(d=>Array.isArray(d?.rankings)?d.rankings:[]);
+  const oneTask=loadJson(`${ELO_API}?type=1v1&limit=100&offset=0`,{rankings:[]}).then(oneData=>{
+    const one=Array.isArray(oneData?.rankings)?oneData.rankings:[];
+    document.getElementById("oneEloBody").innerHTML=rankRows(one,10);
+    return one;
+  });
+  const playerCountTask=Promise.all([teamTask,team2Task,oneTask]).then(([team,team2,one])=>{
+    document.getElementById("totalPlayers").textContent=fmt(new Set([...team,...team2,...one].map(x=>x.player||x.name).filter(Boolean)).size);
+  });
+  const weaponsTask=loadJson(WEAPON_LEADERBOARD_API,{}).then(renderWeapons);
+  await Promise.all([recentTask,playerCountTask,weaponsTask]);
+}
+
 function playerResult(m,name){const p=getPlayers(m).find(x=>pname(x)===name);if(!p)return null;const t=ptotal(p);let won=null;if(typeof p.win==="boolean")won=p.win;else if(p.result)won=String(p.result).toLowerCase().startsWith("w");else if(m.winner)won=String(m.winner).toLowerCase()===name.toLowerCase()||String(m.winner).toLowerCase()===String(p.team||"").toLowerCase();return{p,t,won}}
 function profileModeStats(profile){
  const matches=Array.isArray(profile?.matches)?profile.matches:[];

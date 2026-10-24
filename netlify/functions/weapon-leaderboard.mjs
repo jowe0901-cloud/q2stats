@@ -4,8 +4,11 @@ const json=(status,body)=>new Response(JSON.stringify(body),{
   status,
   headers:{
     "content-type":"application/json; charset=utf-8",
-    "cache-control":"public, max-age=600",
-  "Netlify-CDN-Cache-Control":"public, s-maxage=600"
+    // Cache only successful responses; never cache errors or unsupported methods.
+    "cache-control": status===200 ? "public, max-age=3600" : "no-store",
+    "Netlify-CDN-Cache-Control": status===200
+      ? "public, s-maxage=3600, stale-while-revalidate=3600"
+      : "no-store"
   }
 });
 
@@ -56,6 +59,10 @@ export default async(request)=>{
        AND mp.name=w.player_name
       LEFT JOIN player_profiles pp
         ON pp.id=mp.profile_id
+       -- Only the three leaderboard weapons are needed. Filter before transfer.
+       WHERE LOWER(TRIM(w.weapon)) IN (
+         'railgun', 'rocket launcher', 'rocket_launcher', 'chaingun'
+       )
     `;
 
     const grouped=new Map();
