@@ -617,7 +617,21 @@ document.getElementById('exportDatabaseBtn').addEventListener('click',async()=>{
  try{
   const response=await fetch('/api/admin/export',{headers:{'x-q2stats-admin-key':key},cache:'no-store'});
   if(!response.ok){const e=await response.json();throw Error(e.error||`HTTP ${response.status}`)}
-  const compressed=await response.blob();let blob,name,count=response.headers.get('x-q2stats-match-count');
+  const countHeader=response.headers.get('x-q2stats-match-count');
+  const total=Number(response.headers.get('x-export-parts')||1),sha=response.headers.get('x-export-sha256'),at=response.headers.get('x-export-at');
+  const chunks=[await response.arrayBuffer()];
+  for(let i=1;i<total;i++){
+   status.textContent=`Downloading export part ${i+1} of ${total}…`;
+   const params=new URLSearchParams({part:String(i),export_at:at,sha256:sha});
+   const part=await fetch('/api/admin/export?'+params,{headers:{'x-q2stats-admin-key':key},cache:'no-store'});
+   if(!part.ok){const e=await part.json();throw Error(e.error||`HTTP ${part.status}`)}
+   if(part.headers.get('x-export-sha256')!==sha||Number(part.headers.get('x-export-parts'))!==total)throw Error('Export changed during download. Please retry.');
+   chunks.push(await part.arrayBuffer());
+  }
+  const compressed=new Blob(chunks,{type:'application/gzip'});
+  if(compressed.size!==Number(response.headers.get('x-export-bytes')))throw Error('Incomplete download. Please retry.');
+  if(crypto.subtle){const digest=await crypto.subtle.digest('SHA-256',await compressed.arrayBuffer());const actual=[...new Uint8Array(digest)].map(x=>x.toString(16).padStart(2,'0')).join('');if(actual!==sha)throw Error('Export checksum mismatch.');}
+  let blob,name,count=countHeader;
   if(typeof DecompressionStream!=='undefined'){
    blob=await new Response(compressed.stream().pipeThrough(new DecompressionStream('gzip'))).blob();
    const data=JSON.parse(await blob.text());
