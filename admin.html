@@ -171,6 +171,14 @@
       <div id="opentdmIdentityList"></div>
     </article>
   </section>
+
+    <article class="panel" style="margin:20px 0">
+      <div class="panel-head"><div><span class="eyebrow">LOCAL TEST DATA</span><h2>Export database</h2></div></div>
+      <p class="admin-note">Download all matches, player and weapon statistics, profiles, aliases, identity links and current Elo data in one consistent snapshot. Server credentials and API keys are excluded. The file contains private identity data: keep it private.</p>
+      <button class="admin-btn primary" id="exportDatabaseBtn" type="button">Download full statistics export</button>
+      <p class="admin-note" id="exportDatabaseStatus" role="status"></p>
+    </article>
+
 </main>
 
 <footer>Q2Stats Beta · Admin</footer>
@@ -599,6 +607,28 @@ document.getElementById("createBtn").onclick=async()=>{
     document.getElementById("createBtn").disabled=false;
   }
 };
+</script>
+<script>
+document.getElementById('exportDatabaseBtn').addEventListener('click',async()=>{
+ const button=document.getElementById('exportDatabaseBtn'),status=document.getElementById('exportDatabaseStatus');
+ const key=adminKey||document.getElementById('adminKey').value.trim();
+ if(!key){status.textContent='Enter your admin key first.';return;}
+ button.disabled=true;status.textContent='Exporting all statistics. Please keep this page open…';
+ try{
+  const response=await fetch('/api/admin/export',{headers:{'x-q2stats-admin-key':key},cache:'no-store'});
+  if(!response.ok){const e=await response.json();throw Error(e.error||`HTTP ${response.status}`)}
+  const compressed=await response.blob();let blob,name,count=response.headers.get('x-q2stats-match-count');
+  if(typeof DecompressionStream!=='undefined'){
+   blob=await new Response(compressed.stream().pipeThrough(new DecompressionStream('gzip'))).blob();
+   const data=JSON.parse(await blob.text());
+   if(data.format!=='q2stats-db-export'||data.matches.length!==data.counts.matches)throw Error('Export validation failed: match count mismatch.');
+   count=data.counts.matches;
+   name='q2stats-db-export-'+new Date().toISOString().replace(/[:.]/g,'-')+'.json';
+  }else{blob=compressed;name='q2stats-db-export.json.gz';}
+  const url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=name;document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),60000);
+  status.textContent=`Export ready: ${count} matches. File: ${name}. Keep this admin export private.`;
+ }catch(e){status.textContent='Export failed: '+e.message;}finally{button.disabled=false;}
+});
 </script>
 </body>
 </html>
