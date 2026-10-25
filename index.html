@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Q2Stats Beta</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=poll1">
   <style>
     .topbar .elo-guide-link{margin-left:auto;white-space:nowrap;border:1px solid var(--accent);border-radius:999px;padding:8px 14px;text-decoration:none;color:var(--accent2);font-weight:800}
     .topbar .elo-guide-link:hover,.topbar .elo-guide-link:focus-visible{background:rgba(255,77,46,.12);color:var(--text)}
@@ -39,6 +39,14 @@
     <article class="metric"><span>Players</span><strong id="totalPlayers">—</strong></article>
     <article class="metric"><span>Latest match</span><strong id="latestMatch">—</strong></article>
     <article class="metric"><span>Top Team Elo</span><strong id="topTeam">—</strong></article>
+  </section>
+
+  <section class="panel rating-poll" id="ratingPoll" aria-labelledby="ratingPollTitle">
+    <div class="panel-head"><div><span class="eyebrow">COMMUNITY POLL</span><h2 id="ratingPollTitle">What do you think of the new rating system?</h2></div></div>
+    <p class="poll-intro">Share your opinion. Results appear after you vote.</p>
+    <div id="ratingPollContent"></div>
+    <p id="ratingPollStatus" role="status" aria-live="polite">Loading poll…</p>
+    <noscript>Enable JavaScript to vote in this poll.</noscript>
   </section>
 
   <section class="two-col">
@@ -94,6 +102,6 @@
 </main>
 
 <footer>Q2Stats Beta · Matches and player rankings are browsable</footer>
-<script src="app.js?v=10"></script>
+<script src="app.js?v=poll1"></script>
 </body>
 </html>

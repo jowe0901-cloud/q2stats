@@ -497,3 +497,38 @@ async function initMatch(){
  box.innerHTML=`<div class="match-elo-note">${is1v1?'1v1 Elo':'Team Elo'} · rating after match (change) · team average uses rating before match</div>`+groups.map(g=>{g.players.sort((a,b)=>{const ta=ptotal(a),tb=ptotal(b);return num(tb.frags??tb.kills??b.score)-num(ta.frags??ta.kills??a.score)});const avg=avgPreElo(g),score=teamScore(g);return`<section class="team-scoreboard"><div class="team-scoreboard-head"><span class="team-name">${esc(g.label)}</span><span class="team-head-meta">${avg!=null?`<span>Avg Elo <strong>${fmt(avg)}</strong></span>`:''}${score!=null?`<span class="team-score">Score <strong>${esc(score)}</strong></span>`:''}<span>${g.players.length} player${g.players.length===1?'':'s'}</span></span></div><div class="table-wrap"><table><thead><tr><th>Player</th><th>Frags</th><th>Dths</th><th>Net</th><th>Ping</th><th>Elo</th></tr></thead><tbody>${g.players.map(row).join("")}</tbody></table></div></section>`}).join("")||'<div class="empty">No player data</div>' 
 }
 if(document.getElementById("teamEloBody"))initIndex();if(document.getElementById("playerName"))initPlayer();if(document.getElementById("rankingBody"))initRankings();if(document.getElementById("allMatchList"))initMatchesPage();if(document.getElementById("matchDetail"))initMatch();
+
+// The community poll is isolated from statistics loading and runs only on the homepage.
+async function initRatingPoll(){
+ const box=document.getElementById('ratingPollContent'),status=document.getElementById('ratingPollStatus');
+ if(!box||!status)return;
+ const endpoint='/api/v1/rating-poll';let busy=false;
+ const el=(tag,text,cls)=>{const x=document.createElement(tag);if(text!==undefined)x.textContent=text;if(cls)x.className=cls;return x;};
+ async function request(method='GET',choice){
+  const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),15000);
+  try{const r=await fetch(endpoint,{method,cache:'no-store',credentials:'same-origin',signal:controller.signal,...(method==='POST'?{headers:{'Content-Type':'application/json'},body:JSON.stringify({choice})}:{})});const data=await r.json();if(!r.ok)throw Error(data.error||'Unable to load poll.');return data;}finally{clearTimeout(timer);}
+ }
+ function render(data){
+  box.replaceChildren();status.textContent='';
+  if(data.voted){
+   for(let i=0;i<data.options.length;i++){
+    const count=data.counts[i],pct=data.total?count/data.total*100:0,row=el('div',undefined,'poll-result'+(data.choice===i?' selected':''));
+    const label=el('div',undefined,'poll-result-label');label.append(el('span',data.options[i]+(data.choice===i?' · Your vote':'')),el('span',`${pct.toFixed(1)}% · ${count} ${count===1?'vote':'votes'}`,'poll-result-count'));
+    const track=el('div',undefined,'poll-track');track.setAttribute('aria-hidden','true');const fill=el('div',undefined,'poll-fill');fill.style.width=pct+'%';track.append(fill);row.append(label,track);box.append(row);
+   }
+   box.append(el('p',`${data.total} ${data.total===1?'vote':'votes'} in total`,'poll-total'));
+   status.textContent=data.is_open?'Thank you for voting!':'Thank you for voting. This poll is now closed.';return;
+  }
+  if(!data.is_open){status.textContent='This poll is closed.';return;}
+  const form=el('form'),fields=el('fieldset',undefined,'poll-choices');fields.setAttribute('aria-label','Choose your answer');
+  data.options.forEach((text,i)=>{const label=el('label',undefined,'poll-choice'),input=el('input');input.type='radio';input.name='rating-poll-choice';input.value=i;input.required=true;label.append(input,el('span',text));fields.append(label);});
+  const submit=el('button','Vote','poll-submit');submit.type='submit';form.append(fields,submit);box.append(form);
+  form.addEventListener('submit',async event=>{
+   event.preventDefault();if(busy)return;const selected=form.querySelector('input:checked');if(!selected)return;
+   busy=true;submit.disabled=true;fields.disabled=true;status.textContent='Submitting your vote…';
+   try{render(await request('POST',Number(selected.value)));}catch(e){status.textContent=e.name==='AbortError'?'The request timed out. Reload to check whether your vote was saved.':e.message;}finally{busy=false;submit.disabled=false;fields.disabled=false;}
+  });
+ }
+ try{render(await request());}catch(e){status.textContent='The poll is temporarily unavailable. ';const retry=el('button','Try again','poll-submit');retry.type='button';retry.addEventListener('click',()=>{box.replaceChildren();status.textContent='Loading poll…';initRatingPoll();});box.append(retry);}
+}
+if(document.getElementById('ratingPoll'))initRatingPoll();
