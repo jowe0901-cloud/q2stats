@@ -1,0 +1,20 @@
+BEGIN;
+ALTER TABLE elo_ratings ADD COLUMN IF NOT EXISTS rd DOUBLE PRECISION;
+ALTER TABLE elo_ratings ADD COLUMN IF NOT EXISTS rating_period INTEGER;
+ALTER TABLE elo_history ADD COLUMN IF NOT EXISTS rd_before DOUBLE PRECISION;
+ALTER TABLE elo_history ADD COLUMN IF NOT EXISTS rd_after DOUBLE PRECISION;
+ALTER TABLE elo_history ADD COLUMN IF NOT EXISTS performance DOUBLE PRECISION;
+ALTER TABLE elo_history ADD COLUMN IF NOT EXISTS contribution_bonus DOUBLE PRECISION;
+ALTER TABLE elo_history ADD COLUMN IF NOT EXISTS raw_delta DOUBLE PRECISION;
+ALTER TABLE elo_history ADD COLUMN IF NOT EXISTS win_floor_adjustment DOUBLE PRECISION;
+CREATE TABLE IF NOT EXISTS q2stats_rating_state (
+ id INTEGER PRIMARY KEY CHECK(id=1),
+ active_model TEXT NOT NULL CHECK(active_model IN ('legacy','glicko')),
+ updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
+);
+INSERT INTO q2stats_rating_state(id,active_model) VALUES(1,'legacy') ON CONFLICT DO NOTHING;
+CREATE TABLE IF NOT EXISTS q2stats_rating_processed (
+ model TEXT NOT NULL,match_id TEXT NOT NULL REFERENCES matches(match_id) ON DELETE CASCADE,
+ skipped_reason TEXT,PRIMARY KEY(model,match_id)
+);
+COMMIT;

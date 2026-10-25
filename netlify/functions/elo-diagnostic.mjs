@@ -1,5 +1,6 @@
+import {getRatingVersions} from "./rating-model.mjs";
 import { getDatabase } from "@netlify/database";
-import { VERSION, normalizePlayers, winner } from "./elo-engine.mjs";
+import { normalizePlayers, winner } from "./elo-engine.mjs";
 
 const json=(status,body)=>new Response(JSON.stringify(body,null,2),{
   status,
@@ -13,10 +14,11 @@ export default async(request)=>{
   if(!matchId) return json(400,{status:"error",error:"match_id is required"});
 
   const db=getDatabase();
+  const versions=await getRatingVersions(db);
   const client=await db.pool.connect();
   try{
     const mr=await client.query(
-      `SELECT id,match_id,home_score,away_score,winner,saved_at,created_at
+      `SELECT id,match_id,game_type,home_score,away_score,winner,saved_at,created_at
        FROM matches WHERE match_id=$1 LIMIT 1`,[matchId]);
     if(!mr.rows.length) return json(404,{status:"error",error:"Match not found",match_id:matchId});
 
@@ -29,8 +31,9 @@ export default async(request)=>{
     const home=normalized.filter(p=>p.team==="Home");
     const away=normalized.filter(p=>p.team==="Away");
     const win=winner(mr.rows[0]);
-    const type=(normalized.length===2&&home.length===1&&away.length===1)?"1v1":"team";
+    const type=String(mr.rows[0].game_type).toLowerCase()==="team"?"team":normalized.length===2?"1v1":"team";
 
+    const VERSION=versions[type];
     const hr=await client.query(
       `SELECT id,match_id,player_name,elo_type,team,old_elo,elo_change,new_elo,algorithm_version,created_at
        FROM elo_history WHERE match_id=$1 ORDER BY id ASC`,[matchId]);
