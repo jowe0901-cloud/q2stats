@@ -1,8 +1,9 @@
+import {getRatingVersions} from "./rating-model.mjs";
 import { getDatabase } from "@netlify/database";
 import crypto from "node:crypto";
 import { updateEloForMatch } from "./elo-update.mjs";
 
-const json=(status,body)=>new Response(JSON.stringify(body),{status,headers:{"content-type":"application/json; charset=utf-8","Access-Control-Allow-Origin":"*","Access-Control-Allow-Methods":"GET, POST, OPTIONS","Access-Control-Allow-Headers":"Content-Type, X-Q2Stats-Server-Key"}});
+const json=(status,body)=>new Response(JSON.stringify(body),{status,headers:{"cache-control":"no-store","Netlify-CDN-Cache-Control":"no-store","content-type":"application/json; charset=utf-8","Access-Control-Allow-Origin":"*","Access-Control-Allow-Methods":"GET, POST, OPTIONS","Access-Control-Allow-Headers":"Content-Type, X-Q2Stats-Server-Key"}});
 
 function getMatchId(request){
  const url=new URL(request.url),prefix="/api/v1/matches/";
@@ -82,21 +83,24 @@ async function profileIdForNickname(db,nickname){
 }
 
 async function playersForMatch(db,matchId){
+ const versions=await getRatingVersions(db);
  return await db.sql`
   SELECT mp.name, mp.team, mp.frags, mp.deaths, mp.damage, mp.ping, mp.suicides, mp.teamkills,
          mp.teleports, mp.damage_received, mp.team_damage, mp.team_damage_received,
-         eh.old_elo AS elo_before, eh.elo_change, eh.new_elo AS elo_after
+         eh.old_elo AS elo_before, eh.elo_change, eh.new_elo AS elo_after, eh.rd_after AS glicko_rd, eh.performance AS glicko_performance, eh.contribution_bonus
   FROM match_players mp
   LEFT JOIN player_profiles pp ON pp.id=mp.profile_id
    LEFT JOIN LATERAL (
-     SELECT h.old_elo, h.elo_change, h.new_elo
+     SELECT h.old_elo, h.elo_change, h.new_elo, h.rd_after, h.performance, h.contribution_bonus
      FROM elo_history h
      WHERE h.match_id=mp.match_id
        AND h.elo_type=CASE
+         WHEN ${versions.model}='glicko' AND (SELECT LOWER(game_type) FROM matches WHERE match_id=mp.match_id) IN ('1v1','duel') THEN '1v1'
+         WHEN ${versions.model}='glicko' AND (SELECT LOWER(game_type) FROM matches WHERE match_id=mp.match_id)='team' THEN 'team'
          WHEN (SELECT COUNT(*) FROM match_players x WHERE x.match_id=mp.match_id)=2 THEN '1v1'
          ELSE 'team'
        END
-       AND h.algorithm_version=CASE WHEN h.elo_type='team' THEN 'v2-team-perf' ELSE 'v1' END
+       AND h.algorithm_version=CASE WHEN h.elo_type='team' THEN ${versions.team} ELSE ${versions['1v1']} END
        AND (h.player_name=mp.name OR h.player_name=pp.primary_name)
      ORDER BY CASE WHEN h.player_name=mp.name THEN 0 ELSE 1 END
      LIMIT 1

@@ -1,14 +1,13 @@
 import { getDatabase } from "@netlify/database";
 
-const TEAM_VERSION = "v2-team-perf";
-const DUEL_VERSION = "v1";
+import {getRatingVersions} from "./rating-model.mjs";
 
 const json = (status, body) => new Response(JSON.stringify(body), {
   status,
   headers: {
     "content-type": "application/json; charset=utf-8",
-    "cache-control": "public, max-age=600",
-    "Netlify-CDN-Cache-Control": "public, s-maxage=600"
+    "cache-control": "no-store",
+    "Netlify-CDN-Cache-Control": "no-store"
   }
 });
 
@@ -32,19 +31,20 @@ export default async (request) => {
     const limit = Math.max(1, Math.min(Number.isFinite(rawLimit) ? Math.trunc(rawLimit) : 100, 100));
     const offset = Math.max(0, Number.isFinite(rawOffset) ? Math.trunc(rawOffset) : 0);
 
-    const VERSION = type === "team" ? TEAM_VERSION : DUEL_VERSION;
     const db = getDatabase();
+    const versions = await getRatingVersions(db);
+    const VERSION = versions[type];
 
     // Exact rank for a single player, including positions beyond the first 100.
     // Ranking order is identical to the paginated leaderboard below.
     const rankPlayer = (url.searchParams.get("rank_player") || "").trim();
     if (rankPlayer) {
       const ranked = await db.sql`
-        SELECT player_name, rank, elo, matches, wins, losses, winrate
+        SELECT player_name, rank, elo, rd, matches, wins, losses, winrate
         FROM (
           SELECT player_name,
             ROW_NUMBER() OVER (ORDER BY rating DESC, player_name ASC)::int AS rank,
-            ROUND(rating)::int AS elo,
+            ROUND(rating)::int AS elo, rd,
             matches, wins, losses,
             CASE WHEN matches > 0
               THEN ROUND((wins::numeric / matches::numeric) * 100, 1)
@@ -59,7 +59,7 @@ export default async (request) => {
       return json(200, {
         status: "ok", type, algorithm_version: VERSION, player: rankPlayer,
         ranking: r ? {
-          rank: Number(r.rank), player: r.player_name, elo: Number(r.elo),
+          rank: Number(r.rank), player: r.player_name, elo: Number(r.elo), rd: r.rd==null?null:Number(r.rd),
           matches: Number(r.matches), wins: Number(r.wins),
           losses: Number(r.losses), winrate: Number(r.winrate)
         } : null
@@ -76,7 +76,7 @@ export default async (request) => {
           player_name,
           elo_type,
           team,
-          old_elo,
+          old_elo, rd_before, rd_after, performance, contribution_bonus, raw_delta, win_floor_adjustment,
           elo_change,
           new_elo,
           created_at
@@ -95,6 +95,7 @@ export default async (request) => {
         elo_before: Number(r.old_elo),
         elo_change: Number(r.elo_change),
         elo_after: Number(r.new_elo),
+        rd_before:r.rd_before,rd_after:r.rd_after,performance:r.performance,contribution_bonus:r.contribution_bonus,raw_delta:r.raw_delta,win_floor_adjustment:r.win_floor_adjustment,
         created_at: r.created_at
       }));
 
@@ -119,7 +120,7 @@ export default async (request) => {
     const rows = await db.sql`
       SELECT
         player_name,
-        ROUND(rating)::int AS elo,
+        ROUND(rating)::int AS elo, rd,
         rating AS elo_exact,
         matches,
         wins,
@@ -139,7 +140,7 @@ export default async (request) => {
     const rankings = rows.map((r, i) => ({
       rank: offset + i + 1,
       player: r.player_name,
-      elo: Number(r.elo),
+      elo: Number(r.elo), rd: r.rd==null?null:Number(r.rd),
       matches: Number(r.matches),
       wins: Number(r.wins),
       losses: Number(r.losses),

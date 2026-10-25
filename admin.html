@@ -97,9 +97,10 @@
 
       <article class="panel">
         <div class="panel-head"><div><span class="eyebrow">ELO</span><h2>Recalculate Elo</h2></div></div>
-        <p class="admin-note">Rebuild Team Elo v2 and 1v1 Elo v1 from the full match history. Linked aliases use the profile's public main nickname.</p>
+        <p class="admin-note">Rebuild and activate Glicko (start 1500, RD 100). Team games include a contribution bonus and minimum +2 on a win. Linked profiles use their public main nickname. The previous model can be restored below.</p>
         <div class="setup-actions">
-          <button class="admin-btn" id="rebuildEloBtn" type="button">Recalculate Elo</button>
+          <button class="admin-btn" id="rebuildEloBtn" type="button">Activate / rebuild Glicko + team damage share</button>
+          <button class="admin-btn" id="restoreLegacyEloBtn" type="button">Restore previous Elo model</button>
           <span class="admin-note" id="eloStatus">Run this after merging or changing player identities.</span>
         </div>
       </article>
@@ -559,12 +560,12 @@ document.getElementById("checkMatchesBtn").onclick=async()=>{
 
 document.getElementById("rebuildEloBtn").onclick=async()=>{
   if(!adminKey){setStatus("Connect with the admin key first.","bad");return}
-  if(!confirm("Recalculate Team Elo v2 and 1v1 Elo v1 from the complete match history?\n\nUse this after merging or changing player identities."))return;
+  if(!confirm("Activate Glicko for TDM and 1v1? Start 1500, RD 100; TDM bonus = 50 * your share of team damage; minimum +2 on a win. No time-based RD increase. Rebuild the complete history?\n\nUse this after merging or changing player identities."))return;
   const btn=document.getElementById("rebuildEloBtn");
   const eloStatus=document.getElementById("eloStatus");
   btn.disabled=true;eloStatus.textContent="Recalculating Elo…";
   try{
-    const r=await fetch(ELO_REBUILD_API,{method:"POST",cache:"no-store",headers:{"x-q2stats-admin-key":adminKey,"x-q2stats-confirm":"REBUILD_ALL_ELO"}});
+    const r=await fetch(ELO_REBUILD_API+"?model=glicko",{method:"POST",cache:"no-store",headers:{"x-q2stats-admin-key":adminKey,"x-q2stats-confirm":"REBUILD_ALL_ELO"}});
     let out={};try{out=await r.json()}catch{}
     if(!r.ok)throw new Error(out.error||`HTTP ${r.status}`);
     eloStatus.textContent=`Done · ${out.matches_used??0} matches · ${out.ratings_written??0} ratings · ${out.history_written??0} history rows`;
@@ -573,6 +574,13 @@ document.getElementById("rebuildEloBtn").onclick=async()=>{
     eloStatus.textContent=`Elo rebuild failed: ${err.message}`;
     setStatus(err.message,"bad");
   }finally{btn.disabled=false}
+};
+
+document.getElementById("restoreLegacyEloBtn").onclick=async()=>{
+ if(!adminKey){setStatus("Connect with the admin key first.","bad");return}
+ if(!confirm("Rebuild and activate the previous Team Elo v2 / 1v1 Elo v1 model from all current matches?"))return;
+ const b=document.getElementById("restoreLegacyEloBtn");b.disabled=true;
+ try{const r=await fetch(ELO_REBUILD_API+"?model=legacy",{method:"POST",cache:"no-store",headers:{"x-q2stats-admin-key":adminKey,"x-q2stats-confirm":"REBUILD_ALL_ELO"}});const x=await r.json();if(!r.ok)throw Error(x.error||r.status);document.getElementById("eloStatus").textContent=`Previous model restored · ${x.matches_used} matches`;setStatus("Previous Elo model active.","good");}catch(e){setStatus(e.message,"bad")}finally{b.disabled=false}
 };
 
 document.getElementById("connectBtn").onclick=async()=>{

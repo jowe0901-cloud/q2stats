@@ -1,11 +1,12 @@
+import {getRatingVersions} from "./rating-model.mjs";
 import { getDatabase } from "@netlify/database";
 
 const json = (status, body) => new Response(JSON.stringify(body), {
   status,
   headers: {
     "content-type": "application/json; charset=utf-8",
-    "cache-control": "public, max-age=600",
-    "Netlify-CDN-Cache-Control": "public, s-maxage=600"
+    "cache-control": "no-store",
+    "Netlify-CDN-Cache-Control": "no-store"
   }
 });
 
@@ -62,6 +63,7 @@ export default async request => {
     if (!nickname && !profileId) return json(400, { status: "error", error: "nickname or profile_id is required" });
 
     const db = getDatabase();
+    const versions=await getRatingVersions(db);
     let profiles;
     if (profileId) {
       profiles = await db.sql`SELECT id, primary_name, created_at, updated_at FROM player_profiles WHERE id = ${profileId} LIMIT 1`;
@@ -100,10 +102,12 @@ export default async request => {
         FROM elo_history h
         WHERE h.match_id = mp.match_id
           AND h.elo_type = CASE
+            WHEN ${versions.model}='glicko' AND LOWER(m.game_type) IN ('1v1','duel') THEN '1v1'
+            WHEN ${versions.model}='glicko' AND LOWER(m.game_type)='team' THEN 'team'
             WHEN (SELECT COUNT(*) FROM match_players x WHERE x.match_id = mp.match_id) = 2 THEN '1v1'
             ELSE 'team'
           END
-          AND h.algorithm_version = CASE WHEN h.elo_type='team' THEN 'v2-team-perf' ELSE 'v1' END
+          AND h.algorithm_version = CASE WHEN h.elo_type='team' THEN ${versions.team} ELSE ${versions['1v1']} END
           AND (h.player_name = mp.name OR h.player_name = pp.primary_name)
         ORDER BY CASE WHEN h.player_name = mp.name THEN 0 ELSE 1 END
         LIMIT 1
