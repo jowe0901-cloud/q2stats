@@ -1,3 +1,4 @@
+BEGIN;
 ALTER TABLE elo_ratings ADD COLUMN IF NOT EXISTS rd DOUBLE PRECISION;
 ALTER TABLE elo_ratings ADD COLUMN IF NOT EXISTS rating_period INTEGER;
 ALTER TABLE elo_history ADD COLUMN IF NOT EXISTS rd_before DOUBLE PRECISION;
@@ -16,3 +17,4 @@ CREATE TABLE IF NOT EXISTS q2stats_rating_processed (
  model TEXT NOT NULL,match_id TEXT NOT NULL REFERENCES matches(match_id) ON DELETE CASCADE,
  skipped_reason TEXT,PRIMARY KEY(model,match_id)
 );
+COMMIT;
