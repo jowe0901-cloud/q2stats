@@ -413,8 +413,7 @@ for(const [mode,id] of [["team","weaponBodyTeam"],["1v1","weaponBody1v1"]]){
   weaponBody.closest("table")?.classList.add("weapon-summary-table");
   weaponBody.innerHTML=[...ordered,...extras].map(x=>{
     const accuracy=x.accuracy==null||!Number.isFinite(Number(x.accuracy))?null:Number(x.accuracy);
-    const barWidth=accuracy==null?0:Math.max(0,Math.min(100,accuracy));
-    const accuracyHtml=accuracy==null?'—':`<div class="weapon-summary-accuracy"><span>${pct(accuracy)}</span><div class="weapon-summary-track" aria-hidden="true"><div class="weapon-summary-fill" style="width:${barWidth}%"></div></div></div>`;
+    const accuracyHtml=accuracy==null?'—':`<span class="weapon-summary-accuracy">${pct(accuracy)}</span>`;
     return `<tr><td><span class="weapon-summary-name">${weaponImage(x.weapon)}<span>${esc(x.weapon)}</span></span></td><td>${accuracyHtml}</td><td class="weapon-summary-kills">${fmt(x.kills)}</td><td class="weapon-summary-matches">${fmt(x.matches)}</td></tr>`;
   }).join("");
 }

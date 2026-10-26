@@ -160,9 +160,7 @@ canvas{width:100%;height:auto;background:#0c1016;border-radius:12px;border:1px s
 .arsenal-panels .weapon-summary-table tbody tr{height:43px}
 .arsenal-panels .weapon-summary-table .weapon-summary-name{gap:9px;font-weight:600;line-height:1.25}
 .arsenal-panels .weapon-summary-table .weapon-summary-name .weapon-art{width:46px;height:32px;object-fit:contain}
-.arsenal-panels .weapon-summary-table .weapon-summary-accuracy{display:flex;flex-direction:column;gap:5px;max-width:95px;font-weight:600}
-.arsenal-panels .weapon-summary-table .weapon-summary-track{height:4px;width:100%;border-radius:99px;background:#293341;overflow:hidden}
-.arsenal-panels .weapon-summary-table .weapon-summary-fill{height:100%;border-radius:99px;background:#ff865f}
+.arsenal-panels .weapon-summary-table .weapon-summary-accuracy{display:inline-flex;align-items:center;justify-content:center;min-width:50px;padding:5px 9px;border-radius:7px;background:#2b201e;color:#ffac8e;border:1px solid #513026;font-weight:600;line-height:1.2;white-space:nowrap;font-variant-numeric:tabular-nums}
 .arsenal-panels .weapon-summary-table .weapon-summary-kills{color:#f3f6fb;font-weight:850}
 .arsenal-panels .weapon-summary-table .weapon-summary-matches{color:#9aa8ba}
 @media(max-width:480px){
