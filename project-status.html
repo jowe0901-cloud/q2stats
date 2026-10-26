@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Q2Stats development progress, known issues and plans for improved match collection and server integration.">
+  <title>Project Status &amp; Roadmap · Q2Stats</title>
+  <link rel="stylesheet" href="styles.css?v=poll1">
+  <style>
+    .status-guide{width:min(860px,92vw);margin:0 auto;padding:48px 0 64px}
+    .status-guide h1{font-size:clamp(30px,6vw,48px);line-height:1.12;letter-spacing:-.03em;margin:12px 0 16px}
+    .status-guide h2{font-size:23px;margin:0 0 16px}.status-guide h3{font-size:17px;margin:24px 0 8px}
+    .status-guide p,.status-guide li{color:var(--muted);line-height:1.8;font-size:15px}
+    .status-guide strong{color:var(--text)}.status-guide li{margin:10px 0}.status-guide ul{padding-left:22px}
+    .status-guide section{margin:28px 0;padding:26px;background:var(--panel);border:1px solid var(--line);border-radius:16px}
+    .status-guide .updated{font-size:12px}.status-guide a{color:var(--accent2);text-underline-offset:3px}
+    .topbar nav{gap:16px}.topbar nav a{white-space:nowrap}.topbar nav .active{color:var(--accent2)}
+    @media(max-width:600px){.topbar{padding:0 4vw;gap:12px}.topbar .brand{font-size:17px}.topbar .brand small{display:none}.topbar nav{gap:12px;overflow-x:auto;min-width:0;padding:12px 0}.topbar nav a{font-size:12px}.status-guide{padding-top:30px}.status-guide section{padding:20px}}
+  </style>
+</head>
+<body>
+<header class="topbar">
+  <a class="brand no-underline" href="index.html"><span>Q2</span>STATS <small>BETA</small></a>
+  <nav aria-label="Main navigation">
+    <a href="index.html">Overview</a>
+    <a href="how-elo-works.html">How Elo Works ↗</a>
+    <a class="active" href="project-status.html" aria-current="page">Project Status</a>
+  </nav>
+</header>
+<main class="status-guide">
+  <div class="eyebrow">Q2STATS · DEVELOPMENT</div>
+  <h1>Project Status &amp; Roadmap</h1>
+  <p class="updated">Last updated: <time datetime="2026-10-26">October 26, 2026</time></p>
+  <p><strong>Q2Stats is a community project under active development.</strong> We are improving match collection, player statistics and ratings, with feedback from players and server owners.</p>
+
+  <section aria-labelledby="development-heading">
+    <h2 id="development-heading">Development and testing</h2>
+    <p>The rating system needs to be evaluated across real matches and may require adjustments as we learn more about its behaviour. Our goal is to refine a consistent, reliable model rather than repeatedly replace the rating engine. We are working towards what we believe provides the fairest assessment of player performance.</p>
+    <p>We are aware of existing bugs and are improving data collection, server integration and the accuracy of recorded statistics.</p>
+  </section>
+
+  <section aria-labelledby="work-heading">
+    <h2 id="work-heading">What we are working on</h2>
+    <ul>
+      <li><strong>Reliable match collection:</strong> improving how statistics are received and processed.</li>
+      <li><strong>Rating validation:</strong> reviewing match calculations and evaluating whether the model produces consistent and meaningful results.</li>
+      <li><strong>Player identities:</strong> improving nickname and profile handling.</li>
+      <li><strong>Match demos:</strong> making MVD2 demos available directly from match pages where supported.</li>
+      <li><strong>More servers:</strong> we hope to connect more servers to Q2Stats as the updated integration becomes available.</li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="issues-heading">
+    <h2 id="issues-heading">Known issues</h2>
+    <h3>Missing or delayed matches</h3>
+    <p>With the client-based collection method, statistics can remain buffered in the client until a new match starts, delaying their submission to Q2Stats.</p>
+    <p>Previously, matches were also withheld from submission if complete player statistics were unavailable—for example, when a player disconnected before the match ended. The updated OpenTDM integration addresses these issues by reporting statistics directly from the server.</p>
+    <h3>Missing statistics after a disconnect</h3>
+    <p>A player disconnecting before the end of a match can still result in incomplete or missing player statistics with the current collection method. The updated OpenTDM version will resolve this by retaining their match statistics after they disconnect.</p>
+    <h3>Demo availability</h3>
+    <p>MVD2 demos depend on server support and may become available later than the match statistics.</p>
+  </section>
+
+  <section aria-labelledby="next-heading">
+    <h2 id="next-heading">What comes next</h2>
+    <p>An updated version of <strong>OpenTDM</strong>, being developed and tested with Claire, will allow server owners to submit match statistics directly to Q2Stats.</p>
+    <p>As testing progresses, we plan to expand this integration to more servers and publish setup instructions for server owners who want to participate. Direct server reporting will make collection more reliable and reduce dependence on spectator bots and the Q2Stats server uploader.</p>
+  </section>
+
+  <section aria-labelledby="help-heading">
+    <h2 id="help-heading">Help us improve Q2Stats</h2>
+    <p>When reporting a problem, please include the <strong>match link or ID, server, map and approximate time</strong>.</p>
+    <p>Discuss development, report bugs and share suggestions on our <a href="https://discord.gg/tvzURBVMq" target="_blank" rel="noopener noreferrer">Q2Stats Discord ↗</a>.</p>
+  </section>
+</main>
+<footer>Q2Stats Beta · Project Status &amp; Roadmap</footer>
+</body>
+</html>
