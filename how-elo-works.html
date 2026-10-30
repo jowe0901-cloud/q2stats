@@ -31,6 +31,12 @@
 
 <main class="guide">
 <div class="eyebrow">Q2STATS · RATING SYSTEM</div><h1>How Elo Works</h1>
+<section class="update" aria-label="1v1 rating adjustment October 30, 2026">
+<h2>1v1 rating adjustment — October 30, 2026</h2>
+<p>We’ve increased the Glicko constant from q = ln(10) / 400 to q = 3.5 × ln(10) / 400. The aim is to make duel ratings more responsive to match results, particularly when established players have low RD and rating adjustments become small.</p>
+<p>This factor operates within the Glicko calculation. It affects rating adjustments, the weighting of an opponent’s rating uncertainty, and how RD decreases after matches. It does not simply multiply rating changes by 3.5, and larger changes are not guaranteed in every situation.</p>
+</section>
+
 <section class="update" aria-label="Rating system update"><h2>Rating System Update - October 25, 2026</h2><p><strong>Q2Stats is updating its rating system today.</strong> The new model places greater emphasis on individual performance against opponents, while also rewarding each player’s share of team damage. Ratings and leaderboard positions may change as the match history is recalculated.</p></section>
 <p class="lead intro">Q2Stats uses a modified <strong>Glicko-1</strong> rating system. Team Games and 1v1 have separate ratings, both starting at <strong>1500</strong>, with <strong>RD 100</strong>.</p>
 <section><h2>1. What has changed?</h2>
