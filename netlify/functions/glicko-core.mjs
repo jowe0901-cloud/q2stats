@@ -8,7 +8,8 @@ const glicko = {};
   var q = Math.log(10) / 400; // 0.0057565
 
 
-  function Player(id, rating, rd, period) {
+  function Player(id, rating, rd, period, qValue) {
+    this.__q = qValue;
     this.id = id;
     this.setPeriod(period);
     this.setRating(rating);
@@ -56,6 +57,7 @@ const glicko = {};
   // Calculates the new rating and rating deviation of the player.
   // Follows the steps of the algorithm described at http://www.glicko.net/glicko/glicko.pdf
   Player.prototype.update_rank = function(period, c2) {
+    var q = this.__q;
 
     //Step 1a : done by Player initialization
 
@@ -93,6 +95,7 @@ const glicko = {};
 
   // Calculation of the estimated deviation of the player's rating based on game outcomes
   Player.prototype.deviation = function() {
+    var q = this.__q;
     var tempSum = 0;
     for (var i = 0, len = this.opponents.length; i < len; i++) {
       var opp = this.opponents[i];
@@ -109,6 +112,7 @@ const glicko = {};
 
   // The Glicko g(RD) function.
   Player.prototype._g = function(RD) {
+    var q = this.__q;
     return 1 / Math.sqrt(1 + 3 * Math.pow(q * RD / Math.PI, 2));
   };
 
@@ -124,6 +128,9 @@ const glicko = {};
   //=========================  Glicko class =============================================
   function Glicko(settings) {
     settings = settings || {};
+    const factor = settings.qFactor ?? 1;
+    if (!Number.isFinite(factor) || factor <= 0) throw new RangeError("qFactor must be a positive finite number");
+    this._q = q * factor;
 
     // Default rating
     this._default_rating = settings.rating || 1500;
@@ -140,7 +147,7 @@ const glicko = {};
   }
   
   Glicko.prototype.makePlayer = function (rating, rd, period) {
-    var player = new Player(++this.players_index, rating || this._default_rating, rd || this._default_rd, period || this._period);
+    var player = new Player(++this.players_index, rating || this._default_rating, rd || this._default_rd, period || this._period, this._q);
     var playerProto = Object.getPrototypeOf(player);
     
     // Set this specific Player's `defaultRating`. This _has_ to be done

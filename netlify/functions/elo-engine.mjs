@@ -1,6 +1,6 @@
 import {Glicko} from './glicko-core.mjs';
 export const VERSION='glicko1-team-share50-win2-rd100-notime-v2';
-export const DUEL_VERSION='glicko1-duel-rd100-notime-v2';
+export const DUEL_VERSION='glicko1-duel-q3_5-rd100-notime-v3';
 export const START_ELO=1500, START_RD=100;
 const finite=v=>v!==null&&v!==undefined&&v!==''&&Number.isFinite(Number(v));
 const n=v=>Number(v);
@@ -21,7 +21,7 @@ export function calculateMatchElo(m,rows,getRating){
  for(const p of all){if(type==='team'&&!['frags','deaths','damage','damage_received'].every(k=>finite(p[k])))return {skipped:'missing_performance_data'};const t=totals.get(p.team)||{damage:0,count:0};t.damage+=n(p.damage)||0;t.count++;totals.set(p.team,t);}
  const ps=type==='1v1'?all:all.filter(p=>n(p.damage)>100&&n(p.damage_received)/n(p.damage)<10);
  if(ps.length<(type==='team'?4:2)||!ps.some(p=>p.team==='Home')||!ps.some(p=>p.team==='Away'))return {skipped:'insufficient_eligible_players'};
- const period=Math.floor(date.getTime()/86400000),g=new Glicko({rating:START_ELO,rd:START_RD,c:0});
+ const period=Math.floor(date.getTime()/86400000),g=new Glicko({rating:START_ELO,rd:START_RD,c:0,qFactor:type==='1v1'?3.5:1});
  g.setPeriod(period);
  const records=ps.map(p=>{
   const r=getRating(type,p.name),old={...r},gp=g.makePlayer(r.rating,r.rd??START_RD,r.period??period);
