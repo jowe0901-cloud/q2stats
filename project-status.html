@@ -20,17 +20,17 @@
 </head>
 <body>
 <header class="topbar">
-  <a class="brand no-underline" href="index.html"><span>Q2</span>STATS <small>BETA</small></a>
+  <a class='brand no-underline' href='/'><span>Q2</span>STATS <small>BETA</small></a>
   <nav aria-label="Main navigation">
-    <a href="index.html">Overview</a>
-    <a href="how-elo-works.html">How Elo Works ↗</a>
-    <a class="active" href="project-status.html" aria-current="page">Project Status</a>
+    <a href='/'>Overview</a>
+    <a href='/how-elo-works'>How Elo Works ↗</a>
+    <a aria-current='page' class='active' href='/project-status'>Project Status</a>
   </nav>
 </header>
 <main class="status-guide">
   <div class="eyebrow">Q2STATS · DEVELOPMENT</div>
   <h1>Project Status &amp; Roadmap</h1>
-  <p class="updated">Last updated: <time datetime="2026-10-26">October 26, 2026</time></p>
+  <p class="updated">Last updated: <time datetime="2026-10-31">October 31, 2026</time></p>
   <p><strong>Q2Stats is a community project under active development.</strong> We are improving match collection, player statistics and ratings, with feedback from players and server owners.</p>
 
   <section aria-labelledby="development-heading">
@@ -44,10 +44,56 @@
     <ul>
       <li><strong>Reliable match collection:</strong> improving how statistics are received and processed.</li>
       <li><strong>Rating validation:</strong> reviewing match calculations and evaluating whether the model produces consistent and meaningful results.</li>
+      <li><strong>Elo-based TDM shuffle:</strong> investigating whether Q2Stats ratings can help servers create more balanced teams in the future. This is exploratory work, not an available server feature.</li>
       <li><strong>Player identities:</strong> improving nickname and profile handling.</li>
       <li><strong>Match demos:</strong> making MVD2 demos available directly from match pages where supported.</li>
       <li><strong>More servers:</strong> we hope to connect more servers to Q2Stats as the updated integration becomes available.</li>
     </ul>
+  </section>
+
+  <section aria-labelledby="rating-history-heading">
+    <h2 id="rating-history-heading">Rating development log</h2>
+    <p>Our rating system has evolved through match analysis, community feedback and local testing. This log distinguishes published models from experiments and proposals. Dates identify confirmed milestones; an exact activation time is not available for every change.</p>
+
+    <h3>By September 18, 2026 · Original Elo / Central Elo v1</h3>
+    <p><strong>Confirmed in use.</strong> Ratings started at 1500. Team games used a K-factor of 16; 1v1 used 32. In team games, the result and both teams’ average ratings determined a base change, followed by an individual performance adjustment.</p>
+    <p>Performance combined kills minus deaths (40%), K/D (25%), net damage (25%) and discipline (10%). Team winners received between 0 and +16; losing players could receive between −16 and +7, depending on performance. Duel used the match result without this performance adjustment.</p>
+    <p><strong>Strengths:</strong> clear emphasis on the team result and team strength, with recognition for strong performances in defeat. <strong>Limitations:</strong> overlapping performance measures and no individual rating uncertainty.</p>
+    <p>September 18 marked verified central database calculation, rather than necessarily the first introduction of the formula. On <strong>September 24</strong>, profile and merged-nickname handling was improved without changing the underlying model.</p>
+
+    <h3>October 11 · Team Elo v2 / FPR</h3>
+    <p><strong>Published.</strong> The performance calculation was revised to give greater recognition to each player’s contribution to the team. Team-average ratings and the result still determined the base change. Historical Team ratings were recalculated; 1v1 remained unchanged.</p>
+    <p>The revised components were kills minus deaths (15%), K/D (15%), net damage (15%), share of team damage (25%) and share of team frags (25%). A planned 5% Quad/Mega component was inactive where reliable pickup data was unavailable, with the remaining weights normalised.</p>
+    <p><strong>Strengths:</strong> better recognition of players producing a large share of their team’s output. <strong>Limitations:</strong> contribution shares depend on team composition, some measures overlap, and the model still had no rating uncertainty.</p>
+
+    <h3>October 20–24 · Performance-adjustment proposals</h3>
+    <p><strong>Proposals and simulations.</strong> We explored adjusting the performance reward according to the strongest opponent’s rating, with a multiplier limited to 0.8–1.2, while retaining the base team-result reward. Further Team Elo alternatives were compared on October 24.</p>
+    <p>The aim was to reduce rewards for dominating weaker opposition. A limitation was that one strong opponent cannot represent an entire team. These comparisons are not recorded here as confirmed live models.</p>
+
+    <h3>October 25 · Local Glicko experiments</h3>
+    <p><strong>Local testing.</strong> We evaluated a modified Glicko-1 model inspired by QLStats, using rating deviation (<strong>RD</strong>) to represent uncertainty about a player’s rating.</p>
+    <ul>
+      <li><strong>Starting rating:</strong> an early local configuration was changed from 900 to 1500. The later model retained 900 as its rating floor.</li>
+      <li><strong>Starting RD:</strong> reduced from 350 to 100 to limit early volatility, at the cost of slower adjustment for players far from the starting level.</li>
+      <li><strong>TDM win minimum:</strong> tested a minimum gain of +2 to prevent zero or negative changes after a team win. This can contribute to rating inflation.</li>
+      <li><strong>Team contribution:</strong> tested damage relative to the team average, then replaced it with the player’s share of total team damage.</li>
+      <li><strong>RAPM:</strong> tested a combination of 75% Glicko and 25% Regularized Adjusted Plus-Minus to account for line-ups and results. This added complexity and data requirements and was not selected for production.</li>
+      <li><strong>Inactivity:</strong> disabled time-based RD increases. Keeping players with fewer than 20 matches outside the leaderboard was discussed but deferred.</li>
+    </ul>
+
+    <h3>October 25 · Glicko-1 with team damage share</h3>
+    <p><strong>Production model.</strong> The selected configuration used a starting rating of 1500, starting RD of 100 and minimum RD of 30. Team and 1v1 ratings were separate, with no time-based RD increase. RAPM was not included.</p>
+    <p>Team performance combined <strong>5 × (kills − deaths) + 0.07 × damage dealt − 0.04 × damage received</strong>, plus a contribution bonus of <strong>50 × the player’s share of team damage</strong>. These are performance points, not direct rating points. Performance comparisons against opponents feed into Glicko alongside ratings and RD. TDM team wins have a minimum gain of +2.</p>
+    <p><strong>Strengths:</strong> individual uncertainty, recognition of damage production and team contribution, and support for productive offensive play even when a player receives substantial damage. <strong>Limitations:</strong> the player’s own line-up strength is not explicitly modelled as in the earlier team-average approach; support roles are difficult to measure; low RD can produce small changes; and the win minimum can contribute to inflation.</p>
+    <p>This was a shift from starting with the team result to placing greater emphasis on individual performance against opponents. Subsequent database migration fixes were installation changes, not additional rating models.</p>
+
+    <h3>October 29–30 · More responsive 1v1 Glicko</h3>
+    <p><strong>Accepted October 29; documented October 30.</strong> The duel calculation changed its Glicko constant from <strong>q = ln(10) / 400</strong> to <strong>q = 3.5 × ln(10) / 400</strong>. The Team model, starting rating and starting RD were unchanged.</p>
+    <p>The aim was greater responsiveness for established duel players with low RD. The factor operates inside Glicko and affects RD development as well as rating changes: it does not simply multiply every match change by 3.5. The exact live activation time is not conclusively established in the available records.</p>
+
+    <h3>October 31 · Exploring Elo-based TDM shuffle</h3>
+    <p><strong>Under investigation.</strong> We are exploring how Q2Stats ratings could support a future team-shuffle feature for TDM. One possible integration would let an OpenTDM server submit player identities to a Q2Stats balance API, receive a suggested team allocation and apply it on the server.</p>
+    <p>The goal is more evenly matched teams. Identity matching, players without an established rating and server-side integration still need evaluation. This is a future development possibility, not a released feature or a change to the current rating formula.</p>
   </section>
 
   <section aria-labelledby="issues-heading">
