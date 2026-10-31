@@ -1,0 +1,8 @@
+CREATE TABLE IF NOT EXISTS q2stats_pageviews (
+  day DATE PRIMARY KEY,
+  views BIGINT NOT NULL DEFAULT 0
+);
+ALTER TABLE q2stats_visitor_snapshot
+  ADD COLUMN IF NOT EXISTS pageviews_today BIGINT NOT NULL DEFAULT 0,
+  ADD COLUMN IF NOT EXISTS pageviews_total BIGINT NOT NULL DEFAULT 0;
+DELETE FROM q2stats_visitor_snapshot;
