@@ -531,3 +531,43 @@ async function initRatingPoll(){
  try{render(await request());}catch(e){status.textContent='The poll is temporarily unavailable. ';const retry=el('button','Try again','poll-submit');retry.type='button';retry.addEventListener('click',()=>{box.replaceChildren();status.textContent='Loading poll…';initRatingPoll();});box.append(retry);}
 }
 if(document.getElementById('ratingPoll'))initRatingPoll();
+
+
+// Q2Stats site visitors and pageviews.
+(async () => {
+  const counter = document.getElementById('siteVisitorCounter');
+  const endpoint = '/api/v1/site-visitors';
+  async function refresh() {
+    try {
+      const response = await fetch(endpoint);
+      if (!response.ok) return;
+      const data = await response.json();
+      if (!Number.isSafeInteger(data.today) || !Number.isSafeInteger(data.total)) return;
+      const format = new Intl.NumberFormat('en-US');
+      if (!counter) return;
+      counter.textContent = `Today: ${format.format(data.today)} unique visitors · ${format.format(data.pageviews_today)} pageviews | Total visitors: ${format.format(data.total)} · ${format.format(data.pageviews_total)} pageviews`;
+      counter.hidden = false;
+    } catch { /* Keep the rest of the page usable if statistics are unavailable. */ }
+  }
+  async function register(pageview = false) {
+    try {
+      const key = 'q2stats.visitor-id.v1';
+      let id = localStorage.getItem(key);
+      if (!/^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i.test(id || '')) {
+        id = crypto.randomUUID();
+        localStorage.setItem(key, id);
+      }
+      if (pageview) {
+        await fetch(endpoint, {
+          method: 'POST', headers: { 'content-type': 'application/json' },
+          body: JSON.stringify({ visitor_id: id })
+        });
+      }
+    } catch { /* Do not invent new identities if browser storage is unavailable. */ }
+  }
+    await register(true);
+  if (counter) {
+    await refresh();
+    setInterval(refresh, 60 * 60 * 1000);
+  }
+})();
