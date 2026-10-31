@@ -25,6 +25,40 @@
 @media(max-width:600px){.guide section{padding:17px}.guide{margin-top:22px}}
 </style>
 <style>.guide{line-height:1.75}.guide .formula{font:inherit;white-space:normal;padding:20px;overflow:visible}.formula svg{display:block;max-width:100%;height:auto}.formula-row{display:flex;gap:20px;flex-wrap:wrap;align-items:center}.guide ul{padding-left:22px;color:var(--muted)}.guide .update strong{color:var(--text)}.guide .formula-note{font-size:13px} .guide section{scroll-margin-top:25px} .guide .intro{margin-bottom:24px} @media(max-width:600px){.guide .formula{padding:14px}.guide h2{font-size:20px}} @media print{body{background:white;color:black}.topbar,.elo-back{display:none}.guide{width:100%;margin:0}.guide section{break-inside:avoid;background:white}.formula{background:#111!important;print-color-adjust:exact}.guide p,.guide li{color:#222}}
+</style><style>
+/* Q2Stats flowchart: scoped to this section; no external diagram library. */
+.guide .q2-flow-figure{margin:24px 0 0}
+.guide .q2-flow-node{box-sizing:border-box;background:var(--panel2,#151b24);border:2px solid #526074;border-radius:12px;padding:15px 16px;text-align:center;min-width:0;overflow-wrap:anywhere}
+.guide .q2-flow-node strong{display:block;color:var(--text,#f3f6fb);font-size:15px;line-height:1.4}
+.guide .q2-flow-node span{display:block;color:var(--muted,#8994a6);font-size:13px;line-height:1.6;margin-top:5px}
+.guide .q2-flow-main{width:min(100%,460px);margin:0 auto}
+.guide .q2-flow-emphasis{border-color:var(--accent,#ff4d2e);background:#211a18}
+.guide .q2-flow-arrow{display:flex;align-items:center;justify-content:center;height:44px;color:var(--accent2,#ff865f);font:900 38px/1 Arial,sans-serif}
+.guide .q2-flow-caption{text-align:center;font-size:12px;color:var(--muted,#8994a6);margin:0 0 12px}
+.guide .q2-flow-three{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.guide .q2-flow-two{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;max-width:660px;margin:0 auto}
+.guide .q2-flow-merge{position:relative;height:24px;margin:0 auto;border-bottom:3px solid var(--accent2,#ff865f);display:flex;justify-content:space-between}
+.guide .q2-flow-merge i{display:block;height:24px;width:3px;background:var(--accent2,#ff865f)}
+.guide .q2-flow-merge-three{width:calc(66.6667% + 5px)}
+.guide .q2-flow-merge-two{width:calc(50% + 6px);max-width:342px}
+.guide .q2-flow-support{margin-top:30px;border-top:1px solid var(--line,#242c38);padding-top:12px}
+.guide .q2-flow-support h3{font-size:16px;color:var(--text,#f3f6fb);margin:20px 0 14px}
+.guide .q2-flow-lane{display:flex;gap:9px;align-items:center;margin:16px 0}
+.guide .q2-flow-lane .q2-flow-node{flex:1;padding:12px 10px}
+.guide .q2-flow-side-arrow{flex:0 0 28px;text-align:center;color:var(--accent2,#ff865f);font:900 30px/1 Arial,sans-serif}
+@media(max-width:600px){
+ .guide .q2-flow-three{grid-template-columns:1fr;gap:12px}
+ .guide .q2-flow-three .q2-flow-node+.q2-flow-node:before{content:'OR';display:block;color:var(--accent2,#ff865f);font-size:11px;letter-spacing:.12em;margin-bottom:7px}
+ .guide .q2-flow-merge-three{display:none}
+ .guide .q2-flow-two{gap:12px}
+ .guide .q2-flow-node{padding:13px 10px}
+ .guide .q2-flow-node strong{font-size:14px}
+ .guide .q2-flow-lane{flex-direction:column;gap:8px}
+ .guide .q2-flow-lane .q2-flow-node{width:100%;flex:auto}
+ .guide .q2-flow-side-arrow{transform:rotate(90deg);flex:auto;height:30px;line-height:30px}
+}
+@media print{.guide .q2-flow{break-inside:auto}.guide .q2-flow-node{break-inside:avoid;print-color-adjust:exact}.guide .q2-flow-node strong{color:#f3f6fb}.guide .q2-flow-node span{color:#c5ceda}.guide .q2-flow-node{background:#151b24}}
+
 </style></head>
 <body>
 <header class="topbar"><a class="brand no-underline" href="index.html"><span>Q2</span>STATS <small>BETA</small></a><a class="elo-back" href="index.html">← Back to Overview</a></header>
@@ -39,6 +73,67 @@
 
 <section class="update" aria-label="Rating system update"><h2>Rating System Update - October 25, 2026</h2><p><strong>Q2Stats is updating its rating system today.</strong> The new model places greater emphasis on individual performance against opponents, while also rewarding each player’s share of team damage. Ratings and leaderboard positions may change as the match history is recalculated.</p></section>
 <p class="lead intro">Q2Stats uses a modified <strong>Glicko-1</strong> rating system. Team Games and 1v1 have separate ratings, both starting at <strong>1500</strong>, with <strong>RD 100</strong>.</p>
+<section class="q2-flow" aria-labelledby="q2-flow-heading">
+<h2 id="q2-flow-heading">How Q2Stats works</h2>
+<p>From a match on a game server to the statistics and ratings shown on Q2Stats.</p>
+<figure class="q2-flow-figure" aria-label="Q2Stats statistics collection and rating calculation flow">
+  <div class="q2-flow-node q2-flow-main"><strong>Quake II match</strong><span>Played on a game server</span></div>
+  <div class="q2-flow-arrow" aria-hidden="true">↓</div>
+  <div class="q2-flow-caption">Alternative collection methods</div>
+  <div class="q2-flow-three">
+    <div class="q2-flow-node"><strong>Q2Stats spectator bot</strong><span>Collects statistics through a game client</span></div>
+    <div class="q2-flow-node"><strong>Q2Stats server uploader</strong><span>Collects and submits match statistics</span></div>
+    <div class="q2-flow-node"><strong>Updated OpenTDM</strong><span>Reports statistics directly from the server</span></div>
+  </div>
+  <div class="q2-flow-merge q2-flow-merge-three" aria-hidden="true"><i></i><i></i><i></i></div>
+  <div class="q2-flow-arrow" aria-hidden="true">↓</div>
+  <div class="q2-flow-node q2-flow-main"><strong>Collection and Q2Stats API</strong><span>Imports and validates match data</span></div>
+  <div class="q2-flow-arrow" aria-hidden="true">↓</div>
+  <div class="q2-flow-node q2-flow-main"><strong>Match database</strong><span>Stores matches, player statistics and weapon statistics</span></div>
+  <div class="q2-flow-arrow" aria-hidden="true">↓</div>
+  <div class="q2-flow-node q2-flow-main"><strong>Player profiles</strong><span>Links recorded nicknames to player identities</span></div>
+  <div class="q2-flow-arrow" aria-hidden="true">↓</div>
+  <div class="q2-flow-caption">Rating calculation depends on match type</div>
+  <div class="q2-flow-two">
+    <div class="q2-flow-node"><strong>Team match</strong><span>Individual performance and share of team damage</span></div>
+    <div class="q2-flow-node"><strong>1v1 match</strong><span>Match win or loss</span></div>
+  </div>
+  <div class="q2-flow-merge q2-flow-merge-two" aria-hidden="true"><i></i><i></i></div>
+  <div class="q2-flow-arrow" aria-hidden="true">↓</div>
+  <div class="q2-flow-node q2-flow-main q2-flow-emphasis"><strong>Glicko rating engine</strong><span>Uses player ratings and RD to calculate rating changes</span></div>
+  <div class="q2-flow-arrow" aria-hidden="true">↓</div>
+  <div class="q2-flow-node q2-flow-main"><strong>Ratings and rating history</strong><span>Saves updated ratings and match-by-match changes</span></div>
+  <div class="q2-flow-arrow" aria-hidden="true">↓</div>
+  <div class="q2-flow-node q2-flow-main"><strong>Website API</strong><span>Provides match statistics, ratings and demo links</span></div>
+  <div class="q2-flow-arrow" aria-hidden="true">↓</div>
+  <div class="q2-flow-node q2-flow-main q2-flow-emphasis"><strong>Q2Stats.com</strong><span>Match history · Player profiles · Rankings · Weapon statistics · Demos</span></div>
+
+  <div class="q2-flow-support">
+    <h3>Match data and demos</h3>
+    <div class="q2-flow-lane">
+      <div class="q2-flow-node"><strong>Match database</strong><span>Recorded player and weapon statistics</span></div>
+      <div class="q2-flow-side-arrow" aria-hidden="true">→</div>
+      <div class="q2-flow-node"><strong>Website API</strong><span>Statistics for the website</span></div>
+    </div>
+    <div class="q2-flow-lane">
+      <div class="q2-flow-node"><strong>MVD2 demo</strong><span>Available on a supported game server</span></div>
+      <div class="q2-flow-side-arrow" aria-hidden="true">→</div>
+      <div class="q2-flow-node"><strong>Demo linking</strong><span>Links the match to its demo file</span></div>
+      <div class="q2-flow-side-arrow" aria-hidden="true">→</div>
+      <div class="q2-flow-node"><strong>Website API</strong><span>Makes the demo link available</span></div>
+    </div>
+    <h3>Administration and recalculation</h3>
+    <div class="q2-flow-lane">
+      <div class="q2-flow-node"><strong>Admin tools</strong><span>Review matches and merge nicknames</span></div>
+      <div class="q2-flow-side-arrow" aria-hidden="true">→</div>
+      <div class="q2-flow-node"><strong>Recalculate ratings</strong><span>Replays match history with updated player identities</span></div>
+      <div class="q2-flow-side-arrow" aria-hidden="true">→</div>
+      <div class="q2-flow-node"><strong>Rating engine</strong><span>Updates ratings and rating history</span></div>
+    </div>
+  </div>
+</figure>
+</section>
+
 <section><h2>1. What has changed?</h2>
 <p>The previous system started with <strong>the team’s result</strong>, then adjusted each player’s rating change using individual performance. Much of that assessment came from the player’s share of team frags and damage.</p>
 <p>The new model focuses more on <strong>individual performance against opponents</strong>, while also rewarding each player’s share of team damage. Rankings can change because the systems place different emphasis on team results, individual contribution and opponent strength.</p>
